@@ -1,0 +1,126 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Sticker Maker works",
+    "paragraphs": [
+      "You describe the sticker in a sentence, optionally add a few words of text, and pick one of ten art styles. PiCraft draws a single centered design with a thick white die-cut border, then removes the backdrop so the PNG is transparent everywhere outside that border.",
+      "The transparent edge is what a cutting machine or a sticker printer follows. Because the white border sits just inside that edge, a small cutting error shows up as a little extra white instead of a sliver of missing artwork.",
+      "Each generation uses one credit and produces a fresh design, so you can try the same idea in several styles and keep the one you like best."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "Transparent 2048×2048 PNG",
+      "description": "The full-size file with the background removed. It holds up for stickers around 6 inches across at 300 DPI and gives you room to edit in your own software."
+    },
+    {
+      "title": "3×3 inch print file",
+      "description": "A 900×900 px PNG at 300 DPI, sized for the most common sticker format and ready to place on a sheet or in Cricut Design Space."
+    },
+    {
+      "title": "A built-in white border",
+      "description": "Every design is outlined with a continuous white border, the classic die-cut look and an easy cut path for machines and printers to follow."
+    },
+    {
+      "title": "Ten art styles",
+      "description": "From kawaii and cartoon to pixel art, woodcut and neon glow, so one idea can become a whole pack with different personalities."
+    },
+    {
+      "title": "Optional text",
+      "description": "Add a short phrase of up to 30 characters and it is drawn into the design as part of the artwork, spelled the way you typed it."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Etsy and Redbubble shops",
+      "description": "Test a niche quickly by making several designs around one keyword, then list the ones that look best. Each file is already transparent, so it can go straight into a listing or a print-on-demand upload."
+    },
+    {
+      "title": "Cricut and Silhouette Print Then Cut",
+      "description": "Upload the PNG, save it as a Print Then Cut image, print it on sticker paper and let the machine cut around the white border."
+    },
+    {
+      "title": "Planners and journals",
+      "description": "Make small themed stickers for habit trackers, study notes or bullet journals: a tired cat for Monday, a tiny plant for water reminders."
+    },
+    {
+      "title": "Packaging and thank-you stickers",
+      "description": "Seal order bags with a custom character or a short thank-you line. Small shops use them to make a plain mailer feel branded."
+    },
+    {
+      "title": "Classrooms, parties and gifts",
+      "description": "Reward stickers, party favors and name tags are quick to make when you can describe the idea in one line and print at home."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Describe one subject, not a scene",
+      "description": "A single character or object reads clearly at 3 inches. Crowded scenes lose detail once printed small."
+    },
+    {
+      "title": "Say what the subject is doing",
+      "description": "\"A sleepy cat curled up inside a coffee mug\" gives the model a pose and a silhouette. \"Cat\" produces something generic."
+    },
+    {
+      "title": "Keep text to a few words",
+      "description": "One to four words work best. Long phrases get cramped and are more likely to contain a letter that is off, so proofread whatever you add."
+    },
+    {
+      "title": "Match the style to the subject",
+      "description": "Kawaii suits animals and food, woodcut suits landscapes and creatures, pop art suits loud one-liners. If a result feels flat, switch the style before rewriting the idea."
+    },
+    {
+      "title": "Avoid trademarked characters and logos",
+      "description": "Describe an original idea instead of a known cartoon or brand. Marketplaces remove listings that copy other people's characters."
+    },
+    {
+      "title": "Generate two or three variations",
+      "description": "Every generation is a new design. Running the same idea in a couple of styles is the fastest way to find the one worth printing."
+    },
+    {
+      "title": "Check the edge on a dark background",
+      "description": "Open the PNG over a dark color in your editor. A continuous white border and no leftover grey fringe means it is ready to cut."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a sticker style",
+    "intro": "Each style changes the line work, palette and mood of the design. Use this as a quick guide to which one fits your idea.",
+    "items": [
+      { "title": "Cute kawaii", "description": "Soft pastels, round shapes and happy faces. Best for animals, food and gifts." },
+      { "title": "Bold cartoon", "description": "Thick outlines and flat bright colors. Best for mascots, memes and anything that must read from a distance." },
+      { "title": "Retro 70s", "description": "Warm orange, mustard and brown with groovy shapes. Best for travel, music and nostalgic slogans." },
+      { "title": "Watercolor", "description": "Gentle washes with fine ink details. Best for flowers, nature and journal stickers." },
+      { "title": "Pixel art", "description": "Crisp 16-bit look with a limited palette. Best for gaming, tech and developer humor." },
+      { "title": "Chibi anime", "description": "Big heads, tiny bodies and sparkly eyes. Best for characters and fandom-style art." },
+      { "title": "Hand-drawn doodle", "description": "Loose pen lines with minimal color. Best for quick jokes and minimalist packs." },
+      { "title": "Neon glow", "description": "Electric colors with glowing edges. Best for nightlife, music and bold statements." },
+      { "title": "Pop art", "description": "Halftone dots, primary colors and heavy outlines. Best for punchy phrases and comic-style scenes." },
+      { "title": "Woodcut print", "description": "Carved black lines with limited flat color. Best for wildlife, outdoors and craft brands." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you print or sell",
+    "items": [
+      "Zoom in on the PNG over a dark background and confirm the white border is continuous.",
+      "Read any text letter by letter. A single wrong character is easy to miss on screen and obvious on paper.",
+      "Print one test sticker on plain paper to confirm the size and the look.",
+      "Set the print scale to 100% so the 300 DPI file is not stretched or shrunk by your software.",
+      "In Cricut Design Space, save the upload as a Print Then Cut image and check that the cut preview follows the white border.",
+      "Make sure the design contains no trademarked characters, logos or brand names.",
+      "Use waterproof vinyl or add a laminate layer for stickers that will be handled, washed or left outdoors."
+    ]
+  },
+  "limits": [
+    "The result is a flat image, not layers. To change something, generate again with a new description.",
+    "Very pale grey areas that touch the edge of the image can be lost when the background is removed. Regenerate if that happens.",
+    "Each generation is one sticker, not a laid-out sheet. Place several PNGs on a page in your print software.",
+    "Cut lines are not included. The transparent edge is the cut path, and you set up cutting in your machine's software.",
+    "Text beyond a few words can come out garbled, so always proofread."
+  ],
+  "sources": [
+    {
+      "label": "Cricut Help: How to upload images into Design Space",
+      "url": "https://help.cricut.com/hc/en-us/articles/360009556313-How-to-upload-images-into-Design-Space"
+    }
+  ]
+}

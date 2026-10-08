@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the T-Shirt Design Maker works",
+    "paragraphs": [
+      "You describe the artwork, add a slogan if you want one, choose one of ten styles and say whether the shirt is dark or light. PiCraft draws the graphic on its own, with bold shapes and a limited palette that suit screen printing and direct-to-garment printing, and removes the background so only the artwork remains.",
+      "The shirt color matters because it changes the palette. On a dark shirt the design leans on light and bright colors, and on a light shirt it uses darker tones, so nothing disappears into the fabric.",
+      "You download a transparent PNG at 4500×5400 px, which is 15×18 inches at 300 DPI, plus a small preview. Upload the large file to your print-on-demand store or hand it to a local printer."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "4500×5400 px transparent PNG",
+      "description": "A full-size print file at 300 DPI covering a 15×18 inch front print area, with no background to remove."
+    },
+    {
+      "title": "A web preview",
+      "description": "A 1200×1440 px transparent PNG for product mockups, social posts and shop thumbnails."
+    },
+    {
+      "title": "Palette matched to the shirt",
+      "description": "Choose dark or light and the colors are adjusted so the artwork keeps its contrast on that fabric."
+    },
+    {
+      "title": "Ten print-friendly styles",
+      "description": "Vintage badge, streetwear, line art, tattoo and more, all with clean edges and flat color areas that print well."
+    },
+    {
+      "title": "Slogan built into the design",
+      "description": "Add up to 40 characters and the text is integrated into the artwork instead of being pasted on top."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Print-on-demand stores",
+      "description": "Create a design, upload the PNG to Merch on Demand, Printful, Printify or Redbubble, and list it without handling inventory."
+    },
+    {
+      "title": "Team, club and event shirts",
+      "description": "Make a one-off design for a sports team, a family reunion, a fun run or a school event and hand the file to a local print shop."
+    },
+    {
+      "title": "Niche merchandise",
+      "description": "Test small audiences, such as hobbies, jobs and inside jokes, with several designs before committing to one."
+    },
+    {
+      "title": "Creators and small brands",
+      "description": "Turn a catchphrase or a mascot idea into merch your audience can buy, without hiring an illustrator for the first draft."
+    },
+    {
+      "title": "Gifts",
+      "description": "Print a single shirt with a private joke or a pet-themed design, using any service that accepts a PNG."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Pick the shirt color first",
+      "description": "Decide whether the design is for a dark or light shirt before you generate. Switching later means generating again, because the palette changes."
+    },
+    {
+      "title": "Think of it as a chest graphic",
+      "description": "A single focal point, such as a badge, an animal or a landscape in a circle, looks better on fabric than a full scene."
+    },
+    {
+      "title": "Keep the slogan short",
+      "description": "Two to five words print cleanly. Long sentences shrink until they are unreadable on a shirt."
+    },
+    {
+      "title": "Choose a style that prints well",
+      "description": "Flat colors and thick outlines reproduce reliably. Fine textures and soft gradients can look muddy on some fabrics."
+    },
+    {
+      "title": "Describe the subject and the mood",
+      "description": "\"A camper van driving toward a mountain range inside a circle, calm and nostalgic\" gives more direction than \"camping shirt\"."
+    },
+    {
+      "title": "Look at it on a mockup",
+      "description": "Place the PNG on a shirt photo or in your platform's mockup tool before publishing. It shows scale and contrast problems the flat file hides."
+    },
+    {
+      "title": "Stay original",
+      "description": "Describe your own idea. Platforms take down listings that copy trademarks, logos, characters or other people's artwork."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a shirt style",
+    "intro": "The style decides the line work and the feeling of the graphic. These are the ten options and what each is good at.",
+    "items": [
+      { "title": "Vintage badge", "description": "Circular or shield layouts with worn-in color. Best for outdoors, travel and local brands." },
+      { "title": "Streetwear", "description": "Bold type and graphic shapes with an urban feel. Best for slogans and limited drops." },
+      { "title": "Minimal line art", "description": "Thin single-color lines with lots of space. Best for subtle designs on light shirts." },
+      { "title": "Cute illustration", "description": "Friendly characters and soft shapes. Best for pets, kids and gifts." },
+      { "title": "Bold graphic", "description": "Large flat shapes and strong contrast. Best for team shirts and statements." },
+      { "title": "Japanese ink", "description": "Brush-stroke textures and calm composition. Best for nature and martial arts themes." },
+      { "title": "Grunge texture", "description": "Rough edges and a distressed finish. Best for music and rebellious slogans." },
+      { "title": "Geometric abstract", "description": "Clean shapes in a tight palette. Best for modern, design-minded shirts." },
+      { "title": "Retro sports", "description": "Varsity lettering and stripes. Best for clubs, leagues and humor with a jersey look." },
+      { "title": "Traditional tattoo", "description": "Heavy outlines and classic motifs such as roses, daggers and swallows. Best for bold, nostalgic art." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you upload to a print service",
+    "items": [
+      "Preview the PNG over both a dark and a light background to confirm the artwork holds up on your shirt color.",
+      "Read the slogan letter by letter and check it against what you typed.",
+      "Check your platform's current file rules for size, color space and file weight before uploading.",
+      "If your platform wants artwork trimmed to the edge of the design, crop away the transparent margin in your image editor first.",
+      "Look at the design on a mockup at real size to check scale and placement.",
+      "Search the slogan and the idea to make sure they are not a registered trademark or someone else's artwork.",
+      "Order one sample shirt before you promote a design to customers."
+    ]
+  },
+  "limits": [
+    "The 4500×5400 px print file is upscaled from the generated design. Bold shapes print sharply, but fine detail will not look like vector art.",
+    "The PNG is flat. For a new color or a moved element, generate a new design.",
+    "Colors on screen and on fabric differ, and fabric type changes the result. A sample print is the only reliable check.",
+    "The maker designs front graphics. It does not produce mockups, back prints or all-over patterns.",
+    "Long text can come out with errors, so always proofread."
+  ]
+}

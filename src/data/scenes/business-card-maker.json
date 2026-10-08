@@ -1,0 +1,318 @@
+{
+  "slug": "business-card-maker",
+  "name": "Business Card Maker",
+  "category": "print",
+  "summary": "Enter your name and contact details, get a designed business card as a print-ready PDF in US or EU size.",
+  "badge": "3.5×2 in · 85×55 mm",
+  "indexable": true,
+  "seo": {
+    "title": "Business Card Maker – Print-Ready Cards with Bleed",
+    "description": "Type your name, title and contact details, pick a style and download a print-ready business card PDF with bleed in US (3.5×2 in) or EU (85×55 mm) size.",
+    "h1": "Business Card Maker",
+    "intro": [
+      "Enter your name, job title and contact details, choose a style, and PiCraft designs a finished business card with everything typeset and aligned, ready for your printer.",
+      "Pick the US size (3.5×2 in) or the common European size (85×55 mm) and download a print PDF with bleed, plus a web image for your email signature or profile."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "16:9",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "name",
+      "label": "Name",
+      "type": "text",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "Elena Marsh"
+    },
+    {
+      "key": "title",
+      "label": "Job title (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 50,
+      "placeholder": "Brand Designer"
+    },
+    {
+      "key": "company",
+      "label": "Company (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 50,
+      "placeholder": "Marsh Studio"
+    },
+    {
+      "key": "phone",
+      "label": "Phone (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 30,
+      "placeholder": "+1 555 014 2299"
+    },
+    {
+      "key": "email",
+      "label": "Email (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 60,
+      "placeholder": "elena@marshstudio.co"
+    },
+    {
+      "key": "website",
+      "label": "Website (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 60,
+      "placeholder": "marshstudio.co"
+    },
+    {
+      "key": "address",
+      "label": "Address (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "214 Pine Street, Portland, OR"
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "minimal",
+      "options": [
+        {
+          "value": "minimal",
+          "label": "Clean minimal",
+          "prompt": "clean minimal design on white stock with lots of white space, thin sans-serif typography and one small accent color"
+        },
+        {
+          "value": "modern",
+          "label": "Modern geometric",
+          "prompt": "modern geometric design with bold color blocks, clean sans-serif typography and a confident asymmetric layout"
+        },
+        {
+          "value": "corporate",
+          "label": "Corporate navy",
+          "prompt": "professional corporate design in navy and cool grey with a crisp grid, a subtle accent band and trustworthy sans-serif typography"
+        },
+        {
+          "value": "elegant",
+          "label": "Elegant ivory",
+          "prompt": "elegant design on soft ivory stock with fine serif typography, generous spacing and a thin gold rule"
+        },
+        {
+          "value": "luxury",
+          "label": "Black & gold",
+          "prompt": "luxury black card with gold foil-style typography, a minimal monogram-style accent and refined spacing"
+        },
+        {
+          "value": "creative",
+          "label": "Creative studio",
+          "prompt": "creative studio design with a bold hand-drawn accent shape, bright colors and playful but legible type"
+        },
+        {
+          "value": "nature",
+          "label": "Natural green",
+          "prompt": "natural organic design with soft green tones on warm off-white stock, a delicate leaf line illustration and calm serif typography"
+        },
+        {
+          "value": "tech",
+          "label": "Tech dark",
+          "prompt": "tech startup design with a dark gradient background, teal and violet accents and a clean geometric sans-serif"
+        },
+        {
+          "value": "vintage",
+          "label": "Vintage letterpress",
+          "prompt": "vintage letterpress look on cream stock with deep red ink, classic serif typography and a small ornament"
+        },
+        {
+          "value": "bold",
+          "label": "Bold typographic",
+          "prompt": "bold typographic design with an oversized name, high-contrast black and bright yellow, and tightly aligned contact details"
+        }
+      ]
+    },
+    {
+      "key": "size",
+      "label": "Card size",
+      "type": "select",
+      "default": "us",
+      "options": [
+        {
+          "value": "us",
+          "label": "US & Canada (3.5×2 in)",
+          "aspectRatio": "16:9",
+          "prompt": ""
+        },
+        {
+          "value": "eu",
+          "label": "Europe (85×55 mm)",
+          "aspectRatio": "3:2",
+          "prompt": ""
+        }
+      ]
+    }
+  ],
+  "prompt": "Design the front of a printed business card in landscape orientation, shown flat and front-on, filling the entire image edge to edge. It is the artwork itself, not a mockup: no table, no hands, no perspective, no drop shadow, no second card.\nStyle: {{style}}.\nThe card contains exactly the following text and nothing else, each item spelled exactly as written:\n\"{{name}}\"\n[[\"{{title}}\"]]\n[[\"{{company}}\"]]\n[[\"{{phone}}\"]]\n[[\"{{email}}\"]]\n[[\"{{website}}\"]]\n[[\"{{address}}\"]]\nThe name is the largest text. Group the contact details in one tidy, aligned block in a smaller but perfectly legible size.\nSafe-area rule: all text must sit inside a centered rectangle covering only the middle 74% of the card width and the middle 70% of the card height. The outer 13% of the width on the left and right, and the outer 15% of the height at the top and bottom, contain only background color or decoration, never text, so that nothing is trimmed when printed. Leave generous empty padding around the text.\nDo not add any other words, placeholder text, QR codes or extra labels. Print-quality detail.",
+  "outputs": [
+    {
+      "id": "web",
+      "label": "Web image 1050×600 JPG",
+      "width": 1050,
+      "height": 600,
+      "format": "jpg",
+      "dpi": 150,
+      "preview": true,
+      "when": {
+        "size": "us"
+      }
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF 3.5×2 in with 0.125 in bleed",
+      "widthIn": 3.5,
+      "heightIn": 2,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "pdf",
+      "when": {
+        "size": "us"
+      }
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG 3.5×2 in with bleed, 300 DPI",
+      "widthIn": 3.5,
+      "heightIn": 2,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "jpg",
+      "when": {
+        "size": "us"
+      }
+    },
+    {
+      "id": "web",
+      "label": "Web image 1020×660 JPG",
+      "width": 1020,
+      "height": 660,
+      "format": "jpg",
+      "dpi": 150,
+      "preview": true,
+      "when": {
+        "size": "eu"
+      }
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF 85×55 mm with 3 mm bleed",
+      "widthIn": 3.346,
+      "heightIn": 2.165,
+      "bleedIn": 0.118,
+      "dpi": 300,
+      "format": "pdf",
+      "when": {
+        "size": "eu"
+      }
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG 85×55 mm with bleed, 300 DPI",
+      "widthIn": 3.346,
+      "heightIn": 2.165,
+      "bleedIn": 0.118,
+      "dpi": 300,
+      "format": "jpg",
+      "when": {
+        "size": "eu"
+      }
+    }
+  ],
+  "specs": {
+    "heading": "Business card sizes",
+    "columns": [
+      "Region",
+      "Trim size",
+      "With bleed",
+      "Pixels at 300 DPI"
+    ],
+    "rows": [
+      [
+        "United States & Canada",
+        "3.5×2 in (89×51 mm)",
+        "3.75×2.25 in (0.125 in bleed)",
+        "1125×675 px"
+      ],
+      [
+        "Europe (common size)",
+        "85×55 mm",
+        "91×61 mm (3 mm bleed)",
+        "1075×720 px"
+      ]
+    ],
+    "notes": [
+      "Printers publish their own templates and safe zones. Check yours before ordering, and keep important text at least 3 mm (0.125 in) inside the trim line.",
+      "PiCraft designs the front of the card. For a two-sided card, a plain color or logo on the back is usually all you need and is easy to add in your printer's editor."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Enter your details",
+      "description": "Name, job title, company and the contact lines you want on the card."
+    },
+    {
+      "title": "Pick a style and size",
+      "description": "Ten styles, from clean minimal to black and gold, in US or European size."
+    },
+    {
+      "title": "Download and print",
+      "description": "Send the PDF with bleed to your printer, or use the web image online."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size is a standard business card?",
+      "a": "In the US and Canada the standard is 3.5×2 inches. In much of Europe it is 85×55 mm. Pick the size that matches where you will print; both downloads include bleed so the design runs cleanly to the edge."
+    },
+    {
+      "q": "Will every detail be spelled correctly?",
+      "a": "PiCraft is instructed to copy your text exactly, but always proofread your name, phone number and email before ordering. If something is off, generate the card again."
+    },
+    {
+      "q": "Can I add my logo or a QR code?",
+      "a": "No. Your name and company are set as typography in the chosen style. You can add a logo or QR code later in your printer's online editor."
+    },
+    {
+      "q": "Can I make a card for the back side?",
+      "a": "This maker designs the front. For the back, most people use a solid color from the same palette or their logo, which any print shop's editor can add."
+    },
+    {
+      "q": "Which file should I send to the printer?",
+      "a": "Send the PDF with bleed unless your printer asks for another format. The 300 DPI JPG is the same design as an image."
+    },
+    {
+      "q": "What is bleed and why does it matter?",
+      "a": "Bleed is extra artwork beyond the cut line: 0.125 inch in the US size and 3 mm in the European size. It keeps a white edge from showing if the cut is slightly off."
+    },
+    {
+      "q": "How much text can I fit on a card?",
+      "a": "A name, title, company, phone, email, website and address all fit, but every extra line makes the type smaller. Most cards read best with four or five lines."
+    },
+    {
+      "q": "Can I make cards for several people?",
+      "a": "Yes. Generate one card per person with the same style and size. The look is consistent but not identical, so check each result."
+    },
+    {
+      "q": "Is it safe to put my phone number and address on a card?",
+      "a": "Only add details you are happy to share with everyone who receives the card. Leave out your home address unless you need it."
+    }
+  ],
+  "related": [
+    "event-flyer-maker",
+    "linkedin-banner-maker",
+    "sticker-maker"
+  ]
+}

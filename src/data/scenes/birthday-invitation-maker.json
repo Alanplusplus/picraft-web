@@ -1,0 +1,246 @@
+{
+  "slug": "birthday-invitation-maker",
+  "name": "Birthday Invitation Maker",
+  "category": "print",
+  "summary": "Themed birthday invitations for kids and adults, printable at 5×7 or shareable by text.",
+  "badge": "5×7 in print",
+  "indexable": true,
+  "seo": {
+    "title": "Birthday Invitation Maker – Printable & Shareable Invites",
+    "description": "Make a birthday invitation with the name, date and place already on it. Pick a theme, then download a 5×7 in print PDF or an image to send by text.",
+    "h1": "Birthday Invitation Maker",
+    "intro": [
+      "Enter who the party is for, when and where, choose a theme, and PiCraft designs a finished invitation with every detail in place.",
+      "Print it at 5×7 inches for the classroom or send the share image straight to the group chat."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "3:4",
+    "resolution": "1K"
+  },
+  "fields": [
+    {
+      "key": "honoree",
+      "label": "Birthday person",
+      "type": "text",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "Mia"
+    },
+    {
+      "key": "age",
+      "label": "Age or milestone (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 30,
+      "placeholder": "is turning 7!"
+    },
+    {
+      "key": "date",
+      "label": "Date",
+      "type": "text",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "Saturday, March 6"
+    },
+    {
+      "key": "time",
+      "label": "Time (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 40,
+      "placeholder": "2:00 – 5:00 PM"
+    },
+    {
+      "key": "place",
+      "label": "Place",
+      "type": "text",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "Sunny Park Pavilion, 12 Oak Street"
+    },
+    {
+      "key": "rsvp",
+      "label": "RSVP line (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "RSVP to Sarah · 555-0142"
+    },
+    {
+      "key": "theme",
+      "label": "Theme",
+      "type": "select",
+      "default": "party",
+      "options": [
+        {
+          "value": "party",
+          "label": "Balloons & confetti",
+          "prompt": "bright, fun party design with balloons, confetti and playful rounded lettering"
+        },
+        {
+          "value": "unicorn",
+          "label": "Unicorn & rainbow",
+          "prompt": "pastel unicorn and rainbow theme with sparkles, stars and fluffy clouds"
+        },
+        {
+          "value": "dinosaur",
+          "label": "Dinosaur adventure",
+          "prompt": "friendly cartoon dinosaurs in a jungle, greens and oranges, chunky playful lettering"
+        },
+        {
+          "value": "space",
+          "label": "Outer space",
+          "prompt": "outer space theme with rockets, planets and stars on a deep navy background, bold rounded lettering"
+        },
+        {
+          "value": "elegant",
+          "label": "Elegant black & gold",
+          "prompt": "elegant adult birthday design in black and gold with art deco accents and champagne glasses, refined serif lettering"
+        },
+        {
+          "value": "floral",
+          "label": "Soft floral",
+          "prompt": "soft watercolor florals in blush and sage with graceful script lettering"
+        },
+        {
+          "value": "safari",
+          "label": "Safari jungle",
+          "prompt": "playful safari jungle theme with lions, giraffes and tropical leaves, warm earth tones and bold rounded lettering"
+        },
+        {
+          "value": "mermaid",
+          "label": "Under the sea",
+          "prompt": "under-the-sea mermaid theme with shells, starfish and coral in aqua and lavender, whimsical script lettering"
+        },
+        {
+          "value": "retro",
+          "label": "Retro arcade",
+          "prompt": "retro arcade game theme with pixel hearts, joystick icons and neon colors on dark background, chunky 8-bit lettering"
+        },
+        {
+          "value": "watercolor",
+          "label": "Watercolor splash",
+          "prompt": "abstract watercolor splash design with vibrant color washes and modern brush-script lettering"
+        }
+      ]
+    }
+  ],
+  "prompt": "Design a printable birthday party invitation card in portrait orientation, shown flat and front-on, filling the entire image edge to edge. It is the artwork itself, not a mockup: no table, no envelope, no hands, no drop shadow.\nTheme: {{theme}}.\nThe card contains exactly the following text and nothing else, each item on its own line, spelled exactly as written:\n\"You're invited!\"\n\"{{honoree}}\"\n[[\"{{age}}\"]]\n\"{{date}}\"\n[[\"{{time}}\"]]\n\"{{place}}\"\n[[\"{{rsvp}}\"]]\nThe birthday person's name is the largest text. All text perfectly legible and well inside the card, with margins of at least 8% on every side so nothing is trimmed when printed. Print-quality detail.",
+  "outputs": [
+    {
+      "id": "share",
+      "label": "Share image 1080×1500 JPG",
+      "width": 1080,
+      "height": 1500,
+      "format": "jpg",
+      "dpi": 72,
+      "preview": true
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF 5×7 in with 0.125 in bleed",
+      "widthIn": 5,
+      "heightIn": 7,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "pdf"
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG 5×7 in with bleed, 300 DPI",
+      "widthIn": 5,
+      "heightIn": 7,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "jpg"
+    }
+  ],
+  "specs": {
+    "heading": "Birthday invitation sizes",
+    "columns": [
+      "Use",
+      "Size"
+    ],
+    "rows": [
+      [
+        "Printed card",
+        "5×7 in finished, 5.25×7.25 in with bleed, 300 DPI"
+      ],
+      [
+        "Home printing",
+        "Print the JPG at 100% on 8.5×11 in card stock, then trim"
+      ],
+      [
+        "Text message / WhatsApp",
+        "1080×1500 px JPG"
+      ],
+      [
+        "Envelope",
+        "A7 (5¼×7¼ in)"
+      ]
+    ],
+    "notes": [
+      "Proofread the name, date, time and address before sending."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Add the party details",
+      "description": "Name, age, date, place and how to RSVP."
+    },
+    {
+      "title": "Pick a theme",
+      "description": "From balloons and dinosaurs to elegant black and gold."
+    },
+    {
+      "title": "Send or print",
+      "description": "Share the image by text or print the 5×7 in PDF."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I print invitations at home?",
+      "a": "Yes. Print the 5×7 in JPG at actual size on card stock and trim along the edges. Two invitations fit on one 8.5×11 in sheet if you place them side by side in any photo printing app."
+    },
+    {
+      "q": "What if a detail is misspelled?",
+      "a": "Generate again. Always proofread before printing or sending; each generation produces a fresh design."
+    },
+    {
+      "q": "Can I use a photo of the birthday child?",
+      "a": "No. This maker designs illustrated invitations without photos, which keeps the text layout reliable."
+    },
+    {
+      "q": "Can I change the \"You're invited!\" line?",
+      "a": "The opening line is fixed. Use the place or RSVP field for extra words, or add your own wording in an image editor after you download the card."
+    },
+    {
+      "q": "What size are the invitations?",
+      "a": "The printed card is 5×7 inches, and the print PDF adds a 0.125 inch bleed. The share image is 1080×1500 px for phones."
+    },
+    {
+      "q": "How do I send it by text or WhatsApp?",
+      "a": "Download the share image and attach it like any photo. It is sized for phones, and the text stays readable on a small screen."
+    },
+    {
+      "q": "Should I put the address on the invitation?",
+      "a": "For private invitations, include it. If the invitation will be posted in a public group, share the exact address only with guests who reply."
+    },
+    {
+      "q": "Can I make an invitation for an adult birthday?",
+      "a": "Yes. Choose elegant black & gold, soft floral or watercolor splash, and write the milestone in the age field."
+    },
+    {
+      "q": "How many invitations should I print?",
+      "a": "Print a few more than your guest list to cover late additions and mistakes. Small print runs are inexpensive at most print shops."
+    }
+  ],
+  "related": [
+    "wedding-invitation-maker",
+    "event-flyer-maker",
+    "sticker-maker"
+  ]
+}

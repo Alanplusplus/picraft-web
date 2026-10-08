@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Business Card Maker works",
+    "paragraphs": [
+      "Enter your name and, if you want them on the card, your job title, company, phone number, email, website and address. Choose one of ten styles and a size. PiCraft designs the front of the card with your details typeset and aligned, in the proportions of a US or European business card.",
+      "The design keeps all text inside a safe area in the middle of the card, with only background or decoration in the outer margins. That is what protects your details from the trimming that happens at the print shop.",
+      "You download a print PDF with bleed, a JPG of the same print file at 300 DPI, and a smaller web image for your email signature, profile or website."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "Print PDF with bleed",
+      "description": "A US 3.5×2 inch card with 0.125 inch bleed, or a European 85×55 mm card with 3 mm bleed, at 300 DPI."
+    },
+    {
+      "title": "Print JPG at 300 DPI",
+      "description": "The same file as a JPG for printers and online editors that do not accept PDFs."
+    },
+    {
+      "title": "A web image",
+      "description": "A JPG of the card for email signatures, social profiles, a website or a digital business card."
+    },
+    {
+      "title": "Ten styles",
+      "description": "Clean minimal, corporate navy, black and gold, tech dark, vintage letterpress and more."
+    },
+    {
+      "title": "A safe text area",
+      "description": "Text stays well inside the card, away from the edges that get trimmed."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Freelancers and consultants",
+      "description": "Get a professional card before your first client meeting without hiring a designer."
+    },
+    {
+      "title": "Small businesses and shops",
+      "description": "Create cards for the counter, for packages and for local events."
+    },
+    {
+      "title": "Job seekers and students",
+      "description": "Hand out a card at career fairs and networking events that carries your name and contact details."
+    },
+    {
+      "title": "Real estate and sales teams",
+      "description": "Give every team member a card with the same style and different names."
+    },
+    {
+      "title": "Events and conferences",
+      "description": "Make a quick card before a trade show, with your email and website ready to share."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Include only what you want people to use",
+      "description": "Name, title, one phone number, one email and a website is enough. A crowded card is harder to read."
+    },
+    {
+      "title": "Spell and type everything carefully",
+      "description": "The card repeats your text. Double-check phone numbers, email addresses and the website in the form before you generate."
+    },
+    {
+      "title": "Choose the size for where you print",
+      "description": "Pick US & Canada if you print in North America and Europe (85×55 mm) for most of Europe. The two sizes have different proportions."
+    },
+    {
+      "title": "Match the style to your work",
+      "description": "Corporate navy and clean minimal suit professional services, creative studio and bold typographic suit design and media."
+    },
+    {
+      "title": "Use a short job title",
+      "description": "\"Brand Designer\" is easy to place and read. A long title can crowd the name."
+    },
+    {
+      "title": "Leave out the address if you don't need it",
+      "description": "An address makes the layout busier. If most clients contact you online, skip it."
+    },
+    {
+      "title": "Order a small test batch",
+      "description": "Print a handful first to check the color, the stock and the readability, then order the full run."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a card style",
+    "intro": "Style sets the color, the typography and the feel of the card. These are the ten options.",
+    "items": [
+      { "title": "Clean minimal", "description": "White space, thin type and one accent color. Fits designers, consultants and most professions." },
+      { "title": "Modern geometric", "description": "Bold color blocks and an asymmetric layout. Fits agencies, architects and creative services." },
+      { "title": "Corporate navy", "description": "Navy and grey with a clear grid. Fits finance, legal, insurance and B2B." },
+      { "title": "Elegant ivory", "description": "Fine serif type on soft ivory with a thin gold rule. Fits planners, boutiques and studios." },
+      { "title": "Black & gold", "description": "A black card with gold-style type. Fits luxury, hospitality and premium services." },
+      { "title": "Creative studio", "description": "Bright colors and a hand-drawn accent. Fits illustrators, makers and creative agencies." },
+      { "title": "Natural green", "description": "Soft green with a leaf line illustration. Fits wellness, gardening and sustainable brands." },
+      { "title": "Tech dark", "description": "Dark gradient with teal and violet accents. Fits startups, developers and tech services." },
+      { "title": "Vintage letterpress", "description": "Cream stock, deep red ink and classic serif type. Fits cafés, bakeries and craft brands." },
+      { "title": "Bold typographic", "description": "An oversized name in black and yellow. Fits creators, photographers and brands that want to be remembered." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you send the card to print",
+    "items": [
+      "Read your name, phone number, email and website character by character.",
+      "Call the number and send a test email to the address to confirm they are the ones printed.",
+      "Choose the file size that matches your printer: US & Canada or Europe.",
+      "Upload the PDF with bleed unless your printer asks for a different format.",
+      "Check your printer's template and safe zone, and compare it with the card.",
+      "Ask your printer for a proof, or order a small test batch, before a big order.",
+      "Keep text at least 3 mm (0.125 inch) inside the trim line if you edit the card later."
+    ]
+  },
+  "limits": [
+    "The maker designs the front of the card. Use a solid color or your logo for the back in your printer's editor.",
+    "It does not add a logo, photo or QR code. Add those in your printer's online editor or an image editor.",
+    "Fine print can be too small to read on a 3.5×2 inch card, so avoid long addresses and taglines.",
+    "The text is part of the image, so a change means generating again.",
+    "Printers have their own templates and safe zones, so always check the one you use."
+  ]
+}

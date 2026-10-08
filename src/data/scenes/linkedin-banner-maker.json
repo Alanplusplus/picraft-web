@@ -1,0 +1,214 @@
+{
+  "slug": "linkedin-banner-maker",
+  "name": "LinkedIn Banner Maker",
+  "category": "creators",
+  "summary": "1584×396 LinkedIn background banners that leave room for your profile photo.",
+  "badge": "1584×396",
+  "indexable": true,
+  "seo": {
+    "title": "LinkedIn Banner Maker – 1584×396 Background Photos",
+    "description": "Create a LinkedIn background banner at exactly 1584×396 px. Add your name and headline, pick a look, and keep the area behind your profile photo clear.",
+    "h1": "LinkedIn Banner Maker",
+    "intro": [
+      "Your LinkedIn banner is the widest piece of real estate on your profile. PiCraft designs one at the exact 1584×396 px size with your name and headline placed where they stay visible.",
+      "The left side is kept calm on purpose: that's where your profile photo sits on desktop and mobile."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "nano-banana-2-1",
+    "aspectRatio": "4:1",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "name",
+      "label": "Name or brand",
+      "type": "text",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "Priya Raman"
+    },
+    {
+      "key": "headline",
+      "label": "Headline (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "Product designer · Helping fintech teams ship faster"
+    },
+    {
+      "key": "visual",
+      "label": "Look",
+      "type": "select",
+      "default": "gradient",
+      "options": [
+        {
+          "value": "gradient",
+          "label": "Soft gradient",
+          "prompt": "a smooth, modern abstract gradient with subtle flowing shapes"
+        },
+        {
+          "value": "tech",
+          "label": "Abstract tech",
+          "prompt": "an abstract technology background with fine network lines and soft glowing nodes"
+        },
+        {
+          "value": "city",
+          "label": "City skyline",
+          "prompt": "a stylized city skyline at golden hour, softly blurred"
+        },
+        {
+          "value": "nature",
+          "label": "Calm nature",
+          "prompt": "a calm, wide nature landscape with mountains and soft morning light"
+        },
+        {
+          "value": "workspace",
+          "label": "Desk & workspace",
+          "prompt": "a bright, minimal desk workspace scene photographed from above, softly out of focus"
+        },
+        {
+          "value": "geometric",
+          "label": "Geometric shapes",
+          "prompt": "bold geometric shapes in a modern abstract pattern with clean lines and a professional color palette"
+        },
+        {
+          "value": "ocean",
+          "label": "Ocean & waves",
+          "prompt": "a calm ocean horizon with gentle waves and a sunrise, peaceful and professional mood"
+        },
+        {
+          "value": "dark",
+          "label": "Dark & premium",
+          "prompt": "a premium dark background with subtle metallic or gradient accents and elegant lighting"
+        },
+        {
+          "value": "bokeh",
+          "label": "Soft bokeh lights",
+          "prompt": "soft, warm bokeh light circles on a gently blurred background, ambient and professional"
+        },
+        {
+          "value": "minimalist",
+          "label": "Solid color block",
+          "prompt": "a clean solid color block design with a subtle duo-tone split, flat and modern"
+        }
+      ]
+    },
+    {
+      "key": "color",
+      "label": "Colors (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 40,
+      "placeholder": "navy and teal"
+    }
+  ],
+  "prompt": "Design a LinkedIn profile background banner, a very wide 4:1 landscape image.\nVisual: {{visual}}.\n[[Color palette: {{color}}.]]\nText, in a clean modern sans-serif, spelled exactly as written: \"{{name}}\"[[ with the smaller line \"{{headline}}\" beneath it]]. Place the text in the right half of the banner, vertically centered.\nKeep the left third calm and free of text or important details, because the profile photo covers the lower-left area. Professional and uncluttered. No logos, no other text, no watermark.",
+  "outputs": [
+    {
+      "id": "banner",
+      "label": "LinkedIn banner 1584×396 JPG",
+      "width": 1584,
+      "height": 396,
+      "format": "jpg",
+      "dpi": 72,
+      "maxBytes": 7500000,
+      "preview": true
+    },
+    {
+      "id": "retina",
+      "label": "High-res 3168×792 JPG",
+      "width": 3168,
+      "height": 792,
+      "format": "jpg",
+      "dpi": 72,
+      "maxBytes": 7500000
+    }
+  ],
+  "specs": {
+    "heading": "LinkedIn background photo specs",
+    "columns": [
+      "Requirement",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Recommended size",
+        "1584×396 px (4:1)"
+      ],
+      [
+        "File types",
+        "JPG or PNG"
+      ],
+      [
+        "Maximum file size",
+        "8 MB"
+      ],
+      [
+        "Profile photo overlap",
+        "Lower-left area on desktop, center-left on mobile"
+      ]
+    ],
+    "notes": [
+      "LinkedIn crops the banner slightly differently on mobile, so PiCraft keeps text in the right half."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Enter your name and headline",
+      "description": "Or your company name and tagline."
+    },
+    {
+      "title": "Choose a look",
+      "description": "Gradient, tech, skyline, nature or workspace, in your colors."
+    },
+    {
+      "title": "Upload to LinkedIn",
+      "description": "Edit your profile, click the camera icon on the banner and upload the JPG."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size is a LinkedIn banner?",
+      "a": "LinkedIn recommends 1584×396 px, a 4:1 ratio, as a JPG or PNG up to 8 MB. PiCraft exports that exact size plus a 3168×792 px version at twice the size."
+    },
+    {
+      "q": "Why is the text on the right?",
+      "a": "Your profile photo covers the lower-left part of the banner, so text placed there gets hidden."
+    },
+    {
+      "q": "Does it work for LinkedIn company pages?",
+      "a": "No. Company pages use a different, wider cover size, so this maker is built for personal profiles. Check LinkedIn's current specifications for the cover size of a Page."
+    },
+    {
+      "q": "Can I leave the text out?",
+      "a": "The name field is required so the banner has a focal point, but you can enter a short slogan instead of your name."
+    },
+    {
+      "q": "Will my profile photo cover the text?",
+      "a": "The text is placed in the right half, away from the profile photo. LinkedIn crops the banner differently on mobile, so check your profile on both a phone and a computer after you upload."
+    },
+    {
+      "q": "How long should the headline be?",
+      "a": "Under 60 characters keeps the text large enough to read. Write a short line about what you do and who you help."
+    },
+    {
+      "q": "Can I use my brand colors?",
+      "a": "Yes. Type colors such as \"navy and teal\" in the colors field. For an exact hex code, name the closest color and fine-tune it in an image editor."
+    },
+    {
+      "q": "How do I change my banner on LinkedIn?",
+      "a": "Open your profile, click the camera icon on the banner, choose Change photo and upload the JPG. Reposition it in the editor if you need to."
+    },
+    {
+      "q": "Does the banner include a photo or logo?",
+      "a": "No. It is a designed background with your name and headline. Add your photo and logo to your profile separately."
+    }
+  ],
+  "related": [
+    "youtube-thumbnail-maker",
+    "business-card-maker",
+    "book-cover-maker"
+  ]
+}

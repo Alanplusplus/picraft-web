@@ -1,0 +1,224 @@
+{
+  "slug": "youtube-thumbnail-maker",
+  "name": "YouTube Thumbnail Maker",
+  "category": "creators",
+  "summary": "Click-worthy 1280×720 thumbnails with bold headline text, optionally featuring your face.",
+  "badge": "1280×720",
+  "indexable": true,
+  "seo": {
+    "title": "YouTube Thumbnail Maker – 1280×720 Bold-Text Thumbnails",
+    "description": "Describe your video and headline, add your photo if you like, and get a YouTube thumbnail at exactly 1280×720 px, under 2 MB and ready to upload.",
+    "h1": "YouTube Thumbnail Maker",
+    "intro": [
+      "Tell PiCraft what the video is about and the words you want on the thumbnail. It designs a high-contrast image with one clear focal point that stays readable on a phone.",
+      "Add a photo of yourself or your product to put it front and center. The file comes out at 1280×720 px and under 2 MB, small enough to upload from the YouTube app or a computer."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "16:9",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "headline",
+      "label": "Thumbnail text",
+      "type": "text",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "I TRIED 30 DAYS OF COLD PLUNGES",
+      "help": "Short is better: 2–5 words read best at thumbnail size."
+    },
+    {
+      "key": "topic",
+      "label": "What is the video about?",
+      "type": "textarea",
+      "required": true,
+      "maxLength": 300,
+      "rows": 3,
+      "placeholder": "A month-long cold plunge challenge: icy bath in a snowy backyard, me shivering but grinning."
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "bold",
+      "options": [
+        {
+          "value": "bold",
+          "label": "Bold & high contrast",
+          "prompt": "bold, high-contrast YouTube style with saturated colors, dramatic lighting, a subtle outline around the subject and a clear focal point"
+        },
+        {
+          "value": "clean",
+          "label": "Clean & minimal",
+          "prompt": "clean minimal style with generous negative space, soft studio light and a modern heavy sans-serif headline"
+        },
+        {
+          "value": "cinematic",
+          "label": "Cinematic",
+          "prompt": "cinematic movie-poster look with moody color grading, depth of field and atmospheric light"
+        },
+        {
+          "value": "playful",
+          "label": "Playful cartoon",
+          "prompt": "playful cartoon-inspired style with bright colors, thick outlines and sticker-like accents"
+        },
+        {
+          "value": "vlog",
+          "label": "Warm vlog",
+          "prompt": "warm, inviting vlog style with soft golden light, natural tones and a friendly, readable sans-serif headline"
+        },
+        {
+          "value": "tech_review",
+          "label": "Tech review",
+          "prompt": "sleek tech review style with a dark gradient background, product spotlight lighting and a futuristic sans-serif headline"
+        },
+        {
+          "value": "horror",
+          "label": "Dark & eerie",
+          "prompt": "dark, eerie horror-style with deep shadows, unsettling color grading and a distressed or dripping headline font"
+        },
+        {
+          "value": "retro_gaming",
+          "label": "Retro gaming",
+          "prompt": "retro gaming style with pixel elements, CRT scanline effects, bright neon colors and a chunky pixel headline"
+        },
+        {
+          "value": "fitness",
+          "label": "Fitness & energy",
+          "prompt": "high-energy fitness style with dynamic action lines, neon green or orange accents on dark background and a powerful bold headline"
+        },
+        {
+          "value": "travel",
+          "label": "Travel & explore",
+          "prompt": "travel and exploration style with a stunning landscape backdrop, cinematic color palette and an adventurous brushy headline"
+        }
+      ]
+    },
+    {
+      "key": "photo",
+      "label": "Your face or product (optional)",
+      "type": "image",
+      "required": false,
+      "help": "A clear, well-lit photo. Your likeness is kept as is."
+    }
+  ],
+  "prompt": "Design a YouTube video thumbnail, 16:9 landscape, for a video about: {{topic}}\nVisual style: {{style}}.\nLarge, bold, highly legible headline text reading exactly \"{{headline}}\", spelled exactly as written, at most two lines, placed in the left or right third with strong contrast against the background.\n[[Feature the person or product from {{photo}} prominently with an expressive, attention-grabbing pose or angle, keeping their face and identity exactly the same.]]\nOne clear focal point that reads instantly on a small phone screen. Keep text and faces away from the bottom-right corner, where YouTube shows the video length. No other text, no YouTube logo, no watermark.",
+  "outputs": [
+    {
+      "id": "thumbnail",
+      "label": "YouTube thumbnail 1280×720 JPG (under 2 MB)",
+      "width": 1280,
+      "height": 720,
+      "format": "jpg",
+      "dpi": 72,
+      "maxBytes": 1900000,
+      "preview": true
+    },
+    {
+      "id": "hd",
+      "label": "Full HD 1920×1080 JPG",
+      "width": 1920,
+      "height": 1080,
+      "format": "jpg",
+      "dpi": 72
+    }
+  ],
+  "specs": {
+    "heading": "YouTube thumbnail requirements",
+    "columns": [
+      "Requirement",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Resolution",
+        "As large as possible; YouTube recommends 3840×2160 px, and 1280×720 px is a common working size"
+      ],
+      [
+        "Minimum width",
+        "640 px"
+      ],
+      [
+        "Aspect ratio",
+        "16:9 for standard videos"
+      ],
+      [
+        "File types",
+        "JPG or PNG"
+      ],
+      [
+        "Maximum file size",
+        "2 MB when uploading from mobile, 50 MB from a computer"
+      ]
+    ],
+    "notes": [
+      "PiCraft's 1280×720 px file stays under 2 MB, so it uploads from mobile and desktop. The 1920×1080 px file can be larger than 2 MB, so upload it from a computer.",
+      "YouTube overlays the video length in the bottom-right corner, so PiCraft keeps text and faces out of that area.",
+      "Custom thumbnails require a verified YouTube account."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Describe the video",
+      "description": "Write the thumbnail text and a sentence about what happens in the video."
+    },
+    {
+      "title": "Add your photo (optional)",
+      "description": "Put your face or product in the thumbnail."
+    },
+    {
+      "title": "Upload to YouTube",
+      "description": "Download the 1280×720 JPG and set it as the custom thumbnail in YouTube Studio."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is the thumbnail the right size?",
+      "a": "The main file is 1280×720 px, 16:9, as a JPG under 2 MB. YouTube recommends uploading the largest 16:9 image you can, with a minimum width of 640 px and a 2 MB limit when you upload from mobile. The 1920×1080 px version gives you more resolution for uploads from a computer."
+    },
+    {
+      "q": "Can I use my own face?",
+      "a": "Yes. Upload a clear photo and the design features you prominently while keeping your likeness."
+    },
+    {
+      "q": "How long should the text be?",
+      "a": "2–5 words is ideal. Long sentences become unreadable at the size thumbnails appear in search and suggested videos."
+    },
+    {
+      "q": "Can I make thumbnails for Shorts?",
+      "a": "This maker creates 16:9 thumbnails for regular videos. YouTube recommends a vertical 9:16 image for Shorts thumbnails, which you add in YouTube Studio on a computer, so this maker is not the right tool for them."
+    },
+    {
+      "q": "Do I need a verified YouTube account?",
+      "a": "Yes. YouTube only allows custom thumbnails on verified accounts. If the option is missing in YouTube Studio, verify your account first."
+    },
+    {
+      "q": "Why is the bottom-right corner empty?",
+      "a": "YouTube shows the video length there, and it would cover any text or face placed in that corner, so the design keeps it clear."
+    },
+    {
+      "q": "How do I upload the thumbnail?",
+      "a": "In YouTube Studio, open Content, choose the video, and under Thumbnail click Upload file. Pick the downloaded JPG and save."
+    },
+    {
+      "q": "Can I test different thumbnails?",
+      "a": "Yes. Generate a few versions of the same video and try them one at a time, giving each enough time to collect views before you compare."
+    },
+    {
+      "q": "Can I use someone else's photo?",
+      "a": "Only with their permission. Use photos of yourself, your team or products you own, and don't upload pictures of other people without their consent."
+    },
+    {
+      "q": "Will the thumbnail look like me?",
+      "a": "Usually it keeps your likeness, but AI can alter small features. Check your face closely and generate again if it looks off."
+    }
+  ],
+  "related": [
+    "linkedin-banner-maker",
+    "book-cover-maker",
+    "event-flyer-maker"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Restaurant Menu Maker works",
+    "paragraphs": [
+      "Paste your menu the way you would write it on a notepad: one line per dish, with an optional description and a price. Enter the restaurant name and a tagline, choose a style and a paper size, and PiCraft lays the menu out as a one-page design.",
+      "Lines without a price become section headings, so you can group dishes under Starters, Mains and Desserts just by adding a line. Dish names are set prominently, descriptions smaller, and prices aligned consistently.",
+      "The model is told to keep every name, description and price exactly as you wrote it. You still have to read the result carefully, because a wrong price on a printed menu is expensive."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "Print PDF with bleed",
+      "description": "US Letter with 0.125 inch bleed or A4 with 3 mm bleed, at 300 DPI, ready to send to a printer."
+    },
+    {
+      "title": "A print JPG",
+      "description": "The same print file as a JPG for services and shops that prefer images."
+    },
+    {
+      "title": "A web image",
+      "description": "A 150 DPI JPG for your website, your Google Business Profile, social posts and delivery apps."
+    },
+    {
+      "title": "Ten restaurant styles",
+      "description": "Bistro, modern, rustic, street food, fine dining, chalkboard, tropical café, Japanese zen, retro diner and wine bar."
+    },
+    {
+      "title": "Your wording, kept as written",
+      "description": "Dish names, descriptions and prices are copied from your text, with section headings from lines that have no price."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Restaurants and cafés",
+      "description": "Create a table menu, a window menu or a new seasonal menu without waiting for a designer."
+    },
+    {
+      "title": "Food trucks and pop-ups",
+      "description": "Make a bold, simple menu for a stall or an event, with the street food style."
+    },
+    {
+      "title": "Bars and wine lists",
+      "description": "Lay out a short drinks or wine list, one page at a time."
+    },
+    {
+      "title": "Delivery and online menus",
+      "description": "Use the web image on your site or on a delivery platform page as a quick overview."
+    },
+    {
+      "title": "Catering and private events",
+      "description": "Make a one-off menu for a dinner, a wedding or a company event."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Write one dish per line",
+      "description": "Use a consistent pattern such as name – description – price, so the layout stays clean."
+    },
+    {
+      "title": "Use a separator the same way every time",
+      "description": "An en dash or a vertical bar between name, description and price helps the model split the line."
+    },
+    {
+      "title": "Add section headings as lines without prices",
+      "description": "\"Starters\", \"Mains\" and \"Desserts\" on their own lines become headings."
+    },
+    {
+      "title": "Keep descriptions short",
+      "description": "Three to six words per dish. Long descriptions make the page crowded."
+    },
+    {
+      "title": "Stay within about 14 lines",
+      "description": "More lines mean smaller type. For a longer menu, make one page per section, such as food and drinks."
+    },
+    {
+      "title": "Include the currency symbol",
+      "description": "Type $14, €12 or 14 as you want it shown. The price appears exactly as written."
+    },
+    {
+      "title": "Proofread every price",
+      "description": "Compare the generated menu with your price list line by line, and generate again if anything is wrong."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a menu style",
+    "intro": "The style sets the background, the type and the atmosphere of the menu.",
+    "items": [
+      { "title": "Classic bistro", "description": "Warm, traditional and neat. Fits cafés, bistros and brasseries." },
+      { "title": "Modern minimal", "description": "Light, airy and simple. Fits contemporary restaurants and brunch spots." },
+      { "title": "Rustic farmhouse", "description": "Natural textures and warm tones. Fits farm-to-table and country restaurants." },
+      { "title": "Street food", "description": "Bold, casual and colorful. Fits food trucks, stalls and takeaways." },
+      { "title": "Fine dining", "description": "Elegant type and generous space. Fits tasting menus and upscale restaurants." },
+      { "title": "Chalkboard", "description": "A hand-lettered look on dark slate. Fits cafés, pubs and bakeries." },
+      { "title": "Tropical café", "description": "Leaves and bright color. Fits juice bars, beach cafés and brunch places." },
+      { "title": "Japanese zen", "description": "Calm and restrained. Fits sushi, ramen and Asian fusion restaurants." },
+      { "title": "Retro diner", "description": "Bold color and mid-century type. Fits diners, burger places and ice cream parlors." },
+      { "title": "Wine bar", "description": "Deep colors and refined type. Fits wine bars, tapas places and lounges." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you print or publish the menu",
+    "items": [
+      "Check every dish name, description and price against your master menu.",
+      "Check the spelling of ingredients, especially words in other languages.",
+      "Add any allergen information or notices that your local rules require, in your printer's editor or in a note on the page.",
+      "Choose the paper size that matches your printer: US Letter or A4.",
+      "Send the PDF with bleed to the printer, and ask for the correct trim size.",
+      "Print one test copy and read it under the lighting of your restaurant.",
+      "Update the web image on your website, Google Business Profile and delivery apps whenever prices change."
+    ]
+  },
+  "limits": [
+    "A menu page holds about 14 lines. Longer menus need separate pages.",
+    "It does not add a logo or photos of dishes. The restaurant name is set as typography in the chosen style.",
+    "Local rules can require allergen and calorie information on menus. PiCraft does not add them for you.",
+    "The text is part of the image, so a price change means generating again.",
+    "Very small print can be hard to read. Keep each line short."
+  ]
+}

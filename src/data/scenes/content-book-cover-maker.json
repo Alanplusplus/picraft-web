@@ -1,0 +1,130 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Book Cover Maker works",
+    "paragraphs": [
+      "Enter the title, an optional subtitle or series line, and the author name. Choose a genre and, if you have one, describe the cover image you imagine. PiCraft designs a front cover that follows the visual conventions of that genre, with the title large enough to read as a thumbnail in search results.",
+      "Genre matters because readers recognize a book's category in a fraction of a second. A thriller in pastel watercolor, or a romance in dark metallic type, sends the wrong signal and can lose the readers it was written for.",
+      "You download a 1600×2560 px eBook cover that matches Kindle's ideal size, and a 6.125×9.25 inch front cover at 300 DPI that includes bleed for a 6×9 inch paperback."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "1600×2560 px eBook cover",
+      "description": "A JPG at the ideal Kindle cover size and the 1:1.6 ratio, in RGB."
+    },
+    {
+      "title": "6×9 inch front cover with bleed",
+      "description": "A 6.125×9.25 inch image at 300 DPI, with bleed on the outer, top and bottom edges, for use as the front panel of a paperback cover."
+    },
+    {
+      "title": "Genre-appropriate design",
+      "description": "Ten genres, from fantasy and thriller to memoir and children's books, each with its own look."
+    },
+    {
+      "title": "Title, subtitle and author",
+      "description": "Type is set large and legible, with the title dominant and the author name clear."
+    },
+    {
+      "title": "Your cover idea",
+      "description": "Describe a scene or symbol and the cover is built around it."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Self-published Kindle books",
+      "description": "Get a first professional-looking cover for a novel, a short story collection or a nonfiction title."
+    },
+    {
+      "title": "Series branding",
+      "description": "Use the same genre and similar wording on each book so a series looks related."
+    },
+    {
+      "title": "Lead magnets and short reads",
+      "description": "Make an eBook cover for a free guide, a workbook or a newsletter bonus."
+    },
+    {
+      "title": "Concept testing",
+      "description": "Compare a few cover directions before you commission a designer or order a final print."
+    },
+    {
+      "title": "Draft covers for paperbacks",
+      "description": "Produce the front panel for a designer or a printer template, and add the back cover and spine afterwards."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Choose the genre honestly",
+      "description": "Readers browse by genre. Pick the one your book fits, not the one that sounds most impressive."
+    },
+    {
+      "title": "Use a short title",
+      "description": "Short titles can be set larger. If your title is long, put the extra words in the subtitle."
+    },
+    {
+      "title": "Describe one strong image",
+      "description": "\"A lighthouse on a cliff at night, a girl with a lantern at its base\" gives a clear central picture. Lists of many objects make covers busy."
+    },
+    {
+      "title": "Test it at thumbnail size",
+      "description": "Shrink the image to about 160 px tall. The title should still read, and the image should still be recognizable."
+    },
+    {
+      "title": "Keep the series line short",
+      "description": "A subtitle such as \"Book One of the Tidewater Saga\" works because it is brief."
+    },
+    {
+      "title": "Look at covers in your category",
+      "description": "Search your genre on Amazon and compare. Your cover should feel at home on that page while still standing out."
+    },
+    {
+      "title": "Generate more than once",
+      "description": "Each generation is a different design. Try a few and choose the one that is both beautiful and clear."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a genre",
+    "intro": "Each genre follows the cues readers expect, such as the colors, the type style and the kind of image.",
+    "items": [
+      { "title": "Fantasy", "description": "Rich illustrated scenes, dramatic skies and ornate lettering." },
+      { "title": "Thriller / crime", "description": "Dark tones, strong contrast and bold sans-serif or condensed type." },
+      { "title": "Romance", "description": "Warm, bright covers with an emotional focus and flowing or script type." },
+      { "title": "Science fiction", "description": "Space, technology and cool colors with sleek or futuristic type." },
+      { "title": "Nonfiction / business", "description": "Clean layouts, clear titles and simple graphic images." },
+      { "title": "Literary fiction", "description": "Restrained, artistic covers with a single strong image." },
+      { "title": "Horror / dark", "description": "Shadows, unsettling imagery and a limited palette." },
+      { "title": "Memoir", "description": "Personal, atmospheric images with a quiet, readable title." },
+      { "title": "Children's book", "description": "Colorful illustration, rounded shapes and friendly type." },
+      { "title": "Historical fiction", "description": "Period-appropriate scenes, muted colors and classic type." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you publish the cover",
+    "items": [
+      "Check the spelling of the title, subtitle and author name against your book details.",
+      "Shrink the cover to thumbnail size and confirm the title is readable.",
+      "For a light or white cover, add a thin grey border so it does not disappear on Amazon's white page.",
+      "Make sure you have the right to publish the imagery commercially.",
+      "Confirm you disclose AI-generated content if the store you publish on asks for it.",
+      "For paperbacks, build the full wrap with your printer's template and place the front file as the front panel.",
+      "Keep text at least 0.125 inch inside the trim line of a paperback, as KDP recommends."
+    ]
+  },
+  "limits": [
+    "The maker produces a front cover only. It does not create the spine, back cover or barcode.",
+    "A printed paperback needs a full wrap sized to your page count and paper. Use the printer's template for that.",
+    "KDP requires paperback covers as a single PDF with back, spine and front, so the front file needs to be placed in a template.",
+    "The text is part of the image. To change a word, generate again.",
+    "AI-generated images may not qualify for copyright protection in some countries."
+  ],
+  "sources": [
+    {
+      "label": "Amazon KDP: eBook cover image criteria",
+      "url": "https://kdp.amazon.com/en_US/help/topic/G200645690"
+    },
+    {
+      "label": "Amazon KDP: Create a paperback cover",
+      "url": "https://kdp.amazon.com/en_US/help/topic/G201953020"
+    }
+  ]
+}

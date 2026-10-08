@@ -1,0 +1,257 @@
+{
+  "slug": "event-flyer-maker",
+  "name": "Event Flyer Maker",
+  "category": "print",
+  "summary": "Posters and flyers for parties, gigs and community events, for print and Instagram.",
+  "badge": "Letter · 1080×1350",
+  "indexable": true,
+  "seo": {
+    "title": "Event Flyer Maker – Printable Flyers & Instagram Posts",
+    "description": "Make an event flyer with your event name, date and venue already designed in. Download a US Letter print PDF and a 1080×1350 Instagram version.",
+    "h1": "Event Flyer Maker",
+    "intro": [
+      "Enter the event name, date and place, add a few highlights, and PiCraft designs a complete flyer ready to pin up or post.",
+      "One design, two files: a Letter-size print PDF with bleed and a 4:5 image sized for Instagram and Facebook feeds."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "3:4",
+    "resolution": "1K"
+  },
+  "fields": [
+    {
+      "key": "eventName",
+      "label": "Event name",
+      "type": "text",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "Summer Night Market"
+    },
+    {
+      "key": "tagline",
+      "label": "Tagline (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "Street food, live music & local makers"
+    },
+    {
+      "key": "date",
+      "label": "Date & time",
+      "type": "text",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "Friday, July 18 · 6–11 PM"
+    },
+    {
+      "key": "place",
+      "label": "Venue",
+      "type": "text",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "Riverside Park, 200 Water St"
+    },
+    {
+      "key": "details",
+      "label": "Highlights (optional)",
+      "type": "textarea",
+      "required": false,
+      "maxLength": 200,
+      "maxLines": 4,
+      "rows": 3,
+      "placeholder": "Free entry\n30+ food vendors\nLive DJ"
+    },
+    {
+      "key": "cta",
+      "label": "Call to action (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 60,
+      "placeholder": "More info at nightmarket.org"
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "community",
+      "options": [
+        {
+          "value": "community",
+          "label": "Bright community",
+          "prompt": "friendly community-event style with bright cheerful colors, simple illustrations and rounded sans-serif type"
+        },
+        {
+          "value": "neon",
+          "label": "Neon nightlife",
+          "prompt": "high-energy nightlife style with neon glow on a dark background and bold condensed display type"
+        },
+        {
+          "value": "gig",
+          "label": "Gig poster",
+          "prompt": "gritty music-gig poster style with halftone textures and bold distressed typography"
+        },
+        {
+          "value": "corporate",
+          "label": "Clean professional",
+          "prompt": "clean professional style for a business event, structured grid, one accent color, modern sans-serif"
+        },
+        {
+          "value": "gala",
+          "label": "Elegant gala",
+          "prompt": "elegant gala style with a dark background, gold accents and refined serif typography"
+        },
+        {
+          "value": "festival",
+          "label": "Music festival",
+          "prompt": "vibrant music festival style with psychedelic colors, layered collage elements and bold decorative display type"
+        },
+        {
+          "value": "vintage",
+          "label": "Vintage retro",
+          "prompt": "vintage retro style with faded warm tones, distressed paper texture and old-school typography"
+        },
+        {
+          "value": "sport",
+          "label": "Sports & fitness",
+          "prompt": "dynamic sports style with bold diagonal lines, high-energy colors and athletic condensed sans-serif type"
+        },
+        {
+          "value": "charity",
+          "label": "Warm charity",
+          "prompt": "warm charity appeal style with soft photography, pastel accent colors and friendly rounded sans-serif type"
+        },
+        {
+          "value": "tech",
+          "label": "Tech & startup",
+          "prompt": "modern tech and startup style with dark background, subtle grid patterns, gradient accents and clean geometric sans-serif"
+        }
+      ]
+    }
+  ],
+  "prompt": "Design an event flyer in portrait orientation, shown flat and front-on, filling the entire image edge to edge. It is the artwork itself, not a mockup: no wall, no hands, no drop shadow.\nStyle: {{style}}.\nThe flyer contains exactly the following text and nothing else, spelled exactly as written:\nHeadline, largest: \"{{eventName}}\"\n[[Subheading: \"{{tagline}}\"]]\nDate and time: \"{{date}}\"\nVenue: \"{{place}}\"\n[[Highlights as a short list:\n{{details}}]]\n[[Footer: \"{{cta}}\"]]\nStrong visual hierarchy, perfectly legible from a distance. Keep all text at least 8% away from every edge. Print-quality.",
+  "outputs": [
+    {
+      "id": "instagram",
+      "label": "Instagram / Facebook 1080×1350 JPG",
+      "width": 1080,
+      "height": 1350,
+      "format": "jpg",
+      "dpi": 72,
+      "preview": true
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF 8.5×11 in with 0.125 in bleed",
+      "widthIn": 8.5,
+      "heightIn": 11,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "pdf"
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG 8.5×11 in with bleed",
+      "widthIn": 8.5,
+      "heightIn": 11,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "jpg"
+    },
+    {
+      "id": "story",
+      "label": "Story 1080×1920 JPG",
+      "layout": "sheet",
+      "sheetWidthIn": 3.6,
+      "sheetHeightIn": 6.4,
+      "itemWidthIn": 3.6,
+      "itemHeightIn": 4.5,
+      "dpi": 300,
+      "format": "jpg",
+      "fill": "blur",
+      "guides": false
+    }
+  ],
+  "specs": {
+    "heading": "Flyer and social sizes",
+    "columns": [
+      "Use",
+      "Size"
+    ],
+    "rows": [
+      [
+        "Printed flyer",
+        "8.5×11 in, 0.125 in bleed, 300 DPI"
+      ],
+      [
+        "Instagram / Facebook feed",
+        "1080×1350 px (4:5)"
+      ],
+      [
+        "Stories",
+        "1080×1920 px (9:16), flyer centered"
+      ]
+    ],
+    "notes": [
+      "Large print files are upscaled from the generated design; bold, simple layouts print sharpest."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Add event details",
+      "description": "Name, date, venue and up to four highlights."
+    },
+    {
+      "title": "Choose a style",
+      "description": "Community, nightlife, gig poster, professional or gala."
+    },
+    {
+      "title": "Post and print",
+      "description": "Instagram, Stories and a Letter-size print PDF from one design."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I print flyers at home?",
+      "a": "Yes. Print the JPG or PDF at actual size on US Letter paper. Home printers can't print to the edge, so a thin white margin is normal."
+    },
+    {
+      "q": "What's the best size for Instagram?",
+      "a": "4:5 portrait (1080×1350 px) takes up the most space in the feed. PiCraft exports that size from every flyer."
+    },
+    {
+      "q": "Can I add a QR code?",
+      "a": "No. Put your website in the call to action line, or add a QR code in any image editor afterwards."
+    },
+    {
+      "q": "Will the details be spelled correctly?",
+      "a": "Usually, but always proofread before printing. Generate again if anything is off."
+    },
+    {
+      "q": "Can I make a poster instead of a flyer?",
+      "a": "The design is portrait Letter size. For a larger poster, send the PDF to a shop that can enlarge it, and keep in mind that the print file is upscaled from the generated design."
+    },
+    {
+      "q": "Which file should I post on Instagram?",
+      "a": "Use the 1080×1350 px image for the feed and the 1080×1920 px image for stories."
+    },
+    {
+      "q": "How many highlights can I add?",
+      "a": "Up to four short lines. Put each one on a new line in the highlights box."
+    },
+    {
+      "q": "Can I use it for an online event?",
+      "a": "Yes. Put the platform or link in the venue or call to action line, for example Zoom or your website."
+    },
+    {
+      "q": "Can I add my own logo?",
+      "a": "No. Add it in an image editor after you download the flyer."
+    }
+  ],
+  "related": [
+    "restaurant-menu-maker",
+    "birthday-invitation-maker",
+    "youtube-thumbnail-maker"
+  ]
+}

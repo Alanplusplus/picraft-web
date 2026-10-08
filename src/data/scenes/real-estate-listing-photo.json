@@ -1,0 +1,179 @@
+{
+  "slug": "real-estate-listing-photo",
+  "name": "Real Estate Listing Photo Editor",
+  "category": "photos",
+  "summary": "Brighten, declutter, virtually stage or twilight-convert property photos for MLS.",
+  "badge": "2048×1536 MLS",
+  "indexable": true,
+  "seo": {
+    "title": "Real Estate Photo Editor – Staging, Declutter & Twilight",
+    "description": "Upload a property photo and get a bright, MLS-ready listing image. Declutter rooms, add virtual staging or turn a daytime exterior into a twilight shot.",
+    "h1": "Real Estate Listing Photo Editor",
+    "intro": [
+      "Listing photos decide whether buyers click. Upload a room or exterior shot from your phone and PiCraft returns a bright, straight, professional-looking listing image.",
+      "Choose a simple enhancement, remove clutter, stage an empty room with furniture, or convert a daytime exterior into a warm twilight photo."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "nano-banana-2-1",
+    "aspectRatio": "4:3",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "photo",
+      "label": "Property photo",
+      "type": "image",
+      "required": true,
+      "help": "Landscape photos work best. Shoot from a corner at chest height."
+    },
+    {
+      "key": "edit",
+      "label": "Edit",
+      "type": "select",
+      "default": "enhance",
+      "options": [
+        {
+          "value": "enhance",
+          "label": "Enhance (bright & straight)",
+          "prompt": "Enhance it like a professional real estate photograph: bright, balanced exposure, straightened vertical lines, clean neutral white balance, crisp detail, a pleasant blue sky visible through windows or outdoors. Do not add, remove or change any furniture, fixtures or architecture."
+        },
+        {
+          "value": "declutter",
+          "label": "Declutter",
+          "prompt": "Remove clutter and personal items such as loose papers, cables, toiletries, toys, fridge magnets and laundry, while keeping all furniture, fixtures, walls, floors and architecture exactly the same. Then enhance exposure and white balance like a professional listing photo."
+        },
+        {
+          "value": "stage",
+          "label": "Virtual staging",
+          "prompt": "Virtually stage this empty or sparsely furnished room with tasteful, realistic, modern furniture and decor that suits the room type, correctly scaled and lit to match the room. Keep the walls, windows, floors, doors and all architecture exactly the same."
+        },
+        {
+          "value": "twilight",
+          "label": "Virtual twilight (exterior)",
+          "prompt": "Convert this exterior photo into a virtual twilight shot: deep blue dusk sky with a soft warm glow on the horizon, warm interior lights glowing through the windows and exterior lights on. Keep the building, landscaping and architecture exactly the same."
+        }
+      ]
+    },
+    {
+      "key": "note",
+      "label": "Extra direction (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 120,
+      "placeholder": "Scandinavian style living room, light oak and white"
+    }
+  ],
+  "prompt": "Edit {{photo}} for a property listing.\n{{edit}}\n[[Additional direction: {{note}}.]]\nPhotorealistic, natural real estate photography look with a wide-angle feel. No people, no text, no watermark.",
+  "outputs": [
+    {
+      "id": "mls",
+      "label": "MLS 2048×1536 JPG",
+      "width": 2048,
+      "height": 1536,
+      "format": "jpg",
+      "dpi": 72,
+      "preview": true
+    },
+    {
+      "id": "web",
+      "label": "Web & social 1600×1200 JPG",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "dpi": 72,
+      "maxBytes": 1000000
+    }
+  ],
+  "specs": {
+    "heading": "Listing photo guidelines",
+    "columns": [
+      "Item",
+      "Recommendation"
+    ],
+    "rows": [
+      [
+        "Orientation",
+        "Landscape, 4:3"
+      ],
+      [
+        "Size",
+        "2048×1536 px suits most MLS systems; 1024×768 px is a common minimum"
+      ],
+      [
+        "Format",
+        "JPG, under the MLS file size limit (often 5–10 MB)"
+      ],
+      [
+        "Virtual staging",
+        "Most MLS rules and many state regulations require you to label staged photos"
+      ]
+    ],
+    "notes": [
+      "Keep an unedited original of every photo. If you use virtual staging or decluttering, disclose it in the listing as your MLS requires.",
+      "Edits should never hide defects such as damage, stains or cracks."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Upload a room or exterior",
+      "description": "A straight, well-exposed phone photo gives the best result."
+    },
+    {
+      "title": "Choose the edit",
+      "description": "Enhance, declutter, virtual staging or virtual twilight."
+    },
+    {
+      "title": "Download MLS-ready files",
+      "description": "Get a 2048×1536 MLS image and a lighter 1600×1200 web version."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to disclose virtually staged photos?",
+      "a": "Usually yes. Many MLS systems and some state rules require you to label virtually staged or materially altered images. Check your local MLS rules."
+    },
+    {
+      "q": "Will it change the walls or layout?",
+      "a": "The model is told to keep architecture, windows and floors unchanged. Review each image before publishing to make sure the property is represented accurately."
+    },
+    {
+      "q": "What makes a good source photo?",
+      "a": "Shoot from a corner at chest height with lights on and blinds open. Avoid very dark or blurry photos."
+    },
+    {
+      "q": "Can I edit several rooms?",
+      "a": "Yes. Each photo is a separate generation and uses one credit."
+    },
+    {
+      "q": "What is the difference between declutter and virtual staging?",
+      "a": "Declutter removes loose items from a furnished room. Virtual staging adds furniture and décor to an empty or sparse room. Both change what the photo shows, so label them wherever your rules require it."
+    },
+    {
+      "q": "Can I use virtual twilight on any house?",
+      "a": "It works best on a straight-on exterior with a clear view of the front of the house. Check that the result still matches the real property, including the color of the exterior and the surroundings."
+    },
+    {
+      "q": "What size is the image for the MLS?",
+      "a": "The MLS file is 2048×1536 px (4:3), and the web version is 1600×1200 px under 1 MB. Check your MLS for its own limits on size, number of photos and file weight."
+    },
+    {
+      "q": "Should I keep the original photo?",
+      "a": "Yes. Many MLS rules ask you to provide the unaltered image next to an edited one, and it protects you if a buyer asks what the room really looks like."
+    },
+    {
+      "q": "Can it fix a bad photo?",
+      "a": "It can brighten and straighten a decent photo. It cannot rescue a very dark, blurry or badly tilted picture, so retake those."
+    },
+    {
+      "q": "Can I use it for rentals and vacation homes?",
+      "a": "Yes, the same edits apply. Be honest about anything staged or altered, because misleading photos lead to complaints and poor reviews."
+    }
+  ],
+  "related": [
+    "amazon-product-photo",
+    "event-flyer-maker",
+    "business-card-maker"
+  ]
+}

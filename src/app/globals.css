@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink-950: #0f1115;
+  --color-ink-900: #1b1e24;
+  --color-ink-800: #2a2e36;
+  --color-ink-700: #3d424c;
+  --color-ink-500: #6b717d;
+  --color-ink-400: #9aa0aa;
+  --color-ink-300: #cdd1d8;
+  --color-ink-200: #e4e6ea;
+  --color-ink-100: #f0f1f3;
+  --color-ink-50: #f7f7f8;
+
+  --color-brand-50: #fff4f0;
+  --color-brand-100: #ffe3d9;
+  --color-brand-200: #ffc4b0;
+  --color-brand-500: #ff5a36;
+  --color-brand-600: #e9441f;
+  --color-brand-700: #c23314;
+  --color-brand-800: #9e2810;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink-900);
+}
+
+.checkerboard {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(45deg, var(--color-ink-100) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--color-ink-100) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--color-ink-100) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--color-ink-100) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+}

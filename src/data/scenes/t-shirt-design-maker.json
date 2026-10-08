@@ -1,0 +1,227 @@
+{
+  "slug": "t-shirt-design-maker",
+  "name": "T-Shirt Design Maker",
+  "category": "merch",
+  "summary": "Print-on-demand t-shirt graphics as transparent 4500×5400 PNGs.",
+  "badge": "4500×5400 PNG",
+  "indexable": true,
+  "seo": {
+    "title": "T-Shirt Design Maker – Transparent 4500×5400 PNG",
+    "description": "Turn an idea into a t-shirt graphic with a transparent background at 4500×5400 px (15×18 in at 300 DPI), ready for print-on-demand stores and local printers.",
+    "h1": "T-Shirt Design Maker",
+    "intro": [
+      "Describe the design, add a slogan if you want one, and choose whether it's going on a dark or light shirt. PiCraft creates a print graphic with bold, clean shapes and removes the background.",
+      "Download a 4500×5400 px transparent PNG, a common full-size front print area for print-on-demand platforms."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "3:4",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "idea",
+      "label": "Design idea",
+      "type": "textarea",
+      "required": true,
+      "maxLength": 200,
+      "rows": 3,
+      "placeholder": "A mountain range inside a circle with a camper van driving toward the sunset"
+    },
+    {
+      "key": "text",
+      "label": "Slogan (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 40,
+      "placeholder": "Adventure Awaits"
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "vintage",
+      "options": [
+        {
+          "value": "vintage",
+          "label": "Vintage badge",
+          "prompt": "vintage badge style with distressed texture, limited retro palette and bold outlined lettering"
+        },
+        {
+          "value": "streetwear",
+          "label": "Streetwear",
+          "prompt": "bold streetwear graphic with heavy typography and high-contrast shapes"
+        },
+        {
+          "value": "lineart",
+          "label": "Minimal line art",
+          "prompt": "minimal single-weight line art with clean, even strokes"
+        },
+        {
+          "value": "cute",
+          "label": "Cute illustration",
+          "prompt": "cute, friendly cartoon illustration with thick outlines and flat colors"
+        },
+        {
+          "value": "bold",
+          "label": "Bold graphic",
+          "prompt": "bold graphic illustration with flat colors and strong silhouettes"
+        },
+        {
+          "value": "japanese",
+          "label": "Japanese ink",
+          "prompt": "Japanese sumi-e ink wash style with flowing brush strokes, minimal palette of black and red"
+        },
+        {
+          "value": "grunge",
+          "label": "Grunge texture",
+          "prompt": "grunge textured style with splattered paint, rough edges, layered distress marks and gritty feel"
+        },
+        {
+          "value": "geometric",
+          "label": "Geometric abstract",
+          "prompt": "clean geometric abstract style with precise shapes, flat colors and mathematical symmetry"
+        },
+        {
+          "value": "retro_sports",
+          "label": "Retro sports",
+          "prompt": "retro collegiate sports style with varsity lettering, crossed elements and a vintage athletic badge layout"
+        },
+        {
+          "value": "tattoo",
+          "label": "Traditional tattoo",
+          "prompt": "traditional American tattoo style with bold black outlines, limited palette of red, green, yellow and blue, classic flash art look"
+        }
+      ]
+    },
+    {
+      "key": "shirt",
+      "label": "Shirt color",
+      "type": "select",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Dark shirt",
+          "prompt": "It will be printed on a black or dark shirt: use light, bright colors and avoid black areas that would disappear on the fabric."
+        },
+        {
+          "value": "light",
+          "label": "Light shirt",
+          "prompt": "It will be printed on a white or light shirt: use rich, dark and saturated colors and avoid white areas that would disappear on the fabric."
+        }
+      ]
+    }
+  ],
+  "prompt": "Create a standalone t-shirt print graphic of {{idea}}. It is the artwork only, not a mockup: no shirt, no model, no hanger.\nStyle: {{style}}.\n[[Include the text \"{{text}}\" integrated into the design, spelled exactly as written.]]\n{{shirt}}\nBold, clean shapes and crisp edges suitable for screen or DTG printing, limited color palette.\nCentered, filling about 75% of the frame, on a perfectly flat, uniform medium-light grey background (#C8C8C8) with no shadow, texture or gradient.",
+  "outputs": [
+    {
+      "id": "preview",
+      "label": "Web PNG 1200×1440 (transparent)",
+      "width": 1200,
+      "height": 1440,
+      "format": "png",
+      "dpi": 72,
+      "transparent": true,
+      "preview": true
+    },
+    {
+      "id": "print",
+      "label": "Print PNG 4500×5400 (15×18 in, 300 DPI, transparent)",
+      "width": 4500,
+      "height": 5400,
+      "format": "png",
+      "dpi": 300,
+      "transparent": true
+    }
+  ],
+  "specs": {
+    "heading": "T-shirt print file specs",
+    "columns": [
+      "Item",
+      "Spec"
+    ],
+    "rows": [
+      [
+        "Print file",
+        "4500×5400 px PNG, transparent, 15×18 in at 300 DPI"
+      ],
+      [
+        "Web preview",
+        "1200×1440 px PNG, transparent"
+      ],
+      [
+        "Print-on-demand services",
+        "Merch on Demand, Printful, Printify and Redbubble all accept transparent PNG files"
+      ],
+      [
+        "Shirt color",
+        "Dark or light, which changes the palette so the design keeps its contrast"
+      ]
+    ],
+    "notes": [
+      "Platforms change their file rules for size, color space and file weight, so check your platform's current requirements before uploading.",
+      "The print file is upscaled from the generated design. Flat colors and bold outlines print sharpest at large sizes.",
+      "Only upload designs you have the rights to sell; avoid trademarked phrases and characters."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Describe the design",
+      "description": "The picture you want, plus an optional slogan."
+    },
+    {
+      "title": "Choose style and shirt color",
+      "description": "Colors are tuned so the design stands out on dark or light fabric."
+    },
+    {
+      "title": "Upload to your store",
+      "description": "Download the 4500×5400 transparent PNG for your print-on-demand platform."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size is the file?",
+      "a": "4500×5400 px at 300 DPI (15×18 inches), as a transparent PNG. That is a common full-size front print area on t-shirts and a size many print-on-demand services recommend working at. Check your platform's current rules, because some accept other sizes."
+    },
+    {
+      "q": "Why does shirt color matter?",
+      "a": "Black areas vanish on a black shirt and white areas vanish on a white one, so the palette is adjusted to the fabric."
+    },
+    {
+      "q": "Can I sell shirts with these designs?",
+      "a": "Yes, as long as your description doesn't copy trademarks, logos or existing artwork. Platforms remove infringing listings, so describe an original idea."
+    },
+    {
+      "q": "Is the background really transparent?",
+      "a": "Yes. PiCraft removes the background automatically and exports a PNG with transparency, so only the artwork is printed. Preview it over a dark and a light color to confirm."
+    },
+    {
+      "q": "Does it work with Merch on Demand, Printful and Redbubble?",
+      "a": "Yes, all of them accept transparent PNG files. Their rules change over time, so check each platform's current requirements for size, color space and file weight before you upload."
+    },
+    {
+      "q": "Can I use the design on other products?",
+      "a": "Yes, for example on tote bags, hoodies or mugs. Scale the file to the print area of the product. The shape is tuned for a shirt front, so wide products may need the design cropped or resized."
+    },
+    {
+      "q": "How sharp will the design print?",
+      "a": "The 4500×5400 px file is upscaled from the generated design. Bold shapes and flat colors print sharply, while fine texture and tiny text can look soft. Order a sample shirt to check."
+    },
+    {
+      "q": "What about shirts that are neither black nor white?",
+      "a": "The palette is tuned for dark or light fabric. For a mid-tone shirt such as red or green, choose the option closer to it and check the result on a mockup."
+    },
+    {
+      "q": "Why did the slogan come out wrong?",
+      "a": "Text inside AI images can contain mistakes. Keep slogans short, read every letter and generate again if something is off."
+    }
+  ],
+  "related": [
+    "sticker-maker",
+    "event-flyer-maker",
+    "amazon-product-photo"
+  ]
+}

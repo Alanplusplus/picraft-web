@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Event Flyer Maker works",
+    "paragraphs": [
+      "Enter the event name, the date and time, and the venue. Add a tagline, up to four highlights and a call to action if you want them, and pick one of ten styles. PiCraft designs a complete portrait flyer with a clear hierarchy: the event name largest, then the date and venue, then the details.",
+      "Everything on the flyer comes from what you typed. The design does not invent extra text, so the only wording on it is yours.",
+      "From one design you get a US Letter print file with bleed, a 1080×1350 px image for Instagram and Facebook feeds, and a 1080×1920 px version for stories."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "Letter print PDF with bleed",
+      "description": "An 8.5×11 inch flyer with 0.125 inch bleed at 300 DPI, to print at a shop or at the office."
+    },
+    {
+      "title": "A print JPG",
+      "description": "The same print file as a JPG for services that prefer images."
+    },
+    {
+      "title": "Instagram and Facebook image",
+      "description": "A 1080×1350 px 4:5 portrait, the shape that takes up the most room in the feed."
+    },
+    {
+      "title": "A Stories version",
+      "description": "A 1080×1920 px 9:16 image, with the flyer centered on a soft blurred background."
+    },
+    {
+      "title": "Ten styles",
+      "description": "Community, neon nightlife, gig poster, professional, gala, festival and more."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Community events",
+      "description": "Markets, fundraisers, school fairs and neighborhood meetups, printed for noticeboards and posted online."
+    },
+    {
+      "title": "Music and nightlife",
+      "description": "Gigs, club nights and open mics, with a poster look and a feed-sized version."
+    },
+    {
+      "title": "Small business promotions",
+      "description": "Grand openings, sales and workshops, with a call to action pointing to your website."
+    },
+    {
+      "title": "Corporate and professional events",
+      "description": "Meetups, webinars and conferences, with a clean professional style."
+    },
+    {
+      "title": "Charity and club events",
+      "description": "Sports days, bake sales and charity runs, with the highlights listed clearly."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Lead with a short event name",
+      "description": "The name is the largest text on the flyer. Two to five words read best from a distance."
+    },
+    {
+      "title": "Put the date and time together",
+      "description": "\"Friday, July 18 · 6–11 PM\" in one line keeps the key facts in one place."
+    },
+    {
+      "title": "Limit the highlights to four short lines",
+      "description": "\"Free entry\", \"30+ food vendors\" and \"Live DJ\" read at a glance. Long lines are hard to read."
+    },
+    {
+      "title": "Use one clear call to action",
+      "description": "A website or phone number is enough. Don't add several ways to reply."
+    },
+    {
+      "title": "Match the style to the crowd",
+      "description": "Gala and professional suit formal events, neon and festival suit a younger crowd, community suits families."
+    },
+    {
+      "title": "Check readability from a distance",
+      "description": "Hold the printed flyer at arm's length or view it at thumbnail size. The event name and date should still be clear."
+    },
+    {
+      "title": "Use the right version in the right place",
+      "description": "Use the Letter file for printing, the 4:5 image for the feed and the story version for stories."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a flyer style",
+    "intro": "The style sets the colors, the lettering and the energy. Pick one that fits your audience.",
+    "items": [
+      { "title": "Bright community", "description": "Cheerful colors and friendly shapes. Fits markets, fairs and family events." },
+      { "title": "Neon nightlife", "description": "Dark backgrounds with glowing color. Fits clubs, parties and late events." },
+      { "title": "Gig poster", "description": "A bold, printed-poster look. Fits concerts, open mics and bands." },
+      { "title": "Clean professional", "description": "A restrained layout with clear type. Fits business events and talks." },
+      { "title": "Elegant gala", "description": "Refined type and rich accents. Fits fundraisers, dinners and awards." },
+      { "title": "Music festival", "description": "Colorful and energetic. Fits outdoor festivals and multi-act events." },
+      { "title": "Vintage retro", "description": "A nostalgic palette and type. Fits themed nights and anniversaries." },
+      { "title": "Sports & fitness", "description": "Dynamic shapes and strong color. Fits races, classes and tournaments." },
+      { "title": "Warm charity", "description": "Friendly and welcoming. Fits bake sales, drives and charity events." },
+      { "title": "Tech & startup", "description": "Modern gradients and clean type. Fits hackathons, meetups and launches." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you print or post",
+    "items": [
+      "Check the event name, date, time and venue against your plans.",
+      "Confirm the website or phone number in the call to action works.",
+      "Print one test copy and read it from a distance before printing a batch.",
+      "Choose the right file: the Letter PDF for printing, the 4:5 image for the feed, the story image for stories.",
+      "If you print at home, expect a thin white margin because most home printers cannot print to the edge.",
+      "If you print at a shop, upload the PDF with bleed and ask the shop to trim to Letter size.",
+      "Post the digital version a few weeks ahead and again a few days before the event."
+    ]
+  },
+  "limits": [
+    "The Letter size is fixed. For A4, ask your printer to scale it or re-create the design in an editor.",
+    "It does not add a QR code or a logo. Put your website in the call to action, or add those in an image editor.",
+    "The print file is upscaled from the generated design, so bold and simple layouts print sharpest.",
+    "The text is part of the image, so changing a word means generating again.",
+    "Long highlights and small print can be hard to read. Keep the text short."
+  ]
+}

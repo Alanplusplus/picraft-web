@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Birthday Invitation Maker works",
+    "paragraphs": [
+      "Enter the name of the birthday person and, if you like, their age or milestone, then the date, time, place and an RSVP line. Choose one of ten themes and PiCraft designs a finished portrait invitation with your details in place and the name as the largest text on the card.",
+      "The invitation opens with \"You're invited!\" and sets your details underneath, so there is nothing to fill in later. It is illustrated artwork, which keeps the text layout reliable.",
+      "You download a 5×7 inch print PDF with bleed, a 300 DPI JPG for home printing, and a phone-sized image for the group chat."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "Print PDF with bleed",
+      "description": "A 5×7 inch card with 0.125 inch bleed at 300 DPI, for a print shop or an online printer."
+    },
+    {
+      "title": "Print JPG for home printing",
+      "description": "The same file as a JPG you can print at actual size on card stock and trim yourself."
+    },
+    {
+      "title": "A 1080×1500 px share image",
+      "description": "A version sized for texts, chat groups, email and social stories."
+    },
+    {
+      "title": "Ten party themes",
+      "description": "Balloons, unicorns, dinosaurs, space, safari, mermaids, retro arcade and more, plus elegant options for adults."
+    },
+    {
+      "title": "A clear hierarchy",
+      "description": "The birthday person's name is the largest text, followed by the date, time and place."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Kids' parties",
+      "description": "Print invitations for the classroom or send an image to the parents' group chat."
+    },
+    {
+      "title": "Milestone birthdays",
+      "description": "Use the age field for a 30th, 50th or 80th, with an elegant theme."
+    },
+    {
+      "title": "Themed celebrations",
+      "description": "Match the invitation to a dinosaur, unicorn or space party, and use the same theme for the decorations."
+    },
+    {
+      "title": "Last-minute parties",
+      "description": "Send a finished image within minutes when you plan a gathering at short notice."
+    },
+    {
+      "title": "Family and community events",
+      "description": "Use it for reunions, anniversaries and neighborhood celebrations, with the name field as a headline."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Write the age in your own words",
+      "description": "\"is turning 7!\" or \"Turns 40\" both work. Leave the field empty if you want no age on the card."
+    },
+    {
+      "title": "Keep the place to one or two lines",
+      "description": "A venue name and a street fit well. Add a full address in your message instead of crowding the card."
+    },
+    {
+      "title": "Put the time on its own",
+      "description": "Use the time field for \"2:00 – 5:00 PM\" and keep the date to the day and month."
+    },
+    {
+      "title": "Use the RSVP line for a name and number",
+      "description": "\"RSVP to Sarah · 555-0142\" tells guests who to contact. Remember that a phone number is shared with everyone who receives the card."
+    },
+    {
+      "title": "Pick a theme the guest of honor loves",
+      "description": "A child will notice if the theme matches their favorite thing, and that is what makes a party feel personal."
+    },
+    {
+      "title": "Print one test copy",
+      "description": "Print a copy at home or at a shop before you print a stack, and check that every detail is correct."
+    },
+    {
+      "title": "Proofread before sending",
+      "description": "Check the name, date, time and address once on screen and once more in the message you send."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a party theme",
+    "intro": "The theme sets the artwork, the colors and the mood. Here is how the ten options differ.",
+    "items": [
+      { "title": "Balloons & confetti", "description": "A bright all-purpose party look. Works for any age." },
+      { "title": "Unicorn & rainbow", "description": "Pastel colors, stars and rainbows. Fits young children." },
+      { "title": "Dinosaur adventure", "description": "Friendly dinosaurs and jungle leaves. Fits young children who love animals." },
+      { "title": "Outer space", "description": "Planets, stars and rockets. Fits children and science fans." },
+      { "title": "Elegant black & gold", "description": "A refined look for adults and milestone birthdays." },
+      { "title": "Soft floral", "description": "Gentle flowers and a calm palette. Fits garden parties and afternoon teas." },
+      { "title": "Safari jungle", "description": "Animals and leaves in earthy colors. Fits first birthdays and family parties." },
+      { "title": "Under the sea", "description": "Mermaids, fish and shells. Fits pool parties and beach days." },
+      { "title": "Retro arcade", "description": "Pixels and neon. Fits teens and gaming fans." },
+      { "title": "Watercolor splash", "description": "Bright painted color. Fits art parties and any age." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you send or print",
+    "items": [
+      "Check the name, age, date, time and address against your plans.",
+      "Confirm the RSVP contact and deadline are correct.",
+      "Test the share image on a phone to make sure the text is readable.",
+      "Print the JPG at actual size, 100% scale, on card stock if you print at home.",
+      "Trim along the outer edge of the printed card with a paper cutter for clean edges.",
+      "Order A7 envelopes, 5¼×7¼ inch, if you send printed cards.",
+      "Share a map link or parking details in the message, not on the card."
+    ]
+  },
+  "limits": [
+    "The invitations are illustrated. This maker does not add a photo of the birthday person.",
+    "The opening wording \"You're invited!\" is in English and cannot be changed in the form.",
+    "Matching items such as thank-you cards use the same theme but are not identical designs.",
+    "The text is part of the image. To change a detail, generate again.",
+    "A printed home copy depends on your printer and paper, and home printers cannot print to the edge."
+  ]
+}

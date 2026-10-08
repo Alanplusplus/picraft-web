@@ -1,0 +1,119 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Amazon Product Photo Maker works",
+    "paragraphs": [
+      "Upload a photo of the product, name it in a few words and choose the type of image you need. PiCraft rebuilds the photo as clean commercial photography, keeping the product's shape, colors, labels and printed text as they are in your photo and changing only the setting and the lighting.",
+      "For a main image the product is centered on a white background and filling the frame, and after generation PiCraft sets every near-white background pixel to exactly RGB 255, 255, 255. That last step matters because automated checks look for pure white, not almost white.",
+      "Lifestyle and detail images skip the white-background step, so you can show the product in use or up close for the secondary slots on your listing."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "2000×2000 px listing image",
+      "description": "A square JPG that clears Amazon's 1000 px zoom threshold and the 1600 px size sellers are advised to aim for."
+    },
+    {
+      "title": "Pure white main images",
+      "description": "Background pixels near white are set to exactly RGB 255, so the file matches what Amazon's automated checks look for."
+    },
+    {
+      "title": "Lifestyle and detail shots",
+      "description": "Secondary images that show the product in a realistic setting or in close-up, without a studio or a photographer."
+    },
+    {
+      "title": "A 1080×1080 px copy",
+      "description": "A lighter square version for your own store, social posts and ads."
+    },
+    {
+      "title": "Product details preserved",
+      "description": "The model is instructed to keep labels, logos and printed text unchanged, so your packaging stays recognizable."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Amazon main images",
+      "description": "Replace a messy kitchen-table photo with a clean white-background image that follows the main-image rules."
+    },
+    {
+      "title": "Secondary listing slots",
+      "description": "Fill the extra image positions with lifestyle and close-up shots, which is where buyers look to understand size and use."
+    },
+    {
+      "title": "Etsy, Shopify and eBay",
+      "description": "Square 2000×2000 px photos on a clean background work across the major marketplaces and storefronts."
+    },
+    {
+      "title": "New product testing",
+      "description": "Build a listing from a sample before you invest in a full photo shoot, then replace it if the product sells."
+    },
+    {
+      "title": "Ads and social posts",
+      "description": "Use the lifestyle shots and the 1080×1080 px copy in ads, newsletters and Instagram posts."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Start with a sharp, complete photo",
+      "description": "Fill the frame with the whole product, with nothing cut off and no hands covering it. A blurry source cannot be rescued."
+    },
+    {
+      "title": "Use soft daylight",
+      "description": "Place the product near a window and avoid direct sun and harsh shadows. Even light gives the truest colors."
+    },
+    {
+      "title": "Shoot straight on",
+      "description": "A front-facing, level photo gives the cleanest result. Extreme angles distort the shape the model has to preserve."
+    },
+    {
+      "title": "Name the product precisely",
+      "description": "\"Stainless steel insulated water bottle, 750 ml\" is better than \"bottle\". It tells the model what the object is made of."
+    },
+    {
+      "title": "Use main images for slot one",
+      "description": "Generate the main image first and make sure it is correct. Then create lifestyle and detail shots for the other slots."
+    },
+    {
+      "title": "Compare the result with the real product",
+      "description": "Check shape, color, text and every small part. Marketplace rules require the image to show what the customer will receive."
+    },
+    {
+      "title": "Keep your original photos",
+      "description": "Store the source photo with each generated file. It is your proof if a listing is ever questioned."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing the image type",
+    "intro": "The image type decides the background, framing and purpose of the result.",
+    "items": [
+      { "title": "Main image (pure white background)", "description": "The product alone on white, filling the frame. Use it for the first Amazon image and for search results." },
+      { "title": "Lifestyle scene", "description": "The product in a realistic setting. Use it for secondary slots to show scale and everyday use." },
+      { "title": "Close-up detail", "description": "A tight shot of a material, feature or texture. Use it to answer questions about quality." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you upload to your listing",
+    "items": [
+      "Compare the image with the real product: shape, color, size cues, labels and printed text.",
+      "Confirm the main image contains only the product you sell, with no extra props, text, badges or logos that are not on the product itself.",
+      "Zoom in to 200% and check the edges and fine print for distortion.",
+      "Check that the product fills at least 85% of the frame on the main image.",
+      "Use the lifestyle and detail shots for secondary slots only, not for the main image.",
+      "Keep the unedited source photo in case you need to show how the listing image was made.",
+      "Check the current image rules for your category, because some categories have extra requirements."
+    ]
+  },
+  "limits": [
+    "AI can subtly change a product. Small parts, tiny printed text and fine textures may come out different from the real item, so review every image.",
+    "Products with transparent or reflective surfaces, such as glass or polished metal, are harder to render faithfully.",
+    "The maker produces one product per image. It does not combine several items into a bundle shot.",
+    "Marketplaces can set category-specific rules, and apparel on a model is a separate case. Check the rules for your category.",
+    "PiCraft cannot guarantee that a listing will be accepted. It produces a file that meets the published technical specs."
+  ],
+  "sources": [
+    {
+      "label": "Amazon Seller Forums: Product Photography Standards (2026)",
+      "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/0149bdb3-2056-42ce-b0bb-9eef94e3d2b8"
+    }
+  ]
+}

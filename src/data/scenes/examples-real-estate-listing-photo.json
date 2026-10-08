@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "url": "/examples/real-estate-listing-photo_after_1791298842897_0.webp",
+      "before": "/examples/real-estate-listing-photo_before_1791298842897_0.webp",
+      "alt": "Living room with a gray sectional sofa after enhancement: brighter light and toys cleared from the floor",
+      "width": 800,
+      "height": 600,
+      "approved": true,
+      "beforeAlt": "Original living room photo: darker lighting, toys on the floor and a cluttered coffee table"
+    },
+    {
+      "url": "/examples/real-estate-listing-photo_after_1791298847079_1.webp",
+      "before": "/examples/real-estate-listing-photo_before_1791298847079_1.webp",
+      "alt": "Kitchen with granite counters and a stainless steel fridge after decluttering, with clear countertops",
+      "width": 800,
+      "height": 600,
+      "approved": true,
+      "beforeAlt": "Original kitchen photo with dishes, towels and papers cluttering the counters and refrigerator"
+    },
+    {
+      "url": "/examples/real-estate-listing-photo_after_1791298875212_2.webp",
+      "before": "/examples/real-estate-listing-photo_before_1791298875212_2.webp",
+      "alt": "Bedroom virtually staged with a bed, nightstands, lamps, a rug and wall art",
+      "width": 800,
+      "height": 600,
+      "approved": true,
+      "beforeAlt": "Original photo of the same bedroom, empty with a wood floor and a window"
+    },
+    {
+      "url": "/examples/real-estate-listing-photo_after_1791298896431_3.webp",
+      "before": "/examples/real-estate-listing-photo_before_1791298896431_3.webp",
+      "alt": "Two-story house with glowing windows against a deep blue twilight sky, converted from a daytime photo",
+      "width": 800,
+      "height": 600,
+      "approved": true,
+      "beforeAlt": "Original daytime photo of the same house with a green lawn and blue sky"
+    },
+    {
+      "url": "/examples/real-estate-listing-photo_after_1791298915589_4.webp",
+      "before": "/examples/real-estate-listing-photo_before_1791298915589_4.webp",
+      "alt": "Bright bathroom with a white vanity and glass shower after decluttering, with clear countertops",
+      "width": 800,
+      "height": 600,
+      "approved": true,
+      "beforeAlt": "Original bathroom photo with toiletries on the vanity and a towel in the foreground"
+    }
+  ]
+}

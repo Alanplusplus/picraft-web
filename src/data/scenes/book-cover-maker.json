@@ -1,0 +1,222 @@
+{
+  "slug": "book-cover-maker",
+  "name": "Book Cover Maker",
+  "category": "creators",
+  "summary": "Genre-appropriate front covers for Kindle eBooks and 6×9 paperbacks.",
+  "badge": "1600×2560",
+  "indexable": true,
+  "seo": {
+    "title": "Book Cover Maker – Kindle eBook & 6×9 Print Covers",
+    "description": "Design a book cover with your title and author name for your genre. Download a 1600×2560 px Kindle eBook cover and a 6×9 in front cover with bleed.",
+    "h1": "Book Cover Maker",
+    "intro": [
+      "Readers judge a book by its cover in the half-second it shows up in search results. PiCraft designs genre-appropriate covers with your title and author name set in type that reads at thumbnail size.",
+      "Download a 1600×2560 px eBook cover for Kindle and other stores, and a 6×9 inch front cover with bleed for your paperback designer."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "2:3",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "title",
+      "label": "Book title",
+      "type": "text",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "The Salt Keeper"
+    },
+    {
+      "key": "subtitle",
+      "label": "Subtitle or series (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "Book One of the Tidewater Saga"
+    },
+    {
+      "key": "author",
+      "label": "Author name",
+      "type": "text",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "Hannah Wells"
+    },
+    {
+      "key": "genre",
+      "label": "Genre",
+      "type": "select",
+      "default": "fantasy",
+      "options": [
+        {
+          "value": "fantasy",
+          "label": "Fantasy",
+          "prompt": "epic fantasy: painterly, atmospheric illustration, dramatic lighting, ornate title lettering"
+        },
+        {
+          "value": "thriller",
+          "label": "Thriller / crime",
+          "prompt": "thriller: dark, high-contrast photographic imagery, a lone figure or ominous setting, bold condensed sans-serif title"
+        },
+        {
+          "value": "romance",
+          "label": "Romance",
+          "prompt": "contemporary romance: warm, bright illustrated style, playful script title, inviting color palette"
+        },
+        {
+          "value": "scifi",
+          "label": "Science fiction",
+          "prompt": "science fiction: cinematic sci-fi scene with cool tones, sleek futuristic sans-serif title"
+        },
+        {
+          "value": "nonfiction",
+          "label": "Nonfiction / business",
+          "prompt": "nonfiction business book: clean typographic design, strong single graphic element, large bold title on a solid color"
+        },
+        {
+          "value": "literary",
+          "label": "Literary fiction",
+          "prompt": "literary fiction: understated, artful composition, textured paper feel, elegant serif typography"
+        },
+        {
+          "value": "horror",
+          "label": "Horror / dark",
+          "prompt": "horror: ominous dark atmosphere, muted desaturated palette with a single accent color, distressed serif or gothic title"
+        },
+        {
+          "value": "memoir",
+          "label": "Memoir",
+          "prompt": "memoir: warm, intimate photographic feel with soft light, personal and approachable, handwritten or casual serif title"
+        },
+        {
+          "value": "children",
+          "label": "Children's book",
+          "prompt": "children's book: cheerful, colorful illustration with friendly characters, rounded playful title lettering"
+        },
+        {
+          "value": "historical",
+          "label": "Historical fiction",
+          "prompt": "historical fiction: aged parchment textures, sepia or muted period-accurate palette, elegant old-style serif title"
+        }
+      ]
+    },
+    {
+      "key": "concept",
+      "label": "Cover idea (optional)",
+      "type": "textarea",
+      "required": false,
+      "maxLength": 300,
+      "rows": 3,
+      "placeholder": "A lighthouse on a cliff at night, a girl with a lantern at its base, stormy sea."
+    }
+  ],
+  "prompt": "Design a professional front book cover in portrait orientation, shown flat and front-on, filling the entire image. It is the artwork itself, not a 3D mockup: no spine, no book object, no shadow.\nGenre conventions: {{genre}}.\n[[Cover image: {{concept}}.]]\nThe title \"{{title}}\" is large and dominant.[[ The line \"{{subtitle}}\" is smaller.]] The author name \"{{author}}\" is clearly readable near the top or bottom.\nAll text spelled exactly as written and legible even as a small thumbnail. Keep all text at least 6% away from every edge. No other text, no barcode, no publisher logo. Bestseller-quality illustration and typography.",
+  "outputs": [
+    {
+      "id": "ebook",
+      "label": "eBook cover 1600×2560 JPG",
+      "width": 1600,
+      "height": 2560,
+      "format": "jpg",
+      "dpi": 300,
+      "preview": true
+    },
+    {
+      "id": "print-front",
+      "label": "Paperback front 6.125×9.25 in (6×9 trim + bleed), 300 DPI",
+      "widthIn": 6.125,
+      "heightIn": 9.25,
+      "dpi": 300,
+      "format": "jpg"
+    }
+  ],
+  "specs": {
+    "heading": "Book cover sizes",
+    "columns": [
+      "Format",
+      "Size"
+    ],
+    "rows": [
+      [
+        "Kindle eBook",
+        "1600×2560 px (1:1.6), JPG, RGB"
+      ],
+      [
+        "Paperback front (6×9 in trim)",
+        "6.125×9.25 in at 300 DPI (bleed on the outer, top and bottom edges)"
+      ],
+      [
+        "Thumbnail check",
+        "Title should read at about 160 px tall"
+      ]
+    ],
+    "notes": [
+      "Printed paperbacks need a full wrap cover (back, spine and front) sized to your page count. Use the front file as the front panel in your printer's template.",
+      "Only use cover imagery you have the right to publish commercially."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Enter title and author",
+      "description": "Add a subtitle or series name if you have one."
+    },
+    {
+      "title": "Choose the genre",
+      "description": "Each genre follows the visual conventions readers expect."
+    },
+    {
+      "title": "Publish",
+      "description": "Upload the 1600×2560 eBook cover to your store, or send the front file to your designer."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I use these covers on Amazon KDP?",
+      "a": "Yes. The eBook file matches KDP's ideal 1600×2560 px, as a JPG in RGB. KDP also asks you to tell it when content is AI-generated, so check its current content guidelines when you publish."
+    },
+    {
+      "q": "Does it make the spine and back cover?",
+      "a": "No. You get a front cover; paperback wraps depend on page count and are best assembled in your printer's template."
+    },
+    {
+      "q": "Why choose a genre?",
+      "a": "Genres have strong visual conventions. A thriller that looks like a romance confuses readers and hurts sales."
+    },
+    {
+      "q": "Is the text editable?",
+      "a": "The text is part of the image. To change it, generate again with the new wording."
+    },
+    {
+      "q": "Is the cover big enough for print?",
+      "a": "The paperback front is 6.125×9.25 inches at 300 DPI, which includes bleed for a 6×9 inch book. For other trim sizes, ask your printer for a template and scale the front accordingly."
+    },
+    {
+      "q": "Can I use it for stores other than Amazon?",
+      "a": "The 1600×2560 px eBook cover is a common size for eBook stores, but each store has its own rules, so check the current requirements before you upload."
+    },
+    {
+      "q": "How do I make the title readable as a thumbnail?",
+      "a": "Use a short title and check the image at about 160 px tall. If you can't read the title, shorten it or generate again."
+    },
+    {
+      "q": "Can I describe the cover image?",
+      "a": "Yes. The cover idea field takes a scene or a symbol of up to 300 characters. Leave it empty and PiCraft chooses an image that fits the genre."
+    },
+    {
+      "q": "Can I keep one look across a series?",
+      "a": "Choose the same genre and describe a similar kind of image for each book. Results are consistent but not identical, so review each cover."
+    },
+    {
+      "q": "Who owns the cover?",
+      "a": "We don't claim ownership of the files you generate, and you may use them commercially under our terms. AI-generated images may not qualify for copyright protection in some countries, so consider a designer if you need a cover that is legally unique."
+    }
+  ],
+  "related": [
+    "youtube-thumbnail-maker",
+    "event-flyer-maker",
+    "linkedin-banner-maker"
+  ]
+}

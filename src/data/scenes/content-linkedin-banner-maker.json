@@ -1,0 +1,126 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the LinkedIn Banner Maker works",
+    "paragraphs": [
+      "Enter your name or brand and, if you like, a one-line headline. Choose one of ten looks and a color direction, and PiCraft designs a very wide banner at LinkedIn's recommended 1584×396 px, with your text placed in the right half.",
+      "The text sits on the right because LinkedIn draws your profile photo over the lower-left of the banner, and it crops the banner a little differently on mobile. The left third is kept calm and free of important details for the same reason.",
+      "You download the banner as a JPG, plus a 3168×792 px version at twice the size for sharp display on high-resolution screens."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "1584×396 px banner",
+      "description": "A JPG at LinkedIn's recommended cover image size and 4:1 ratio, well under the file size limit."
+    },
+    {
+      "title": "A 2× high-resolution copy",
+      "description": "A 3168×792 px JPG for crisp results on large and high-density screens."
+    },
+    {
+      "title": "Text placed to survive cropping",
+      "description": "Your name and headline sit in the right half, away from the profile photo and the mobile crop."
+    },
+    {
+      "title": "Ten looks",
+      "description": "Gradients, skylines, nature, workspaces, geometric shapes and more, to fit your industry."
+    },
+    {
+      "title": "Your colors",
+      "description": "Add a color direction such as \"navy and teal\" to match your brand or your profile photo."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Job seekers",
+      "description": "A clean banner with your name and a short headline makes a profile look finished and intentional."
+    },
+    {
+      "title": "Freelancers and consultants",
+      "description": "Use the headline to state what you do and who you do it for, so visitors understand your offer at a glance."
+    },
+    {
+      "title": "Founders and small businesses",
+      "description": "Reflect your brand colors on a founder profile that people see after meeting you or reading your posts."
+    },
+    {
+      "title": "Creators and speakers",
+      "description": "Show your name and topic with a style that matches your content, whether calm, premium or energetic."
+    },
+    {
+      "title": "Recruiters and sales teams",
+      "description": "Give a team a consistent look by using the same style and colors for every profile."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Say what you do, not just who you are",
+      "description": "\"Product designer · Helping fintech teams ship faster\" tells a visitor more than a job title alone."
+    },
+    {
+      "title": "Keep the headline short",
+      "description": "Under 60 characters keeps the text large enough to read on mobile."
+    },
+    {
+      "title": "Match your profile photo",
+      "description": "Pick colors that work with your photo's background and clothing, so the banner and portrait look like a set."
+    },
+    {
+      "title": "Choose calm over busy",
+      "description": "Text over a busy image is hard to read. Soft gradients, bokeh and solid blocks give the cleanest result."
+    },
+    {
+      "title": "Preview on desktop and mobile",
+      "description": "After uploading, check your profile on both. The banner is cropped differently on each."
+    },
+    {
+      "title": "Use your own brand colors",
+      "description": "Name two colors in the colors field, such as \"deep green and cream\", to keep the banner consistent with your website."
+    },
+    {
+      "title": "Refresh it occasionally",
+      "description": "Update the headline when your role or focus changes so the banner stays accurate."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a banner look",
+    "intro": "The look sets the background. Pick the one that fits your industry and the impression you want to leave.",
+    "items": [
+      { "title": "Soft gradient", "description": "A smooth blend of two colors. Works for nearly every profession." },
+      { "title": "Abstract tech", "description": "Flowing lines and digital patterns. Fits software, data and product roles." },
+      { "title": "City skyline", "description": "Urban silhouettes. Fits real estate, finance, law and consulting." },
+      { "title": "Calm nature", "description": "Soft landscapes. Fits coaching, wellness, sustainability and education." },
+      { "title": "Desk & workspace", "description": "A tidy desk scene. Fits designers, writers and freelancers." },
+      { "title": "Geometric shapes", "description": "Clean shapes and angles. Fits architects, engineers and designers." },
+      { "title": "Ocean & waves", "description": "Open water and movement. Fits travel, hospitality and leadership profiles." },
+      { "title": "Dark & premium", "description": "Deep tones with subtle highlights. Fits luxury, strategy and executive profiles." },
+      { "title": "Soft bokeh lights", "description": "Blurred light points. Fits event, media and creative roles." },
+      { "title": "Solid color block", "description": "A flat color with the text on top. The most readable option and the easiest to match to a brand." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you upload to LinkedIn",
+    "items": [
+      "Check that your name is spelled correctly. It is the one word that must be right.",
+      "Upload the 1584×396 px file first, and use the 3168×792 px version if the banner looks soft on large screens.",
+      "Open your profile on a phone and on a computer to confirm that the text is not covered by your photo.",
+      "Make sure the headline matches the headline and About section of your profile, so your story is consistent.",
+      "Keep the file under 8 MB. The files PiCraft exports are well below that.",
+      "Use JPG or PNG. LinkedIn's help page lists these as the supported types.",
+      "Reposition the banner in LinkedIn's editor if your text sits too close to an edge."
+    ]
+  },
+  "limits": [
+    "The banner is designed for personal profiles. LinkedIn company pages use a different cover size.",
+    "Your profile photo covers part of the lower-left, and mobile crops the sides, so the maker cannot keep every pixel visible on every device.",
+    "The text is part of the image. To change a word, generate again.",
+    "The maker does not add logos or photos of you. Upload those in LinkedIn or an editor afterwards.",
+    "The name field is required, so every banner has a focal text. A short slogan can take the place of a name."
+  ],
+  "sources": [
+    {
+      "label": "LinkedIn Help: Add or change the cover image on your profile",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a568217"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "url": "/examples/amazon-product-photo_after_1791298731842_0.webp",
+      "before": "/examples/amazon-product-photo_before_1791298731842_0.webp",
+      "alt": "Stainless steel water bottle on a pure white background, formatted as an Amazon main image",
+      "width": 800,
+      "height": 800,
+      "approved": true,
+      "beforeAlt": "Original snapshot of the water bottle on a kitchen counter next to a fruit bowl"
+    },
+    {
+      "url": "/examples/amazon-product-photo_after_1791298759863_1.webp",
+      "before": "/examples/amazon-product-photo_before_1791298759863_1.webp",
+      "alt": "Black ceramic coffee mug on a pure white background, formatted as an Amazon main image",
+      "width": 800,
+      "height": 800,
+      "approved": true,
+      "beforeAlt": "Original snapshot of the coffee mug on a cluttered office desk"
+    },
+    {
+      "url": "/examples/amazon-product-photo_after_1791298748566_2.webp",
+      "before": "/examples/amazon-product-photo_before_1791298748566_2.webp",
+      "alt": "White wireless earbuds in an open charging case on a pure white background",
+      "width": 800,
+      "height": 800,
+      "approved": true,
+      "beforeAlt": "Original snapshot of the earbuds case on rumpled white bedding"
+    },
+    {
+      "url": "/examples/amazon-product-photo_after_1791298803839_3.webp",
+      "before": "/examples/amazon-product-photo_before_1791298803839_3.webp",
+      "alt": "Succulent in a white ribbed pot on a sunlit wooden surface, a lifestyle product photo",
+      "width": 800,
+      "height": 800,
+      "approved": true,
+      "beforeAlt": "Original snapshot of the succulent on a bathroom shelf among toiletries"
+    },
+    {
+      "url": "/examples/amazon-product-photo_after_1791298821615_4.webp",
+      "before": "/examples/amazon-product-photo_before_1791298821615_4.webp",
+      "alt": "Brown leather bifold wallet on a clean light background, shot from above",
+      "width": 800,
+      "height": 800,
+      "approved": true,
+      "beforeAlt": "Original snapshot of the wallet on a wooden table with keys and coins"
+    }
+  ]
+}

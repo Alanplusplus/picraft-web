@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Wedding Invitation Maker works",
+    "paragraphs": [
+      "Enter the couple's names, the date, the venue and, if you wish, the time, the city and an RSVP line. Choose a style and PiCraft designs a complete portrait invitation with the wording already set, in the proportions of a 5×7 inch card.",
+      "The card uses a traditional wedding wording: \"Together with their families\" at the top and \"request the pleasure of your company at their wedding\" before the date. Your names, date, time, venue, city and RSVP line are set into that wording and spelled exactly as you typed them.",
+      "You download a print PDF with 0.125 inch bleed for a printer, a 300 DPI JPG of the same file, and a phone-sized image for text messages, WhatsApp and email."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "Print PDF with bleed",
+      "description": "A 5×7 inch invitation with 0.125 inch bleed on every side at 300 DPI, ready to send to a print shop."
+    },
+    {
+      "title": "Print JPG at 300 DPI",
+      "description": "The same print file as a JPG for services and home printers that prefer images."
+    },
+    {
+      "title": "A 1080×1500 px share image",
+      "description": "A version sized for phones, to send in text messages, chats, email or an Instagram story."
+    },
+    {
+      "title": "Ten wedding styles",
+      "description": "Watercolor botanical, modern minimal, classic gold, boho arch, Art Deco, beach and more."
+    },
+    {
+      "title": "Your details already typeset",
+      "description": "Names, date, time, venue, city and RSVP are laid out with a clear hierarchy, with no template to edit."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Formal printed invitations",
+      "description": "Send the PDF to a local printer or an online print service and choose a heavy card stock."
+    },
+    {
+      "title": "Digital-first weddings",
+      "description": "Share the phone-sized image by message or email when you want to invite people quickly."
+    },
+    {
+      "title": "Destination weddings",
+      "description": "Send a digital invitation early so guests can plan travel, followed by printed cards for close family."
+    },
+    {
+      "title": "Engagement parties and showers",
+      "description": "Reuse the same style with different wording for the events around the wedding."
+    },
+    {
+      "title": "Save-the-date style cards",
+      "description": "Generate a simple card with the names, date and city, and use the RSVP line for your website."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Write names the way you want them printed",
+      "description": "Use first names or full names, with \"&\" or \"and\". The card copies whatever you type."
+    },
+    {
+      "title": "Spell out the date in full",
+      "description": "\"Saturday, June 12, 2027\" is clear and formal. Add the time on its own line instead of in the date."
+    },
+    {
+      "title": "Keep the venue to one line",
+      "description": "Use the venue name in the venue field and put the city in its own field. Long addresses crowd the card."
+    },
+    {
+      "title": "Put your website in the RSVP line",
+      "description": "A line such as \"Kindly reply by May 1 · emmaandjames.com\" saves room for the details on a wedding website."
+    },
+    {
+      "title": "Choose a style that matches the venue",
+      "description": "Botanical and rustic suit gardens and barns, Art Deco suits city ballrooms, beach suits the coast."
+    },
+    {
+      "title": "Generate more than once",
+      "description": "Each attempt is a new design. Try a few and keep the one where the layout and the artwork feel right."
+    },
+    {
+      "title": "Proofread twice",
+      "description": "Have a second person read every name, date and time. A typo in a name is the one mistake you cannot reprint around."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a wedding style",
+    "intro": "The style sets the artwork, the lettering and the feeling of the invitation.",
+    "items": [
+      { "title": "Watercolor botanical", "description": "Soft painted leaves and flowers. Fits spring and summer weddings, gardens and greenhouses." },
+      { "title": "Modern minimal", "description": "Plenty of space, simple type and a quiet palette. Fits city weddings and contemporary venues." },
+      { "title": "Classic gold", "description": "Traditional layout with gold accents. Fits formal ceremonies and ballroom receptions." },
+      { "title": "Boho arch", "description": "Earth tones and arch shapes. Fits relaxed outdoor weddings." },
+      { "title": "Romantic garden", "description": "Lush florals with a soft palette. Fits garden parties and estate venues." },
+      { "title": "Art Deco", "description": "Geometric patterns and metallic lines. Fits glamorous evening weddings." },
+      { "title": "Rustic wood", "description": "Natural textures and warm tones. Fits barns, farms and woodland venues." },
+      { "title": "Beach & coastal", "description": "Sea colors and light patterns. Fits seaside and island weddings." },
+      { "title": "Moody & dark", "description": "Deep colors and rich florals. Fits autumn and winter evening weddings." },
+      { "title": "Cherry blossom", "description": "Pink blossoms and gentle watercolor. Fits spring weddings and garden venues." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you print the invitations",
+    "items": [
+      "Check both names, the date, the day of the week, the time and the venue against your booking.",
+      "Have a second person read the invitation aloud.",
+      "Confirm your RSVP deadline and website address are correct.",
+      "Ask your printer for a paper proof, or order one test copy, before a full order.",
+      "Tell the printer the finished size is 5×7 inches with 0.125 inch bleed, and ask for trim to 5×7.",
+      "Choose a heavy card stock, 110 lb (300 gsm) or more, for a premium feel.",
+      "Order A7 envelopes, which fit a 5×7 inch card."
+    ]
+  },
+  "limits": [
+    "The invitation wording is fixed in a traditional form and in English. For different wording, use the RSVP line or add text in an editor.",
+    "It does not add a photo of the couple, a monogram or a map.",
+    "Names with unusual spellings or accents should be checked closely, because AI text rendering is not perfect.",
+    "Matching items such as RSVP cards, menus and place cards are separate designs and will not be identical in style.",
+    "The text is part of the image. To change a word, generate again."
+  ]
+}

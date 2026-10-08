@@ -1,0 +1,207 @@
+{
+  "slug": "sticker-maker",
+  "name": "Sticker Maker",
+  "category": "merch",
+  "summary": "Die-cut sticker designs with a white border, exported as transparent PNGs.",
+  "badge": "Transparent PNG",
+  "indexable": true,
+  "seo": {
+    "title": "AI Sticker Maker – Die-Cut Designs as Transparent PNG",
+    "description": "Describe a sticker idea and get a die-cut design with a white border on a transparent background. Download print-ready PNGs for Cricut, Etsy or print shops.",
+    "h1": "Sticker Maker",
+    "intro": [
+      "Describe what you want on the sticker and pick a style. PiCraft draws it with a clean white die-cut border and removes the background, so you get a transparent PNG ready for cutting.",
+      "Use it with Cricut Print Then Cut, sell on Etsy or Redbubble, or send it to any sticker printer."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "1:1",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "subject",
+      "label": "What's on the sticker?",
+      "type": "textarea",
+      "required": true,
+      "maxLength": 200,
+      "rows": 3,
+      "placeholder": "A sleepy cat curled up inside a coffee mug"
+    },
+    {
+      "key": "text",
+      "label": "Text on the sticker (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 30,
+      "placeholder": "Monday mood"
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "kawaii",
+      "options": [
+        {
+          "value": "kawaii",
+          "label": "Cute kawaii",
+          "prompt": "cute kawaii illustration with soft pastel colors, rounded shapes and simple happy faces"
+        },
+        {
+          "value": "cartoon",
+          "label": "Bold cartoon",
+          "prompt": "bold cartoon illustration with thick black outlines and flat vibrant colors"
+        },
+        {
+          "value": "retro",
+          "label": "Retro 70s",
+          "prompt": "retro 1970s style with warm orange, mustard and brown tones and groovy shapes"
+        },
+        {
+          "value": "watercolor",
+          "label": "Watercolor",
+          "prompt": "soft watercolor illustration with gentle washes and fine ink details"
+        },
+        {
+          "value": "pixel",
+          "label": "Pixel art",
+          "prompt": "crisp 16-bit pixel art with a limited color palette"
+        },
+        {
+          "value": "chibi",
+          "label": "Chibi anime",
+          "prompt": "chibi anime style with oversized head, tiny body, sparkly eyes and soft shading"
+        },
+        {
+          "value": "doodle",
+          "label": "Hand-drawn doodle",
+          "prompt": "hand-drawn pen doodle with loose sketchy lines and minimal color on white"
+        },
+        {
+          "value": "neon",
+          "label": "Neon glow",
+          "prompt": "neon glow style with bright electric colors on a dark base, glowing edges and light bloom effects"
+        },
+        {
+          "value": "pop",
+          "label": "Pop art",
+          "prompt": "pop art style with halftone dots, bold primary colors and thick outlines inspired by Roy Lichtenstein"
+        },
+        {
+          "value": "woodcut",
+          "label": "Woodcut print",
+          "prompt": "woodcut block-print style with bold black carved lines and limited flat color fills"
+        }
+      ]
+    }
+  ],
+  "prompt": "Design a single die-cut sticker of {{subject}}.\nStyle: {{style}}.\n[[Include the short text \"{{text}}\" as part of the design, spelled exactly as written.]]\nThe sticker has a thick, clean, continuous white die-cut border following the outline of the whole design.\nCentered, filling about 80% of the image, on a perfectly flat, uniform medium-light grey background (#C8C8C8) with no shadow, no texture, no gradient and nothing else in the image.",
+  "outputs": [
+    {
+      "id": "sticker",
+      "label": "Transparent PNG 2048×2048",
+      "width": 2048,
+      "height": 2048,
+      "format": "png",
+      "dpi": 300,
+      "transparent": true,
+      "preview": true
+    },
+    {
+      "id": "print-3in",
+      "label": "Print PNG 3×3 in, 300 DPI",
+      "widthIn": 3,
+      "heightIn": 3,
+      "dpi": 300,
+      "format": "png",
+      "transparent": true
+    }
+  ],
+  "specs": {
+    "heading": "Sticker file specs",
+    "columns": [
+      "Item",
+      "Spec"
+    ],
+    "rows": [
+      [
+        "Format",
+        "PNG with transparent background"
+      ],
+      [
+        "Large file",
+        "2048×2048 px"
+      ],
+      [
+        "Print file",
+        "3×3 in at 300 DPI (900×900 px)"
+      ],
+      [
+        "Border",
+        "White die-cut border, cut just outside it"
+      ]
+    ],
+    "notes": [
+      "Designs with very pale grey areas touching the edge of the image may lose them when the background is removed; regenerate if that happens."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Describe your sticker",
+      "description": "A character, object, pun or phrase."
+    },
+    {
+      "title": "Pick a style",
+      "description": "Kawaii, cartoon, retro, watercolor or pixel art."
+    },
+    {
+      "title": "Download the PNG",
+      "description": "Transparent background with a white border, ready to print and cut."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does it work with Cricut?",
+      "a": "Yes. In Design Space, upload the PNG, save it as a Print Then Cut image, print it on printable sticker paper and let the machine cut around the white border. Check the cut preview before you start, and finish printing and cutting in one session."
+    },
+    {
+      "q": "Can I sell the stickers?",
+      "a": "You can use designs you generate commercially. Avoid descriptions that copy trademarked characters, logos or other people's artwork."
+    },
+    {
+      "q": "What size should I print?",
+      "a": "2–3 inch stickers are the most common. The 3×3 in file is ready at 300 DPI; scale down in your print software for smaller sizes."
+    },
+    {
+      "q": "Do I need to remove the background myself?",
+      "a": "No. PiCraft removes the background for you and exports a PNG that is transparent outside the white border. If you notice a grey fringe or a missing edge, generate the sticker again."
+    },
+    {
+      "q": "Can I print a sheet of different stickers?",
+      "a": "Each generation is one design. Place several PNGs on one page in your print software or in Cricut Design Space, then print the sheet on sticker paper."
+    },
+    {
+      "q": "How do I keep a sticker pack looking consistent?",
+      "a": "Use the same style for every design and describe each subject in a similar way. Styles are consistent but not identical between generations, so pick the best result of each."
+    },
+    {
+      "q": "What paper or vinyl should I use?",
+      "a": "Printable sticker paper works with most inkjet printers. For stickers that will be handled, washed or left outdoors, use printable vinyl and add a clear laminate or overlay."
+    },
+    {
+      "q": "Can I add more than a few words of text?",
+      "a": "Text is limited to 30 characters. Short phrases of one to four words come out best, and you should always proofread them before printing."
+    },
+    {
+      "q": "Is the white border part of the file?",
+      "a": "Yes. The white border is drawn into the design and the transparent edge sits just outside it, so a machine or printer cutting along that edge leaves a clean white margin."
+    }
+  ],
+  "related": [
+    "t-shirt-design-maker",
+    "birthday-invitation-maker",
+    "amazon-product-photo"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the YouTube Thumbnail Maker works",
+    "paragraphs": [
+      "Enter the words you want on the thumbnail, describe the video in a sentence or two and pick a style. If you upload a photo of yourself or the product, PiCraft makes it the focal point while keeping the face and identity the same. The result is a 16:9 image with large, high-contrast text and one clear subject that still reads on a phone screen.",
+      "The layout leaves the bottom-right corner free of text and faces. YouTube places the video length badge there, and anything underneath it is hidden.",
+      "You download a 1280×720 px JPG under 2 MB, which also fits YouTube's mobile upload limit, and a 1920×1080 px version for a sharper source image."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "1280×720 px JPG under 2 MB",
+      "description": "A standard 16:9 thumbnail that stays below the 2 MB cap YouTube applies to mobile uploads."
+    },
+    {
+      "title": "1920×1080 px Full HD copy",
+      "description": "A larger version when you want more resolution for desktop uploads or for reuse elsewhere."
+    },
+    {
+      "title": "Headline text built in",
+      "description": "Up to 40 characters of bold, legible text, placed in the left or right third with strong contrast."
+    },
+    {
+      "title": "Your face or product",
+      "description": "Upload a photo and the design puts it forward with an expressive pose, keeping the likeness."
+    },
+    {
+      "title": "Ten visual styles",
+      "description": "From bold and high contrast to cinematic, tech review and travel, to match the tone of your channel."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Regular uploads",
+      "description": "Make a consistent look for a weekly series by reusing the same style and a similar headline pattern."
+    },
+    {
+      "title": "Tutorials and reviews",
+      "description": "Show a product or a topic clearly with a short headline that tells viewers what they will learn."
+    },
+    {
+      "title": "Vlogs and challenges",
+      "description": "Put your face front and center with an expressive reaction and a headline built around the promise of the video."
+    },
+    {
+      "title": "Podcast and interview clips",
+      "description": "Pair a guest's name or a bold quote with a clean background so the clip stands out in the feed."
+    },
+    {
+      "title": "Testing thumbnails",
+      "description": "Generate two or three versions of the same video and swap them to see which one earns more clicks."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Keep the headline to two to five words",
+      "description": "Thumbnails appear small in search and suggested videos. Short, concrete words survive; sentences do not."
+    },
+    {
+      "title": "Don't repeat the title",
+      "description": "Let the thumbnail and the title do different jobs: the thumbnail creates curiosity, the title explains it."
+    },
+    {
+      "title": "Describe the moment, not the topic",
+      "description": "\"Me shivering but grinning in a snowy backyard ice bath\" gives a stronger picture than \"cold plunge video\"."
+    },
+    {
+      "title": "Use a clear, well-lit photo of your face",
+      "description": "A front-facing photo with an open expression gives the best likeness. Avoid sunglasses and heavy shadows."
+    },
+    {
+      "title": "Pick one focal point",
+      "description": "A thumbnail with one subject and one text block reads faster than a collage."
+    },
+    {
+      "title": "Check it at small size",
+      "description": "Shrink the image to about 160 px tall. If you can still read the words and see the subject, it works."
+    },
+    {
+      "title": "Be accurate",
+      "description": "A thumbnail should promise what the video delivers. Misleading images lose viewers and can break YouTube's rules."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a thumbnail style",
+    "intro": "The style sets the color, contrast and mood. Match it to the kind of video you make.",
+    "items": [
+      { "title": "Bold & high contrast", "description": "Saturated colors and strong separation. A safe default for most channels." },
+      { "title": "Clean & minimal", "description": "Simple background and calm layout. Good for tutorials, finance and productivity." },
+      { "title": "Cinematic", "description": "Film-like lighting and depth. Good for storytelling, documentaries and trailers." },
+      { "title": "Playful cartoon", "description": "Bright, illustrated and fun. Good for kids, games and light entertainment." },
+      { "title": "Warm vlog", "description": "Soft light and friendly tones. Good for lifestyle, travel diaries and daily vlogs." },
+      { "title": "Tech review", "description": "Sleek surfaces and sharp product focus. Good for gadgets and software." },
+      { "title": "Dark & eerie", "description": "Deep shadows and tension. Good for mysteries, horror and true crime." },
+      { "title": "Retro gaming", "description": "Pixel-inspired color and arcade energy. Good for gaming channels." },
+      { "title": "Fitness & energy", "description": "Dynamic angles and intense color. Good for workouts and sports." },
+      { "title": "Travel & explore", "description": "Open landscapes and bright skies. Good for adventure and destination videos." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you upload to YouTube Studio",
+    "items": [
+      "Read the headline letter by letter and check that it matches what you typed.",
+      "Check the thumbnail at about 160 px tall to confirm the text and subject are still clear.",
+      "Confirm the bottom-right corner is empty, so the video length badge does not hide anything important.",
+      "Make sure the thumbnail honestly reflects the video.",
+      "Keep the file under 2 MB if you upload from the YouTube mobile app, or under the desktop limit shown in YouTube's help.",
+      "Verify your account in YouTube Studio if custom thumbnails are not available to you yet.",
+      "Check that the thumbnail follows YouTube's Community Guidelines, which apply to every custom thumbnail."
+    ]
+  },
+  "limits": [
+    "The maker creates 16:9 thumbnails for standard videos. It does not produce the vertical 9:16 thumbnails that YouTube recommends for Shorts.",
+    "Likeness is preserved well in most cases, but not perfectly. Review faces closely before publishing.",
+    "Text is part of the image, so changing a word means generating again.",
+    "It does not add your channel logo, and it does not guarantee more views. A good thumbnail helps but the video still has to deliver.",
+    "Custom thumbnails require a verified YouTube account."
+  ],
+  "sources": [
+    {
+      "label": "YouTube Help: Add custom thumbnails on YouTube",
+      "url": "https://support.google.com/youtube/answer/72431"
+    }
+  ]
+}

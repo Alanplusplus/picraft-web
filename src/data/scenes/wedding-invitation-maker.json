@@ -1,0 +1,251 @@
+{
+  "slug": "wedding-invitation-maker",
+  "name": "Wedding Invitation Maker",
+  "category": "print",
+  "summary": "Printable 5×7 wedding invitations with your names, date and venue, plus a phone-ready version.",
+  "badge": "5×7 in print",
+  "indexable": true,
+  "seo": {
+    "title": "Wedding Invitation Maker – Printable 5×7 Invitations",
+    "description": "Create a printable wedding invitation with your names, date and venue. Download a 5×7 in print-ready PDF with bleed and a version to share by text or email.",
+    "h1": "Wedding Invitation Maker",
+    "intro": [
+      "Type your names, date and venue, pick a style, and PiCraft designs a complete 5×7 inch wedding invitation with your details already typeset.",
+      "Download a print-ready PDF with bleed for your local print shop, or a phone-sized image to send by text, WhatsApp or email."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "3:4",
+    "resolution": "1K"
+  },
+  "fields": [
+    {
+      "key": "names",
+      "label": "Couple's names",
+      "type": "text",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "Emma Collins & James Porter"
+    },
+    {
+      "key": "date",
+      "label": "Date",
+      "type": "text",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "Saturday, June 12, 2027"
+    },
+    {
+      "key": "time",
+      "label": "Time (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 40,
+      "placeholder": "Four o'clock in the afternoon"
+    },
+    {
+      "key": "venue",
+      "label": "Venue",
+      "type": "text",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "The Glasshouse at Willow Farm"
+    },
+    {
+      "key": "location",
+      "label": "City (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "Napa, California"
+    },
+    {
+      "key": "rsvp",
+      "label": "RSVP line (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 80,
+      "placeholder": "Kindly reply by May 1 · emmaandjames.com"
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "botanical",
+      "options": [
+        {
+          "value": "botanical",
+          "label": "Watercolor botanical",
+          "prompt": "delicate watercolor greenery and white florals framing the text, soft sage and ivory palette, elegant script for the names and a refined serif for the details"
+        },
+        {
+          "value": "minimal",
+          "label": "Modern minimal",
+          "prompt": "modern minimalist design with generous white space, fine thin-line accents, an elegant high-contrast serif, black ink on warm white"
+        },
+        {
+          "value": "classic",
+          "label": "Classic gold",
+          "prompt": "classic formal design with an ornate gold foil-style border on ivory card stock texture, elegant script names and serif details"
+        },
+        {
+          "value": "boho",
+          "label": "Boho arch",
+          "prompt": "boho design with dried pampas grass, terracotta and blush florals, an arch shape framing the text, warm earthy palette"
+        },
+        {
+          "value": "garden",
+          "label": "Romantic garden",
+          "prompt": "romantic garden design with lush pastel roses and peonies in watercolor, soft pink and cream palette"
+        },
+        {
+          "value": "art_deco",
+          "label": "Art Deco",
+          "prompt": "art deco design with geometric gold lines, fan shapes and a luxurious navy or emerald background, elegant sans-serif titles"
+        },
+        {
+          "value": "rustic",
+          "label": "Rustic wood",
+          "prompt": "rustic design with wood grain texture, mason jar and wildflower accents, warm browns and sunflower yellow, handwritten script names"
+        },
+        {
+          "value": "beach",
+          "label": "Beach & coastal",
+          "prompt": "beach and coastal design with watercolor ocean waves, sandy tones, seashell accents and a relaxed handwritten script"
+        },
+        {
+          "value": "moody",
+          "label": "Moody & dark",
+          "prompt": "moody romantic design with dark background, deep jewel-toned florals in burgundy and plum, elegant gold script names"
+        },
+        {
+          "value": "cherry_blossom",
+          "label": "Cherry blossom",
+          "prompt": "Japanese-inspired cherry blossom design with soft pink sakura branches on ivory, refined serif typography"
+        }
+      ]
+    }
+  ],
+  "prompt": "Design a printable wedding invitation card in portrait orientation, shown flat and front-on, filling the entire image edge to edge. It is the artwork itself, not a mockup: no table, no envelope, no hands, no drop shadow.\nStyle: {{style}}.\nThe card contains exactly the following text and nothing else, each item on its own line, spelled exactly as written:\n\"Together with their families\"\n\"{{names}}\"\n\"request the pleasure of your company at their wedding\"\n\"{{date}}\"\n[[\"{{time}}\"]]\n\"{{venue}}\"\n[[\"{{location}}\"]]\n[[\"{{rsvp}}\"]]\nAll text perfectly legible and well inside the card, with margins of at least 8% on every side so nothing is trimmed when printed. Balanced, centered layout, print-quality detail.",
+  "outputs": [
+    {
+      "id": "share",
+      "label": "Share image 1080×1500 JPG",
+      "width": 1080,
+      "height": 1500,
+      "format": "jpg",
+      "dpi": 72,
+      "preview": true
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF 5×7 in with 0.125 in bleed",
+      "widthIn": 5,
+      "heightIn": 7,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "pdf"
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG 5×7 in with bleed, 300 DPI",
+      "widthIn": 5,
+      "heightIn": 7,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "jpg"
+    }
+  ],
+  "specs": {
+    "heading": "Wedding invitation print specs",
+    "columns": [
+      "Item",
+      "Spec"
+    ],
+    "rows": [
+      [
+        "Finished size",
+        "5×7 in (127×178 mm)"
+      ],
+      [
+        "With bleed",
+        "5.25×7.25 in, 0.125 in on every side"
+      ],
+      [
+        "Resolution",
+        "300 DPI (1575×2175 px)"
+      ],
+      [
+        "Safe area",
+        "Keep text 0.25 in inside the trim line"
+      ],
+      [
+        "Envelope",
+        "A7 (5¼×7¼ in)"
+      ]
+    ],
+    "notes": [
+      "Ask your printer to trim to 5×7 in. Heavy card stock (110 lb / 300 gsm or more) gives a premium feel.",
+      "Proofread every name, date and time on the generated card before printing."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Enter your details",
+      "description": "Names, date, venue and an optional RSVP line."
+    },
+    {
+      "title": "Choose a style",
+      "description": "Watercolor, minimal, classic gold, boho or romantic garden."
+    },
+    {
+      "title": "Download and print",
+      "description": "A 5×7 in print-ready PDF with bleed, plus a share image for phones."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is the text always spelled correctly?",
+      "a": "PiCraft uses a model that renders text accurately, but always proofread names, dates and times before printing. If something is off, generate again; each attempt is a fresh design."
+    },
+    {
+      "q": "Where can I print it?",
+      "a": "Any local print shop or online printer that accepts PDF. Tell them the finished size is 5×7 in with a 0.125 in bleed."
+    },
+    {
+      "q": "Can I make matching RSVP cards?",
+      "a": "Generate an RSVP design with the same style option and your RSVP wording in the RSVP line. Styles are consistent but not identical between generations."
+    },
+    {
+      "q": "Can I send it digitally?",
+      "a": "Yes. The 1080×1500 share image is sized for text messages, WhatsApp, email and Instagram stories."
+    },
+    {
+      "q": "Can I change the wording of the invitation?",
+      "a": "The top and middle lines use a traditional wording in English. Use the RSVP field for extra words, or edit the downloaded design in an image editor."
+    },
+    {
+      "q": "What size are the envelopes?",
+      "a": "A 5×7 inch card fits an A7 envelope, which measures 5¼×7¼ inches."
+    },
+    {
+      "q": "Can I add a photo of the couple?",
+      "a": "No. The invitations are illustrated artwork, which keeps the text layout reliable."
+    },
+    {
+      "q": "What paper should I print on?",
+      "a": "Heavy card stock, 110 lb (300 gsm) or more, gives a premium feel. Ask your printer to show you samples before you order."
+    },
+    {
+      "q": "When should invitations go out?",
+      "a": "Digital invitations often go out two to three months ahead. Printed invitations commonly go out six to eight weeks before the wedding, and earlier for destination weddings."
+    }
+  ],
+  "related": [
+    "birthday-invitation-maker",
+    "event-flyer-maker",
+    "restaurant-menu-maker"
+  ]
+}

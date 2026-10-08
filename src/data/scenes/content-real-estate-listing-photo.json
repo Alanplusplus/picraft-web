@@ -1,0 +1,114 @@
+{
+  "updated": "2026-10-08",
+  "overview": {
+    "heading": "How the Real Estate Listing Photo Editor works",
+    "paragraphs": [
+      "Upload a photo of a room or the front of a property, choose one of four edits and, if you like, add a short direction such as a furniture style. PiCraft returns an edited version in the same 4:3 landscape format that most listing sites expect, with the architecture, windows and floors left as they are.",
+      "Enhance brightens and straightens a photo that was taken quickly. Declutter removes loose items such as personal belongings and surface clutter. Virtual staging furnishes an empty room, and virtual twilight turns a daytime exterior into a warm dusk photo.",
+      "Edits to listing photos come with responsibilities: most MLS systems and some states require you to label altered images and keep the original. The page below explains what to check before you publish."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "2048×1536 px MLS image",
+      "description": "A landscape 4:3 JPG at a size that suits most MLS systems."
+    },
+    {
+      "title": "1600×1200 px web version",
+      "description": "A lighter JPG kept under 1 MB for your website, social posts and email."
+    },
+    {
+      "title": "Four kinds of edit",
+      "description": "Enhance, declutter, virtual staging and virtual twilight, each applied to your own photo."
+    },
+    {
+      "title": "Optional style direction",
+      "description": "Add a short note, such as \"Scandinavian living room, light oak and white\", to steer furniture and mood."
+    },
+    {
+      "title": "Structure kept intact",
+      "description": "The model is told to keep walls, windows, floors and the layout as they are, so the image still shows the real property."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Listings from phone photos",
+      "description": "Agents and owners who photograph a home themselves can brighten and straighten the images before posting."
+    },
+    {
+      "title": "Empty rooms",
+      "description": "Show how an unfurnished living room, bedroom or office could be used, with a clear staged label on the listing."
+    },
+    {
+      "title": "Cluttered rooms",
+      "description": "Remove temporary clutter such as toys and counter items so buyers see the space itself."
+    },
+    {
+      "title": "Exteriors at dusk",
+      "description": "Turn a flat daytime shot of the front of the house into a warm evening photo for the lead image."
+    },
+    {
+      "title": "Rentals and short-term stays",
+      "description": "Improve photos for rental listings and vacation rentals where a professional photographer is not worth the cost."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Shoot from a corner",
+      "description": "Stand in a corner at about chest height so you capture as much of the room as possible with straight vertical lines."
+    },
+    {
+      "title": "Turn the lights on and open the blinds",
+      "description": "A bright, evenly lit source photo gives the best result. Very dark or blurry photos cannot be saved."
+    },
+    {
+      "title": "Hold the camera level",
+      "description": "Tilted walls and sloping floors carry through into the result. Use the grid lines on your phone."
+    },
+    {
+      "title": "Use one edit per photo",
+      "description": "Declutter first, then run the cleaned image through virtual staging if you need both. Mixing goals in one pass gives less predictable results."
+    },
+    {
+      "title": "Add a style note for staging",
+      "description": "A short direction such as \"modern, light wood, neutral colors\" keeps the furniture appropriate to the property and the market."
+    },
+    {
+      "title": "Compare before and after",
+      "description": "Put the two images side by side and check doors, windows, flooring and anything permanent. Nothing structural should change."
+    },
+    {
+      "title": "Keep the original",
+      "description": "Save the unedited photo with each edited one. Many listing rules ask you to provide it."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing an edit",
+    "intro": "Each edit solves a different problem. Pick the lightest one that does the job.",
+    "items": [
+      { "title": "Enhance (bright & straight)", "description": "For well-composed photos that are a bit dark, tilted or dull. The least invasive option." },
+      { "title": "Declutter", "description": "Removes loose items and clutter. Use it for lived-in rooms, and never to hide damage." },
+      { "title": "Virtual staging", "description": "Adds furniture and décor to an empty room. It must be labeled on the listing." },
+      { "title": "Virtual twilight (exterior)", "description": "Converts a daytime exterior into a dusk photo with warm window light. Use it for the lead image of a house." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you publish an edited listing photo",
+    "items": [
+      "Label every virtually staged or materially altered image the way your MLS requires, in the photo description, on the image or in the remarks.",
+      "Provide the unaltered original alongside the edited image where your MLS asks for it.",
+      "Check that walls, floors, windows, fixtures, views and the surrounding area still match the real property.",
+      "Confirm that nothing has been removed or hidden that a buyer would reasonably want to know about, such as damage, stains or cracks.",
+      "Check your MLS and state rules, because the required wording and placement of the label differ.",
+      "Use virtual staging only on empty or lightly furnished rooms, and say so in the listing text.",
+      "Keep both the original and the edited file in the property record."
+    ]
+  },
+  "limits": [
+    "The edit must not misrepresent the property. Do not use it to hide defects or to change permanent features such as flooring, walls, windows or views.",
+    "Results depend on the source photo. Dark, blurry or heavily tilted photos give weaker results.",
+    "Virtual staging places furniture in a plausible way, but sizes and layouts are approximate and are not an architectural plan.",
+    "Each photo is a separate generation and uses one credit. The maker does not process a whole property in one pass.",
+    "Rules on labeling edited photos differ by MLS and by state. PiCraft cannot tell you what applies to your listing."
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "slug": "amazon-product-photo",
+  "name": "Amazon Product Photo Maker",
+  "category": "photos",
+  "summary": "Pure-white main images and lifestyle shots sized for Amazon, Etsy and Shopify.",
+  "badge": "2000×2000 · pure white",
+  "indexable": true,
+  "seo": {
+    "title": "Amazon Product Photo Maker – White Background Images",
+    "description": "Turn a phone photo of your product into an Amazon-ready main image on pure white (RGB 255), plus lifestyle and detail shots at 2000×2000 px.",
+    "h1": "Amazon Product Photo Maker",
+    "intro": [
+      "Shoot your product on a kitchen table, upload it, and get a clean listing image: the product centered on pure white, filling the frame the way Amazon's main-image rules ask for.",
+      "Need more listing images? Switch to lifestyle or detail shots to show the product in use or up close, without booking a studio."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "nano-banana-2-1",
+    "aspectRatio": "1:1",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "product",
+      "label": "Product photo",
+      "type": "image",
+      "required": true,
+      "help": "One product, fully visible, in reasonable light. Any background is fine."
+    },
+    {
+      "key": "productName",
+      "label": "What is the product?",
+      "type": "text",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "Stainless steel insulated water bottle, 750 ml"
+    },
+    {
+      "key": "shot",
+      "label": "Image type",
+      "type": "select",
+      "default": "main",
+      "options": [
+        {
+          "value": "main",
+          "label": "Main image (pure white background)",
+          "prompt": "Amazon main image: the product alone, centered on a pure white background, filling about 85% of the frame, soft even studio lighting, only a very subtle natural contact shadow, no props, no added text, no added logos."
+        },
+        {
+          "value": "lifestyle",
+          "label": "Lifestyle scene",
+          "prompt": "Lifestyle image: the product in a realistic, tasteful everyday setting where it would naturally be used, soft natural light, shallow depth of field, the product is the clear hero and fully visible, no text."
+        },
+        {
+          "value": "detail",
+          "label": "Close-up detail",
+          "prompt": "Detail image: a close-up that highlights the product's materials, texture and craftsmanship on a clean light backdrop, macro lens look, no text."
+        }
+      ]
+    }
+  ],
+  "prompt": "Create a professional e-commerce photo of {{productName}} using {{product}}.\nKeep the product exactly as it is: same shape, proportions, colors, materials, labels, printed text and logos. Do not redesign it, add parts or remove parts.\n{{shot}}\nPhotorealistic commercial product photography, sharp focus across the whole product, accurate color, high resolution. No watermark.",
+  "outputs": [
+    {
+      "id": "listing",
+      "label": "Listing image 2000×2000 JPG (pure white)",
+      "width": 2000,
+      "height": 2000,
+      "format": "jpg",
+      "dpi": 300,
+      "pureWhite": true,
+      "preview": true,
+      "when": {
+        "shot": "main"
+      }
+    },
+    {
+      "id": "listing",
+      "label": "Listing image 2000×2000 JPG",
+      "width": 2000,
+      "height": 2000,
+      "format": "jpg",
+      "dpi": 300,
+      "preview": true,
+      "when": {
+        "shot": [
+          "lifestyle",
+          "detail"
+        ]
+      }
+    },
+    {
+      "id": "web",
+      "label": "Store / social 1080×1080 JPG",
+      "width": 1080,
+      "height": 1080,
+      "format": "jpg",
+      "dpi": 72,
+      "pureWhite": true,
+      "when": {
+        "shot": "main"
+      }
+    },
+    {
+      "id": "web",
+      "label": "Store / social 1080×1080 JPG",
+      "width": 1080,
+      "height": 1080,
+      "format": "jpg",
+      "dpi": 72,
+      "when": {
+        "shot": [
+          "lifestyle",
+          "detail"
+        ]
+      }
+    }
+  ],
+  "specs": {
+    "heading": "Amazon main image requirements",
+    "columns": [
+      "Requirement",
+      "Rule"
+    ],
+    "rows": [
+      [
+        "Background",
+        "Pure white, RGB 255, 255, 255"
+      ],
+      [
+        "Product fill",
+        "Product fills 85% or more of the frame"
+      ],
+      [
+        "Size",
+        "At least 1000 px on the longest side for zoom; 1600 px or more recommended"
+      ],
+      [
+        "Format",
+        "JPEG preferred; TIFF, PNG and GIF also accepted"
+      ],
+      [
+        "Content",
+        "Only the product for sale: no added text, logos, watermarks, props or borders"
+      ]
+    ],
+    "notes": [
+      "PiCraft forces near-white background pixels to exactly RGB 255 on main images, which is what Amazon's automated checks look for.",
+      "Secondary images (lifestyle, detail) can use any background and may include props."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Upload your product",
+      "description": "Any clear photo works, even one taken on a table at home."
+    },
+    {
+      "title": "Pick the image type",
+      "description": "Main image on pure white, a lifestyle scene, or a close-up detail shot."
+    },
+    {
+      "title": "Download listing files",
+      "description": "Get a 2000×2000 listing image and a 1080×1080 version for your store or social posts."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Will the AI change my product?",
+      "a": "PiCraft instructs the model to keep the shape, colors, labels and logos of your product as they are in your photo, and the result is usually faithful. It is not guaranteed, though. Compare every image with the real product, because marketplace rules require images to show what the customer actually receives."
+    },
+    {
+      "q": "Is the background really pure white?",
+      "a": "Yes. On main images PiCraft replaces every near-white background pixel with exact RGB 255, 255, 255 after generation."
+    },
+    {
+      "q": "Can I use these images on Etsy, Shopify or eBay?",
+      "a": "Yes. 2000×2000 px square images work on all major marketplaces and storefronts."
+    },
+    {
+      "q": "What photo should I start with?",
+      "a": "A sharp photo with the whole product in frame and no hands covering it. Diffuse daylight from a window gives the most accurate colors."
+    },
+    {
+      "q": "What does Amazon require for a main image?",
+      "a": "Amazon asks for a pure white background (RGB 255, 255, 255), the product filling at least 85% of the frame, and only the product for sale, with no extra text, logos, watermarks or props. The longest side should be at least 1000 px, and 1600 px or more is recommended."
+    },
+    {
+      "q": "Which image type should I use for each listing slot?",
+      "a": "Use the main image for the first slot. Use lifestyle and detail shots for the other slots, to show scale, use and material."
+    },
+    {
+      "q": "Does it work for clothing on a model?",
+      "a": "It is designed for products photographed on their own. Apparel on a model has separate category rules, so check them before using AI-edited images."
+    },
+    {
+      "q": "Can I generate several images of the same product?",
+      "a": "Yes. Each generation uses one credit. Create the main image first, then a lifestyle shot and a close-up, and keep the best of each."
+    },
+    {
+      "q": "Will Amazon accept images made with AI?",
+      "a": "Amazon's rules focus on what the image shows: the actual product, accurately, on pure white for the main image. PiCraft produces files that match the published technical requirements, but it cannot guarantee acceptance, so check the result before you submit it."
+    }
+  ],
+  "related": [
+    "real-estate-listing-photo",
+    "sticker-maker",
+    "t-shirt-design-maker"
+  ]
+}

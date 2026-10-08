@@ -1,0 +1,286 @@
+{
+  "slug": "restaurant-menu-maker",
+  "name": "Restaurant Menu Maker",
+  "category": "print",
+  "summary": "Paste your dishes and prices, get a designed one-page menu in Letter or A4.",
+  "badge": "Letter · A4",
+  "indexable": true,
+  "seo": {
+    "title": "Restaurant Menu Maker – Printable Menus from Your Dishes",
+    "description": "Paste your dishes and prices and get a designed one-page restaurant menu. Download a print-ready Letter or A4 PDF with bleed, plus an image for your website.",
+    "h1": "Restaurant Menu Maker",
+    "intro": [
+      "Paste your menu the way you'd write it on a notepad: one dish per line with a short description and price. PiCraft lays it out as a finished, printable menu.",
+      "Choose US Letter or A4, download the PDF for your printer, and use the web image on your website, Google Business Profile or delivery apps."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "3:4",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "restaurantName",
+      "label": "Restaurant name",
+      "type": "text",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "Luna Pizzeria"
+    },
+    {
+      "key": "cuisine",
+      "label": "Tagline (optional)",
+      "type": "text",
+      "required": false,
+      "maxLength": 60,
+      "placeholder": "Wood-fired Neapolitan pizza"
+    },
+    {
+      "key": "items",
+      "label": "Menu items",
+      "type": "textarea",
+      "required": true,
+      "maxLength": 900,
+      "maxLines": 14,
+      "rows": 8,
+      "placeholder": "Margherita – tomato, fior di latte, basil – $14\nDiavola – spicy salami, chili oil – $16\nTiramisu – mascarpone, espresso – $8",
+      "help": "One item per line, up to 14 lines. Section names like \"Desserts\" can go on their own line."
+    },
+    {
+      "key": "style",
+      "label": "Style",
+      "type": "select",
+      "default": "bistro",
+      "options": [
+        {
+          "value": "bistro",
+          "label": "Classic bistro",
+          "prompt": "classic bistro design on cream paper, black serif typography, thin rules between sections"
+        },
+        {
+          "value": "modern",
+          "label": "Modern minimal",
+          "prompt": "modern minimalist design with lots of white space, clean sans-serif typography and one accent color"
+        },
+        {
+          "value": "rustic",
+          "label": "Rustic farmhouse",
+          "prompt": "rustic farmhouse design with kraft paper texture and small hand-drawn herb illustrations"
+        },
+        {
+          "value": "street",
+          "label": "Street food",
+          "prompt": "vibrant street-food design with bold colors, playful display type and small illustrated food icons"
+        },
+        {
+          "value": "fine",
+          "label": "Fine dining",
+          "prompt": "upscale fine-dining design with a deep green background and gold typography, restrained ornament"
+        },
+        {
+          "value": "chalkboard",
+          "label": "Chalkboard",
+          "prompt": "chalkboard design with white and colored chalk lettering on a dark slate background, hand-drawn food illustrations"
+        },
+        {
+          "value": "tropical",
+          "label": "Tropical café",
+          "prompt": "tropical café design with monstera leaves, bright coral and teal accents, playful sans-serif and hand-lettering mix"
+        },
+        {
+          "value": "japanese",
+          "label": "Japanese zen",
+          "prompt": "Japanese zen design with a washi paper texture, clean vertical layout, minimal ink brush accents and elegant Japanese-inspired typography"
+        },
+        {
+          "value": "retro",
+          "label": "Retro diner",
+          "prompt": "retro 1950s American diner style with checkered patterns, bold red and cream palette, vintage display type"
+        },
+        {
+          "value": "wine",
+          "label": "Wine bar",
+          "prompt": "wine bar and tapas design with a burgundy and cream palette, delicate vine illustrations and refined serif typography"
+        }
+      ]
+    },
+    {
+      "key": "paper",
+      "label": "Paper size",
+      "type": "select",
+      "default": "letter",
+      "options": [
+        {
+          "value": "letter",
+          "label": "US Letter (8.5×11 in)",
+          "aspectRatio": "3:4",
+          "prompt": ""
+        },
+        {
+          "value": "a4",
+          "label": "A4 (210×297 mm)",
+          "aspectRatio": "2:3",
+          "prompt": ""
+        }
+      ]
+    }
+  ],
+  "prompt": "Design a one-page printable restaurant menu in portrait orientation, shown flat and front-on, filling the whole image edge to edge. It is the artwork itself, not a mockup: no table, no hands, no drop shadow.\nStyle: {{style}}.\nAt the top, the restaurant name \"{{restaurantName}}\"[[ with the tagline \"{{cuisine}}\"]].\nBelow it, list these menu lines in a clean, well-aligned layout. Keep the order, names, descriptions and prices exactly as written; dish names prominent, descriptions smaller, prices aligned consistently. Lines without a price are section headings:\n{{items}}\nAll text spelled exactly as provided and perfectly legible. Do not invent dishes, prices or extra text. Keep all text at least 6% away from every edge. Print-quality.",
+  "outputs": [
+    {
+      "id": "web",
+      "label": "Web image 1275×1650 JPG",
+      "width": 1275,
+      "height": 1650,
+      "format": "jpg",
+      "dpi": 150,
+      "preview": true,
+      "when": {
+        "paper": "letter"
+      }
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF 8.5×11 in with 0.125 in bleed",
+      "widthIn": 8.5,
+      "heightIn": 11,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "pdf",
+      "when": {
+        "paper": "letter"
+      }
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG 8.5×11 in with bleed",
+      "widthIn": 8.5,
+      "heightIn": 11,
+      "bleedIn": 0.125,
+      "dpi": 300,
+      "format": "jpg",
+      "when": {
+        "paper": "letter"
+      }
+    },
+    {
+      "id": "web",
+      "label": "Web image 1240×1754 JPG",
+      "width": 1240,
+      "height": 1754,
+      "format": "jpg",
+      "dpi": 150,
+      "preview": true,
+      "when": {
+        "paper": "a4"
+      }
+    },
+    {
+      "id": "print-pdf",
+      "label": "Print PDF A4 with 3 mm bleed",
+      "widthIn": 8.268,
+      "heightIn": 11.693,
+      "bleedIn": 0.118,
+      "dpi": 300,
+      "format": "pdf",
+      "when": {
+        "paper": "a4"
+      }
+    },
+    {
+      "id": "print-jpg",
+      "label": "Print JPG A4 with bleed",
+      "widthIn": 8.268,
+      "heightIn": 11.693,
+      "bleedIn": 0.118,
+      "dpi": 300,
+      "format": "jpg",
+      "when": {
+        "paper": "a4"
+      }
+    }
+  ],
+  "specs": {
+    "heading": "Menu print sizes",
+    "columns": [
+      "Paper",
+      "Trim size",
+      "With bleed"
+    ],
+    "rows": [
+      [
+        "US Letter",
+        "8.5×11 in",
+        "8.75×11.25 in (0.125 in bleed)"
+      ],
+      [
+        "A4",
+        "210×297 mm",
+        "216×303 mm (3 mm bleed)"
+      ]
+    ],
+    "notes": [
+      "Large print files are upscaled from the generated design; bold, simple layouts print sharpest.",
+      "Check every price before printing. Menus often need an allergen note that your local rules may require."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Paste your dishes",
+      "description": "One line per dish with an optional description and price."
+    },
+    {
+      "title": "Pick a style and paper",
+      "description": "Choose from ten styles, on US Letter or A4 paper."
+    },
+    {
+      "title": "Print or publish",
+      "description": "PDF with bleed for print, a web image for your site and delivery apps."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many items can a menu have?",
+      "a": "Up to 14 lines, which keeps the text large enough to read and accurate. For longer menus, create one page per section."
+    },
+    {
+      "q": "Will prices be copied exactly?",
+      "a": "The model is instructed to copy every name and price as written, but always proofread. Generate again if a line is off."
+    },
+    {
+      "q": "Can I use it for cafés, bars and food trucks?",
+      "a": "Yes. Use the tagline to describe the place, and choose the street food style for trucks and casual spots."
+    },
+    {
+      "q": "Can I add my logo?",
+      "a": "No. The restaurant name is set as a typographic logo in the chosen style."
+    },
+    {
+      "q": "What format should I paste my menu in?",
+      "a": "One dish per line, for example: Margherita – tomato, fior di latte, basil – $14. Lines without a price become section headings."
+    },
+    {
+      "q": "Can I change a price after generating?",
+      "a": "The text is part of the image, so generate again with the corrected line. Keep your menu text saved so it takes a minute."
+    },
+    {
+      "q": "Which paper size should I choose?",
+      "a": "Choose US Letter in the US and Canada and A4 in most other countries. Each download includes the right bleed for that size."
+    },
+    {
+      "q": "Can I use it for a drinks menu?",
+      "a": "Yes. List drinks the same way, one per line with a price."
+    },
+    {
+      "q": "What about allergen information?",
+      "a": "Many places must show allergen notes on menus. PiCraft doesn't add them, so include them in your lines or add them in your printer's editor."
+    }
+  ],
+  "related": [
+    "event-flyer-maker",
+    "wedding-invitation-maker",
+    "amazon-product-photo"
+  ]
+}
