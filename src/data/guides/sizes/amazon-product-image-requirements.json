@@ -1,0 +1,117 @@
+{
+  "title": "Amazon Product Image Requirements: White BG, Size & Main Image",
+  "h1": "Amazon Product Image Size and Main Image Rules",
+  "description": "Amazon main image: pure white RGB 255, 85% fill, 1000 px minimum for zoom, 1600 px+ recommended, JPEG preferred, and what secondary images allow.",
+  "summary": "Amazon's main product image must use a pure white background (RGB 255, 255, 255), show only the product for sale filling at least 85% of the frame, and be at least 1000 pixels on the longest side for zoom; larger than 1600 px is recommended. JPEG is preferred. Secondary images can show lifestyle scenes and detail.",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "amazon-product-photo",
+  "relatedScenes": ["real-estate-listing-photo", "sticker-maker", "t-shirt-design-maker"],
+  "relatedGuides": ["blog:product-photo-checklist-for-online-stores", "real-estate-photo-size"],
+  "sections": [
+    {
+      "heading": "Amazon image specs at a glance",
+      "paragraphs": [
+        "Every listing needs at least one image. Amazon publishes technical rules for all images and stricter content rules for the main image—the first image shoppers see in search and at the top of the detail page.",
+        "The table combines requirements Amazon staff summarized in Seller Central forums and the Product Photography Standards update for sellers. Category-specific rules (apparel on a model, for example) can add extra constraints; check your category before upload."
+      ],
+      "table": {
+        "columns": ["Setting", "Main image", "All product images"],
+        "rows": [
+          ["Longest side", "At least 1000 px for zoom; 1600 px or more recommended", "500–10,000 px"],
+          ["Background", "Pure white RGB 255, 255, 255", "Main must be white; secondary images may use other backgrounds"],
+          ["Product fill", "At least 85% of the image frame", "Product should fill the frame appropriately for the shot"],
+          ["Format", "JPEG preferred", "JPEG (.jpg), TIFF, PNG, or non-animated GIF"],
+          ["Clarity", "Sharp, not pixelated or jagged", "Same"],
+          ["Added graphics", "No text, logos, borders, color blocks, or watermarks on the product or background", "Stricter on main; secondary slots allow lifestyle and detail"]
+        ]
+      },
+      "after": [
+        "Amazon prefers JPEG and recommends at least six images plus video when possible. Uploading a file does not guarantee it will display if another seller's image better matches the style guide."
+      ]
+    },
+    {
+      "heading": "Main image content rules",
+      "paragraphs": [
+        "The main image must accurately show the product customers receive, as a realistic professional photo—not a placeholder sketch.",
+        "Only the product for sale belongs in the frame. Do not add props, accessories, or packaging unless the packaging is an essential part of what is sold (consumables and collectibles are called out separately in seller guidance).",
+        "Do not overlay marketing text, badges, borders, or brand logos that are not physically printed on the product. Labels and logos that are part of the product itself stay; promotional graphics do not.",
+        "Show one sellable unit. Collages, multiple colors, or multiple angles in one main image conflict with main-image rules; use additional image slots for other views."
+      ]
+    },
+    {
+      "heading": "Secondary images and square exports",
+      "paragraphs": [
+        "Images after the main slot can show the product in use, close-ups, alternate angles, or size context. Those shots may use environments, props and non-white backgrounds when they still represent the item accurately.",
+        "Amazon does not require a square main image for every category, but a square file simplifies layout and matches many storefront tools. PiCraft exports a 2000×2000 px JPG for listings and a 1080×1080 px copy for your own store or social posts—useful on Etsy or Shopify even though those platforms are not Amazon.",
+        "Keep an unedited photo of the physical product with each generated file. Marketplaces expect images to match what ships, and you may need the source if a listing is questioned."
+      ]
+    },
+    {
+      "heading": "Pure white background in practice",
+      "paragraphs": [
+        "Pure white means exactly RGB 255, 255, 255, not off-white from a light tent or gray from shadows. Automated checks compare pixel values; near-white backgrounds can fail review.",
+        "A subtle natural contact shadow directly under the product is common in studio shots; heavy gray floors or colored gradients belong in secondary images, not the main slot.",
+        "On main images, PiCraft sets near-white background pixels to RGB 255 after generation so the file aligns with what Amazon's checks expect."
+      ]
+    },
+    {
+      "heading": "Pre-upload checklist",
+      "ordered": true,
+      "items": [
+        "Compare shape, color, labels and printed text to the real product.",
+        "Confirm the main image is only the sellable item on white, filling at least 85% of the frame.",
+        "Verify the longest side is at least 1000 px; prefer 1600 px or more and 2000 px for headroom.",
+        "Zoom to 200% and inspect edges and small type for blur or AI artifacts.",
+        "Reserve lifestyle and detail shots for secondary slots, not slot one.",
+        "Review category-specific image rules if you sell apparel, books, or other restricted types."
+      ],
+      "after": [
+        "For a broader store workflow beyond Amazon, see the [product photo checklist for online stores](/blog/product-photo-checklist-for-online-stores)."
+      ]
+    },
+    {
+      "heading": "Make listing images at Amazon-friendly size",
+      "paragraphs": [
+        "The [Amazon Product Photo Maker](/create/amazon-product-photo) builds a 2000×2000 px main image on pure white from your product photo, plus lifestyle and detail options for other slots, and a 1080×1080 px square for non-Amazon channels.",
+        "It does not guarantee listing approval and may subtly change fine details—always compare the output to the physical item. More listing and product photography topics are grouped under [product and listing photos](/categories/product-and-listing-photos)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What background color does Amazon require for the main image?",
+      "a": "Pure white with RGB values 255, 255, 255."
+    },
+    {
+      "q": "How big must an Amazon product image be?",
+      "a": "Between 500 and 10,000 pixels on the longest side. Amazon prefers at least 1000 px for zoom and recommends 1600 px or more for best results."
+    },
+    {
+      "q": "How much of the frame should the product fill?",
+      "a": "The product should fill at least 85% of the image frame on the main image."
+    },
+    {
+      "q": "Can the main image include text or a logo?",
+      "a": "Main images must not include added text, logos, borders, color blocks, or watermarks. Text or logos printed on the product itself are part of the product."
+    },
+    {
+      "q": "Which file format should I use?",
+      "a": "JPEG is preferred. TIFF, PNG and non-animated GIF are also accepted."
+    },
+    {
+      "q": "Can secondary images show lifestyle scenes?",
+      "a": "Yes. Additional images can show the product in context, detail, or alternate angles. The strict white-background and no-graphic rules apply to the main image only."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Amazon Seller Forums: Listings Lounge – Product Image Requirements",
+      "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/4b3c4c39-6f8c-4312-aa0e-99982eb8f5e1"
+    },
+    {
+      "label": "Amazon Seller Forums: Product Photography Standards (2026)",
+      "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/0149bdb3-2056-42ce-b0bb-9eef94e3d2b8"
+    }
+  ]
+}

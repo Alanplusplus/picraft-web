@@ -1,0 +1,699 @@
+{
+  "scene": "youtube-thumbnail-maker",
+  "field": "style",
+  "noun": "style",
+  "collection": "YouTube thumbnail styles",
+  "updated": "2026-10-09",
+  "styles": [
+    {
+      "value": "bold",
+      "slug": "bold",
+      "seo": {
+        "title": "Bold High-Contrast YouTube Thumbnail Maker – 1280×720",
+        "description": "Make a bold, high-contrast YouTube thumbnail with saturated color, dramatic light and a clear focal point. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Bold YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The bold and high contrast style is the classic YouTube look: saturated colors, dramatic lighting, a subtle outline around the subject and one clear focal point. It is built to be understood in a fraction of a second, in a crowded feed, on a small phone screen.",
+        "Type a short headline, describe what the video is about, and add your own photo if you want to be in the thumbnail. PiCraft keeps the headline large and away from the bottom-right corner where YouTube shows the video length."
+      ],
+      "bestFor": [
+        {
+          "title": "Challenge and story videos",
+          "description": "Titles such as \"I quit my job\" or \"30 days of cold plunges\" need an emotional face and a punchy headline, which this style supplies."
+        },
+        {
+          "title": "Explainers with a hook",
+          "description": "A single strong object, such as glowing cubes for a crypto explainer, gives a complex topic a visual anchor."
+        },
+        {
+          "title": "Channels that compete on first impression",
+          "description": "When many similar videos appear next to each other, a high-contrast thumbnail is the quickest way to stand out."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Keep the headline to two to five words",
+          "description": "The form suggests short text for a reason: at phone size, long lines turn into gray bars. Three strong words beat a sentence."
+        },
+        {
+          "title": "Pick one subject",
+          "description": "Describe a single clear scene in the topic field: one person, one object, one action. A busy scene weakens the focal point that this style depends on."
+        },
+        {
+          "title": "Use an expressive photo",
+          "description": "If you upload your face, choose a clear, well-lit photo with a strong expression. The maker keeps your likeness as is, so a flat expression stays flat."
+        },
+        {
+          "title": "Review it at stamp size",
+          "description": "Shrink the result to a small image next to other thumbnails. If the headline and subject still read, the contrast is working."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"I QUIT MY JOB\", topic: a woman working on a laptop in an airport at sunset",
+        "Headline: \"CRYPTO EXPLAINED\", topic: a smiling man pointing at glowing blockchain cubes",
+        "Headline: \"30 DAYS NO SUGAR\", topic: a split view of sweets on one side and a healthy meal on the other",
+        "Headline: \"DON'T BUY THIS\", topic: a shocked man holding a gadget with a red cross over it"
+      ],
+      "faq": [
+        {
+          "q": "Is a bold style the same as clickbait?",
+          "a": "No. Bold describes the look: strong color and contrast. The content of the thumbnail should still match the video, and YouTube's Community Guidelines apply to every custom thumbnail."
+        },
+        {
+          "q": "What size is the file?",
+          "a": "You get a 1280×720 px JPG under 2 MB and a 1920×1080 px JPG. See the [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size) for the full requirements."
+        },
+        {
+          "q": "Can I add my channel logo?",
+          "a": "No. The maker does not add logos, so add one in an image editor if you need it, away from the bottom-right corner."
+        },
+        {
+          "q": "Will this get more views?",
+          "a": "No maker can promise that. A clear thumbnail helps viewers understand the video, but the title and the video itself still decide whether they watch."
+        }
+      ]
+    },
+    {
+      "value": "clean",
+      "slug": "clean",
+      "seo": {
+        "title": "Clean Minimal YouTube Thumbnail Maker – 1280×720 JPG",
+        "description": "Make a clean, minimal YouTube thumbnail with negative space, soft studio light and a heavy sans-serif headline. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Clean & Minimal YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The clean and minimal style trades noise for space: generous negative space, soft studio light and a modern heavy sans-serif headline. The subject is shown on its own, with nothing around it competing for attention.",
+        "Enter a short headline and a one-sentence description of the video. PiCraft composes a calm thumbnail that still reads at small sizes, because the text is large and the background stays quiet."
+      ],
+      "bestFor": [
+        {
+          "title": "Reviews and comparisons",
+          "description": "Products on a desk, such as phones or notebooks, look sharp against an uncluttered background."
+        },
+        {
+          "title": "Craft, art and process videos",
+          "description": "A drawing timelapse or a woodworking build is best shown with a clean view of the work itself."
+        },
+        {
+          "title": "Educational and professional channels",
+          "description": "A calm look signals clarity and trust, which suits tutorials, business advice and productivity content."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Let the negative space do work",
+          "description": "Keep the topic description simple, with one subject and one setting. If you list five objects, the space disappears."
+        },
+        {
+          "title": "Make the headline carry the message",
+          "description": "With little else on the image, the words matter. Pick a specific phrase such as \"BEST BUDGET PHONE\" rather than a vague one."
+        },
+        {
+          "title": "Choose a product photo with clean edges",
+          "description": "If you upload a product or your face, use a photo with an even background and good light, so it blends with the studio look."
+        },
+        {
+          "title": "Check legibility on a small screen",
+          "description": "Minimal does not mean tiny. Preview the thumbnail at phone size and make sure the headline is still easy to read."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"BEST BUDGET PHONE\", topic: several smartphones lined up on a clean desk",
+        "Headline: \"DRAWING TIMELAPSE\", topic: a hand sketching a pencil portrait on white paper",
+        "Headline: \"MY DESK SETUP\", topic: a tidy wooden desk with a laptop and a small plant",
+        "Headline: \"LEARN SQL FAST\", topic: a laptop showing a simple table, with soft studio light"
+      ],
+      "faq": [
+        {
+          "q": "Is minimal too quiet for YouTube?",
+          "a": "It can be, in a feed full of loud thumbnails, but a calm design stands out in its own way. For more punch, try the [bold style](/create/youtube-thumbnail-maker/bold)."
+        },
+        {
+          "q": "Does the style work with a photo of me?",
+          "a": "Yes. Upload a clear photo and the maker keeps your likeness in a studio-lit, uncluttered composition. Check the face closely before you publish."
+        },
+        {
+          "q": "What font is used?",
+          "a": "The style asks for a modern heavy sans-serif headline. The exact letterforms vary with each generation, and the text is part of the image."
+        },
+        {
+          "q": "What if the text has a typo?",
+          "a": "Generate again. Text is part of the image, so a fix means a new design. Read every word before you upload."
+        }
+      ]
+    },
+    {
+      "value": "cinematic",
+      "slug": "cinematic",
+      "seo": {
+        "title": "Cinematic YouTube Thumbnail Maker – Movie-Poster Look",
+        "description": "Make a cinematic YouTube thumbnail with moody color grading, depth of field and atmospheric light. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Cinematic YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The cinematic style borrows the look of a movie poster: moody color grading, shallow depth of field and atmospheric light. The subject sits in a scene that feels like a still from a film rather than a snapshot.",
+        "Add a short headline, describe the scene in a sentence or two, and PiCraft builds the frame. It suits stories, documentaries and anything that benefits from a sense of mood."
+      ],
+      "bestFor": [
+        {
+          "title": "Documentaries and mini-series",
+          "description": "A film-like frame signals that the video is crafted, which suits story-driven, researched content."
+        },
+        {
+          "title": "Mystery and exploration",
+          "description": "A flashlight in a dark corridor or a lone figure on a ridge turns a simple topic into a scene."
+        },
+        {
+          "title": "Short films and trailers",
+          "description": "If your video is itself cinematic, the thumbnail should look like its poster."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Describe light and place",
+          "description": "In the topic field, name the setting and the light: \"a corridor lit by a flashlight beam\". Cinematic frames depend on these details."
+        },
+        {
+          "title": "Keep the title short",
+          "description": "Movie posters use few words. A headline such as \"HAUNTED HOTEL\" fits the style better than a long sentence."
+        },
+        {
+          "title": "Watch the dark shadows",
+          "description": "Deep shadows can swallow detail on a phone with the brightness turned down. Preview the result at a low brightness setting."
+        },
+        {
+          "title": "Use a photo of yourself with care",
+          "description": "If you upload your face, ask for a scene where you are lit from the side. The maker keeps your likeness, but the grading can change the skin tone slightly."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"HAUNTED HOTEL\", topic: a flashlight beam in a dark abandoned corridor",
+        "Headline: \"THE LAST FLIGHT\", topic: a pilot silhouetted against an orange sunset on a runway",
+        "Headline: \"LOST IN ICELAND\", topic: a lone hiker facing a misty black-sand beach",
+        "Headline: \"THE TRUTH ABOUT SLEEP\", topic: a person lying awake in a dark bedroom with city lights through the blinds"
+      ],
+      "faq": [
+        {
+          "q": "How is cinematic different from dark and eerie?",
+          "a": "Cinematic is about mood and film color, and covers any genre. [Dark and eerie](/create/youtube-thumbnail-maker/horror) specifically aims for fear and suspense."
+        },
+        {
+          "q": "Will the text look like a movie title?",
+          "a": "The headline is large and bold so it reads at thumbnail size, rather than the thin titles of real film posters."
+        },
+        {
+          "q": "Can I use a real person's face?",
+          "a": "Only yours or someone who has given permission. The photo field is meant for your own face or your own product."
+        },
+        {
+          "q": "Is the 1920×1080 file included?",
+          "a": "Yes. Every design comes with a 1280×720 px JPG under 2 MB and a 1920×1080 px JPG."
+        }
+      ]
+    },
+    {
+      "value": "playful",
+      "slug": "playful",
+      "seo": {
+        "title": "Cartoon YouTube Thumbnail Maker – Playful & Colorful",
+        "description": "Make a playful cartoon YouTube thumbnail with bright colors, thick outlines and sticker-like accents. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Playful Cartoon YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The playful cartoon style uses bright colors, thick outlines and sticker-like accents. Faces and objects look hand-drawn and friendly, so the thumbnail feels fun before anyone reads a word.",
+        "Write a short headline and describe the video, and PiCraft draws the scene in a cartoon look. It is a good fit for humor, kids' content and anything that does not take itself too seriously."
+      ],
+      "bestFor": [
+        {
+          "title": "Comedy and fail compilations",
+          "description": "A messy baker next to a collapsed cake is funnier as a cartoon than as a photo."
+        },
+        {
+          "title": "Kids and family channels",
+          "description": "Bright colors and thick outlines read well to young viewers and to parents scrolling quickly."
+        },
+        {
+          "title": "Animated and storytelling channels",
+          "description": "If your videos use illustration or animation, a cartoon thumbnail matches the content."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Exaggerate on purpose",
+          "description": "Cartoons work through exaggeration. Describe big expressions and obvious props, such as a huge shocked face or an overflowing bucket."
+        },
+        {
+          "title": "Use one or two bold colors for the text",
+          "description": "Thick outlines keep headline text legible, but a short headline still helps. Aim for two to four words."
+        },
+        {
+          "title": "Avoid a photo of a real person",
+          "description": "The style turns the scene into an illustration. If you upload your photo, check the result carefully, since likeness can drift in a stylized look."
+        },
+        {
+          "title": "Match tone to the title",
+          "description": "A cartoon look promises humor or lightness. Use it for videos that deliver that tone, so viewers are not misled."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"CAKE FAILS\", topic: a messy baker standing beside a collapsed cake",
+        "Headline: \"DON'T BUY THIS\", topic: a shocked cartoon man holding crossed-out gadgets",
+        "Headline: \"MY DOG VS THE VACUUM\", topic: a small dog barking at a cartoon vacuum cleaner",
+        "Headline: \"BEDTIME STORY\", topic: a sleepy bear in pajamas reading under a moon"
+      ],
+      "faq": [
+        {
+          "q": "Can I use cartoon thumbnails for serious topics?",
+          "a": "It is better to match the style to the tone. For serious or technical videos, try [clean and minimal](/create/youtube-thumbnail-maker/clean) or [tech review](/create/youtube-thumbnail-maker/tech-review)."
+        },
+        {
+          "q": "Do the outlines hurt readability?",
+          "a": "No. Thick outlines usually improve it, because letters stand out against busy backgrounds. Still, preview at small size before you upload."
+        },
+        {
+          "q": "Is the artwork original?",
+          "a": "Each thumbnail is created from your description. Avoid asking for copyrighted characters, since you are responsible for what you publish."
+        },
+        {
+          "q": "What size should I upload?",
+          "a": "1280×720 px works for most uploads. Read the [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size) for limits."
+        }
+      ]
+    },
+    {
+      "value": "vlog",
+      "slug": "vlog",
+      "seo": {
+        "title": "Vlog YouTube Thumbnail Maker – Warm, Friendly Look",
+        "description": "Make a warm vlog YouTube thumbnail with soft golden light, natural tones and a friendly headline. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Warm Vlog YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The warm vlog style leans on soft golden light, natural tones and a friendly, readable sans-serif headline. It feels personal and inviting, as though the viewer is being asked in for a cup of coffee.",
+        "Type a short headline, say what the day or the story is, and add your own photo if you like. The thumbnail will look like a good frame from a well-lit video."
+      ],
+      "bestFor": [
+        {
+          "title": "Day-in-the-life and routine videos",
+          "description": "A woman journaling by a sunrise window or a freelancer with coffee in a café suits this warm, lived-in mood."
+        },
+        {
+          "title": "Lifestyle and creator channels",
+          "description": "Wellness, study, productivity and home videos often use warm tones to feel approachable."
+        },
+        {
+          "title": "Personal brand channels",
+          "description": "When the creator is the draw, a friendly face in soft light builds a familiar look across videos."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Upload a natural photo",
+          "description": "Smiling, relaxed photos fit the style. The maker keeps your likeness as is, so a warm expression gives a warm result."
+        },
+        {
+          "title": "Choose a conversational headline",
+          "description": "\"DAY IN MY LIFE\" or \"MORNING ROUTINE\" fits better than shouting. Keep it short so it stays readable."
+        },
+        {
+          "title": "Describe light and place",
+          "description": "Mention a window, a café table or golden hour in the topic. These details give the picture its warmth."
+        },
+        {
+          "title": "Keep a consistent look",
+          "description": "Using the same style across a series makes your channel recognizable, which helps returning viewers spot new uploads."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"MORNING ROUTINE\", topic: a woman journaling with coffee beside a sunrise window",
+        "Headline: \"DAY IN MY LIFE\", topic: a freelancer with a laptop and coffee in a sunny café",
+        "Headline: \"MOVING TO A NEW CITY\", topic: a smiling person with a suitcase on a quiet street at golden hour",
+        "Headline: \"SUNDAY RESET\", topic: a cozy living room with a cleaning basket and a candle"
+      ],
+      "faq": [
+        {
+          "q": "Is a vlog style good for tutorials?",
+          "a": "It can be, if your channel has a personal tone. For tutorials with a more technical feel, try [clean and minimal](/create/youtube-thumbnail-maker/clean)."
+        },
+        {
+          "q": "Will my face look like me?",
+          "a": "Likeness is preserved well in most cases but not perfectly. Check the face closely before you publish."
+        },
+        {
+          "q": "Can I use a photo from a video frame?",
+          "a": "Yes, if it is clear and well lit. Photos with strong light from the front work best."
+        },
+        {
+          "q": "Is the text easy to read on a phone?",
+          "a": "The headline is large and set in a readable sans-serif. Test it at small size, and shorten the text if it feels crowded."
+        }
+      ]
+    },
+    {
+      "value": "tech_review",
+      "slug": "tech-review",
+      "seo": {
+        "title": "Tech Review YouTube Thumbnail Maker – Dark & Sleek",
+        "description": "Make a sleek tech review YouTube thumbnail with a dark gradient, product spotlight and futuristic headline. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Tech Review YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The tech review style uses a dark gradient background, spotlight lighting on the product and a futuristic sans-serif headline. The product looks like it is on a showroom stand, which is what viewers expect from a gadget review.",
+        "Enter a short headline such as the product name and year, describe what is in the shot and upload a product photo if you have one. The thumbnail follows the conventions of the tech channels viewers already know."
+      ],
+      "bestFor": [
+        {
+          "title": "Phone, laptop and gadget reviews",
+          "description": "A close-up of a camera module or a row of laptops suits the spotlight look."
+        },
+        {
+          "title": "Comparison and buyer's guide videos",
+          "description": "\"BEST LAPTOP\" style titles benefit from several products shown clearly against a dark ground."
+        },
+        {
+          "title": "Software and AI channels",
+          "description": "The dark, futuristic palette also fits videos about apps, coding and new technology."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Upload a clean product photo",
+          "description": "Use the optional photo field for the real product. Compare the result with the real item, since small details such as buttons or logos can change."
+        },
+        {
+          "title": "Keep model names exact",
+          "description": "A wrong digit in a product name looks careless. Proofread names like \"iPHONE 17 REVIEW\" letter by letter before you upload."
+        },
+        {
+          "title": "Avoid brand logos in the description",
+          "description": "The maker does not add logos, and asking for them can lead to messy results. Name the product in the headline instead."
+        },
+        {
+          "title": "Leave room in the bottom-right",
+          "description": "YouTube shows the video length in that corner. The maker keeps text and faces out of it, so do not place small badges there in an editor either."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"iPHONE 17 REVIEW\", topic: a close-up of a dark blue phone's camera module under spotlight",
+        "Headline: \"BEST LAPTOP 2025\", topic: a row of thin laptops on a dark desk with glowing edges",
+        "Headline: \"DON'T BUY THIS\", topic: a gadget with a red X, dark background and a shocked reviewer",
+        "Headline: \"AI TOOLS I USE\", topic: a glowing laptop screen with abstract circuit lines"
+      ],
+      "faq": [
+        {
+          "q": "Can the maker show a real product accurately?",
+          "a": "If you upload a photo it keeps the product recognizable, but AI can alter small details. Always compare the result with the real item."
+        },
+        {
+          "q": "Why a dark background?",
+          "a": "Dark gradients make glowing screens and metal edges stand out. If your product is dark, a lighter style such as [clean and minimal](/create/youtube-thumbnail-maker/clean) can be easier to read."
+        },
+        {
+          "q": "Can I add a rating or a price?",
+          "a": "Only as part of the headline text, within 40 characters. Short claims such as \"TOP PICK\" are easier to read than long phrases."
+        },
+        {
+          "q": "Does the thumbnail follow YouTube's rules?",
+          "a": "The size and the layout follow YouTube's published guidance. You are responsible for making sure the content is accurate and follows the Community Guidelines."
+        }
+      ]
+    },
+    {
+      "value": "horror",
+      "slug": "horror",
+      "seo": {
+        "title": "Horror YouTube Thumbnail Maker – Dark & Eerie Style",
+        "description": "Make a dark, eerie YouTube thumbnail with deep shadows, unsettling color grading and a distressed headline. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Dark & Eerie YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The dark and eerie style is built for suspense: deep shadows, unsettling color grading and a distressed or dripping headline font. The thumbnail promises a creepy story, and viewers who like that kind of video recognize it instantly.",
+        "Write a short headline, describe the setting and add a photo of yourself if you want to appear. The look is atmospheric rather than graphic, which is also what YouTube's guidelines require."
+      ],
+      "bestFor": [
+        {
+          "title": "Horror stories and creepypasta",
+          "description": "Abandoned buildings, flickering lights and a single figure in the dark suit narrated stories."
+        },
+        {
+          "title": "True crime and mystery",
+          "description": "An investigation board or a detective silhouette fits a case file video without showing violence."
+        },
+        {
+          "title": "Ghost hunting and urban exploring",
+          "description": "Asylums, hospitals and old hotels under a full moon give the setting a threatening mood."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Suggest, do not show",
+          "description": "Thumbnails with violence or graphic content can be rejected by YouTube. Describe a location, a shadow or an object rather than injuries."
+        },
+        {
+          "title": "Keep the headline short and cold",
+          "description": "\"DON'T WATCH ALONE\" is easy to read at a small size. Long lines of dripping text become a blur."
+        },
+        {
+          "title": "Check the visibility in the dark",
+          "description": "A thumbnail that is too dark can disappear on a phone in sunlight. Preview it at medium brightness and generate again if the subject is lost."
+        },
+        {
+          "title": "Do not mislead viewers",
+          "description": "If the video is a calm documentary, a terrifying image will disappoint people. Match the level of fear in the picture to what the video delivers."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"DON'T WATCH ALONE\", topic: an abandoned asylum under a full moon",
+        "Headline: \"TRUE CRIME STORY\", topic: a detective in front of an investigation board with red string",
+        "Headline: \"THE LAST ROOM\", topic: a hallway with a single door slightly open and light behind it",
+        "Headline: \"HAUNTED HOSPITAL\", topic: an empty wheelchair in a dim, peeling-paint corridor"
+      ],
+      "faq": [
+        {
+          "q": "Will YouTube reject a horror thumbnail?",
+          "a": "YouTube may reject thumbnails that contain nudity, hate speech, violence or harmful content. An eerie atmosphere is fine, but keep the imagery free of graphic content."
+        },
+        {
+          "q": "How is this different from cinematic?",
+          "a": "[Cinematic](/create/youtube-thumbnail-maker/cinematic) is moody film grading for any genre. Dark and eerie is specifically tuned for fear, with distressed lettering."
+        },
+        {
+          "q": "Can I put my own face in a horror thumbnail?",
+          "a": "Yes. Upload a clear photo, and the maker keeps your likeness, placing it in the dark scene. Check the result closely."
+        },
+        {
+          "q": "Is the text always dripping?",
+          "a": "The style asks for a distressed or dripping headline font, so it usually looks rough or eerie. Legibility comes first, so generate again if it is hard to read."
+        }
+      ]
+    },
+    {
+      "value": "retro_gaming",
+      "slug": "retro-gaming",
+      "seo": {
+        "title": "Retro Gaming YouTube Thumbnail Maker – Pixel & Neon",
+        "description": "Make a retro gaming YouTube thumbnail with pixel elements, CRT scanlines and neon colors. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Retro Gaming YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The retro gaming style borrows from old consoles and arcade screens: pixel elements, CRT scanline effects, bright neon colors and a chunky pixel headline. It is nostalgic and loud, and gaming viewers read it as a signal at once.",
+        "Enter the headline, describe the game scene or the collection and the thumbnail will be built around a pixel-art look. It works well for speedruns, retro hauls and old-school game talk."
+      ],
+      "bestFor": [
+        {
+          "title": "Speedruns and record attempts",
+          "description": "Hands on a controller and a trophy summarize a record attempt in one image."
+        },
+        {
+          "title": "Retro collecting and restoration",
+          "description": "A cartridge held up among old consoles fits hunts, hauls and repair videos."
+        },
+        {
+          "title": "Indie and pixel-art game coverage",
+          "description": "Pixel looks match games that use the same style, so the thumbnail and the video feel connected."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Do not name real games",
+          "description": "Avoid trademarked titles and characters in the description. Describe the type of game or the hardware instead."
+        },
+        {
+          "title": "Use a short headline",
+          "description": "Chunky pixel letters are wide. Stay under about four words so the text fits on one or two lines."
+        },
+        {
+          "title": "Add yourself carefully",
+          "description": "If you upload a photo, it may be placed within a pixel scene. Check that your face is still recognizable after the stylizing."
+        },
+        {
+          "title": "Keep neon colors balanced",
+          "description": "Too many neon colors tire the eye. If a result looks messy, generate again and choose the one with a clear dominant color."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"RETRO GAME HUNT\", topic: a hand holding a game cartridge among old consoles on a shelf",
+        "Headline: \"SPEEDRUN WORLD RECORD\", topic: hands on a controller beside a golden trophy",
+        "Headline: \"FIXING AN OLD CONSOLE\", topic: a dusty console opened on a workbench with a soldering iron",
+        "Headline: \"BEST 16-BIT GAMES\", topic: a stack of colorful cartridges in front of a glowing CRT screen"
+      ],
+      "faq": [
+        {
+          "q": "Can I include a game's logo?",
+          "a": "The maker does not add logos, and using a company's trademark may break platform rules. Name the game in the video title instead."
+        },
+        {
+          "q": "Is it only for old games?",
+          "a": "No. The pixel look also suits any channel that likes a retro or arcade feel, such as a streamer with a throwback brand."
+        },
+        {
+          "q": "Will scanlines hurt legibility?",
+          "a": "They are a texture effect, and the headline is set large and bold on top. If any text is hard to read, generate again."
+        },
+        {
+          "q": "Which size do I need?",
+          "a": "1280×720 px at 16:9 works for most uploads. See the [thumbnail best practices guide](/blog/youtube-thumbnail-best-practices) for text and contrast tips."
+        }
+      ]
+    },
+    {
+      "value": "fitness",
+      "slug": "fitness",
+      "seo": {
+        "title": "Fitness YouTube Thumbnail Maker – High-Energy Workout Look",
+        "description": "Make a high-energy fitness YouTube thumbnail with dynamic action lines, neon accents and a powerful headline. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Fitness YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The fitness and energy style uses dynamic action lines, neon green or orange accents on a dark background and a powerful bold headline. The image feels like motion, so a plain workout looks like a challenge.",
+        "Type a short headline, describe the exercise or the transformation and, if you like, upload a photo of yourself. The thumbnail puts you in the middle of the action."
+      ],
+      "bestFor": [
+        {
+          "title": "Workout and challenge videos",
+          "description": "\"100 push-ups daily\" or \"30-day squat challenge\" are naturals for an energetic frame."
+        },
+        {
+          "title": "Home gym and equipment videos",
+          "description": "A pull-up in a garage gym or a rack of weights shows the setting and the effort."
+        },
+        {
+          "title": "Transformation and progress videos",
+          "description": "A before-and-after layout is easy to describe and quick for viewers to understand."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Describe the movement",
+          "description": "Say what is happening: \"a man mid pull-up\" or \"a woman lifting a barbell\". Action lines depend on a clear motion."
+        },
+        {
+          "title": "Use numbers in the headline",
+          "description": "\"100 PUSH-UPS DAILY\" is concrete and fast to read. Short numbers stand out against action lines."
+        },
+        {
+          "title": "Be honest about results",
+          "description": "A before-and-after image should reflect what the video shows. Overstated results can mislead viewers."
+        },
+        {
+          "title": "Use a clear photo of yourself",
+          "description": "An upright, well-lit photo works best. The maker keeps your likeness, but body proportions in stylized poses should be checked."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"ULTIMATE HOME GYM\", topic: a man doing a pull-up in a garage gym with a barbell rack",
+        "Headline: \"100 PUSH-UPS DAILY\", topic: a before-and-after comparison of the same person after 30 days",
+        "Headline: \"LEG DAY RULES\", topic: a woman squatting with a barbell, neon orange lines behind her",
+        "Headline: \"10 MIN ABS\", topic: a person in plank position on a gym mat, energetic lighting"
+      ],
+      "faq": [
+        {
+          "q": "Is this style only for gym channels?",
+          "a": "No. Any video about sport, running, cycling or an energetic challenge can use it. For a calmer wellness channel, try the [warm vlog style](/create/youtube-thumbnail-maker/vlog)."
+        },
+        {
+          "q": "Which colors are used?",
+          "a": "The style leans on neon green or orange accents on a dark background. Which one you get varies with each generation."
+        },
+        {
+          "q": "Does it add muscles or change my body?",
+          "a": "It is designed to keep your likeness as is, but results are not perfect. Check the image against the real you, and avoid any thumbnail that could mislead viewers about your results."
+        },
+        {
+          "q": "How long does it take to make?",
+          "a": "Most designs take 30–90 seconds, and the files are ready at the same time."
+        }
+      ]
+    },
+    {
+      "value": "travel",
+      "slug": "travel",
+      "seo": {
+        "title": "Travel YouTube Thumbnail Maker – Landscape & Adventure Look",
+        "description": "Make a travel YouTube thumbnail with a stunning landscape backdrop, cinematic palette and adventurous headline. Download a 1280×720 px JPG under 2 MB.",
+        "h1": "Travel YouTube Thumbnail Maker"
+      },
+      "intro": [
+        "The travel and explore style places a stunning landscape behind your subject, with a cinematic color palette and an adventurous, brushy headline. The picture promises a place, which is the main thing viewers want to see in a travel video.",
+        "Add a short headline, such as the destination and trip length, and describe the scene. If you add your photo, you appear in front of the view like a traveler on location."
+      ],
+      "bestFor": [
+        {
+          "title": "Destination guides and itineraries",
+          "description": "\"JAPAN IN 7 DAYS\" works well with landmarks such as a pagoda and a mountain behind a traveler."
+        },
+        {
+          "title": "Van life and road trips",
+          "description": "A camper van at sunset by a campfire is an instantly readable travel image."
+        },
+        {
+          "title": "Hiking and outdoor adventure",
+          "description": "Mountains, coasts and trails fit the wide landscape backdrop of this style."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick one hero landmark",
+          "description": "A single mountain, temple or coast gives the thumbnail a clear subject. A collage of many places gets lost at a small size."
+        },
+        {
+          "title": "Put numbers in the headline",
+          "description": "\"7 DAYS\" or \"3 COUNTRIES\" gives viewers a quick idea of what they will get."
+        },
+        {
+          "title": "Describe the time of day",
+          "description": "Golden hour, blue hour or a misty morning changes the color palette, which this style leans on."
+        },
+        {
+          "title": "Stay truthful about the place",
+          "description": "AI can invent scenery. If the video covers a real location, check that the landmark in the picture matches the place you filmed."
+        }
+      ],
+      "tryThese": [
+        "Headline: \"JAPAN IN 7 DAYS\", topic: a traveler with a pagoda, Mount Fuji and a bowl of ramen behind",
+        "Headline: \"VAN LIFE ACROSS EUROPE\", topic: a camper van beside a campfire at sunset",
+        "Headline: \"HIKING THE ALPS\", topic: a hiker on a ridge above clouds with snowy peaks at sunrise",
+        "Headline: \"48 HOURS IN LISBON\", topic: a yellow tram climbing a cobbled street with rooftops and the river behind"
+      ],
+      "faq": [
+        {
+          "q": "Will the landmark look accurate?",
+          "a": "Landmarks are recognizable in most cases, but AI can alter details. Compare the image with the real place if accuracy matters for your video."
+        },
+        {
+          "q": "Can I use my own footage as a background?",
+          "a": "The photo field is for your face or product. The backdrop is created from your description."
+        },
+        {
+          "q": "Is this good for a food travel video?",
+          "a": "Yes. Mention the dish and the setting in the topic. For more food focus, try the [bold style](/create/youtube-thumbnail-maker/bold) or [warm vlog](/create/youtube-thumbnail-maker/vlog)."
+        },
+        {
+          "q": "What size is the thumbnail?",
+          "a": "1280×720 px by default and a 1920×1080 px version. See the [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size) for details."
+        }
+      ]
+    }
+  ]
+}

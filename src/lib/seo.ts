@@ -22,6 +22,11 @@ interface PageMeta {
   /** Path of the page, used for the canonical URL and `og:url`. */
   path: string;
   noindex?: boolean;
+  /**
+   * Set it on pages whose route segment has its own `opengraph-image` file. An explicit `images`
+   * list would take priority over that file, so the default image is left out.
+   */
+  ownShareImage?: boolean;
 }
 
 /**
@@ -30,8 +35,11 @@ interface PageMeta {
  * so every page goes through this helper to keep `siteName`, `type` and `locale`.
  * The share image comes from the `opengraph-image` file of the nearest route segment.
  */
-export function pageMetadata({ title, absoluteTitle, description, path, noindex }: PageMeta): Metadata {
+export function pageMetadata({ title, absoluteTitle, description, path, noindex, ownShareImage }: PageMeta): Metadata {
   const socialTitle = absoluteTitle ?? (title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE);
+  // Next.js checks whether the `images` key exists, so with `ownShareImage` the key must be left out
+  // entirely. `images: undefined` would still count as set and hide the segment's `opengraph-image` file.
+  const images = ownShareImage ? {} : { images: DEFAULT_SHARE_IMAGE };
   return {
     title: absoluteTitle ? { absolute: absoluteTitle } : title,
     description,
@@ -44,8 +52,8 @@ export function pageMetadata({ title, absoluteTitle, description, path, noindex 
       title: socialTitle,
       description,
       url: path,
-      images: DEFAULT_SHARE_IMAGE,
+      ...images,
     },
-    twitter: { card: "summary_large_image", title: socialTitle, description, images: DEFAULT_SHARE_IMAGE },
+    twitter: { card: "summary_large_image", title: socialTitle, description, ...images },
   };
 }

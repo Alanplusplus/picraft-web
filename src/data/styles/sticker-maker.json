@@ -1,0 +1,727 @@
+{
+  "scene": "sticker-maker",
+  "field": "style",
+  "noun": "style",
+  "collection": "Sticker styles",
+  "updated": "2026-10-09",
+  "styles": [
+    {
+      "value": "kawaii",
+      "slug": "kawaii",
+      "seo": {
+        "title": "Kawaii Sticker Maker – Cute Die-Cut Stickers, Transparent PNG",
+        "description": "Make cute kawaii stickers with soft pastel colors, rounded shapes and happy faces. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Kawaii Sticker Maker"
+      },
+      "intro": [
+        "The kawaii style is Japanese-inspired cute: soft pastel colors, rounded shapes and simple happy faces. Animals, food and everyday objects all get big eyes and gentle smiles, so a plain idea turns into something you want to stick on a laptop.",
+        "Describe what is on the sticker, add a short word or phrase if you like, and PiCraft makes a die-cut design with a white border. You download a transparent PNG at 2048×2048 px and a 3×3 inch print file at 300 DPI."
+      ],
+      "bestFor": [
+        {
+          "title": "Planner and journal stickers",
+          "description": "Soft colors and tiny characters suit bullet journals, notebooks and weekly planners."
+        },
+        {
+          "title": "Gifts and party favors",
+          "description": "A small kawaii animal with a kind message is easy to hand out at a birthday, a class event or a bake sale."
+        },
+        {
+          "title": "Small shops selling cute goods",
+          "description": "Kawaii pairs naturally with stationery, snacks and pet products, where cheerfulness is part of the brand."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Describe one character doing one thing",
+          "description": "\"A tiny fox reading a book under a mushroom\" gives the style a clear story. A crowd of characters shrinks each one."
+        },
+        {
+          "title": "Keep any text short",
+          "description": "A single word such as \"Bookworm\" or a short phrase of two or three words stays legible. Long text can come out garbled, so proofread it."
+        },
+        {
+          "title": "Add food and plants for charm",
+          "description": "Mushrooms, donuts, clouds and leaves are classic kawaii companions that make the sticker feel complete."
+        },
+        {
+          "title": "Check pale pastels at the edge",
+          "description": "Very pale areas that touch the outer edge can be lost when the background is removed. The white border helps, and you can generate again if something fades."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A tiny fox reading a book under a mushroom\", text: \"Bookworm\"",
+        "Subject: \"A baby owl in oversized pink glasses on a stack of pastel books\", text: \"Read more\"",
+        "Subject: \"A smiling dumpling with rosy cheeks holding chopsticks\"",
+        "Subject: \"A sleepy cloud wearing a night cap, with a small moon\", text: \"Nap time\""
+      ],
+      "faq": [
+        {
+          "q": "Is kawaii the same as chibi?",
+          "a": "Not quite. Kawaii is a general cute look with soft colors and simple faces. [Chibi anime](/create/sticker-maker/chibi) draws characters with oversized heads and tiny bodies."
+        },
+        {
+          "q": "Will it cut cleanly on a Cricut?",
+          "a": "Yes. Upload the PNG to Design Space as a Print Then Cut image, print it on printable sticker paper and let the machine cut around the white border. Cut lines are not included in the file. See [how to prepare sticker artwork](/blog/sticker-artwork-print-and-cut)."
+        },
+        {
+          "q": "Can I make a whole sheet?",
+          "a": "Each generation is one sticker. Place several PNGs on a page in your print software."
+        },
+        {
+          "q": "Can I sell kawaii stickers?",
+          "a": "You can use your designs commercially if your input does not infringe anyone else's rights. Avoid trademarked characters, such as well-known cartoon mascots."
+        }
+      ]
+    },
+    {
+      "value": "cartoon",
+      "slug": "cartoon",
+      "seo": {
+        "title": "Cartoon Sticker Maker – Bold Outlines, Transparent PNG",
+        "description": "Make bold cartoon stickers with thick black outlines and flat vibrant colors. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Bold Cartoon Sticker Maker"
+      },
+      "intro": [
+        "The bold cartoon style uses thick black outlines and flat, vibrant colors, like the artwork on a comic cover or a kids' show. The shapes are strong and simple, so the sticker stays clear even when it is small.",
+        "Describe the idea, add a short caption if you want one, and PiCraft makes a single die-cut sticker with a white border. The design exports as a transparent PNG and a 3×3 inch print file."
+      ],
+      "bestFor": [
+        {
+          "title": "Laptop and water bottle stickers",
+          "description": "Thick outlines survive the scuffs of everyday use and stay readable from a distance."
+        },
+        {
+          "title": "Mascots and brand characters",
+          "description": "A friendly animal or object with a clear outline works as a simple mascot for a club, a team or a small business."
+        },
+        {
+          "title": "Humor and slogan stickers",
+          "description": "A dog in sunglasses with a short caption such as \"Beach vibes\" gets its joke across in a glance."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Describe an expression and a pose",
+          "description": "Cartoons live on attitude. \"A superhero cat in a red cape flying through clouds\" gives the style something to exaggerate."
+        },
+        {
+          "title": "Pick a short, punchy caption",
+          "description": "Two or three words, such as \"Super Kitty\", match the weight of the outlines. Longer text may come out garbled."
+        },
+        {
+          "title": "Think about the shape",
+          "description": "A compact silhouette creates a smooth die-cut edge. Long thin arms or tails make the cut path complicated."
+        },
+        {
+          "title": "Use bright colors against the white border",
+          "description": "Strong colors pop against the white border and look good on dark laptops."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A golden retriever in sunglasses lying on a beach towel\", text: \"Beach vibes\"",
+        "Subject: \"A superhero cat in a red cape flying through clouds\", text: \"Super Kitty\"",
+        "Subject: \"A grumpy coffee cup with tiny arms and legs\", text: \"Not yet\"",
+        "Subject: \"A smiling taco giving a thumbs up\""
+      ],
+      "faq": [
+        {
+          "q": "Which style is best for a logo-like sticker?",
+          "a": "Bold cartoon is the clearest of the ten, because outlines and flat colors survive small sizes. PiCraft does not take a logo upload, so add your exact logo in an editor if you need it."
+        },
+        {
+          "q": "Can I choose the outline thickness?",
+          "a": "There is no setting for it. The style uses thick black outlines, and each generation differs slightly."
+        },
+        {
+          "q": "How big is the print file?",
+          "a": "3×3 inches at 300 DPI, which is 900×900 px, plus a 2048×2048 px transparent PNG. See the [sticker size guide](/sizes/sticker-size) for other sizes."
+        },
+        {
+          "q": "Can I make vinyl stickers with it?",
+          "a": "Yes. The PNG is transparent outside the white border, so a cutter can cut just outside it. A print shop can also print it as a die-cut sticker. Check your shop's file requirements first."
+        }
+      ]
+    },
+    {
+      "value": "retro",
+      "slug": "retro",
+      "seo": {
+        "title": "Retro 70s Sticker Maker – Groovy Die-Cut Stickers, PNG",
+        "description": "Make retro 1970s stickers in warm orange, mustard and brown with groovy shapes. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Retro 70s Sticker Maker"
+      },
+      "intro": [
+        "The retro 70s style recreates the 1970s palette of warm orange, mustard and brown, with rounded, groovy shapes and a sun-faded feeling. It is the look of old camping gear, record sleeves and vintage road trip decals.",
+        "Describe the subject, add a short phrase in the spirit of the decade if you like, and PiCraft makes a die-cut sticker with a white border and a transparent background, ready to print or cut."
+      ],
+      "bestFor": [
+        {
+          "title": "Road trip and camping stickers",
+          "description": "A cream-and-orange camper van with luggage on the roof is the classic 70s travel image."
+        },
+        {
+          "title": "Music and vintage-lover merch",
+          "description": "Roller skates, boomboxes and record players sit comfortably in the same palette."
+        },
+        {
+          "title": "Water bottle and van-life decals",
+          "description": "Earthy colors look natural on metal bottles, coolers and the back window of a car."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Lean on the warm palette",
+          "description": "Orange, mustard and brown carry the style. Describing objects in those colors, such as a tan van or a rust sunset, keeps the image consistent."
+        },
+        {
+          "title": "Try a groovy phrase",
+          "description": "\"Groove on\" or \"Good vibes only\" in the text field suits the lettering style. Keep it to a few words."
+        },
+        {
+          "title": "Add simple sun or wave shapes",
+          "description": "A half sun, stripes or wavy lines in the description add the period feel without overcrowding the sticker."
+        },
+        {
+          "title": "Test warm colors in print",
+          "description": "Warm browns and oranges can shift on different printers. Print a test and compare it with the screen version."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A cream-and-orange camper van with luggage on the roof\"",
+        "Subject: \"A roller-skating bear carrying a boombox\", text: \"Groove on\"",
+        "Subject: \"A smiling sun over rolling hills with wavy stripes\", text: \"Good vibes\"",
+        "Subject: \"A vintage record player with a daisy on the turntable\""
+      ],
+      "faq": [
+        {
+          "q": "Does the retro style use real 1970s artwork?",
+          "a": "No. It creates new artwork in the colors and shapes of the period, so there is no copied design."
+        },
+        {
+          "q": "Is it good for van-life stickers?",
+          "a": "Yes, the palette suits vans, campers and outdoor gear. For outdoor use, check what vinyl and laminate your printer offers."
+        },
+        {
+          "q": "Can I change the colors to blues?",
+          "a": "The style is built on warm tones. For a cooler palette, try [watercolor](/create/sticker-maker/watercolor) or [pop art](/create/sticker-maker/pop)."
+        },
+        {
+          "q": "Can I print it as a sticker sheet?",
+          "a": "Yes. Place several downloads on one page in your print software, with space between them for the cut."
+        },
+        {
+          "q": "What size should I print?",
+          "a": "2–3 inch stickers are the most common. The 3×3 in file is ready at 300 DPI, and you can scale it down in your print software for smaller stickers. Print one test sheet first to check how the warm oranges and browns look on your paper."
+        }
+      ]
+    },
+    {
+      "value": "watercolor",
+      "slug": "watercolor",
+      "seo": {
+        "title": "Watercolor Sticker Maker – Soft Painted Stickers, PNG",
+        "description": "Make watercolor stickers with gentle washes and fine ink details. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Watercolor Sticker Maker"
+      },
+      "intro": [
+        "The watercolor style gives stickers the soft washes and fine ink details of a hand-painted illustration. Edges bleed gently into each other, and colors have the depth of real pigment on paper.",
+        "Describe the subject, such as a flower bouquet or a sea creature, and PiCraft paints it and surrounds it with a clean white die-cut border. You download a transparent PNG and a 3×3 inch print file."
+      ],
+      "bestFor": [
+        {
+          "title": "Nature and floral themes",
+          "description": "Wildflowers, leaves, birds and sea life are the natural home of this look."
+        },
+        {
+          "title": "Wedding and event stationery",
+          "description": "Small painted stickers can seal an envelope or decorate a favor bag."
+        },
+        {
+          "title": "Journals and gift wrapping",
+          "description": "A painted flower or whale adds a handmade touch to a notebook or a present."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick a subject with a soft outline",
+          "description": "Whales, bouquets and moths have flowing shapes that suit watercolor. Hard-edged logos look out of place."
+        },
+        {
+          "title": "Watch for faded edges",
+          "description": "Pale washes near the outside of the image can be lost when the background is removed. If a part of the painting fades, generate again."
+        },
+        {
+          "title": "Use few words or none",
+          "description": "Painted lettering looks best as a single short word. Many designs work better with no text at all."
+        },
+        {
+          "title": "Print on matte material",
+          "description": "Matte vinyl or paper keeps the soft painted look. Glossy finishes can make colors feel harsher."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A blue whale swimming among jellyfish\"",
+        "Subject: \"A wildflower bouquet tied with a ribbon\"",
+        "Subject: \"A hummingbird beside a pink hibiscus flower\"",
+        "Subject: \"A cup of tea with steam and a sprig of lavender\", text: \"Breathe\""
+      ],
+      "faq": [
+        {
+          "q": "Is the sticker really made of paint?",
+          "a": "No. It is a digital illustration in a watercolor style. It prints as ordinary ink and looks like paint."
+        },
+        {
+          "q": "Why does a part of my painting look faded?",
+          "a": "Watercolor uses gentle washes, and very pale areas touching the edge of the image can be lost when the background is removed. If that happens, generate the sticker again."
+        },
+        {
+          "q": "Can I use the sticker for a wedding?",
+          "a": "Yes, for envelope seals, favor tags and small details. For a full invitation, use the [wedding invitation maker](/create/wedding-invitation-maker)."
+        },
+        {
+          "q": "What file formats do I get?",
+          "a": "A 2048×2048 px transparent PNG and a 3×3 inch PNG at 300 DPI."
+        },
+        {
+          "q": "Do I need to remove the background myself?",
+          "a": "No. PiCraft removes the background for you and exports a PNG that is transparent outside the white border. If you notice a grey fringe or a missing edge, generate the sticker again. Soft, pale washes are the most likely place for this to happen."
+        }
+      ]
+    },
+    {
+      "value": "pixel",
+      "slug": "pixel",
+      "seo": {
+        "title": "Pixel Art Sticker Maker – 16-Bit Die-Cut Stickers, PNG",
+        "description": "Make crisp 16-bit pixel art stickers with a limited color palette. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Pixel Art Sticker Maker"
+      },
+      "intro": [
+        "The pixel art style makes stickers in crisp 16-bit pixels with a limited color palette, like a sprite from an old console game. Every curve is made of small squares, and the effect is both retro and clean.",
+        "Describe what you want, such as an astronaut or a treasure chest, and PiCraft makes a pixel-style sticker with a white die-cut border. The PNG is transparent at 2048×2048 px, with a 3×3 inch print file."
+      ],
+      "bestFor": [
+        {
+          "title": "Gamer and developer gear",
+          "description": "Pixel stickers feel at home on keyboards, game controllers and laptop lids covered in code stickers."
+        },
+        {
+          "title": "Streamer and community merch",
+          "description": "A small pixel icon or mascot can become a recognizable part of a channel's brand."
+        },
+        {
+          "title": "Pixel-art fans of any age",
+          "description": "The nostalgic look appeals to people who grew up with 8-bit and 16-bit games."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a simple scene",
+          "description": "Pixel art is strongest with a single character or object. A treasure chest overflowing with coins is easier to read than a complex landscape."
+        },
+        {
+          "title": "Use short, blocky text",
+          "description": "A banner or a few letters, such as \"Dream big\", suits the style. Long text is likely to be garbled."
+        },
+        {
+          "title": "Scale down, not up",
+          "description": "The print file is 900×900 px at 3 inches. Enlarging a pixel design softens its edges, so keep the sticker at or below the exported size."
+        },
+        {
+          "title": "Avoid trademarked sprites",
+          "description": "Describe a generic character, such as a knight or a space explorer. Do not copy a game's protected characters."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"An astronaut planting a flower on the moon\", text: \"Dream big\"",
+        "Subject: \"An open treasure chest overflowing with gems and coins\", text: \"Treasure hunter\"",
+        "Subject: \"A tiny knight with a sword standing on a hill\"",
+        "Subject: \"A pixel coffee cup with steam\", text: \"Loading\""
+      ],
+      "faq": [
+        {
+          "q": "Will the pixels stay sharp when printed?",
+          "a": "At the exported print size they look clear. Scaling the print file up softens the edges, so scale down rather than up."
+        },
+        {
+          "q": "Is this the same as a sprite sheet?",
+          "a": "No. Each generation is one sticker design, not a set of animation frames."
+        },
+        {
+          "q": "How do I choose the colors?",
+          "a": "There is no color picker. The style uses a limited palette, and you can generate again for a different one."
+        },
+        {
+          "q": "What other styles suit gamers?",
+          "a": "Try [neon glow](/create/sticker-maker/neon) for a dark, electric look, or [pop art](/create/sticker-maker/pop) for bold comics."
+        },
+        {
+          "q": "What size should I print?",
+          "a": "2–3 inch stickers are the most common, and the 3×3 in file is ready at 300 DPI. For pixel art, scale down in your print software rather than up, so the edges stay crisp. Print one test before you order a large batch."
+        }
+      ]
+    },
+    {
+      "value": "chibi",
+      "slug": "chibi",
+      "seo": {
+        "title": "Chibi Sticker Maker – Anime Style Die-Cut Stickers, PNG",
+        "description": "Make chibi anime stickers with oversized heads, tiny bodies and sparkly eyes. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Chibi Anime Sticker Maker"
+      },
+      "intro": [
+        "The chibi anime style draws characters with an oversized head, a tiny body, sparkly eyes and soft shading. It exaggerates cuteness more than a plain cartoon, and it works for people, animals and even food with a face.",
+        "Describe the character and the pose, add a short word if you like, and PiCraft makes a die-cut sticker with a white border. The result is a transparent PNG at 2048×2048 px plus a 3×3 inch print file."
+      ],
+      "bestFor": [
+        {
+          "title": "Fan-style character stickers",
+          "description": "Original characters, pets and mascots look expressive in the exaggerated proportions."
+        },
+        {
+          "title": "Emote-style stickers",
+          "description": "A blushing, waving or sleeping character suits chat stickers, social icons and reaction images."
+        },
+        {
+          "title": "Convention and art-market tables",
+          "description": "Chibi is a staple at art fairs and fan events, where small stickers are an easy impulse buy."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Name one clear emotion",
+          "description": "\"A blushing strawberry waving hello\" gives the face a job to do. Chibi works best when the feeling is obvious."
+        },
+        {
+          "title": "Avoid existing characters",
+          "description": "Use original characters or generic ones. Do not request characters from anime, games or films you do not own."
+        },
+        {
+          "title": "Combine animals with food",
+          "description": "A sleeping dragon curled around a donut, or a cat inside a teacup, shows the style's charm in a compact shape."
+        },
+        {
+          "title": "Keep the caption tiny",
+          "description": "One short word such as \"Hi!\" is plenty. Chibi stickers often work best with no caption."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A blushing strawberry waving hello\", text: \"Hi!\"",
+        "Subject: \"A sleeping red dragon curled around a chocolate sprinkle donut\"",
+        "Subject: \"A tiny witch girl riding a broom with a black cat\"",
+        "Subject: \"A chibi panda eating a bowl of ramen with sparkly eyes\""
+      ],
+      "faq": [
+        {
+          "q": "Is chibi the same as anime?",
+          "a": "Chibi is a miniature, cute version of anime style, with big heads and small bodies. It is not a full anime look."
+        },
+        {
+          "q": "Can I make a sticker of myself?",
+          "a": "The sticker maker works from a text description, not a photo, so it cannot copy a real person's face."
+        },
+        {
+          "q": "Is it different from kawaii?",
+          "a": "Kawaii focuses on simple, soft cuteness, while chibi has anime-style proportions and shading. Compare it with [kawaii](/create/sticker-maker/kawaii)."
+        },
+        {
+          "q": "Can I sell chibi stickers?",
+          "a": "You may use your designs commercially if your input does not infringe anyone's rights. Stay away from existing characters. See [how to prepare sticker artwork](/blog/sticker-artwork-print-and-cut)."
+        },
+        {
+          "q": "Can I print a sheet of different characters?",
+          "a": "Each generation is one design, so a set of characters means one generation per character. Place the PNGs on one page in your print software or in Cricut Design Space, then print the sheet on sticker paper. Using the same style for each keeps the set consistent."
+        }
+      ]
+    },
+    {
+      "value": "doodle",
+      "slug": "doodle",
+      "seo": {
+        "title": "Doodle Sticker Maker – Hand-Drawn Pen Stickers, PNG",
+        "description": "Make hand-drawn doodle stickers with loose sketchy pen lines and minimal color. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Hand-Drawn Doodle Sticker Maker"
+      },
+      "intro": [
+        "The hand-drawn doodle style looks like it came from a pen on a notebook page: loose sketchy lines, a little wobble and minimal color. It feels quick, personal and a bit witty, as if someone drew it for a friend.",
+        "Describe the doodle, add a short phrase in handwriting style, and PiCraft makes it into a die-cut sticker with a white border and a transparent background."
+      ],
+      "bestFor": [
+        {
+          "title": "Journals and notebooks",
+          "description": "A line-drawn doodle fits next to handwriting and sketches without clashing."
+        },
+        {
+          "title": "Motivational and quote stickers",
+          "description": "Short phrases such as \"Bright idea\" or \"Wander often\" work well paired with a simple drawing."
+        },
+        {
+          "title": "Minimalist laptop decor",
+          "description": "Mostly black line work stays calm on a laptop that already has colorful stickers."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Describe an object that tells a joke",
+          "description": "\"A light bulb sprouting leaves and flowers\" or \"a paper airplane with a dotted flight path\" give a doodle personality in a few lines."
+        },
+        {
+          "title": "Expect mostly line work",
+          "description": "The style uses minimal color on white. For a vivid sticker, choose [bold cartoon](/create/sticker-maker/cartoon) instead."
+        },
+        {
+          "title": "Check for thin lines",
+          "description": "Very thin pen lines can look fragile when the sticker is tiny. Print one test copy before you order many."
+        },
+        {
+          "title": "Use handwriting-style text",
+          "description": "A short phrase, no longer than a few words, matches the loose look. Proofread it, since text can occasionally be garbled."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A light bulb sprouting leaves and flowers\", text: \"Bright idea\"",
+        "Subject: \"A paper airplane with a dotted flight path and clouds\", text: \"Wander often\"",
+        "Subject: \"A cat sitting on a stack of books holding a pen\"",
+        "Subject: \"A mug with a lopsided heart and wavy steam\", text: \"Coffee first\""
+      ],
+      "faq": [
+        {
+          "q": "Are doodle stickers good for printing at home?",
+          "a": "Yes. Simple line art prints well on basic printers, and a 3×3 inch print file at 300 DPI is included. Read the [sticker size guide](/sizes/sticker-size) for paper and size tips."
+        },
+        {
+          "q": "Will light pen lines disappear?",
+          "a": "Dark pen lines are kept, but very pale grey details at the edge can be lost when the background is removed. If anything fades, generate again."
+        },
+        {
+          "q": "Can I make it more colorful?",
+          "a": "The doodle style asks for minimal color on white. For a more colorful result, try [bold cartoon](/create/sticker-maker/cartoon) or [kawaii](/create/sticker-maker/kawaii)."
+        },
+        {
+          "q": "Does it work with Cricut?",
+          "a": "Yes. Upload the PNG to Design Space as a Print Then Cut image, print it on printable sticker paper and let the machine cut around the white border. Check the cut preview before you start."
+        }
+      ]
+    },
+    {
+      "value": "neon",
+      "slug": "neon",
+      "seo": {
+        "title": "Neon Glow Sticker Maker – Electric Die-Cut Stickers, PNG",
+        "description": "Make neon glow stickers with electric colors, glowing edges and light bloom on a dark base. Download a transparent PNG with a white border, ready to cut or print.",
+        "h1": "Neon Glow Sticker Maker"
+      },
+      "intro": [
+        "The neon glow style paints bright electric colors on a dark base, with glowing edges and soft light bloom, like a sign in a night-time window. The effect is vivid, high contrast and made for night-life themes.",
+        "Describe the subject and add a short phrase for the neon sign effect, and PiCraft makes a die-cut sticker with a white border. The download is a transparent PNG and a 3×3 inch print file."
+      ],
+      "bestFor": [
+        {
+          "title": "Nightlife and music themes",
+          "description": "Boomboxes, cocktails and flamingos suit a design that looks like a neon sign."
+        },
+        {
+          "title": "Dark laptops and gaming gear",
+          "description": "Neon colors stand out on black and dark surfaces."
+        },
+        {
+          "title": "Event and club merch",
+          "description": "A small neon sticker is a bright giveaway for parties, bars and festivals."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Glow and background removal",
+          "description": "Soft light bloom around the edge can look like a grey fringe once the background is removed. If you see one, generate the sticker again."
+        },
+        {
+          "title": "Pick a short neon-sign phrase",
+          "description": "\"Stay lit\" or \"Turn it up\" matches the style. One to three words is best."
+        },
+        {
+          "title": "Keep the subject simple",
+          "description": "A flamingo or a boombox shape has a clean silhouette for neon outlines. Busy scenes dilute the glow."
+        },
+        {
+          "title": "Test the colors on your printer",
+          "description": "Electric pinks, greens and blues are the hardest colors for a printer to match. Compare a test print with the screen."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A pink flamingo standing in glowing reflections\", text: \"Stay lit\"",
+        "Subject: \"A boombox with colorful light rings\", text: \"Turn it up\"",
+        "Subject: \"A neon cocktail glass with a lime slice\"",
+        "Subject: \"A lightning bolt over a city skyline at night\""
+      ],
+      "faq": [
+        {
+          "q": "Will the sticker glow in the dark?",
+          "a": "No. It is a printed design that looks like neon. Glow-in-the-dark needs a special material, which a print shop can quote."
+        },
+        {
+          "q": "Why does the glow look softer on paper?",
+          "a": "Screens emit light and paper reflects it, so printed neon looks quieter than it does on a display. The sticker shows the effect best on screens."
+        },
+        {
+          "q": "Does it suit a white laptop?",
+          "a": "The white die-cut border helps, but neon colors are most striking on dark surfaces."
+        },
+        {
+          "q": "Are there similar styles?",
+          "a": "[Pixel art](/create/sticker-maker/pixel) and [pop art](/create/sticker-maker/pop) also use saturated colors, in a more graphic way."
+        },
+        {
+          "q": "Do I need to remove the background myself?",
+          "a": "No. PiCraft removes the background for you and exports a PNG that is transparent outside the white border. Glow effects are the most likely thing to leave a grey fringe or a missing edge, so check the edges and generate again if you notice either."
+        }
+      ]
+    },
+    {
+      "value": "pop",
+      "slug": "pop",
+      "seo": {
+        "title": "Pop Art Sticker Maker – Halftone Comic Stickers, PNG",
+        "description": "Make pop art stickers with halftone dots, bold primary colors and thick outlines. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Pop Art Sticker Maker"
+      },
+      "intro": [
+        "The pop art style takes its look from 1960s comics and advertising: halftone dots, bold primary colors and thick outlines. Images are flat, loud and graphic, with a sense of humor about everyday objects.",
+        "Describe the subject, add a short caption such as an exclamation, and PiCraft makes the artwork with a white die-cut border on a transparent background."
+      ],
+      "bestFor": [
+        {
+          "title": "Food and everyday-object stickers",
+          "description": "A pizza slice in sunglasses or a lipstick with stars turn ordinary things into icons."
+        },
+        {
+          "title": "Bold slogans and speech bubbles",
+          "description": "The comic look pairs well with a short word in a speech bubble."
+        },
+        {
+          "title": "Cafés, shops and zines",
+          "description": "The graphic style prints well in few colors, which suits small-run merchandise."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a single hero object",
+          "description": "Pop art works through simplification. One pizza slice or one lipstick reads better than a full table of food."
+        },
+        {
+          "title": "Use an exclamation",
+          "description": "\"Pizza time\" or \"Bold\" suits the comic voice. Keep the text to a few words."
+        },
+        {
+          "title": "Expect strong colors",
+          "description": "Primary reds, blues and yellows carry the style. Print one test, because saturated colors can shift between printers."
+        },
+        {
+          "title": "Do not copy specific artworks",
+          "description": "The style is inspired by the pop art era. Do not ask for a specific famous painting, because you cannot reuse protected artwork."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A pizza slice wearing sunglasses and giving a thumbs up\", text: \"Pizza time\"",
+        "Subject: \"A red lipstick with stars and a speech bubble\", text: \"Bold\"",
+        "Subject: \"A cartoon sneaker with halftone dots and speed lines\"",
+        "Subject: \"A wide-eyed cat with a speech bubble\", text: \"Meow!\""
+      ],
+      "faq": [
+        {
+          "q": "Are the halftone dots always visible?",
+          "a": "Usually, since they are part of the style. At very small print sizes, dots may blend together."
+        },
+        {
+          "q": "Is pop art good for T-shirts too?",
+          "a": "Yes, the graphic look suits shirts. The [T-shirt design maker](/create/t-shirt-design-maker) has its own set of styles and exports a large 15×18 in print file."
+        },
+        {
+          "q": "Can I use brand names in the subject?",
+          "a": "Avoid brand names and trademarked characters, since you are responsible for what you sell."
+        },
+        {
+          "q": "How do I get a vinyl cut?",
+          "a": "The transparent edge acts as a cut path in a cutting machine. Read [how to prepare sticker artwork](/blog/sticker-artwork-print-and-cut) for the steps."
+        },
+        {
+          "q": "What size should I print?",
+          "a": "2–3 inch stickers are the most common. The 3×3 in file is ready at 300 DPI, and you can scale it down in your print software for smaller stickers. Print one test to check that the halftone dots stay distinct at the size you choose."
+        }
+      ]
+    },
+    {
+      "value": "woodcut",
+      "slug": "woodcut",
+      "seo": {
+        "title": "Woodcut Sticker Maker – Block-Print Style Stickers, PNG",
+        "description": "Make woodcut stickers with bold black carved lines and limited flat color fills. Download a transparent PNG with a white die-cut border, ready to cut or print.",
+        "h1": "Woodcut Print Sticker Maker"
+      },
+      "intro": [
+        "The woodcut style imitates a block print: bold black carved lines and a few flat color fills. The marks are rough and deliberate, with a handmade, slightly rugged character that feels like an old label or a national-park poster.",
+        "Describe the subject, add a short phrase if you want one, and PiCraft makes the sticker with a white die-cut border and a transparent background."
+      ],
+      "bestFor": [
+        {
+          "title": "Outdoor and nature brands",
+          "description": "Bears, rivers, mountains and anchors suit the rugged, handmade look."
+        },
+        {
+          "title": "Coffee, craft beer and workshop labels",
+          "description": "Block-print sticker artwork is a staple for small producers who want an old-fashioned label."
+        },
+        {
+          "title": "Maritime and adventure themes",
+          "description": "An anchor wrapped in rope above waves is a classic woodcut subject."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose subjects with strong silhouettes",
+          "description": "Woodcut is made of heavy shapes and lines. A bear catching a salmon or an anchor over waves work well."
+        },
+        {
+          "title": "Use a banner phrase",
+          "description": "\"Catch of the day\" or \"Steady\" fits in a banner or a ribbon. Keep it to a few words."
+        },
+        {
+          "title": "Limit your colors",
+          "description": "The style uses black lines and a few flat fills. Do not ask for many colors, and the print will look authentic."
+        },
+        {
+          "title": "Consider matte or kraft stock",
+          "description": "Matte or kraft-paper stock suits the print-made look. Ask your sticker printer what material options it offers."
+        }
+      ],
+      "tryThese": [
+        "Subject: \"A grizzly bear catching a salmon in a river\", text: \"Catch of the day\"",
+        "Subject: \"An anchor wrapped in rope above ocean waves\", text: \"Steady\"",
+        "Subject: \"A mountain range with a rising sun and pine trees\"",
+        "Subject: \"A lantern with a moth, framed by leaves\", text: \"Stay curious\""
+      ],
+      "faq": [
+        {
+          "q": "Is woodcut a good style for branding?",
+          "a": "It suits rugged, outdoorsy and craft brands. PiCraft does not take a logo upload, so combine the artwork with your logo in an editor."
+        },
+        {
+          "q": "Do the lines look cut by hand?",
+          "a": "The artwork imitates carved lines, so they appear slightly rough. Each generation will vary."
+        },
+        {
+          "q": "Is it a good fit for vinyl cutting?",
+          "a": "Yes. The bold shapes cut well, and the white border gives a clean outline. See the [sticker size guide](/sizes/sticker-size) for sizes."
+        },
+        {
+          "q": "What other styles look hand-made?",
+          "a": "Try [hand-drawn doodle](/create/sticker-maker/doodle) for light pen sketches, or [watercolor](/create/sticker-maker/watercolor) for soft paint."
+        },
+        {
+          "q": "Can I print a sheet of different stickers?",
+          "a": "Each generation is one design. Place several PNGs on one page in your print software or in Cricut Design Space, then print the sheet on sticker paper. A set of woodcut stickers with the same heavy black lines makes a neat matching pack."
+        }
+      ]
+    }
+  ]
+}

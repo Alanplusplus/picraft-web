@@ -1,0 +1,121 @@
+{
+  "title": "Restaurant Menu Size: US Letter, A4, Bleed & Readability",
+  "h1": "Restaurant Menu Print Size and Layout Limits",
+  "description": "Restaurant menu size for print: US Letter 8.5×11 in or A4 with bleed, 300 DPI specs, about 14 lines per page, web JPG sizes, and local allergen rules to check.",
+  "summary": "Print a one-page menu at US Letter 8.5×11 in (8.75×11.25 in with 0.125 in bleed) or A4 210×297 mm (216×303 mm with 3 mm bleed) at 300 DPI. PiCraft fits about 14 menu lines on one page; keep type large enough to read from a seated guest's distance and verify allergen rules locally.",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "restaurant-menu-maker",
+  "relatedScenes": ["event-flyer-maker", "wedding-invitation-maker"],
+  "relatedGuides": ["flyer-size", "blog:product-photo-checklist-for-online-stores"],
+  "sections": [
+    {
+      "heading": "Menu print sizes at a glance",
+      "paragraphs": [
+        "Table menus in North America usually start from US Letter. Cafés and restaurants in most other countries standardize on A4. Both are single-page portrait sheets with commercial bleed on each edge when you send art to a print vendor."
+      ],
+      "table": {
+        "columns": ["Paper", "Trim size", "With bleed", "Bleed per edge"],
+        "rows": [
+          ["US Letter", "8.5×11 in", "8.75×11.25 in", "0.125 in"],
+          ["A4", "210×297 mm", "216×303 mm", "3 mm"],
+          ["US Letter at 300 DPI (with bleed)", "2625×3375 px", "—", "—"],
+          ["A4 at 300 DPI (with bleed)", "2551×3579 px (approx.)", "—", "—"]
+        ]
+      },
+      "after": [
+        "PiCraft's Restaurant Menu Maker lets you pick Letter or A4 before you generate; each download uses the matching bleed spec."
+      ]
+    },
+    {
+      "heading": "Which paper size should you choose?",
+      "paragraphs": [
+        "Choose US Letter if you print in the United States or Canada, your laminator pouches are Letter, or your existing menu sleeves expect 8.5×11 in.",
+        "Choose A4 if you operate where A4 is the default copy paper and printer tray size, including most of Europe, Australia and many other regions.",
+        "The two sizes are not interchangeable without scaling. A layout tuned for Letter may reflow if forced onto A4. Generate the size you will actually print rather than scaling later."
+      ]
+    },
+    {
+      "heading": "Bleed, trim and what the printer needs",
+      "paragraphs": [
+        "Bleed lets background color or borders run past the final trim so you do not see white slivers after cutting. US menus use 0.125 in bleed per side; A4 workflows often use 3 mm per side, which PiCraft applies on the A4 PDF and JPG.",
+        "Send the PDF with bleed intact. Specify trim size (8.5×11 in or 210×297 mm) on the order. If you laminate, confirm the pouch matches the trimmed sheet.",
+        "For a general explanation of bleed and safe areas, see [what is bleed in printing](/blog/what-is-bleed-in-printing)."
+      ]
+    },
+    {
+      "heading": "How many items fit on one page",
+      "paragraphs": [
+        "The Restaurant Menu Maker accepts up to 14 lines in the form: one dish, drink or section heading per line. Section titles are lines without a price, such as \"Starters\" or \"Desserts.\"",
+        "Fourteen lines is a practical cap for readable type on one sheet. Long descriptions or many sections force smaller lettering, which is harder to read under restaurant lighting and harder for the model to spell perfectly.",
+        "For longer offerings, split into two pages (food and drinks, lunch and dinner) and generate each page separately with the same style option."
+      ]
+    },
+    {
+      "heading": "Readability at the table",
+      "paragraphs": [
+        "Guests read a menu at arm's length or slightly farther, often in dimmer light than an office. Favor fewer items per page, short descriptions and consistent price alignment over cramming every special onto one sheet.",
+        "After you download, print one proof and read it standing where customers sit. If you squint at prices, regenerate with shorter lines or fewer items.",
+        "Chalkboard-style designs look hand lettered but still need enough contrast between text and background. Dark fine-dining layouts need gold or light type large enough to pick out quickly."
+      ]
+    },
+    {
+      "heading": "Web menu images vs print PDF",
+      "paragraphs": [
+        "PiCraft also exports a web JPG at 150 DPI for screen use: 1275×1650 px for Letter and 1240×1754 px for A4. Use it on a website, Google Business Profile, social posts or delivery app listings where a full PDF is awkward.",
+        "Replace the web image whenever prices change. The print PDF is the source for physical menus; the JPG is for quick online viewing, not for high-quality press output."
+      ]
+    },
+    {
+      "heading": "Allergens, calories and legal notices",
+      "paragraphs": [
+        "Many jurisdictions require allergen disclosures, calorie counts or other statements on menus or menu boards. Rules differ by country, state and city, and they change over time.",
+        "PiCraft copies the dish lines you paste; it does not automatically add allergen icons, \"may contain\" blocks or nutrition panels. Type allergens into your lines if you want them in the design, or add a separate notice in your printer's template editor. Confirm what your location requires with official guidance or a local advisor.",
+        "Do not rely on this page for compliance advice."
+      ]
+    },
+    {
+      "heading": "Common menu sizing mistakes",
+      "items": [
+        "Pasting more than 14 lines and expecting readable small print.",
+        "Ordering A4 prints from a Letter file without checking the proof.",
+        "Uploading the 150 DPI web JPG to a commercial printer instead of the 300 DPI PDF.",
+        "Skipping a physical proof under the restaurant's actual lighting.",
+        "Forgetting to update the online JPG after a price change."
+      ]
+    },
+    {
+      "heading": "Make a menu at Letter or A4 with bleed",
+      "paragraphs": [
+        "The [Restaurant Menu Maker](/create/restaurant-menu-maker) pastes your dishes into a one-page layout with the restaurant name and optional tagline. You choose US Letter or A4, then download a 300 DPI print PDF with bleed and a web JPG. It sets the name as typography only; it does not add a logo or food photography.",
+        "For event posters rather than menus, see [flyer size](/sizes/flyer-size) and the [Event Flyer Maker](/create/event-flyer-maker). For listing photos alongside your online menu, browse [product and listing photos](/categories/product-and-listing-photos)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size is a standard restaurant menu?",
+      "a": "In the US, US Letter 8.5×11 in is common. In most other countries, A4 (210×297 mm) is standard. Both should include bleed when sent to a professional printer."
+    },
+    {
+      "q": "What are menu dimensions with bleed?",
+      "a": "US Letter: 8.75×11.25 in with 0.125 in bleed. A4: 216×303 mm with 3 mm bleed per edge in PiCraft's export."
+    },
+    {
+      "q": "How many menu items fit on one PiCraft page?",
+      "a": "Up to 14 lines, including section headings without prices. Longer menus need a second page or a slimmer item list."
+    },
+    {
+      "q": "What resolution should a printed menu use?",
+      "a": "300 DPI on the print PDF or JPG. The separate web JPG is exported at 150 DPI for screens."
+    },
+    {
+      "q": "Does PiCraft add allergen information?",
+      "a": "No. Include allergens in your pasted lines if you want them shown, and check what your jurisdiction requires on menus."
+    },
+    {
+      "q": "Can I add my logo to the menu?",
+      "a": "Not in the maker. The restaurant name is rendered as styled type. Add a logo afterward in an editor if needed."
+    }
+  ]
+}

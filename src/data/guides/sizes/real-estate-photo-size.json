@@ -1,0 +1,101 @@
+{
+  "title": "MLS Listing Photo Size: 2048×1536, 4:3 & File Limit Guide",
+  "h1": "Real Estate Listing Photo Size and MLS Requirements",
+  "description": "MLS listing photo dimensions: 2048×1536 px landscape JPG, 1024×768 minimums, file size limits, web sizes, virtual staging labels, and keeping unedited originals.",
+  "summary": "Most MLS feeds expect landscape JPGs around 4:3. PiCraft exports a 2048×1536 px MLS file and a 1600×1200 px web JPG under 1 MB. Many boards accept 1024×768 px as a minimum, but maximum file weight often falls between 5 MB and 10 MB—check your MLS. Label virtually staged photos and keep unedited originals.",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "real-estate-listing-photo",
+  "relatedScenes": ["amazon-product-photo", "event-flyer-maker"],
+  "relatedGuides": ["blog:virtual-staging-disclosure-for-listing-photos", "amazon-product-image-requirements"],
+  "sections": [
+    {
+      "heading": "Listing photo specs at a glance",
+      "paragraphs": [
+        "Residential listings in North America usually upload still photos through the MLS or a portal that enforces the MLS rules. Requirements differ by board, but landscape aspect ratio, minimum resolution and file size caps show up everywhere."
+      ],
+      "table": {
+        "columns": ["Setting", "Typical requirement", "PiCraft output"],
+        "rows": [
+          ["Orientation", "Landscape", "4:3 landscape"],
+          ["MLS-oriented size", "2048×1536 px suits many systems; 1024×768 px is a common minimum", "2048×1536 px JPG"],
+          ["Web and social", "Smaller JPG for speed", "1600×1200 px JPG, under 1 MB"],
+          ["Format", "JPG most common", "JPG"],
+          ["File weight", "Often 5–10 MB per photo (varies)", "Web file capped at 1 MB; check MLS for the MLS file"]
+        ]
+      },
+      "after": [
+        "These values come from PiCraft's [Real Estate Listing Photo Editor](/create/real-estate-listing-photo) specs and common MLS practice. Your board may require different pixels, forbid certain edits or ask for more than one resolution—read the current MLS media handbook."
+      ]
+    },
+    {
+      "heading": "Resolution, aspect ratio and file size",
+      "paragraphs": [
+        "Four-to-three landscape matches typical wide-angle listing shots. A 2048×1536 px JPG is enough for most screens without oversized file weight.",
+        "1024×768 px is a common minimum; portrait phone photos are often rejected—crop to landscape before you edit.",
+        "File size limits protect the MLS upload pipeline. Caps around 5 MB or 10 MB per image appear often, but boards differ. A 2048×1536 px JPG at moderate quality usually stays under typical caps; if upload fails, lower JPG quality slightly."
+      ]
+    },
+    {
+      "heading": "What to upload vs what to keep offline",
+      "paragraphs": [
+        "Publish the edited JPG the buyer will see, plus retain the unedited original from the camera or phone. Many MLS rules and broker policies expect you to supply the untouched image when an edit materially changes what the room looks like.",
+        "Use the 1600×1200 px web JPG for your brokerage site, email campaigns and social posts where a sub-1 MB file loads quickly. Use the 2048×1536 px MLS JPG for the primary feed unless your MLS specifies another dimension.",
+        "Shoot new photos when a room is too dark, blurry or tilted. Enhancement can brighten and straighten a decent capture; it cannot replace a retake of a unusable source file."
+      ],
+      "after": [
+        "Turn on lights and open blinds before you shoot. Run one edit type per pass—declutter first, then stage an empty room if needed."
+      ]
+    },
+    {
+      "heading": "Virtual staging, declutter and disclosure",
+      "paragraphs": [
+        "Virtual staging adds furniture to an empty room; declutter removes loose items from a furnished room; twilight edits change exterior sky and lighting. Each can change buyer expectations, so MLS associations and several states require clear labeling of altered listing media.",
+        "PiCraft's maker notes that most MLS rules and many state regulations require labeling staged or materially altered photos. Wording and placement differ: some boards want text in the photo description, others in the public remarks or a dedicated field. PiCraft does not know your local rule set—confirm with your MLS and broker.",
+        "Edits must never hide defects such as water stains, cracked tile, damaged cabinets or structural issues. Declutter is for temporary mess, not permanent problems. For a fuller checklist on labels and originals, read [virtual staging disclosure for listing photos](/blog/virtual-staging-disclosure-for-listing-photos)."
+      ],
+      "after": [
+        "Compare before and after side by side before you publish. Windows, flooring, built-ins and the view outside should match the real property."
+      ]
+    },
+    {
+      "heading": "Common MLS upload problems",
+      "items": [
+        "Photo rejected for dimensions: image is portrait or below the board's minimum width—crop to 4:3 landscape at least 1024×768 px.",
+        "Upload times out: file exceeds the MLS megabyte cap—re-export JPG at slightly lower quality.",
+        "Soft or noisy image: starting from a very dark phone photo; retake with better light.",
+        "Compliance flag: staged room shown without the required label—add disclosure per MLS instructions.",
+        "Buyer complaint after showing: furniture in the photo was never in the home—use staging only on empty rooms and disclose it."
+      ]
+    },
+    {
+      "heading": "Prepare MLS-ready listing photos",
+      "paragraphs": [
+        "The [Real Estate Listing Photo Editor](/create/real-estate-listing-photo) accepts a landscape property photo and returns a 2048×1536 px MLS JPG plus a 1600×1200 px web JPG. Choose enhance, declutter, virtual staging or virtual twilight, and add a short style note for staging if needed.",
+        "Each photo is a separate generation. For product-style detail shots or white-background catalog images, see [Product and listing photos](/categories/product-and-listing-photos) and the [Amazon product photo](/create/amazon-product-photo) maker for a different workflow."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size should MLS listing photos be?",
+      "a": "Landscape 4:3 JPG is standard. PiCraft exports 2048×1536 px for MLS use; many systems also accept 1024×768 px as a minimum. Verify width, height and aspect ratio in your MLS media guide."
+    },
+    {
+      "q": "What is the maximum file size for MLS photos?",
+      "a": "It varies by MLS, often in the 5–10 MB range per image. If your upload fails, lower JPG quality or ask your board for the current limit."
+    },
+    {
+      "q": "Do I have to label virtually staged photos?",
+      "a": "Usually yes on MLS and in several states, but the exact label and where it must appear differ. Check your MLS and broker compliance rules before you publish."
+    },
+    {
+      "q": "Should I keep the original unedited photo?",
+      "a": "Yes. Store the camera original with each edited JPG. Many policies ask for the unaltered image when a photo is materially changed, and it protects you if a buyer questions what the room looked like."
+    },
+    {
+      "q": "Can listing edits hide damage or defects?",
+      "a": "No. Enhancement, declutter and staging must not conceal problems a buyer would reasonably want to know about."
+    }
+  ]
+}

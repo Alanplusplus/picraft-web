@@ -1,0 +1,715 @@
+{
+  "scene": "wedding-invitation-maker",
+  "field": "style",
+  "noun": "style",
+  "collection": "Wedding invitation styles",
+  "updated": "2026-10-09",
+  "styles": [
+    {
+      "value": "botanical",
+      "slug": "botanical",
+      "seo": {
+        "title": "Watercolor Botanical Wedding Invitation Maker – Printable",
+        "description": "Make a watercolor botanical wedding invitation with greenery and white florals. Add your names, date and venue, then download a 5×7 in print PDF with bleed.",
+        "h1": "Watercolor Botanical Wedding Invitation Maker"
+      },
+      "intro": [
+        "The watercolor botanical style frames your wedding details with delicate greenery and white flowers in a soft sage and ivory palette. The names are set in elegant script and the details in a refined serif, which gives the card a fresh, natural and slightly romantic feel.",
+        "Type in the couple's names, the date and the venue, and PiCraft sets them into the design with a balanced, centered layout. You download a 5×7 inch print PDF with bleed, a 300 DPI JPG and a phone-sized image for digital sharing."
+      ],
+      "bestFor": [
+        {
+          "title": "Garden and greenhouse weddings",
+          "description": "Leaves and white blooms echo venues with glass roofs, lawns or conservatories, so the card previews the setting."
+        },
+        {
+          "title": "Spring and summer ceremonies",
+          "description": "The light green and ivory palette reads as fresh, which fits weddings from late spring to early autumn."
+        },
+        {
+          "title": "Couples who want classic without gold",
+          "description": "It is traditional in tone but calm in color, a good choice if metallic borders feel too formal."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Check the script on the names",
+          "description": "Script lettering can make a long pair of names harder to read. Use first names or short forms, and proofread the spelling on the generated card."
+        },
+        {
+          "title": "Use the venue line for the venue name only",
+          "description": "Put the venue name in the venue field and the town in the city field, so the layout stays balanced above the greenery."
+        },
+        {
+          "title": "Pick uncoated or textured paper",
+          "description": "Matte, slightly textured stock suits the watercolor look. Glossy paper can make the pale greens look flat."
+        },
+        {
+          "title": "Echo the greenery in the flowers",
+          "description": "White blooms, eucalyptus or ruscus at the ceremony tie the day back to the invitation without extra planning."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Sophia Chen & Liam Anderson\", venue: \"The Glasshouse at Willow Farm\", city: \"Napa, California\"",
+        "Time: \"Four o'clock in the afternoon\" for a late-afternoon garden ceremony",
+        "RSVP line: \"Kindly reply by May 1 · sophiaandliam.com\"",
+        "A destination wedding with city set to \"Lake Como, Italy\""
+      ],
+      "faq": [
+        {
+          "q": "Will the greenery cover my text?",
+          "a": "The design keeps all text well inside the card, with margins of at least 8% on every side, and frames it with the greenery. Proofread the result and generate again if a line looks crowded."
+        },
+        {
+          "q": "Can I add a monogram or crest?",
+          "a": "No. The maker does not add monograms, photos or maps. You can add them in a design editor after you download the file."
+        },
+        {
+          "q": "Is the wording editable?",
+          "a": "The invitation uses a traditional form of wording in English. Use the RSVP line for extra words, such as a website or dress code."
+        },
+        {
+          "q": "What size should I print?",
+          "a": "The card is 5×7 inches with a 0.125 inch bleed. See the [wedding invitation size guide](/sizes/wedding-invitation-size) for envelopes and paper."
+        }
+      ]
+    },
+    {
+      "value": "minimal",
+      "slug": "minimal",
+      "seo": {
+        "title": "Modern Minimal Wedding Invitation Maker – Clean & Printable",
+        "description": "Make a modern minimal wedding invitation with white space, thin-line accents and an elegant serif. Download a 5×7 in print PDF with bleed or a share image.",
+        "h1": "Modern Minimal Wedding Invitation Maker"
+      },
+      "intro": [
+        "The modern minimal style is about restraint: generous white space, fine thin-line accents and a high-contrast serif in black ink on warm white. There are no florals and no ornament, so the names, the date and the place carry the whole card.",
+        "Enter your details and PiCraft sets them in a clean, centered layout. Because the design is simple, it prints crisply even on a basic printer and looks good as a phone image."
+      ],
+      "bestFor": [
+        {
+          "title": "City and gallery weddings",
+          "description": "Modern venues such as lofts, galleries and restaurants pair naturally with a card that looks like a gallery poster."
+        },
+        {
+          "title": "Small, intimate celebrations",
+          "description": "A quiet design suits a short guest list where the invitation is more a note than a show."
+        },
+        {
+          "title": "Couples who like to add their own touches",
+          "description": "A plain card gives you room to add a sticker, a ribbon or a wax seal by hand."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Let the typography lead",
+          "description": "With no decoration, the choice of words matters more. Use a clean line for the venue and keep the city short."
+        },
+        {
+          "title": "Use white or cream stock",
+          "description": "The card is designed on warm white. Printing on bright white paper changes the feel slightly, so test one copy."
+        },
+        {
+          "title": "Keep optional lines optional",
+          "description": "Time, city and RSVP are optional. Leave out any you do not need, and the white space gets even more generous."
+        },
+        {
+          "title": "Add texture in the paper",
+          "description": "A thick cotton or felt-textured stock adds richness that the flat design leaves out, and a print shop can often supply it."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Julia Park & Andrew Bennett\", venue: \"The Atrium Gallery\", city: \"Brooklyn, New York\"",
+        "Date: \"Saturday, October 16, 2027\" with no time, for an evening reception",
+        "RSVP line: \"Reply at juliaandandrew.com\"",
+        "A courthouse wedding with the venue set to \"City Hall, Rose Chamber\""
+      ],
+      "faq": [
+        {
+          "q": "Is minimal too plain for a wedding?",
+          "a": "It is simple on purpose, which many couples want. If you would like more decoration, the [classic gold](/create/wedding-invitation-maker/classic) and [botanical](/create/wedding-invitation-maker/botanical) styles add ornament."
+        },
+        {
+          "q": "Does the card include a leaf or icon?",
+          "a": "Some results include a small motif or a thin border, and some do not. The style keeps decoration minimal, and each generation is a little different."
+        },
+        {
+          "q": "Can I print at home?",
+          "a": "Yes. The minimal look suits home printing because there are no large dark areas. Print the JPG at actual size on heavy stock and trim along the edge."
+        },
+        {
+          "q": "How do I send it digitally?",
+          "a": "Download the 1080×1500 px share image and send it by message or email. Keep a printed copy for guests who prefer paper."
+        }
+      ]
+    },
+    {
+      "value": "classic",
+      "slug": "classic",
+      "seo": {
+        "title": "Classic Gold Wedding Invitation Maker – Formal & Printable",
+        "description": "Make a classic gold wedding invitation with an ornate border, script names and serif details. Download a 5×7 in print PDF with bleed or a share image.",
+        "h1": "Classic Gold Wedding Invitation Maker"
+      },
+      "intro": [
+        "The classic gold style is the traditional formal wedding card: an ornate gold foil-style border on an ivory card stock texture, with script names and serif details. The wording is already traditional, so the whole card feels like a formal invitation.",
+        "Add the couple's names, the date, the time and the venue, and PiCraft arranges them within the frame. The gold is part of the printed image, so you get the look of foil without foil printing."
+      ],
+      "bestFor": [
+        {
+          "title": "Formal ceremonies and ballrooms",
+          "description": "Hotels, churches and grand halls suit a card with an ornate border and a ceremonial tone."
+        },
+        {
+          "title": "Evening black-tie weddings",
+          "description": "The gold-and-ivory palette matches formal attire and candlelit receptions."
+        },
+        {
+          "title": "Families who prefer tradition",
+          "description": "A card that looks like the invitations of past decades reassures guests who expect an elegant mailing."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Mind the border",
+          "description": "The ornate frame takes up space. Keep the venue and city lines short so they sit comfortably inside it."
+        },
+        {
+          "title": "Remember that gold is flat",
+          "description": "The gold is printed as ink, not foil. For real foil, ask a print shop to quote a foil-stamping option and send them the file as a design reference."
+        },
+        {
+          "title": "Choose ivory or cream paper",
+          "description": "The card has an ivory texture built in. Cream or ivory stock blends with it, and bright white stock can show the edges of the texture."
+        },
+        {
+          "title": "Order matching envelopes",
+          "description": "A7 envelopes in ivory or a dark liner complete the formal look and fit the 5×7 inch card."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Emily Rose & Daniel King\", venue: \"The Grand Ballroom, Hotel Ritz\", city: \"Boston, Massachusetts\"",
+        "Time: \"Half past five in the evening\" for a formal evening ceremony",
+        "RSVP line: \"The favor of a reply is requested by August 1\"",
+        "A church wedding with the venue \"St. Anne's Cathedral\""
+      ],
+      "faq": [
+        {
+          "q": "Is the gold real foil?",
+          "a": "No. It is a printed image designed to look like foil. Real foil needs a special print process, which some print shops offer."
+        },
+        {
+          "q": "Is the wording traditional?",
+          "a": "Yes. All wedding invitations from this maker use a traditional wording in English, and classic gold suits it best."
+        },
+        {
+          "q": "Will the ornate border print cleanly?",
+          "a": "Fine ornament prints best at 300 DPI on good stock. Use the print PDF with bleed and proofread the names and date on the card."
+        },
+        {
+          "q": "Can I send it digitally?",
+          "a": "Yes, with the share image. For a formal guest list, many couples also mail printed cards. See the [guide to printing wedding invitations](/blog/how-to-print-wedding-invitations)."
+        }
+      ]
+    },
+    {
+      "value": "boho",
+      "slug": "boho",
+      "seo": {
+        "title": "Boho Wedding Invitation Maker – Arch, Pampas & Dried Flowers",
+        "description": "Make a boho wedding invitation with a terracotta arch, dried flowers and pampas grass. Add your details and download a 5×7 in print PDF or a share image.",
+        "h1": "Boho Wedding Invitation Maker"
+      },
+      "intro": [
+        "The boho arch style frames your wedding details in an arch shape, surrounded by dried pampas grass, terracotta and blush florals in a warm, earthy palette. It looks relaxed and handmade, like a wedding held in a field or on a ranch at golden hour.",
+        "Fill in the couple's names, the date and the venue, and PiCraft places them inside the arch. You can print a 5×7 inch card with bleed or send the phone image to guests."
+      ],
+      "bestFor": [
+        {
+          "title": "Outdoor and desert weddings",
+          "description": "Ranches, vineyards and desert venues match the terracotta tones and the dried-grass motifs."
+        },
+        {
+          "title": "Relaxed, informal ceremonies",
+          "description": "The arch shape and earth colors set a casual tone, so guests know to expect an easygoing day."
+        },
+        {
+          "title": "Couples using dried-flower decor",
+          "description": "Pampas, dried palms and wheat bouquets are popular in boho weddings, and the invitation matches them."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Mind the arch",
+          "description": "Text sits inside the arch, which is narrower at the top. Short names and a short venue name fit best."
+        },
+        {
+          "title": "Pair with kraft or cotton paper",
+          "description": "Natural cream cotton or recycled stock supports the organic look better than glossy paper."
+        },
+        {
+          "title": "Check the earthy tones in print",
+          "description": "Terracotta and blush can shift toward orange or pink on different printers. Print one test and compare it with your decor colors."
+        },
+        {
+          "title": "Use the RSVP line for a website",
+          "description": "A short \"RSVP at ourwedding.com\" line fits the casual feel and saves a separate response card."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Aria Patel & Marcus Johnson\", venue: \"Sunset Ridge Ranch\", city: \"Sedona, Arizona\"",
+        "Time: \"Five o'clock, as the sun begins to set\"",
+        "RSVP line: \"Join us · ariaandmarcus.com\"",
+        "An elopement celebration with the venue \"Joshua Tree Garden\""
+      ],
+      "faq": [
+        {
+          "q": "Can I choose the arch color?",
+          "a": "Arch colors vary with each generation, from terracotta to blush. Generate again if you want a different shade."
+        },
+        {
+          "q": "Is boho only for outdoor weddings?",
+          "a": "No. It suits indoor venues with natural materials too. The look is about warmth and texture, not the location."
+        },
+        {
+          "q": "Will dried flowers and grass crowd the text?",
+          "a": "Text stays inside the arch with generous margins. Review the result and generate again if any line feels tight."
+        },
+        {
+          "q": "Is there a similar style with fresh flowers?",
+          "a": "Yes. Try [romantic garden](/create/wedding-invitation-maker/garden) for pink roses and peonies, or [watercolor botanical](/create/wedding-invitation-maker/botanical) for greenery."
+        },
+        {
+          "q": "What card stock and envelope fit this card?",
+          "a": "The finished card is 5×7 inches and fits an A7 envelope (5¼×7¼ in). Heavy stock of 110 lb (300 gsm) or more feels premium, and a natural cotton or kraft-toned paper matches the earthy look of the artwork."
+        }
+      ]
+    },
+    {
+      "value": "garden",
+      "slug": "garden",
+      "seo": {
+        "title": "Romantic Garden Wedding Invitation Maker – Roses & Peonies",
+        "description": "Make a romantic garden wedding invitation with pastel watercolor roses and peonies. Add your details and download a 5×7 in print PDF or a share image.",
+        "h1": "Romantic Garden Wedding Invitation Maker"
+      },
+      "intro": [
+        "The romantic garden style surrounds your wedding details with lush pastel roses and peonies painted in watercolor, in a soft pink and cream palette. It is the most floral of the ten styles, and it feels like a bouquet in card form.",
+        "Add the couple's names, the date and the venue, and PiCraft arranges them in the center with a frame of blooms. You download a print PDF with bleed and a share image for phones."
+      ],
+      "bestFor": [
+        {
+          "title": "Estate and rose garden venues",
+          "description": "Manor houses, botanical gardens and orchards make a natural match for a card full of roses."
+        },
+        {
+          "title": "Spring and early summer weddings",
+          "description": "Peonies and roses are associated with late spring and early summer, so the card suits weddings in those months."
+        },
+        {
+          "title": "Bridal parties with pink palettes",
+          "description": "If bridesmaids wear blush or dusty rose, the invitation sets the color for the day."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Keep the lines short",
+          "description": "Roses frame the edges, and the text sits in the middle. Names, date and venue are comfortable; a long city or RSVP line can feel tight."
+        },
+        {
+          "title": "Use the city field for context",
+          "description": "A short \"Bath, England\" under the venue helps guests who travel, without adding clutter."
+        },
+        {
+          "title": "Print on soft white or cream",
+          "description": "The pastel colors look gentle on cream paper. Very bright white can make pale pink look cold."
+        },
+        {
+          "title": "Order a color-matched stamp or sticker",
+          "description": "A pink wax seal or sticker on the envelope carries the garden look from the card to the mailbox."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Hannah Brooks & Caleb Wright\", venue: \"Rosewood Manor Gardens\", city: \"Bath, England\"",
+        "Time: \"Two o'clock in the afternoon\" for a garden ceremony",
+        "RSVP line: \"Kindly reply by June 5 · hannahandcaleb.co.uk\"",
+        "A small wedding with the venue \"The Peony Courtyard\""
+      ],
+      "faq": [
+        {
+          "q": "Are the flowers always roses and peonies?",
+          "a": "The style asks for lush pastel roses and peonies. Each generation paints a different arrangement."
+        },
+        {
+          "q": "Is it too feminine for a wedding?",
+          "a": "That is a matter of taste. For a more neutral floral look, try [watercolor botanical](/create/wedding-invitation-maker/botanical), which uses green and white."
+        },
+        {
+          "q": "Does it work for an evening wedding?",
+          "a": "Yes, although the pastel palette feels sunniest for daytime weddings. For evening, [moody and dark](/create/wedding-invitation-maker/moody) is a richer choice."
+        },
+        {
+          "q": "Can I include a hashtag or website?",
+          "a": "Yes, in the RSVP line, up to 80 characters. Proofread it carefully, since text in images can have small mistakes."
+        }
+      ]
+    },
+    {
+      "value": "art_deco",
+      "slug": "art-deco",
+      "seo": {
+        "title": "Art Deco Wedding Invitation Maker – Gold & Navy, Printable",
+        "description": "Make an Art Deco wedding invitation with geometric gold lines on a luxurious navy or emerald background. Download a 5×7 in print PDF or a share image.",
+        "h1": "Art Deco Wedding Invitation Maker"
+      },
+      "intro": [
+        "The Art Deco style takes its look from the 1920s: geometric gold lines, fan shapes and a luxurious navy or emerald background, with elegant sans-serif titles. It is glamorous and graphic, and it looks formal without being traditional.",
+        "Enter the couple's names, the date and the venue and PiCraft places them within the geometric frame. Print the card with bleed or send the share image to guests who live far away."
+      ],
+      "bestFor": [
+        {
+          "title": "Grand Gatsby-style weddings",
+          "description": "Ballrooms, historic hotels and theater venues match the 1920s glamor of the artwork."
+        },
+        {
+          "title": "Black-tie evening receptions",
+          "description": "Gold lines on a deep navy ground read as evening wear for the card, so guests expect to dress up."
+        },
+        {
+          "title": "New Year's Eve and winter weddings",
+          "description": "The dark, jewel-like palette feels at home in winter, with candlelight and champagne."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Plan for a dark background",
+          "description": "The navy or emerald ground uses a lot of ink. A print shop gives a richer, more even result than a home printer."
+        },
+        {
+          "title": "Let the geometry breathe",
+          "description": "Fine gold lines need space. Keep optional lines such as time or RSVP short so they do not clash with the frame."
+        },
+        {
+          "title": "Pair with metallic envelopes",
+          "description": "Gold or champagne envelope liners echo the card and make the mailing feel luxurious."
+        },
+        {
+          "title": "Echo the motifs at the venue",
+          "description": "Fan shapes and gold geometry carry over to signage, menus and table numbers, which gives the whole day a consistent identity."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Catherine Moore & William Hayes\", venue: \"The Grand Palace Theatre\", city: \"Chicago, Illinois\"",
+        "Time: \"Seven o'clock in the evening\" for a black-tie reception",
+        "RSVP line: \"Black tie · reply by November 15\"",
+        "A New Year's Eve wedding with the date \"Friday, December 31, 2027\""
+      ],
+      "faq": [
+        {
+          "q": "Is the background always navy?",
+          "a": "The style uses a luxurious navy or emerald background. Which one you get varies with each generation."
+        },
+        {
+          "q": "Does the gold look metallic?",
+          "a": "The artwork looks metallic on screen, but it prints as ordinary ink unless you work with a print shop on special foil."
+        },
+        {
+          "q": "Is Art Deco only for formal weddings?",
+          "a": "It reads as formal and glamorous. For a casual look, try [modern minimal](/create/wedding-invitation-maker/minimal) or [boho](/create/wedding-invitation-maker/boho)."
+        },
+        {
+          "q": "How do I check the print?",
+          "a": "Order one proof from a print shop before the full run, and compare the dark areas and gold lines with the screen version."
+        },
+        {
+          "q": "What size and paper should I use?",
+          "a": "The finished card is 5×7 inches. The print file adds a 0.125 inch bleed and keeps text 0.25 inch inside the trim line. Heavy stock of 110 lb (300 gsm) or more suits the dark background, and an A7 envelope fits the card."
+        }
+      ]
+    },
+    {
+      "value": "rustic",
+      "slug": "rustic",
+      "seo": {
+        "title": "Rustic Wedding Invitation Maker – Wood, Sunflowers & Wildflowers",
+        "description": "Make a rustic wedding invitation with wood grain, mason jars and wildflowers. Add your details and download a 5×7 in print PDF or a share image.",
+        "h1": "Rustic Wedding Invitation Maker"
+      },
+      "intro": [
+        "The rustic wood style gives your invitation a barn-wedding feel: a wood grain texture, mason jar and wildflower accents, warm browns and sunflower yellow, and handwritten script for the names. It feels homey and country, with a generous, welcoming tone.",
+        "Type in the couple's names, the date and the venue, and PiCraft sets them over the wood texture. You download a print PDF with bleed and an image to share with guests."
+      ],
+      "bestFor": [
+        {
+          "title": "Barn, farm and ranch weddings",
+          "description": "Wood, sunflowers and wildflowers match venues with beams, fields and long tables."
+        },
+        {
+          "title": "Late summer and autumn weddings",
+          "description": "Sunflower yellow and warm browns suit the harvest season."
+        },
+        {
+          "title": "Backyard and family weddings",
+          "description": "A homey card suits a gathering of family and friends at a house or a community hall."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Check contrast on the wood",
+          "description": "Wood grain is busy behind text. Look at the result at a small size, and generate again if any line is hard to read."
+        },
+        {
+          "title": "Use handwritten names sparingly",
+          "description": "Script names are charming, but short ones are the most legible. Use first names if the full names are long."
+        },
+        {
+          "title": "Use kraft envelopes",
+          "description": "Brown kraft A7 envelopes add to the rustic look and are inexpensive."
+        },
+        {
+          "title": "Bring the jars to the tables",
+          "description": "Mason jars with wildflowers on the tables turn the artwork into the real thing."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Claire Beaumont & Thomas Nakamura\", venue: \"Hollow Creek Barn\", city: \"Asheville, North Carolina\"",
+        "Time: \"Four o'clock, followed by supper and dancing\"",
+        "RSVP line: \"Please reply by August 20 · claireandthomas.com\"",
+        "A backyard wedding with the venue \"The Nakamura Family Farm\""
+      ],
+      "faq": [
+        {
+          "q": "Is the wood photographic?",
+          "a": "The wood grain is part of the illustration. Light or dark wood appears depending on each generation."
+        },
+        {
+          "q": "Do I get sunflowers every time?",
+          "a": "The style asks for sunflowers, wildflowers and mason jars, but each generation arranges them differently."
+        },
+        {
+          "q": "How do I make it feel less country?",
+          "a": "Try [watercolor botanical](/create/wedding-invitation-maker/botanical) or [boho](/create/wedding-invitation-maker/boho) for a softer, more modern take on natural materials."
+        },
+        {
+          "q": "Is the text easy to read?",
+          "a": "It is set in handwritten script for the names and a clearer face for the details. Proofread and check legibility on a phone screen."
+        },
+        {
+          "q": "Can I print it at home?",
+          "a": "You can, but check that your printer takes 5×7 inch card and can print to the edge. A print shop trims the 0.125 inch bleed cleanly and can use heavy stock of 110 lb (300 gsm) or more, which feels better with a rustic design. Proofread every name, date and time before you print."
+        }
+      ]
+    },
+    {
+      "value": "beach",
+      "slug": "beach",
+      "seo": {
+        "title": "Beach Wedding Invitation Maker – Coastal Watercolor, Printable",
+        "description": "Make a beach wedding invitation with watercolor waves, seashells and sandy tones. Add your names, date and venue, and download a 5×7 in print PDF or image.",
+        "h1": "Beach & Coastal Wedding Invitation Maker"
+      },
+      "intro": [
+        "The beach and coastal style paints ocean waves in watercolor, with sandy tones, seashell accents and a relaxed handwritten script. The look is airy and sunlit, with turquoise water and white sand giving the card a holiday feel.",
+        "Add the couple's names, the date and the venue, and PiCraft places them over the waves and shells. The print file has bleed for a print shop, and the share image is sized for message apps."
+      ],
+      "bestFor": [
+        {
+          "title": "Seaside and destination weddings",
+          "description": "Resorts, beach clubs and coastal towns match the waves and shells on the card."
+        },
+        {
+          "title": "Relaxed summer ceremonies",
+          "description": "The light palette and casual script suit a barefoot ceremony or a sunset reception."
+        },
+        {
+          "title": "Lake and harbor venues",
+          "description": "The blue watercolor also fits weddings by a lake, a marina or a river."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Spell out the travel details",
+          "description": "Destination guests need to know the town. Use the city field for the place, such as \"Maui, Hawaii\", and keep the venue line to the venue name."
+        },
+        {
+          "title": "Keep the colors light on paper",
+          "description": "Pale blues and sandy tones print best on bright or cream matte stock. Print a test to check that the water does not wash out."
+        },
+        {
+          "title": "Use the RSVP line for logistics",
+          "description": "A short line such as \"Reply by April 10 · weddingwebsite.com\" lets guests find travel information without crowding the card."
+        },
+        {
+          "title": "Send the digital version first",
+          "description": "Guests who travel often need time to plan. A share image by message lets you send the news before the printed cards arrive."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Mia Torres & Ryan Campbell\", venue: \"Coral Cove Beach Club\", city: \"Maui, Hawaii\"",
+        "Time: \"Half past four, just before sunset\"",
+        "RSVP line: \"Reply by April 10 · miaandryan.com for travel details\"",
+        "A lakeside wedding with the venue \"Lakeshore Pavilion\" and the city \"Lake Tahoe, California\""
+      ],
+      "faq": [
+        {
+          "q": "Is the beach style good for a lake wedding?",
+          "a": "Yes. The waves and sandy tones suit any waterside venue, though the seashells are more coastal."
+        },
+        {
+          "q": "Do I need to include the dress code?",
+          "a": "You can add a short note such as \"Barefoot ceremony\" to the RSVP line, which has an 80 character limit."
+        },
+        {
+          "q": "Will the pale colors print well?",
+          "a": "They print best at a print shop, with a test proof. Light colors can look washed out on a basic home printer."
+        },
+        {
+          "q": "Are there other light, airy styles?",
+          "a": "Yes. Try [cherry blossom](/create/wedding-invitation-maker/cherry-blossom) for a pale pink look, or [modern minimal](/create/wedding-invitation-maker/minimal) for white space."
+        }
+      ]
+    },
+    {
+      "value": "moody",
+      "slug": "moody",
+      "seo": {
+        "title": "Moody Dark Wedding Invitation Maker – Burgundy & Gold Script",
+        "description": "Make a moody, dark wedding invitation with jewel-toned burgundy florals and gold script names. Download a 5×7 in print PDF with bleed or a share image.",
+        "h1": "Moody & Dark Wedding Invitation Maker"
+      },
+      "intro": [
+        "The moody and dark style sets deep jewel-toned florals in burgundy and plum against a dark background, with elegant gold script for the names. The result is dramatic and romantic, like a painting in a candlelit room.",
+        "Enter the couple's names, the date and the venue, and PiCraft places them over the dark floral frame. The share image looks especially striking on a phone, where dark backgrounds glow."
+      ],
+      "bestFor": [
+        {
+          "title": "Autumn and winter weddings",
+          "description": "The burgundy and plum palette matches fall foliage, wool, candles and cold-weather colors."
+        },
+        {
+          "title": "Evening and candlelit receptions",
+          "description": "A dark card suits venues such as old libraries, wine cellars, historic halls and restaurants."
+        },
+        {
+          "title": "Couples who dislike pastel weddings",
+          "description": "It is the opposite of a pastel card, and a good fit for couples who want drama."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a print shop for dark cards",
+          "description": "Large dark areas can look streaky from a home printer. A print shop gives a deeper, more even black."
+        },
+        {
+          "title": "Keep gold names short",
+          "description": "Gold script on black is striking but needs space. First names or short name pairs are easiest to read."
+        },
+        {
+          "title": "Order dark envelopes with light liners",
+          "description": "A burgundy or black envelope with a gold or cream liner continues the theme."
+        },
+        {
+          "title": "Check the digital version in daylight",
+          "description": "Dark images can look different on a bright phone. Open the share image outdoors to see that the date remains legible."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Rose Delacroix & Henry St. Claire\", venue: \"The Library at Ashford Hall\", city: \"Edinburgh, Scotland\"",
+        "Time: \"Half past six, with candlelight dinner to follow\"",
+        "RSVP line: \"Black tie optional · reply by September 30\"",
+        "A winter wedding with the date \"Saturday, January 8, 2028\""
+      ],
+      "faq": [
+        {
+          "q": "Are the flowers always burgundy?",
+          "a": "The style leans on deep jewel tones such as burgundy and plum. The mix of flowers and colors changes with each generation."
+        },
+        {
+          "q": "Will black ink look good on cheap paper?",
+          "a": "Dark designs need good stock. Choose a thick matte or satin paper from a print shop, rather than thin office paper."
+        },
+        {
+          "q": "Can I use moody for a spring wedding?",
+          "a": "Yes. Many couples choose a dark look regardless of season. For a spring palette, try [romantic garden](/create/wedding-invitation-maker/garden)."
+        },
+        {
+          "q": "How do I proof the names?",
+          "a": "Read each name and the date on the generated card, then ask someone else to do the same. Gold script can look similar for letters such as n, u and m."
+        }
+      ]
+    },
+    {
+      "value": "cherry_blossom",
+      "slug": "cherry-blossom",
+      "seo": {
+        "title": "Cherry Blossom Wedding Invitation Maker – Sakura, Printable",
+        "description": "Make a Japanese-inspired cherry blossom wedding invitation with soft pink sakura branches on ivory. Download a 5×7 in print PDF or a share image.",
+        "h1": "Cherry Blossom Wedding Invitation Maker"
+      },
+      "intro": [
+        "The cherry blossom style is Japanese-inspired: soft pink sakura branches on an ivory card, with refined serif typography. It is delicate and airy, and it conveys spring and new beginnings at a glance.",
+        "Type in the names, the date and the venue, and PiCraft sets them on the card between the branches. You download a 5×7 inch print PDF with bleed and a phone-sized image."
+      ],
+      "bestFor": [
+        {
+          "title": "Spring weddings",
+          "description": "Blossom season is the obvious fit, and the card previews the colors of the day."
+        },
+        {
+          "title": "Japanese gardens and tea houses",
+          "description": "Gardens, shrines and cultural centers pair naturally with the sakura motif."
+        },
+        {
+          "title": "Couples who want romantic but light",
+          "description": "It has the softness of a floral card with more white space and a calmer feel than a full bouquet."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use serif lettering for clean names",
+          "description": "The style uses refined serif type, which keeps names clear against the pale pink. Short names or initials look elegant."
+        },
+        {
+          "title": "Let the branches frame the card",
+          "description": "Blossoms often run along the edges, leaving the middle for text. Keep each line short, and leave out optional lines you do not need."
+        },
+        {
+          "title": "Choose ivory or soft white stock",
+          "description": "The card is designed on ivory. A matching paper keeps the pale pinks warm."
+        },
+        {
+          "title": "Match with a pink accent",
+          "description": "A pale pink ribbon or a small branch tucked in the envelope carries the theme into the mail."
+        }
+      ],
+      "tryThese": [
+        "Names: \"Priya Mehta & Liam O'Sullivan\", venue: \"Sakura Garden Pavilion\", city: \"Portland, Oregon\"",
+        "Time: \"Eleven o'clock in the morning\" for a spring ceremony",
+        "RSVP line: \"Kindly reply by March 1 · priyaandliam.com\"",
+        "A tea house celebration with the venue \"Willow Tea House\""
+      ],
+      "faq": [
+        {
+          "q": "Is the cherry blossom style culturally specific?",
+          "a": "It is Japanese-inspired in its art and typography, but the wording is the same traditional English invitation as in other styles. Couples of all backgrounds choose it for its spring look."
+        },
+        {
+          "q": "Are the blossoms always along the edges?",
+          "a": "Often, but the arrangement changes with each generation. Some results frame the whole card, and others sit mainly on one side."
+        },
+        {
+          "q": "Is it suitable for autumn weddings?",
+          "a": "It is most seasonal in spring. For autumn, [moody and dark](/create/wedding-invitation-maker/moody) or [rustic](/create/wedding-invitation-maker/rustic) fit better."
+        },
+        {
+          "q": "What size is the printed card?",
+          "a": "5×7 inches finished, with a 0.125 inch bleed at 300 DPI. See [how to print wedding invitations](/blog/how-to-print-wedding-invitations) for paper and envelopes."
+        },
+        {
+          "q": "Can I send it digitally as well?",
+          "a": "Yes. Alongside the print PDF you get a 1080×1500 px share image for phone messages and group chats. Proofread every name, date and time on the generated card before you print or send it, because the text must be correct."
+        }
+      ]
+    }
+  ]
+}

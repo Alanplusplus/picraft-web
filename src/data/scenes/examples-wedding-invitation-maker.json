@@ -5,140 +5,160 @@
       "alt": "Watercolor botanical wedding invitation with white roses and green leaves for Sophia Chen and Liam Anderson",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "botanical"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297262555_1.webp",
       "alt": "Watercolor botanical wedding invitation with soft white flowers and greenery for Aisha Noor and Daniel Fischer",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "botanical"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297287545_2.webp",
       "alt": "Modern minimal wedding invitation in clean serif type on cream for Julia Park and Andrew Bennett",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "minimal"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297305970_3.webp",
       "alt": "Modern minimal wedding invitation with a thin line border and a small leaf motif for Sienna Blake and Oliver Grant",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "minimal"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297341854_4.webp",
       "alt": "Classic gold-frame wedding invitation with an ornate gold border and script names for Emily Rose and Daniel Kim",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "classic"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297303028_5.webp",
       "alt": "Classic gold-frame wedding invitation with delicate gold corner ornaments for Zoe Chen and Alexander Wolf",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "classic"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297327188_6.webp",
       "alt": "Boho wedding invitation with a terracotta arch, dried flowers and pampas grass for Aria Patel and Marcus Johnson",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "boho"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297357836_7.webp",
       "alt": "Boho wedding invitation with a blush arch, dried flowers and pampas grass for Luna Reyes and Sebastian Cruz",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "boho"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297405432_8.webp",
       "alt": "Romantic garden wedding invitation framed by pink and cream roses for Hannah Brooks and Caleb Wright",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "garden"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297379313_9.webp",
       "alt": "Romantic garden wedding invitation framed by pink peonies and roses for Natalie Kim and David Ruiz",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "garden"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297383514_10.webp",
       "alt": "Navy and gold Art Deco wedding invitation with a fan motif and thin gold lines for Catherine Moore and William Hayes",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "art_deco"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297398398_11.webp",
       "alt": "Navy and gold Art Deco wedding invitation with a geometric gold frame for Victoria Sterling and James Whitfield",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "art_deco"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297421256_12.webp",
       "alt": "Rustic wedding invitation on warm wood with sunflowers in a mason jar for Claire Beaumont and Thomas Nakamura",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "rustic"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297426113_13.webp",
       "alt": "Rustic wedding invitation on dark wood with sunflowers and wildflowers for Amara Johnson and Erik Svensson",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "rustic"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297465607_14.webp",
       "alt": "Beach wedding invitation with ocean waves, shells and starfish for Mia Torres and Ryan Campbell",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "beach"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297458704_15.webp",
       "alt": "Beach wedding invitation with turquoise water, palm leaves and shells for Isla Reed and Connor Walsh",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "beach"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297473829_16.webp",
       "alt": "Dark moody wedding invitation with deep burgundy roses on black for Rose Delacroix and Henry St. Claire",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "moody"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297497419_17.webp",
       "alt": "Dark moody wedding invitation with dark florals and gold lettering for Eva Lindgren and James Okafor",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "moody"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297506342_18.webp",
       "alt": "Cherry blossom wedding invitation with pink blossom branches on white for Priya Mehta and Liam O'Sullivan",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "cherry_blossom"
     },
     {
       "url": "/examples/wedding-invitation-maker_1791297501908_19.webp",
       "alt": "Cherry blossom wedding invitation with pink blossom branches along the edges for Jasmine Kaur and Marco Rossi",
       "width": 800,
       "height": 1067,
-      "approved": true
+      "approved": true,
+      "style": "cherry_blossom"
     }
   ]
 }

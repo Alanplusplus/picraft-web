@@ -1,0 +1,117 @@
+{
+  "title": "Flyer Size: US Letter 8.5×11 in, Bleed & Social 1080×1350",
+  "h1": "Event Flyer Size for Print and Social Media",
+  "description": "Event flyer sizes: US Letter 8.5×11 in with bleed for print, 1080×1350 px feed posts, 1080×1920 px Stories, and A4 dimensions in millimeters.",
+  "summary": "Print event flyers at US Letter 8.5×11 in with 0.125 in bleed (8.75×11.25 in at 300 DPI). Post a 1080×1350 px (4:5) image on Instagram and Facebook feeds, and use 1080×1920 px (9:16) for Stories. Bold, simple layouts stay readable when enlarged or viewed small.",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "event-flyer-maker",
+  "relatedScenes": ["birthday-invitation-maker", "restaurant-menu-maker", "youtube-thumbnail-maker"],
+  "relatedGuides": ["menu-size", "birthday-invitation-size", "blog:youtube-thumbnail-best-practices"],
+  "sections": [
+    {
+      "heading": "Flyer and social sizes at a glance",
+      "paragraphs": [
+        "One event usually needs two shapes: a tall sheet for bulletin boards and doors, and a portrait image for social feeds. These sizes match what PiCraft exports from a single flyer design."
+      ],
+      "table": {
+        "columns": ["Use", "Size", "Aspect ratio"],
+        "rows": [
+          ["Printed flyer (trim)", "8.5×11 in (US Letter)", "—"],
+          ["Print file with bleed", "8.75×11.25 in at 300 DPI", "—"],
+          ["Pixels with bleed at 300 DPI", "2625×3375 px", "—"],
+          ["Instagram / Facebook feed", "1080×1350 px", "4:5"],
+          ["Stories / Reels-style vertical", "1080×1920 px", "9:16"],
+          ["Metric equivalent (trim)", "216×279 mm (near A4 length on letter width)", "—"],
+          ["ISO A4 (common outside US)", "210×297 mm trim", "—"]
+        ]
+      },
+      "after": [
+        "A4 is 210×297 mm, slightly narrower and taller than US Letter. If you print in Europe, ask whether the shop expects A4 or can scale a Letter PDF."
+      ]
+    },
+    {
+      "heading": "US Letter print specs and bleed",
+      "paragraphs": [
+        "Letter paper is 8.5×11 in before trimming. Add 0.125 in bleed on all four sides so backgrounds reach the edge after the cutter runs. The upload size becomes 8.75×11.25 in.",
+        "At 300 DPI, that bleed file is 2625×3375 px. Tell the printer the finished size is 8.5×11 in and that bleed should be trimmed off. For bleed basics, see [what is bleed in printing](/blog/what-is-bleed-in-printing).",
+        "Home and office printers often cannot print full bleed. Printing at actual size on Letter stock is fine for handouts; expect a thin white margin. Copy shops trim full-bleed PDFs cleanly."
+      ]
+    },
+    {
+      "heading": "How large should you print a flyer?",
+      "paragraphs": [
+        "8.5×11 in is the default handout in the US: cheap to copy, fits clipboards and shop windows, and matches what many venues expect on a cork board.",
+        "Need a bigger poster? Shops can enlarge a Letter PDF onto 11×17 in or larger sheet stock. Enlargement works best when the headline and date are big and the detail lines are few. Fine print and texture that already look soft at Letter size will not sharpen when scaled up.",
+        "PiCraft notes that print files are upscaled from the generated design. Treat the Letter PDF as the master and favor bold type and simple blocks of color over tiny highlight lists."
+      ]
+    },
+    {
+      "heading": "Instagram, Facebook and Stories sizes",
+      "paragraphs": [
+        "Feed posts: 1080×1350 px at a 4:5 aspect ratio. Meta's ad specifications list 4:5 portrait among supported feed ratios, with at least 600 px on the short side for many placements. A 4:5 image uses more vertical space in the feed than a square post.",
+        "Stories and similar full-screen vertical slots: 1080×1920 px at 9:16. PiCraft centers the flyer on a blurred background in the story export so the event name stays readable without redesigning the art.",
+        "Keep the event name and date high in the frame. Profile grids may crop the sides of 4:5 posts when shown as thumbnails, so avoid putting critical text in the far left or right corners."
+      ]
+    },
+    {
+      "heading": "A4 and Letter: quick conversion",
+      "paragraphs": [
+        "US Letter is 215.9×279.4 mm (often rounded to 216×279 mm). A4 is 210×297 mm. They are close in height but not identical; a design locked to Letter proportions will need slight scaling or re-layout for strict A4 output.",
+        "If you work in millimeters with bleed, A4 with 3 mm bleed per edge is a common commercial spec (216×303 mm total). PiCraft's Event Flyer Maker exports US Letter only; for A4 menus and similar pages, see [menu size](/sizes/menu-size)."
+      ]
+    },
+    {
+      "heading": "Layout choices that print and post well",
+      "items": [
+        "Lead with a short event name; two to five words read from across a room.",
+        "Put date, time and venue on one or two lines near the top third.",
+        "Limit bullet highlights to a few short lines; long paragraphs disappear on a phone thumbnail.",
+        "Use one call to action (website or phone), not three competing links.",
+        "Check the design at thumbnail size before you print fifty copies."
+      ],
+      "after": [
+        "The maker does not embed QR codes or logos. Put your URL in the call-to-action field, or add a code in an image editor after download."
+      ]
+    },
+    {
+      "heading": "Make a flyer at Letter and social sizes",
+      "paragraphs": [
+        "The [Event Flyer Maker](/create/event-flyer-maker) is fixed to portrait US Letter for print: 8.5×11 in with 0.125 in bleed, plus 1080×1350 px for feeds and 1080×1920 px for Stories from the same layout. It does not export native A4 or arbitrary poster sizes.",
+        "For dinner menus on Letter or A4, use the [Restaurant Menu Maker](/create/restaurant-menu-maker) and [menu size](/sizes/menu-size). Party invites at 5×7 in are covered in [birthday invitation size](/sizes/birthday-invitation-size)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the standard flyer size in the US?",
+      "a": "US Letter, 8.5×11 in, is the most common single-page flyer. Print shops often ask for 0.125 in bleed, for an 8.75×11.25 in file."
+    },
+    {
+      "q": "What size should a flyer be for Instagram?",
+      "a": "1080×1350 px (4:5 portrait) for the main feed. Meta supports 4:5 among feed aspect ratios; taller uploads may be cropped in some views."
+    },
+    {
+      "q": "What size are Instagram or Facebook Stories?",
+      "a": "1080×1920 px at a 9:16 aspect ratio for full-screen vertical placements."
+    },
+    {
+      "q": "How do I convert Letter to A4?",
+      "a": "Letter is 8.5×11 in (about 216×279 mm). A4 is 210×297 mm. Ask your printer to scale or recreate the layout if they require true A4 dimensions."
+    },
+    {
+      "q": "Can PiCraft make A4 flyers?",
+      "a": "The Event Flyer Maker outputs US Letter print files only. For A4 print layouts, scale at the printer or use another tool."
+    },
+    {
+      "q": "Why do simple flyers print better?",
+      "a": "The print file is upscaled from the generated artwork. Large type and flat color survive enlargement; fine detail and long small print do not."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Meta for Developers: Instagram media requirements (4:5 aspect ratio)",
+      "url": "https://developers.facebook.com/docs/instagram/ads-api/reference/media-requirements/"
+    }
+  ]
+}

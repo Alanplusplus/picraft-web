@@ -1,0 +1,112 @@
+{
+  "title": "YouTube thumbnail best practices for readable, honest clicks",
+  "h1": "YouTube thumbnail best practices",
+  "description": "Make YouTube thumbnails that stay readable on phones, leave the bottom-right clear for the duration badge, and match your video without misleading viewers.",
+  "summary": "Treat the thumbnail as a small poster: one subject, a few high-contrast words, and empty space in the bottom-right where YouTube shows the video length. Match what the video actually delivers, and export at the sizes in the [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size).",
+  "topic": "YouTube",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "youtube-thumbnail-maker",
+  "relatedScenes": ["linkedin-banner-maker", "book-cover-maker"],
+  "relatedGuides": ["size:youtube-thumbnail-size"],
+  "sections": [
+    {
+      "heading": "Design for the size viewers actually see",
+      "paragraphs": [
+        "A custom thumbnail is shown large on a video page, but most impressions are tiny: suggested videos, search results, and the home feed on a phone. At that scale, fine detail and long sentences disappear first.",
+        "Before you upload, shrink the image on your screen until it is roughly the height of a postage stamp, or about 160 px tall. If you cannot read the words or recognize the subject in two seconds, simplify. Fewer words, bigger type, and stronger separation between the subject and the background usually fix the problem faster than adding more elements.",
+        "Export at the dimensions YouTube expects. The [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size) lists recommended resolution, aspect ratio, and file limits so you do not have to guess."
+      ]
+    },
+    {
+      "heading": "Use very short text with strong contrast",
+      "paragraphs": [
+        "Headline text on a thumbnail is not a title rewrite. It is a cue. Two to five concrete words often work better than a full sentence because each letter has to survive compression and a small display.",
+        "Place text in the left or right third of the frame, not centered over the whole image. Keep letters thick and high contrast: light text on a dark band, or dark text on a bright area. Avoid low-contrast pairs such as yellow on white or red on orange.",
+        "Do not duplicate the video title word for word. Let the title explain the topic while the thumbnail shows the moment or outcome: an expression, a product, or a clear before-and-after split."
+      ],
+      "items": [
+        "Prefer nouns and verbs over filler words.",
+        "Skip ALL CAPS for entire phrases; they are harder to read at small size.",
+        "Proofread on the image itself. Thumbnail text is baked in, so a typo stays until you replace the file."
+      ]
+    },
+    {
+      "heading": "One focal point and expressive faces",
+      "paragraphs": [
+        "Pick one hero: a face, a product, or a single object. Collages with multiple competing subjects read as noise in the feed.",
+        "Human faces still carry emotion at small size when they are large, well lit, and front-facing. An obvious expression—surprise, delight, disbelief—helps viewers understand the tone of the video before they read anything. Sunglasses, heavy shadow, or a tiny face in the distance weaken that signal.",
+        "If you show a product, fill a meaningful part of the frame and simplify the background so the silhouette stays clear. The same rule applies to game footage, food, or tools: one thing, one story."
+      ]
+    },
+    {
+      "heading": "Keep the bottom-right corner clear",
+      "paragraphs": [
+        "On most YouTube surfaces, the video duration appears in the bottom-right corner of the thumbnail. Anything important in that corner will be covered.",
+        "Keep faces, logos, and headline text out of that zone. Treat the bottom-right as reserved space, the same way print designers leave room for a barcode.",
+        "The [YouTube Thumbnail Maker](/create/youtube-thumbnail-maker) follows that layout by default, but if you design elsewhere, check the corner before upload."
+      ]
+    },
+    {
+      "heading": "Stay consistent across your channel",
+      "paragraphs": [
+        "Consistency does not mean every thumbnail looks identical. It means viewers can spot your videos in a crowded row: a recurring font style, color accent, or layout grid.",
+        "Series benefit from a repeatable pattern—same placement for episode numbers, same style of background, same way you show your face—while still changing the subject each time.",
+        "If you use multiple styles, group them by show or playlist so a tutorial series does not look like a vlog series. Creator graphics on other platforms can follow different rules; for YouTube, the 16:9 feed is the constraint that matters."
+      ]
+    },
+    {
+      "heading": "Test thumbnails without guessing at statistics",
+      "paragraphs": [
+        "YouTube lets verified channels upload custom thumbnails and change them after publish. When a video underperforms, a clearer subject or shorter headline is a reasonable test—not because a number guarantees success, but because readability problems show up in real traffic.",
+        "Make two or three honest variants: same promise, different expression or wording. Swap the thumbnail, wait until impressions accumulate, and compare watch behavior in YouTube Studio. Changing a thumbnail can change how people interact with the video when it is offered to them; YouTube’s performance FAQ notes that interaction shifts matter more than the edit itself.",
+        "Avoid rapid-fire swaps on every video the same day. Custom uploads are subject to daily limits, and repeated policy issues can affect thumbnail privileges."
+      ]
+    },
+    {
+      "heading": "Be accurate; misleading thumbnails break the rules",
+      "paragraphs": [
+        "A thumbnail should describe what the viewer will actually see. Curiosity is fine; bait is not. YouTube’s thumbnails policy prohibits images that mislead viewers into thinking they will see something that is not in the video. The spam policy also calls out malicious clickbait—titles, thumbnails, or descriptions that promise content the video does not deliver.",
+        "YouTube’s own discovery tips ask for compelling titles and thumbnails that accurately represent content, and warn against deceiving or sensational packaging that can turn viewers away or lead to removal.",
+        "Policy issues are separate from taste. A dramatic face is allowed when the video contains that moment. A fake screenshot, unrelated celebrity, or prop that never appears crosses the line. Thumbnails must follow the same Community Guidelines as the video itself, including restrictions on violence, hate, nudity, and harmful content.",
+        "When you need a starting layout that respects safe areas and mobile file limits, use the [YouTube Thumbnail Maker](/create/youtube-thumbnail-maker) and cross-check the export against the [size guide](/sizes/youtube-thumbnail-size)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many words should a YouTube thumbnail have?",
+      "a": "Aim for two to five short words. Thumbnails appear small in search and suggested videos, so long phrases are hard to read even when they look fine at full size."
+    },
+    {
+      "q": "Why is my face covered on the thumbnail in the app?",
+      "a": "YouTube overlays the video duration in the bottom-right corner on many views. Keep important faces and text away from that corner."
+    },
+    {
+      "q": "Can I use a shocking image to get clicks?",
+      "a": "Only if the video actually contains that content and it follows YouTube’s Community Guidelines and thumbnails policy. Misleading or purely shock imagery can be removed and may lead to strikes."
+    },
+    {
+      "q": "Should the thumbnail repeat the video title?",
+      "a": "No. Let the title carry the full description while the thumbnail shows the hook: a face, object, or short phrase that complements the title."
+    }
+  ],
+  "sources": [
+    {
+      "label": "YouTube Help: Add custom thumbnails on YouTube",
+      "url": "https://support.google.com/youtube/answer/72431"
+    },
+    {
+      "label": "YouTube Help: Thumbnails policy",
+      "url": "https://support.google.com/youtube/answer/9229980"
+    },
+    {
+      "label": "YouTube Help: Spam, deceptive practices, and scams (malicious clickbait)",
+      "url": "https://support.google.com/youtube/answer/2801973"
+    },
+    {
+      "label": "YouTube Help: YouTube performance FAQ and troubleshooting",
+      "url": "https://support.google.com/youtube/answer/141805"
+    }
+  ]
+}

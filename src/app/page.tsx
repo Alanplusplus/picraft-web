@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
 import { SceneCard } from "@/components/scene-card";
+import { getGuides, isGuideIndexable } from "@/lib/guides";
 import { getScenesByCategory } from "@/lib/scenes";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from "@/lib/seo";
 import {
   absoluteUrl,
   CATEGORIES,
+  categoryPath,
   FILE_RETENTION_DAYS,
   SITE_NAME,
   SITE_URL,
@@ -123,6 +126,11 @@ const HERO_SCENES = [
 ];
 
 export default function HomePage() {
+  const resourceGuides = [
+    ...getGuides("size").filter(isGuideIndexable).slice(0, 3),
+    ...getGuides("blog").filter(isGuideIndexable).slice(0, 3),
+  ];
+
   return (
     <>
       <JsonLd
@@ -202,9 +210,19 @@ export default function HomePage() {
           <section key={category.id} className="mt-16">
             <div className="flex items-end justify-between gap-4">
               <div>
-                <h2 className="text-2xl font-bold tracking-tight text-ink-950">{category.name}</h2>
+                <h2 className="text-2xl font-bold tracking-tight text-ink-950">
+                  <Link href={categoryPath(category.id)} className="hover:text-brand-700">
+                    {category.name}
+                  </Link>
+                </h2>
                 <p className="mt-1 text-sm text-ink-500">{category.description}</p>
               </div>
+              <Link
+                href={categoryPath(category.id)}
+                className="hidden shrink-0 text-sm font-medium text-brand-700 hover:underline sm:block"
+              >
+                About these makers →
+              </Link>
             </div>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {getScenesByCategory(category.id).map((scene) => (
@@ -255,6 +273,38 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {resourceGuides.length > 0 && (
+          <section className="mt-20">
+            <div className="flex items-end justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight text-ink-950">Size guides and how-tos</h2>
+                <p className="mt-1 text-sm text-ink-500">
+                  Exact dimensions, bleed and platform rules, so the file you make is the file you need.
+                </p>
+              </div>
+              <Link href="/sizes" className="hidden shrink-0 text-sm font-medium text-brand-700 hover:underline sm:block">
+                All size guides →
+              </Link>
+            </div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {resourceGuides.map((guide) => (
+                <GuideCard key={`${guide.kind}-${guide.slug}`} guide={guide} />
+              ))}
+            </div>
+            <p className="mt-4 text-sm text-ink-500">
+              More on the{" "}
+              <Link href="/blog" className="font-medium text-brand-700 hover:underline">
+                blog
+              </Link>{" "}
+              and in the{" "}
+              <Link href="/gallery" className="font-medium text-brand-700 hover:underline">
+                design gallery
+              </Link>
+              .
+            </p>
+          </section>
+        )}
 
         <section className="mt-20 max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-ink-950">Made with AI, used responsibly</h2>

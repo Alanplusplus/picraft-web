@@ -27,12 +27,15 @@ function Logo() {
 
 const NAV_LINKS = [
   { href: "/create", label: "All makers" },
+  { href: "/sizes", label: "Size guides" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/blog", label: "Blog" },
   { href: "/history", label: "My files" },
 ];
 
 function NavLink({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
   const pathname = usePathname();
-  const active = pathname === href;
+  const active = pathname === href || pathname.startsWith(`${href}/`);
   return (
     <Link
       href={href}
@@ -85,7 +88,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Logo />
 
-        <nav className="hidden items-center gap-5 sm:flex">
+        <nav className="hidden items-center gap-5 md:flex">
           {NAV_LINKS.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
@@ -96,7 +99,7 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg hover:bg-ink-100 sm:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-lg hover:bg-ink-100 md:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -107,7 +110,7 @@ export function SiteHeader() {
       </div>
 
       {menuOpen && (
-        <div id="mobile-menu" className="border-t border-ink-200 bg-white sm:hidden">
+        <div id="mobile-menu" className="border-t border-ink-200 bg-white md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
             {NAV_LINKS.map((link) => (
               <Link

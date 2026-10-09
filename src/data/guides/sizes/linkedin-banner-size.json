@@ -1,0 +1,111 @@
+{
+  "title": "LinkedIn Banner Size: 1584×396 px Profile Background Specs",
+  "h1": "LinkedIn Profile Banner Size and Safe Area",
+  "description": "LinkedIn profile banner size is 1584×396 px (4:1), JPG or PNG, under 8 MB. Where your photo overlaps, mobile crop, and why company pages use 1512×256 px.",
+  "summary": "Upload a personal profile background at 1584×396 px in a 4:1 ratio, as JPG or PNG under 8 MB. LinkedIn recommends that size; keep names and headlines in the right half because your profile photo covers the lower-left and the banner crops differently on phones.",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "linkedin-banner-maker",
+  "relatedScenes": ["business-card-maker", "youtube-thumbnail-maker"],
+  "relatedGuides": ["business-card-size", "youtube-thumbnail-size", "blog:youtube-thumbnail-best-practices"],
+  "sections": [
+    {
+      "heading": "LinkedIn profile banner specs at a glance",
+      "paragraphs": [
+        "These numbers come from LinkedIn Help for personal profile cover images. They describe the file you upload, not necessarily every pixel visible after cropping."
+      ],
+      "table": {
+        "columns": ["Setting", "Requirement"],
+        "rows": [
+          ["Recommended size", "1584×396 px (4:1 aspect ratio)"],
+          ["File types", "JPG or PNG"],
+          ["Maximum file size", "Less than 8 MB"],
+          ["Display note", "Appearance can change with browser window size and screen resolution"]
+        ]
+      },
+      "after": [
+        "If the banner looks soft after upload, LinkedIn suggests using a larger file or a photo rather than a flat logo graphic. A 2× export (3168×792 px) gives extra pixels for high-density screens without changing the aspect ratio."
+      ]
+    },
+    {
+      "heading": "Profile photo overlap and safe placement",
+      "paragraphs": [
+        "The cover sits behind your profile photo in the introduction section. On desktop, the circular photo covers part of the lower-left banner. On mobile, the crop shifts, so the left and center-left are risky for text and logos.",
+        "Treat roughly the left third as a calm background zone. Put your name, title or tagline in the right half, vertically centered, where they stay readable when the photo and crop change.",
+        "After upload, use LinkedIn's editor to reposition the image if important content sits near an edge. Preview on both a phone and a computer before you share the profile link."
+      ]
+    },
+    {
+      "heading": "Personal profile vs company page cover",
+      "paragraphs": [
+        "A banner built for your personal profile will not fit a LinkedIn Company Page cover. Pages use a different width and height, with their own file size limit.",
+        "LinkedIn's Page image specifications list the Page cover at 1512×256 px (minimum and recommended), PNG or JPEG, with a maximum file size of 3 MB. PiCraft's [LinkedIn Banner Maker](/create/linkedin-banner-maker) targets personal profiles at 1584×396 px only.",
+        "If you manage a company Page, design or export at 1512×256 px and follow LinkedIn's guidance to keep key details away from edges, especially the lower-right, because covers can trim horizontally or vertically on different devices."
+      ]
+    },
+    {
+      "heading": "Export size, quality and file weight",
+      "paragraphs": [
+        "1584×396 px is the practical default: it matches LinkedIn's recommendation and keeps file size manageable. JPG is usually enough for gradients and photos; PNG helps if you need perfectly sharp edges on flat graphics, at the cost of a heavier file.",
+        "LinkedIn accepts files up to 8 MB. Staying well under that limit avoids upload failures on slow connections. If compression makes text fuzzy, export at 3168×792 px and upload that version instead.",
+        "Do not stretch a square or tall image into 4:1. Crop or redesign at the correct ratio so nothing looks stretched after LinkedIn applies its own crop."
+      ]
+    },
+    {
+      "heading": "Common banner mistakes",
+      "items": [
+        "Important text in the lower-left, where the profile photo covers it on desktop.",
+        "Logos or fine print near the left or right edge, where mobile cropping cuts them off.",
+        "A file much smaller than 1584×396 px, which looks pixelated on large monitors.",
+        "Using a company Page cover (1512×256 px) on a personal profile, or the reverse.",
+        "Busy backgrounds behind small type, which becomes unreadable at phone size."
+      ],
+      "after": [
+        "LinkedIn may temporarily replace your cover with a live video thumbnail when you broadcast LinkedIn Live; the image returns when the stream ends."
+      ]
+    },
+    {
+      "heading": "Make a banner at LinkedIn's recommended size",
+      "paragraphs": [
+        "The [LinkedIn Banner Maker](/create/linkedin-banner-maker) exports 1584×396 px and 3168×792 px JPGs with text placed on the right and the left third kept clear for the profile photo. It does not add your portrait or logo; upload those in LinkedIn separately.",
+        "For a matching professional card, see [business card size](/sizes/business-card-size). Creator graphics that pair well with a refreshed profile are covered under [creator graphics](/categories/creator-graphics)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the correct LinkedIn banner size?",
+      "a": "LinkedIn recommends 1584×396 pixels, a 4:1 landscape ratio, as JPG or PNG under 8 MB."
+    },
+    {
+      "q": "What size is a LinkedIn company Page cover?",
+      "a": "LinkedIn lists 1512×256 px as the minimum and recommended Page cover size, PNG or JPEG, up to 3 MB. That is not the same as a personal profile banner."
+    },
+    {
+      "q": "Why does my banner look cropped on mobile?",
+      "a": "LinkedIn adjusts cover images for different screen sizes. Keep critical text in the center-right and away from edges, then check your profile on a phone after upload."
+    },
+    {
+      "q": "Can I use PNG instead of JPG?",
+      "a": "Yes. LinkedIn accepts both. JPG is usually smaller; PNG can preserve sharp flat graphics at a higher file weight."
+    },
+    {
+      "q": "Where should I put my name on the banner?",
+      "a": "Place it in the right half of the image, away from the lower-left where your profile photo sits on desktop."
+    },
+    {
+      "q": "Is a larger than 1584×396 px file allowed?",
+      "a": "LinkedIn specifies 1584×396 px as the recommended dimensions. A 2× file at the same 4:1 ratio can look sharper on high-resolution displays if the file stays under 8 MB."
+    }
+  ],
+  "sources": [
+    {
+      "label": "LinkedIn Help: Add or change the cover image on your profile",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a568217"
+    },
+    {
+      "label": "LinkedIn Help: Image specifications for LinkedIn Pages and Career Pages",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a563309/image-specifications-for-your-linkedin-pages-and-career-pages"
+    }
+  ]
+}

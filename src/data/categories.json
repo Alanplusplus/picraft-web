@@ -1,0 +1,192 @@
+{
+  "photos": {
+    "updated": "2026-10-09",
+    "seo": {
+      "title": "AI Product & Listing Photo Makers – Amazon and Real Estate",
+      "description": "Make Amazon-ready product images with a pure white background and MLS-ready property photos. Start from your own photo and download files in the right size.",
+      "h1": "Product and Listing Photo Makers"
+    },
+    "intro": [
+      "Some photos have to follow rules that someone else wrote. An Amazon main image needs a pure white background and a product that fills most of the frame. A property listing needs bright, straight, honest photos that fit the size limits of the MLS. The makers in this group start from a photo you took, fix the things those rules care about and export files in the sizes the platforms ask for.",
+      "Both makers keep your product or property recognizable. They do not invent a new item or a different room layout, and they are not meant to hide defects. That keeps your listing accurate, which matters for buyers and for the marketplace that hosts it."
+    ],
+    "sections": [
+      {
+        "heading": "What these makers have in common",
+        "items": [
+          "You upload your own photo, so the result shows the real product or property.",
+          "Output sizes follow the platform: 2000×2000 px for marketplace images and 2048×1536 px for MLS uploads.",
+          "The maker pages explain the rules that apply, such as the pure white background rule for main images and the labeling that many MLS systems require for edited or staged photos.",
+          "Every design is reviewed by you before it goes live. AI can change small details, so compare the result with the real item."
+        ]
+      },
+      {
+        "heading": "Which one do you need?",
+        "paragraphs": [
+          "Use the [Amazon Product Photo Maker](/create/amazon-product-photo) when you sell a physical product and need a main image, a lifestyle image or a detail shot for Amazon, Etsy or Shopify. Use the [Real Estate Listing Photo Editor](/create/real-estate-listing-photo) when you list a property and want to brighten a dark room, declutter, add virtual furniture or turn a daytime exterior into a twilight shot.",
+          "If you are not sure what size a platform expects, read the matching size guide first: [Amazon product image requirements](/sizes/amazon-product-image-requirements) or [real estate photo size and rules](/sizes/real-estate-photo-size)."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do the photo makers change my product?",
+        "a": "They are built to keep the product as it is and change the background, light and presentation. AI can still alter small details such as printed text or tiny parts, so compare every image with the real item before you upload it."
+      },
+      {
+        "q": "Can I use the edited property photos on the MLS?",
+        "a": "Possibly, but MLS rules differ. Many require you to label virtually staged or heavily edited photos, and edits must never hide defects. Check your MLS rules and keep the unedited originals."
+      },
+      {
+        "q": "What do I need to start?",
+        "a": "One clear photo of the product or room. Sharp, well lit photos give the best results. Dark, blurry or heavily tilted photos give weaker results."
+      },
+      {
+        "q": "How many files do I get?",
+        "a": "Every design comes with the files for that job, such as a 2000×2000 px listing image and a 1080×1080 px store or social image for products, and an MLS size plus a web size for property photos."
+      }
+    ]
+  },
+  "print": {
+    "updated": "2026-10-09",
+    "seo": {
+      "title": "Invitation, Menu, Flyer & Business Card Makers for Print",
+      "description": "Make wedding and birthday invitations, restaurant menus, event flyers and business cards with your details typeset, then download print PDFs with bleed.",
+      "h1": "Invitation, Menu, Flyer and Business Card Makers"
+    },
+    "intro": [
+      "Printed pieces fail on details: a name trimmed off the edge, a date with a typo, a file at the wrong size. The makers in this group ask for the text that goes on the piece, such as names, dates, dishes, prices and contact details, and set it into the design. You download a print PDF with bleed, a 300 DPI image for home printing and an image for sharing by message or on social media.",
+      "Every maker keeps text well inside the safe area, so nothing important is lost when a print shop trims the sheet. You still need to proofread: AI text is good, but not perfect, and one wrong digit in a phone number is easy to miss."
+    ],
+    "sections": [
+      {
+        "heading": "The pieces you can make",
+        "items": [
+          "[Wedding Invitation Maker](/create/wedding-invitation-maker): a 5×7 in invitation with your names, date and venue, in ten styles from botanical to Art Deco.",
+          "[Birthday Invitation Maker](/create/birthday-invitation-maker): a 5×7 in invitation for kids and adults, in ten themes from unicorns to elegant black and gold.",
+          "[Event Flyer Maker](/create/event-flyer-maker): an 8.5×11 in flyer plus feed and story sizes for Instagram and Facebook.",
+          "[Restaurant Menu Maker](/create/restaurant-menu-maker): a one-page menu in US Letter or A4 from your list of dishes and prices.",
+          "[Business Card Maker](/create/business-card-maker): the front of a card in US or European size, with your name and contact details."
+        ]
+      },
+      {
+        "heading": "Before you print",
+        "paragraphs": [
+          "Bleed is the extra margin of artwork beyond the trim line, so that a small cutting error does not leave a white edge. The print PDFs from these makers include it. If you want to know how bleed, trim and safe area work together, read [what bleed is and how to use it](/blog/what-is-bleed-in-printing). Printers also publish their own templates, so check yours before you order a large run.",
+          "For exact dimensions, see the size guides for [wedding invitations](/sizes/wedding-invitation-size), [business cards](/sizes/business-card-size), [flyers](/sizes/flyer-size) and [menus](/sizes/menu-size)."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I print the files at home?",
+        "a": "Yes. Each maker gives you a JPG sized for home printing. Print it at actual size, 100% scale, on card stock and trim along the edge."
+      },
+      {
+        "q": "Which file should I send to a print shop?",
+        "a": "Send the print PDF. It has the bleed that print shops ask for and keeps important text inside the safe area."
+      },
+      {
+        "q": "Can I change the wording after the design is made?",
+        "a": "The text is part of the image, so a change means generating the design again with the new details. Edit the form, not the file."
+      },
+      {
+        "q": "Are the sizes right for my country?",
+        "a": "The business card and menu makers offer both US and European sizes. Invitations and flyers use US sizes, which a print shop can usually scale to the local standard."
+      }
+    ]
+  },
+  "creators": {
+    "updated": "2026-10-09",
+    "seo": {
+      "title": "Thumbnail, Banner & Book Cover Makers for Creators",
+      "description": "Make YouTube thumbnails, LinkedIn banners and book covers at the exact pixel size each platform expects, with bold text and room for the parts it overlays.",
+      "h1": "Thumbnail, Banner and Book Cover Makers"
+    },
+    "intro": [
+      "Platforms are strict about image sizes, and they cover parts of your image with their own interface: the video length on a thumbnail, your profile photo on a banner. The makers in this group export the pixel size and file weight the platform asks for and keep important text and faces out of the areas that get covered.",
+      "You describe the topic in plain words, choose a look and download the files. There is no prompt to write and no size to look up."
+    ],
+    "sections": [
+      {
+        "heading": "What you can make",
+        "items": [
+          "[YouTube Thumbnail Maker](/create/youtube-thumbnail-maker): 1280×720 px thumbnails under 2 MB and a 1920×1080 px version, with bold headline text.",
+          "[LinkedIn Banner Maker](/create/linkedin-banner-maker): a 1584×396 px profile background that leaves room for your photo.",
+          "[Book Cover Maker](/create/book-cover-maker): a 1600×2560 px Kindle cover and a 6×9 in paperback front panel with bleed, in genre-appropriate looks."
+        ]
+      },
+      {
+        "heading": "Sizes change, so check the source",
+        "paragraphs": [
+          "Platforms update their requirements from time to time. Each maker page links to the official help page where one exists, and the size guides show the date they were last checked: [YouTube thumbnail size](/sizes/youtube-thumbnail-size), [LinkedIn banner size](/sizes/linkedin-banner-size) and [book cover size](/sizes/book-cover-size).",
+          "Good images also follow a few habits that have nothing to do with size, such as high contrast and very short text. The guide to [YouTube thumbnail best practices](/blog/youtube-thumbnail-best-practices) covers them."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I use my own face in a thumbnail?",
+        "a": "The YouTube Thumbnail Maker accepts a photo of you and keeps your likeness in most cases. Likeness is not perfect, so check faces closely before you publish."
+      },
+      {
+        "q": "Will the banner look right on mobile?",
+        "a": "LinkedIn crops banners differently on phones and on desktop. The LinkedIn Banner Maker keeps the text in the half of the image that stays visible, but check the result on both."
+      },
+      {
+        "q": "Does the book cover include a spine and back?",
+        "a": "No. The maker designs the front cover only. A printed paperback needs a full wrap cover sized to your page count, which you build in your printer's template."
+      },
+      {
+        "q": "What if the text on the image is wrong?",
+        "a": "Generate again. Text is part of the image, so a corrected word means a new design."
+      }
+    ]
+  },
+  "merch": {
+    "updated": "2026-10-09",
+    "seo": {
+      "title": "Sticker & T-Shirt Design Makers with Transparent PNG Files",
+      "description": "Make die-cut sticker designs and print-on-demand t-shirt graphics as transparent PNG files, ready for Cricut, print shops and print-on-demand stores.",
+      "h1": "Sticker and T-Shirt Design Makers"
+    },
+    "intro": [
+      "Stickers and shirts need artwork with a clean edge. A background left in the file shows up as a colored box on a sticker or a patch on a shirt. The makers in this group remove the background for you and export transparent PNG files at the size a cutting machine, a print shop or a print-on-demand store expects.",
+      "You describe the idea in a sentence, choose one of ten styles and download the file. Each generation is one finished design, so you can try several ideas quickly."
+    ],
+    "sections": [
+      {
+        "heading": "What you can make",
+        "items": [
+          "[Sticker Maker](/create/sticker-maker): a die-cut design with a white border, as a 2048×2048 px transparent PNG and a 3×3 in print file at 300 DPI.",
+          "[T-Shirt Design Maker](/create/t-shirt-design-maker): a 4500×5400 px transparent PNG for print-on-demand, with a palette that suits dark or light shirts."
+        ]
+      },
+      {
+        "heading": "Know the rules before you sell",
+        "paragraphs": [
+          "Print-on-demand services and marketplaces have their own file rules and their own policies on trademarks and copyrighted characters. Read [how to prepare t-shirt design files for print-on-demand](/blog/t-shirt-design-file-requirements) and [how to prepare sticker artwork for print](/blog/sticker-artwork-print-and-cut) before you upload.",
+          "For the exact numbers, see the size guides for [sticker sizes](/sizes/sticker-size) and [t-shirt design sizes](/sizes/t-shirt-design-size). Only sell designs that do not use trademarked names, logos or characters you do not own."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the background really transparent?",
+        "a": "Yes. Both makers export PNG files with a transparent background. Very pale grey areas that touch the edge of the image can be lost in the cut-out, so regenerate if that happens."
+      },
+      {
+        "q": "Can I sell products made with these designs?",
+        "a": "You can use designs for personal and commercial projects as long as your input does not infringe anyone else's rights. Avoid trademarked phrases, logos and characters, and check the policy of your print-on-demand platform."
+      },
+      {
+        "q": "Does it make a full sticker sheet?",
+        "a": "Each generation is one sticker. Place several PNG files on a page in your print software or in your cutting machine's app."
+      },
+      {
+        "q": "How sharp is a large shirt print?",
+        "a": "The 4500×5400 px file is upscaled from the generated design. Bold shapes and flat colors print sharpest, while very fine detail will not look like vector art."
+      }
+    ]
+  }
+}

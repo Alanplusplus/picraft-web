@@ -1,0 +1,699 @@
+{
+  "scene": "birthday-invitation-maker",
+  "field": "theme",
+  "noun": "theme",
+  "collection": "Birthday invitation themes",
+  "updated": "2026-10-09",
+  "styles": [
+    {
+      "value": "party",
+      "slug": "party",
+      "seo": {
+        "title": "Balloons & Confetti Birthday Invitation Maker – Printable",
+        "description": "Make a bright balloons-and-confetti birthday invitation with the name, date and place already on it. Download a 5×7 in print PDF or a phone-ready image.",
+        "h1": "Balloons & Confetti Birthday Invitation Maker"
+      },
+      "intro": [
+        "The balloons and confetti theme is the all-purpose party look: bright colors, floating balloons, scattered confetti and playful rounded lettering. It says \"party\" at a glance, which is why it works when you do not have a bigger theme in mind yet.",
+        "Enter the birthday person's name, the date and the place, and PiCraft sets them into the design with the name as the largest text. Print the 5×7 inch card for guests, or send the phone-sized image straight into the group chat."
+      ],
+      "bestFor": [
+        {
+          "title": "Parties without a set theme",
+          "description": "If the party is simply about cake, friends and games, this look fits without asking the guests to dress up or bring anything."
+        },
+        {
+          "title": "Mixed-age guest lists",
+          "description": "The design is cheerful rather than childish or formal, so it suits a party where kids, parents and grandparents are all invited."
+        },
+        {
+          "title": "Last-minute invitations",
+          "description": "When the date is a week away, a bright all-purpose card gets the message across quickly and needs no matching decorations."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use the age line for the fun part",
+          "description": "A phrase such as \"is turning 4!\" or \"is 10 today!\" adds personality and sits neatly under the large name on the card."
+        },
+        {
+          "title": "Keep the date and time separate",
+          "description": "Put the day and month in the date field and the hours in the time field. Busy confetti backgrounds read best when each line is short."
+        },
+        {
+          "title": "Pick one color for the party",
+          "description": "The artwork is colorful by design. Choose balloons, plates and a cake in one or two of the same colors to make the party feel planned."
+        },
+        {
+          "title": "Generate twice and compare",
+          "description": "Every generation arranges the balloons and confetti differently. Make a second version and pick the one where the name and date stand out most."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Oliver\", age: \"is turning 4!\", place: \"Tiny Tots Playhouse, 8 Elm Road\"",
+        "A backyard party: set the place to \"Our backyard, 22 Cedar Lane\" and add \"Bring a swimsuit\" in the RSVP line",
+        "A class party invitation with the RSVP line \"Reply to Ms. Lee by Friday\"",
+        "A surprise party: write \"Shh! It's a surprise\" in the age field"
+      ],
+      "faq": [
+        {
+          "q": "Is the balloons and confetti theme only for children?",
+          "a": "No. The look is bright and friendly rather than childish, so it also suits teens and casual adult parties. For a more grown-up feel, try the [elegant black and gold theme](/create/birthday-invitation-maker/elegant)."
+        },
+        {
+          "q": "Will the confetti make the text hard to read?",
+          "a": "The design keeps the text in clear areas and sets it well inside the card. Look at the result at a small size on your phone before you send it, and generate again if any line is hard to read."
+        },
+        {
+          "q": "Can I change the balloon colors?",
+          "a": "Colors are chosen by the design for each generation, so you cannot pick them in the form. Generate again until you get a palette you like."
+        },
+        {
+          "q": "What size does the card print at?",
+          "a": "The print file is 5×7 inches with a 0.125 inch bleed. See the [birthday invitation size guide](/sizes/birthday-invitation-size) for envelopes and home printing."
+        }
+      ]
+    },
+    {
+      "value": "unicorn",
+      "slug": "unicorn",
+      "seo": {
+        "title": "Unicorn Birthday Invitation Maker – Printable & Shareable",
+        "description": "Make a unicorn and rainbow birthday invitation with the name, date and place already on it. Download a 5×7 in print PDF or an image to send by text.",
+        "h1": "Unicorn Birthday Invitation Maker"
+      },
+      "intro": [
+        "The unicorn and rainbow theme is a pastel design full of sparkles, stars and fluffy clouds. A unicorn takes the center of the card, and your details sit in soft, rounded lettering that stays easy to read.",
+        "Type the birthday child's name, the date and the place, and PiCraft sets them into the design. You can print the invitation at 5×7 inches for the classroom or send the phone-sized image to the parents' group chat."
+      ],
+      "bestFor": [
+        {
+          "title": "Young children's parties",
+          "description": "The soft colors and friendly characters fit parties for ages two to eight, at home, at a play center or in a park."
+        },
+        {
+          "title": "Rainbow and pastel party decor",
+          "description": "If the balloons, cake and tablecloth are pastel or rainbow, the invitation matches them from the first impression."
+        },
+        {
+          "title": "Classroom handouts",
+          "description": "A bright, cheerful card is easy to spot in a school bag, and the 5×7 inch size fits a standard A7 envelope."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Let the name be the star",
+          "description": "The birthday child's name is the largest text on the card. Use a short first name or a nickname so it stays big and readable."
+        },
+        {
+          "title": "Keep the place short",
+          "description": "Put the venue name and the street on the place line and leave the postcode and parking details for your message. Pastel backgrounds leave less room than they appear to."
+        },
+        {
+          "title": "Write the age as a phrase",
+          "description": "\"is turning 6!\" reads better than a lone number and fills the line neatly under the name."
+        },
+        {
+          "title": "Check the colors on your printer",
+          "description": "Pastels can look washed out on a home printer. Print one test copy on matte card stock, or order the print PDF from a print shop if you need exact color."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Sophie\", age: \"is turning 8!\", place: \"Starlight Skating Rink, 12 Maple Street\"",
+        "A rainbow-colored party at a petting zoo, with the RSVP line set to a parent's name and number",
+        "A joint party for two siblings: put both names in the name field, such as \"Mia & Lily\"",
+        "A sleepover invitation with the time set to \"6:00 PM – 9:00 AM\""
+      ],
+      "faq": [
+        {
+          "q": "Can I use the unicorn invitation for an adult party?",
+          "a": "Yes. Many adults enjoy a playful unicorn party, and the theme works just as well for a teen birthday. For a more refined look, try the [elegant black and gold theme](/create/birthday-invitation-maker/elegant)."
+        },
+        {
+          "q": "What size is the unicorn invitation?",
+          "a": "The printed card is 5×7 inches, and the print PDF adds a 0.125 inch bleed. The share image is 1080×1500 px for phones."
+        },
+        {
+          "q": "Can I change the unicorn or the colors?",
+          "a": "The artwork is created for each design, so every generation gives a different unicorn and palette. If you do not like the first result, generate again."
+        },
+        {
+          "q": "Can I add a photo of the birthday child?",
+          "a": "No. This maker designs illustrated invitations without photos, which keeps the text layout reliable."
+        }
+      ]
+    },
+    {
+      "value": "dinosaur",
+      "slug": "dinosaur",
+      "seo": {
+        "title": "Dinosaur Birthday Invitation Maker – Printable & Shareable",
+        "description": "Make a dinosaur adventure birthday invitation with friendly cartoon dinosaurs and a jungle backdrop. Download a 5×7 in print PDF or a phone-ready image.",
+        "h1": "Dinosaur Birthday Invitation Maker"
+      },
+      "intro": [
+        "The dinosaur adventure theme puts friendly cartoon dinosaurs in a jungle of greens and oranges, with chunky, playful lettering that looks stomped out rather than typed. The dinosaurs are cute rather than scary, so the card suits children of all temperaments.",
+        "Add the birthday child's name, the date and the venue, and the design places them on the card with the name in the largest type. Print a stack for school or send the image to the other parents."
+      ],
+      "bestFor": [
+        {
+          "title": "Dinosaur-obsessed children",
+          "description": "A child who knows every species by name will notice that the invitation matches their favorite thing, which makes the party feel personal."
+        },
+        {
+          "title": "Museum and park parties",
+          "description": "Natural history museums, nature trails and adventure courses all fit the explorer mood of the jungle backdrop."
+        },
+        {
+          "title": "Boys and girls alike",
+          "description": "The greens and oranges are not tied to any one gender, so the theme works for cousins and classmates of any mix."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Lean into the adventure",
+          "description": "Words such as \"Dino Discovery Museum\" or \"Treetop Adventure Course\" in the place field echo the jungle artwork and set the tone for the day."
+        },
+        {
+          "title": "Use the age line for a roar",
+          "description": "\"is turning 5 – roar!\" fits the playful lettering. Keep it short so the line stays in one row under the name."
+        },
+        {
+          "title": "Match the party details",
+          "description": "Green plates, leaf decorations and a dinosaur cake all pick up the card's palette, so the invitation and the party look like one plan."
+        },
+        {
+          "title": "Check small creatures at print size",
+          "description": "Dinosaurs often sit near the edges of the card. Look at a test print to make sure the artwork was not trimmed in a way you dislike."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Leo\", age: \"is turning 6!\", place: \"Dino Discovery Museum, 40 Fossil Way\"",
+        "Time: \"10:00 AM – 12:30 PM\" for a morning museum visit with cake afterwards",
+        "RSVP line: \"RSVP to Dan · 555-0187 · dino dress-up welcome\"",
+        "A twins party with the name field set to \"Ethan & Ella\""
+      ],
+      "faq": [
+        {
+          "q": "Are the dinosaurs scary?",
+          "a": "No. The theme asks for friendly cartoon dinosaurs, so they are round and smiling rather than fierce. If a version looks too intense for your guest, generate again."
+        },
+        {
+          "q": "Can I pick a specific dinosaur?",
+          "a": "The form has no field for that. The artwork shows a selection of colorful dinosaurs chosen by the design, and every generation differs."
+        },
+        {
+          "q": "Is there a matching thank-you card?",
+          "a": "Matching items use the same theme but are not identical designs. You can make another card with the same theme and your own wording elsewhere."
+        },
+        {
+          "q": "Can I send it by text message?",
+          "a": "Yes. Download the 1080×1500 px share image and attach it like any photo. See the [dinosaur and other theme options](/create/birthday-invitation-maker) on the maker page."
+        }
+      ]
+    },
+    {
+      "value": "space",
+      "slug": "space",
+      "seo": {
+        "title": "Space Birthday Invitation Maker – Printable & Shareable",
+        "description": "Make an outer space birthday invitation with rockets, planets and stars on a deep navy sky. Download a 5×7 in print PDF or a phone-ready image.",
+        "h1": "Outer Space Birthday Invitation Maker"
+      },
+      "intro": [
+        "The outer space theme sets rockets, planets and stars against a deep navy background, with bold rounded lettering that stands out against the dark sky. It has the feeling of a mission patch: adventurous, a little scientific and very easy to read.",
+        "Enter the name, date and place and PiCraft launches them into the design, with the name as the largest line. Print the card at 5×7 inches or share the phone-sized image with the other parents."
+      ],
+      "bestFor": [
+        {
+          "title": "Space and science fans",
+          "description": "Children who love rockets, planets or astronauts get an invitation that feels like the start of the party."
+        },
+        {
+          "title": "Planetarium and science center parties",
+          "description": "The theme pairs naturally with a visit to a planetarium, observatory or hands-on science museum."
+        },
+        {
+          "title": "Evening and sleepover events",
+          "description": "A night-sky card suits a party that runs after dark, such as a backyard stargazing night."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use mission language",
+          "description": "A place line such as \"Galaxy Laser Tag Arena\" or an RSVP line such as \"Mission control: Mom · 555-0142\" fits the artwork without needing extra words on the card."
+        },
+        {
+          "title": "Expect a dark card",
+          "description": "The navy background uses a lot of ink on a home printer. For a large batch, a print shop gives a deeper, more even blue than a desktop printer."
+        },
+        {
+          "title": "Keep the age line short",
+          "description": "\"is 9 years old!\" or \"turns 9\" stays on one line. Bold lettering on a navy sky reads well when there are only a few words."
+        },
+        {
+          "title": "Check legibility in dim light",
+          "description": "People often open the share image on a phone at night. Look at it with the brightness turned down to see that the date still stands out."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Zara\", age: \"is turning 9!\", place: \"Galaxy Laser Tag Arena, 3 Orbit Drive\"",
+        "Time: \"7:00 – 9:30 PM\" for an evening stargazing party",
+        "A toddler party at a café: name \"Noah\", age \"is 3!\", place \"Little Explorer Café\"",
+        "RSVP line: \"Countdown ends Friday · call 555-0129\""
+      ],
+      "faq": [
+        {
+          "q": "Will the dark background print well?",
+          "a": "It prints best at a print shop, where large solid areas look even. At home, use good card stock and print a test copy, because dark blues can show streaks on some printers."
+        },
+        {
+          "q": "Does the card include real planets?",
+          "a": "The artwork is illustrated. Planets and rockets are stylized, and each generation draws them differently."
+        },
+        {
+          "q": "Can I use it for a teenager or an adult?",
+          "a": "Yes, if they enjoy the theme. For a grown-up space or sci-fi party the bold navy and stars still work. For a more formal look, try [elegant black and gold](/create/birthday-invitation-maker/elegant)."
+        },
+        {
+          "q": "How do I add a map?",
+          "a": "The card has no map. Share a map link or parking details in the message you send with the image."
+        }
+      ]
+    },
+    {
+      "value": "elegant",
+      "slug": "elegant",
+      "seo": {
+        "title": "Elegant Black & Gold Birthday Invitation Maker – Printable",
+        "description": "Make an elegant black and gold adult birthday invitation with art deco accents. Download a 5×7 in print PDF with bleed or an image to share by message.",
+        "h1": "Elegant Black & Gold Birthday Invitation Maker"
+      },
+      "intro": [
+        "The elegant black and gold theme is made for adult birthdays. It uses a black and gold palette with art deco accents, champagne glasses and refined serif lettering, in the spirit of a cocktail party or a gala evening.",
+        "Add the guest of honor's name, a milestone such as \"Turns 40\", and the date and venue. PiCraft sets them into the card with the name in the largest type, ready to print on heavy stock or to send as an image."
+      ],
+      "bestFor": [
+        {
+          "title": "Milestone birthdays",
+          "description": "A 30th, 40th, 50th or 60th deserves a design that feels like an occasion, and the champagne motifs signal a celebration."
+        },
+        {
+          "title": "Dinners, lounges and rooftop events",
+          "description": "The glamorous look fits venues such as a hotel lounge, a restaurant private room or a rooftop terrace."
+        },
+        {
+          "title": "Surprise parties for adults",
+          "description": "A formal card keeps the surprise exciting, and the RSVP line can name the person organizing it."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Write the milestone plainly",
+          "description": "\"Turns 50\" or \"Celebrating 40 years\" suits the serif type. Avoid long lines, since gold lettering on black is most elegant with room around it."
+        },
+        {
+          "title": "Add a dress code in the RSVP line",
+          "description": "There is no separate dress code field, but a line such as \"RSVP to Anna · cocktail attire\" works within the 80 character limit."
+        },
+        {
+          "title": "Print on heavier stock",
+          "description": "Black and gold designs feel more luxurious on thick matte or satin card stock, which most print shops offer."
+        },
+        {
+          "title": "Do a test print of the dark areas",
+          "description": "Large black areas can look uneven on a home printer. A print shop is the better choice for a formal invitation."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Richard\", age: \"Turns 50\", place: \"The Rooftop at Hotel Grand, 1 Park Avenue\"",
+        "Time: \"8:00 PM until late\" for an evening celebration",
+        "RSVP line: \"RSVP to Anna · 555-0160 · cocktail attire\"",
+        "A joint celebration: name \"Grace & Tom\", age \"Turn 30\""
+      ],
+      "faq": [
+        {
+          "q": "Can I use this theme for a child's birthday?",
+          "a": "It is designed for adults. For a child, pick a playful theme such as [balloons and confetti](/create/birthday-invitation-maker/party) or [unicorn](/create/birthday-invitation-maker/unicorn)."
+        },
+        {
+          "q": "Is the gold real foil?",
+          "a": "No. The gold is part of the printed image, so it looks metallic but prints as ordinary ink. Real foil needs a special print process that a print shop can quote separately."
+        },
+        {
+          "q": "Can the card hide the person's age?",
+          "a": "Yes. The age or milestone field is optional. Leave it empty and the card shows only the name, date and place."
+        },
+        {
+          "q": "How many invitations should I send?",
+          "a": "Count the guest list and add a few spares for late additions. Digital sending by message is an easy way to reach everyone without extra printing."
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "slug": "floral",
+      "seo": {
+        "title": "Floral Birthday Invitation Maker – Soft Watercolor Flowers",
+        "description": "Make a soft floral birthday invitation with watercolor flowers in blush and sage. Download a 5×7 in print PDF or an image to share by message.",
+        "h1": "Floral Birthday Invitation Maker"
+      },
+      "intro": [
+        "The soft floral theme uses watercolor flowers in blush and sage green with graceful script lettering. The mood is calm and pretty, closer to a garden afternoon than a loud party.",
+        "Fill in the birthday person's name, the date and the venue. PiCraft places them in the card with the name as the largest text, so the invitation reads clearly even though the lettering is a flowing script."
+      ],
+      "bestFor": [
+        {
+          "title": "Garden parties and afternoon teas",
+          "description": "The gentle palette suits an outdoor lunch, a tea party or a gathering in a park pavilion."
+        },
+        {
+          "title": "Birthdays for grandmothers, mothers and friends",
+          "description": "It is a warm, traditional look for celebrations where family gathers around the table."
+        },
+        {
+          "title": "Toddler first and second birthdays",
+          "description": "A soft floral card also suits a little girl's first birthday, when the family wants something sweet rather than loud."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Script needs short names",
+          "description": "Flowing lettering is most readable with a first name or a short name pair. Very long names get cramped."
+        },
+        {
+          "title": "Pick matching flowers for the table",
+          "description": "Blush roses and sage greenery from a florist or a supermarket echo the card without extra planning."
+        },
+        {
+          "title": "Check the pale colors in print",
+          "description": "Soft pinks and greens can print lighter than they look on screen. Print one test copy, and use matte or uncoated card stock to keep the watercolor feel."
+        },
+        {
+          "title": "Use the time field for the tea",
+          "description": "\"3:00 – 5:00 PM\" in the time field gives guests the hours at a glance and keeps the date line uncluttered."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Charlotte\", age: \"Turns 60\", place: \"Lavender Hill Estate, 5 Orchard Lane\"",
+        "Name: \"Lily\", age: \"is turning 2!\", place: \"Rose Garden Park\" for a toddler's garden party",
+        "A mother-daughter brunch: place \"The Greenhouse Café\", time \"11:00 AM – 1:00 PM\"",
+        "RSVP line: \"Reply to Jane · 555-0142 · garden attire welcome\""
+      ],
+      "faq": [
+        {
+          "q": "Is the floral theme only for women?",
+          "a": "The look is soft and floral, so it is most often chosen for women's birthdays and girls' parties, but anyone who likes it can use it."
+        },
+        {
+          "q": "Are the flowers the same each time?",
+          "a": "No. The design paints a different arrangement for each generation in blush and sage tones. Generate again for another bouquet."
+        },
+        {
+          "q": "Will the script be readable?",
+          "a": "The name is set as the largest text, and the other lines use clear lettering. Check the result at small size on your phone before you send it."
+        },
+        {
+          "q": "Which paper works best?",
+          "a": "Matte, slightly textured card stock keeps the watercolor look. See the [birthday invitation size guide](/sizes/birthday-invitation-size) for sizes and envelopes."
+        }
+      ]
+    },
+    {
+      "value": "safari",
+      "slug": "safari",
+      "seo": {
+        "title": "Safari Birthday Invitation Maker – Jungle Animals, Printable",
+        "description": "Make a jungle safari birthday invitation with lions, giraffes and tropical leaves. Download a 5×7 in print PDF or an image to send by text message.",
+        "h1": "Jungle Safari Birthday Invitation Maker"
+      },
+      "intro": [
+        "The safari jungle theme brings lions, giraffes and tropical leaves in warm earth tones, with bold rounded lettering that looks at home on a wildlife poster. It is cheerful and outdoorsy without being busy.",
+        "Type in the name, date and place, and the design fits them around the animals with the name as the largest line. Print the card for the classroom or send the image to a group chat."
+      ],
+      "bestFor": [
+        {
+          "title": "First birthdays",
+          "description": "Gentle animals and earthy colors are a popular choice for a one-year-old's party, with a \"wild one\" feel."
+        },
+        {
+          "title": "Zoo and wildlife park trips",
+          "description": "If the party is at a zoo, a petting farm or a safari park, the card sets up the day before anyone arrives."
+        },
+        {
+          "title": "Animal-loving children",
+          "description": "A child who loves lions and giraffes will spot their favorites right away."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Echo the animals in the venue name",
+          "description": "\"Wild Safari Park\" or \"Jungle Jim's Play Centre\" in the place field ties the words to the artwork."
+        },
+        {
+          "title": "Use the warm palette for decor",
+          "description": "Tan, green and orange balloons, paper plates and a leaf garland make the party look like the invitation."
+        },
+        {
+          "title": "Keep the age short for a first birthday",
+          "description": "\"is turning ONE!\" fits on a single line under the name. Spelling out the number often looks friendlier than a digit."
+        },
+        {
+          "title": "Check the animals at print size",
+          "description": "Animals usually frame the text. A small test print shows whether faces and text sit well together."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Max\", age: \"is turning 5!\", place: \"Wild Safari Park, 14 Savanna Road\"",
+        "A first birthday: name \"Ava\", age \"is turning ONE!\", place \"Grandma's backyard\"",
+        "Time: \"11:00 AM – 2:00 PM\" with the RSVP line \"RSVP to Priya · 555-0171\"",
+        "A school class party at a zoo with the place set to \"Riverside Zoo, main gate\""
+      ],
+      "faq": [
+        {
+          "q": "Which animals appear on the card?",
+          "a": "The theme typically includes lions, giraffes and jungle leaves. The exact animals and arrangement change with each generation."
+        },
+        {
+          "q": "Is the safari theme good for a baby party?",
+          "a": "It works well for a first birthday. For a baby shower you would need different wording than \"You're invited!\" plus the name, which this maker does not offer."
+        },
+        {
+          "q": "Can I choose a different jungle animal?",
+          "a": "There is no animal selector. If you want a different mix, generate again, or try the [dinosaur theme](/create/birthday-invitation-maker/dinosaur) for something with a similar adventure feel."
+        },
+        {
+          "q": "What files do I get?",
+          "a": "A 5×7 inch print PDF with bleed, a print JPG for home printing and a 1080×1500 px share image for phones."
+        }
+      ]
+    },
+    {
+      "value": "mermaid",
+      "slug": "mermaid",
+      "seo": {
+        "title": "Mermaid Birthday Invitation Maker – Under the Sea Theme",
+        "description": "Make an under-the-sea mermaid birthday invitation with shells, starfish and coral in aqua and lavender. Download a 5×7 in print PDF or a share image.",
+        "h1": "Mermaid Birthday Invitation Maker"
+      },
+      "intro": [
+        "The under-the-sea theme fills the card with shells, starfish and coral in aqua and lavender, often with a mermaid, and uses whimsical script lettering that curls like a wave. The palette is cool and shimmery, unlike the warm colors of most party cards.",
+        "Add the birthday person's name, the date and the venue, and PiCraft places them on the card with the name in the largest type. It is ready for a pool party invitation or a message to the group chat."
+      ],
+      "bestFor": [
+        {
+          "title": "Pool and beach parties",
+          "description": "A swim party at a community pool, a beach club or a splash pad matches the ocean artwork."
+        },
+        {
+          "title": "Mermaid-loving children",
+          "description": "Children who dress as mermaids, or love marine animals, get an invitation that sets the mood for the day."
+        },
+        {
+          "title": "Seaside family gatherings",
+          "description": "The cool palette also suits a birthday near the coast, such as a picnic on the sand."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Mention swimwear in the RSVP line",
+          "description": "\"RSVP to Marta · 555-0143 · bring a swimsuit\" tells guests what to pack without adding more text to the card."
+        },
+        {
+          "title": "Keep the name short for the script",
+          "description": "Whimsical script is lovely but harder to read at length, so a first name is a safer choice than a full name."
+        },
+        {
+          "title": "Echo the colors in the cake",
+          "description": "Aqua frosting, lavender sprinkles and edible pearls bring the shell and coral palette to the table."
+        },
+        {
+          "title": "Test the pale blues on paper",
+          "description": "Aqua and lavender can shift when printed at home. A matte stock and one test copy help you catch any color surprises."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Luna\", age: \"is turning 7!\", place: \"Coral Beach Club, 9 Seaview Drive\"",
+        "Time: \"1:00 – 4:00 PM\" with the RSVP line \"Bring a swimsuit and towel\"",
+        "A toddler splash party: name \"Isla\", age \"is 3!\", place \"Seashell Splash Pool\"",
+        "A joint party for cousins: name field \"Emma & Zoe\""
+      ],
+      "faq": [
+        {
+          "q": "Does the card always show a mermaid?",
+          "a": "The theme includes shells, starfish and coral and often a mermaid, but each generation is different. Generate again if you want to see another arrangement."
+        },
+        {
+          "q": "Can I use it for a pool party?",
+          "a": "Yes. Put the pool name in the place field and add what to bring in the RSVP line."
+        },
+        {
+          "q": "Can I make matching decorations?",
+          "a": "You can make other cards with the same theme in the same maker, but they will not be identical designs. For decorations, use the colors as inspiration."
+        },
+        {
+          "q": "Can the invitation be sent by WhatsApp?",
+          "a": "Yes. Download the 1080×1500 px share image and send it like a photo. For printing details, see the [birthday invitation size guide](/sizes/birthday-invitation-size)."
+        }
+      ]
+    },
+    {
+      "value": "retro",
+      "slug": "retro",
+      "seo": {
+        "title": "Retro Arcade Birthday Invitation Maker – Printable & Shareable",
+        "description": "Make a retro arcade birthday invitation with pixel hearts, joysticks and neon colors on a dark background. Download a 5×7 in print PDF or share image.",
+        "h1": "Retro Arcade Birthday Invitation Maker"
+      },
+      "intro": [
+        "The retro arcade theme borrows from classic video games: pixel hearts, joystick icons and neon colors on a dark background, with chunky 8-bit lettering. It is loud and nostalgic in a way that appeals to teens and adults who grew up with arcades as much as to kids.",
+        "Enter the name, date and venue, and PiCraft sets them in the pixel-style layout with the name largest. Print it for a party at the arcade or send the share image straight to the group chat."
+      ],
+      "bestFor": [
+        {
+          "title": "Gaming and arcade parties",
+          "description": "Arcades, bowling alleys with game rooms and laser tag centers all fit the neon game-screen look."
+        },
+        {
+          "title": "Tweens and teens",
+          "description": "Older children often prefer a design that looks like a game start screen over a cartoon theme."
+        },
+        {
+          "title": "Nostalgic adult celebrations",
+          "description": "For an adult who loves the 1980s or 1990s arcades, the pixel look makes a fun milestone card."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Write like a game screen",
+          "description": "Phrases such as \"Player 1 is turning 12\" in the age field, or \"Insert coin: RSVP to Dad\" in the RSVP line, suit the pixel lettering."
+        },
+        {
+          "title": "Keep text short on the dark ground",
+          "description": "Neon colors on black are bright but easy to over-read. A short venue name and a one-line time keep every line readable."
+        },
+        {
+          "title": "Expect a lot of dark ink",
+          "description": "The dark background is ink-heavy on a home printer. For anything beyond a few copies, use a print shop."
+        },
+        {
+          "title": "Check the colors on screen and in print",
+          "description": "Neon colors look brightest on a phone screen and duller on paper. Share the image digitally if the glow is the whole point."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Jake\", age: \"Player 1 is turning 10\", place: \"Pixel Palace Arcade, 77 Joystick Lane\"",
+        "A tween party: name \"Ryan\", age \"is 12!\", time \"4:00 – 7:00 PM\"",
+        "RSVP line: \"Insert coin: RSVP to Dad · 555-0116\"",
+        "An adult 40th: name \"Dave\", age \"Level 40 unlocked\", place \"The Game Room\""
+      ],
+      "faq": [
+        {
+          "q": "Is the lettering really pixel-style?",
+          "a": "The theme asks for chunky 8-bit lettering, so the text typically looks like an old game. The exact font and the pixel icons change with each generation."
+        },
+        {
+          "q": "Will the neon colors print as bright as on screen?",
+          "a": "Usually not. Paper cannot glow like a screen, so printed neon looks duller. If the invitation goes out by message, the screen version stays brightest."
+        },
+        {
+          "q": "Is it good for a younger child's party?",
+          "a": "It suits school-age children and older. For little ones, a theme like [balloons and confetti](/create/birthday-invitation-maker/party) is more age-appropriate."
+        },
+        {
+          "q": "Can I add a game name or logo?",
+          "a": "No. The maker does not add logos or brand names, and you should avoid trademarked game characters. You can mention a venue name in the place field."
+        }
+      ]
+    },
+    {
+      "value": "watercolor",
+      "slug": "watercolor",
+      "seo": {
+        "title": "Watercolor Birthday Invitation Maker – Colorful Splash Design",
+        "description": "Make a watercolor splash birthday invitation with vibrant color washes and brush-script lettering. Download a 5×7 in print PDF or a share image.",
+        "h1": "Watercolor Splash Birthday Invitation Maker"
+      },
+      "intro": [
+        "The watercolor splash theme is abstract: vibrant washes of color flowing across the card, with modern brush-script lettering over the top. There are no characters or animals, so the look is open to any age and any taste.",
+        "Fill in the birthday person's name, the date and the venue. PiCraft places them on the card with the name as the largest text. The result suits a print or a message in equal measure."
+      ],
+      "bestFor": [
+        {
+          "title": "Creative and art parties",
+          "description": "A painting class, a studio or a pottery workshop party fits an invitation that looks like it was painted."
+        },
+        {
+          "title": "Teens and young adults",
+          "description": "Twenty-first and other milestone birthdays often call for something colorful but not childish."
+        },
+        {
+          "title": "Any age when you want no theme",
+          "description": "With no characters on the card, it avoids dating the invitation to a child's current favorite show."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Let the color do the work",
+          "description": "The washes bring the energy, so keep the wording simple: name, date, place. Extra lines compete with the artwork."
+        },
+        {
+          "title": "Use the age field for a milestone",
+          "description": "\"Turns 21\" or \"is 16!\" sits neatly under the name and fits the modern brush lettering."
+        },
+        {
+          "title": "Match the party palette",
+          "description": "Choose balloons or flowers in one or two colors from the wash and the whole party feels coordinated."
+        },
+        {
+          "title": "Generate a few versions",
+          "description": "Abstract art varies the most from run to run. Make two or three and choose the palette that suits the guest of honor."
+        }
+      ],
+      "tryThese": [
+        "Name: \"Isabella\", age: \"Turns 21\", place: \"Velvet Lounge, 18 Madison Street\"",
+        "An art party: name \"Chloe\", age \"is 8!\", place \"Art Loft Studio\", time \"2:00 – 4:30 PM\"",
+        "A teen party at home: place \"The Parkers' house, 30 Birch Court\" with RSVP \"Text Mia · 555-0188\"",
+        "Name: \"Sam\", age \"is 16!\", place \"Riverside Bowl\""
+      ],
+      "faq": [
+        {
+          "q": "Is watercolor good for boys and girls?",
+          "a": "Yes. The theme has no characters, and the colors change with each generation, so it can look bold or soft depending on the result."
+        },
+        {
+          "q": "Can I choose the colors?",
+          "a": "There is no color picker. Each generation picks a palette, so generate again until you find one you like."
+        },
+        {
+          "q": "How does it compare with the floral theme?",
+          "a": "Watercolor splash is abstract and vivid, while [soft floral](/create/birthday-invitation-maker/floral) is gentle with blush and sage flowers. Pick floral for a quiet, traditional feel."
+        },
+        {
+          "q": "What size is the print file?",
+          "a": "A 5×7 inch card with a 0.125 inch bleed at 300 DPI, plus a 1080×1500 px image for sharing."
+        }
+      ]
+    }
+  ]
+}

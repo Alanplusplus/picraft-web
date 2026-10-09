@@ -1,0 +1,117 @@
+{
+  "title": "YouTube Thumbnail Size: 1280×720 px, 16:9 & File Limits",
+  "h1": "YouTube Thumbnail Size and Requirements",
+  "description": "The right YouTube thumbnail size: 1280×720 px works for most uploads, 3840×2160 px is the maximum recommended. Aspect ratio, file limits, Shorts and safe area.",
+  "summary": "Make a 16:9 image, 1280×720 px or larger, as a JPG or PNG. YouTube recommends up to 3840×2160 px, requires a width of at least 640 px for videos, and limits file size to 2 MB when you upload from a phone and 50 MB from a computer.",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "youtube-thumbnail-maker",
+  "relatedScenes": ["linkedin-banner-maker", "book-cover-maker"],
+  "relatedGuides": ["linkedin-banner-size", "blog:youtube-thumbnail-best-practices"],
+  "sections": [
+    {
+      "heading": "YouTube thumbnail specs at a glance",
+      "paragraphs": [
+        "These are the values YouTube lists on its help page for custom thumbnails. They apply to standard, horizontal videos."
+      ],
+      "table": {
+        "columns": ["Setting", "Requirement"],
+        "rows": [
+          ["Recommended resolution", "3840×2160 px (the larger the better)"],
+          ["Common working size", "1280×720 px"],
+          ["Minimum width", "640 px"],
+          ["Aspect ratio", "16:9"],
+          ["File types", "JPG or PNG"],
+          ["Maximum file size", "2 MB from the YouTube mobile app, 50 MB from a computer"]
+        ]
+      },
+      "after": [
+        "The thumbnail also serves as the preview image in the embedded player, which is why YouTube asks for an image that is as large as possible."
+      ]
+    },
+    {
+      "heading": "Which size should you export?",
+      "paragraphs": [
+        "For most channels, 1280×720 px is the sensible choice. It has the 16:9 shape YouTube wants, it is sharp on phones and laptops, and a JPG at that size stays far below the 2 MB limit, so you can upload it from any device.",
+        "Choose a larger file when your audience watches on big screens or you want the embedded player preview to stay crisp. A 1920×1080 px or 3840×2160 px file is fine, but check the file weight. Detailed images can pass 2 MB quickly, and then you can only upload them from a computer.",
+        "Never export below 1280×720 px just to save space. A small image is stretched on large screens and looks soft, and text is the first thing to suffer."
+      ]
+    },
+    {
+      "heading": "Thumbnail sizes for Shorts and podcasts",
+      "paragraphs": ["Other formats have their own shape. Use the one that matches where the content appears."],
+      "table": {
+        "columns": ["Type", "Resolution", "Aspect ratio", "Notes"],
+        "rows": [
+          ["Standard video", "3840×2160 px recommended, 640 px minimum width", "16:9", "Upload as JPG or PNG"],
+          ["Shorts", "2160×3840 px recommended, 640 px minimum height", "9:16", "Custom Shorts thumbnails are added in YouTube Studio on a computer"],
+          ["Podcast playlist", "Square image", "1:1", "Use 1:1 instead of 16:9"]
+        ]
+      },
+      "after": [
+        "YouTube notes that a vertical video with a 16:9 custom thumbnail gets an auto-generated 4:5 thumbnail on the home, explore and subscription pages. If most of your viewers watch on a phone, plan for that crop."
+      ]
+    },
+    {
+      "heading": "Where YouTube covers your thumbnail",
+      "paragraphs": [
+        "YouTube places the video length in the bottom-right corner of the thumbnail in most views. Keep text and faces out of that corner or the badge will cover them. The same corner is a good place for nothing important at all.",
+        "Thumbnails also appear very small in suggested videos and on phones. Look at your design at a fraction of its size before you upload. If the headline cannot be read at that size, shorten it or make it larger."
+      ],
+      "items": [
+        "Keep the headline to a few words and place it away from the bottom-right corner.",
+        "Use strong contrast between the text and the background.",
+        "Leave a margin around the edges so nothing is trimmed on small screens."
+      ]
+    },
+    {
+      "heading": "Common upload problems",
+      "items": [
+        "The file is rejected on mobile: the image is over 2 MB. Export a smaller JPG or upload from a computer, where the limit is 50 MB.",
+        "The upload option is missing: custom thumbnails need a verified YouTube account.",
+        "Black bars appear: the image is not 16:9. Crop or recreate it at 1280×720 px.",
+        "The image looks blurry: it was smaller than 1280×720 px or was saved with heavy compression.",
+        "The thumbnail is removed or rejected: it breaks the Community Guidelines, for example by showing nudity, violence or hate speech."
+      ],
+      "after": [
+        "There is also a daily limit on custom thumbnails per channel. If you see a \"Daily custom thumbnail limit reached\" error, try again after 24 hours."
+      ]
+    },
+    {
+      "heading": "Make a thumbnail at the right size",
+      "paragraphs": [
+        "The [YouTube Thumbnail Maker](/create/youtube-thumbnail-maker) exports a 1280×720 px JPG that stays under 2 MB, so it uploads from a phone or a computer, plus a 1920×1080 px version for large screens. It keeps text and faces out of the bottom-right corner where YouTube shows the video length.",
+        "For tips on text, contrast and composition, read the guide to [YouTube thumbnail best practices](/blog/youtube-thumbnail-best-practices)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best size for a YouTube thumbnail?",
+      "a": "1280×720 px at a 16:9 aspect ratio is the safest everyday choice. YouTube recommends up to 3840×2160 px for the sharpest result, with a minimum width of 640 px."
+    },
+    {
+      "q": "Can I upload a thumbnail that is larger than 2 MB?",
+      "a": "Yes, from a computer. The limit is 50 MB for uploads from a computer and 2 MB for uploads from the YouTube mobile app."
+    },
+    {
+      "q": "Should a thumbnail be JPG or PNG?",
+      "a": "Either works. JPG gives smaller files for photos, while PNG keeps flat colors and text edges slightly cleaner but can be heavier. If the file is over 2 MB, switch to JPG."
+    },
+    {
+      "q": "Do I need a verified account to use custom thumbnails?",
+      "a": "Yes. YouTube only lets verified accounts upload custom thumbnails. Without one you can choose from the suggested frames."
+    },
+    {
+      "q": "What aspect ratio should a Shorts thumbnail have?",
+      "a": "9:16, ideally 2160×3840 px with a minimum height of 640 px. Custom Shorts thumbnails can currently be added in YouTube Studio on a computer."
+    },
+    {
+      "q": "Why does my thumbnail look different on my phone?",
+      "a": "Phones show thumbnails much smaller, the video length badge covers the bottom-right corner, and some views crop the image. Check the design at a small size and keep key elements away from the edges."
+    }
+  ],
+  "sources": [
+    { "label": "YouTube Help: Add custom thumbnails on YouTube", "url": "https://support.google.com/youtube/answer/72431" }
+  ]
+}

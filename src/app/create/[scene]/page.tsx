@@ -3,24 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
 import { SceneCard } from "@/components/scene-card";
 import { SceneGenerator } from "@/components/scene-generator";
 import { SceneGuide, SceneOverview } from "@/components/scene-sections";
+import { getGuidesForScene } from "@/lib/guides";
 import { getContent, getExamples, getScene, getScenes, isIndexable, logIndexability, toClientScene } from "@/lib/scenes";
 import { pageMetadata } from "@/lib/seo";
-import { absoluteUrl, SITE_NAME } from "@/lib/site";
+import { absoluteUrl, formatDate, SITE_NAME } from "@/lib/site";
+import { getStyleFile, isStyleIndexable, styleExamples, styleLabel, stylePath } from "@/lib/styles";
 
 export const dynamicParams = false;
-
-function formatDate(iso: string): string {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    timeZone: "UTC",
-  });
-}
 
 export function generateStaticParams() {
   logIndexability();
@@ -35,6 +29,7 @@ export async function generateMetadata({ params }: PageProps<"/create/[scene]">)
     description: scene.seo.description,
     path: `/create/${scene.slug}`,
     noindex: !isIndexable(scene),
+    ownShareImage: true,
   });
 }
 
@@ -48,6 +43,9 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
   const content = getContent(scene.slug);
   const related = scene.related.map((slug) => getScene(slug)).filter((s) => s !== undefined);
   const url = absoluteUrl(`/create/${scene.slug}`);
+  const styleFile = getStyleFile(scene.slug);
+  const styleEntries = styleFile?.styles.filter((entry) => isStyleIndexable(styleFile, entry)) ?? [];
+  const guides = getGuidesForScene(scene.slug);
 
   const jsonLd = [
     {
@@ -217,6 +215,51 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
             ))}
           </div>
         </section>
+
+        {styleFile && styleEntries.length > 0 && (
+          <section className="mt-16">
+            <h2 className="text-2xl font-bold tracking-tight text-ink-950">{styleFile.collection}</h2>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
+              Each {styleFile.noun} has its own page with examples, ideas for what to write and answers to common
+              questions. Open one to start with that {styleFile.noun} already selected.
+            </p>
+            <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+              {styleEntries.map((entry) => {
+                const cover = styleExamples(scene.slug, entry)[0];
+                return (
+                  <li key={entry.slug}>
+                    <Link href={stylePath(scene.slug, entry)} className="group block">
+                      {cover && (
+                        <Image
+                          src={cover.url}
+                          alt={cover.alt}
+                          width={cover.width}
+                          height={cover.height}
+                          sizes="(min-width: 1024px) 20vw, 50vw"
+                          className="w-full rounded-xl border border-ink-200 transition group-hover:border-ink-400"
+                        />
+                      )}
+                      <p className="mt-2 text-sm font-medium text-ink-900 group-hover:text-brand-700">
+                        {styleLabel(scene, styleFile, entry)}
+                      </p>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        )}
+
+        {guides.length > 0 && (
+          <section className="mt-16">
+            <h2 className="text-2xl font-bold tracking-tight text-ink-950">Guides for the {scene.name}</h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              {guides.slice(0, 3).map((guide) => (
+                <GuideCard key={`${guide.kind}-${guide.slug}`} guide={guide} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {content && (
           <p className="mt-10 text-sm text-ink-500">

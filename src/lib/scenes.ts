@@ -49,6 +49,8 @@ export interface Example {
   width: number;
   height: number;
   approved: boolean;
+  /** Value of the style / theme option the example was made with, for makers that have style pages. */
+  style?: string;
   /** Original / "before" image for photo-editing scenes (product, real-estate). */
   before?: string;
   /** Alt text for the "before" image; falls back to a generic description. */
@@ -108,6 +110,10 @@ export function getExamples(slug: string): Example[] {
   if (!fs.existsSync(file)) return [];
   const data = JSON.parse(fs.readFileSync(file, "utf8")) as { items?: Example[] };
   return (data.items ?? []).filter((item) => item.approved);
+}
+
+export function getExamplesForStyle(slug: string, style: string): Example[] {
+  return getExamples(slug).filter((example) => example.style === style);
 }
 
 export function getContent(slug: string): SceneContent | undefined {

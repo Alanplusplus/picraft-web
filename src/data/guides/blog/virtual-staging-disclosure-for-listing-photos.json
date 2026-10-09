@@ -1,0 +1,121 @@
+{
+  "title": "Virtual staging disclosure for real estate listing photos",
+  "h1": "Virtual staging and disclosure for listing photos",
+  "description": "Learn what virtual staging and common photo edits are, why MLS disclosure matters, and how to label altered listing photos without misrepresenting the property.",
+  "summary": "Virtual staging adds furniture or décor to a photo; it is not a remodel. Label altered images the way your MLS requires, keep originals, and never hide defects or change permanent features. PiCraft’s [real estate listing photo](/create/real-estate-listing-photo) edits follow the same honesty limits—this is general information, not legal advice.",
+  "topic": "Real estate",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "scene": "real-estate-listing-photo",
+  "relatedScenes": ["amazon-product-photo"],
+  "relatedGuides": ["size:real-estate-photo-size"],
+  "sections": [
+    {
+      "heading": "What counts as virtual staging and related edits",
+      "paragraphs": [
+        "Virtual staging digitally furnishes an empty or sparse room so buyers can imagine scale and use. It is still a photograph of the real walls, windows, and floors; the furniture is not on site.",
+        "Related edits sit on a spectrum. Enhancement brightens exposure, straightens lines, and balances color—similar to standard camera processing. Decluttering removes loose personal items from surfaces. Virtual twilight shifts a daytime exterior toward a dusk look with warmer sky and window glow.",
+        "Each type can help marketing when the result still shows the property truthfully. Problems start when an edit suggests finishes, views, or conditions that do not exist."
+      ]
+    },
+    {
+      "heading": "Why disclosure matters to buyers and brokers",
+      "paragraphs": [
+        "Listing photos are advertising. Buyers and tenant applicants use them to decide whether to visit, inspect, and offer. When a photo shows furniture, skies, or cleanliness that is not present at showing, the gap erodes trust and can raise fair-housing and misrepresentation concerns.",
+        "For REALTORS® subject to the National Association of REALTORS® Code of Ethics, Article 12 calls for a true picture in advertising. Standard of Practice 12-10 prohibits manipulating listing content in a way that produces a deceptive or misleading result, including misleading images.",
+        "Many MLS organizations publish their own photo rules: where to place the words \"virtually staged,\" whether to watermark, and whether an unaltered \"before\" photo must appear next to the edited one. Those rules vary; your MLS handbook is the source that governs your listing."
+      ]
+    },
+    {
+      "heading": "Generally acceptable vs misleading edits",
+      "paragraphs": [
+        "Edits that clarify what is already there—turning on lights in-camera, correcting tilt, removing a pile of mail from a counter—are widely used when they do not hide material facts.",
+        "Virtual staging is usually acceptable when it adds removable décor to an empty room, the listing says so clearly, and the unstaged condition is available to viewers who want it.",
+        "Cross the line when you remove damage, stains, or cracks; swap flooring, countertops, or built-ins; change window views; or extend the lawn or sky in a way that alters the site. PiCraft’s real estate editor is built with the same boundary: it must not misrepresent the property or change permanent features such as flooring, walls, windows, or views, and it must not hide defects.",
+        "Decluttering is for loose items, not for erasing problems a buyer would notice in person."
+      ],
+      "items": [
+        "OK: furnish an empty bedroom and label the photo virtually staged.",
+        "OK: brighten a dark but accurate room photo.",
+        "Not OK: remove water staining from a ceiling.",
+        "Not OK: replace dated cabinets in the image when they are still in the home.",
+        "Not OK: show a ocean view that the window does not have."
+      ]
+    },
+    {
+      "heading": "MLS and state rules differ—verify yours",
+      "paragraphs": [
+        "There is no single federal caption that satisfies every market. Some MLS boards require text in the public remarks, a checkbox in the listing system, a photo caption, or an on-image watermark applied through the MLS tool. Others require the original photo uploaded beside the altered one.",
+        "NorthstarMLS, for example, publishes guidelines asking that virtually staged or AI-enhanced photos be identified in the caption, on the image, or in remarks, and paired with an unaltered before image for the same room.",
+        "State laws and regulations on digital alterations evolve separately from MLS rules. Read your MLS photo policy, brokerage policy, and any state guidance that applies to your license. PiCraft cannot tell you which rule set governs a given listing.",
+        "This article is general information, not legal advice. When in doubt, ask your broker or compliance contact before publishing."
+      ]
+    },
+    {
+      "heading": "A practical disclosure workflow",
+      "paragraphs": [
+        "Treat originals as part of the listing record, not as throwaway files."
+      ],
+      "ordered": true,
+      "items": [
+        "Photograph the room with lights on, camera level, and as much space in frame as you can.",
+        "Save the untouched file with a clear name (address, room, date, original).",
+        "Apply one edit goal per pass—declutter before staging if both are needed—and save the edited file separately.",
+        "Compare before and after side by side. Confirm doors, windows, flooring, fixtures, and exterior lines match.",
+        "Add disclosure in every place your MLS requires: photo caption, remarks, checkbox, or watermark per local rules.",
+        "Upload the before image when your MLS requires pairing, and keep both files where your brokerage can retrieve them if a buyer asks.",
+        "Use the lighter web JPG for email and social only after the MLS master set is labeled correctly; do not publish an unstaged-looking edit on one channel and a staged photo elsewhere without matching disclosures."
+      ],
+      "after": [
+        "Export sizes for MLS and web are listed in the [real estate photo size guide](/sizes/real-estate-photo-size). PiCraft delivers a 2048×1536 px 4:3 JPG for MLS and a 1600×1200 px web JPG under 1 MB."
+      ]
+    },
+    {
+      "heading": "Working with PiCraft edits responsibly",
+      "paragraphs": [
+        "The [Real Estate Listing Photo Editor](/create/real-estate-listing-photo) offers enhance, declutter, virtual staging, and virtual twilight on photos you upload. Optional style notes steer furniture mood but do not replace disclosure.",
+        "Virtual staging layouts are approximate; they are not floor plans. Sizes and furniture placement are illustrative.",
+        "Results depend on the source photo. Dark, blurry, or heavily tilted inputs produce weaker edits—fix capture when you can instead of relying on heavy manipulation.",
+        "Each photo is one generation. Plan time to process key rooms individually and label each output.",
+        "Product listing photography for e-commerce follows different honesty rules; see [product and listing photos](/categories/product-and-listing-photos) for non-MLS use cases such as [Amazon product photos](/create/amazon-product-photo), which must show the actual item for sale."
+      ]
+    },
+    {
+      "heading": "Questions buyers may ask—and how to respond",
+      "paragraphs": [
+        "Some shoppers will request unstaged photos or a video walk-through. Keeping originals makes that request straightforward.",
+        "If your MLS allows remarks, a single clear sentence at the top—such as noting that some photos are virtually staged—sets expectations before the first showing.",
+        "When twilight exteriors are used, say so if your board treats sky replacement as an alteration. A dusk marketing look should not imply the only showing time is evening light unless that is true.",
+        "Document what you did in the transaction file: date, tool or vendor, and which images were altered. Good records support brokerage compliance even when no buyer complains."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I always need to disclose enhanced or decluttered photos?",
+      "a": "Requirements depend on your MLS and brokerage. Many boards focus disclosure on virtual staging and material alterations; some expect labels for any digital change. Read your local photo rules."
+    },
+    {
+      "q": "Can virtual staging show a renovation that is not built?",
+      "a": "No. Staging should add removable furniture and décor, not new walls, finishes, or views. PiCraft is instructed not to change permanent features."
+    },
+    {
+      "q": "Should I delete the original after upload?",
+      "a": "Keep it. Many MLS policies ask for an unaltered before image or the ability to provide one on request."
+    },
+    {
+      "q": "Does PiCraft add disclosure text to the JPG?",
+      "a": "No. You add labels, captions, watermarks, or remarks in your MLS or marketing workflow according to local rules."
+    }
+  ],
+  "sources": [
+    {
+      "label": "NAR: 2026 Code of Ethics and Standards of Practice (Article 12)",
+      "url": "https://www.nar.realtor/about-nar/governing-documents/code-of-ethics/2026-code-of-ethics-standards-of-practice"
+    },
+    {
+      "label": "NorthstarMLS: Guidelines for virtual staging and AI-enhanced listing photos",
+      "url": "https://northstarmls.com/insights/guidelines-for-virtual-staging-and-ai-enhanced-listing-photos/"
+    }
+  ]
+}
