@@ -112,7 +112,7 @@
   },
   "limits": [
     "The maker produces a front cover only. It does not create the spine, back cover or barcode.",
-    "A printed paperback needs a full wrap sized to your page count and paper. Use the printer's template for that.",
+    "A printed paperback needs a full wrap sized to your page count and paper. Use the printer's template for that, and see the [book cover size guide](/sizes/book-cover-size) for the KDP specs.",
     "KDP requires paperback covers as a single PDF with back, spine and front, so the front file needs to be placed in a template.",
     "The text is part of the image. To change a word, generate again.",
     "AI-generated images may not qualify for copyright protection in some countries."

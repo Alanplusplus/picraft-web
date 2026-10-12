@@ -3,13 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { FaqList } from "@/components/faq-list";
 import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
+import { RichText } from "@/components/rich-text";
 import { SceneCard } from "@/components/scene-card";
 import { SceneGenerator } from "@/components/scene-generator";
 import { SceneGuide, SceneOverview } from "@/components/scene-sections";
 import { getGuidesForScene } from "@/lib/guides";
 import { getContent, getExamples, getScene, getScenes, isIndexable, logIndexability, toClientScene } from "@/lib/scenes";
+import { faqLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 import { absoluteUrl, formatDate, SITE_NAME } from "@/lib/site";
 import { getStyleFile, isStyleIndexable, styleExamples, styleLabel, stylePath } from "@/lib/styles";
@@ -66,15 +69,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
       applicationCategory: "DesignApplication",
       operatingSystem: "Web",
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: scene.faq.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
-      })),
-    },
+    faqLd(scene.faq),
   ];
 
   return (
@@ -99,7 +94,9 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
             <h1 className="mt-3 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">{scene.seo.h1}</h1>
             <div className="mt-4 space-y-3 text-base leading-relaxed text-ink-700">
               {scene.seo.intro.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+                <p key={paragraph}>
+                  <RichText text={paragraph} />
+                </p>
               ))}
             </div>
 
@@ -108,7 +105,9 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
                 <li key={step.title} className="rounded-xl bg-ink-50 p-4">
                   <span className="text-sm font-semibold text-brand-700">Step {index + 1}</span>
                   <p className="mt-1 font-semibold text-ink-900">{step.title}</p>
-                  <p className="mt-1 text-sm text-ink-500">{step.description}</p>
+                  <p className="mt-1 text-sm text-ink-500">
+                    <RichText text={step.description} />
+                  </p>
                 </li>
               ))}
             </ol>
@@ -193,7 +192,9 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
           {scene.specs.notes && (
             <ul className="mt-4 space-y-2 text-sm text-ink-500">
               {scene.specs.notes.map((note) => (
-                <li key={note}>{note}</li>
+                <li key={note}>
+                  <RichText text={note} />
+                </li>
               ))}
             </ul>
           )}
@@ -203,17 +204,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
 
         <section className="mt-16 max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-ink-950">Frequently asked questions</h2>
-          <div className="mt-6 divide-y divide-ink-200 border-y border-ink-200">
-            {scene.faq.map((item) => (
-              <details key={item.q} className="group py-4">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-ink-900">
-                  {item.q}
-                  <span className="text-ink-500 transition group-open:rotate-45">+</span>
-                </summary>
-                <p className="mt-3 text-sm leading-relaxed text-ink-700">{item.a}</p>
-              </details>
-            ))}
-          </div>
+          <FaqList items={scene.faq} />
         </section>
 
         {styleFile && styleEntries.length > 0 && (

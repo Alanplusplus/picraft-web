@@ -1,7 +1,7 @@
 {
   "title": "MLS Listing Photo Size: 2048×1536, 4:3 & File Limit Guide",
   "h1": "Real Estate Listing Photo Size and MLS Requirements",
-  "description": "MLS listing photo dimensions: 2048×1536 px landscape JPG, 1024×768 minimums, file size limits, web sizes, virtual staging labels, and keeping unedited originals.",
+  "description": "MLS listing photo dimensions: 2048×1536 px landscape JPG, 1024×768 minimums, file size limits, web sizes, virtual staging labels, keeping unedited originals.",
   "summary": "Most MLS feeds expect landscape JPGs around 4:3. PiCraft exports a 2048×1536 px MLS file and a 1600×1200 px web JPG under 1 MB. Many boards accept 1024×768 px as a minimum, but maximum file weight often falls between 5 MB and 10 MB—check your MLS. Label virtually staged photos and keep unedited originals.",
   "published": "2026-10-09",
   "updated": "2026-10-09",

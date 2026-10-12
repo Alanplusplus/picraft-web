@@ -1,5 +1,7 @@
 import type { ContentItem, SceneContent } from "@/lib/scenes";
 
+import { RichText } from "./rich-text";
+
 const H2 = "text-2xl font-bold tracking-tight text-ink-950";
 
 function Cards({ items }: { items: ContentItem[] }) {
@@ -8,7 +10,9 @@ function Cards({ items }: { items: ContentItem[] }) {
       {items.map((item) => (
         <div key={item.title} className="rounded-xl border border-ink-200 p-5">
           <h3 className="font-semibold text-ink-950">{item.title}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-ink-700">{item.description}</p>
+          <p className="mt-2 text-sm leading-relaxed text-ink-700">
+            <RichText text={item.description} />
+          </p>
         </div>
       ))}
     </div>
@@ -31,7 +35,9 @@ export function SceneOverview({ name, content }: { name: string; content: SceneC
         <h2 className={H2}>{content.overview.heading}</h2>
         <div className="mt-4 space-y-3 text-base leading-relaxed text-ink-700">
           {content.overview.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+            <p key={paragraph}>
+              <RichText text={paragraph} />
+            </p>
           ))}
         </div>
       </section>
@@ -63,7 +69,9 @@ export function SceneGuide({ name, content }: { name: string; content: SceneCont
               </span>
               <div>
                 <h3 className="font-semibold text-ink-950">{tip.title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-ink-700">{tip.description}</p>
+                <p className="mt-1 text-sm leading-relaxed text-ink-700">
+                  <RichText text={tip.description} />
+                </p>
               </div>
             </li>
           ))}
@@ -74,13 +82,17 @@ export function SceneGuide({ name, content }: { name: string; content: SceneCont
         <section className="mt-16">
           <h2 className={H2}>{content.styleGuide.heading}</h2>
           {content.styleGuide.intro && (
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-700">{content.styleGuide.intro}</p>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-700">
+              <RichText text={content.styleGuide.intro} />
+            </p>
           )}
           <dl className="mt-6 grid gap-x-8 gap-y-4 sm:grid-cols-2">
             {content.styleGuide.items.map((item) => (
               <div key={item.title} className="border-l-2 border-brand-200 pl-4">
                 <dt className="font-semibold text-ink-950">{item.title}</dt>
-                <dd className="mt-1 text-sm leading-relaxed text-ink-700">{item.description}</dd>
+                <dd className="mt-1 text-sm leading-relaxed text-ink-700">
+                  <RichText text={item.description} />
+                </dd>
               </div>
             ))}
           </dl>
@@ -93,7 +105,9 @@ export function SceneGuide({ name, content }: { name: string; content: SceneCont
           {content.checklist.items.map((item) => (
             <li key={item} className="flex gap-3 text-sm leading-relaxed text-ink-700">
               <CheckIcon />
-              <span>{item}</span>
+              <span>
+                <RichText text={item} />
+              </span>
             </li>
           ))}
         </ul>
@@ -103,7 +117,9 @@ export function SceneGuide({ name, content }: { name: string; content: SceneCont
         <h2 className={H2}>What the {name} can&apos;t do</h2>
         <ul className="mt-6 list-disc space-y-3 pl-5 text-sm leading-relaxed text-ink-700">
           {content.limits.map((limit) => (
-            <li key={limit}>{limit}</li>
+            <li key={limit}>
+              <RichText text={limit} />
+            </li>
           ))}
         </ul>
       </section>

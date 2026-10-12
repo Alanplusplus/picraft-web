@@ -1,7 +1,7 @@
 {
   "title": "What Is Bleed in Printing? Trim Line and Safe Area",
   "h1": "What Is Bleed in Printing?",
-  "description": "Bleed, trim line and safe area for PiCraft print files: 0.125 in or 3 mm bleed, invitation safe margins, 300 DPI, PDF vs JPG, home printing and pre-flight checks.",
+  "description": "Bleed, trim line and safe area for PiCraft print files: 0.125 in or 3 mm bleed, safe margins, 300 DPI, PDF vs JPG, home printing and pre-flight checks.",
   "summary": "Bleed is extra artwork past the final cut line so a small shift at the trimmer does not leave a white edge. PiCraft print files add 0.125 in (3 mm) bleed on cards and invitations, keep invitation text 0.25 in inside the trim line, and export at 300 DPI as PDF or JPG.",
   "topic": "Print",
   "published": "2026-10-09",

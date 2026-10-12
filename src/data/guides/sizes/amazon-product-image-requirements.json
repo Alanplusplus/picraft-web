@@ -1,5 +1,5 @@
 {
-  "title": "Amazon Product Image Requirements: White BG, Size & Main Image",
+  "title": "Amazon Product Image Requirements: Size & White Background",
   "h1": "Amazon Product Image Size and Main Image Rules",
   "description": "Amazon main image: pure white RGB 255, 85% fill, 1000 px minimum for zoom, 1600 px+ recommended, JPEG preferred, and what secondary images allow.",
   "summary": "Amazon's main product image must use a pure white background (RGB 255, 255, 255), show only the product for sale filling at least 85% of the frame, and be at least 1000 pixels on the longest side for zoom; larger than 1600 px is recommended. JPEG is preferred. Secondary images can show lifestyle scenes and detail.",

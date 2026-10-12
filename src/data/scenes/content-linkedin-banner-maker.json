@@ -111,7 +111,7 @@
     ]
   },
   "limits": [
-    "The banner is designed for personal profiles. LinkedIn company pages use a different cover size.",
+    "The banner is designed for personal profiles. LinkedIn company pages use a different cover size, which the [LinkedIn banner size guide](/sizes/linkedin-banner-size) compares with the personal one.",
     "Your profile photo covers part of the lower-left, and mobile crops the sides, so the maker cannot keep every pixel visible on every device.",
     "The text is part of the image. To change a word, generate again.",
     "The maker does not add logos or photos of you. Upload those in LinkedIn or an editor afterwards.",
