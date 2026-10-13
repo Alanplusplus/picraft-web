@@ -11,6 +11,7 @@ import { SceneCard } from "@/components/scene-card";
 import { SceneGenerator } from "@/components/scene-generator";
 import { SceneGuide, SceneOverview } from "@/components/scene-sections";
 import { getGuidesForScene } from "@/lib/guides";
+import { validateInternalLinks } from "@/lib/links";
 import { getContent, getExamples, getScene, getScenes, isIndexable, logIndexability, toClientScene } from "@/lib/scenes";
 import { faqLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
@@ -21,6 +22,8 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   logIndexability();
+  // Fails the production build when any content file links to a page that does not exist.
+  validateInternalLinks();
   return getScenes().map((scene) => ({ scene: scene.slug }));
 }
 

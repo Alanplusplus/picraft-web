@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-13",
   "overview": {
     "heading": "How the Wedding Invitation Maker works",
     "paragraphs": [
-      "Enter the couple's names, the date, the venue and, if you wish, the time, the city and an RSVP line. Choose a style and PiCraft designs a complete portrait invitation with the wording already set, in the proportions of a 5×7 inch card.",
-      "The card uses a traditional wedding wording: \"Together with their families\" at the top and \"request the pleasure of your company at their wedding\" before the date. Your names, date, time, venue, city and RSVP line are set into that wording and spelled exactly as you typed them.",
+      "Enter the couple's names, the date, the venue and, if you wish, the time, the city and an RSVP line. Choose an opening line, an invitation line and a style, and PiCraft designs a complete portrait invitation in the proportions of a 5×7 inch card.",
+      "By default the card uses a traditional wedding wording: \"Together with their families\" at the top and \"request the pleasure of your company at their wedding\" before the date. Two drop-downs change those lines. The opening line can be \"Together with their parents\", \"With joyful hearts\" or left out, and the invitation line can be \"request the honor of your presence at their wedding\", \"invite you to celebrate their wedding\" or \"are getting married\". Your names, date, time, venue, city and RSVP line are set into the wording you choose and spelled exactly as you typed them.",
       "You download a print PDF with 0.125 inch bleed for a printer, a 300 DPI JPG of the same file, and a phone-sized image for text messages, WhatsApp and email."
     ]
   },
@@ -70,6 +70,10 @@
       "description": "A line such as \"Kindly reply by May 1 · emmaandjames.com\" saves room for the details on a wedding website."
     },
     {
+      "title": "Read the lines as one sentence",
+      "description": "The opening line, your names and the invitation line read as a single sentence, such as \"Together with their parents Emma Collins & James Porter invite you to celebrate their wedding\". Say it aloud before you generate."
+    },
+    {
       "title": "Choose a style that matches the venue",
       "description": "Botanical and rustic suit gardens and barns, Art Deco suits city ballrooms, beach suits the coast."
     },
@@ -111,7 +115,7 @@
     ]
   },
   "limits": [
-    "The invitation wording is fixed in a traditional form and in English. For different wording, use the RSVP line or add text in an editor.",
+    "The wording comes from two short lists, four opening lines and four invitation lines, and is in English. For any other phrasing, use the RSVP line or add text in an editor.",
     "It does not add a photo of the couple, a monogram or a map.",
     "Names with unusual spellings or accents should be checked closely, because AI text rendering is not perfect.",
     "Matching items such as RSVP cards, menus and place cards are separate designs and will not be identical in style.",

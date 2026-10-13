@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-13",
   "overview": {
     "heading": "How the Book Cover Maker works",
     "paragraphs": [
@@ -106,13 +106,13 @@
       "For a light or white cover, add a thin grey border so it does not disappear on Amazon's white page.",
       "Make sure you have the right to publish the imagery commercially.",
       "Confirm you disclose AI-generated content if the store you publish on asks for it.",
-      "For paperbacks, build the full wrap with your printer's template and place the front file as the front panel.",
+      "For paperbacks, build the full wrap with your printer's template and place the front file as the front panel. The [KDP paperback cover size](/sizes/kdp-paperback-cover-size) guide shows where the fold lines fall.",
       "Keep text at least 0.125 inch inside the trim line of a paperback, as KDP recommends."
     ]
   },
   "limits": [
     "The maker produces a front cover only. It does not create the spine, back cover or barcode.",
-    "A printed paperback needs a full wrap sized to your page count and paper. Use the printer's template for that, and see the [book cover size guide](/sizes/book-cover-size) for the KDP specs.",
+    "A printed paperback needs a full wrap sized to your page count and paper. Use the printer's template for that, and see the [KDP paperback cover size guide](/sizes/kdp-paperback-cover-size) for the formula and spine widths, or the [book cover size guide](/sizes/book-cover-size) for the eBook specs.",
     "KDP requires paperback covers as a single PDF with back, spine and front, so the front file needs to be placed in a template.",
     "The text is part of the image. To change a word, generate again.",
     "AI-generated images may not qualify for copyright protection in some countries."

@@ -70,6 +70,64 @@
       "placeholder": "Kindly reply by May 1 · emmaandjames.com"
     },
     {
+      "key": "opening",
+      "label": "Opening line",
+      "type": "select",
+      "default": "families",
+      "help": "The line above your names. Choose \"No opening line\" to start with the names.",
+      "options": [
+        {
+          "value": "families",
+          "label": "Together with their families",
+          "prompt": "Together with their families"
+        },
+        {
+          "value": "parents",
+          "label": "Together with their parents",
+          "prompt": "Together with their parents"
+        },
+        {
+          "value": "joy",
+          "label": "With joyful hearts",
+          "prompt": "With joyful hearts"
+        },
+        {
+          "value": "none",
+          "label": "No opening line",
+          "prompt": ""
+        }
+      ]
+    },
+    {
+      "key": "invitation",
+      "label": "Invitation line",
+      "type": "select",
+      "default": "pleasure",
+      "help": "The line between your names and the date.",
+      "options": [
+        {
+          "value": "pleasure",
+          "label": "Request the pleasure of your company",
+          "prompt": "request the pleasure of your company at their wedding"
+        },
+        {
+          "value": "honor",
+          "label": "Request the honor of your presence",
+          "prompt": "request the honor of your presence at their wedding"
+        },
+        {
+          "value": "celebrate",
+          "label": "Invite you to celebrate",
+          "prompt": "invite you to celebrate their wedding"
+        },
+        {
+          "value": "married",
+          "label": "Are getting married",
+          "prompt": "are getting married"
+        }
+      ]
+    },
+    {
       "key": "style",
       "label": "Style",
       "type": "select",
@@ -128,7 +186,7 @@
       ]
     }
   ],
-  "prompt": "Design a printable wedding invitation card in portrait orientation, shown flat and front-on, filling the entire image edge to edge. It is the artwork itself, not a mockup: no table, no envelope, no hands, no drop shadow.\nStyle: {{style}}.\nThe card contains exactly the following text and nothing else, each item on its own line, spelled exactly as written:\n\"Together with their families\"\n\"{{names}}\"\n\"request the pleasure of your company at their wedding\"\n\"{{date}}\"\n[[\"{{time}}\"]]\n\"{{venue}}\"\n[[\"{{location}}\"]]\n[[\"{{rsvp}}\"]]\nAll text perfectly legible and well inside the card, with margins of at least 8% on every side so nothing is trimmed when printed. Balanced, centered layout, print-quality detail.",
+  "prompt": "Design a printable wedding invitation card in portrait orientation, shown flat and front-on, filling the entire image edge to edge. It is the artwork itself, not a mockup: no table, no envelope, no hands, no drop shadow.\nStyle: {{style}}.\nThe card contains exactly the following text and nothing else, each item on its own line, spelled exactly as written:\n[[\"{{opening}}\"]]\n\"{{names}}\"\n\"{{invitation}}\"\n\"{{date}}\"\n[[\"{{time}}\"]]\n\"{{venue}}\"\n[[\"{{location}}\"]]\n[[\"{{rsvp}}\"]]\nAll text perfectly legible and well inside the card, with margins of at least 8% on every side so nothing is trimmed when printed. Balanced, centered layout, print-quality detail.",
   "outputs": [
     {
       "id": "share",
@@ -197,8 +255,8 @@
       "description": "Names, date, venue and an optional RSVP line."
     },
     {
-      "title": "Choose a style",
-      "description": "Watercolor, minimal, classic gold, boho or romantic garden."
+      "title": "Choose the wording and a style",
+      "description": "Pick an opening line and an invitation line, then a style: watercolor, minimal, classic gold, boho or romantic garden."
     },
     {
       "title": "Download and print",
@@ -224,7 +282,7 @@
     },
     {
       "q": "Can I change the wording of the invitation?",
-      "a": "The top and middle lines use a traditional wording in English. Use the RSVP field for extra words, or edit the downloaded design in an image editor."
+      "a": "Yes, in part. Pick one of four opening lines and one of four invitation lines, for example \"Together with their parents\" and \"invite you to celebrate their wedding\". The wording is English and comes from those lists, so other phrasing is not possible. Use the RSVP field for extra words, or edit the downloaded design in an image editor."
     },
     {
       "q": "What size are the envelopes?",

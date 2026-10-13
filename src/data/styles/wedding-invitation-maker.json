@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "Wedding invitation styles",
-  "updated": "2026-10-09",
+  "updated": "2026-10-13",
   "styles": [
     {
       "value": "botanical",
@@ -66,7 +66,7 @@
         },
         {
           "q": "Is the wording editable?",
-          "a": "The invitation uses a traditional form of wording in English. Use the RSVP line for extra words, such as a website or dress code."
+          "a": "In part. You choose an opening line and an invitation line from short lists, in English. Use the RSVP line for extra words, such as a website or dress code."
         },
         {
           "q": "What size should I print?",
@@ -152,7 +152,7 @@
         "h1": "Classic Gold Wedding Invitation Maker"
       },
       "intro": [
-        "The classic gold style is the traditional formal wedding card: an ornate gold foil-style border on an ivory card stock texture, with script names and serif details. The wording is already traditional, so the whole card feels like a formal invitation.",
+        "The classic gold style is the traditional formal wedding card: an ornate gold foil-style border on an ivory card stock texture, with script names and serif details. The default wording is already traditional, so the whole card feels like a formal invitation.",
         "Add the couple's names, the date, the time and the venue, and PiCraft arranges them within the frame. The gold is part of the printed image, so you get the look of foil without foil printing."
       ],
       "bestFor": [
@@ -200,7 +200,7 @@
         },
         {
           "q": "Is the wording traditional?",
-          "a": "Yes. All wedding invitations from this maker use a traditional wording in English, and classic gold suits it best."
+          "a": "By default, yes. The opening line is \"Together with their families\" and the invitation line is \"request the pleasure of your company at their wedding\". You can pick other lines from the drop-downs, and classic gold suits the traditional ones best."
         },
         {
           "q": "Will the ornate border print cleanly?",
@@ -691,7 +691,7 @@
       "faq": [
         {
           "q": "Is the cherry blossom style culturally specific?",
-          "a": "It is Japanese-inspired in its art and typography, but the wording is the same traditional English invitation as in other styles. Couples of all backgrounds choose it for its spring look."
+          "a": "It is Japanese-inspired in its art and typography, but the wording options are the same English lines as in other styles. Couples of all backgrounds choose it for its spring look."
         },
         {
           "q": "Are the blossoms always along the edges?",

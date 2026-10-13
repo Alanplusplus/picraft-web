@@ -4,10 +4,10 @@
   "description": "Kindle cover size 1600×2560 px per KDP, plus paperback full-wrap PDF rules, 0.125 in bleed, spine width, and why print needs back cover and spine.",
   "summary": "For Kindle eBooks, Amazon KDP lists ideal cover dimensions of 1600×2560 px (1.6:1 height to width), JPEG or TIFF, RGB, under 50 MB. Paperback covers must be one PDF with back, spine and front, sized with 0.125 in bleed; PiCraft exports the front panel only.",
   "published": "2026-10-09",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "scene": "book-cover-maker",
   "relatedScenes": ["youtube-thumbnail-maker", "event-flyer-maker", "linkedin-banner-maker"],
-  "relatedGuides": ["youtube-thumbnail-size", "blog:what-is-bleed-in-printing"],
+  "relatedGuides": ["kdp-paperback-cover-size", "youtube-thumbnail-size", "blog:what-is-bleed-in-printing"],
   "sections": [
     {
       "heading": "Kindle eBook cover specs at a glance",
@@ -43,7 +43,7 @@
       "heading": "KDP paperback cover: full wrap, bleed and spine",
       "paragraphs": [
         "A paperback cover on KDP is not a single front panel. It must be one PDF that includes the back cover, spine and front cover as one continuous image.",
-        "Bleed on print covers adds 0.125 in (3.2 mm) to the top, bottom and outside edges beyond trim so backgrounds reach the edge after trimming. KDP's cover calculator and templates generate the full width and height from your trim size, page count, paper type and ink choices.",
+        "Bleed on print covers adds 0.125 in (3.2 mm) to the top, bottom and outside edges beyond trim so backgrounds reach the edge after trimming. KDP's cover calculator and templates generate the full width and height from your trim size, page count, paper type and ink choices. To work the numbers out yourself, see [KDP paperback cover size](/sizes/kdp-paperback-cover-size).",
         "Spine width depends on page count and paper (for example, white paper black-and-white interior: page count × 0.002252 in). KDP's help page gives the minimum for spine text as 79 pages in one place and more than 79 in another, so treat 80 pages as the safe minimum. Below 79 pages, leave the spine blank.",
         "Text on the front and back must sit at least 0.125 in inside the trim lines, and spine text needs at least 0.0625 in (1.6 mm) clearance from the spine edges so it does not wrap onto the panels."
       ]

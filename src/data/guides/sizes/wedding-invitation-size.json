@@ -4,7 +4,7 @@
   "description": "Standard wedding invitation size is 5×7 in with 0.125 in bleed, 300 DPI and an A7 envelope. Trim, safe area, pixels, card stock and share-image sizes.",
   "summary": "A finished wedding invitation is usually 5×7 in (127×178 mm). Send printers a file with 0.125 in bleed on every side (5.25×7.25 in at 300 DPI, or 1575×2175 px), keep text at least 0.25 in inside the trim line, and mail the card in an A7 envelope (5¼×7¼ in).",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-13",
   "scene": "wedding-invitation-maker",
   "relatedScenes": ["birthday-invitation-maker", "restaurant-menu-maker"],
   "relatedGuides": ["birthday-invitation-size", "blog:how-to-print-wedding-invitations", "blog:what-is-bleed-in-printing"],
@@ -78,7 +78,7 @@
     {
       "heading": "Make a 5×7 in wedding invitation at the right size",
       "paragraphs": [
-        "The [Wedding Invitation Maker](/create/wedding-invitation-maker) builds a portrait invitation with your names, date and venue already typeset. You get a print PDF and 300 DPI JPG at 5×7 in with 0.125 in bleed, plus a 1080×1500 px share image. It does not add couple photos, maps or QR codes; wording follows a traditional English form.",
+        "The [Wedding Invitation Maker](/create/wedding-invitation-maker) builds a portrait invitation with your names, date and venue already typeset. You get a print PDF and 300 DPI JPG at 5×7 in with 0.125 in bleed, plus a 1080×1500 px share image. It does not add couple photos, maps or QR codes; wording comes from a short list of English opening and invitation lines, with a traditional form as the default.",
         "For birthday parties and classroom handouts, see [birthday invitation size](/sizes/birthday-invitation-size). More printable designs live under [invitations and print](/categories/invitations-and-print)."
       ]
     }

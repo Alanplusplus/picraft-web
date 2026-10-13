@@ -97,7 +97,7 @@
     ]
   },
   "creators": {
-    "updated": "2026-10-09",
+    "updated": "2026-10-13",
     "seo": {
       "title": "Thumbnail, Banner & Book Cover Makers for Creators",
       "description": "Make YouTube thumbnails, LinkedIn banners and book covers at the exact pixel size each platform expects, with bold text and room for the parts it overlays.",
@@ -119,7 +119,7 @@
       {
         "heading": "Sizes change, so check the source",
         "paragraphs": [
-          "Platforms update their requirements from time to time. Each maker page links to the official help page where one exists, and the size guides show the date they were last checked: [YouTube thumbnail size](/sizes/youtube-thumbnail-size), [LinkedIn banner size](/sizes/linkedin-banner-size) and [book cover size](/sizes/book-cover-size).",
+          "Platforms update their requirements from time to time. Each maker page links to the official help page where one exists, and the size guides show the date they were last checked: [YouTube thumbnail size](/sizes/youtube-thumbnail-size), [LinkedIn banner size](/sizes/linkedin-banner-size), [book cover size](/sizes/book-cover-size) and [KDP paperback cover size](/sizes/kdp-paperback-cover-size).",
           "Good images also follow a few habits that have nothing to do with size, such as high contrast and very short text. The guide to [YouTube thumbnail best practices](/blog/youtube-thumbnail-best-practices) covers them."
         ]
       }

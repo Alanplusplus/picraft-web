@@ -5,7 +5,7 @@
   "summary": "Finish your wording first, then print a 5×7 in card with 0.125 in bleed on heavy stock (110 lb / 300 gsm is a common choice for a premium feel). Many couples mail paper invitations about six to eight weeks before the wedding; order a proof, match A7 envelopes, and use a phone share image when you want a quick digital send.",
   "topic": "Wedding",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-13",
   "scene": "wedding-invitation-maker",
   "relatedScenes": ["birthday-invitation-maker", "event-flyer-maker"],
   "relatedGuides": [
@@ -19,7 +19,7 @@
       "paragraphs": [
         "Count households, not just names. One invitation often covers a couple or a family with children. Add ten to fifteen percent extra for last-minute additions, keepsakes and addressing mistakes if your budget allows.",
         "Pause design work until names, the date, the day of the week, the time and the venue match your contract and booking confirmations. A typo in a name is the error printers cannot fix without a full reprint.",
-        "If you use the [Wedding Invitation Maker](/create/wedding-invitation-maker), the card follows a traditional English wording with your typed names, date, venue and optional RSVP line. The maker does not add couple photos, maps or monograms; plan those separately if you need them."
+        "If you use the [Wedding Invitation Maker](/create/wedding-invitation-maker), the card uses English wording from a short list of opening and invitation lines, with your typed names, date, venue and optional RSVP line. The maker does not add couple photos, maps or monograms; plan those separately if you need them."
       ]
     },
     {
@@ -117,7 +117,7 @@
     },
     {
       "q": "Can I change the traditional wording on the card?",
-      "a": "PiCraft uses fixed opening and closing lines in English. Use the RSVP field for extra instructions, or edit the downloaded image in another app if you need fully custom wording."
+      "a": "In part. The [Wedding Invitation Maker](/create/wedding-invitation-maker) lets you choose one of four opening lines and one of four invitation lines, all in English. For anything else, use the RSVP field for extra instructions, or edit the downloaded image in another app if you need fully custom wording."
     },
     {
       "q": "How early should RSVPs be due?",

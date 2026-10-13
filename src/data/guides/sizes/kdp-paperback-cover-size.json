@@ -1,0 +1,145 @@
+{
+  "title": "KDP Paperback Cover Size: Full-Wrap Formula & Spine Width",
+  "h1": "KDP Paperback Cover Size, Spine Width and Bleed",
+  "description": "KDP paperback cover size for any trim: width = 2 × trim + spine + 0.25 in, height = trim + 0.25 in. Spine width by paper type, bleed, barcode and file rules.",
+  "summary": "A KDP paperback cover is one PDF that wraps the back, spine and front. Its width is the back trim width, the spine and the front trim width plus 0.125 in of bleed on each outer edge, and its height is the trim height plus 0.25 in. A 6×9 in book with 300 pages on white paper needs 12.9256 × 9.25 in.",
+  "published": "2026-10-13",
+  "updated": "2026-10-13",
+  "scene": "book-cover-maker",
+  "relatedGuides": ["book-cover-size", "blog:what-is-bleed-in-printing"],
+  "sections": [
+    {
+      "heading": "The KDP paperback cover size formula",
+      "paragraphs": [
+        "KDP wants the whole cover as a single PDF: back cover, spine and front cover as one image. Its size is set by three things: the trim size, the spine width and the bleed. Bleed is 0.125 in (3.2 mm) added to the top, bottom and outside edges. The spine sides of the two panels get no bleed, because the panels meet there."
+      ],
+      "items": [
+        "Cover width = bleed + back cover width + spine width + front cover width + bleed.",
+        "Cover height = bleed + trim height + bleed.",
+        "In plain numbers: width = 2 × trim width + spine width + 0.25 in, and height = trim height + 0.25 in."
+      ],
+      "after": [
+        "Worked example: a 6×9 in paperback with 300 pages on white paper has a spine of 300 × 0.002252 = 0.6756 in. The cover file is 6 + 0.6756 + 6 + 0.25 = 12.9256 in wide and 9 + 0.25 = 9.25 in tall, about 3,878 × 2,775 px at 300 DPI."
+      ]
+    },
+    {
+      "heading": "Spine width by paper type and page count",
+      "paragraphs": [
+        "Spine width is the page count multiplied by a thickness factor that depends on the ink and paper you pick in KDP's print options. Use the final page count of the manuscript you upload, because the spine decides where the fold lines fall."
+      ],
+      "table": {
+        "caption": "Spine width in inches",
+        "columns": ["Paper and ink", "Per page (in)", "100 pages", "200 pages", "300 pages", "400 pages"],
+        "rows": [
+          ["Black ink, white paper", "0.002252", "0.2252", "0.4504", "0.6756", "0.9008"],
+          ["Black ink, cream paper", "0.0025", "0.25", "0.5", "0.75", "1.0"],
+          ["Premium color, white paper", "0.002347", "0.2347", "0.4694", "0.7041", "0.9388"],
+          ["Standard color, white paper", "0.002252", "0.2252", "0.4504", "0.6756", "0.9008"]
+        ]
+      },
+      "after": [
+        "KDP also offers groundwood paper for black-ink paperbacks. Its factor is different, so take it from KDP's cover calculator and template generator instead of this table. Another KDP page, the Paperback Submission Guidelines, lists a single factor of 0.002347 for color paper, so when the exact number matters, let the calculator generate the template for your trim size, paper and page count.",
+        "Changing the paper after publishing changes the spine. KDP lets black-ink paperbacks switch between cream, white and groundwood paper and says you may need to upload a new cover file, depending on the page count. The ink type (black, standard color or premium color) is locked once the book is published."
+      ]
+    },
+    {
+      "heading": "Full cover sizes for common trim sizes",
+      "paragraphs": [
+        "6×9 in is the most common trim size for books in the US, and it is the default in KDP's print options. Custom paperback trim sizes can be 4 to 8.5 in wide and 6 to 11.69 in tall. The table applies the formula to a few combinations."
+      ],
+      "table": {
+        "caption": "Full cover size = 2 × trim width + spine + 0.25 in, by trim height + 0.25 in",
+        "columns": ["Trim size", "Pages and paper", "Spine", "Full cover (W × H)"],
+        "rows": [
+          ["5×8 in", "100, black ink on white", "0.2252 in", "10.4752 × 8.25 in"],
+          ["5.5×8.5 in", "200, black ink on white", "0.4504 in", "11.7004 × 8.75 in"],
+          ["6×9 in", "300, black ink on white", "0.6756 in", "12.9256 × 9.25 in"],
+          ["6×9 in", "300, black ink on cream", "0.75 in", "13 × 9.25 in"],
+          ["6×9 in", "300, premium color on white", "0.7041 in", "12.9541 × 9.25 in"],
+          ["6×9 in", "400, black ink on white", "0.9008 in", "13.1508 × 9.25 in"]
+        ]
+      },
+      "after": [
+        "The same 300-page 6×9 in book is about 0.07 in wider on cream paper than on white. That shifts the front cover and the right-hand fold line by the same amount, so a file built for one paper type does not line up on the other."
+      ]
+    },
+    {
+      "heading": "Where each part sits on the file",
+      "paragraphs": [
+        "Both bleeds are equal, so the spine sits in the exact middle of the file from left to right, and KDP asks for one continuous image centered on the spine. In the 6×9 in, 300-page example, the back cover and its left bleed take the first 6.125 in. The spine runs from 6.125 in to 6.8006 in. The front cover and its right bleed fill the rest, up to 12.9256 in."
+      ],
+      "table": {
+        "caption": "Margins and clearances from KDP's help pages",
+        "columns": ["Area", "Rule"],
+        "rows": [
+          ["Bleed", "Backgrounds and images extend 0.125 in (3.2 mm) past the trim line on the top, bottom and outside edges."],
+          ["Front and back text", "At least 0.125 in (3.2 mm) inside the trim lines. Nothing from the front or back may run into the spine."],
+          ["Spine text", "Only on books with enough pages: KDP's page says at least 79 in most places and more than 79 in one, and Cover Creator needs 80. Leave 0.0625 in (1.6 mm) between the text and each spine edge."],
+          ["Borders", "KDP does not recommend them, because of print variance. If you use one, it should cover at least 0.25 in (6.4 mm) inside the trim line."],
+          ["Barcode", "Optional. KDP adds one to the back cover if you do not supply it. If you supply your own: suggested 2 × 1.2 in (minimum 1.4 × 0.8 in), at least 0.25 in from the spine and the trim, on a solid white background."],
+          ["Text size", "At least 7 pt, with enough contrast against the background."]
+        ]
+      },
+      "after": [
+        "Printing varies a little from book to book. KDP treats a spine shift of up to 3.2 mm in either direction as normal and advises against hard edges on the spine, because a shift makes them easy to see. A spine color that continues onto the back and front covers makes a small shift hard to notice.",
+        "As a rough check on spine text, a 7 pt line is about 0.1 in tall. With 0.0625 in of clearance on each side, the spine needs to be about 0.22 in wide, which is around 99 pages on white paper and 89 on cream. On the 300-page example, the usable text width is 0.6756 − 0.125 = 0.5506 in, about 14 mm."
+      ]
+    },
+    {
+      "heading": "File requirements before you upload",
+      "ordered": true,
+      "items": [
+        "Export one PDF that holds the back cover, spine and front cover as a single image. KDP will not convert cover files over 650 MB and recommends 40 MB or less.",
+        "Place images at 100% size, flattened to one layer, at 300 DPI or higher. KDP recommends CMYK images and advises against mixing color spaces in one file.",
+        "Leave out spot colors and embedded color profiles. KDP removes profiles before publishing, and spot colors do not work with its print-on-demand process. Convert them to CMYK.",
+        "Flatten transparencies and embed all fonts.",
+        "Remove crop marks, color bars, template text and any PDF creation guides.",
+        "Remove file security. Locked or encrypted files fail review.",
+        "Make sure the title, author name and edition on the cover match the book details you entered in KDP."
+      ],
+      "after": [
+        "Order a proof copy before you launch. KDP's own help page points to a proof as the way to see the printed book before customers can buy it."
+      ]
+    },
+    {
+      "heading": "Using a PiCraft front cover in the wrap",
+      "paragraphs": [
+        "PiCraft's [Book Cover Maker](/create/book-cover-maker) exports a paperback front image of 6.125×9.25 in at 300 DPI. That is the front panel of a 6×9 in wrap: 6 in of trim plus 0.125 in of bleed on the outer edge, and 0.125 in of bleed on the top and bottom. Place it against the top-right corner of your wrap file, with its left edge on the right-hand fold line of the spine.",
+        "The maker does not draw the back cover, the spine or the barcode area. Build those in the template from KDP's cover calculator and template generator, and carry the cover's colors across them so the wrap reads as one image. KDP recommends CMYK images for print covers and the PiCraft front file is a JPG, so check the colors on a proof copy.",
+        "The Kindle eBook cover is a separate file with its own rules, covered in the [book cover size guide](/sizes/book-cover-size). If bleed and trim are new terms, [what is bleed in printing](/blog/what-is-bleed-in-printing) explains them."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size is a KDP paperback cover?",
+      "a": "It depends on the trim size, page count and paper. Width = 2 × trim width + spine width + 0.25 in, and height = trim height + 0.25 in. A 6×9 in book with 300 pages on white paper needs a cover of 12.9256 × 9.25 in."
+    },
+    {
+      "q": "How do I calculate the spine width for KDP?",
+      "a": "Multiply the page count by the paper factor: 0.002252 in for white paper, 0.0025 in for cream paper, 0.002347 in for premium color and 0.002252 in for standard color. For 300 pages on white paper, that is 0.6756 in."
+    },
+    {
+      "q": "How much bleed does a KDP paperback cover need?",
+      "a": "0.125 in (3.2 mm) on the top, bottom and outside edges. Bleed at the bottom cannot be more than 0.125 in."
+    },
+    {
+      "q": "Does KDP add the barcode to my cover?",
+      "a": "Yes, if your cover has no barcode, KDP places one on the back cover. Keep that area free of images and text, because KDP rejects covers that have either there. KDP's cover template shows the exact spot."
+    },
+    {
+      "q": "How many pages do I need for spine text?",
+      "a": "KDP's cover page says a book needs at least 79 pages for spine text, and in one place says more than 79. Cover Creator needs 80. Use 80 or more to be safe, and leave the spine blank below that."
+    },
+    {
+      "q": "Can I upload a JPG as my paperback cover?",
+      "a": "Not as a finished full cover. A cover you build yourself has to be a single PDF. KDP's Cover Creator, a separate tool with its own templates, does accept JPG, PNG and GIF images."
+    }
+  ],
+  "sources": [
+    { "label": "Amazon KDP: Create a paperback cover", "url": "https://kdp.amazon.com/help/topic/G201953020" },
+    { "label": "Amazon KDP: Barcodes", "url": "https://kdp.amazon.com/help/topic/G5HDYGP4BXLX4RUW" },
+    { "label": "Amazon KDP: Print options", "url": "https://kdp.amazon.com/help/topic/G201834180" },
+    { "label": "Amazon KDP: Paperback submission guidelines", "url": "https://kdp.amazon.com/help/topic/G201857950" }
+  ]
+}

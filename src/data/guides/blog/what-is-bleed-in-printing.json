@@ -5,7 +5,7 @@
   "summary": "Bleed is extra artwork past the final cut line so a small shift at the trimmer does not leave a white edge. PiCraft print files add 0.125 in (3 mm) bleed on cards and invitations, keep invitation text 0.25 in inside the trim line, and export at 300 DPI as PDF or JPG.",
   "topic": "Print",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-13",
   "scene": "business-card-maker",
   "relatedScenes": [
     "wedding-invitation-maker",
@@ -17,7 +17,8 @@
     "business-card-size",
     "wedding-invitation-size",
     "flyer-size",
-    "menu-size"
+    "menu-size",
+    "kdp-paperback-cover-size"
   ],
   "sections": [
     {
@@ -45,7 +46,7 @@
         ]
       },
       "after": [
-        "For pixel dimensions at 300 DPI, see the dedicated [business card size](/sizes/business-card-size), [wedding invitation size](/sizes/wedding-invitation-size), [flyer size](/sizes/flyer-size) and [menu size](/sizes/menu-size) guides. Those pages list trim sizes, bleed file sizes and export pixels in one place."
+        "For pixel dimensions at 300 DPI, see the dedicated [business card size](/sizes/business-card-size), [wedding invitation size](/sizes/wedding-invitation-size), [flyer size](/sizes/flyer-size) and [menu size](/sizes/menu-size) guides. Those pages list trim sizes, bleed file sizes and export pixels in one place. Paperback book covers use the same 0.125 in bleed on KDP, but the file is one wrap whose width depends on the page count; the [KDP paperback cover size](/sizes/kdp-paperback-cover-size) guide has the formula."
       ]
     },
     {
