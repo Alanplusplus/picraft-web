@@ -5,7 +5,7 @@
   "summary": "Treat the thumbnail as a small poster: one subject, a few high-contrast words, and empty space in the bottom-right where YouTube shows the video length. Match what the video actually delivers, and export at the sizes in the [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size).",
   "topic": "YouTube",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-14",
   "scene": "youtube-thumbnail-maker",
   "relatedScenes": ["linkedin-banner-maker", "book-cover-maker"],
   "relatedGuides": ["size:youtube-thumbnail-size"],
@@ -52,7 +52,7 @@
       "paragraphs": [
         "Consistency does not mean every thumbnail looks identical. It means viewers can spot your videos in a crowded row: a recurring font style, color accent, or layout grid.",
         "Series benefit from a repeatable pattern—same placement for episode numbers, same style of background, same way you show your face—while still changing the subject each time.",
-        "If you use multiple styles, group them by show or playlist so a tutorial series does not look like a vlog series. Creator graphics on other platforms can follow different rules; for YouTube, the 16:9 feed is the constraint that matters."
+        "If you use multiple styles, group them by show or playlist so a tutorial series does not look like a vlog series. A channel that covers both games and workouts, for example, can give one playlist the [retro gaming](/create/youtube-thumbnail-maker/retro-gaming) look and the other the [fitness](/create/youtube-thumbnail-maker/fitness) look. Creator graphics on other platforms can follow different rules; for YouTube, the 16:9 feed is the constraint that matters."
       ]
     },
     {

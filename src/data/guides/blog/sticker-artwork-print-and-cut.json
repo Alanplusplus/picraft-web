@@ -5,7 +5,7 @@
   "summary": "Start with a transparent PNG at the physical size you will print, with a continuous outline the cutter can follow. For home cutting, upload as a Print Then Cut graphic in Cricut Design Space; for shop printing, confirm DPI and trim with your vendor. See [sticker size](/sizes/sticker-size) for PiCraft export dimensions.",
   "topic": "Stickers",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-14",
   "scene": "sticker-maker",
   "relatedScenes": ["t-shirt-design-maker", "birthday-invitation-maker"],
   "relatedGuides": ["size:sticker-size"],
@@ -64,7 +64,7 @@
       "heading": "Paper stickers vs vinyl",
       "paragraphs": [
         "Matte or glossy sticker paper is inexpensive and fine for planners, packaging seals, and party favors. It scuffs when wet and is not durable on outdoor gear.",
-        " Printable vinyl, often with a laminate top coat, handles water and handling better. It costs more and may need different printer settings, but it is the usual choice for water bottles and outdoor use.",
+        " Printable vinyl, often with a laminate top coat, handles water and handling better. It costs more and may need different printer settings, but it is the usual choice for water bottles and outdoor use. Designs meant for vans and camping gear, such as the [retro 70s](/create/sticker-maker/retro) palette, or for trail and wildlife brands, such as [woodcut](/create/sticker-maker/woodcut) prints, are good candidates for vinyl.",
         "Kiss-cut sheets from online printers are another path: you upload art, they print and cut on a backing sheet. Send the transparent PNG at the size and PPI they specify; many shops mirror the same white-border logic PiCraft uses."
       ]
     },

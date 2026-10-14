@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "overview": {
     "heading": "How the Wedding Invitation Maker works",
     "paragraphs": [
@@ -95,9 +95,9 @@
       { "title": "Classic gold", "description": "Traditional layout with gold accents. Fits formal ceremonies and ballroom receptions." },
       { "title": "Boho arch", "description": "Earth tones and arch shapes. Fits relaxed outdoor weddings." },
       { "title": "Romantic garden", "description": "Lush florals with a soft palette. Fits garden parties and estate venues." },
-      { "title": "Art Deco", "description": "Geometric patterns and metallic lines. Fits glamorous evening weddings." },
+      { "title": "Art Deco", "description": "Geometric patterns and metallic lines. Fits [glamorous evening weddings](/create/wedding-invitation-maker/art-deco)." },
       { "title": "Rustic wood", "description": "Natural textures and warm tones. Fits barns, farms and woodland venues." },
-      { "title": "Beach & coastal", "description": "Sea colors and light patterns. Fits seaside and island weddings." },
+      { "title": "Beach & coastal", "description": "Sea colors and light patterns. Fits [seaside and island weddings](/create/wedding-invitation-maker/beach)." },
       { "title": "Moody & dark", "description": "Deep colors and rich florals. Fits autumn and winter evening weddings." },
       { "title": "Cherry blossom", "description": "Pink blossoms and gentle watercolor. Fits spring weddings and garden venues." }
     ]

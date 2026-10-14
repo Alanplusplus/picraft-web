@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-14",
   "overview": {
     "heading": "How the YouTube Thumbnail Maker works",
     "paragraphs": [
@@ -93,8 +93,8 @@
       { "title": "Warm vlog", "description": "Soft light and friendly tones. Good for lifestyle, travel diaries and daily vlogs." },
       { "title": "Tech review", "description": "Sleek surfaces and sharp product focus. Good for gadgets and software." },
       { "title": "Dark & eerie", "description": "Deep shadows and tension. Good for mysteries, horror and true crime." },
-      { "title": "Retro gaming", "description": "Pixel-inspired color and arcade energy. Good for gaming channels." },
-      { "title": "Fitness & energy", "description": "Dynamic angles and intense color. Good for workouts and sports." },
+      { "title": "Retro gaming", "description": "Pixel-inspired color and arcade energy. Good for [gaming channels](/create/youtube-thumbnail-maker/retro-gaming)." },
+      { "title": "Fitness & energy", "description": "Dynamic angles and intense color. Good for [workouts and sports](/create/youtube-thumbnail-maker/fitness)." },
       { "title": "Travel & explore", "description": "Open landscapes and bright skies. Good for adventure and destination videos." }
     ]
   },

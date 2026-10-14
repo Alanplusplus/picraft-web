@@ -5,7 +5,7 @@
   "summary": "Finish your wording first, then print a 5×7 in card with 0.125 in bleed on heavy stock (110 lb / 300 gsm is a common choice for a premium feel). Many couples mail paper invitations about six to eight weeks before the wedding; order a proof, match A7 envelopes, and use a phone share image when you want a quick digital send.",
   "topic": "Wedding",
   "published": "2026-10-09",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "scene": "wedding-invitation-maker",
   "relatedScenes": ["birthday-invitation-maker", "event-flyer-maker"],
   "relatedGuides": [
@@ -39,7 +39,7 @@
       "heading": "Choose paper weight and finish in general terms",
       "paragraphs": [
         "Wedding invitations are usually printed on card stock, not thin office paper. PiCraft's wedding checklist suggests heavy card stock, 110 lb (300 gsm) or more, for a premium feel in the hand. Your printer can show swatches; \"cover\" weight behaves differently from \"text\" weight on the same label.",
-        "Matte finishes hide fingerprints and glare under reception lighting. Slightly textured stocks suit watercolor or botanical art. Gloss can make dark ink pop but shows smudges more easily.",
+        "Matte finishes hide fingerprints and glare under reception lighting. Slightly textured stocks suit watercolor or botanical art. Gloss can make dark ink pop but shows smudges more easily. Cards with large dark areas, such as the [Art Deco](/create/wedding-invitation-maker/art-deco) style, are the ones to proof on the exact stock you chose.",
         "Ask whether the shop scores folds if you add a separate panel later in another tool. PiCraft exports a flat 5×7 in front design with bleed, not a folded booklet."
       ],
       "after": [
@@ -74,7 +74,7 @@
     {
       "heading": "When to mail invitations (common timelines)",
       "paragraphs": [
-        "Etiquette writers and wedding planners often suggest mailing formal invitations about six to eight weeks before the wedding so guests can arrange travel and reply. Destination weddings and holidays are sometimes mailed closer to eight to twelve weeks ahead so guests have more planning time. These are common guidelines, not legal rules; your venue, guest travel and RSVP method matter more than a single fixed date.",
+        "Etiquette writers and wedding planners often suggest mailing formal invitations about six to eight weeks before the wedding so guests can arrange travel and reply. Destination weddings and holidays are sometimes mailed closer to eight to twelve weeks ahead so guests have more planning time. For a seaside destination, the [beach and coastal](/create/wedding-invitation-maker/beach) style lets you put the town in the city line so guests see where to travel. These are common guidelines, not legal rules; your venue, guest travel and RSVP method matter more than a single fixed date.",
         "Many couples send save-the-date cards months earlier when the date and city are set, then follow with the formal invitation. Digital shares can go out sooner when you only need to hold the date.",
         "Set an RSVP deadline that gives you time to chase replies and share a head count with your caterer. Wedding planning sites often recommend an RSVP date about three to four weeks before the wedding, with at least two weeks before the day for a final count. Put the deadline on the invitation RSVP line or your website."
       ],

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-14",
   "overview": {
     "heading": "How the Sticker Maker works",
     "paragraphs": [
@@ -88,14 +88,14 @@
     "items": [
       { "title": "Cute kawaii", "description": "Soft pastels, round shapes and happy faces. Best for animals, food and gifts." },
       { "title": "Bold cartoon", "description": "Thick outlines and flat bright colors. Best for mascots, memes and anything that must read from a distance." },
-      { "title": "Retro 70s", "description": "Warm orange, mustard and brown with groovy shapes. Best for travel, music and nostalgic slogans." },
+      { "title": "Retro 70s", "description": "Warm orange, mustard and brown with groovy shapes. Best for [travel, music and nostalgic slogans](/create/sticker-maker/retro)." },
       { "title": "Watercolor", "description": "Gentle washes with fine ink details. Best for flowers, nature and journal stickers." },
       { "title": "Pixel art", "description": "Crisp 16-bit look with a limited palette. Best for gaming, tech and developer humor." },
       { "title": "Chibi anime", "description": "Big heads, tiny bodies and sparkly eyes. Best for characters and fandom-style art." },
       { "title": "Hand-drawn doodle", "description": "Loose pen lines with minimal color. Best for quick jokes and minimalist packs." },
       { "title": "Neon glow", "description": "Electric colors with glowing edges. Best for nightlife, music and bold statements." },
       { "title": "Pop art", "description": "Halftone dots, primary colors and heavy outlines. Best for punchy phrases and comic-style scenes." },
-      { "title": "Woodcut print", "description": "Carved black lines with limited flat color. Best for wildlife, outdoors and craft brands." }
+      { "title": "Woodcut print", "description": "Carved black lines with limited flat color. Best for [wildlife, outdoors and craft brands](/create/sticker-maker/woodcut)." }
     ]
   },
   "checklist": {

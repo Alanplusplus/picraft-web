@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "Wedding invitation styles",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "styles": [
     {
       "value": "botanical",
@@ -162,7 +162,7 @@
         },
         {
           "title": "Evening black-tie weddings",
-          "description": "The gold-and-ivory palette matches formal attire and candlelit receptions."
+          "description": "The gold-and-ivory palette matches formal attire and candlelit receptions. For a more graphic take on black tie, see [Art Deco](/create/wedding-invitation-maker/art-deco)."
         },
         {
           "title": "Families who prefer tradition",
@@ -274,6 +274,10 @@
         {
           "q": "Will dried flowers and grass crowd the text?",
           "a": "Text stays inside the arch with generous margins. Review the result and generate again if any line feels tight."
+        },
+        {
+          "q": "Does boho work for a beach wedding?",
+          "a": "The terracotta and dried-grass palette suits a relaxed outdoor wedding near the water as well. If you want waves and shells on the card itself, the [beach and coastal](/create/wedding-invitation-maker/beach) style is built around them."
         },
         {
           "q": "Is there a similar style with fresh flowers?",
