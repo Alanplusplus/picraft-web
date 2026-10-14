@@ -1,0 +1,264 @@
+{
+  "items": [
+    {
+      "url": "/examples/photo-trend-maker_80s_flashback_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "80s flashback photo of a woman with wavy auburn hair in a patterned sweater and acid-wash jeans, with film grain and an orange date stamp",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "80s_flashback",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_70s_slide_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "70s slide portrait of a smiling bearded man in a floral shirt by a lake, with sun-faded warm color and soft grain",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "70s_slide",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_y2k_digicam_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Y2K digital camera selfie of a woman in a pink tank top in a bedroom, with harsh flash and soft focus",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "y2k_digicam",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_night_flash_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Night flash photo of a couple in jackets smiling on a city street, lit by a bright on-camera flash with dark surroundings",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "night_flash",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_photo_booth_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Photo booth strips of a couple laughing, kissing and pulling faces in black and white with thick borders and heavy grain",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "photo_booth",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_claymation_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Claymation version of a golden retriever sitting on a rug, sculpted from matte modelling clay in a miniature living room",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "claymation",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_felt_miniature_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Felt miniature of a grey tabby cat on a windowsill, made of fuzzy needle-felted wool in a tiny diorama",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "felt_miniature",
+      "beforeAlt": "Original photo: a grey tabby cat on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_bobblehead_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Bobblehead of a smiling bearded man in a grey hoodie on a black base, photographed in a sunny park",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "bobblehead",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_toy_avatar_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "3D toy avatar of a silver-haired woman with yellow sunglasses and a flower in her hair, floating against a blue sky",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "toy_avatar",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_arcade_16bit_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "16-bit arcade fighter pixel art of a smiling man in a red jacket on a sunset temple stage, with PLAYER 1 and a health bar",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "arcade_16bit",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_blueprint_poster_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Blueprint poster of a golden retriever with front, side and back views and a paw detail, in white lines on cobalt blue",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "blueprint_poster",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_fantasy_newspaper_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Fantasy newspaper front page with a silver-haired woman in round glasses as the engraved portrait under the headline A Bolder Path",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "fantasy_newspaper",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_marble_statue_0_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Marble statue of a woman with wavy hair holding a staff and a scroll, in flowing drapery in a museum hall",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "marble_statue",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_80s_flashback_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "80s flashback snapshot of a couple posing close together in a living room with record shelves, flash glare and an orange date stamp",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "80s_flashback",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_70s_slide_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "70s slide portrait of a silver-haired woman in round glasses and a fringed vest at a campsite, in faded warm film color",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "70s_slide",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_y2k_digicam_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Y2K digital camera snapshot of a smiling man in a striped sweater holding a red cup, with flash glare and digital noise",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "y2k_digicam",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_night_flash_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Night flash photo of a bearded man in a dark jacket raising a glass on a city street, with glossy flash highlights",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "night_flash",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_photo_booth_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Photo booth strips showing a woman with wavy hair in playful poses, in high-contrast black and white with heavy grain",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "photo_booth",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_claymation_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Claymation portrait of a woman with wavy auburn hair in a green t-shirt, sculpted in clay with fingerprints and chunky hair strands",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "claymation",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_felt_miniature_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Felt miniature of a couple in jackets standing on an autumn sidewalk, made of soft needle-felted wool figures",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "felt_miniature",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_bobblehead_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Bobblehead of a silver-haired woman with round glasses holding a mug, seated on a small stool with a black base",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "bobblehead",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_toy_avatar_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "3D toy avatar of a woman with wavy auburn hair and orange sunglasses, a glossy vinyl head against a blue sky with clouds",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "toy_avatar",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_arcade_16bit_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "16-bit arcade fighter pixel art of a couple in fighting stances on a harbor stage at sunset, with PLAYER 1 and a health bar",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "arcade_16bit",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_blueprint_poster_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Blueprint poster of a tabby cat with side and back views and head, paw and ear details, in white lines on cobalt blue",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "blueprint_poster",
+      "beforeAlt": "Original photo: a grey tabby cat on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_fantasy_newspaper_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Fantasy newspaper front page with a smiling man as the engraved portrait under the headline Local Man Goes Big",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "fantasy_newspaper",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_marble_statue_1_1791953427614.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Marble statue of a golden retriever draped in a cloak with a paw on a laurel sphere, in a museum hall",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "marble_statue",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    }
+  ]
+}

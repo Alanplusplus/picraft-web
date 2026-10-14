@@ -1,0 +1,130 @@
+{
+  "updated": "2026-10-14",
+  "overview": {
+    "heading": "How the Photo Trend Maker works",
+    "paragraphs": [
+      "You upload one photo, choose one of 13 looks and pick a size. PiCraft sends the photo and a written description of the look to an AI image model, which redraws the whole picture in that style while keeping the subject recognizable. The result comes back as a JPG at the exact pixel size of the shape you chose.",
+      "Each look is a different kind of change. The film and camera looks, such as the [80s flashback](/create/photo-trend-maker/80s-flashback) and the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam), change the clothes, the surroundings and the flaws of the picture. The handmade looks, such as the [claymation world](/create/photo-trend-maker/claymation) and the [felt miniature](/create/photo-trend-maker/felt-miniature), rebuild the scene from physical materials. The rest turn the photo into a toy, a game screen, a blueprint, a newspaper page or a statue.",
+      "The size is chosen before the image is made, not after. A 9:16 image is composed for a tall frame, so the subject is not cut off the way it would be if you cropped a square. Each generation costs one credit and gives a new result, so you can run the same photo through several looks and keep the best one."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "A finished JPG at the exact size",
+      "description": "1080×1920 for 9:16, 1000×1500 for 2:3, 1080×1440 for 3:4 or 1080×1080 for 1:1. The image is generated for that shape first and then cut to the exact pixel size."
+    },
+    {
+      "title": "13 distinct looks",
+      "description": "Camera looks, handmade looks and game, print and art looks in one form. The [photo trends category](/categories/photo-trends) shows how they group together."
+    },
+    {
+      "title": "A subject that stays recognizable",
+      "description": "The instructions ask the AI to keep face shape, skin tone, age and hair color, and to keep pets and objects recognizable too."
+    },
+    {
+      "title": "No prompt to write",
+      "description": "Upload, choose and download. The wording behind each look is already written and tested, so you never have to describe grain, lighting or materials yourself."
+    },
+    {
+      "title": "A page for every look",
+      "description": "Each look has its own page with examples, best uses and tips, so you can see what to expect before you spend a credit."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Stories and full-screen vertical posts",
+      "description": "Choose 9:16 for stories, reels covers and any post that fills a phone screen. The subject is composed for a tall frame instead of being squeezed in afterwards."
+    },
+    {
+      "title": "Pinterest boards",
+      "description": "Choose 2:3 to match the shape Pinterest recommends for standard Pins. Trend looks group naturally into boards, such as retro portraits, toy versions of your pets or handmade scenes."
+    },
+    {
+      "title": "Profile pictures and avatars",
+      "description": "A [3D toy avatar](/create/photo-trend-maker/toy-avatar) or a [bobblehead](/create/photo-trend-maker/bobblehead) in the square size makes a profile picture that still looks like you without being a plain selfie."
+    },
+    {
+      "title": "Pet photos and small gifts",
+      "description": "A [marble statue](/create/photo-trend-maker/marble-statue) or a felt miniature of a dog or a cat makes a funny card, a mug design or a message for a friend who loves their pet."
+    },
+    {
+      "title": "Invitations and group chats",
+      "description": "A [fantasy newspaper](/create/photo-trend-maker/fantasy-newspaper) front page or a [photo booth strip](/create/photo-trend-maker/photo-booth) works as a funny invitation header, a birthday surprise or a gift for a group chat."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Start with a sharp, evenly lit photo",
+      "description": "Window light and daylight work best. Blurry, very dark or heavily filtered photos give the AI little to hold on to, and the result drifts further from the original."
+    },
+    {
+      "title": "Make the face or the pet large",
+      "description": "Close crops and waist-up shots keep the likeness better than a wide scene where the subject is small. Crop the photo first if you need to."
+    },
+    {
+      "title": "Choose the size first",
+      "description": "The size changes how the image is composed. Pick 9:16, 2:3, 3:4 or 1:1 before you create instead of cropping a finished image, which can cut off hands or heads."
+    },
+    {
+      "title": "Match the look to the photo",
+      "description": "Camera looks suit casual, well-lit photos with clothes and a background to restyle. Handmade and toy looks suit close portraits and pets. The blueprint poster suits one clear subject standing alone."
+    },
+    {
+      "title": "Try one photo in three looks",
+      "description": "Every generation is new, so running the same photo through three different looks is the fastest way to find the one that suits the person or the pet."
+    },
+    {
+      "title": "Read the text before you post",
+      "description": "Some looks draw short words into the image, such as a date stamp or a headline. AI can misspell them, so proofread and generate again if a letter is wrong."
+    },
+    {
+      "title": "Expect a stylized likeness",
+      "description": "A bobblehead or a clay figure is supposed to look like a toy, not a passport photo. Judge the result by whether friends would recognize you, not by whether every detail matches."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Choosing a look",
+    "intro": "Each look changes the materials, the color and the mood of the picture. Use this as a quick guide to which one fits your photo and where you plan to post it.",
+    "items": [
+      { "title": "80s Flashback", "description": "Faded warm film, flash glare, period clothes and an orange date stamp. Best for [casual selfies and group photos](/create/photo-trend-maker/80s-flashback)." },
+      { "title": "70s Slide Portrait", "description": "Sun-faded color, soft grain and a vignette, like an old family slide. Best for [relaxed, outdoor portraits](/create/photo-trend-maker/70s-slide)." },
+      { "title": "Y2K Digital Camera", "description": "Harsh flash, slightly blown highlights and early-2000s outfits. Best for [friends, parties and mirror-style snapshots](/create/photo-trend-maker/y2k-digicam)." },
+      { "title": "Night Out Flash", "description": "Bright on-camera flash against a dim city background. Best for [dressed-up portraits and night-out photos](/create/photo-trend-maker/night-flash)." },
+      { "title": "Photo Booth Strip", "description": "Black-and-white strips with playful poses and heavy contrast. Best for [couples, friends and funny group photos](/create/photo-trend-maker/photo-booth)." },
+      { "title": "Claymation World", "description": "Matte modelling clay with fingerprints and tool marks. Best for [portraits, pets and anything with a clear outline](/create/photo-trend-maker/claymation)." },
+      { "title": "Felt Miniature", "description": "Needle-felted wool figures in a small diorama. Best for [pets, couples and cozy scenes](/create/photo-trend-maker/felt-miniature)." },
+      { "title": "Bobblehead", "description": "A plastic figure with an oversized head on a black base. Best for [selfies and gifts](/create/photo-trend-maker/bobblehead)." },
+      { "title": "3D Toy Avatar", "description": "A glossy designer-toy head with sunglasses against a blue sky. Best for [profile pictures](/create/photo-trend-maker/toy-avatar)." },
+      { "title": "16-bit Arcade Fighter", "description": "A pixel-art fighter on a side-view stage with a health bar. Best for [gamers and humorous posts](/create/photo-trend-maker/arcade-16bit)." },
+      { "title": "Blueprint Poster", "description": "White technical lines on cobalt blue with detail views. Best for [a single clear subject such as a pet or a person](/create/photo-trend-maker/blueprint-poster)." },
+      { "title": "Fantasy Newspaper", "description": "An engraved portrait on a vintage front page with headlines. Best for [birthday jokes and invitations](/create/photo-trend-maker/fantasy-newspaper)." },
+      { "title": "Marble Statue", "description": "A neoclassical figure carved in white marble in a museum hall. Best for [dramatic portraits and pets](/create/photo-trend-maker/marble-statue)." }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you post or share",
+    "items": [
+      "Compare the result with your original. If hair color, age, glasses or skin tone changed in a way you do not like, generate again.",
+      "Zoom in on faces, hands and any small accessories. These are the places where AI most often goes wrong.",
+      "Read every word the look drew into the image, including date stamps, labels and headlines.",
+      "Check that the size matches where you will post it: 9:16 for stories, 2:3 for Pinterest, 3:4 for portrait posts and 1:1 for squares.",
+      "Look at the background for personal details such as house numbers, license plates or documents before you post a photo of your home.",
+      "Get permission from anyone who can be recognized in the picture before you publish it.",
+      "Upload the downloaded JPG itself instead of a screenshot, so the platform does not compress the image twice."
+    ]
+  },
+  "limits": [
+    "AI likeness is never exact. Small details such as freckles, jewelry or teeth can change, and groups of people drift more than a single face does.",
+    "The result is a flat JPG, not layers. To change something, pick the look and size again and generate a new image.",
+    "Words drawn into the image, such as a date stamp or newspaper headlines, can be misspelled, so always proofread.",
+    "Hands, fingers and small accessories can come out wrong, especially in looks that draw many small figures, such as the photo booth strip.",
+    "Wide photos with a tiny subject give weaker results than close portraits, so crop first if the face or pet is small.",
+    "The size is fixed before the image is made. Switching from 9:16 to 1:1 means generating a new design, which uses another credit."
+  ],
+  "sources": [
+    {
+      "label": "Pinterest Business Help: Pinterest product specs",
+      "url": "https://help.pinterest.com/en/business/article/pinterest-product-specs"
+    }
+  ]
+}

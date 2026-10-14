@@ -1,0 +1,966 @@
+{
+  "scene": "photo-trend-maker",
+  "field": "style",
+  "noun": "style",
+  "collection": "Photo trend looks",
+  "updated": "2026-10-14",
+  "styles": [
+    {
+      "value": "80s_flashback",
+      "slug": "80s-flashback",
+      "seo": {
+        "title": "80s Flashback Photo Maker – Retro 1985 AI Snapshot",
+        "description": "Turn a photo into a faded 1980s snapshot with period clothes, flash glare, film grain and an orange date stamp. Download a 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "80s Flashback Photo Maker"
+      },
+      "intro": [
+        "The 80s flashback look turns a modern photo into something that could have come out of a family album in 1985. Hair gets bigger, clothes get bolder, the room fills with period details, and the whole picture takes on the warm, faded color and soft grain of consumer film shot with a direct flash.",
+        "Upload a photo of yourself, a friend or a couple, pick a size and create. PiCraft keeps the faces recognizable while it restyles the outfits and the surroundings, and it adds a small orange date stamp in a lower corner, the way many printed photos from that decade carried one. You download a finished JPG at the exact pixel size."
+      ],
+      "bestFor": [
+        {
+          "title": "Selfies and single portraits",
+          "description": "One well-lit face gives the look the most to work with. The hair, clothes and room change, while the expression stays yours."
+        },
+        {
+          "title": "Friends and couples",
+          "description": "Two people standing close together suit the flash-and-grain feel of a party or a holiday snapshot taped into an album."
+        },
+        {
+          "title": "Throwback posts and themed parties",
+          "description": "It fits a throwback caption, a birthday post or a decade-night invitation where the joke is that the photo looks decades old."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a casual photo",
+          "description": "A relaxed pose in ordinary clothes beats a posed studio portrait here. The more everyday the original, the more convincing the snapshot feels."
+        },
+        {
+          "title": "Let the clothes change",
+          "description": "The look restyles hair, outfits and the room to match the era. If you want to keep one particular outfit, choose a different look, because this one is built to replace it."
+        },
+        {
+          "title": "Choose 3:4 or 2:3 for a print feel",
+          "description": "Printed snapshots were closer to a 3:4 frame than a tall phone screen. The 3:4 and 2:3 sizes keep that proportion, while 9:16 gives you a full-screen story."
+        },
+        {
+          "title": "Check the date stamp",
+          "description": "The stamp is drawn by the AI and set in 1985, but digits can come out wrong or the stamp can move to another corner. Read it before you post, and generate again if a number looks odd."
+        }
+      ],
+      "tryThese": [
+        "Photo: a selfie by a window in daylight, size 3:4",
+        "Photo: two friends laughing at a table, size 2:3",
+        "Photo: a person standing in a hallway, full length, size 9:16",
+        "Photo: a couple on a sofa, size 3:4"
+      ],
+      "faq": [
+        {
+          "q": "Will it add a date stamp every time?",
+          "a": "The instructions ask for a small orange-red stamp in a lower corner, dated 1985, but the AI sometimes places it differently or leaves it out. The stamp is part of the image, so you cannot edit it afterwards. Generate again if you need it."
+        },
+        {
+          "q": "How is it different from the 70s slide look?",
+          "a": "The 80s look uses direct flash, bright period accessories and stronger contrast. The [70s slide portrait](/create/photo-trend-maker/70s-slide) is warmer, softer and closer to an old projected family slide."
+        },
+        {
+          "q": "Does it work on group photos?",
+          "a": "It can, but a single face or two people keep the likeness best. Large groups tend to drift, so crop the photo to the people who matter before you upload it."
+        },
+        {
+          "q": "Can I make it vertical for stories?",
+          "a": "Yes. Choose 9:16 before you create and the picture is composed for a tall frame, so nobody is cut off. For a more print-like shape, choose 3:4. All sizes are on the [Photo Trend Maker](/create/photo-trend-maker) page."
+        }
+      ]
+    },
+    {
+      "value": "70s_slide",
+      "slug": "70s-slide",
+      "seo": {
+        "title": "70s Slide Portrait Maker – Sun-Faded Retro AI Photo",
+        "description": "Turn a photo into a sun-faded 1970s slide portrait with period clothes, warm red-yellow color, soft grain and a vignette. Download a finished JPG in four sizes.",
+        "h1": "70s Slide Portrait Maker"
+      },
+      "intro": [
+        "A 1970s slide portrait has a look that is hard to fake: warm red-yellow color, slightly lifted blacks, soft grain and a gentle vignette, as if the picture were projected onto a wall from a family slide tray. This look restyles your photo to match, including the hairstyle, the clothes and the room or landscape behind you.",
+        "It is gentler than the loud flash look of the 80s. Faces stay relaxed, the light feels natural and the color fades toward orange. Upload a portrait, choose a size and download a JPG. The person stays recognizable, and the color does most of the time travel."
+      ],
+      "bestFor": [
+        {
+          "title": "Outdoor and window-light portraits",
+          "description": "Soft daylight already suits the style, so a photo taken on a walk or by a window gives the most natural result."
+        },
+        {
+          "title": "Couples and relaxed family photos",
+          "description": "Warm color and faded shadows give pairs and small groups a candid, album-page feel."
+        },
+        {
+          "title": "Retro covers and flyers",
+          "description": "The 3:4 and 1:1 sizes work as the picture on a retro playlist cover, a vintage-themed invitation or a seventies-night flyer."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick a relaxed expression",
+          "description": "A natural smile or a glance to the side fits the era better than a posed grin. Slides were usually candid family moments, not studio portraits."
+        },
+        {
+          "title": "Use daylight photos",
+          "description": "Evening and flash photos give the AI hard shadows to work around. A daylight shot is easier to turn into a warm, faded slide."
+        },
+        {
+          "title": "Expect new clothes and hair",
+          "description": "The look changes the hairstyle and the outfit to early-1970s fashion, so the person looks like themselves in another decade rather than like a stranger."
+        },
+        {
+          "title": "Try the portrait sizes first",
+          "description": "A 3:4 or 2:3 frame feels like a slide mounted vertically. Choose 9:16 when the picture is headed for a phone story."
+        }
+      ],
+      "tryThese": [
+        "Photo: a person laughing in a park, size 3:4",
+        "Photo: a couple walking along a beach, size 2:3",
+        "Photo: a close portrait by a window, size 1:1",
+        "Photo: a friend leaning on a car in daylight, size 9:16"
+      ],
+      "faq": [
+        {
+          "q": "How is it different from the 80s flashback?",
+          "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) uses direct flash, bright accessories and an orange date stamp. The 70s slide look is softer, warmer and has no stamp."
+        },
+        {
+          "q": "Will the colors be the same every time?",
+          "a": "The warm red-yellow cast and faded shadows are always requested, but the exact tone changes with each generation and with the colors in your photo."
+        },
+        {
+          "q": "Can I upload a black-and-white photo?",
+          "a": "You can, but results are more predictable from a color photo, because the look adds its own warm tones. If you want a monochrome result, the [photo booth strip](/create/photo-trend-maker/photo-booth) is built for it."
+        },
+        {
+          "q": "Is this a real slide scan?",
+          "a": "No. It is an AI image made to look like one, with the grain, the fading and the vignette drawn in. Nothing is scanned from film."
+        },
+        {
+          "q": "Which photos give the best result?",
+          "a": "Portraits taken in daylight, with the person's face large in the frame. Outdoor shots, window-lit portraits and relaxed candid photos suit the look better than dark indoor pictures or crowded scenes, because the slide look depends on soft natural light and a simple background."
+        },
+        {
+          "q": "Can I try the same photo in other looks?",
+          "a": "Yes. Each generation is a separate design that costs one credit, so you can compare the 70s slide with the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam) and the [80s flashback](/create/photo-trend-maker/80s-flashback) using one photo."
+        }
+      ]
+    },
+    {
+      "value": "y2k_digicam",
+      "slug": "y2k-digicam",
+      "seo": {
+        "title": "Y2K Digital Camera Photo Maker – 2000s Flash Look",
+        "description": "Make your photo look like an early-2000s compact digital camera snapshot: harsh flash, soft focus, light noise and period outfits. Download a finished JPG.",
+        "h1": "Y2K Digital Camera Photo Maker"
+      },
+      "intro": [
+        "Early-2000s compact cameras had a recognizable set of flaws: harsh on-camera flash, blown highlights on skin, soft focus, a little digital noise and casual, off-center framing. This look recreates that rough charm and dresses the subject in period-correct clothes and accessories, so the picture feels like it came off an old memory card.",
+        "Upload a photo of yourself or a few friends, pick a size and let PiCraft do the rest. The faces stay recognizable while the look adds the flash glare, the faint compression artifacts and the slightly awkward framing that made those snapshots feel real."
+      ],
+      "bestFor": [
+        {
+          "title": "Party and night-out photos",
+          "description": "Harsh flash is the signature of this look, so friends at a party or a night out fit it naturally."
+        },
+        {
+          "title": "Casual selfies and mirror-style poses",
+          "description": "Awkward framing is part of the charm, so a relaxed pose works better than a perfectly composed portrait."
+        },
+        {
+          "title": "Nostalgia posts and themed invitations",
+          "description": "It suits two-thousands throwbacks, themed birthdays and invitations to a Y2K night where the dress code is the point."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a photo with a clear face",
+          "description": "The flash glare washes out detail, so start from a sharp photo with the face large in the frame. A small face in a wide scene can lose its likeness."
+        },
+        {
+          "title": "Accept the imperfections",
+          "description": "Blown highlights, soft focus and a crooked frame are the point. If you want a clean, flattering portrait, another look will serve you better."
+        },
+        {
+          "title": "No date stamp to proofread",
+          "description": "Unlike the [80s flashback](/create/photo-trend-maker/80s-flashback), this look does not add a date stamp, so there are no digits to check before you post."
+        },
+        {
+          "title": "Try 3:4 for the camera-screen feel",
+          "description": "Most compact cameras of the time made 4:3 pictures, so the 3:4 portrait size is the closest match. Choose 9:16 when the image is for a story."
+        }
+      ],
+      "tryThese": [
+        "Photo: two friends posing close together at night, size 3:4",
+        "Photo: a casual selfie in a bedroom, size 9:16",
+        "Photo: three friends at a restaurant table, size 2:3",
+        "Photo: a person holding a drink at a party, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "What does Y2K mean?",
+          "a": "It is short for the year 2000. People use it for the fashion, gadgets and photo style of roughly the late 1990s and early 2000s."
+        },
+        {
+          "q": "Why do the highlights look blown out?",
+          "a": "On purpose. Small flashes of that era often overexposed skin and left the background dark, and the look copies that effect together with soft focus and light noise."
+        },
+        {
+          "q": "Will my clothes change?",
+          "a": "Yes. Outfits, accessories and the hairstyle are restyled to early-2000s fashion, and the surroundings are adapted to match. If you want your own clothes to stay, try the [night out flash](/create/photo-trend-maker/night-flash) look instead."
+        },
+        {
+          "q": "Is this the same as a film look?",
+          "a": "No. Film looks have warm fading and organic grain, while this one is digital: flash, noise and compression. For film, try the [70s slide portrait](/create/photo-trend-maker/70s-slide)."
+        },
+        {
+          "q": "How many credits does a Y2K snapshot cost?",
+          "a": "One credit per generation, whichever size you pick, and the credit is returned automatically if a generation fails. Each attempt is a new picture, so it is worth trying a second time if the flash looks too harsh or the framing is too tight."
+        },
+        {
+          "q": "Can I use a group photo?",
+          "a": "Yes, and small groups suit the style well, since casual snapshots of two to four friends were the whole point of those cameras. Faces drift more as the group grows, so crop out anyone who does not need to be in the picture."
+        }
+      ]
+    },
+    {
+      "value": "night_flash",
+      "slug": "night-flash",
+      "seo": {
+        "title": "Night Flash Photo Maker – Candid Party Snapshot AI",
+        "description": "Give any photo a candid night-out look: bright on-camera flash, glossy highlights, deep shadows and fine grain. Download a 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "Night Out Flash Photo Maker"
+      },
+      "intro": [
+        "A direct flash at night does something daylight never does: it freezes the subject, bleaches the skin a little and throws the background into deep shadow. This look recreates that candid, magazine-style night-out photo, with glossy highlights, fine grain, slightly imperfect framing and a hint of motion.",
+        "Unlike the retro looks, it keeps real colors and modern clothes, so it works as an up-to-date party picture rather than a costume. Upload a portrait or a photo of friends, pick a size and download a JPG that looks like it was caught on the dance floor."
+      ],
+      "bestFor": [
+        {
+          "title": "Birthday and party posts",
+          "description": "A flash-lit portrait gives an ordinary evening the energy of a night out, even if the original photo was taken at a quiet table."
+        },
+        {
+          "title": "Outfit and fashion shots",
+          "description": "The look keeps real colors and textures, so clothes, jewelry and makeup stay visible under the strong highlights."
+        },
+        {
+          "title": "Profile pictures with attitude",
+          "description": "High contrast and deep shadows stand out in a crowded feed, and the candid framing keeps it from looking stiff."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a clear face",
+          "description": "A sharp photo with the face large in the frame holds up best. Strong flash removes subtle detail, so a blurry original gets even softer."
+        },
+        {
+          "title": "Expect the background to go dark",
+          "description": "The look pushes the surroundings toward a dim, moody city night. A daytime photo can turn into an evening one, while the subject stays the same."
+        },
+        {
+          "title": "Keep your own outfit",
+          "description": "This look changes the lighting, not the era, so your clothes stay recognizable. For an outfit swap, try the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam) look."
+        },
+        {
+          "title": "Use 9:16 for stories and 3:4 for posts",
+          "description": "Candid night photos usually fill a phone screen. The tall size composes the subject for a full-screen story, while 3:4 suits a feed post."
+        }
+      ],
+      "tryThese": [
+        "Photo: a person in a jacket on a city street, size 9:16",
+        "Photo: two friends laughing together, size 3:4",
+        "Photo: a dressed-up portrait at a restaurant, size 2:3",
+        "Photo: a close selfie with a bright smile, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Will my daytime photo turn into a night scene?",
+          "a": "Often, yes. The look asks for a dim, moody city-night background, so the setting around you can change while you stay the same. Pick a different look if you want the original location to stay recognizable."
+        },
+        {
+          "q": "Does it change my clothes?",
+          "a": "No. Real colors and textures are kept. The look changes the lighting and the mood, not the decade of the outfit."
+        },
+        {
+          "q": "Why does the skin look shiny?",
+          "a": "Glossy skin highlights are a signature of direct flash, so the look includes them on purpose. Results vary, and you can generate again if the glare is too strong for your taste."
+        },
+        {
+          "q": "Can I use it for a couple or two friends?",
+          "a": "Yes. Two people standing close together work well, and the flash gives them a candid look. Larger groups are more likely to drift, so crop to the people you want."
+        },
+        {
+          "q": "Can I use the same photo with several looks?",
+          "a": "Yes. Every generation is a separate design and costs one credit, so you can run one photo through the night flash, the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam) and the [80s flashback](/create/photo-trend-maker/80s-flashback) and compare. The faces stay recognizable in all of them, while the lighting and the era change."
+        },
+        {
+          "q": "What if the flash looks too harsh?",
+          "a": "Generate again. Every attempt gives different glare, shadows and framing, and one of them is usually closer to what you imagined. A photo that already has soft, even light tends to give a gentler result than one that is dark to begin with."
+        }
+      ]
+    },
+    {
+      "value": "photo_booth",
+      "slug": "photo-booth",
+      "seo": {
+        "title": "AI Photo Booth Strip Maker – Black & White Photos",
+        "description": "Turn one photo into vintage black-and-white photo booth strips with playful poses, harsh flash, heavy grain and thick borders. Download a finished JPG.",
+        "h1": "Photo Booth Strip Maker"
+      },
+      "intro": [
+        "A photo booth print is a small story told in a few frames: a straight face, a surprised face, a laugh, a lean toward the camera. This look turns one photo into a collage of vertical black-and-white strips with exactly that rhythm, finished with harsh flash, very high contrast, heavy grain, thick black borders and light wear.",
+        "The same person, or the same two people, appears in every frame with a consistent face, outfit and hairstyle, while the poses change from frame to frame. Upload a portrait or a photo of a pair, pick a size and download one finished JPG that looks like three strips dropped on a table."
+      ],
+      "bestFor": [
+        {
+          "title": "Couples and best friends",
+          "description": "When there are two people in the photo, they swap places between frames, which gives the strip the playful back-and-forth of a real booth session."
+        },
+        {
+          "title": "Birthday and party mementos",
+          "description": "A strip works as a funny gift for a group chat, a card insert or a decoration for a party where a booth was the plan."
+        },
+        {
+          "title": "Wedding and event announcements",
+          "description": "The black-and-white strip is a quick, charming picture for a save-the-date idea, a shared album cover or a thank-you message."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a clear face and a simple background",
+          "description": "The AI repeats the face across many frames, so a sharp, front-facing photo helps it stay consistent. A busy background just adds noise to the grain."
+        },
+        {
+          "title": "Two people work especially well",
+          "description": "A photo of a pair gives the look something to play with: kisses, laughs and surprised faces from both sides. A single person gets a series of expressions instead."
+        },
+        {
+          "title": "Let the AI choose the poses",
+          "description": "There is no pose control, so each generation brings different faces and gestures. If the strip feels flat, generate again for new expressions."
+        },
+        {
+          "title": "Choose a tall size",
+          "description": "Booth strips are tall and narrow. The 9:16 and 2:3 sizes give them the most height, while 1:1 packs the strips closer together."
+        }
+      ],
+      "tryThese": [
+        "Photo: a couple leaning together, size 9:16",
+        "Photo: two best friends smiling at the camera, size 2:3",
+        "Photo: a single portrait with a playful grin, size 3:4",
+        "Photo: a pair of siblings side by side, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Is the image always black and white?",
+          "a": "Yes. The look asks for black-and-white photos with high contrast, heavy grain and a harsh flash, like a classic booth print. If you want color with a vintage feel, try the [80s flashback](/create/photo-trend-maker/80s-flashback)."
+        },
+        {
+          "q": "Will every frame show the same person?",
+          "a": "That is the aim: the face, clothes and hairstyle stay consistent while the poses change. Likeness can still drift in a few frames, so look closely before you post, and generate again if one face is off."
+        },
+        {
+          "q": "Can I choose the poses?",
+          "a": "Not in this form. The maker chooses playful, surprised and laughing poses for you, and each generation is different."
+        },
+        {
+          "q": "Is this made with a real photo booth?",
+          "a": "No. It is an AI image that imitates the look of a booth print, with the borders, the contrast and the wear drawn in. Real booth prints are made with a camera and a printer."
+        },
+        {
+          "q": "How many strips will I get?",
+          "a": "The look builds a collage of three vertical strips with four frames each, slightly overlapping and tilted. The exact layout varies from picture to picture."
+        }
+      ]
+    },
+    {
+      "value": "claymation",
+      "slug": "claymation",
+      "seo": {
+        "title": "Claymation Photo Maker – Turn a Photo into Clay",
+        "description": "Rebuild your photo as a handmade clay stop-motion style scene with fingerprints, chunky shapes and a miniature set. Download a finished JPG in four sizes.",
+        "h1": "Claymation Photo Maker"
+      },
+      "intro": [
+        "Clay stop-motion has a look you can almost feel: chunky shapes, fingerprints in the surface, slightly uneven edges and small flaws left by hand. This look rebuilds your photo as a scene made of matte modelling clay. The subject, the pose, the clothes and the composition stay, and the whole world turns into a miniature set.",
+        "Faces get a lively, expressive look instead of a neutral photo expression, the way animated characters do. The scene is lit like a small studio set with real depth, so it reads as a photographed physical model rather than smooth computer graphics. Upload a portrait or a pet, choose a size and download a JPG."
+      ],
+      "bestFor": [
+        {
+          "title": "Portraits and profile pictures",
+          "description": "A clay version of a face is friendly and memorable, which makes it a good avatar for a creative page or a team profile."
+        },
+        {
+          "title": "Pets",
+          "description": "Dogs and cats have clear shapes and colors that translate well into modelling clay, and the result makes a funny card or a social post."
+        },
+        {
+          "title": "Couples and small families",
+          "description": "Two or three people in a simple setting become a tiny handmade scene, a gift idea for anniversaries and birthdays."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a clear outline",
+          "description": "Clay figures are built from simple forms, so a photo where the subject stands out from the background converts more cleanly than a crowded one."
+        },
+        {
+          "title": "Keep some surroundings in the photo",
+          "description": "The look rebuilds the background too. A kitchen, a park bench or a sofa gives the AI something to turn into a set instead of an empty void."
+        },
+        {
+          "title": "Expect a more expressive face",
+          "description": "The look gives the character a lively expression, so the clay version can look happier or more surprised than the photo. Generate again if the mood is off."
+        },
+        {
+          "title": "Compare with the felt look",
+          "description": "Clay is smooth and chunky with fingerprints. For fuzzy wool and a softer mood, try the [felt miniature](/create/photo-trend-maker/felt-miniature) with the same photo."
+        }
+      ],
+      "tryThese": [
+        "Photo: a dog sitting on a rug, size 2:3",
+        "Photo: a person smiling in a kitchen, size 9:16",
+        "Photo: a couple on a park bench, size 3:4",
+        "Photo: a cat on a windowsill, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Is the result real stop-motion animation?",
+          "a": "No. It is a still image made to look like a frame from a clay animation. There is no animation or video, and no real clay was used."
+        },
+        {
+          "q": "Can I turn my pet into clay?",
+          "a": "Yes. Pets work well because their shape and color are easy to rebuild from modelling clay. Make sure the animal is clearly visible and not hidden behind furniture."
+        },
+        {
+          "q": "Why does the face look different from my photo?",
+          "a": "The look gives characters a lively, exaggerated expression and simplifies the face into chunky clay forms. The identity should stay recognizable, but small details such as freckles are usually lost."
+        },
+        {
+          "q": "Which size is best?",
+          "a": "Choose 9:16 for a full-screen story, 2:3 for a Pinterest Pin, and 1:1 for an avatar. The set is composed for the shape you pick, so decide before you create."
+        },
+        {
+          "q": "Does it work on a group photo?",
+          "a": "It works best on one to three subjects. In bigger groups the clay figures lose their individual faces, so crop to the people or pets who matter."
+        }
+      ]
+    },
+    {
+      "value": "felt_miniature",
+      "slug": "felt-miniature",
+      "seo": {
+        "title": "Felt Miniature Photo Maker – Needle-Felted AI Art",
+        "description": "Turn a photo into a needle-felted wool diorama with fuzzy fibers, rounded shapes and warm light. Download a finished JPG in four sizes, no prompt needed.",
+        "h1": "Felt Miniature Photo Maker"
+      },
+      "intro": [
+        "Needle-felted figures have a gentle charm: simple rounded shapes, soft fuzzy fibers and tiny faces with almost no detail. This look rebuilds your photo as a handmade wool miniature, with the subject and the scene turned into plush felt figures in a small diorama lit by warm, soft light.",
+        "Because felt figures are so simple, the likeness comes from color, hair shape and clothes rather than from fine facial features. Upload a pet, a couple or a cozy scene, choose a size and download a JPG that looks like a photograph of something a crafter spent a week making."
+      ],
+      "bestFor": [
+        {
+          "title": "Pets",
+          "description": "Fur color and markings translate directly into wool, so a dog or a cat becomes a cuddly felt toy that is still clearly your animal."
+        },
+        {
+          "title": "Couples and families",
+          "description": "Small groups become a row of tiny felt figures. It makes a warm card, a gift picture or an anniversary post."
+        },
+        {
+          "title": "Craft and gift inspiration",
+          "description": "Use the picture as a mood board for a handmade gift or a craft idea. It shows the proportions and colors, though it is not a pattern."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a photo with clear colors",
+          "description": "Felt is built from solid color blocks. A photo with a distinct fur, hair or clothing color gives the AI clean areas of wool to reproduce."
+        },
+        {
+          "title": "Expect minimal faces",
+          "description": "Real felted figures have tiny bead-like eyes and very little facial detail, and the look copies that. Do not expect a detailed portrait."
+        },
+        {
+          "title": "Keep the scene simple",
+          "description": "A single subject or a pair on a simple background turns into a tidy diorama. A cluttered room can produce a confusing pile of fibers."
+        },
+        {
+          "title": "Compare with clay",
+          "description": "Felt is fuzzy and soft, while [claymation](/create/photo-trend-maker/claymation) is smooth and chunky with fingerprints. Try both on the same photo to see which suits it."
+        }
+      ],
+      "tryThese": [
+        "Photo: a cat sitting on a windowsill, size 2:3",
+        "Photo: a couple smiling on a sofa, size 3:4",
+        "Photo: a dog with a toy in a garden, size 1:1",
+        "Photo: a person holding a mug in a cozy room, size 9:16"
+      ],
+      "faq": [
+        {
+          "q": "Can I make a real felted figure from the image?",
+          "a": "The picture can inspire a craft project, but it is not a pattern or instructions. A felting artist would need to interpret the proportions and colors and choose materials."
+        },
+        {
+          "q": "Why are the faces so simple?",
+          "a": "That is how needle-felted figures look. They have rounded shapes and minimal facial detail, so the look keeps the character through colors and hair shape instead."
+        },
+        {
+          "q": "How is it different from the clay look?",
+          "a": "Felt shows soft wool fibers and warm, plush forms, while the [claymation look](/create/photo-trend-maker/claymation) shows matte modelling clay with fingerprints and tool marks."
+        },
+        {
+          "q": "Which photos work best?",
+          "a": "Sharp photos with a clear main subject: a pet on a rug, a couple on a sofa or a person in a cozy room. Very dark or crowded photos give weaker results."
+        },
+        {
+          "q": "Does the image keep my pet's markings?",
+          "a": "It tries to. Fur color and obvious markings usually survive the change, while fine details such as whiskers and small spots can be simplified into a few wool shapes."
+        }
+      ]
+    },
+    {
+      "value": "bobblehead",
+      "slug": "bobblehead",
+      "seo": {
+        "title": "AI Bobblehead Maker – Turn a Photo into a Figure",
+        "description": "Turn a selfie into a studio photo of a plastic bobblehead with an oversized head, molded hair and a black base. Download a finished JPG in four sizes.",
+        "h1": "AI Bobblehead Maker"
+      },
+      "intro": [
+        "A bobblehead is funny because of its proportions: a huge head on a tiny body, standing on a small base. This look turns the person in your photo into a studio product photo of a cheap, mass-produced plastic bobblehead, with chunky molded hair, painted eyes, visible paint edges, faint mold seams and tiny scuffs, so it looks like a physical object photographed on a table.",
+        "The face stays faithful to the person, with a friendly smile, while the head grows to roughly ten times the volume of the body. Upload a selfie, choose a size and download a JPG. The surroundings come from your photo, so an outdoor selfie gives you a figure standing in a park."
+      ],
+      "bestFor": [
+        {
+          "title": "Gifts and cards",
+          "description": "A bobblehead of the birthday person or the retiring colleague makes a quick, funny picture to put on a card or in a group message."
+        },
+        {
+          "title": "Team and announcement posts",
+          "description": "Turn staff photos into a lineup of figures for a welcome post, a milestone or a company newsletter."
+        },
+        {
+          "title": "Profile pictures",
+          "description": "A bobblehead of yourself is a memorable avatar that still looks like you and stands apart from a regular headshot."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a front-facing selfie",
+          "description": "A clear face looking at the camera gives the head its shape. Profile views and hats make the likeness harder to keep."
+        },
+        {
+          "title": "Check hair and smile",
+          "description": "The hair becomes chunky molded plastic and the smile is friendly and bright. If the result lost your hair color or parting, generate again."
+        },
+        {
+          "title": "Let the photo set the scene",
+          "description": "The background takes its cue from your original picture. Choose a photo taken somewhere you like, such as a park or an office."
+        },
+        {
+          "title": "Square works well for product shots",
+          "description": "The 1:1 size gives the figure a classic product-photo frame, while 9:16 leaves more room for the base and the setting."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie outdoors, size 1:1",
+        "Photo: a front-facing portrait in an office, size 3:4",
+        "Photo: a person waving at the camera, size 9:16",
+        "Photo: a close portrait with short hair, size 2:3"
+      ],
+      "faq": [
+        {
+          "q": "Can I order a real bobblehead from the image?",
+          "a": "The image is a picture, not a manufacturing file. A custom bobblehead maker has its own ordering steps and photo requirements, so use this image as a funny mockup or a reference to share."
+        },
+        {
+          "q": "Will it look like me?",
+          "a": "The instructions ask the AI to stay faithful to your identity, but a stylized figure never matches every detail. Hair, skin tone and the general shape of the face usually carry over."
+        },
+        {
+          "q": "Why does it look like a cheap plastic toy?",
+          "a": "That is the aim. The look copies the paint edges, mold seams and small scuffs of a mass-produced figure, because that is what makes it read as a real object instead of a polished render."
+        },
+        {
+          "q": "How is it different from the 3D toy avatar?",
+          "a": "The bobblehead is a full figure on a base photographed like a product. The [3D toy avatar](/create/photo-trend-maker/toy-avatar) is a single glossy head with sunglasses against a blue sky."
+        },
+        {
+          "q": "Can I make one of a couple?",
+          "a": "The look is written around one person, so a single portrait gives the most reliable result. For two people, try the [photo booth strip](/create/photo-trend-maker/photo-booth) instead."
+        }
+      ]
+    },
+    {
+      "value": "toy_avatar",
+      "slug": "toy-avatar",
+      "seo": {
+        "title": "3D Toy Avatar Maker – Glossy Designer Toy Head",
+        "description": "Turn a selfie into a glossy 3D designer-toy head with stylized hair and oversized sunglasses against a blue sky. Download a finished JPG in four sizes.",
+        "h1": "3D Toy Avatar Maker"
+      },
+      "intro": [
+        "This look turns a selfie into a premium collectible: a single floating head in soft vinyl, cut cleanly under the jaw, with ultra-smooth rounded forms, strong glossy highlights and sculpted, shiny hair finished with a playful accessory. Oversized retro wrap-around sunglasses in bold, coordinated colors complete the designer-toy look.",
+        "The head floats against a blue sky with soft clouds, lit like a studio render with clear highlights. Upload a straight-on selfie, choose a size and download a JPG. It is made for avatars, so the 1:1 square is the natural choice, and the head always sits fully inside the frame with comfortable margins."
+      ],
+      "bestFor": [
+        {
+          "title": "Profile pictures",
+          "description": "A glossy toy head looks like you but stands out in a feed full of standard headshots, so it works for personal and creator accounts."
+        },
+        {
+          "title": "Creators and community pages",
+          "description": "Streamers, writers and community managers can use a toy avatar as a recognizable face for a channel, a newsletter or a chat server."
+        },
+        {
+          "title": "Team pages and fun profiles",
+          "description": "A row of toy heads makes a friendly alternative to staff photos on an about page, while keeping each person recognizable."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a straight-on photo with visible hair",
+          "description": "The look sculpts your hair into shiny vinyl, so a clear view of the hairstyle and the face shape matters more than the background."
+        },
+        {
+          "title": "Accept the sunglasses",
+          "description": "Oversized sunglasses are part of the style. If your own glasses or your eyes are a key part of your likeness, pick a different look."
+        },
+        {
+          "title": "Choose the square for avatars",
+          "description": "Most profile pictures are shown in a circle or a square. The 1:1 size keeps the head centered, while 9:16 adds more sky above and below."
+        },
+        {
+          "title": "Check the crop under the jaw",
+          "description": "The head should be cut cleanly under the jaw with the neck visible and nothing duplicated. If it looks wrong, generate again."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie with short hair, size 1:1",
+        "Photo: a portrait with long curly hair, size 1:1",
+        "Photo: a front-facing headshot in daylight, size 3:4",
+        "Photo: a close selfie with a beard, size 9:16"
+      ],
+      "faq": [
+        {
+          "q": "Will it keep my glasses?",
+          "a": "Not reliably. The look adds oversized retro sunglasses as part of the design, so your own glasses are usually replaced. If they are essential to how you look, choose another style."
+        },
+        {
+          "q": "Can I get a transparent background?",
+          "a": "No. The blue sky with soft clouds is part of the picture, and the file is a JPG. If you need a cutout, remove the background in an image editor afterwards."
+        },
+        {
+          "q": "Is it a 3D model file?",
+          "a": "No. It is a flat image that looks like a 3D render. You cannot rotate it or 3D-print it. If you want a physical keepsake, use the picture as a reference for an illustrator or a toy maker instead."
+        },
+        {
+          "q": "How is it different from the bobblehead?",
+          "a": "The toy avatar is a glossy head only, with sunglasses and a sky background. The [bobblehead](/create/photo-trend-maker/bobblehead) is a full plastic figure on a base, photographed like a product."
+        },
+        {
+          "q": "Does it work with a pet?",
+          "a": "The look is written for people, so pet photos are less predictable. For pets, the [claymation](/create/photo-trend-maker/claymation) and [felt miniature](/create/photo-trend-maker/felt-miniature) looks are a safer choice."
+        }
+      ]
+    },
+    {
+      "value": "arcade_16bit",
+      "slug": "arcade-16bit",
+      "seo": {
+        "title": "16-bit Arcade Fighter Maker – Pixel Art Character",
+        "description": "Turn a photo into a 16-bit pixel-art arcade fighter on a side-view stage with a health bar. Download a finished JPG in four sizes, with no prompt to write.",
+        "h1": "16-bit Arcade Fighter Maker"
+      },
+      "intro": [
+        "This look redraws you as a full-body pixel-art fighter in an expressive pose, standing on a detailed side-view stage built from layered pixel scenery. Your hair, skin tone and outfit colors carry over, while the outfit itself is redesigned into a bold, readable arcade character, with PLAYER 1 above a health bar and other period-style interface elements.",
+        "The style is authentic limited-palette pixel art with hard edges and no smooth vector polish. Upload a photo that shows your body, pick a size and download a JPG. It is an original character in a generic arcade style, not a copy of any existing game."
+      ],
+      "bestFor": [
+        {
+          "title": "Gamers and streamers",
+          "description": "A fighter version of yourself works as a channel picture, a banner idea or a fun intro image for a stream."
+        },
+        {
+          "title": "Game-night and party invitations",
+          "description": "Send friends a versus-screen style picture for a game night, a birthday with a gaming theme or a tournament at home."
+        },
+        {
+          "title": "Humorous posts and team intros",
+          "description": "Turn a colleague or a friend into a fighter for a joke announcement, a leaderboard post or a team welcome."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Show more than the face",
+          "description": "A waist-up or full-body photo gives the AI an outfit and a stance to redesign. A tight face crop leaves it guessing the rest."
+        },
+        {
+          "title": "Hair and skin tone carry the likeness",
+          "description": "Pixel art removes fine detail, so the character recognizes you through hair color and style, skin tone and the colors of your clothes."
+        },
+        {
+          "title": "Proofread the interface text",
+          "description": "The screen shows PLAYER 1 and other short interface labels. AI can misspell small text, so read it and generate again if a letter is wrong."
+        },
+        {
+          "title": "Square gives the most balanced stage",
+          "description": "The 1:1 size keeps the fighter centered with room for the scenery. Tall sizes turn the stage into a vertical version with more sky and ground."
+        }
+      ],
+      "tryThese": [
+        "Photo: a full-length photo of a person standing, size 1:1",
+        "Photo: a waist-up photo with a bold jacket, size 9:16",
+        "Photo: a friend with colorful hair, size 3:4",
+        "Photo: a person in sportswear, size 2:3"
+      ],
+      "faq": [
+        {
+          "q": "Does it always say PLAYER 1?",
+          "a": "The instructions ask for PLAYER 1 above a health bar, but the AI sometimes changes the label or misplaces it. Read it before you post, since you cannot edit the text afterwards."
+        },
+        {
+          "q": "Will it copy a famous game?",
+          "a": "No. The look asks for an original character in a generic arcade style and does not use names, characters or logos from existing games."
+        },
+        {
+          "q": "Is it real pixel art?",
+          "a": "It imitates the look, with limited colors and hard edges, but the AI does not always keep a perfect pixel grid. It is a picture to enjoy, not a sprite sheet for game development."
+        },
+        {
+          "q": "Can I use it as a game character sprite?",
+          "a": "Not directly. The result is a flat, single image with a background and no animation frames, so you would need to redraw it by hand to use it in a game."
+        },
+        {
+          "q": "Why did my outfit change?",
+          "a": "The look redesigns the outfit as a readable arcade costume while keeping its colors. If you want to keep your real clothes, the [night out flash](/create/photo-trend-maker/night-flash) look keeps them."
+        }
+      ]
+    },
+    {
+      "value": "blueprint_poster",
+      "slug": "blueprint-poster",
+      "seo": {
+        "title": "Blueprint Poster Maker – Photo to Technical Drawing",
+        "description": "Turn a photo of a person, pet or object into a white-on-blue blueprint poster with schematic lines and detail views. Download a finished JPG in four sizes.",
+        "h1": "Blueprint Poster Maker"
+      },
+      "intro": [
+        "A blueprint poster treats an everyday subject like an engineering project. This look redraws the main subject of your photo as clean white technical lines on a deep cobalt-blue background with a subtle grid, adding construction guides, dimension ticks, arrows and a few minimal labels, plus two or three smaller detail views of the subject from other angles.",
+        "The style is flat and uncluttered: no shadows, no 3D shading and no extra objects. If the photo shows a person, they are drawn as a technical figure. Upload a clear photo of one subject, pick a size and download a JPG that works as wall art, a gift picture or a funny social post."
+      ],
+      "bestFor": [
+        {
+          "title": "Pets drawn like machines",
+          "description": "A dog or a cat in blueprint form is a popular gift idea, with its parts and angles shown like a prototype."
+        },
+        {
+          "title": "Favorite objects",
+          "description": "A bike, a guitar or a chair becomes a poster for a workshop wall, a desk or a hobby page."
+        },
+        {
+          "title": "Portraits with a nerdy twist",
+          "description": "A person as a technical figure makes a witty birthday card, a team announcement or a profile picture for an engineer."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use one clear subject on a plain background",
+          "description": "The look draws only the main subject. A photo with one pet, one object or one person standing alone gives the cleanest drawing."
+        },
+        {
+          "title": "Expect decorative labels",
+          "description": "The labels, arrows and measurements are for the look, not real specifications. Read any words and numbers before you share the picture."
+        },
+        {
+          "title": "Show the whole subject",
+          "description": "A full view of the subject gives the AI enough shape to draw the outline and the detail views. A tight crop leaves out parts of the drawing."
+        },
+        {
+          "title": "Pick a poster shape",
+          "description": "The 2:3 and 3:4 sizes match common poster frame shapes, such as 24×36 in and 18×24 in. The files are best for screens and small prints, so do not expect a large wall poster."
+        }
+      ],
+      "tryThese": [
+        "Photo: a dog standing on grass, size 2:3",
+        "Photo: a vintage bicycle against a wall, size 3:4",
+        "Photo: a person standing in a doorway, size 9:16",
+        "Photo: a cat sitting upright, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Is it a real technical blueprint?",
+          "a": "No. It is a stylized illustration. The dimensions and labels are decorative, so never use the picture for building, repairing or manufacturing anything."
+        },
+        {
+          "q": "Why are some labels hard to read?",
+          "a": "AI draws small text imperfectly, so labels can look like gibberish or contain wrong letters. Keep the picture as a design, and generate again if a label sits in an awkward place."
+        },
+        {
+          "q": "Does it work on people?",
+          "a": "Yes. A person is drawn as a technical figure in white lines, with several views. For a more realistic portrait in a graphic style, try the [fantasy newspaper](/create/photo-trend-maker/fantasy-newspaper) look."
+        },
+        {
+          "q": "Can I print it as a poster?",
+          "a": "You can print it at a small or medium size. The 2:3 file is 1000×1500 pixels, which suits screens and prints up to about postcard or A4 size, but it is not sharp enough for a very large poster."
+        },
+        {
+          "q": "Why is the background always blue?",
+          "a": "The look is built around the classic cobalt-blue blueprint with white lines and a grid. If you want another color scheme, another look will fit better."
+        }
+      ]
+    },
+    {
+      "value": "fantasy_newspaper",
+      "slug": "fantasy-newspaper",
+      "seo": {
+        "title": "Fantasy Newspaper Maker – Vintage Front Page Photo",
+        "description": "Turn your portrait into a vintage black-and-white newspaper front page with dramatic headlines about a fantasy adventure. Download a finished JPG in four sizes.",
+        "h1": "Fantasy Newspaper Maker"
+      },
+      "intro": [
+        "This look turns your portrait into the star of a whimsical black-and-white newspaper front page. Your face becomes the central picture, styled like an old engraved halftone photo, surrounded by large dramatic headlines, narrow columns and playful sub-headlines about a fantasy adventure starring you.",
+        "The page uses high-contrast black ink on off-white paper with fine paper texture and classic serif type. Upload a portrait, choose a size and download a JPG. The headlines are kept short and simple, so the spelling is more likely to come out right, though you should still proofread."
+      ],
+      "bestFor": [
+        {
+          "title": "Birthday and anniversary surprises",
+          "description": "A front page about the guest of honor makes a funny gift or a message in a group chat, and the story is always a fantasy."
+        },
+        {
+          "title": "Invitations and announcements",
+          "description": "Use the tall layout as a playful invitation header for a party, a game night or a reveal, where the headline is part of the joke."
+        },
+        {
+          "title": "Role-playing groups and clubs",
+          "description": "Game groups and clubs can turn members into heroes of a front page for a campaign, a newsletter or a team intro."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a portrait with a clear face",
+          "description": "The face is turned into a halftone-style engraving, so a sharp, evenly lit portrait keeps the likeness. Heavy shadows over the face lose detail."
+        },
+        {
+          "title": "Expect invented headlines",
+          "description": "The stories are fictional fantasy adventures written by the AI. You cannot choose the words, so treat the page as a playful picture, not a message."
+        },
+        {
+          "title": "Proofread the large headlines",
+          "description": "The big headlines matter most, and the AI keeps them short. Read them letter by letter, and generate again if a word looks wrong."
+        },
+        {
+          "title": "Choose a tall size",
+          "description": "A front page is tall, so the 9:16 and 2:3 sizes feel the most natural, while 1:1 crops the layout into a tighter square."
+        }
+      ],
+      "tryThese": [
+        "Photo: a friendly portrait of a person looking at the camera, size 2:3",
+        "Photo: a smiling selfie in daylight, size 9:16",
+        "Photo: an older relative in a cardigan at a table, size 3:4",
+        "Photo: a friend with a bold hat, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Can I write my own headlines?",
+          "a": "Not in this form. The maker writes short fantasy headlines for you. To use your own words, edit the downloaded image in a design app afterwards. Keep the original if you like the playful fantasy tone, since a rewritten headline can look out of place beside the engraved portrait."
+        },
+        {
+          "q": "Are the stories real news?",
+          "a": "No. Every story is invented and the page is made for fun. Do not present it as a real news article."
+        },
+        {
+          "q": "Why is the small text unreadable?",
+          "a": "AI images draw small body text as pattern rather than real words. The large headlines carry the meaning, and the small columns are decoration."
+        },
+        {
+          "q": "Does it copy a real newspaper?",
+          "a": "No. The look is a generic vintage front page, and the instructions avoid real brand logos and names."
+        },
+        {
+          "q": "Will the picture look like me?",
+          "a": "The portrait is styled as an engraved halftone photo, and the maker keeps your face recognizable. Fine details soften, so judge it by the overall likeness. For a toy version of your face, try the [bobblehead](/create/photo-trend-maker/bobblehead)."
+        }
+      ]
+    },
+    {
+      "value": "marble_statue",
+      "slug": "marble-statue",
+      "seo": {
+        "title": "Marble Statue Photo Maker – Greek Sculpture AI",
+        "description": "Turn a photo into a neoclassical white marble statue with flowing drapery and a dramatic pose in a museum hall. Download a finished JPG in four sizes.",
+        "h1": "Marble Statue Photo Maker"
+      },
+      "intro": [
+        "This look carves your photo into a Greek-style statue in white Carrara marble. If the photo shows a person, they become a heroic allegorical figure in a dynamic pose, with flowing drapery, a confident stance and a serious expression, while the structure of their face stays recognizable. The statue stands in a museum hall under warm gallery light with dramatic, realistic shadows.",
+        "The result is photorealistic, with natural perspective and a medium depth of field. Elements from your photo, such as a pet or an object, can be echoed in the sculpture. If the photo does not show a person, the look does not add one. Upload a portrait or a pet, choose a size and download a JPG."
+      ],
+      "bestFor": [
+        {
+          "title": "Dramatic profile pictures",
+          "description": "A marble version of yourself has a serious, timeless feel that stands apart from ordinary selfies."
+        },
+        {
+          "title": "Pets and objects",
+          "description": "A dog or a cat as a classical sculpture is a funny gift picture, and the effect works without a person in the frame."
+        },
+        {
+          "title": "Birthday jokes and cards",
+          "description": "Immortalize the birthday person or a retiring colleague in marble for a card, a toast slide or a group message."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a strong, clear face",
+          "description": "Marble sculptures are about structure. A sharp photo that shows the shape of the face, the brow and the jaw gives the AI something to carve."
+        },
+        {
+          "title": "Expect drapery instead of your clothes",
+          "description": "The look turns outfits into flowing classical drapery and changes the pose. Your clothes will not survive, but your features should."
+        },
+        {
+          "title": "Try it with a pet photo",
+          "description": "Without a person in the picture, the look sculpts the animal itself, which often gives the most charming results."
+        },
+        {
+          "title": "Choose a tall size for the full statue",
+          "description": "The 9:16 and 2:3 sizes leave room for the pedestal and the museum hall. The 1:1 size frames the figure more tightly."
+        }
+      ],
+      "tryThese": [
+        "Photo: a serious portrait looking off to the side, size 2:3",
+        "Photo: a golden retriever sitting upright, size 9:16",
+        "Photo: a person in daylight with a calm expression, size 3:4",
+        "Photo: a cat sitting on a windowsill, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Does it copy a real museum statue?",
+          "a": "No. It creates a new neoclassical figure in a Greek-inspired style, so the result is not a copy of any named sculpture or museum piece. Real museum statues are usually the work of named artists, so the look invents a fresh figure instead."
+        },
+        {
+          "q": "Will my pose change?",
+          "a": "Yes. The look places a person in a dynamic, heroic pose with flowing drapery. If you want to keep your pose and clothes, choose a different look."
+        },
+        {
+          "q": "How accurate is the face?",
+          "a": "The instructions keep the structure of the face recognizable, but sculpture simplifies details. Skin texture, small freckles and expressions soften into smooth marble."
+        },
+        {
+          "q": "Can my pet become a statue?",
+          "a": "Yes. If the photo shows only an animal, the look sculpts the animal and does not add a person. The result is usually a charming and funny picture."
+        },
+        {
+          "q": "Is the color always white?",
+          "a": "The statue is white Carrara-style marble, with warm light and shadows from the museum setting. For a color-rich handmade look, try the [claymation](/create/photo-trend-maker/claymation) look."
+        }
+      ]
+    }
+  ]
+}

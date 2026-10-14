@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getScenesByCategory } from "@/lib/scenes";
-import { CATEGORIES, categoryPath, COPYRIGHT_YEAR, SITE_NAME, TAGLINE } from "@/lib/site";
+import { CATEGORIES, categoryPath, COPYRIGHT_YEAR, SITE_NAME, SOCIAL_PROFILES, TAGLINE } from "@/lib/site";
 
 const RESOURCES = [
   { href: "/sizes", label: "Size guides" },
@@ -14,13 +14,29 @@ const RESOURCES = [
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-ink-200 bg-ink-50">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 md:grid-cols-3 lg:grid-cols-6">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 md:grid-cols-3 lg:grid-cols-7">
         <div>
           <div className="flex items-center gap-1.5">
             <Image src="/images/logo-64.png" alt="" width={24} height={24} className="h-6 w-6" />
             <Image src="/images/wordmark.png" alt={SITE_NAME} width={100} height={22} className="h-[18px] w-auto" />
           </div>
           <p className="mt-3 text-sm text-ink-500">{TAGLINE}</p>
+          {SOCIAL_PROFILES.length > 0 && (
+            <ul className="mt-4 space-y-2" aria-label="Follow PiCraft">
+              {SOCIAL_PROFILES.map((profile) => (
+                <li key={profile.name}>
+                  <a
+                    href={profile.url}
+                    target="_blank"
+                    rel="me noopener"
+                    className="text-sm text-ink-500 hover:text-ink-900"
+                  >
+                    {profile.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         {CATEGORIES.map((category) => (
           <div key={category.id}>

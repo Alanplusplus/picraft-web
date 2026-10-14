@@ -5,7 +5,7 @@ import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
 import { SceneCard } from "@/components/scene-card";
 import { getGuides, isGuideIndexable } from "@/lib/guides";
-import { getScenesByCategory } from "@/lib/scenes";
+import { getScene, getScenesByCategory } from "@/lib/scenes";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from "@/lib/seo";
 import {
   absoluteUrl,
@@ -14,9 +14,11 @@ import {
   FILE_RETENTION_DAYS,
   SITE_NAME,
   SITE_URL,
+  SOCIAL_PROFILES,
   SUPPORT_EMAIL,
   TAGLINE,
 } from "@/lib/site";
+import { getStyleFile, isStyleIndexable, styleExamples, styleLabel, stylePath } from "@/lib/styles";
 
 export const metadata = pageMetadata({ absoluteTitle: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION, path: "/" });
 
@@ -125,11 +127,28 @@ const HERO_SCENES = [
   { slug: "event-flyer-maker", name: "Event Flyer" },
 ];
 
+/** Cards for the "Trending photo looks" strip: one per look whose page is live, so the strip never links to a hidden page. */
+function trendCards() {
+  const scene = getScene("photo-trend-maker");
+  const file = getStyleFile("photo-trend-maker");
+  if (!scene || !file) return [];
+  return file.styles
+    .filter((style) => isStyleIndexable(file, style))
+    .flatMap((style) => {
+      const cover = styleExamples(scene.slug, style)[0];
+      return cover ? [{ href: stylePath(scene.slug, style), label: styleLabel(scene, file, style), cover }] : [];
+    });
+}
+
 export default function HomePage() {
   const resourceGuides = [
     ...getGuides("size").filter(isGuideIndexable).slice(0, 3),
     ...getGuides("blog").filter(isGuideIndexable).slice(0, 3),
   ];
+  const trends = trendCards();
+  const trendCategory = CATEGORIES.find((category) => category.id === "trends");
+  // With no live look pages yet, the plain category section stands in for the strip.
+  const categories = CATEGORIES.filter((category) => category.id !== "trends" || trends.length === 0);
 
   return (
     <>
@@ -143,6 +162,7 @@ export default function HomePage() {
             url: absoluteUrl("/"),
             logo: absoluteUrl("/images/logo-128.png"),
             email: SUPPORT_EMAIL,
+            ...(SOCIAL_PROFILES.length > 0 ? { sameAs: SOCIAL_PROFILES.map((profile) => profile.url) } : {}),
           },
           {
             "@context": "https://schema.org",
@@ -206,7 +226,50 @@ export default function HomePage() {
       </section>
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {CATEGORIES.map((category) => (
+        {trends.length > 0 && trendCategory && (
+          <section className="mt-16">
+            <div className="flex items-end justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight text-ink-950">
+                  <Link href={categoryPath(trendCategory.id)} className="hover:text-brand-700">
+                    Trending photo looks
+                  </Link>
+                </h2>
+                <p className="mt-1 text-sm text-ink-500">{trendCategory.description}</p>
+              </div>
+              <Link
+                href="/create/photo-trend-maker"
+                className="hidden shrink-0 text-sm font-medium text-brand-700 hover:underline sm:block"
+              >
+                Open the Photo Trend Maker →
+              </Link>
+            </div>
+            <ul className="mt-6 grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-7">
+              {trends.map((card) => (
+                <li key={card.href}>
+                  <Link href={card.href} className="group block">
+                    <Image
+                      src={card.cover.url}
+                      alt={card.cover.alt}
+                      width={card.cover.width}
+                      height={card.cover.height}
+                      sizes="(min-width: 1024px) 14vw, (min-width: 640px) 25vw, 33vw"
+                      className="aspect-[2/3] w-full rounded-xl border border-ink-200 object-cover transition group-hover:border-ink-400"
+                    />
+                    <p className="mt-2 text-sm font-medium text-ink-900 group-hover:text-brand-700">{card.label}</p>
+                  </Link>
+                </li>
+              ))}
+              <li className="flex items-center justify-center rounded-xl border border-dashed border-ink-300 p-3 text-center">
+                <Link href="/create/photo-trend-maker" className="text-sm font-semibold text-brand-700 hover:underline">
+                  Try your own photo →
+                </Link>
+              </li>
+            </ul>
+          </section>
+        )}
+
+        {categories.map((category) => (
           <section key={category.id} className="mt-16">
             <div className="flex items-end justify-between gap-4">
               <div>

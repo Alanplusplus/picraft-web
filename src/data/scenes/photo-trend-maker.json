@@ -1,0 +1,278 @@
+{
+  "slug": "photo-trend-maker",
+  "name": "Photo Trend Maker",
+  "category": "trends",
+  "summary": "Turn one photo into an 80s snapshot, a claymation world, a photo booth strip and 10 more trending looks.",
+  "badge": "13 looks · 9:16",
+  "indexable": true,
+  "seo": {
+    "title": "AI Photo Trend Maker – 80s, Y2K, Claymation & More",
+    "description": "Upload one photo and pick a trending look: 80s flashback, Y2K digicam, claymation, photo booth strip and more. Download it as a 9:16, 2:3, 3:4 or square JPG.",
+    "h1": "Photo Trend Maker",
+    "intro": [
+      "Upload a photo of yourself, a friend or a pet, pick one of 13 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head and more, and keeps the subject recognizable.",
+      "There is no prompt to write. The default size is a full-screen 9:16 vertical image, and you can switch to 2:3 for Pinterest, 3:4 for feed posts or a 1:1 square before you create."
+    ]
+  },
+  "cost": 1,
+  "engine": {
+    "model": "gpt-image-2.5",
+    "aspectRatio": "9:16",
+    "resolution": "2K"
+  },
+  "fields": [
+    {
+      "key": "photo",
+      "label": "Your photo",
+      "type": "image",
+      "required": true,
+      "help": "One clear, well-lit photo of a person, a pet or a scene. Only upload photos you own or have permission to use."
+    },
+    {
+      "key": "style",
+      "label": "Look",
+      "type": "select",
+      "default": "80s_flashback",
+      "options": [
+        {
+          "value": "80s_flashback",
+          "label": "80s Flashback",
+          "prompt": "an authentic snapshot from the mid-1980s. Restyle the hair, clothes, accessories and surroundings with unmistakable 1980s fashion and interior details: bold shapes, bright accessories, layered textures. Shot on consumer film with direct on-camera flash, faded warm colors, visible grain and slight softness. Add a small orange-red date stamp in a lower corner, set to a date in 1985. No readable posters and no modern objects."
+        },
+        {
+          "value": "70s_slide",
+          "label": "70s Slide Portrait",
+          "prompt": "a sun-faded candid portrait from an early-1970s slide film. Dress the subject in period clothing and an early-1970s hairstyle, and adjust the surroundings to match. Warm red-yellow color cast, slightly lifted blacks, fine film grain and a soft vignette, with a faint color shift in the shadows, as if projected from an old family slide."
+        },
+        {
+          "value": "y2k_digicam",
+          "label": "Y2K Digital Camera",
+          "prompt": "a casual snapshot from an early-2000s compact digital camera with on-camera flash. Dress the subject in period-correct clothing, accessories and a typical early-2000s hairstyle, and adapt the surroundings. Harsh direct flash, uneven exposure with slightly blown skin highlights, soft focus, faint digital noise in the shadows and light JPEG compression artifacts. Casual, slightly awkward framing. No date stamp."
+        },
+        {
+          "value": "night_flash",
+          "label": "Night Out Flash",
+          "prompt": "a stylish night-out photo shot with a bright on-camera flash. Strong flash highlights on the subject, deep shadows and slight overexposure against a dim, moody city-night background. Keep real colors and textures, glossy skin highlights and fine film grain. Candid magazine feel with imperfect framing, a touch of motion and a natural expression."
+        },
+        {
+          "value": "photo_booth",
+          "label": "Photo Booth Strip",
+          "prompt": "a vintage photo booth print. Build a collage of three vertical black-and-white photo strips of four frames each, slightly overlapping and tilted at small angles. Keep the person's face, clothes and hairstyle consistent in every frame, with playful, surprised and laughing poses. A few frames are partly cropped or the person leans toward the lens, and if there is more than one person they swap places between frames. Harsh direct flash, very high contrast with crushed blacks and blown whites, heavy grain, thick black borders and light wear."
+        },
+        {
+          "value": "claymation",
+          "label": "Claymation World",
+          "prompt": "a handmade clay stop-motion scene. Rebuild the subject as a stylized character sculpted from matte modelling clay: simplified chunky forms, slightly exaggerated proportions, a big expressive face with simple sculpted eyes and brows, and hair made of thick sculpted clay strands. Keep the subject's identity, pose, clothing colors and the composition. The surface must be clearly handmade, with fingerprints, tool marks, uneven edges and small imperfections. Rebuild the surroundings as a tiny hand-built miniature set with simple sculpted props, lit like a small studio set with shallow depth of field. It must read instantly as a photographed physical clay model, not as a photograph with a texture filter and not as smooth CGI."
+        },
+        {
+          "value": "felt_miniature",
+          "label": "Felt Miniature",
+          "prompt": "needle-felted wool art. Rebuild the subject and the scene as handmade needle-felted wool miniatures: simple rounded shapes, minimal facial detail with tiny bead-like eyes, and soft fuzzy fibers with clearly visible wool texture on every surface, including the background and props. A warm, slightly imperfect handmade feel. Plush felt figures in a tiny diorama, warm soft lighting and a charming stop-motion look. It must read instantly as a photographed physical felt craft, not as a photograph with a texture filter."
+        },
+        {
+          "value": "bobblehead",
+          "label": "Bobblehead",
+          "prompt": "a studio product photo of a cheap, mass-produced plastic bobblehead based on the person in the photo. Stay faithful to their identity, with a friendly bright smile and chunky molded plastic hair. The head is comically oversized, about ten times the volume of a tiny body, standing on a small black base. Simplified molded vinyl face with painted eyes and brows, visible paint edges, slight paint misalignment, faint mold seam lines, injection-molded texture, tiny scuffs and soft specular highlights. It must look like a photographed physical object, not CGI. The surroundings take their cue from the photo."
+        },
+        {
+          "value": "toy_avatar",
+          "label": "3D Toy Avatar",
+          "prompt": "a premium glossy 3D designer-toy render of the subject. Show a single floating head, never duplicated, cleanly cut under the jaw so the neck shows, fully inside the frame with comfortable margins. Soft vinyl collectible look: ultra-smooth simplified rounded volumes, strong glossy highlights on key areas, sculpted shiny stylized hair with a playful accessory, and oversized retro wrap-around sunglasses in bold coordinated colors. Strong studio lighting with clear highlights. Background: blue sky with soft clouds."
+        },
+        {
+          "value": "arcade_16bit",
+          "label": "16-bit Arcade Fighter",
+          "prompt": "a retro 16-bit arcade fighting game screen. Redraw the person as a full-body pixel-art fighter in an expressive pose, keeping their recognizable hair, skin tone and outfit colors but redesigning the outfit as a bold, readable arcade character. Show the name PLAYER 1 above a health bar. Turn the surroundings into a detailed side-view fighting stage with layered pixel scenery, dramatic lighting and period-appropriate arcade interface elements. Authentic limited-palette pixel art with hard edges and no smooth vector polish."
+        },
+        {
+          "value": "blueprint_poster",
+          "label": "Blueprint Poster",
+          "prompt": "a single-subject blueprint poster of the main subject in the photo; if it is a person, draw them as a technical figure. Clean white technical line drawing on a deep cobalt-blue blueprint background with a subtle grid. Flat 2D schematic lines, orthographic outline views, construction guides, dimension ticks, arrows and a few minimal technical labels. Add two or three smaller detail views of the subject from other angles. Keep the layout balanced and uncluttered, with no shadows, no 3D shading, no lighting and no extra objects."
+        },
+        {
+          "value": "fantasy_newspaper",
+          "label": "Fantasy Newspaper",
+          "prompt": "a whimsical black-and-white vintage newspaper front page with the person as the central portrait, styled like an old engraved halftone photo. Surround it with large dramatic headlines, narrow columns and playful sub-headlines about a fantasy adventure starring them. High-contrast black ink on off-white paper with fine paper texture and classic serif type. Keep their face recognizable and the layout tight and editorial. Use short, simple words in the headlines so the spelling stays correct."
+        },
+        {
+          "value": "marble_statue",
+          "label": "Marble Statue",
+          "prompt": "a refined neoclassical Greek-style statue carved in white Carrara marble, based on the subject. If the photo shows a person, turn them into a heroic allegorical figure in a dynamic pose with flowing drapery, a confident stance and a serious expression, keeping their face structure recognizable. If it does not show a person, do not add one. Echo elements from the photo in the sculpture. Museum hall setting, photorealistic, medium depth of field, natural perspective, warm gallery lighting with dramatic, realistic shadows."
+        }
+      ]
+    },
+    {
+      "key": "format",
+      "label": "Size",
+      "type": "select",
+      "default": "9x16",
+      "options": [
+        {
+          "value": "9x16",
+          "label": "Vertical 9:16 (1080×1920)",
+          "aspectRatio": "9:16",
+          "prompt": "a tall vertical 9:16 frame"
+        },
+        {
+          "value": "2x3",
+          "label": "Pinterest Pin 2:3 (1000×1500)",
+          "aspectRatio": "2:3",
+          "prompt": "a 2:3 portrait frame"
+        },
+        {
+          "value": "3x4",
+          "label": "Portrait post 3:4 (1080×1440)",
+          "aspectRatio": "3:4",
+          "prompt": "a 3:4 portrait frame"
+        },
+        {
+          "value": "1x1",
+          "label": "Square 1:1 (1080×1080)",
+          "aspectRatio": "1:1",
+          "prompt": "a square frame"
+        }
+      ]
+    }
+  ],
+  "prompt": "Restyle {{photo}} as a finished image in this look: {{style}}\nKeep the main subject clearly recognizable: the same face shape, features, skin tone, age, hair color and character of expression. Keep any pet or object recognizable too. Do not add real brand logos or celebrity likenesses, and add no text except where the look calls for it.\nCompose it for {{format}}, with the subject fully visible and the whole frame filled. No watermark.",
+  "outputs": [
+    {
+      "id": "vertical",
+      "label": "Vertical 1080×1920 JPG (9:16)",
+      "width": 1080,
+      "height": 1920,
+      "format": "jpg",
+      "when": {
+        "format": "9x16"
+      }
+    },
+    {
+      "id": "pin",
+      "label": "Pinterest Pin 1000×1500 JPG (2:3)",
+      "width": 1000,
+      "height": 1500,
+      "format": "jpg",
+      "when": {
+        "format": "2x3"
+      }
+    },
+    {
+      "id": "portrait",
+      "label": "Portrait post 1080×1440 JPG (3:4)",
+      "width": 1080,
+      "height": 1440,
+      "format": "jpg",
+      "when": {
+        "format": "3x4"
+      }
+    },
+    {
+      "id": "square",
+      "label": "Square 1080×1080 JPG (1:1)",
+      "width": 1080,
+      "height": 1080,
+      "format": "jpg",
+      "when": {
+        "format": "1x1"
+      }
+    }
+  ],
+  "specs": {
+    "heading": "Photo Trend file specs",
+    "columns": [
+      "Item",
+      "Spec"
+    ],
+    "rows": [
+      [
+        "Format",
+        "JPG, one file per design"
+      ],
+      [
+        "Vertical 9:16",
+        "1080×1920 px, the default and the full-screen vertical shape"
+      ],
+      [
+        "Pinterest Pin 2:3",
+        "1000×1500 px, the shape Pinterest recommends for Pins"
+      ],
+      [
+        "Portrait post 3:4",
+        "1080×1440 px"
+      ],
+      [
+        "Square 1:1",
+        "1080×1080 px"
+      ],
+      [
+        "Source photo",
+        "JPG, PNG or WebP, up to 12 MB"
+      ]
+    ],
+    "notes": [
+      "The image is generated at the shape you pick and then cut to the exact pixel size, so a 9:16 design is composed for a tall frame rather than cropped from a square.",
+      "Pinterest recommends 2:3 for standard Pins and may cut off taller images in feeds. See the [Photo trends category](/categories/photo-trends) for how the sizes line up with the platforms."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Upload a photo",
+      "description": "A clear, well-lit photo of a person, a pet or a scene."
+    },
+    {
+      "title": "Pick a look and a size",
+      "description": "Choose from 13 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback) or [Claymation World](/create/photo-trend-maker/claymation)."
+    },
+    {
+      "title": "Download the JPG",
+      "description": "A finished image at the exact pixel size, ready to post."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to write a prompt?",
+      "a": "No. You upload a photo, choose a look and choose a size. PiCraft writes the instructions for the AI, including how to keep the subject recognizable."
+    },
+    {
+      "q": "Which photos work best?",
+      "a": "A sharp, evenly lit photo where the face or the pet is large and clearly visible. Windowlight selfies, portraits and pet photos work well. Heavily filtered, blurry, very dark or tiny-subject photos give weaker results."
+    },
+    {
+      "q": "Will the result still look like me?",
+      "a": "The maker is built to keep your face shape, skin tone, age and hair color, but AI likeness is never exact. Looks that rebuild you as an object, such as the [bobblehead](/create/photo-trend-maker/bobblehead) or the [clay figure](/create/photo-trend-maker/claymation), keep the spirit more than the exact face. If a result is off, generate again."
+    },
+    {
+      "q": "Which size should I choose?",
+      "a": "Use 9:16 for full-screen vertical images, 2:3 for Pinterest Pins, 3:4 for portrait posts and 1:1 for squares. The size changes how the image is composed, so pick it before you create instead of cropping afterwards."
+    },
+    {
+      "q": "Can I upload a photo of someone else?",
+      "a": "Only upload photos you own or have permission to use, and ask before you restyle a recognizable person. Do not upload photos of children unless you are their parent or guardian."
+    },
+    {
+      "q": "What happens to the photo I upload?",
+      "a": "Your photo is sent to our AI provider to create the image and is not shown to other visitors. The Privacy Policy lists the providers we use and how long data is kept."
+    },
+    {
+      "q": "Can I use the results commercially?",
+      "a": "Yes, for personal and commercial projects, as long as your input does not infringe anyone else's rights. Check trademarks, and get permission from any person who can be recognized in the photo before you publish a design."
+    },
+    {
+      "q": "Why is the text in some looks wrong?",
+      "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) date stamp, the [arcade fighter](/create/photo-trend-maker/arcade-16bit), [blueprint](/create/photo-trend-maker/blueprint-poster) and [newspaper](/create/photo-trend-maker/fantasy-newspaper) looks can draw short words into the image. AI can misspell them, so read the result and generate again if something is off."
+    },
+    {
+      "q": "How many credits does a design cost?",
+      "a": "One credit per design, whichever look and size you choose. If a generation fails, the credit is returned automatically."
+    },
+    {
+      "q": "What if I don't like the result?",
+      "a": "Generate again. Each attempt is a new design, so the same photo and look can give a different pose, background or expression."
+    }
+  ],
+  "related": [
+    "sticker-maker",
+    "t-shirt-design-maker",
+    "youtube-thumbnail-maker"
+  ]
+}

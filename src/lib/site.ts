@@ -27,8 +27,15 @@ export const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? "";
 export const PLAUSIBLE_SRC = process.env.NEXT_PUBLIC_PLAUSIBLE_SRC || "https://plausible.io/js/script.js";
 export const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "";
 export const BING_SITE_VERIFICATION = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "";
+/** Content of the Pinterest `p:domain_verify` meta tag, used to claim the website on Pinterest. */
+export const PINTEREST_VERIFICATION = process.env.NEXT_PUBLIC_PINTEREST_VERIFICATION ?? "";
 
-export type CategoryId = "photos" | "print" | "creators" | "merch";
+/** Public social profiles. A profile is linked in the footer and listed in the structured data once its URL is set. */
+export const SOCIAL_PROFILES: { name: string; url: string }[] = [
+  { name: "Pinterest", url: process.env.NEXT_PUBLIC_SOCIAL_PINTEREST ?? "" },
+].filter((profile) => profile.url);
+
+export type CategoryId = "trends" | "photos" | "print" | "creators" | "merch";
 
 export interface Category {
   id: CategoryId;
@@ -39,6 +46,12 @@ export interface Category {
 }
 
 export const CATEGORIES: Category[] = [
+  {
+    id: "trends",
+    slug: "photo-trends",
+    name: "Photo trends",
+    description: "Turn one photo into a trending look, sized for full-screen vertical, Pinterest and feed posts.",
+  },
   {
     id: "photos",
     slug: "product-and-listing-photos",

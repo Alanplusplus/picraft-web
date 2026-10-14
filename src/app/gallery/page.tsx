@@ -59,12 +59,13 @@ export default function GalleryPage() {
       <div className="mt-4 max-w-3xl space-y-3 text-base leading-relaxed text-ink-700">
         <p>
           These are real designs made with PiCraft makers. Every one was created from a short form: names and dates for
-          an invitation, a headline for a thumbnail, a single idea for a sticker. Pick a look you like, open its maker
-          and make your own with your details.
+          an invitation, a headline for a thumbnail, a single idea for a sticker, one photo for a photo trend. Pick a look
+          you like, open its maker and make your own with your details.
         </p>
         <p>
-          Names, venues and brands in the examples are made up. Use the examples for ideas and always proofread your
-          own text before you print or publish.
+          Names, venues and brands in the examples are made up, and the people and pets in the photo trend examples
+          are AI-generated, not real. Use the examples for ideas and always proofread your own text before you print
+          or publish.
         </p>
       </div>
 

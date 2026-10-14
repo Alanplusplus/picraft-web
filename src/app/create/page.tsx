@@ -8,11 +8,13 @@ import { CATEGORIES, categoryPath, type CategoryId } from "@/lib/site";
 export const metadata = pageMetadata({
   absoluteTitle: "All PiCraft Makers – Invitations, Cards, Thumbnails & More",
   description:
-    "All PiCraft makers: product and listing photos, invitations, menus, flyers, business cards, thumbnails, banners, book covers, stickers and t-shirt designs.",
+    "All PiCraft makers: photo trends, product photos, invitations, menus, flyers, business cards, thumbnails, banners, book covers, stickers and t-shirt designs.",
   path: "/create",
 });
 
 const INTROS: Record<CategoryId, string> = {
+  trends:
+    "One photo, redone in a look that is going around: an 80s snapshot, a claymation figure, a photo booth strip. Pick a look and a size, from full-screen 9:16 to a Pinterest Pin, and download a finished JPG.",
   photos:
     "Photos that have to follow someone else's rules. Marketplace main images need a pure white background, and property listings need bright, straight photos with honest labels on any edits. These makers start from your own photo.",
   print:
@@ -24,6 +26,7 @@ const INTROS: Record<CategoryId, string> = {
 };
 
 const GUIDE = [
+  { need: "Restyle a photo of yourself or a pet", slug: "photo-trend-maker", name: "Photo Trend Maker" },
   { need: "Sell a product online", slug: "amazon-product-photo", name: "Amazon Product Photo Maker" },
   { need: "List a property", slug: "real-estate-listing-photo", name: "Real Estate Listing Photo Editor" },
   { need: "Invite people to a wedding", slug: "wedding-invitation-maker", name: "Wedding Invitation Maker" },

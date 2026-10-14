@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { CompareSlider } from "@/components/compare-slider";
 import { FaqList } from "@/components/faq-list";
 import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
@@ -52,6 +53,12 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
   const styleFile = getStyleFile(scene.slug);
   const styleEntries = styleFile?.styles.filter((entry) => isStyleIndexable(styleFile, entry)) ?? [];
   const guides = getGuidesForScene(scene.slug);
+  // Photo makers show a before / after slider. When the maker has styles, one example per style is enough here;
+  // the other examples of a style are on its own page.
+  const showcase = examples.some((example) => example.before)
+    ? examples.filter((example, index) => !example.style || examples.findIndex((other) => other.style === example.style) === index)
+    : [];
+  const showcasePortrait = showcase.length > 0 && showcase.every((example) => example.height > example.width);
 
   const jsonLd = [
     {
@@ -116,7 +123,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
             </ol>
           </section>
 
-          <aside className="lg:sticky lg:top-20 lg:self-start">
+          <aside id="create" className="scroll-mt-20 lg:sticky lg:top-20 lg:self-start">
             <SceneGenerator scene={toClientScene(scene)} />
           </aside>
         </div>
@@ -124,28 +131,44 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
         {examples.length > 0 && (
           <section className="mt-16">
             <h2 className="text-2xl font-bold tracking-tight text-ink-950">Made with the {scene.name}</h2>
-            {examples.some((e) => e.before) ? (
-              <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {examples.map((example) => (
-                  <div key={example.url} className="overflow-hidden rounded-xl border border-ink-200">
-                    {example.before && (
-                      <div className="grid grid-cols-2">
-                        <div className="relative border-r border-ink-200">
-                          <span className="absolute left-2 top-2 rounded bg-ink-900/80 px-1.5 py-0.5 text-[10px] font-medium text-white">Before</span>
-                          <Image src={example.before} alt={example.beforeAlt ?? "Original photo before editing"} width={example.width} height={example.height} sizes="(min-width: 1024px) 16vw, 25vw" className="h-full w-full object-cover" />
-                        </div>
-                        <div className="relative">
-                          <span className="absolute left-2 top-2 rounded bg-brand-800/90 px-1.5 py-0.5 text-[10px] font-medium text-white">After</span>
-                          <Image src={example.url} alt={example.alt} width={example.width} height={example.height} sizes="(min-width: 1024px) 16vw, 25vw" className="h-full w-full object-cover" />
-                        </div>
-                      </div>
-                    )}
-                    {!example.before && (
-                      <Image src={example.url} alt={example.alt} width={example.width} height={example.height} sizes="(min-width: 1024px) 33vw, 50vw" className="w-full" />
-                    )}
-                  </div>
-                ))}
-              </div>
+            {showcase.length > 0 ? (
+              <>
+                <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
+                  Drag the handle on any photo to compare the original with the result.
+                  {styleFile ? ` Pick a ${styleFile.noun} to open it with that ${styleFile.noun} already selected.` : " Use the form above to try it with your own photo."}
+                </p>
+                <ul className={`mt-6 grid gap-4 ${showcasePortrait ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
+                  {showcase.map((example) => {
+                    const entry = styleFile?.styles.find((item) => item.value === example.style);
+                    const label = entry && styleFile ? styleLabel(scene, styleFile, entry) : undefined;
+                    const href = entry && styleFile && isStyleIndexable(styleFile, entry) ? stylePath(scene.slug, entry) : "#create";
+                    return (
+                      <li key={example.url} className="flex flex-col overflow-hidden rounded-xl border border-ink-200 bg-white">
+                        <CompareSlider
+                          before={example.before ?? example.url}
+                          beforeAlt={example.beforeAlt ?? "Original photo before editing"}
+                          after={example.url}
+                          afterAlt={example.alt}
+                          width={example.width}
+                          height={example.height}
+                          sizes={showcasePortrait ? "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
+                        />
+                        <Link
+                          href={href}
+                          className="group flex flex-1 flex-wrap items-center justify-between gap-x-2 gap-y-1.5 border-t border-ink-200 px-3 py-2.5 hover:bg-brand-50"
+                        >
+                          <span className="text-sm font-semibold leading-snug text-ink-950 group-hover:text-brand-700">
+                            {label ?? "Try it with your own photo"}
+                          </span>
+                          <span className="shrink-0 rounded-lg bg-brand-700 px-2.5 py-1 text-xs font-medium text-white group-hover:bg-brand-800">
+                            {label ? "Try it" : "Start"} →
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
             ) : (
               <div className={`mt-6 gap-4 ${landscape ? "columns-1 sm:columns-2 lg:columns-3" : "columns-2 sm:columns-3 lg:columns-4"}`}>
                 {examples.map((example) => (

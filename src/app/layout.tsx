@@ -6,7 +6,13 @@ import { SessionProvider } from "@/components/session-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "@/lib/seo";
-import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION, SITE_NAME, SITE_URL } from "@/lib/site";
+import {
+  BING_SITE_VERIFICATION,
+  GOOGLE_SITE_VERIFICATION,
+  PINTEREST_VERIFICATION,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site";
 
 import "./globals.css";
 
@@ -24,7 +30,13 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   verification: {
     google: GOOGLE_SITE_VERIFICATION || undefined,
-    other: BING_SITE_VERIFICATION ? { "msvalidate.01": BING_SITE_VERIFICATION } : undefined,
+    other:
+      BING_SITE_VERIFICATION || PINTEREST_VERIFICATION
+        ? {
+            ...(BING_SITE_VERIFICATION ? { "msvalidate.01": BING_SITE_VERIFICATION } : {}),
+            ...(PINTEREST_VERIFICATION ? { "p:domain_verify": PINTEREST_VERIFICATION } : {}),
+          }
+        : undefined,
   },
 };
 

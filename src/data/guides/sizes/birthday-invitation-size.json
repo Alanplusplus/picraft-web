@@ -4,7 +4,7 @@
   "description": "Birthday invitation size for kids' parties: 5×7 in print with bleed, A7 envelopes, home printing on 8.5×11 in stock, and 1080×1500 px for texts and chats.",
   "summary": "Print birthday invitations at 5×7 in with 0.125 in bleed (5.25×7.25 in at 300 DPI), slip them into A7 envelopes for classroom handouts, or send a 1080×1500 px JPG in the parents' group chat. At home, print at 100% on card stock and trim.",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-14",
   "scene": "birthday-invitation-maker",
   "relatedScenes": ["wedding-invitation-maker", "sticker-maker", "event-flyer-maker"],
   "relatedGuides": ["wedding-invitation-size", "flyer-size"],
@@ -29,7 +29,7 @@
     {
       "heading": "When to print vs when to share digitally",
       "paragraphs": [
-        "Print for backpack handouts, bulletin boards or mailed RSVPs. Share the 1080×1500 px JPG when the guest list is in a group chat or you need replies fast. Many families send the image first and print a few cards for school or grandparents."
+        "Print for backpack handouts, bulletin boards or mailed RSVPs. Share the 1080×1500 px JPG when the guest list is in a group chat or you need replies fast. Many families send the image first and print a few cards for school or grandparents. For the group chat, a playful teaser such as a [fantasy newspaper](/create/photo-trend-maker/fantasy-newspaper) front page starring the birthday guest can sit next to the invitation. Read its headlines before you send it, and keep the invitation as the source for the date, time and place."
       ]
     },
     {
