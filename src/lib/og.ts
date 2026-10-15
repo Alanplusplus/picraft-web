@@ -19,6 +19,27 @@ export const OG_COLORS = {
 const IMAGES_DIR = path.join(process.cwd(), "public", "images");
 const cache = new Map<string, string>();
 
+/**
+ * Reads any image below `public/` (for example `/examples/x.webp`) and returns it as a data URI.
+ * It is kept at its own size (never enlarged, at most `maxWidth` wide) and written as a high quality JPEG,
+ * because a large PNG data URI makes the card renderer run out of buffer space.
+ */
+export async function publicImageDataUri(publicPath: string, maxWidth: number): Promise<string> {
+  const key = `public:${publicPath}@${maxWidth}`;
+  const cached = cache.get(key);
+  if (cached) return cached;
+  const file = path.join(process.cwd(), "public", publicPath);
+  if (!fs.existsSync(file)) throw new Error(`Missing image: ${file}`);
+  const jpeg = await sharp(file)
+    .resize({ width: maxWidth, withoutEnlargement: true })
+    .flatten({ background: "#ffffff" })
+    .jpeg({ quality: 92, mozjpeg: true })
+    .toBuffer();
+  const uri = `data:image/jpeg;base64,${jpeg.toString("base64")}`;
+  cache.set(key, uri);
+  return uri;
+}
+
 /** Reads an image from public/images and returns it as a PNG data URI, which the share-image renderer accepts. */
 export async function imageDataUri(relativePath: string, width: number): Promise<string> {
   const key = `${relativePath}@${width}`;

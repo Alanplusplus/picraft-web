@@ -1,165 +1,231 @@
 import "server-only";
 
-import crypto from "node:crypto";
+import fs from "node:fs";
 import path from "node:path";
 
-import { getExamples, getScenes, isIndexable, type Example, type Scene } from "./scenes";
-import { absoluteUrl, CATEGORIES, categoryPath, type Category, type CategoryId } from "./site";
-import { getStyleFile, isStyleIndexable, stylePath } from "./styles";
+import { getGuide, type GuideKind } from "./guides";
+import { knownPages } from "./links";
+import { getExamples, getExamplesForStyle, getScene, type Example } from "./scenes";
+import { absoluteUrl, CATEGORIES, type Category, type CategoryId } from "./site";
 
 /**
  * Pinterest RSS feeds. Pinterest turns every feed item into a Pin on one board, so there is one feed
- * per category and each feed lists the public example images of that category's makers.
+ * per category. A feed lists only original pins that are made for Pinterest (`src/data/pins/daily.json`),
+ * never the example images of the maker pages.
  *
- * Pinterest recommends a 2:3 image (1000×1500 px) and may cut off anything taller, so the pin image
- * route keeps shapes between 1:1 and 2:3 as they are and trims taller ones to 2:3.
+ * Every pin image is an original file in image storage (OSS) and the feed links to it directly, so
+ * Pinterest gets the uncompressed picture. Nothing here resizes or re-encodes it.
  */
-export const PIN_WIDTH = 1000;
-export const PIN_MAX_RATIO = 1.5;
 export const PIN_MAX_TITLE = 100;
 export const PIN_MAX_DESCRIPTION = 800;
+/** Newest pins first; older ones drop out of the feed, which Pinterest has already read. */
+export const FEED_MAX_ITEMS = 60;
 
-const DAY_MS = 86_400_000;
+/** Cards drawn in code are 1000×1500 layouts rendered at 2×, so the PNG in storage is 2000×3000. */
+export const CARD_LAYOUT = { width: 1000, height: 1500 };
+export const CARD_SCALE = 2;
+export const CARD_SIZE = { width: CARD_LAYOUT.width * CARD_SCALE, height: CARD_LAYOUT.height * CARD_SCALE };
+export const MAX_SHEET_ROWS = 8;
+export const COLLAGE_SIZE = 4;
+export const MAX_CHIPS = 4;
+export const MAX_DEMO_INPUTS = 6;
 
-/** First day a feed releases pins. Set PINTEREST_FEED_START (YYYY-MM-DD) to the day you connect the feeds. */
-const DEFAULT_FEED_START = "2026-10-15";
-
-function feedStart(): number {
-  const value = process.env.PINTEREST_FEED_START || DEFAULT_FEED_START;
-  const time = Date.parse(`${value}T00:00:00Z`);
-  return Number.isNaN(time) ? Date.parse(`${DEFAULT_FEED_START}T00:00:00Z`) : time;
+/** Where the uploaded originals are served from. Override with PINTEREST_IMAGE_BASE if the storage domain changes. */
+export function pinImageBase(): string {
+  return (process.env.PINTEREST_IMAGE_BASE || "https://static.picraft.ai/picraft/pins").replace(/\/+$/, "");
 }
 
-/** How many new pins each feed releases per day. A new Pinterest account should not receive a flood of pins at once. */
-function pinsPerDay(): number {
-  const value = Number.parseInt(process.env.PINTEREST_PINS_PER_DAY ?? "", 10);
-  return Number.isFinite(value) && value > 0 ? value : 5;
+export type PinKind = "sheet" | "collage" | "demo" | "beforeafter" | "image";
+
+/** One pin in `src/data/pins/daily.json`. */
+export interface DailyPinData {
+  id: string;
+  kind: PinKind;
+  category: CategoryId;
+  /** First day the pin appears in its feed, YYYY-MM-DD (UTC). */
+  release: string;
+  title: string;
+  description: string;
+  /** Path of the indexable page the pin leads to. */
+  link: string;
+  /** File name in image storage. Defaults to `<id>.png`. */
+  file?: string;
+  /** Pixel size of the stored original. Cards are 2000×3000; required for `image` pins. */
+  width?: number;
+  height?: number;
+  /** A cheat sheet drawn from a table of a size guide, so the numbers match the guide. */
+  sheet?: { guide: string; section: number; heading: string; subtitle?: string };
+  /** Four real, approved examples under one headline. */
+  collage?: { heading: string; items: { scene: string; style: string; label: string }[] };
+  /** What a visitor types and the real result it produced. */
+  demo?: { heading: string; scene: string; example: string; inputs: { label: string; value: string }[]; chips: string[] };
+  /** A real before and after pair of one example. */
+  beforeafter?: { heading: string; scene: string; example: string; chips: string[] };
 }
 
-export interface PinItem {
-  /** File name of the pin image, for example `3f2a9c1d5b7e4a60.jpg`. */
+export interface FeedItem {
   id: string;
   category: CategoryId;
   title: string;
   description: string;
   /** Absolute page URL the pin links to, with UTM parameters. */
   link: string;
-  /** Absolute URL of the pin image. */
+  /** Absolute URL of the original image in storage. */
   image: string;
+  imageType: "image/jpeg" | "image/png";
   width: number;
   height: number;
-  /** Path of the source image below `public/`, for example `/examples/sticker-maker_1.webp`. */
-  source: string;
-}
-
-export interface FeedItem extends PinItem {
   releasedAt: Date;
+  kind: PinKind;
+  data: DailyPinData;
 }
 
-function pinId(example: Example): string {
-  return `${crypto.createHash("sha1").update(example.url).digest("hex").slice(0, 16)}.jpg`;
+function parseGuideRef(ref: string): { kind: GuideKind; slug: string } | undefined {
+  const [kind, slug] = ref.split(":");
+  return (kind === "size" || kind === "blog") && slug ? { kind, slug } : undefined;
 }
 
-/** Output size of a pin image: at most 1000 px wide, never taller than 2:3. */
-export function pinSize(example: Pick<Example, "width" | "height">): { width: number; height: number } {
-  const width = Math.min(PIN_WIDTH, example.width);
-  const ratio = Math.min(example.height / example.width, PIN_MAX_RATIO);
-  return { width, height: Math.round(width * ratio) };
+/** The example of a look whose shape is closest to 2:3, which fills a pin best. */
+export function collageExample(scene: string, style: string): Example | undefined {
+  return [...getExamplesForStyle(scene, style)]
+    .filter((example) => example.approved)
+    .sort((a, b) => Math.abs(a.height / a.width - 1.5) - Math.abs(b.height / b.width - 1.5))[0];
 }
 
-export function pinSourceFile(item: Pick<PinItem, "source">): string {
-  return path.join(process.cwd(), "public", item.source);
+/** An approved example picked by its image path, for demo and before/after pins. */
+export function findExample(scene: string, url: string): Example | undefined {
+  return getExamples(scene).find((example) => example.approved && example.url === url);
 }
 
-function trimTo(text: string, max: number): string {
-  if (text.length <= max) return text;
-  const cut = text.slice(0, max - 1);
-  const space = cut.lastIndexOf(" ");
-  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,;:–-]+$/, "")}…`;
+export function sheetTable(pin: DailyPinData) {
+  const ref = pin.sheet && parseGuideRef(pin.sheet.guide);
+  const guide = ref && getGuide(ref.kind, ref.slug);
+  const table = guide && pin.sheet ? guide.sections[pin.sheet.section]?.table : undefined;
+  return guide && table ? { guide, table } : undefined;
 }
 
-/** A pin title of at most `max` characters that ends at a natural break instead of a trailing ellipsis. */
-function titleFrom(text: string, max: number): string {
-  if (text.length <= max) return text;
-  const head = text.slice(0, max);
-  for (const separator of [", ", " with ", " and ", " in "]) {
-    const at = head.lastIndexOf(separator);
-    if (at >= 40) return head.slice(0, at);
+export function pinFile(pin: Pick<DailyPinData, "id" | "file">): string {
+  return pin.file ?? `${pin.id}.png`;
+}
+
+function dailyIssues(pin: DailyPinData, pages: Map<string, boolean>): string[] {
+  const issues: string[] = [];
+  if (!/^[a-z0-9-]+$/.test(pin.id)) issues.push("id must use a-z, 0-9 and -");
+  if (!CATEGORIES.some((category) => category.id === pin.category)) issues.push(`unknown category "${pin.category}"`);
+  if (Number.isNaN(Date.parse(`${pin.release}T00:00:00Z`))) issues.push(`release "${pin.release}" is not YYYY-MM-DD`);
+  if (!pin.title || pin.title.length > PIN_MAX_TITLE) issues.push(`title needs 1-${PIN_MAX_TITLE} characters`);
+  if (pin.description.length < 60 || pin.description.length > PIN_MAX_DESCRIPTION) {
+    issues.push(`description needs 60-${PIN_MAX_DESCRIPTION} characters`);
   }
-  return trimTo(text, max);
-}
+  const indexable = pages.get(pin.link);
+  if (!pin.link.startsWith("/") || indexable === undefined) issues.push(`link ${pin.link} is not a page`);
+  else if (!indexable) issues.push(`link ${pin.link} is noindex`);
+  if (!/\.(png|jpg)$/.test(pinFile(pin))) issues.push("file must end in .png or .jpg");
 
-function sentence(text: string): string {
-  return text.trim().replace(/[.!?\s]+$/, "");
-}
-
-function targetPath(scene: Scene, example: Example): string {
-  if (example.style) {
-    const file = getStyleFile(scene.slug);
-    const style = file?.styles.find((entry) => entry.value === example.style);
-    if (file && style && isStyleIndexable(file, style)) return stylePath(scene.slug, style);
-  }
-  return `/create/${scene.slug}`;
-}
-
-function toItem(scene: Scene, example: Example): PinItem {
-  const id = pinId(example);
-  const size = pinSize(example);
-  const url = new URL(absoluteUrl(targetPath(scene, example)));
-  url.searchParams.set("utm_source", "pinterest");
-  url.searchParams.set("utm_medium", "social");
-  url.searchParams.set("utm_campaign", `rss_${scene.category}`);
-  const alt = sentence(example.alt);
-  return {
-    id,
-    category: scene.category,
-    title: titleFrom(alt, PIN_MAX_TITLE),
-    description: trimTo(`${alt}. Made with the PiCraft ${scene.name}. ${scene.summary}`, PIN_MAX_DESCRIPTION),
-    link: url.toString(),
-    image: absoluteUrl(`/pins/${id}`),
-    ...size,
-    source: example.url,
+  const chipIssues = (chips: string[]) => {
+    if (chips.length < 1 || chips.length > MAX_CHIPS) issues.push(`needs 1-${MAX_CHIPS} chips`);
   };
-}
 
-/** Round-robin over several lists, so the first items of a feed show variety instead of one maker. */
-function interleave<T>(lists: T[][]): T[] {
-  const out: T[] = [];
-  const longest = Math.max(0, ...lists.map((list) => list.length));
-  for (let round = 0; round < longest; round += 1) {
-    for (const list of lists) if (round < list.length) out.push(list[round]);
+  if (pin.kind === "image") {
+    if (!pin.width || !pin.height) issues.push("an image pin needs width and height of the stored original");
+    else if (pin.height / pin.width < 1 || pin.height / pin.width > 1.52) issues.push("image must be between 1:1 and 2:3");
+  } else if (pin.kind === "sheet") {
+    const found = sheetTable(pin);
+    if (!found) issues.push("sheet needs a guide and a section with a table");
+    else {
+      if (!found.guide.sources?.length) issues.push(`guide ${pin.sheet?.guide} has no sources, so it cannot back a cheat sheet`);
+      if (found.table.rows.length > MAX_SHEET_ROWS) issues.push(`table has more than ${MAX_SHEET_ROWS} rows`);
+      if (found.table.columns.length !== 2) issues.push("a sheet needs a table with 2 columns");
+    }
+  } else if (pin.kind === "collage") {
+    const items = pin.collage?.items ?? [];
+    if (items.length !== COLLAGE_SIZE) issues.push(`collage needs ${COLLAGE_SIZE} items`);
+    for (const item of items) {
+      if (!getScene(item.scene) || !collageExample(item.scene, item.style)) {
+        issues.push(`collage item ${item.scene}/${item.style} has no approved example`);
+      }
+    }
+  } else if (pin.kind === "demo") {
+    const demo = pin.demo;
+    if (!demo || !findExample(demo.scene, demo.example)) issues.push("demo needs an approved example of its maker");
+    else {
+      chipIssues(demo.chips);
+      if (demo.inputs.length < 1 || demo.inputs.length > MAX_DEMO_INPUTS) issues.push(`demo needs 1-${MAX_DEMO_INPUTS} inputs`);
+    }
+  } else if (pin.kind === "beforeafter") {
+    const pair = pin.beforeafter;
+    const example = pair && findExample(pair.scene, pair.example);
+    if (!pair || !example) issues.push("beforeafter needs an approved example of its maker");
+    else {
+      if (!example.before) issues.push("that example has no before image");
+      chipIssues(pair.chips);
+    }
+  } else {
+    issues.push(`unknown kind "${pin.kind}"`);
   }
-  return out;
+  return issues;
 }
 
-function sceneItems(scene: Scene): PinItem[] {
-  // Landscape examples (banners, thumbnails, cards) are cropped badly on a vertical board, so skip them.
-  const examples = getExamples(scene.slug).filter((example) => example.height >= example.width);
-  const groups = new Map<string, Example[]>();
-  for (const example of examples) {
-    const key = example.style ?? "";
-    groups.set(key, [...(groups.get(key) ?? []), example]);
+let cache: FeedItem[] | null = null;
+
+function readDailyFile(): DailyPinData[] {
+  const file = path.join(process.cwd(), "src", "data", "pins", "daily.json");
+  if (!fs.existsSync(file)) return [];
+  return (JSON.parse(fs.readFileSync(file, "utf8")) as { pins: DailyPinData[] }).pins;
+}
+
+/** Every pin, checked. A broken pin fails a production build, so a feed never serves a dead link. */
+export function getDailyPins(): FeedItem[] {
+  if (cache) return cache;
+  const pages = knownPages();
+  const seen = new Set<string>();
+  const errors: string[] = [];
+  const pins: FeedItem[] = [];
+
+  for (const data of readDailyFile()) {
+    const issues = dailyIssues(data, pages);
+    if (seen.has(data.id)) issues.push("duplicate id");
+    seen.add(data.id);
+    if (issues.length > 0) {
+      errors.push(`  - ${data.id}: ${issues.join("; ")}`);
+      continue;
+    }
+    const url = new URL(absoluteUrl(data.link));
+    url.searchParams.set("utm_source", "pinterest");
+    url.searchParams.set("utm_medium", "social");
+    url.searchParams.set("utm_campaign", `daily_${data.category}`);
+    const file = pinFile(data);
+    pins.push({
+      id: data.id,
+      category: data.category,
+      title: data.title,
+      description: data.description,
+      link: url.toString(),
+      image: `${pinImageBase()}/${file}`,
+      imageType: file.endsWith(".jpg") ? "image/jpeg" : "image/png",
+      width: data.width ?? CARD_SIZE.width,
+      height: data.height ?? CARD_SIZE.height,
+      releasedAt: new Date(`${data.release}T00:00:00Z`),
+      kind: data.kind,
+      data,
+    });
   }
-  return interleave([...groups.values()]).map((example) => toItem(scene, example));
+
+  if (errors.length > 0) {
+    const message = `Invalid pins in src/data/pins/daily.json:\n${errors.join("\n")}`;
+    if (process.env.NODE_ENV === "production") throw new Error(message);
+    console.error(`[pinterest] ${message}`);
+  }
+  cache = pins;
+  return pins;
 }
 
-/** Every pin of one category in release order, whether or not it is released yet. */
-export function getCategoryPins(category: CategoryId): PinItem[] {
-  const scenes = getScenes().filter((scene) => scene.category === category && isIndexable(scene));
-  return interleave(scenes.map(sceneItems));
-}
-
-export function getAllPins(): PinItem[] {
-  return CATEGORIES.flatMap((category) => getCategoryPins(category.id));
-}
-
-/** The pins a feed lists at a given moment: `PINTEREST_PINS_PER_DAY` more each day since the start date. */
+/** The pins a feed lists at a given moment: released ones, newest first. */
 export function getFeedItems(category: CategoryId, now: Date = new Date()): FeedItem[] {
-  const start = feedStart();
-  const perDay = pinsPerDay();
-  return getCategoryPins(category)
-    .map((pin, index) => ({ ...pin, releasedAt: new Date(start + Math.floor(index / perDay) * DAY_MS) }))
-    .filter((pin) => pin.releasedAt.getTime() <= now.getTime());
+  return getDailyPins()
+    .filter((pin) => pin.category === category && pin.releasedAt.getTime() <= now.getTime())
+    .sort((a, b) => b.releasedAt.getTime() - a.releasedAt.getTime())
+    .slice(0, FEED_MAX_ITEMS);
 }
 
 export function feedFileName(category: Category): string {
@@ -185,10 +251,10 @@ export function buildFeedXml(category: Category, now: Date = new Date()): string
       <title>${escapeXml(item.title)}</title>
       <link>${escapeXml(item.link)}</link>
       <description>${escapeXml(item.description)}</description>
-      <guid isPermaLink="false">pin-${item.id.replace(/\.jpg$/, "")}</guid>
+      <guid isPermaLink="false">pin-${escapeXml(item.id)}</guid>
       <pubDate>${item.releasedAt.toUTCString()}</pubDate>
-      <enclosure url="${escapeXml(item.image)}" length="0" type="image/jpeg" />
-      <media:content url="${escapeXml(item.image)}" medium="image" type="image/jpeg" width="${item.width}" height="${item.height}" />
+      <enclosure url="${escapeXml(item.image)}" length="0" type="${item.imageType}" />
+      <media:content url="${escapeXml(item.image)}" medium="image" type="${item.imageType}" width="${item.width}" height="${item.height}" />
     </item>`,
     )
     .join("\n");
@@ -197,7 +263,7 @@ export function buildFeedXml(category: Category, now: Date = new Date()): string
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>${escapeXml(`PiCraft – ${category.name}`)}</title>
-    <link>${escapeXml(absoluteUrl(categoryPath(category.id)))}</link>
+    <link>${escapeXml(absoluteUrl(`/categories/${category.slug}`))}</link>
     <description>${escapeXml(category.description)}</description>
     <language>en-us</language>
     <lastBuildDate>${now.toUTCString()}</lastBuildDate>

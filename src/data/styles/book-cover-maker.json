@@ -1,0 +1,228 @@
+{
+  "scene": "book-cover-maker",
+  "field": "genre",
+  "noun": "genre",
+  "collection": "Book cover genres",
+  "updated": "2026-10-15",
+  "styles": [
+    {
+      "value": "fantasy",
+      "slug": "fantasy",
+      "seo": {
+        "title": "Fantasy Book Cover Maker – Kindle 1600×2560 & 6×9 Print",
+        "description": "Make a fantasy book cover with a painted, atmospheric scene and ornate gold title lettering. Download a 1600×2560 px Kindle JPG and a 6×9 in front with bleed.",
+        "h1": "Fantasy Book Cover Maker"
+      },
+      "intro": [
+        "A fantasy cover promises another world before the first page. The usual signals are a painted, atmospheric scene, a dramatic sky, one powerful object such as a throne, a sword or a tower, and gold or metallic lettering with a little ornament. Readers who browse fantasy look for these cues and tend to skip a cover that lacks them.",
+        "Enter your title and author name, add a subtitle or series line if the book has one, and describe the central image. PiCraft paints a front cover in this style and sets the title large enough to read as a thumbnail. You download a 1600×2560 px eBook JPG and a 6.125×9.25 inch front panel with bleed for a 6×9 inch paperback."
+      ],
+      "bestFor": [
+        {
+          "title": "Epic and high fantasy novels",
+          "description": "Quests, wars over a crown and chosen-one stories suit the grand skies, castles and armored heroes this style paints."
+        },
+        {
+          "title": "Series with a recurring emblem",
+          "description": "A crown, a flame or a sigil can return on every book. Keep the genre the same and describe a related image for each title, so the shelf of covers reads as one series."
+        },
+        {
+          "title": "Authors testing cover directions",
+          "description": "Try a throne on a mountain, a queen under a night sky and a knight on a bridge before you brief an illustrator or order a print run."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Build the cover around one image",
+          "description": "A throne wreathed in golden flames, or a young queen beneath a swirling galaxy, gives the painting a clear center. A map of ten kingdoms, three dragons and a battle at once makes the cover busy and shrinks the title."
+        },
+        {
+          "title": "Use the subtitle field for the series line",
+          "description": "A line such as \"Book Two of the Ashen Crown\" tells fantasy readers that a long story is on offer. Keep it under about eight words, because a long series line is set in tiny type."
+        },
+        {
+          "title": "Choose a short, strong title",
+          "description": "Fantasy titles are usually set in large ornate capitals, often in gold. Two or three words, like The Ember Throne or Crown of Stars, fit that lettering best. A seven-word title forces smaller type that is harder to read at 160 px tall."
+        },
+        {
+          "title": "Read every invented name letter by letter",
+          "description": "Fantasy titles and author names often contain made-up words. The text is drawn into the image, so check each letter and generate again if one has changed."
+        }
+      ],
+      "tryThese": [
+        "Title: \"The Ember Throne\", subtitle: \"Book Two of the Ashen Crown\", author: \"Elena Castillo\", cover idea: \"A crumbling throne engulfed in golden flames atop a mountain peak at dusk\"",
+        "Title: \"Crown of Stars\", author: \"Isabelle Fontaine\", cover idea: \"A young queen in armor under a sky of swirling galaxies\"",
+        "Title: \"The Hollow Lantern\", author: \"Mara Voss\", cover idea: \"A lone knight carrying a lantern across a ruined stone bridge at dawn\"",
+        "Title: \"Wolves of the Winter Court\", subtitle: \"A novel of frost and fealty\", author: \"Tomas Reyes\", cover idea: \"A silver wolf in front of a ring of snowy standing stones under the northern lights\""
+      ],
+      "faq": [
+        {
+          "q": "What makes a cover look like fantasy?",
+          "a": "Readers pick up three cues first: a painted or richly illustrated scene, a sky or landscape that is clearly not ordinary, and ornate title lettering, often in gold. This option asks for all three, so you only have to describe the central picture."
+        },
+        {
+          "q": "How is a fantasy cover different from a thriller cover?",
+          "a": "A fantasy cover is painterly, colorful and sets the title in decorative capitals. A [thriller cover](/create/book-cover-maker/thriller) is dark and photographic, with heavy condensed type. Pick the one your readers shop for, not the one you like better."
+        },
+        {
+          "q": "Is the eBook file the right size for Kindle?",
+          "a": "Yes. The eBook cover is a 1600×2560 px JPG in RGB, which matches KDP's ideal size. The [book cover size guide](/sizes/book-cover-size) lists the other upload rules."
+        },
+        {
+          "q": "Can I get a full paperback wrap with spine and back cover?",
+          "a": "No. The maker produces the front cover only. A printed fantasy novel needs a wrap sized to its page count; the [KDP paperback cover size guide](/sizes/kdp-paperback-cover-size) shows how to work it out and where the front panel goes."
+        },
+        {
+          "q": "Can I put a dragon or a famous character on the cover?",
+          "a": "Original creatures and scenes are fine. Avoid naming characters, logos or settings that belong to someone else's books or films, because the image and your book could infringe their rights."
+        }
+      ]
+    },
+    {
+      "value": "thriller",
+      "slug": "thriller",
+      "seo": {
+        "title": "Thriller Book Cover Maker – Bold Type, Kindle & 6×9 Print",
+        "description": "Make a thriller or crime book cover with dark, high-contrast imagery and a bold condensed title. Download a 1600×2560 px Kindle JPG and a 6×9 in print front.",
+        "h1": "Thriller Book Cover Maker"
+      },
+      "intro": [
+        "A thriller cover has to feel tense at a glance. The common formula is dark, high-contrast photographic imagery, a lone figure or an ominous place, and a heavy condensed sans-serif title, often with one hot color such as red against black and white type. The cover works as a warning before anyone reads the blurb.",
+        "Enter the title and author name, add a subtitle if you want one, and describe the single image that carries the menace. PiCraft builds a front cover in this style and sets the type large. You get a 1600×2560 px eBook JPG and a 6.125×9.25 inch front with bleed for a 6×9 inch paperback."
+      ],
+      "bestFor": [
+        {
+          "title": "Crime, spy and suspense novels",
+          "description": "Detective stories, espionage and domestic suspense share the same dark palette. The setting and the object in your cover idea decide which of them the cover looks like."
+        },
+        {
+          "title": "Authors with a name that sells",
+          "description": "In this style the author name gets nearly as much room as the title, so a byline you repeat across a series becomes part of the design."
+        },
+        {
+          "title": "Writers comparing moods before print",
+          "description": "Generate a rain-soaked street, a closed door and an empty room, then see which one makes you want to open the book."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick one disturbing detail",
+          "description": "A briefcase in a wet alley, or an eye behind a crack in a door, carries a whole story in one glance. Several threats in one picture dilute the tension and leave the title less room."
+        },
+        {
+          "title": "Keep the title short and heavy",
+          "description": "Condensed capitals work best with one to three words. Dead Drop and The Silent Witness stack into two or three lines that stay legible when the cover is small. Longer titles go into smaller type."
+        },
+        {
+          "title": "Check for lines you did not ask for",
+          "description": "The text is drawn into the image, and now and then a small extra tagline appears even when you left the subtitle empty. If one shows up, generate again; each generation is a new design."
+        },
+        {
+          "title": "Test the dark corners at thumbnail size",
+          "description": "Shrink the cover to about 160 px tall. Red on black is easy to read, but a dark lower edge can swallow the author name, so make sure both lines are still clear."
+        }
+      ],
+      "tryThese": [
+        "Title: \"Dead Drop\", author: \"Marcus Cole\", cover idea: \"A rain-slicked alley in Berlin at night, a briefcase under a streetlight\"",
+        "Title: \"The Silent Witness\", author: \"Patricia Quinn\", cover idea: \"A single eye peering through a crack in a door\"",
+        "Title: \"Cold Harbor\", author: \"Ellis Grant\", cover idea: \"A lone figure on a fog-covered pier at 3 a.m., one harbor light in the distance\"",
+        "Title: \"Nine Missed Calls\", subtitle: \"A Detective Rhodes thriller\", author: \"Carla Mendes\", cover idea: \"A cracked phone face-down on a wet kitchen floor, its screen glowing red\""
+      ],
+      "faq": [
+        {
+          "q": "Does the thriller option cover crime and mystery too?",
+          "a": "Yes, the option is called thriller / crime and suits detective, spy and suspense stories. A light village mystery is usually illustrated in warm colors, so the dark look may feel too heavy for it."
+        },
+        {
+          "q": "What type does a thriller cover use?",
+          "a": "The option asks for a bold condensed sans-serif title, often in white or red on a dark picture. You cannot pick a font, but you can shorten the title to make the lettering larger."
+        },
+        {
+          "q": "Why did my cover show a line of text I did not enter?",
+          "a": "The text is part of the generated image, and occasionally the model adds a small tagline of its own. Generate again, and check every line against your book details before you publish."
+        },
+        {
+          "q": "How is it different from the fantasy option?",
+          "a": "Thrillers use dark photographic scenes and plain heavy type. A [fantasy cover](/create/book-cover-maker/fantasy) uses painted scenes and ornate lettering. Mixing the two signals confuses shoppers who browse by genre."
+        },
+        {
+          "q": "Is the thriller cover ready for Kindle and print?",
+          "a": "The eBook file is 1600×2560 px in RGB. For paperbacks you get a 6.125×9.25 inch front with bleed, and you add the spine and back in a printer template. See the [KDP paperback cover size guide](/sizes/kdp-paperback-cover-size) for the formula."
+        }
+      ]
+    },
+    {
+      "value": "romance",
+      "slug": "romance",
+      "seo": {
+        "title": "Romance Book Cover Maker – Script Titles, Kindle & Print",
+        "description": "Make a contemporary romance book cover with warm light, a bright palette and a flowing script title. Download a 1600×2560 px Kindle JPG and a 6×9 in front.",
+        "h1": "Romance Book Cover Maker"
+      },
+      "intro": [
+        "Romance covers sell a feeling: warm light, a couple or one evocative scene, bright inviting colors and a flowing script title. Contemporary romance in particular leans on a lighter, illustrated look with a playful title, the opposite of the dark tones a thriller uses.",
+        "Enter the title and author name, add a tagline in the subtitle field, and describe the setting or the moment you want. PiCraft designs a front cover in this style with the title set large. You download a 1600×2560 px eBook JPG and a 6.125×9.25 inch front panel with bleed for a 6×9 inch paperback."
+      ],
+      "bestFor": [
+        {
+          "title": "Contemporary and small-town romance",
+          "description": "Coastal towns, bookshops and autumn parks fit a bright, illustrated cover with a couple or a cozy setting at its center."
+        },
+        {
+          "title": "Rom-coms and seasonal reads",
+          "description": "A beach in summer or a snowy street at Christmas tells shoppers the mood and the season before they read the blurb."
+        },
+        {
+          "title": "Series where each book has a new setting",
+          "description": "Keep the genre and the tagline style, then change the place or the season in the cover idea so every book looks related but not identical."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Name the place and the mood",
+          "description": "\"A couple silhouetted against a sunset over white-washed buildings\" gives the cover a setting, a time of day and a feeling in one line. A season and a location do most of the work."
+        },
+        {
+          "title": "Keep the title short enough for script",
+          "description": "Script lettering is the signature of the genre, but thin script gets lost when the cover shrinks. Titles like Love, Rewritten or Summer in Santorini give it room to be large."
+        },
+        {
+          "title": "Write the tagline as a hook",
+          "description": "A short line such as \"A love story in the sun\" or \"Sometimes the sequel is better\" sets the tone. One line of about eight words or fewer stays readable under the title."
+        },
+        {
+          "title": "Look closely at faces, hands and posture",
+          "description": "When a cover shows people, they are invented by the model and do not depict anyone real. Check faces and hands before you publish, and generate again if something looks off."
+        }
+      ],
+      "tryThese": [
+        "Title: \"Summer in Santorini\", subtitle: \"A love story in the sun\", author: \"Nadia Blake\", cover idea: \"A couple silhouetted against a sunset over white-washed buildings\"",
+        "Title: \"Love, Rewritten\", subtitle: \"Sometimes the sequel is better\", author: \"Jordan Lee\", cover idea: \"Two people back-to-back on a park bench surrounded by autumn leaves\"",
+        "Title: \"The Bookshop on Maple Lane\", author: \"Priscilla Hart\", cover idea: \"A corner bookshop with a string-lit window on a snowy evening, two coffee cups on the sill\"",
+        "Title: \"Second Chance Cove\", subtitle: \"A Pine Harbor romance\", author: \"Lena Marsh\", cover idea: \"A lighthouse and a rowboat at sunrise, two sets of footprints on the sand\""
+      ],
+      "faq": [
+        {
+          "q": "Does the romance option work for dark romance or romantasy?",
+          "a": "Not well. This option is warm and bright. A book that mixes romance with magic is easier to place with the [fantasy option](/create/book-cover-maker/fantasy), and a dark, suspenseful romance fits the [thriller look](/create/book-cover-maker/thriller) better. Choose the genre your readers shop in."
+        },
+        {
+          "q": "Does the cover have to show a couple?",
+          "a": "No. Describe a setting, an object or a scene instead, such as a lighthouse at sunrise. If you leave the cover idea empty, PiCraft picks an image that fits the genre."
+        },
+        {
+          "q": "Can I describe what the characters look like?",
+          "a": "Briefly, yes. A few words such as red hair or a navy sweater can steer the picture. Results vary, so check each cover against your characters, and do not describe a real person."
+        },
+        {
+          "q": "Is the romance cover ready for Kindle?",
+          "a": "Yes. The eBook cover is a 1600×2560 px JPG in RGB, the ideal size KDP lists. If the cover is light, add a thin gray border so it does not disappear on Amazon's white page; the [book cover size guide](/sizes/book-cover-size) explains how."
+        },
+        {
+          "q": "Can I make a back cover and spine too?",
+          "a": "The maker produces the front only. For a paperback wrap, use your printer's template and the [KDP paperback cover size guide](/sizes/kdp-paperback-cover-size) to place the front panel."
+        }
+      ]
+    }
+  ]
+}

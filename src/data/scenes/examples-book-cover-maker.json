@@ -5,42 +5,48 @@
       "alt": "Fantasy book cover for The Ember Throne by Elena Castillo, a throne wreathed in golden flames on a mountaintop",
       "width": 800,
       "height": 1208,
-      "approved": true
+      "approved": true,
+      "style": "fantasy"
     },
     {
       "url": "/examples/book-cover-maker_1791452755927_1.webp",
       "alt": "Fantasy book cover for Crown of Stars by Isabelle Fontaine, an armored young queen beneath a swirling galaxy",
       "width": 800,
       "height": 1208,
-      "approved": true
+      "approved": true,
+      "style": "fantasy"
     },
     {
       "url": "/examples/book-cover-maker_1791452755928_2.webp",
       "alt": "Thriller book cover for Dead Drop by Marcus Cole, a briefcase in a rain-slicked Berlin alley at night",
       "width": 800,
       "height": 1208,
-      "approved": true
+      "approved": true,
+      "style": "thriller"
     },
     {
       "url": "/examples/book-cover-maker_1791452755929_3.webp",
       "alt": "Thriller book cover for The Silent Witness by Patricia Quinn, an eye peering through a crack in a door",
       "width": 800,
       "height": 1208,
-      "approved": true
+      "approved": true,
+      "style": "thriller"
     },
     {
       "url": "/examples/book-cover-maker_1791295680098_4.webp",
       "alt": "Romance book cover for Summer in Santorini by Nadia Blake, a couple embracing in front of white-washed buildings at sunset",
       "width": 800,
       "height": 1208,
-      "approved": true
+      "approved": true,
+      "style": "romance"
     },
     {
       "url": "/examples/book-cover-maker_1791295660492_5.webp",
       "alt": "Romance book cover for Love, Rewritten by Jordan Lee, a smiling couple among autumn leaves in a city park",
       "width": 800,
       "height": 1208,
-      "approved": true
+      "approved": true,
+      "style": "romance"
     },
     {
       "url": "/examples/book-cover-maker_1791452755930_6.webp",

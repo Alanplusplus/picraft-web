@@ -41,7 +41,7 @@ export interface StyleFile {
   /** Key of the select field the styles belong to. */
   field: string;
   /** What the option is called on the page: "style" or "theme". */
-  noun: "style" | "theme";
+  noun: "style" | "theme" | "genre";
   /** Heading for the list of styles on the maker page, for example "Birthday invitation themes". */
   collection: string;
   updated: string;

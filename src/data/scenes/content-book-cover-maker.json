@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "overview": {
     "heading": "How the Book Cover Maker works",
     "paragraphs": [
@@ -86,9 +86,9 @@
     "heading": "Choosing a genre",
     "intro": "Each genre follows the cues readers expect, such as the colors, the type style and the kind of image.",
     "items": [
-      { "title": "Fantasy", "description": "Rich illustrated scenes, dramatic skies and ornate lettering." },
-      { "title": "Thriller / crime", "description": "Dark tones, strong contrast and bold sans-serif or condensed type." },
-      { "title": "Romance", "description": "Warm, bright covers with an emotional focus and flowing or script type." },
+      { "title": "Fantasy", "description": "Rich illustrated scenes, dramatic skies and ornate lettering. See the [fantasy book cover maker](/create/book-cover-maker/fantasy)." },
+      { "title": "Thriller / crime", "description": "Dark tones, strong contrast and bold sans-serif or condensed type. See the [thriller book cover maker](/create/book-cover-maker/thriller)." },
+      { "title": "Romance", "description": "Warm, bright covers with an emotional focus and flowing or script type. See the [romance cover maker](/create/book-cover-maker/romance)." },
       { "title": "Science fiction", "description": "Space, technology and cool colors with sleek or futuristic type." },
       { "title": "Nonfiction / business", "description": "Clean layouts, clear titles and simple graphic images." },
       { "title": "Literary fiction", "description": "Restrained, artistic covers with a single strong image." },

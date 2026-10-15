@@ -1,0 +1,100 @@
+{
+  "pins": [
+    {
+      "id": "amazon-main-image-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-15",
+      "title": "Phone photo to Amazon main image: pure white background, 2000x2000",
+      "description": "A kitchen-counter phone snapshot of a water bottle turned into an Amazon-ready main image: pure white background, centered product, 2000x2000 px JPG. Upload your own product photo and PiCraft makes the listing image.",
+      "link": "/create/amazon-product-photo",
+      "beforeafter": {
+        "heading": "Phone snapshot to Amazon main image",
+        "scene": "amazon-product-photo",
+        "example": "/examples/amazon-product-photo_after_1791298731842_0.webp",
+        "chips": ["Pure white background", "2000×2000 px JPG", "Lifestyle shots too"]
+      }
+    },
+    {
+      "id": "wedding-invitation-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-15",
+      "title": "Print-ready 5x7 wedding invitation from a short form: PDF with bleed",
+      "description": "Type the couple's names, date, venue and RSVP line, pick a style, and get a 5x7 in wedding invitation as a print PDF with 0.125 in bleed, a 300 DPI JPG and a phone-ready share image. Try the maker on PiCraft.",
+      "link": "/create/wedding-invitation-maker",
+      "demo": {
+        "heading": "Fill in a short form, get a print-ready 5×7 invitation",
+        "scene": "wedding-invitation-maker",
+        "example": "/examples/wedding-invitation-maker_1791297237050_0.webp",
+        "inputs": [
+          { "label": "Couple's names", "value": "Sophia Chen & Liam Anderson" },
+          { "label": "Date", "value": "Saturday, September 20, 2025" },
+          { "label": "Venue", "value": "The Lakeview Estate" },
+          { "label": "City", "value": "Lake Tahoe, California" },
+          { "label": "RSVP line", "value": "RSVP by August 15" }
+        ],
+        "chips": ["5×7 in print PDF", "0.125 in bleed", "300 DPI JPG", "Phone share image"]
+      }
+    },
+    {
+      "id": "photo-trends-to-try-with-one-selfie",
+      "kind": "collage",
+      "category": "trends",
+      "release": "2026-10-15",
+      "title": "4 photo trends to try with one selfie: claymation, 80s flashback and more",
+      "description": "Four photo trends you can make from a single selfie: claymation, 80s flashback, Y2K digicam and photo booth strip. Upload one photo, pick a look and download a vertical image sized for Pinterest and stories.",
+      "link": "/create/photo-trend-maker",
+      "collage": {
+        "heading": "4 photo trends to try with one selfie",
+        "items": [
+          { "scene": "photo-trend-maker", "style": "claymation", "label": "Claymation" },
+          { "scene": "photo-trend-maker", "style": "80s_flashback", "label": "80s flashback" },
+          { "scene": "photo-trend-maker", "style": "y2k_digicam", "label": "Y2K digicam" },
+          { "scene": "photo-trend-maker", "style": "photo_booth", "label": "Photo booth strip" }
+        ]
+      }
+    },
+    {
+      "id": "kawaii-sticker-sheet-ideas",
+      "kind": "image",
+      "category": "merch",
+      "release": "2026-10-16",
+      "title": "9 kawaii sticker ideas: fox, owl, dumpling, cloud and more",
+      "description": "Nine kawaii sticker ideas with pastel colors, rounded shapes and happy faces. Describe one character, like a fox reading under a mushroom, and PiCraft makes a die-cut sticker with a white border as a transparent PNG.",
+      "link": "/create/sticker-maker/kawaii",
+      "width": 1664,
+      "height": 2512
+    },
+    {
+      "id": "youtube-thumbnail-size-cheat-sheet",
+      "kind": "sheet",
+      "category": "creators",
+      "release": "2026-10-16",
+      "title": "YouTube thumbnail size cheat sheet: 1280x720, 16:9 and file limits",
+      "description": "Save this YouTube thumbnail size cheat sheet: recommended resolution, the common 1280x720 working size, minimum width, aspect ratio, file types and the 2 MB and 50 MB upload limits. Full guide with Shorts sizes on PiCraft.",
+      "link": "/sizes/youtube-thumbnail-size",
+      "sheet": {
+        "guide": "size:youtube-thumbnail-size",
+        "section": 0,
+        "heading": "YouTube thumbnail size cheat sheet",
+        "subtitle": "Specs from YouTube Help"
+      }
+    },
+    {
+      "id": "wedding-invitation-size-cheat-sheet",
+      "kind": "sheet",
+      "category": "print",
+      "release": "2026-10-17",
+      "title": "Wedding invitation size cheat sheet: 5x7 in, bleed and envelope",
+      "description": "Save this wedding invitation size cheat sheet: the 5x7 in trim size, 0.125 in bleed, the file size with bleed, pixels at 300 DPI, the text safe area and the A7 envelope that fits. Full guide with printing tips on PiCraft.",
+      "link": "/sizes/wedding-invitation-size",
+      "sheet": {
+        "guide": "size:wedding-invitation-size",
+        "section": 0,
+        "heading": "Wedding invitation size cheat sheet",
+        "subtitle": "US standard 5×7 in card"
+      }
+    }
+  ]
+}

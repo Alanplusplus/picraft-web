@@ -4,7 +4,7 @@
   "description": "Kindle cover size 1600×2560 px per KDP, plus paperback full-wrap PDF rules, 0.125 in bleed, spine width, and why print needs back cover and spine.",
   "summary": "For Kindle eBooks, Amazon KDP lists ideal cover dimensions of 1600×2560 px (1.6:1 height to width), JPEG or TIFF, RGB, under 50 MB. Paperback covers must be one PDF with back, spine and front, sized with 0.125 in bleed; PiCraft exports the front panel only.",
   "published": "2026-10-09",
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "scene": "book-cover-maker",
   "relatedScenes": ["youtube-thumbnail-maker", "event-flyer-maker", "linkedin-banner-maker"],
   "relatedGuides": ["kdp-paperback-cover-size", "youtube-thumbnail-size", "blog:what-is-bleed-in-printing"],
@@ -82,6 +82,7 @@
       "heading": "Make a front cover at KDP-friendly sizes",
       "paragraphs": [
         "The [Book Cover Maker](/create/book-cover-maker) produces a 1600×2560 px eBook JPG and a 6×9 in front with bleed for paperbacks. It does not create the spine, back cover or barcode; assemble those in KDP's cover calculator or your designer's template.",
+        "Genre sets the look of the front cover, so the maker has a page for each one. Start from the conventions readers expect in [fantasy](/create/book-cover-maker/fantasy), [thriller](/create/book-cover-maker/thriller) or [romance](/create/book-cover-maker/romance) and describe your own cover image.",
         "For wide creator assets with a different aspect ratio, see [YouTube thumbnail size](/sizes/youtube-thumbnail-size)."
       ]
     }

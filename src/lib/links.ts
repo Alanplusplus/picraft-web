@@ -11,7 +11,7 @@ import { getStylePages, isStyleIndexable, stylePath } from "./styles";
 const STATIC_PAGES = ["/", "/create", "/gallery", "/sizes", "/blog", "/about", "/contact", "/privacy", "/terms"];
 
 /** Every page the site renders, mapped to whether it is indexable. */
-function knownPages(): Map<string, boolean> {
+export function knownPages(): Map<string, boolean> {
   const pages = new Map<string, boolean>(STATIC_PAGES.map((page) => [page, true]));
   for (const category of CATEGORIES) pages.set(categoryPath(category.id), true);
   for (const scene of getScenes()) pages.set(`/create/${scene.slug}`, isIndexable(scene));
