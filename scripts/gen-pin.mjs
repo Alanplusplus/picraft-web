@@ -2,7 +2,7 @@
 /**
  * Make one original Pinterest pin image (2:3) and save the original file, unchanged, to /tmp/pins/<id>.<png|jpg>.
  * Usage: node scripts/gen-pin.mjs <job.json>
- * The job file is a JSON object: { "id": "kebab-case-id", "prompt": "...", "resolution": "1K" | "2K" }; default 2K.
+ * The job file is a JSON object: { "id": "kebab-case-id", "prompt": "...", "resolution": "1K" | "2K" }; default 1K (flare model).
  * Keep the job file outside the repo (for example in /tmp). The image is never resized or re-encoded, so
  * Pinterest gets the full-quality original. After it looks right, upload it with backend/scripts/upload_pin_images.py
  * and add an entry with kind "image" (and the printed width and height) to src/data/pins/daily.json.
@@ -62,7 +62,7 @@ if (!/^[a-z0-9-]+$/.test(job.id ?? "")) throw new Error("job.id must use a-z, 0-
 if (!job.prompt) throw new Error("job.prompt is required");
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
-const url = await generate(job.prompt, job.resolution ?? "2K");
+const url = await generate(job.prompt, job.resolution ?? "1K");
 if (!url) throw new Error("No image URL returned");
 const raw = path.join(OUT_DIR, `${job.id}.download`);
 execSync(`curl -4 -sL -o ${JSON.stringify(raw)} ${JSON.stringify(url)}`, { timeout: 90000 });
