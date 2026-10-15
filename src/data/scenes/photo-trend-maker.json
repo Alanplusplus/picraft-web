@@ -3,14 +3,14 @@
   "name": "Photo Trend Maker",
   "category": "trends",
   "summary": "Turn one photo into an 80s snapshot, a claymation world, a photo booth strip and 10 more trending looks.",
-  "badge": "13 looks · 9:16",
+  "badge": "19 looks · 9:16",
   "indexable": true,
   "seo": {
     "title": "AI Photo Trend Maker – 80s, Y2K, Claymation & More",
     "description": "Upload one photo and pick a trending look: 80s flashback, Y2K digicam, claymation, photo booth strip and more. Download it as a 9:16, 2:3, 3:4 or square JPG.",
     "h1": "Photo Trend Maker",
     "intro": [
-      "Upload a photo of yourself, a friend or a pet, pick one of 13 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head and more, and keeps the subject recognizable.",
+      "Upload a photo of yourself, a friend or a pet, pick one of 19 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head or a seasonal portrait for Halloween, Thanksgiving, Christmas and New Year's Eve, and keeps the subject recognizable.",
       "There is no prompt to write. The default size is a full-screen 9:16 vertical image, and you can switch to 2:3 for Pinterest, 3:4 for feed posts or a 1:1 square before you create."
     ]
   },
@@ -98,6 +98,36 @@
           "value": "marble_statue",
           "label": "Marble Statue",
           "prompt": "a refined neoclassical Greek-style statue carved in white Carrara marble, based on the subject. If the photo shows a person, turn them into a heroic allegorical figure in a dynamic pose with flowing drapery, a confident stance and a serious expression, keeping their face structure recognizable. If it does not show a person, do not add one. Echo elements from the photo in the sculpture. Museum hall setting, photorealistic, medium depth of field, natural perspective, warm gallery lighting with dramatic, realistic shadows."
+        },
+        {
+          "value": "halloween_portrait",
+          "label": "Halloween Costume Portrait",
+          "prompt": "a spooky-fun Halloween costume portrait. Dress the subject in a polished, original costume that suits them, such as a witch, a vampire, a skeleton or a scarecrow; for a pet, use a small, simple costume such as a pumpkin outfit, a tiny witch hat or a cape. The makeup and props look handmade and playful. Do not add any person or pet that is not in the photo. Set the scene on a candlelit porch or in a misty autumn yard with glowing carved pumpkins, fallen leaves, soft fog and a deep purple dusk sky with warm orange light. Cinematic lighting with a warm orange glow on the face, rich purple shadows and a little film grain. Keep it fun and atmospheric, not gory or frightening: no blood and no wounds. Use only generic costumes, with no recognizable movie, game or cartoon characters and no readable text."
+        },
+        {
+          "value": "thanksgiving_harvest",
+          "label": "Thanksgiving Harvest Portrait",
+          "prompt": "a cozy Thanksgiving harvest portrait painted as a warm storybook illustration in gouache and soft colored pencil. Show the subject at a long candlelit autumn dinner table or in a golden-hour harvest scene with pumpkins, squash, wheat, apples and fallen maple leaves, in rust, mustard, burnt orange and deep green. Dress the subject in cozy autumn clothes such as a knit sweater or a plaid scarf, keeping their hair color and the character of their expression. If the photo shows a pet, it sits at the table or beside the pumpkins. Do not add any person or pet that is not in the photo. Visible brush strokes and paper grain, soft warm light, gentle detail and a generous, welcoming mood. It must read as a hand-painted illustration, not as a photograph with a filter. Add no text, signs or banners, no brand names, and no costumes or stereotypes of any historical or cultural group."
+        },
+        {
+          "value": "christmas_card",
+          "label": "Christmas Card Portrait",
+          "prompt": "a classic Christmas card portrait shot in a cozy living room. Dress the subject in a chunky knit sweater or soft winter clothes in festive reds, creams and forest greens, and place them in front of a decorated Christmas tree with warm string lights softly out of focus, a few wrapped gifts, pine garland and a glowing fireplace. Warm, flattering window and firelight, shallow depth of field and a clean, balanced composition with some calm empty space near the top, as if left for a greeting. A natural, genuine expression and crisp professional photography. If the photo shows a pet, give it a small ribbon or a tiny knitted scarf. Do not add any person or pet that is not in the photo. Add no text, no lettering and no readable signs."
+        },
+        {
+          "value": "vintage_christmas",
+          "label": "Vintage Christmas Snapshot",
+          "prompt": "a family snapshot from Christmas morning in the late 1970s or early 1980s, shot on consumer film with direct on-camera flash. Restyle the hair, clothes and room with period details: a wool sweater or a flannel robe, a real tree with thick tinsel and large colored bulbs, wood-paneled walls, wrapping paper strewn across a shag carpet and a few opened gifts. Warm, slightly faded color with a red-orange cast, visible film grain, soft focus toward the edges and flash glare on skin and glass ornaments. Casual, candid framing. If the photo shows a pet, it sits among the wrapping paper. Do not add any person or pet that is not in the photo. No date stamp, no text and no readable labels or brand names."
+        },
+        {
+          "value": "snow_globe",
+          "label": "Snow Globe",
+          "prompt": "a photographed physical snow globe that holds a tiny sculpted figure of the subject. Show a single round glass snow globe on a wooden mantel, with the subject rebuilt as a small, simplified miniature inside it: a cozy winter outfit for a person, or a little scarf for a pet, standing in a tiny snowy village with pine trees and a small cottage on a sculpted base. Soft white flakes drift inside the glass, with realistic glass reflections and refraction, small curved highlights and a faint dust of glitter. Behind it, warm out-of-focus Christmas lights and a garland. Keep the subject's identity, colors and character of expression recognizable in miniature. Do not add any person or pet that is not in the photo. It must read as a real photographed object, not a digital filter. Show only one snow globe and add no text."
+        },
+        {
+          "value": "nye_party",
+          "label": "New Year's Eve Party Flash",
+          "prompt": "a glamorous New Year's Eve party photo shot with a bright on-camera flash. Dress the subject in tasteful, modest sparkling party clothes in black and gold, with a glittering accessory such as a headband, a hat or a tiara, holding a sparkler or a noisemaker, in a dim room full of falling gold and silver confetti, streamers, sparklers and a mirror ball scattering small points of light. Strong flash highlights on the subject, deep shadows, glossy skin highlights, real colors and fine film grain, with a candid magazine feel and a happy, mid-celebration expression. Keep the subject's identity; a pet stays recognizable with a small party accessory. Do not add any person or pet that is not in the photo, and show no other people or hands. No drinks, glasses or bottles. No text, no numbers, no clocks and no readable signs."
         }
       ]
     },
@@ -221,7 +251,7 @@
     },
     {
       "title": "Pick a look and a size",
-      "description": "Choose from 13 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback) or [Claymation World](/create/photo-trend-maker/claymation)."
+      "description": "Choose from 19 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback), [Claymation World](/create/photo-trend-maker/claymation) or the [Christmas Card Portrait](/create/photo-trend-maker/christmas-card)."
     },
     {
       "title": "Download the JPG",

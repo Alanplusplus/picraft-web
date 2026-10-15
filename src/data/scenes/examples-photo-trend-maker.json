@@ -259,6 +259,136 @@
       "approved": true,
       "style": "marble_statue",
       "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_halloween_portrait_0_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Halloween costume portrait of a smiling woman with wavy auburn hair as a witch in a star-print dress among glowing pumpkins",
+      "width": 1000,
+      "height": 1782,
+      "approved": true,
+      "style": "halloween_portrait",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_halloween_portrait_1_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Halloween costume portrait of a golden retriever in a witch hat and starry cape on a leafy porch with carved pumpkins",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "halloween_portrait",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_halloween_portrait_2_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Halloween costume portrait of a laughing bearded man dressed as a witch with a cape and broom beside lanterns and pumpkins",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "halloween_portrait",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_thanksgiving_harvest_0_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Thanksgiving harvest illustration of a silver-haired woman in round glasses at a candlelit autumn table with pumpkins",
+      "width": 1000,
+      "height": 1782,
+      "approved": true,
+      "style": "thanksgiving_harvest",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_thanksgiving_harvest_1_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Thanksgiving harvest illustration of a smiling couple in knit sweaters at a candlelit table with a roast, apples and pumpkins",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "thanksgiving_harvest",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_christmas_card_0_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Christmas card portrait of a golden retriever in a red knit sweater in front of a decorated tree and a lit fireplace",
+      "width": 1000,
+      "height": 1782,
+      "approved": true,
+      "style": "christmas_card",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_christmas_card_1_1792077141174.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Christmas card portrait of a smiling couple in knit sweaters on a sofa beside a decorated tree and a lit fireplace",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "christmas_card",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_vintage_christmas_0_1792077818845.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Vintage Christmas snapshot of a smiling woman with wavy auburn hair in a fair isle sweater unwrapping gifts by a tinsel tree",
+      "width": 1000,
+      "height": 1782,
+      "approved": true,
+      "style": "vintage_christmas",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_vintage_christmas_1_1792077818845.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Vintage Christmas snapshot of a silver-haired woman in round glasses holding a holly mug beside a tinsel-covered tree",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "vintage_christmas",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_snow_globe_0_1792077818845.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Snow globe photo of a golden retriever in a red scarf inside a glass globe with a snowy cottage and pine trees",
+      "width": 1000,
+      "height": 1782,
+      "approved": true,
+      "style": "snow_globe",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_snow_globe_1_1792077818845.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Snow globe photo of a grey tabby cat in a red scarf inside a glass globe with a tiny cottage and drifting snow",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "snow_globe",
+      "beforeAlt": "Original photo: a grey tabby cat on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_nye_party_0_1792077818845.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "New Year's Eve party portrait of a smiling woman with wavy auburn hair in a gold sequin dress holding a sparkler",
+      "width": 1000,
+      "height": 1782,
+      "approved": true,
+      "style": "nye_party",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_nye_party_1_1792077818845.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "New Year's Eve party portrait of a smiling couple in black and gold sparkling outfits with confetti and a sparkler",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "nye_party",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
     }
   ]
 }

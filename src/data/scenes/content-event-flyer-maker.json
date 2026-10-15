@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-15",
   "overview": {
     "heading": "How the Event Flyer Maker works",
     "paragraphs": [
@@ -50,6 +50,10 @@
     {
       "title": "Charity and club events",
       "description": "Sports days, bake sales and charity runs, with the highlights listed clearly."
+    },
+    {
+      "title": "Holiday gatherings",
+      "description": "Neighborhood potlucks, Halloween parties and holiday open houses fit the flyer, which carries the date, time and venue you type. For a friendly picture to post beside it, a [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait) or a [Christmas card portrait](/create/photo-trend-maker/christmas-card) made from your own photo works as a companion image, while the flyer stays the source for the details."
     }
   ],
   "tips": [

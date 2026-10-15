@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "overview": {
     "heading": "How the Photo Trend Maker works",
     "paragraphs": [
-      "You upload one photo, choose one of 13 looks and pick a size. PiCraft sends the photo and a written description of the look to an AI image model, which redraws the whole picture in that style while keeping the subject recognizable. The result comes back as a JPG at the exact pixel size of the shape you chose.",
-      "Each look is a different kind of change. The film and camera looks, such as the [80s flashback](/create/photo-trend-maker/80s-flashback) and the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam), change the clothes, the surroundings and the flaws of the picture. The handmade looks, such as the [claymation world](/create/photo-trend-maker/claymation) and the [felt miniature](/create/photo-trend-maker/felt-miniature), rebuild the scene from physical materials. The rest turn the photo into a toy, a game screen, a blueprint, a newspaper page or a statue.",
+      "You upload one photo, choose one of 19 looks and pick a size. PiCraft sends the photo and a written description of the look to an AI image model, which redraws the whole picture in that style while keeping the subject recognizable. The result comes back as a JPG at the exact pixel size of the shape you chose.",
+      "Each look is a different kind of change. The film and camera looks, such as the [80s flashback](/create/photo-trend-maker/80s-flashback) and the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam), change the clothes, the surroundings and the flaws of the picture. The handmade looks, such as the [claymation world](/create/photo-trend-maker/claymation) and the [felt miniature](/create/photo-trend-maker/felt-miniature), rebuild the scene from physical materials. The seasonal looks, such as the [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait), the [Thanksgiving harvest portrait](/create/photo-trend-maker/thanksgiving-harvest), the [Christmas card portrait](/create/photo-trend-maker/christmas-card), the [snow globe](/create/photo-trend-maker/snow-globe) and the [New Year's Eve party flash](/create/photo-trend-maker/new-years-eve-party), dress the subject for a holiday and rebuild the room around them. The rest turn the photo into a toy, a game screen, a blueprint, a newspaper page or a statue.",
       "The size is chosen before the image is made, not after. A 9:16 image is composed for a tall frame, so the subject is not cut off the way it would be if you cropped a square. Each generation costs one credit and gives a new result, so you can run the same photo through several looks and keep the best one."
     ]
   },
@@ -14,8 +14,8 @@
       "description": "1080×1920 for 9:16, 1000×1500 for 2:3, 1080×1440 for 3:4 or 1080×1080 for 1:1. The image is generated for that shape first and then cut to the exact pixel size."
     },
     {
-      "title": "13 distinct looks",
-      "description": "Camera looks, handmade looks and game, print and art looks in one form. The [photo trends category](/categories/photo-trends) shows how they group together."
+      "title": "19 distinct looks",
+      "description": "Camera looks, handmade looks, game, print and art looks, and six holiday looks in one form. The [photo trends category](/categories/photo-trends) shows how they group together."
     },
     {
       "title": "A subject that stays recognizable",
@@ -46,6 +46,10 @@
     {
       "title": "Pet photos and small gifts",
       "description": "A [marble statue](/create/photo-trend-maker/marble-statue) or a felt miniature of a dog or a cat makes a funny card, a mug design or a message for a friend who loves their pet."
+    },
+    {
+      "title": "Holiday cards and seasonal posts",
+      "description": "The [Christmas card portrait](/create/photo-trend-maker/christmas-card), the [vintage Christmas snapshot](/create/photo-trend-maker/vintage-christmas), the [Thanksgiving harvest portrait](/create/photo-trend-maker/thanksgiving-harvest) and the [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait) turn one photo, with or without a pet, into a seasonal picture for a card, a family chat or a holiday Pinterest board."
     },
     {
       "title": "Invitations and group chats",
@@ -98,7 +102,13 @@
       { "title": "16-bit Arcade Fighter", "description": "A pixel-art fighter on a side-view stage with a health bar. Best for [gamers and humorous posts](/create/photo-trend-maker/arcade-16bit)." },
       { "title": "Blueprint Poster", "description": "White technical lines on cobalt blue with detail views. Best for [a single clear subject such as a pet or a person](/create/photo-trend-maker/blueprint-poster)." },
       { "title": "Fantasy Newspaper", "description": "An engraved portrait on a vintage front page with headlines. Best for [birthday jokes and invitations](/create/photo-trend-maker/fantasy-newspaper)." },
-      { "title": "Marble Statue", "description": "A neoclassical figure carved in white marble in a museum hall. Best for [dramatic portraits and pets](/create/photo-trend-maker/marble-statue)." }
+      { "title": "Marble Statue", "description": "A neoclassical figure carved in white marble in a museum hall. Best for [dramatic portraits and pets](/create/photo-trend-maker/marble-statue)." },
+      { "title": "Halloween Costume Portrait", "description": "A generic witch, vampire, skeleton or scarecrow costume among carved pumpkins and fog. Best for [pets and playful portraits](/create/photo-trend-maker/halloween-portrait)." },
+      { "title": "Thanksgiving Harvest Portrait", "description": "A hand-painted autumn table with candles, pumpkins and knitwear. Best for [couples, families and thank-you pictures](/create/photo-trend-maker/thanksgiving-harvest)." },
+      { "title": "Christmas Card Portrait", "description": "A warm living room with a tree, lights and a fireplace. Best for [couples, families and pets on a holiday card](/create/photo-trend-maker/christmas-card)." },
+      { "title": "Vintage Christmas Snapshot", "description": "A flash-lit Christmas morning from the late 1970s or early 1980s, with a tinsel tree and wrapping paper. Best for [relaxed selfies, couples and throwback posts](/create/photo-trend-maker/vintage-christmas)." },
+      { "title": "Snow Globe", "description": "A small figure of you or your pet inside a glass globe with drifting snow and a tiny village. Best for [pets and clear portraits](/create/photo-trend-maker/snow-globe)." },
+      { "title": "New Year's Eve Party Flash", "description": "Black and gold party clothes, confetti, sparklers and a mirror ball under bright flash. Best for [selfies, couples and party posts](/create/photo-trend-maker/new-years-eve-party)." }
     ]
   },
   "checklist": {

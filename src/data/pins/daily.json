@@ -95,6 +95,114 @@
         "heading": "Wedding invitation size cheat sheet",
         "subtitle": "US standard 5×7 in card"
       }
+    },
+    {
+      "id": "halloween-pet-costume-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-16",
+      "title": "Halloween pet costume photo idea: dog in a witch hat and cape, made from one photo",
+      "description": "A golden retriever photo turned into a Halloween costume portrait: a tiny witch hat, a starry cape, carved pumpkins and a candlelit porch. Upload one photo of your pet, pick a size and download a JPG sized for Pinterest (2:3), stories or a square post.",
+      "link": "/create/photo-trend-maker/halloween-portrait",
+      "beforeafter": {
+        "heading": "Dog photo to Halloween costume portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_halloween_portrait_1_1792077141174.webp",
+        "chips": ["Pets work too", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+      }
+    },
+    {
+      "id": "halloween-costume-portrait-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-17",
+      "title": "Halloween costume portrait ideas from one photo: witch hat, cape, broom and pumpkins",
+      "description": "One portrait photo turned into a Halloween costume portrait: a witch hat, a cape and a broom among glowing pumpkins and lanterns. Upload yours and PiCraft picks a generic costume that suits you, keeps your face recognizable and returns a 2:3 Pin-size JPG.",
+      "link": "/create/photo-trend-maker/halloween-portrait",
+      "beforeafter": {
+        "heading": "Photo to Halloween costume portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_halloween_portrait_2_1792077141174.webp",
+        "chips": ["No prompt to write", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+      }
+    },
+    {
+      "id": "thanksgiving-harvest-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-18",
+      "title": "Thanksgiving family portrait idea: turn a couple photo into a painted harvest table",
+      "description": "A couple's photo turned into a warm Thanksgiving harvest illustration: knit sweaters, a candlelit table, pumpkins, apples and autumn leaves in a gouache and colored pencil style. Upload a photo, pick a size and download a JPG for a card, a family chat or a Pinterest board.",
+      "link": "/create/photo-trend-maker/thanksgiving-harvest",
+      "beforeafter": {
+        "heading": "Couple photo to Thanksgiving harvest portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_thanksgiving_harvest_1_1792077141174.webp",
+        "chips": ["Hand-painted look", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+      }
+    },
+    {
+      "id": "christmas-card-portrait-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-19",
+      "title": "Christmas card photo idea: turn a couple photo into a cozy holiday portrait",
+      "description": "A couple's photo turned into a Christmas card portrait: knit sweaters, a decorated tree, string lights, gifts and a glowing fireplace. Upload a photo, pick a size and download a JPG. Add your own greeting in any card or messaging app, because the look draws no text.",
+      "link": "/create/photo-trend-maker/christmas-card",
+      "beforeafter": {
+        "heading": "Couple photo to Christmas card portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_christmas_card_1_1792077141174.webp",
+        "chips": ["Pets work too", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+      }
+    },
+    {
+      "id": "holiday-photo-looks-from-one-photo",
+      "kind": "collage",
+      "category": "trends",
+      "release": "2026-10-20",
+      "title": "4 holiday photo ideas from one photo: Christmas card, snow globe, vintage Christmas, New Year's Eve",
+      "description": "Four holiday photo looks you can make from a single photo: a Christmas card portrait, a vintage Christmas snapshot, a snow globe and a New Year's Eve party flash. Upload one photo, pick a look and download a JPG sized for Pinterest, stories or a square post.",
+      "link": "/create/photo-trend-maker",
+      "collage": {
+        "heading": "4 holiday photo looks from one photo",
+        "items": [
+          { "scene": "photo-trend-maker", "style": "christmas_card", "label": "Christmas card" },
+          { "scene": "photo-trend-maker", "style": "vintage_christmas", "label": "Vintage Christmas" },
+          { "scene": "photo-trend-maker", "style": "snow_globe", "label": "Snow globe" },
+          { "scene": "photo-trend-maker", "style": "nye_party", "label": "New Year's Eve" }
+        ]
+      }
+    },
+    {
+      "id": "vintage-christmas-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-21",
+      "title": "Vintage Christmas photo ideas: turn one photo into a retro Christmas morning snapshot",
+      "description": "A relaxed portrait turned into a vintage Christmas morning snapshot: a tinsel tree, a wool sweater, wrapping paper on a shag carpet, flash glare and film grain. Upload a photo, pick a size and download a JPG. The look draws no date stamp or text.",
+      "link": "/create/photo-trend-maker/vintage-christmas",
+      "beforeafter": {
+        "heading": "Photo to vintage Christmas snapshot",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_vintage_christmas_1_1792077818845.webp",
+        "chips": ["Flash and film grain", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+      }
+    },
+    {
+      "id": "snow-globe-pet-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-22",
+      "title": "Snow globe photo idea: turn your cat or dog into a figure inside a Christmas snow globe",
+      "description": "A grey tabby cat photo turned into a small figure inside a snow globe, with drifting snow, a tiny cottage, pine trees and warm Christmas lights behind the glass. Upload a photo of your pet or yourself, pick a size and download a JPG.",
+      "link": "/create/photo-trend-maker/snow-globe",
+      "beforeafter": {
+        "heading": "Cat photo to snow globe portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_snow_globe_1_1792077818845.webp",
+        "chips": ["Pets work too", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+      }
     }
   ]
 }

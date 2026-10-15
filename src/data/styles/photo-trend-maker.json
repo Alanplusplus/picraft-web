@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "Photo trend looks",
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "styles": [
     {
       "value": "80s_flashback",
@@ -959,6 +959,424 @@
         {
           "q": "Is the color always white?",
           "a": "The statue is white Carrara-style marble, with warm light and shadows from the museum setting. For a color-rich handmade look, try the [claymation](/create/photo-trend-maker/claymation) look."
+        }
+      ]
+    },
+    {
+      "value": "halloween_portrait",
+      "slug": "halloween-portrait",
+      "seo": {
+        "title": "Halloween Costume Photo Maker – AI Portrait & Pet Costumes",
+        "description": "Turn a photo of you or your pet into a Halloween costume portrait with a witch hat, cape, pumpkins and misty dusk. Download a 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "Halloween Costume Photo Maker"
+      },
+      "intro": [
+        "The Halloween costume portrait dresses the person or the pet in your photo as a witch, a vampire, a skeleton or a scarecrow and puts them on a candlelit porch or in a misty autumn yard. Carved pumpkins glow beside them, fallen leaves cover the ground and a deep purple dusk sky fades into warm orange light.",
+        "Upload one photo, pick a size and create. PiCraft keeps the face or the pet recognizable and chooses a generic costume that suits the subject, so there is nothing to describe. The mood is playful and atmospheric rather than gory, which makes it easy to share on a family account, in a group chat or on a Pinterest board of Halloween ideas."
+      ],
+      "bestFor": [
+        {
+          "title": "Pets in costume",
+          "description": "A dog or a cat in a tiny witch hat or cape is the most popular use. The pet stays recognizable, and you do not need a real costume or a patient animal."
+        },
+        {
+          "title": "Single portraits and couples",
+          "description": "A clear portrait of one or two people works best. The costume, makeup and props change while the faces stay yours."
+        },
+        {
+          "title": "Posts, stories and Pins",
+          "description": "The 9:16 size fills a phone screen for stories, and the 2:3 size matches the shape Pinterest recommends for standard Pins. The square size works as a profile picture for the season."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a clear, front-facing photo",
+          "description": "The costume is built around the face or the head, so a sharp, evenly lit photo with the face large in the frame gives the AI the most to work with. Daylight photos are easier than dim night photos."
+        },
+        {
+          "title": "Let the costume be chosen for you",
+          "description": "The look picks a generic costume, such as a witch, a vampire, a skeleton or a scarecrow, that suits the subject. You cannot name a character, and it never uses a movie, game or cartoon character. Generate again for a different costume."
+        },
+        {
+          "title": "Keep it playful",
+          "description": "The instructions ask for a fun, atmospheric mood with no blood and no wounds. If you want something gruesome, this is not the look for it."
+        },
+        {
+          "title": "Choose a tall size",
+          "description": "The 9:16 and 2:3 sizes leave room for the pumpkins, the lanterns and the moonlit sky. The 1:1 size frames the subject more tightly."
+        }
+      ],
+      "tryThese": [
+        "Photo: a golden retriever sitting and looking at the camera, size 2:3",
+        "Photo: a smiling selfie in daylight, size 9:16",
+        "Photo: a grey tabby cat on a windowsill, size 3:4",
+        "Photo: two friends standing close together, size 2:3"
+      ],
+      "faq": [
+        {
+          "q": "Can I use a photo of my pet?",
+          "a": "Yes, and it is one of the best uses. The look gives a pet a small, simple costume, such as a cape or a pumpkin outfit, and keeps its fur color, face and expression. It is told not to add a person or an animal that is not in your photo."
+        },
+        {
+          "q": "Will it use costumes from movies or games?",
+          "a": "No. The instructions ask for generic costumes only, such as a witch, a vampire, a skeleton or a scarecrow, with no recognizable movie, game or cartoon characters. That also keeps the picture safer to post."
+        },
+        {
+          "q": "Is the image scary or gory?",
+          "a": "No. The look aims for a playful, atmospheric mood with candlelight, fog and carved pumpkins, and it asks for no blood and no wounds. If a result looks too dark, generate again."
+        },
+        {
+          "q": "Will the result still look like me?",
+          "a": "The face shape, skin tone, age and hair color are kept as far as the AI can, but costume makeup and a hat change how a face reads. Generate again if a result drifts, or try the [claymation world](/create/photo-trend-maker/claymation) look if you would rather have a stylized figure."
+        },
+        {
+          "q": "Does it write anything on the image?",
+          "a": "It asks for no text, but AI can still add stray lettering on a sign or a pumpkin. Check the picture before you post it, and generate again if something odd appears."
+        }
+      ]
+    },
+    {
+      "value": "thanksgiving_harvest",
+      "slug": "thanksgiving-harvest",
+      "seo": {
+        "title": "Thanksgiving Portrait Maker – Autumn Harvest AI Photo",
+        "description": "Turn a photo into a warm Thanksgiving harvest illustration with a candlelit table, pumpkins and fallen leaves. Download a finished 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "Thanksgiving Harvest Portrait Maker"
+      },
+      "intro": [
+        "The Thanksgiving harvest portrait turns a photo into a hand-painted storybook illustration. The people or pets in your photo sit at a long candlelit table or stand in a golden-hour field, surrounded by pumpkins, squash, wheat, apples and fallen maple leaves in rust, mustard, burnt orange and deep green, wearing a knit sweater or a plaid scarf.",
+        "It is the one look in the maker that is drawn instead of photographed. The brush strokes and paper grain are part of the picture, which sets it apart from the film and camera looks and makes it a good fit for greetings, family group chats and a Pinterest board of Thanksgiving ideas. Upload a photo, pick a size and download a JPG."
+      ],
+      "bestFor": [
+        {
+          "title": "Couples and close family portraits",
+          "description": "One or two people, or a person with a pet, fit the table scene best. The faces stay recognizable inside the painted style."
+        },
+        {
+          "title": "Thank-you pictures and group chats",
+          "description": "A warm illustration is easier to send than a plain snapshot. It works as a family-chat greeting, a thank-you picture or a small gift for a relative."
+        },
+        {
+          "title": "Pinterest and autumn boards",
+          "description": "The 2:3 size matches the shape Pinterest recommends for standard Pins, so the picture sits naturally next to autumn recipes and table ideas."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a photo with a warm, friendly mood",
+          "description": "Smiles and relaxed poses suit the cozy scene. A stiff, passport-style photo gives a stiffer illustration."
+        },
+        {
+          "title": "Expect new clothes",
+          "description": "The look dresses everyone in autumn knits and scarves, so the outfits in your photo are replaced. If you want to keep a particular outfit, choose a different look."
+        },
+        {
+          "title": "Pets join the table",
+          "description": "If the photo shows a dog or a cat, it sits at the table or beside the pumpkins. The look is told not to add a person or a pet that is not in your photo."
+        },
+        {
+          "title": "Pick 2:3 or 9:16 for the full table",
+          "description": "Tall frames leave room for the table, the candles and the autumn background. The 1:1 size crops closer to the faces."
+        }
+      ],
+      "tryThese": [
+        "Photo: a couple smiling close together, size 2:3",
+        "Photo: a grandparent at a kitchen table, size 3:4",
+        "Photo: a dog sitting on a rug, size 9:16",
+        "Photo: a selfie by a window, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Is it a photo or an illustration?",
+          "a": "An illustration. The look asks for gouache and soft colored pencil with visible brush strokes and paper grain, so it should read as a hand-painted picture and not as a photo with a filter. For a photographic holiday look, try the [Christmas card portrait](/create/photo-trend-maker/christmas-card)."
+        },
+        {
+          "q": "Does it add costumes or historical characters?",
+          "a": "No. The instructions ask for cozy modern autumn clothes and rule out costumes or stereotypes of any historical or cultural group."
+        },
+        {
+          "q": "Will it add people who are not in my photo?",
+          "a": "It is told not to. The scene can include food, candles and decorations, but the people and pets are the ones in your photo. If an extra figure appears, generate again."
+        },
+        {
+          "q": "Can I use it for a card?",
+          "a": "Yes. Download the JPG and use it in a message, a digital card or a small print. The look asks for no text, so you add your own greeting in another app. Always read the picture first, because AI can still draw stray lettering."
+        }
+      ]
+    },
+    {
+      "value": "christmas_card",
+      "slug": "christmas-card",
+      "seo": {
+        "title": "Christmas Card Photo Maker – AI Holiday Portrait",
+        "description": "Turn a photo into a Christmas card portrait with a knit sweater, tree lights, gifts and a warm fireplace. Pets welcome. Download a 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "Christmas Card Photo Maker"
+      },
+      "intro": [
+        "The Christmas card portrait puts the people or pets in your photo into a cozy living room set up for the holidays. They wear chunky knit sweaters or soft winter clothes in festive reds, creams and forest greens, with a decorated tree, string lights, wrapped gifts, pine garland and a glowing fireplace behind them.",
+        "The picture is composed like a professional family card, with warm window and firelight and a shallow depth of field. Upload one photo, pick a size and create. The faces stay recognizable, and the look asks for no text, so you can add your own greeting in another app."
+      ],
+      "bestFor": [
+        {
+          "title": "Couples and families on a card",
+          "description": "One to three people close together suit the look best. Keep the face large in the original photo so it stays recognizable."
+        },
+        {
+          "title": "Pets in a holiday scarf",
+          "description": "If your photo shows a dog or a cat, it gets a small ribbon or a tiny knitted scarf. The look is told not to add an animal that is not in your photo."
+        },
+        {
+          "title": "Pins, stories and group chats",
+          "description": "Choose 2:3 for a Pinterest Pin, 9:16 for a story and 3:4 for a portrait post. The warm, tidy composition also works as a greeting in a family chat."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a bright, close photo",
+          "description": "Window light and a face that fills a good part of the frame keep the likeness best. A dark photo gives the AI less to hold on to."
+        },
+        {
+          "title": "Expect a new outfit and a new room",
+          "description": "The clothes and the background are replaced with winter knits and a decorated living room. If you want to keep your own outfit, choose another look."
+        },
+        {
+          "title": "Leave the greeting for later",
+          "description": "The look draws no text, so add your own words in a card or messaging app. The tree and the garland fill the top of the frame, so place a greeting over a calm area, or use a card layout with its own text panel."
+        },
+        {
+          "title": "Mind the file size for prints",
+          "description": "The 2:3 shape matches a 4×6 inch print, but the file is 1000×1500 px, so it suits screens and small prints better than large ones."
+        }
+      ],
+      "tryThese": [
+        "Photo: a couple sitting close together, size 2:3",
+        "Photo: a dog looking at the camera, size 9:16",
+        "Photo: a selfie in window light, size 3:4",
+        "Photo: two friends side by side, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Can I use it as a Christmas card?",
+          "a": "Yes. Download the JPG and use it in a message, a digital card or a small print. The look asks for no text, so you add your own greeting in another app. For print, remember that a 2:3 file is 1000×1500 px."
+        },
+        {
+          "q": "Will it add my pet?",
+          "a": "Only if the photo shows one. If it does, the pet gets a small ribbon or a tiny knitted scarf. The look is told not to add a person or an animal that is not in your photo."
+        },
+        {
+          "q": "Does it look like a real photo?",
+          "a": "That is the goal: it is composed like a professional holiday portrait. It is still an AI image, so zoom in on hands, faces and small decorations, and generate again if something is off."
+        },
+        {
+          "q": "How is it different from the 80s flashback?",
+          "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) is a faded, grainy snapshot with period clothes. The Christmas card is a clean, warm and polished portrait in a decorated room."
+        }
+      ]
+    },
+    {
+      "value": "vintage_christmas",
+      "slug": "vintage-christmas",
+      "seo": {
+        "title": "Vintage Christmas Photo Maker – Retro Holiday Snapshot",
+        "description": "Turn a photo into a vintage Christmas morning snapshot with a tinsel tree, period sweaters, flash glare and film grain. Download a 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "Vintage Christmas Photo Maker"
+      },
+      "intro": [
+        "The vintage Christmas look turns a modern photo into a family snapshot from a Christmas morning in the late 1970s or early 1980s. The hair and clothes change to wool sweaters, flannel and corduroy, and the room fills with a tree dressed in thick tinsel and large colored bulbs, wood-paneled walls, torn wrapping paper and a shag carpet.",
+        "The picture is shot the way consumer cameras of that time did it: direct on-camera flash, warm and slightly faded color with a red-orange cast, visible film grain and soft focus toward the edges. The look asks for no date stamp and no text. Upload one photo, pick a size and download a JPG."
+      ],
+      "bestFor": [
+        {
+          "title": "Selfies, couples and relaxed portraits",
+          "description": "A casual, well-lit photo gives the look the most to work with. The face stays yours while the outfit and the room travel back forty years."
+        },
+        {
+          "title": "Pets among the wrapping paper",
+          "description": "If your photo shows a dog or a cat, it sits among the torn paper and the gifts. The look is told not to add a person or a pet that is not in your photo."
+        },
+        {
+          "title": "Throwback holiday posts",
+          "description": "It suits a found-in-the-family-album caption on a story, a card or a Pinterest board of vintage Christmas ideas. The 3:4 and 2:3 sizes feel closest to a printed snapshot."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with an everyday photo",
+          "description": "A relaxed pose in ordinary clothes beats a posed studio portrait. The more casual the original, the more convincing the Christmas morning feels."
+        },
+        {
+          "title": "Expect new clothes and a new room",
+          "description": "The look replaces the outfit, the hairstyle and the room with period details. If you want to keep your own outfit, choose a different look."
+        },
+        {
+          "title": "No date stamp on purpose",
+          "description": "Unlike the 80s flashback, this look asks for no date stamp and no text, so there are no digits or letters to proofread. Check the picture anyway before you post it."
+        },
+        {
+          "title": "Choose a print-like size",
+          "description": "Printed snapshots were closer to 3:4 than to a tall phone screen. Use 3:4 or 2:3 for that feel, and 9:16 when the picture is headed for a story."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie by a window, size 3:4",
+        "Photo: a person sitting on a sofa holding a mug, size 2:3",
+        "Photo: a couple close together, size 3:4",
+        "Photo: a dog lying on a rug, size 9:16"
+      ],
+      "faq": [
+        {
+          "q": "How is it different from the 80s flashback?",
+          "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) is a general throwback with bright accessories and an orange date stamp. The vintage Christmas look always builds a Christmas morning scene, with a tinsel tree and wrapping paper, and draws no date stamp."
+        },
+        {
+          "q": "Does it add a date stamp?",
+          "a": "No. The instructions ask for no date stamp, no text and no readable labels or brand names, which keeps the picture clean. AI can still draw stray lettering on a package, so read the result before you post it."
+        },
+        {
+          "q": "Will the faces stay recognizable?",
+          "a": "The face shape, skin tone, age and hair color are kept as far as the AI can, while the hair and clothes are restyled to match the era. One or two people keep the likeness best, and large groups drift more."
+        },
+        {
+          "q": "Can I use a pet photo?",
+          "a": "Yes. A pet sits among the wrapping paper in the same flash-and-grain style. The look does not add a person or an animal that is not in your photo."
+        }
+      ]
+    },
+    {
+      "value": "snow_globe",
+      "slug": "snow-globe",
+      "seo": {
+        "title": "Snow Globe Photo Maker – Turn a Photo Into a Winter Globe",
+        "description": "Turn a photo of you or your pet into a small figure inside a snow globe with drifting flakes, a tiny village and warm Christmas lights. Download a finished JPG.",
+        "h1": "Snow Globe Photo Maker"
+      },
+      "intro": [
+        "The snow globe look rebuilds the subject of your photo as a small figure inside a round glass globe. A person gets a cozy winter outfit and a pet gets a little scarf, and they stand in a tiny snowy village with pine trees and a cottage on a decorated base.",
+        "The result is composed like a photograph of a real object: soft white flakes drift inside the glass, the glass reflects and bends the light, and warm out-of-focus Christmas lights and a garland glow on a wooden mantel behind it. Upload one photo, pick a size and download a JPG. As with the claymation and felt looks, the picture keeps the spirit of the subject more than every detail of the face."
+      ],
+      "bestFor": [
+        {
+          "title": "Pets and portraits with a clear outline",
+          "description": "A dog, a cat or a person photographed against a simple background turns into a clean figure inside the globe, and the pet keeps its fur color and markings."
+        },
+        {
+          "title": "Holiday cards and small gifts",
+          "description": "A snow globe picture works as the image on a digital card, a message to a friend or a small gift for someone who loves their pet."
+        },
+        {
+          "title": "Pinterest boards of winter and Christmas ideas",
+          "description": "The 2:3 size matches the shape Pinterest recommends for standard Pins, and the globe fills a tall frame well."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick a photo with one clear subject",
+          "description": "The globe holds a single figure. A sharp photo with the subject large in the frame gives the AI a recognizable figure to place inside the glass."
+        },
+        {
+          "title": "Expect a miniature, not a portrait",
+          "description": "Like the [claymation world](/create/photo-trend-maker/claymation) and [felt miniature](/create/photo-trend-maker/felt-miniature) looks, the figure is simplified for the small scene, so it keeps the spirit of the face more than the exact details."
+        },
+        {
+          "title": "Only one globe",
+          "description": "The instructions ask for a single snow globe, so a group photo is better cropped to one or two people before you upload it."
+        },
+        {
+          "title": "Use a tall size for the whole globe",
+          "description": "The 9:16 and 2:3 sizes leave room for the glass, the base and the glowing lights. The 1:1 size frames the globe more tightly."
+        }
+      ],
+      "tryThese": [
+        "Photo: a grey tabby cat sitting on a windowsill, size 2:3",
+        "Photo: a golden retriever looking at the camera, size 9:16",
+        "Photo: a smiling person in a scarf, size 3:4",
+        "Photo: a small dog on a sofa, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Will it look like me or my pet?",
+          "a": "The instructions keep the subject's identity, colors and expression recognizable, but the figure is small and simplified. Fur color and markings usually survive well. Generate again if a result drifts."
+        },
+        {
+          "q": "Can I make a snow globe of my pet?",
+          "a": "Yes, and pets are one of the best uses. A pet gets a little scarf and sits in the snowy village. The look is told not to add a person or an animal that is not in your photo."
+        },
+        {
+          "q": "Does the picture contain any text?",
+          "a": "The instructions ask for no text. AI can still draw stray lettering on a small sign, so look closely before you post it."
+        },
+        {
+          "q": "How is it different from the claymation look?",
+          "a": "The [claymation world](/create/photo-trend-maker/claymation) rebuilds the whole scene from modelling clay. The snow globe puts a small figure inside glass, with drifting snow, reflections and Christmas lights around it."
+        }
+      ]
+    },
+    {
+      "value": "nye_party",
+      "slug": "new-years-eve-party",
+      "seo": {
+        "title": "New Year's Eve Photo Maker – AI Party Flash Portrait",
+        "description": "Turn a photo into a New Year's Eve party portrait with sparkling black and gold, confetti, sparklers and bright flash. Download a 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "New Year's Eve Party Photo Maker"
+      },
+      "intro": [
+        "The New Year's Eve party look turns a photo into a glamorous party snapshot shot with a bright on-camera flash. The subject wears tasteful sparkling black and gold, with a glittering headband, hat or tiara, in a dim room full of falling gold and silver confetti, streamers, sparklers and a mirror ball that scatters small points of light.",
+        "Strong flash highlights, deep shadows and fine film grain give it the candid feel of a magazine party page, and the expression is happy and mid-celebration. The look draws no text, numbers or clocks, so there is no countdown to misspell. Upload a photo, pick a size and download a JPG."
+      ],
+      "bestFor": [
+        {
+          "title": "Selfies and portraits of one or two people",
+          "description": "A close, well-lit photo keeps the likeness best. The outfit, the accessory and the room change while the face stays yours."
+        },
+        {
+          "title": "Party posts and group chats",
+          "description": "A flash portrait works as the picture on a party post, a story or the message you send to friends before the night. Write the date and place yourself in the post."
+        },
+        {
+          "title": "Pets in party accessories",
+          "description": "A pet stays recognizable with a small party accessory. The look is told not to add a person or an animal that is not in your photo."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Start with a close, bright photo",
+          "description": "Window light and a face that fills a good part of the frame give the AI the most to hold on to. Dark or distant photos drift further from the original."
+        },
+        {
+          "title": "Expect a new outfit",
+          "description": "The look dresses the subject in sparkling black and gold, so the clothes in your photo are replaced. If you want to keep your own outfit, choose a different look."
+        },
+        {
+          "title": "Add the year yourself",
+          "description": "Do not expect a year or a countdown on the picture, because the look asks for no text and no numbers. Add them in another app if you want them."
+        },
+        {
+          "title": "Compare it with Night Out Flash",
+          "description": "The [night out flash](/create/photo-trend-maker/night-flash) look keeps a dim city mood. This one adds confetti, sparklers, glitter and a mirror ball, so it suits a celebration more than an ordinary night out."
+        }
+      ],
+      "tryThese": [
+        "Photo: a close selfie with a big smile, size 2:3",
+        "Photo: a couple standing close together, size 9:16",
+        "Photo: a friend laughing indoors, size 3:4",
+        "Photo: a dog looking at the camera, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Can it write the new year on the picture?",
+          "a": "No. The instructions ask for no text, numbers or clocks, which also avoids misspelled words. Add the year in a card or messaging app after you download the JPG."
+        },
+        {
+          "q": "How is it different from Night Out Flash?",
+          "a": "Both use a bright on-camera flash. The [night out flash](/create/photo-trend-maker/night-flash) look keeps the real colors against a moody city background, while this look adds a black and gold party outfit, confetti, sparklers and a mirror ball."
+        },
+        {
+          "q": "Does it work for couples?",
+          "a": "Yes. One or two people close together keep the likeness best, and the sparkling outfits and accessories are added to both. Large groups tend to drift, so crop the photo to the people who matter."
+        },
+        {
+          "q": "Will it add other people to the party?",
+          "a": "It is told not to. The scene is filled with confetti, streamers, sparklers and lights, and the people are the ones in your photo. If an extra person or hand appears, generate again."
         }
       ]
     }
