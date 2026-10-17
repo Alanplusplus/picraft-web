@@ -2,9 +2,9 @@
   "title": "MLS Listing Photo Size: 2048×1536, 4:3 & File Limit Guide",
   "h1": "Real Estate Listing Photo Size and MLS Requirements",
   "description": "MLS listing photo dimensions: 2048×1536 px landscape JPG, 1024×768 minimums, file size limits, web sizes, virtual staging labels, keeping unedited originals.",
-  "summary": "Most MLS feeds expect landscape JPGs around 4:3. PiCraft exports a 2048×1536 px MLS file and a 1600×1200 px web JPG under 1 MB. Many boards accept 1024×768 px as a minimum, but maximum file weight often falls between 5 MB and 10 MB—check your MLS. Label virtually staged photos and keep unedited originals.",
+  "summary": "Most MLS feeds expect landscape JPGs around 4:3. PiCraft exports a 2048×1536 px MLS file and a 1600×1200 px web JPG under 1 MB. Boards such as MLS Now and OneKey MLS ask for at least 1024×768 px, with file caps of 6 MB and 10 MB, so check yours. Label virtually staged photos and keep unedited originals.",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-17",
   "scene": "real-estate-listing-photo",
   "relatedScenes": ["amazon-product-photo", "event-flyer-maker"],
   "relatedGuides": ["blog:virtual-staging-disclosure-for-listing-photos", "amazon-product-image-requirements"],
@@ -21,7 +21,7 @@
           ["MLS-oriented size", "2048×1536 px suits many systems; 1024×768 px is a common minimum", "2048×1536 px JPG"],
           ["Web and social", "Smaller JPG for speed", "1600×1200 px JPG, under 1 MB"],
           ["Format", "JPG most common", "JPG"],
-          ["File weight", "Often 5–10 MB per photo (varies)", "Web file capped at 1 MB; check MLS for the MLS file"]
+          ["File weight", "Varies by MLS: 6 MB at MLS Now, 10 MB at OneKey MLS", "Web file capped at 1 MB; check MLS for the MLS file"]
         ]
       },
       "after": [
@@ -32,8 +32,8 @@
       "heading": "Resolution, aspect ratio and file size",
       "paragraphs": [
         "Four-to-three landscape matches typical wide-angle listing shots. A 2048×1536 px JPG is enough for most screens without oversized file weight.",
-        "1024×768 px is a common minimum; portrait phone photos are often rejected—crop to landscape before you edit.",
-        "File size limits protect the MLS upload pipeline. Caps around 5 MB or 10 MB per image appear often, but boards differ. A 2048×1536 px JPG at moderate quality usually stays under typical caps; if upload fails, lower JPG quality slightly."
+        "1024×768 px is the figure boards name most often. MLS Now asks for photos of at least 1024×768 px in landscape orientation, and OneKey MLS tells agents to use at least 1024×768 for the best resolution and flags photos with poor resolution after upload. Turn a phone sideways before you shoot, and crop portrait photos to landscape before you edit.",
+        "File size limits protect the MLS upload pipeline, and boards differ. MLS Now accepts JPG only, up to 6 MB per photo and 50 photos per listing. OneKey MLS allows up to 10 MB per photo and 36 photos per listing. A 2048×1536 px JPG at moderate quality usually stays under both caps; if an upload fails, lower the JPG quality slightly."
       ]
     },
     {
@@ -52,6 +52,7 @@
       "paragraphs": [
         "Virtual staging adds furniture to an empty room; declutter removes loose items from a furnished room; twilight edits change exterior sky and lighting. Each can change buyer expectations, so MLS associations and several states require clear labeling of altered listing media.",
         "PiCraft's maker notes that most MLS rules and many state regulations require labeling staged or materially altered photos. Wording and placement differ: some boards want text in the photo description, others in the public remarks or a dedicated field. PiCraft does not know your local rule set—confirm with your MLS and broker.",
+        "MLS Now is one concrete example. Its help page allows virtual staging of movable items such as furniture, rugs and art, minor exposure and white-balance edits, and sky replacement that does not materially change the view, all with disclosure. It prohibits adding, removing or changing permanent features such as walls, windows, floors and cabinets, and it requires the primary photo to be an unaltered current exterior. Every altered image needs a readable on-image label (\"Virtually Staged,\" \"Digitally Altered\" or \"Rendering/AI-Generated\"), the caption repeats it, and the original photos must be kept in case the MLS asks for them. Another board may word each of these differently.",
         "Edits must never hide defects such as water stains, cracked tile, damaged cabinets or structural issues. Declutter is for temporary mess, not permanent problems. For a fuller checklist on labels and originals, read [virtual staging disclosure for listing photos](/blog/virtual-staging-disclosure-for-listing-photos)."
       ],
       "after": [
@@ -83,7 +84,7 @@
     },
     {
       "q": "What is the maximum file size for MLS photos?",
-      "a": "It varies by MLS, often in the 5–10 MB range per image. If your upload fails, lower JPG quality or ask your board for the current limit."
+      "a": "It varies by MLS. MLS Now allows 6 MB per photo and OneKey MLS allows 10 MB. If your upload fails, lower JPG quality or ask your board for the current limit."
     },
     {
       "q": "Do I have to label virtually staged photos?",
@@ -96,6 +97,20 @@
     {
       "q": "Can listing edits hide damage or defects?",
       "a": "No. Enhancement, declutter and staging must not conceal problems a buyer would reasonably want to know about."
+    },
+    {
+      "q": "Can the main listing photo be edited?",
+      "a": "Often not. MLS Now requires the primary photo to be an unaltered, current front-exterior photo, with an architectural rendering allowed only for new construction. Check your board before you upload an edited cover photo."
+    }
+  ],
+  "sources": [
+    {
+      "label": "MLS Now: Listing photo rules and requirements",
+      "url": "https://support.mlsnow.com/hc/en-us/articles/24915189546907-Listing-Photo-Rules-and-Requirements"
+    },
+    {
+      "label": "OneKey MLS: Adding and editing photos, captions and descriptions in Matrix",
+      "url": "https://support.onekeymls.com/hc/en-us/articles/26920063924372-Adding-and-Editing-Photos-Captions-and-Descriptions-on-Listings-in-Matrix"
     }
   ]
 }

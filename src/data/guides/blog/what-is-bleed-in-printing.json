@@ -5,7 +5,7 @@
   "summary": "Bleed is extra artwork past the final cut line so a small shift at the trimmer does not leave a white edge. PiCraft print files add 0.125 in (3 mm) bleed on cards and invitations, keep invitation text 0.25 in inside the trim line, and export at 300 DPI as PDF or JPG.",
   "topic": "Print",
   "published": "2026-10-09",
-  "updated": "2026-10-13",
+  "updated": "2026-10-17",
   "scene": "business-card-maker",
   "relatedScenes": [
     "wedding-invitation-maker",
@@ -75,7 +75,8 @@
       "paragraphs": [
         "PiCraft delivers both a print PDF with bleed and a 300 DPI JPG of the same artwork. Prefer the PDF when the printer accepts it. PDF keeps edges vector-sharp where the design uses flat color and gives the shop a single file that matches the trim and bleed dimensions.",
         "Use the JPG when an online editor, copy center kiosk or home workflow only accepts images. The JPG is the same layout and bleed as the PDF; it is not a separate crop.",
-        "Always confirm format with your vendor. Some shops want PDF/X, others want PNG at exact pixel sizes. If their portal rejects a file, open their template and compare width, height and bleed to the table above before you re-export elsewhere."
+        "Always confirm format with your vendor. Some shops want PDF/X, others want PNG at exact pixel sizes. If their portal rejects a file, open their template and compare width, height and bleed to the table above before you re-export elsewhere.",
+        "Two more details trip people up. First, color: PiCraft's print PDF and JPG are RGB, and the maker does not convert them to CMYK. VistaPrint and WePrint.ie both ask for CMYK, so ask your printer whether it converts RGB files and order a proof if a brand color matters. Second, crop marks: PiCraft files are the artwork at trim plus bleed and carry no crop marks. VistaPrint says crop marks are not required for every order and tells customers to follow the uploader's instructions, so check before adding your own."
       ],
       "after": [
         "The [Business Card Maker](/create/business-card-maker) downloads a US or European card with bleed plus a smaller web JPG that is not meant for trim-to-edge printing."
@@ -107,7 +108,8 @@
         "Store the download and note which size region you chose (US vs European card, Letter vs A4 menu) so reorders match."
       ],
       "after": [
-        "Printers publish their own templates and may use slightly different bleed or safe zones. When in doubt, ask the shop to confirm trim to finished size and bleed to be trimmed off."
+        "Printers publish their own templates and may use slightly different bleed or safe zones. When in doubt, ask the shop to confirm trim to finished size and bleed to be trimmed off.",
+        "The numbers do differ in practice. VistaPrint calls 0.125 in (3 mm) the common bleed and asks for a safety margin of at least 0.125 in, yet its standard US business card template is 3.61×2.11 in with bleed and a 3.36×1.86 in safe area. WePrint.ie in Ireland asks for 3 mm of bleed and keeps important content 5 mm inside the cut. If your template is smaller than the PiCraft file, center the file on it and trim the extra from each edge rather than scaling it."
       ]
     }
   ],
@@ -127,6 +129,28 @@
     {
       "q": "Can I add bleed in PiCraft after download?",
       "a": "PiCraft already includes bleed on print exports. If you open the file in an editor, do not crop to trim size before upload, and keep new text inside the safe area rules above."
+    },
+    {
+      "q": "Do I need crop marks on a print file?",
+      "a": "Not always. Crop marks show the printer where to cut, but VistaPrint says they are not required for every order. Follow the uploader's instructions for the product you order."
+    },
+    {
+      "q": "Is bleed the same at every print shop?",
+      "a": "No. 0.125 in (3 mm) is the common figure, but templates differ. VistaPrint's standard US business card template is 3.61×2.11 in with bleed. Always size the file to the template for the product you order."
+    }
+  ],
+  "sources": [
+    {
+      "label": "VistaPrint: Crop marks and bleed explained",
+      "url": "https://www.vistaprint.com/hub/crop-marks-explained"
+    },
+    {
+      "label": "VistaPrint: How to prepare business card files for print",
+      "url": "https://www.vistaprint.com/hub/business-card-file-prep"
+    },
+    {
+      "label": "WePrint.ie: Technical advice for print-ready files",
+      "url": "https://weprint.ie/technical-stuff/"
     }
   ]
 }

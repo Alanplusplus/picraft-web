@@ -4,7 +4,7 @@
   "description": "Restaurant menu size for print: US Letter 8.5×11 in or A4 with bleed, 300 DPI specs, about 14 lines per page, web JPG sizes, and local allergen rules to check.",
   "summary": "Print a one-page menu at US Letter 8.5×11 in (8.75×11.25 in with 0.125 in bleed) or A4 210×297 mm (216×303 mm with 3 mm bleed) at 300 DPI. PiCraft fits about 14 menu lines on one page; keep type large enough to read from a seated guest's distance and verify allergen rules locally.",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-17",
   "scene": "restaurant-menu-maker",
   "relatedScenes": ["event-flyer-maker", "wedding-invitation-maker"],
   "relatedGuides": ["flyer-size", "blog:product-photo-checklist-for-online-stores"],
@@ -40,6 +40,7 @@
       "paragraphs": [
         "Bleed lets background color or borders run past the final trim so you do not see white slivers after cutting. US menus use 0.125 in bleed per side; A4 workflows often use 3 mm per side, which PiCraft applies on the A4 PDF and JPG.",
         "Send the PDF with bleed intact. Specify trim size (8.5×11 in or 210×297 mm) on the order. If you laminate, confirm the pouch matches the trimmed sheet.",
+        "Bleed amounts vary a little by shop. VistaPrint calls 0.125 in (3 mm) the common figure, yet its published Letter figure is 8.625×11.125 in, which is 0.0625 in per edge. WePrint.ie in Ireland asks for 3 mm. If the template is smaller than PiCraft's file, center the file on it and trim the extra from each edge instead of scaling the artwork.",
         "For a general explanation of bleed and safe areas, see [what is bleed in printing](/blog/what-is-bleed-in-printing)."
       ]
     },
@@ -70,6 +71,7 @@
       "heading": "Allergens, calories and legal notices",
       "paragraphs": [
         "Many jurisdictions require allergen disclosures, calorie counts or other statements on menus or menu boards. Rules differ by country, state and city, and they change over time.",
+        "Two examples show how different they are. In the US, the FDA's menu labeling rule applies to restaurants that are part of a chain of 20 or more locations doing business under the same name. Covered menus and menu boards must show calories for standard items, plus a statement about the 2,000-calorie daily reference; a single-location restaurant is outside that federal rule, though state or local rules may still apply. In the UK, the Food Standards Agency publishes allergen guidance for food businesses, including a printable allergy sign and an allergen matrix template.",
         "PiCraft copies the dish lines you paste; it does not automatically add allergen icons, \"may contain\" blocks or nutrition panels. Type allergens into your lines if you want them in the design, or add a separate notice in your printer's template editor. Confirm what your location requires with official guidance or a local advisor.",
         "Do not rely on this page for compliance advice."
       ]
@@ -116,6 +118,28 @@
     {
       "q": "Can I add my logo to the menu?",
       "a": "Not in the maker. The restaurant name is rendered as styled type. Add a logo afterward in an editor if needed."
+    },
+    {
+      "q": "Do I have to show calories on my menu?",
+      "a": "In the US, the FDA's federal rule covers restaurants in a chain of 20 or more locations under the same name. Smaller restaurants are outside that rule, but state and local rules differ, so check with your health department."
+    }
+  ],
+  "sources": [
+    {
+      "label": "FDA: Menu labeling requirements",
+      "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/menu-labeling-requirements"
+    },
+    {
+      "label": "UK Food Standards Agency: Allergen guidance for food businesses",
+      "url": "https://www.food.gov.uk/business-guidance/allergen-guidance-for-food-businesses"
+    },
+    {
+      "label": "VistaPrint: Crop marks and bleed explained (Letter template and common bleed)",
+      "url": "https://www.vistaprint.com/hub/crop-marks-explained"
+    },
+    {
+      "label": "WePrint.ie: Technical advice for print-ready files (3 mm bleed, A-series sizes)",
+      "url": "https://weprint.ie/technical-stuff/"
     }
   ]
 }

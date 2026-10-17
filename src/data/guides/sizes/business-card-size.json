@@ -4,7 +4,7 @@
   "description": "US business cards are 3.5×2 in; Europe often uses 85×55 mm. Bleed, safe zones, 300 DPI pixel sizes, landscape layout, and matching your printer template.",
   "summary": "In the US and Canada the usual trim size is 3.5×2 inches; in much of Europe it is 85×55 mm. Add bleed (0.125 in or 3 mm) so color reaches the edge after cutting, keep text inside the safe area, and export at 300 DPI for print.",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-17",
   "scene": "business-card-maker",
   "relatedScenes": ["event-flyer-maker", "linkedin-banner-maker", "sticker-maker"],
   "relatedGuides": ["flyer-size", "linkedin-banner-size", "blog:what-is-bleed-in-printing"],
@@ -31,7 +31,8 @@
       "paragraphs": [
         "Bleed is extra artwork beyond the trim line so a small cut error does not leave a white hairline. US shops commonly ask for 0.125 in bleed on all sides; many European templates use 3 mm per edge.",
         "The safe zone is the inner area where text and logos should stay so they are never trimmed off. Printers publish their own templates; a typical rule is to keep important content at least 3 mm (about 0.125 in) inside the trim.",
-        "PiCraft keeps contact type inside a centered safe rectangle on the card front. If you edit the file afterward, respect the same margins. For why bleed exists, see [what is bleed in printing](/blog/what-is-bleed-in-printing)."
+        "PiCraft keeps contact type inside a centered safe rectangle on the card front. If you edit the file afterward, respect the same margins. For why bleed exists, see [what is bleed in printing](/blog/what-is-bleed-in-printing).",
+        "Printers do not all use the same numbers. VistaPrint's standard US card template is 3.61×2.11 in with bleed and a 3.36×1.86 in safe area, which is a thinner bleed than 0.125 in. An Irish online printer, WePrint.ie, asks for 3 mm of bleed and important content at least 5 mm inside the final cut. The PiCraft US file is 3.75×2.25 in. If your printer's template is smaller, place the file centered and trim the extra from each edge (0.07 in per side for the VistaPrint size) instead of scaling it."
       ]
     },
     {
@@ -39,7 +40,8 @@
       "paragraphs": [
         "Print shops expect 300 DPI for crisp small type. The pixel sizes in the table above come from multiplying the bleed dimensions by 300 (for example, 3.75×300 = 1125 px width for US bleed width).",
         "Business cards are almost always designed in landscape orientation: the long edge runs horizontally when you hand the card to someone with the text right-side up.",
-        "Card stock weight (for example 14 pt or 16 pt) affects feel and thickness but not the digital file size. Choose stock with your printer; the PDF dimensions stay the same."
+        "Card stock weight (for example 14 pt or 16 pt) affects feel and thickness but not the digital file size. Choose stock with your printer; the PDF dimensions stay the same.",
+        "Many printers ask for CMYK files. VistaPrint and WePrint.ie both say so, and VistaPrint recommends a print-ready PDF. PiCraft's print PDF and JPG are RGB; the maker does not convert them to CMYK. Printers usually convert on their side, so expect saturated screen colors such as bright blues and greens to look slightly duller on paper, and order a proof if a brand color matters."
       ]
     },
     {
@@ -96,6 +98,28 @@
     {
       "q": "Can one file work for US and EU sizes?",
       "a": "No. The proportions differ. Design or export separately for the region where you will print."
+    },
+    {
+      "q": "Is business card bleed always 0.125 inch?",
+      "a": "No. 0.125 in (3 mm) is the common figure, but templates differ. VistaPrint's standard US card is 3.61×2.11 in with bleed, which is about 0.055 in per edge. Use the template for the exact product you order."
+    },
+    {
+      "q": "Do I need to convert the file to CMYK before printing?",
+      "a": "Check with your printer. VistaPrint and WePrint.ie ask for CMYK. PiCraft exports RGB, so ask whether the shop converts RGB files or wants you to do it, and request a proof for colors that matter."
+    }
+  ],
+  "sources": [
+    {
+      "label": "VistaPrint: How to prepare business card files for print",
+      "url": "https://www.vistaprint.com/hub/business-card-file-prep"
+    },
+    {
+      "label": "VistaPrint: Crop marks and bleed explained",
+      "url": "https://www.vistaprint.com/hub/crop-marks-explained"
+    },
+    {
+      "label": "WePrint.ie: Technical advice for print-ready files",
+      "url": "https://weprint.ie/technical-stuff/"
     }
   ]
 }
