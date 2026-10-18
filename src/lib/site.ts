@@ -11,8 +11,8 @@ export const TAGLINE = "Finished visuals, not prompts.";
 export const COPYRIGHT_YEAR = 2026;
 
 /** Shown on the legal pages and used as `dateModified`. Update it whenever the wording changes. */
-export const LEGAL_UPDATED = "October 8, 2026";
-export const LEGAL_UPDATED_ISO = "2026-10-08";
+export const LEGAL_UPDATED = "October 18, 2026";
+export const LEGAL_UPDATED_ISO = "2026-10-18";
 
 /** Generated files are deleted after this many days (enforced by `backend/scripts/set_oss_lifecycle.py`). */
 export const FILE_RETENTION_DAYS = 90;
@@ -25,6 +25,8 @@ export const GOVERNING_LAW = process.env.NEXT_PUBLIC_GOVERNING_LAW ?? "";
 /** Optional integrations. Each one is switched on only when its environment variable is set. */
 export const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? "";
 export const PLAUSIBLE_SRC = process.env.NEXT_PUBLIC_PLAUSIBLE_SRC || "https://plausible.io/js/script.js";
+/** Google Analytics 4 measurement ID. Set the variable to an empty string to switch Google Analytics off. */
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-DZJL4E7P9L";
 export const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "";
 export const BING_SITE_VERIFICATION = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "";
 /** Content of the Pinterest `p:domain_verify` meta tag, used to claim the website on Pinterest. */

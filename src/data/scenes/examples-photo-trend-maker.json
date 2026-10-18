@@ -389,6 +389,126 @@
       "approved": true,
       "style": "nye_party",
       "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_collectible_figure_box_0_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Collectible figure box: a bearded man in a grey hoodie as a plastic figure in a blister pack with a camera, mug and backpack",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "collectible_figure_box",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_collectible_figure_box_1_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Collectible figure box: a silver-haired woman in glasses as a plastic figure in a blister pack with a mug, camera and bag",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "collectible_figure_box",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_pop_up_paper_card_0_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Pop-up paper card: a grey tabby cat in layered cardstock beside a paper plant with paper trees and clouds behind it",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "pop_up_paper_card",
+      "beforeAlt": "Original photo: a grey tabby cat on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_pop_up_paper_card_1_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Pop-up paper card: a golden retriever built from layered cardstock in front of paper hills, pine trees and clouds",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "pop_up_paper_card",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_scrapbook_journal_0_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Scrapbook journal page: a woman's selfie taped onto a journal spread with washi tape, pressed flowers and stickers",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "scrapbook_journal",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_scrapbook_journal_1_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Scrapbook journal page: a couple's photo taped onto paper with washi tape, a pressed daisy, torn paper and heart doodles",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "scrapbook_journal",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_doodle_twin_0_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Mini doodle twin: a golden retriever on a rug with a tiny ink-drawn dog twin and a small heart on its shoulder",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "doodle_twin",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_doodle_twin_1_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Mini doodle twin: a laughing man in a park with a tiny ink-drawn twin in a hoodie on his shoulder",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "doodle_twin",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_instant_photo_popout_0_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Instant photo pop-out: a silver-haired woman in glasses reaches a hand out of an instant print in a kitchen",
+      "width": 1000,
+      "height": 1781,
+      "approved": true,
+      "style": "instant_photo_popout",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_instant_photo_popout_1_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Instant photo pop-out: a woman reaches a hand out of an instant print held in a real hand in a bright room",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "instant_photo_popout",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_photo_sticker_sheet_0_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Photo sticker sheet: nine die-cut stickers of a woman with wavy auburn hair in different expressions and poses",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "photo_sticker_sheet",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_photo_sticker_sheet_1_1792339400000.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Photo sticker sheet: nine die-cut stickers of a grey tabby cat laughing, surprised, sleeping and giving a thumbs up",
+      "width": 1000,
+      "height": 1510,
+      "approved": true,
+      "style": "photo_sticker_sheet",
+      "beforeAlt": "Original photo: a grey tabby cat on a windowsill"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-18",
   "overview": {
     "heading": "How the Photo Trend Maker works",
     "paragraphs": [
-      "You upload one photo, choose one of 19 looks and pick a size. PiCraft sends the photo and a written description of the look to an AI image model, which redraws the whole picture in that style while keeping the subject recognizable. The result comes back as a JPG at the exact pixel size of the shape you chose.",
-      "Each look is a different kind of change. The film and camera looks, such as the [80s flashback](/create/photo-trend-maker/80s-flashback) and the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam), change the clothes, the surroundings and the flaws of the picture. The handmade looks, such as the [claymation world](/create/photo-trend-maker/claymation) and the [felt miniature](/create/photo-trend-maker/felt-miniature), rebuild the scene from physical materials. The seasonal looks, such as the [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait), the [Thanksgiving harvest portrait](/create/photo-trend-maker/thanksgiving-harvest), the [Christmas card portrait](/create/photo-trend-maker/christmas-card), the [snow globe](/create/photo-trend-maker/snow-globe) and the [New Year's Eve party flash](/create/photo-trend-maker/new-years-eve-party), dress the subject for a holiday and rebuild the room around them. The rest turn the photo into a toy, a game screen, a blueprint, a newspaper page or a statue.",
+      "You upload one photo, choose one of 25 looks and pick a size. PiCraft sends the photo and a written description of the look to an AI image model, which redraws the whole picture in that style while keeping the subject recognizable. The result comes back as a JPG at the exact pixel size of the shape you chose.",
+      "Each look is a different kind of change. The film and camera looks, such as the [80s flashback](/create/photo-trend-maker/80s-flashback) and the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam), change the clothes, the surroundings and the flaws of the picture. The handmade looks, such as the [claymation world](/create/photo-trend-maker/claymation) and the [felt miniature](/create/photo-trend-maker/felt-miniature), rebuild the scene from physical materials. The seasonal looks, such as the [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait), the [Thanksgiving harvest portrait](/create/photo-trend-maker/thanksgiving-harvest), the [Christmas card portrait](/create/photo-trend-maker/christmas-card), the [snow globe](/create/photo-trend-maker/snow-globe) and the [New Year's Eve party flash](/create/photo-trend-maker/new-years-eve-party), dress the subject for a holiday and rebuild the room around them. The craft and illusion looks, such as the [collectible figure box](/create/photo-trend-maker/collectible-figure-box), the [pop-up paper card](/create/photo-trend-maker/pop-up-paper-card), the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal), the [mini doodle twin](/create/photo-trend-maker/mini-doodle-twin), the [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out) and the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet), turn the photo into a made object or a picture trick. The rest turn the photo into a toy head, a game screen, a blueprint, a newspaper page or a statue.",
       "The size is chosen before the image is made, not after. A 9:16 image is composed for a tall frame, so the subject is not cut off the way it would be if you cropped a square. Each generation costs one credit and gives a new result, so you can run the same photo through several looks and keep the best one."
     ]
   },
@@ -14,8 +14,8 @@
       "description": "1080×1920 for 9:16, 1000×1500 for 2:3, 1080×1440 for 3:4 or 1080×1080 for 1:1. The image is generated for that shape first and then cut to the exact pixel size."
     },
     {
-      "title": "19 distinct looks",
-      "description": "Camera looks, handmade looks, game, print and art looks, and six holiday looks in one form. The [photo trends category](/categories/photo-trends) shows how they group together."
+      "title": "25 distinct looks",
+      "description": "Camera looks, handmade looks, craft and illusion looks, game, print and art looks, and six holiday looks in one form. The [photo trends category](/categories/photo-trends) shows how they group together."
     },
     {
       "title": "A subject that stays recognizable",
@@ -50,6 +50,10 @@
     {
       "title": "Holiday cards and seasonal posts",
       "description": "The [Christmas card portrait](/create/photo-trend-maker/christmas-card), the [vintage Christmas snapshot](/create/photo-trend-maker/vintage-christmas), the [Thanksgiving harvest portrait](/create/photo-trend-maker/thanksgiving-harvest) and the [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait) turn one photo, with or without a pet, into a seasonal picture for a card, a family chat or a holiday Pinterest board."
+    },
+    {
+      "title": "Gifts, journals and craft boards",
+      "description": "The [pop-up paper card](/create/photo-trend-maker/pop-up-paper-card), the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal) and the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet) turn a photo into a picture for a journaling board, a card idea or a gift message. They are flat pictures to post, not printable templates."
     },
     {
       "title": "Invitations and group chats",
@@ -108,7 +112,13 @@
       { "title": "Christmas Card Portrait", "description": "A warm living room with a tree, lights and a fireplace. Best for [couples, families and pets on a holiday card](/create/photo-trend-maker/christmas-card)." },
       { "title": "Vintage Christmas Snapshot", "description": "A flash-lit Christmas morning from the late 1970s or early 1980s, with a tinsel tree and wrapping paper. Best for [relaxed selfies, couples and throwback posts](/create/photo-trend-maker/vintage-christmas)." },
       { "title": "Snow Globe", "description": "A small figure of you or your pet inside a glass globe with drifting snow and a tiny village. Best for [pets and clear portraits](/create/photo-trend-maker/snow-globe)." },
-      { "title": "New Year's Eve Party Flash", "description": "Black and gold party clothes, confetti, sparklers and a mirror ball under bright flash. Best for [selfies, couples and party posts](/create/photo-trend-maker/new-years-eve-party)." }
+      { "title": "New Year's Eve Party Flash", "description": "Black and gold party clothes, confetti, sparklers and a mirror ball under bright flash. Best for [selfies, couples and party posts](/create/photo-trend-maker/new-years-eve-party)." },
+      { "title": "Collectible Figure Box", "description": "A plastic figure of you in a blister pack on a printed card, with two or three accessories. Best for [gifts, pets and job jokes](/create/photo-trend-maker/collectible-figure-box)." },
+      { "title": "Pop-up Paper Card", "description": "A half-open card with you or your pet cut from layered cardstock in front of paper scenery. Best for [pets and greeting card pictures](/create/photo-trend-maker/pop-up-paper-card)." },
+      { "title": "Scrapbook Journal Page", "description": "Your photo taped onto a journal page with washi tape, torn paper, pressed flowers and stickers. Best for [trips, couples and journaling boards](/create/photo-trend-maker/scrapbook-journal)." },
+      { "title": "Mini Doodle Twin", "description": "A real photo with one tiny ink-drawn twin sitting on your shoulder. Best for [selfies, pets and profile pictures](/create/photo-trend-maker/mini-doodle-twin)." },
+      { "title": "Instant Photo Pop-Out", "description": "An instant print held in a hand, with your arm reaching out of the frame into the room. Best for [selfies, pets and eye-catching posts](/create/photo-trend-maker/instant-photo-pop-out)." },
+      { "title": "Photo Sticker Sheet", "description": "Nine die-cut style stickers of the same face in different poses on one sheet. Best for [pets, chat reactions and journal pages](/create/photo-trend-maker/photo-sticker-sheet)." }
     ]
   },
   "checklist": {
@@ -127,7 +137,8 @@
     "AI likeness is never exact. Small details such as freckles, jewelry or teeth can change, and groups of people drift more than a single face does.",
     "The result is a flat JPG, not layers. To change something, pick the look and size again and generate a new image.",
     "Words drawn into the image, such as a date stamp or newspaper headlines, can be misspelled, so always proofread.",
-    "Hands, fingers and small accessories can come out wrong, especially in looks that draw many small figures, such as the photo booth strip.",
+    "Hands, fingers and small accessories can come out wrong, especially in looks that draw many small figures or reaching hands, such as the photo booth strip, the photo sticker sheet and the instant photo pop-out.",
+    "Looks that draw packaging, such as the collectible figure box, add a short invented name, and small objects on the card can carry garbled lettering. Zoom in before you post.",
     "Wide photos with a tiny subject give weaker results than close portraits, so crop first if the face or pet is small.",
     "The size is fixed before the image is made. Switching from 9:16 to 1:1 means generating a new design, which uses another credit."
   ],

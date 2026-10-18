@@ -1,8 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
+
+import { trackEvent } from "@/lib/analytics";
 
 export default function ErrorPage({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+  useEffect(() => {
+    // The digest matches the server log entry; in production the message of a server error is hidden by Next.js.
+    trackEvent("exception", { description: (error.digest ? `digest:${error.digest}` : error.message).slice(0, 100), fatal: true });
+  }, [error]);
+
   return (
     <div className="mx-auto max-w-xl px-4 py-24 text-center sm:px-6">
       <h1 className="text-3xl font-bold tracking-tight text-ink-950">Something went wrong</h1>

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
 
+import { trackEvent } from "@/lib/analytics";
+
 interface CompareSliderProps {
   before: string;
   beforeAlt: string;
@@ -19,6 +21,14 @@ export function CompareSlider({ before, beforeAlt, after, afterAlt, width, heigh
   const [position, setPosition] = useState(50);
   const frame = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
+  const used = useRef(false);
+
+  /** Reports the first use of this slider only, so dragging back and forth is one event. */
+  function reportUse() {
+    if (used.current) return;
+    used.current = true;
+    trackEvent("compare_slider_use");
+  }
 
   function moveTo(clientX: number) {
     const rect = frame.current?.getBoundingClientRect();
@@ -30,6 +40,7 @@ export function CompareSlider({ before, beforeAlt, after, afterAlt, width, heigh
     dragging.current = true;
     event.currentTarget.setPointerCapture(event.pointerId);
     moveTo(event.clientX);
+    reportUse();
   }
 
   function onPointerMove(event: PointerEvent<HTMLDivElement>) {
@@ -50,6 +61,7 @@ export function CompareSlider({ before, beforeAlt, after, afterAlt, width, heigh
     if (next === null) return;
     event.preventDefault();
     setPosition(Math.min(100, Math.max(0, next)));
+    reportUse();
   }
 
   return (

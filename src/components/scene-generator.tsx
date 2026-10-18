@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import { api } from "@/lib/api-client";
+import { trackEvent } from "@/lib/analytics";
 import { prepareUpload } from "@/lib/image-file";
 import type { ClientScene, SceneField, TaskView } from "@/lib/types";
 
@@ -68,6 +69,16 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
   const outOfCredits = ready && account !== null && account.credits < scene.cost;
   const busy = phase === "submitting" || phase === "processing";
 
+  // The free credits are used up: the visitor can no longer create anything.
+  useEffect(() => {
+    if (outOfCredits) trackEvent("credits_exhausted", { scene: scene.slug });
+  }, [outOfCredits, scene.slug]);
+
+  /** Parameters shared by the events of one generation. `style` is only set for makers that have a style field. */
+  function eventParams(extra: Record<string, string | number> = {}) {
+    return { scene: scene.slug, style: values.style || undefined, ...extra };
+  }
+
   async function onPickImage(field: SceneField, file: File | undefined) {
     if (!file) return;
     setError(null);
@@ -76,6 +87,7 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
       dataUrl = await prepareUpload(file);
     } catch (e) {
       setError((e as Error).message);
+      trackEvent("image_upload", { scene: scene.slug, result: "invalid_file" });
       return;
     }
     setImages((prev) => ({ ...prev, [field.key]: { preview: dataUrl, url: null, uploading: true } }));
@@ -87,9 +99,10 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
       [field.key]: { preview: dataUrl, url: res.code === 200 && res.data ? res.data.url : null, uploading: false },
     }));
     if (res.code !== 200) setError(res.message);
+    trackEvent("image_upload", { scene: scene.slug, result: res.code === 200 ? "success" : "error" });
   }
 
-  async function poll(taskId: string) {
+  async function poll(taskId: string, startedAt: number) {
     const deadline = Date.now() + POLL_TIMEOUT_MS;
     while (!cancelled.current && Date.now() < deadline) {
       await new Promise((r) => setTimeout(r, POLL_INTERVAL_MS));
@@ -98,11 +111,16 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
       if (res.data.status === "done") {
         setTask(res.data);
         setPhase("done");
+        trackEvent(
+          "generate_success",
+          eventParams({ duration_s: Math.round((Date.now() - startedAt) / 1000), file_count: res.data.files.length }),
+        );
         return;
       }
       if (res.data.status === "failed") {
         setError(res.data.error);
         setPhase("failed");
+        trackEvent("generate_fail", eventParams({ reason: "task_failed" }));
         await refresh();
         return;
       }
@@ -110,6 +128,7 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
     if (!cancelled.current) {
       setError("This is taking longer than usual. Your file will appear in My files when it's ready.");
       setPhase("failed");
+      trackEvent("generate_fail", eventParams({ reason: "timeout" }));
     }
   }
 
@@ -130,17 +149,21 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
     }
 
     setPhase("submitting");
+    trackEvent("generate_submit", eventParams({ cost: scene.cost }));
+    const startedAt = Date.now();
     const res = await api.generate(scene.slug, values, imageUrls);
     if (res.code !== 200 || !res.data) {
       setError(res.message);
       setPhase("idle");
+      const reason = res.code === 402 ? "no_credits" : res.code === 0 ? "network" : "rejected";
+      trackEvent("generate_fail", eventParams({ reason }));
       if (res.code === 402) await refresh();
       return;
     }
     setAccount(res.data.account);
     setElapsed(0);
     setPhase("processing");
-    await poll(res.data.task_id);
+    await poll(res.data.task_id, startedAt);
   }
 
   return (
@@ -256,7 +279,7 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
 
       {phase === "done" && task && (
         <div className="mt-6 border-t border-ink-200 pt-6">
-          <ResultFiles task={task} />
+          <ResultFiles task={task} source="generator" />
         </div>
       )}
     </div>

@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "Photo trend looks",
-  "updated": "2026-10-15",
+  "updated": "2026-10-18",
   "styles": [
     {
       "value": "80s_flashback",
@@ -370,7 +370,7 @@
         },
         {
           "q": "Is this made with a real photo booth?",
-          "a": "No. It is an AI image that imitates the look of a booth print, with the borders, the contrast and the wear drawn in. Real booth prints are made with a camera and a printer."
+          "a": "No. It is an AI image that imitates the look of a booth print, with the borders, the contrast and the wear drawn in. Real booth prints are made with a camera and a printer. For one photo taped onto a journal page, try the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal), or the [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out) for a hand reaching out of a single frame."
         },
         {
           "q": "How many strips will I get?",
@@ -419,7 +419,7 @@
         },
         {
           "title": "Compare with the felt look",
-          "description": "Clay is smooth and chunky with fingerprints. For fuzzy wool and a softer mood, try the [felt miniature](/create/photo-trend-maker/felt-miniature) with the same photo."
+          "description": "Clay is smooth and chunky with fingerprints. For fuzzy wool and a softer mood, try the [felt miniature](/create/photo-trend-maker/felt-miniature) with the same photo. For flat layered paper instead of clay, try the [pop-up paper card](/create/photo-trend-maker/pop-up-paper-card)."
         }
       ],
       "tryThese": [
@@ -512,7 +512,7 @@
         },
         {
           "q": "How is it different from the clay look?",
-          "a": "Felt shows soft wool fibers and warm, plush forms, while the [claymation look](/create/photo-trend-maker/claymation) shows matte modelling clay with fingerprints and tool marks."
+          "a": "Felt shows soft wool fibers and warm, plush forms, while the [claymation look](/create/photo-trend-maker/claymation) shows matte modelling clay with fingerprints and tool marks. For flat, crisp layers of colored cardstock instead of wool, try the [pop-up paper card](/create/photo-trend-maker/pop-up-paper-card)."
         },
         {
           "q": "Which photos work best?",
@@ -581,7 +581,7 @@
         },
         {
           "q": "Will it look like me?",
-          "a": "The instructions ask the AI to stay faithful to your identity, but a stylized figure never matches every detail. Hair, skin tone and the general shape of the face usually carry over."
+          "a": "The instructions ask the AI to stay faithful to your identity, but a stylized figure never matches every detail. Hair, skin tone and the general shape of the face usually carry over. For nine expressions of the same face on one sheet, try the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet)."
         },
         {
           "q": "Why does it look like a cheap plastic toy?",
@@ -589,7 +589,7 @@
         },
         {
           "q": "How is it different from the 3D toy avatar?",
-          "a": "The bobblehead is a full figure on a base photographed like a product. The [3D toy avatar](/create/photo-trend-maker/toy-avatar) is a single glossy head with sunglasses against a blue sky."
+          "a": "The bobblehead is a full figure on a base photographed like a product. The [3D toy avatar](/create/photo-trend-maker/toy-avatar) is a single glossy head with sunglasses against a blue sky. If you want the figure sealed in retail packaging with accessories, try the [collectible figure box](/create/photo-trend-maker/collectible-figure-box)."
         },
         {
           "q": "Can I make one of a couple?",
@@ -662,7 +662,7 @@
         },
         {
           "q": "How is it different from the bobblehead?",
-          "a": "The toy avatar is a glossy head only, with sunglasses and a sky background. The [bobblehead](/create/photo-trend-maker/bobblehead) is a full plastic figure on a base, photographed like a product."
+          "a": "The toy avatar is a glossy head only, with sunglasses and a sky background. The [bobblehead](/create/photo-trend-maker/bobblehead) is a full plastic figure on a base, photographed like a product. For a whole figure sealed in a blister pack, see the [collectible figure box](/create/photo-trend-maker/collectible-figure-box). For a flat ink drawing beside your real photo, try the [mini doodle twin](/create/photo-trend-maker/mini-doodle-twin)."
         },
         {
           "q": "Does it work with a pet?",
@@ -735,7 +735,7 @@
         },
         {
           "q": "Can I use it as a game character sprite?",
-          "a": "Not directly. The result is a flat, single image with a background and no animation frames, so you would need to redraw it by hand to use it in a game."
+          "a": "Not directly. The result is a flat, single image with a background and no animation frames, so you would need to redraw it by hand to use it in a game. For a hand-drawn character on a real photograph instead, see the [mini doodle twin](/create/photo-trend-maker/mini-doodle-twin)."
         },
         {
           "q": "Why did my outfit change?",
@@ -1226,7 +1226,7 @@
       "faq": [
         {
           "q": "How is it different from the 80s flashback?",
-          "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) is a general throwback with bright accessories and an orange date stamp. The vintage Christmas look always builds a Christmas morning scene, with a tinsel tree and wrapping paper, and draws no date stamp."
+          "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) is a general throwback with bright accessories and an orange date stamp. The vintage Christmas look always builds a Christmas morning scene, with a tinsel tree and wrapping paper, and draws no date stamp. For a memory page with tape and torn paper instead of a flash photo, try the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal)."
         },
         {
           "q": "Does it add a date stamp?",
@@ -1307,7 +1307,7 @@
         },
         {
           "q": "How is it different from the claymation look?",
-          "a": "The [claymation world](/create/photo-trend-maker/claymation) rebuilds the whole scene from modelling clay. The snow globe puts a small figure inside glass, with drifting snow, reflections and Christmas lights around it."
+          "a": "The [claymation world](/create/photo-trend-maker/claymation) rebuilds the whole scene from modelling clay. The snow globe puts a small figure inside glass, with drifting snow, reflections and Christmas lights around it. If you would rather have a frame trick than a miniature, try the [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out)."
         }
       ]
     },
@@ -1377,6 +1377,444 @@
         {
           "q": "Will it add other people to the party?",
           "a": "It is told not to. The scene is filled with confetti, streamers, sparklers and lights, and the people are the ones in your photo. If an extra person or hand appears, generate again."
+        }
+      ]
+    },
+    {
+      "value": "collectible_figure_box",
+      "slug": "collectible-figure-box",
+      "seo": {
+        "title": "Action Figure Photo Maker – Boxed Collectible Toy",
+        "description": "Turn a photo into a collectible action figure sealed in a blister pack with accessories and a printed backer card. Download a JPG in four sizes, no prompt.",
+        "h1": "Collectible Figure Box Photo Maker"
+      },
+      "intro": [
+        "The collectible figure box look turns a person or a pet into a plastic action figure sealed in retail packaging. One glossy figure stands in a clear molded blister on a printed cardboard backer card, with a small round base, visible joint seams and two or three accessories in their own molded compartments beside it, the way a toy-shop shelf shows a boxed figure.",
+        "The figure keeps your face shape, hairstyle, skin tone and outfit colors, simplified into slightly stylized plastic sculpting. The card gets a bold graphic backdrop and one short invented name in large block letters. Upload a photo, choose a size and download a JPG that looks like a product shot of a toy that does not exist."
+      ],
+      "bestFor": [
+        {
+          "title": "Gifts and birthday posts",
+          "description": "A boxed figure of the birthday person, with a mug, a camera or a backpack beside it, is a funny picture for a card, a group chat or a party slideshow. The accessories are chosen from what the photo shows."
+        },
+        {
+          "title": "Pets",
+          "description": "A dog or a cat becomes a figure with a tiny bowl, a ball and a leash in the compartments. It suits a gift for a pet owner and the pet's own social account."
+        },
+        {
+          "title": "Profile pictures and job jokes",
+          "description": "A figure card is a profile picture that still looks like you without being a plain selfie. It also works as a character card for a hobby, a team member or a joke about a job."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a photo that shows the outfit",
+          "description": "The figure is built from what the camera sees, so a waist-up or full-body photo gives the AI more to copy than a tight selfie. The clothes and hairstyle carry over, and the accessories are guessed from the picture."
+        },
+        {
+          "title": "Check the name on the card",
+          "description": "The look asks for one short invented name of at most two simple words and leaves the choice to the AI. It can look like a real first name or contain a misspelled word, so read it before you post and generate again if it is wrong. Zoom in on the accessories too, because small objects can pick up garbled lettering."
+        },
+        {
+          "title": "Expect a stylized likeness",
+          "description": "Molded plastic simplifies faces. Judge the result by whether friends recognize you from the hair, the glasses and the outfit, not by whether every detail matches the photo."
+        },
+        {
+          "title": "Compare it with the toy avatar and the bobblehead",
+          "description": "The [3D toy avatar](/create/photo-trend-maker/toy-avatar) is one glossy floating head and the [bobblehead](/create/photo-trend-maker/bobblehead) is a cheap plastic figure with an oversized head on a base. This look shows a full figure inside retail packaging with accessories, so choose it when you want the box."
+        }
+      ],
+      "tryThese": [
+        "Photo: a silver-haired woman in round glasses at a kitchen table, size 2:3",
+        "Photo: a bearded man in a grey hoodie outdoors, size 9:16",
+        "Photo: a golden retriever sitting on a living room rug, size 3:4",
+        "Photo: a person with a backpack on a city street, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Is this a real toy I can order?",
+          "a": "No. The result is a picture of a figure in a box, made by an AI image model. PiCraft does not make or ship physical toys, and the box is not a production template."
+        },
+        {
+          "q": "Can I choose the name on the box?",
+          "a": "Not in the form. The look asks for one short invented name and leaves the choice to the AI, so it can change from one generation to the next. If you need a specific name, add it in another app after you download the JPG."
+        },
+        {
+          "q": "Which accessories will it show?",
+          "a": "Two or three small items that suit the photo, such as a mug, a camera, a book or a backpack. For a pet the look uses a tiny bowl, a ball and a leash. You cannot pick them, but each new generation can choose different ones."
+        },
+        {
+          "q": "How is it different from the bobblehead and the toy avatar?",
+          "a": "The [bobblehead](/create/photo-trend-maker/bobblehead) is a single figure with a huge head on a black base and the [toy avatar](/create/photo-trend-maker/toy-avatar) is a glossy head. The figure box shows a whole figure with accessories inside a blister pack on a printed card."
+        },
+        {
+          "q": "Which size works best?",
+          "a": "The image is composed for the size you choose, and a tall card fits tall shapes naturally, so start with 2:3 (1000×1500 px), the shape Pinterest recommends for Pins, or with 9:16. Try the square size for a different layout."
+        }
+      ]
+    },
+    {
+      "value": "pop_up_paper_card",
+      "slug": "pop-up-paper-card",
+      "seo": {
+        "title": "Pop-Up Paper Card Photo Maker – Layered Paper Art",
+        "description": "Turn a photo into a layered paper-cut pop-up card with cardstock layers, soft shadows and fold creases. Download a finished JPG in four sizes, no prompt.",
+        "h1": "Pop-Up Paper Card Photo Maker"
+      },
+      "intro": [
+        "The pop-up paper card look rebuilds your photo as a layered paper craft. A card stands half open on a plain table, and a paper-cut version of your subject rises from the fold in front of three to five stacked layers of colored cardstock: paper hills, trees, clouds or flowers behind it, soft shadows between the layers and small fold creases along the card.",
+        "The subject is simplified into flat paper shapes with clean scissor-cut edges, and the palette is limited to a few colors taken from your photo. The result reads as a photograph of a handmade object, not a flat filter. Upload a photo, choose a size and download a JPG with no prompt to write."
+      ],
+      "bestFor": [
+        {
+          "title": "Pets",
+          "description": "Fur color turns into overlapping strips of paper, so a dog or a cat becomes a layered cut-paper animal that still looks like yours. Pets with a distinct coat color work best."
+        },
+        {
+          "title": "Greeting card pictures",
+          "description": "A picture of a pop-up card suits a thank-you, a birthday or a new-baby message in a chat or on a board. The card is empty, so write your greeting in another app."
+        },
+        {
+          "title": "Craft and mood boards",
+          "description": "Use the picture as inspiration for a papercraft project. It shows the layering, the color blocks and the depth, though it is not a cutting template."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick a photo with one clear subject",
+          "description": "Paper layers need a strong outline. A single pet or person on a plain or simple background simplifies better than a crowded room, which turns into a busy stack of layers."
+        },
+        {
+          "title": "Expect simplified faces",
+          "description": "Cut paper has no fine detail, so the likeness comes from hair shape, skin tone, clothing colors and expression. Eyelashes, freckles and small jewelry are usually dropped."
+        },
+        {
+          "title": "The card carries no words",
+          "description": "The look asks for no text and no printed greeting, so there is nothing to misspell. Add your message in another app after you download the JPG."
+        },
+        {
+          "title": "Compare it with felt and clay",
+          "description": "The [felt miniature](/create/photo-trend-maker/felt-miniature) uses fuzzy wool and [claymation](/create/photo-trend-maker/claymation) uses chunky modelling clay. The paper card is flat, crisp and layered, so choose it for clean shapes and bright blocks of color."
+        }
+      ],
+      "tryThese": [
+        "Photo: a golden retriever sitting on a living room rug, size 2:3",
+        "Photo: a grey tabby cat on a windowsill, size 9:16",
+        "Photo: a woman with wavy auburn hair smiling by a window, size 3:4",
+        "Photo: a couple smiling together on a city sidewalk, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Can I cut this out of real paper?",
+          "a": "The picture can inspire a papercraft project, but it is not a pattern. It shows no fold lines, cut lines or measurements, so a paper artist would need to design the real card."
+        },
+        {
+          "q": "Why does my pet look simpler than in the photo?",
+          "a": "Cut paper cannot show single hairs, so the look turns fur into overlapping strips of paper and keeps the coat color, the markings you can see from a distance and the expression. Fine whiskers and small spots are often simplified."
+        },
+        {
+          "q": "Does the card have a message on it?",
+          "a": "No. The look asks for no text, so the card is empty. Add a greeting in another app if you want one."
+        },
+        {
+          "q": "Which photos work best?",
+          "a": "Sharp, evenly lit photos where one subject fills a good part of the frame. Very dark photos and crowded rooms give a weaker likeness and a messier stack of layers."
+        },
+        {
+          "q": "Can I use it for a group photo?",
+          "a": "A couple or a pair can work, but every extra person is another paper figure to keep recognizable, so the likeness drifts more than with one subject. Check each face before you post."
+        }
+      ]
+    },
+    {
+      "value": "scrapbook_journal",
+      "slug": "scrapbook-journal",
+      "seo": {
+        "title": "Scrapbook Journal Page Maker – Photo to Journal Spread",
+        "description": "Place your photo on a handmade scrapbook page with washi tape, torn paper, pressed flowers and stickers. Download a finished JPG in four sizes, no prompt.",
+        "h1": "Scrapbook Journal Page Maker"
+      },
+      "intro": [
+        "The scrapbook journal page look places your photo on a handmade journal spread. Your picture is printed with a thin white border, taped at a slight tilt onto cream, kraft or lined paper with strips of washi tape, and surrounded by torn paper scraps, a pressed flower or leaf, small star and heart stickers, a ticket stub, a paper clip and pencil doodles.",
+        "The photo is the hero and the decoration picks up its colors in a soft, faded palette, with warm window light and small shadows under the tape. The doodles are wordless, so the page carries no text to misspell. Upload a photo, choose a size and download a JPG that looks like a page photographed from above on a desk."
+      ],
+      "bestFor": [
+        {
+          "title": "Trips and days out",
+          "description": "A photo from a walk, a trip or a weekend becomes the centerpiece of a memory page. The page has no dates or captions, so add the place and the day yourself."
+        },
+        {
+          "title": "Couples and friends",
+          "description": "A photo of two people sits well inside the tape and paper frame, and the decoration stays around the picture instead of covering faces. It suits an anniversary post or a message to a friend."
+        },
+        {
+          "title": "Journaling and scrapbook boards",
+          "description": "The picture works as a page idea for a journaling or scrapbook board. It shows a layout, a color palette and a mix of paper, tape and stickers before you make a real page."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a photo with a clear focus",
+          "description": "Because the photo is printed and taped onto the page, a sharp picture with a clear subject reads best. A tiny subject in a wide scene becomes a tiny figure on a small print."
+        },
+        {
+          "title": "Look at the faces on the print",
+          "description": "The look asks for the picture itself to stay unchanged, but the AI redraws the whole page, so a face can still shift slightly. Compare the print with your original and generate again if it drifted."
+        },
+        {
+          "title": "Expect wordless decoration",
+          "description": "Scribbles, hearts, arrows and sparkles are drawn without letters, numbers or dates. If you want a caption, a date or a title, add it in another app after you download the JPG."
+        },
+        {
+          "title": "Pick a size for the page shape",
+          "description": "The image is composed for the size you choose, so start with 2:3 or 3:4 for a page-like shape and try 9:16 for a longer strip. The [pop-up paper card](/create/photo-trend-maker/pop-up-paper-card) is another handmade paper look if you want depth instead of a flat page."
+        }
+      ],
+      "tryThese": [
+        "Photo: a couple smiling together on a city sidewalk, size 2:3",
+        "Photo: a woman with wavy auburn hair taking a selfie by a window, size 9:16",
+        "Photo: a bearded man laughing in a sunny park, size 3:4",
+        "Photo: a golden retriever sitting on a living room rug, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Does the page include a date or a caption?",
+          "a": "No. The look asks for no text, no numbers and no dates, so the page has only wordless doodles and decoration. Add words in another app after you download the JPG."
+        },
+        {
+          "q": "Will my photo stay exactly the same?",
+          "a": "It is built to keep the picture unchanged, but the whole page is redrawn by an AI, so small changes in a face or the background can happen. Compare it with your original and generate again if something drifted."
+        },
+        {
+          "q": "Can I use more than one photo?",
+          "a": "No. The maker takes one photo and puts it on the page once. For several frames of the same person, try the [photo booth strip](/create/photo-trend-maker/photo-booth)."
+        },
+        {
+          "q": "Is it a printable template?",
+          "a": "No. It is a flat JPG at the size you chose, such as 1000×1500 px for 2:3, made to post or share. It has no layers, cutting guides or print marks."
+        },
+        {
+          "q": "Which photos suit it best?",
+          "a": "Clear, well-lit photos of one person, a couple or a pet with a calm background. The print is smaller than the full frame, so a photo where the subject is tiny gives a weak result."
+        }
+      ]
+    },
+    {
+      "value": "doodle_twin",
+      "slug": "mini-doodle-twin",
+      "seo": {
+        "title": "Mini Doodle Twin Photo Maker – Ink Sketch on Your Shoulder",
+        "description": "Add a tiny hand-drawn ink twin to your photo, sitting on your shoulder with sparkles and hearts. Your photo stays real. Download a finished JPG in four sizes.",
+        "h1": "Mini Doodle Twin Photo Maker"
+      },
+      "intro": [
+        "The mini doodle twin look keeps your photo real and adds one small hand-drawn character. A tiny ink drawing of you, about the size of a palm, sits on your shoulder or on the edge of a nearby object and looks at you or at the camera. It has loose black ink lines, a few flat marker colors, your hair shape and your outfit colors.",
+        "A few doodle accents, such as sparkles, a small heart or short motion lines, are drawn around it in the same ink. Everything else in the photo stays as it was: real skin, real clothes and the real place. Upload a photo, choose a size and download a JPG with no prompt to write."
+      ],
+      "bestFor": [
+        {
+          "title": "Selfies and portraits",
+          "description": "A close, well-lit photo gives the twin enough to copy: the hair, the glasses and the color of the top. The face in the photo stays yours."
+        },
+        {
+          "title": "Pets",
+          "description": "For a pet the twin is a tiny ink drawing of the same animal, sitting on a surface near it. Clear markings, such as a patch or a stripe, carry over best."
+        },
+        {
+          "title": "Profile pictures and story posts",
+          "description": "One tiny drawing is a small joke that makes an ordinary photo look planned. It suits a profile picture, a story or a personal board."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Leave room for the twin to sit",
+          "description": "The twin needs somewhere to sit. A photo where a shoulder, a hat, a table edge or a windowsill is visible gives it a natural place, while a very tight crop of the face does not."
+        },
+        {
+          "title": "Expect one drawing, not a crowd",
+          "description": "The look draws a single character and no other people or pets. If you want many tiny versions of yourself on one photo, this is not the look."
+        },
+        {
+          "title": "No captions or speech bubbles",
+          "description": "The look asks for no speech bubbles and no text, so there are no words to misspell. If you want a caption, add it in another app after you download the JPG."
+        },
+        {
+          "title": "Compare it with the toy looks",
+          "description": "The [3D toy avatar](/create/photo-trend-maker/toy-avatar) turns you into a glossy 3D head and the [bobblehead](/create/photo-trend-maker/bobblehead) into a plastic figure. The doodle twin is flat ink on a real photograph, so choose it when you want your own photo to stay photographic."
+        }
+      ],
+      "tryThese": [
+        "Photo: a bearded man in a grey hoodie laughing in a sunny park, size 2:3",
+        "Photo: a woman with wavy auburn hair taking a selfie by a window, size 9:16",
+        "Photo: a grey tabby cat on a windowsill, size 3:4",
+        "Photo: a golden retriever sitting on a living room rug, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Will my photo be changed?",
+          "a": "The look asks for the photo to stay photographic, with your skin, hair and clothes unchanged. Because the AI redraws the whole picture, small changes can happen, so compare it with your original and generate again if something drifted."
+        },
+        {
+          "q": "How big is the doodle?",
+          "a": "The look asks for a palm-sized drawing, which keeps it a small surprise instead of the main subject. Its exact size and position change from one generation to the next."
+        },
+        {
+          "q": "Can I choose where the twin sits?",
+          "a": "Not in the form. The look places it on a shoulder or on the edge of a nearby object. Generate again to get another position."
+        },
+        {
+          "q": "Can I use a photo of two people?",
+          "a": "It is harder, because the look draws a twin of one subject. Use a photo of one person or one pet for a clear result, or try the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet) if you want several poses of the same face."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. The twin becomes a tiny ink drawing of the same animal. A pet with clear markings and a calm background keeps the best likeness in the drawing."
+        }
+      ]
+    },
+    {
+      "value": "instant_photo_popout",
+      "slug": "instant-photo-pop-out",
+      "seo": {
+        "title": "Instant Photo Pop-Out Maker – Hand Reaching Out of Frame",
+        "description": "Make your photo look like an instant print with your hand reaching out of the frame into the real world. Download a finished JPG in four sizes, no prompt.",
+        "h1": "Instant Photo Pop-Out Maker"
+      },
+      "intro": [
+        "The instant photo pop-out look turns your photo into a small visual trick. A real hand holds a single instant-film print with a white border and a wide bottom margin, and inside the print you reach one arm and hand out past the border into the room, with strong 3D perspective, so it seems that you are stepping through the frame.",
+        "The reaching hand is the closest and sharpest part of the picture, and it casts a small shadow on the border and on the hand that holds the print. Your face, hair and outfit stay consistent between the print and the arm. Upload a photo, choose a size and download a JPG with no prompt to write."
+      ],
+      "bestFor": [
+        {
+          "title": "Selfies and portraits",
+          "description": "A waist-up photo where an arm is visible gives the AI a natural arm to extend. The picture suits a profile post, a story or a message that says come over here."
+        },
+        {
+          "title": "Pets",
+          "description": "For a pet, a front paw reaches out of the frame instead of a hand. A cat or a dog that looks straight at the camera works best."
+        },
+        {
+          "title": "Posts that need a thumbnail people stop on",
+          "description": "The illusion is easy to understand at a glance, which helps on a feed or a board where each picture gets a second of attention."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a photo with a visible arm or shoulder",
+          "description": "The look extends your arm out of the picture. A photo that shows your shoulders and one arm gives it a believable start, while a tight face crop forces it to invent the arm."
+        },
+        {
+          "title": "Check both hands",
+          "description": "The look asks for five natural fingers on each hand, but hands are where AI makes mistakes most often. Zoom in on both and generate again if a finger is extra or missing."
+        },
+        {
+          "title": "Expect a blank border",
+          "description": "The look asks for no text, logos or handwriting on the border, so the print is blank. Add a caption in another app if you want the classic handwritten line."
+        },
+        {
+          "title": "Compare it with other frame looks",
+          "description": "The [photo booth strip](/create/photo-trend-maker/photo-booth) shows several black-and-white frames and the [snow globe](/create/photo-trend-maker/snow-globe) puts a tiny figure inside glass. This look breaks out of a single frame, so choose it when you want a 3D illusion."
+        }
+      ],
+      "tryThese": [
+        "Photo: a woman with wavy auburn hair smiling by a window, size 2:3",
+        "Photo: a silver-haired woman in round glasses at a kitchen table, size 9:16",
+        "Photo: a bearded man in a grey hoodie outdoors, size 3:4",
+        "Photo: a golden retriever looking at the camera on a rug, size 1:1"
+      ],
+      "faq": [
+        {
+          "q": "Is it a video or a real 3D image?",
+          "a": "Neither. It is a flat JPG made to look three-dimensional with perspective and shadows. It does not move."
+        },
+        {
+          "q": "Whose hand holds the print?",
+          "a": "The look draws a hand that holds the print. It is not a person from your photo, so you end up with two hands in the image: yours reaching out and the one holding the print."
+        },
+        {
+          "q": "Can I use a group photo?",
+          "a": "The look is written for one subject reaching out. A group photo gives less predictable results, so use a photo of one person or one pet."
+        },
+        {
+          "q": "Can I add a caption on the white border?",
+          "a": "The look draws a blank border with no handwriting. Add your own words in another app after you download the JPG."
+        },
+        {
+          "q": "Which size should I choose?",
+          "a": "The print is a tall shape, so 2:3 (1000×1500 px) or 3:4 suit it well. The image is composed for the size you choose, so try 9:16 for a longer view of the room."
+        }
+      ]
+    },
+    {
+      "value": "photo_sticker_sheet",
+      "slug": "photo-sticker-sheet",
+      "seo": {
+        "title": "Photo Sticker Sheet Maker – Selfie or Pet Sticker Pack",
+        "description": "Turn one photo into a sheet of nine die-cut style stickers with different poses and expressions. Download a finished JPG in four sizes, no prompt needed.",
+        "h1": "Photo Sticker Sheet Maker"
+      },
+      "intro": [
+        "The photo sticker sheet look turns one photo into a sheet of nine stickers. The same subject appears nine times in a neat three-by-three grid on plain pale paper, each time in a different pose and expression: laughing, surprised, sleepy, thinking, cheering, winking, blowing a kiss, giving a thumbs up and shrugging.",
+        "Every sticker has a thick white die-cut border and a faint drop shadow, drawn in a clean, polished, semi-realistic style with bold simple shapes. Face shape, hairstyle, skin tone and clothing colors stay consistent so the nine stickers are clearly the same person or pet. Upload a photo, choose a size and download a JPG with no prompt to write."
+      ],
+      "bestFor": [
+        {
+          "title": "Pets",
+          "description": "A pet sheet shows the same animal in nine cute poses, which suits chat reactions, a gift or a pet's own page. Clear markings make each sticker recognizable."
+        },
+        {
+          "title": "Selfies and chat reactions",
+          "description": "One selfie becomes nine moods you can crop into single pictures for a chat. Check that the face stays the same in every sticker before you use them."
+        },
+        {
+          "title": "Journals, planners and boards",
+          "description": "A sheet of faces is a natural picture for a journaling page, a planner idea or a mood board, because it shows nine ideas at once."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "It is a picture of a sheet, not cut files",
+          "description": "The JPG shows stickers on pale paper. It has no transparent background and no cut lines, so for a real die-cut file with a transparent PNG use the [Sticker Maker](/create/sticker-maker) instead."
+        },
+        {
+          "title": "Pick a clear, front-facing photo",
+          "description": "Nine copies of a face are only as good as the first one. A sharp photo with the eyes, ears or hair clearly visible keeps the likeness consistent across the grid."
+        },
+        {
+          "title": "Check each sticker",
+          "description": "Faces drift more when they are repeated. Zoom in on all nine and generate again if one looks like a different person or has a strange hand."
+        },
+        {
+          "title": "Expect no words",
+          "description": "The look asks for no text, captions or speech bubbles, so the stickers carry no words. Add your own in another app, or pair the sheet with a [mini doodle twin](/create/photo-trend-maker/mini-doodle-twin) picture for a full set of personal art."
+        }
+      ],
+      "tryThese": [
+        "Photo: a grey tabby cat on a windowsill, size 2:3",
+        "Photo: a woman with wavy auburn hair smiling at the camera, size 3:4",
+        "Photo: a golden retriever sitting on a living room rug, size 1:1",
+        "Photo: a bearded man laughing in a sunny park, size 2:3"
+      ],
+      "faq": [
+        {
+          "q": "Can I use the stickers in a chat app?",
+          "a": "Not directly. The result is one JPG with nine stickers on paper and no transparent background. You would need to crop and cut each one out in another app first, and every chat app has its own rules for sticker files."
+        },
+        {
+          "q": "How is it different from the Sticker Maker?",
+          "a": "The [Sticker Maker](/create/sticker-maker) draws one die-cut sticker from a text idea and gives a transparent PNG. This look starts from your own photo and gives a sheet of nine stickers as a flat picture."
+        },
+        {
+          "q": "Will all nine stickers look like me?",
+          "a": "The look asks for the same face shape, hair and clothing colors in every sticker, but repeated faces can drift. Compare each sticker with your photo and generate again if one is off."
+        },
+        {
+          "q": "Can I choose the poses?",
+          "a": "No. The nine poses come from the look, not from the form: laughing, surprised, sleepy, thinking, cheering, winking, blowing a kiss, thumbs up and shrugging. For a pet the AI adapts them into nine cute poses."
+        },
+        {
+          "q": "Which size suits a sticker sheet?",
+          "a": "A sheet is a tall rectangle, so 2:3 (1000×1500 px) and 3:4 give the nine stickers room. The image is composed for the size you choose, and the square size gives a squarer layout."
         }
       ]
     }

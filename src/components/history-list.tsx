@@ -70,7 +70,7 @@ export function HistoryList({ sceneNames }: { sceneNames: Record<string, string>
             <span className="text-xs text-ink-500">{new Date(item.created_at * 1000).toLocaleString()}</span>
           </div>
           {item.status === "done" ? (
-            <ResultFiles task={item} compact />
+            <ResultFiles task={item} source="history" compact />
           ) : item.status === "failed" ? (
             <p className="text-sm text-ink-500">{item.error}</p>
           ) : (

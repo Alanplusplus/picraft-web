@@ -11,15 +11,18 @@ import { FaqList } from "./faq-list";
 import { GuideCard } from "./guide-card";
 import { RichText } from "./rich-text";
 import { SceneCard } from "./scene-card";
+import { TrackedLink } from "./tracked-link";
 
 const H2 = "text-2xl font-bold tracking-tight text-ink-950";
 
-function MakerCta({ sceneSlug, lead }: { sceneSlug: string; lead: string }) {
+function MakerCta({ sceneSlug, lead, position }: { sceneSlug: string; lead: string; position: "guide_top" | "guide_bottom" }) {
   const scene = getScene(sceneSlug);
   if (!scene) return null;
   return (
-    <Link
+    <TrackedLink
       href={`/create/${scene.slug}`}
+      event="cta_click"
+      eventParams={{ location: position, target: scene.slug }}
       className="group mt-8 flex items-center gap-4 rounded-2xl border border-ink-200 bg-brand-50 p-4 transition hover:border-brand-500 sm:gap-6 sm:p-5"
     >
       <Image
@@ -34,7 +37,7 @@ function MakerCta({ sceneSlug, lead }: { sceneSlug: string; lead: string }) {
         <p className="mt-1 font-semibold text-ink-950 group-hover:text-brand-700">{scene.name}</p>
         <p className="mt-1 text-sm text-ink-700">{scene.summary}</p>
       </div>
-    </Link>
+    </TrackedLink>
   );
 }
 
@@ -69,7 +72,7 @@ export function GuideArticle({ guide, crumbs }: { guide: Guide; crumbs: Crumb[] 
         </p>
       </div>
 
-      <MakerCta sceneSlug={guide.scene} lead="Make it with PiCraft" />
+      <MakerCta sceneSlug={guide.scene} lead="Make it with PiCraft" position="guide_top" />
 
       {hasToc && (
         <nav aria-label="On this page" className="mt-10 rounded-2xl border border-ink-200 p-5">
@@ -193,7 +196,7 @@ export function GuideArticle({ guide, crumbs }: { guide: Guide; crumbs: Crumb[] 
         </section>
       )}
 
-      <MakerCta sceneSlug={guide.scene} lead="Ready to make one?" />
+      <MakerCta sceneSlug={guide.scene} lead="Ready to make one?" position="guide_bottom" />
 
       {related.length > 0 && (
         <section className="mt-16">

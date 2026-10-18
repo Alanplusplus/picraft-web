@@ -1,21 +1,22 @@
 {
   "trends": {
-    "updated": "2026-10-15",
+    "updated": "2026-10-18",
     "seo": {
-      "title": "Photo Trends – One Photo, 19 Looks, Four Sizes",
+      "title": "Photo Trends – One Photo, 25 Looks, Four Sizes",
       "description": "Turn one photo into a trending look: 80s snapshot, Y2K digicam, claymation, photo booth strip, bobblehead and more, as a 9:16, 2:3, 3:4 or square JPG.",
       "h1": "Photo Trends: Turn One Photo into a New Look"
     },
     "intro": [
-      "Trends in photo editing move fast, but most of them are the same move: take a photo you already have and redo it in a recognizable style. The [Photo Trend Maker](/create/photo-trend-maker) does that for 19 looks, from a faded 1980s snapshot and a photo booth strip to a clay figure, a toy head, a marble statue and seasonal portraits for Halloween, Thanksgiving, Christmas and New Year's Eve. You upload one photo, pick a look and a size, and download a finished JPG.",
+      "Trends in photo editing move fast, but most of them are the same move: take a photo you already have and redo it in a recognizable style. The [Photo Trend Maker](/create/photo-trend-maker) does that for 25 looks, from a faded 1980s snapshot and a photo booth strip to a clay figure, a collectible figure in its box, a scrapbook page, a marble statue and seasonal portraits for Halloween, Thanksgiving, Christmas and New Year's Eve. You upload one photo, pick a look and a size, and download a finished JPG.",
       "It is built for images that get posted, so the size is part of the choice. The default is a full-screen 9:16 vertical image, and you can switch to a 2:3 Pinterest Pin, a 3:4 portrait post or a 1:1 square. There is no prompt to write, and the maker keeps the subject recognizable, which matters most when the subject is you or your pet."
     ],
     "sections": [
       {
-        "heading": "The 19 looks",
+        "heading": "The 25 looks",
         "items": [
           "Film and camera looks: [80s Flashback](/create/photo-trend-maker/80s-flashback), [70s Slide Portrait](/create/photo-trend-maker/70s-slide), [Y2K Digital Camera](/create/photo-trend-maker/y2k-digicam), [Night Out Flash](/create/photo-trend-maker/night-flash) and [Photo Booth Strip](/create/photo-trend-maker/photo-booth). They copy the flaws of old cameras: grain, flash glare and faded color.",
           "Handmade and toy looks: [Claymation World](/create/photo-trend-maker/claymation), [Felt Miniature](/create/photo-trend-maker/felt-miniature), [Bobblehead](/create/photo-trend-maker/bobblehead) and [3D Toy Avatar](/create/photo-trend-maker/toy-avatar). They rebuild you or your pet as a physical object.",
+          "Craft and illusion looks: [Collectible Figure Box](/create/photo-trend-maker/collectible-figure-box), [Pop-up Paper Card](/create/photo-trend-maker/pop-up-paper-card), [Scrapbook Journal Page](/create/photo-trend-maker/scrapbook-journal), [Mini Doodle Twin](/create/photo-trend-maker/mini-doodle-twin), [Instant Photo Pop-Out](/create/photo-trend-maker/instant-photo-pop-out) and [Photo Sticker Sheet](/create/photo-trend-maker/photo-sticker-sheet). They turn one photo into a made object or a picture trick, and they suit Pinterest boards about crafts, journaling and gifts.",
           "Game, print and art looks: [16-bit Arcade Fighter](/create/photo-trend-maker/arcade-16bit), [Blueprint Poster](/create/photo-trend-maker/blueprint-poster), [Fantasy Newspaper](/create/photo-trend-maker/fantasy-newspaper) and [Marble Statue](/create/photo-trend-maker/marble-statue). Several of them draw short words into the image, so proofread the result.",
           "Holiday looks: [Halloween Costume Portrait](/create/photo-trend-maker/halloween-portrait), [Thanksgiving Harvest Portrait](/create/photo-trend-maker/thanksgiving-harvest), [Christmas Card Portrait](/create/photo-trend-maker/christmas-card), [Vintage Christmas Snapshot](/create/photo-trend-maker/vintage-christmas), [Snow Globe](/create/photo-trend-maker/snow-globe) and [New Year's Eve Party Flash](/create/photo-trend-maker/new-years-eve-party). They dress you or your pet for the season and work well for cards, family chats and holiday boards."
         ]
@@ -41,7 +42,7 @@
     "faq": [
       {
         "q": "Is this one tool or many?",
-        "a": "One maker with 19 looks. You choose the look and the size in the same form, and each look has its own page with examples and tips, so you can start from the one you want."
+        "a": "One maker with 25 looks. You choose the look and the size in the same form, and each look has its own page with examples and tips, so you can start from the one you want."
       },
       {
         "q": "Will the result look like me?",

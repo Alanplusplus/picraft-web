@@ -4,6 +4,7 @@ import Link from "next/link";
 import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
 import { SceneCard } from "@/components/scene-card";
+import { TrackedLink } from "@/components/tracked-link";
 import { getGuides, isGuideIndexable } from "@/lib/guides";
 import { getScene, getScenesByCategory } from "@/lib/scenes";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, pageMetadata } from "@/lib/seo";
@@ -189,18 +190,22 @@ export default function HomePage() {
                 download finished files in the right size and format.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link
+                <TrackedLink
                   href="/create"
+                  event="cta_click"
+                  eventParams={{ location: "home_hero", target: "all_makers" }}
                   className="rounded-xl bg-ink-950 px-5 py-3 text-sm font-semibold text-white hover:bg-ink-800"
                 >
                   Browse all makers
-                </Link>
-                <Link
+                </TrackedLink>
+                <TrackedLink
                   href="/create/youtube-thumbnail-maker"
+                  event="cta_click"
+                  eventParams={{ location: "home_hero", target: "youtube-thumbnail-maker" }}
                   className="rounded-xl border border-ink-300 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-ink-500"
                 >
                   Make a YouTube thumbnail
-                </Link>
+                </TrackedLink>
               </div>
             </div>
 

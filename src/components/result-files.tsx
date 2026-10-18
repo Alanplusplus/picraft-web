@@ -1,3 +1,6 @@
+"use client";
+
+import { trackEvent } from "@/lib/analytics";
 import type { TaskView } from "@/lib/types";
 
 function formatBytes(bytes: number) {
@@ -5,7 +8,16 @@ function formatBytes(bytes: number) {
   return `${Math.max(1, Math.round(bytes / 1024))} KB`;
 }
 
-export function ResultFiles({ task, compact = false }: { task: TaskView; compact?: boolean }) {
+export function ResultFiles({
+  task,
+  source,
+  compact = false,
+}: {
+  task: TaskView;
+  /** Where the files are shown, so downloads can be told apart: right after a generation or from My files. */
+  source: "generator" | "history";
+  compact?: boolean;
+}) {
   const transparent = task.files.some((f) => f.format === "png");
   return (
     <div className={compact ? "space-y-3" : "space-y-4"}>
@@ -31,6 +43,9 @@ export function ResultFiles({ task, compact = false }: { task: TaskView; compact
             <a
               href={file.url}
               download
+              onClick={() =>
+                trackEvent("result_download", { scene: task.scene, file: file.id, format: file.format, source })
+              }
               className="shrink-0 rounded-lg bg-brand-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-800"
             >
               Download

@@ -1,14 +1,17 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import type { Scene } from "@/lib/scenes";
+
+import { TrackedLink } from "./tracked-link";
 
 export function SceneCard({ scene }: { scene: Scene }) {
   const coverSrc = `/images/scenes/${scene.slug}.webp`;
 
   return (
-    <Link
+    <TrackedLink
       href={`/create/${scene.slug}`}
+      event="maker_select"
+      eventParams={{ scene: scene.slug }}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white transition hover:-translate-y-0.5 hover:border-ink-400 hover:shadow-md"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-ink-100">
@@ -28,6 +31,6 @@ export function SceneCard({ scene }: { scene: Scene }) {
         <h3 className="mt-2 font-semibold text-ink-950 group-hover:text-brand-700">{scene.name}</h3>
         <p className="mt-1 text-sm leading-relaxed text-ink-500">{scene.summary}</p>
       </div>
-    </Link>
+    </TrackedLink>
   );
 }

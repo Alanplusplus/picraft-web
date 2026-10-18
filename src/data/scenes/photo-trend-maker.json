@@ -2,15 +2,15 @@
   "slug": "photo-trend-maker",
   "name": "Photo Trend Maker",
   "category": "trends",
-  "summary": "Turn one photo into an 80s snapshot, a claymation world, a photo booth strip and 10 more trending looks.",
-  "badge": "19 looks · 9:16",
+  "summary": "Turn one photo into an 80s snapshot, a claymation world, a photo booth strip and 22 more trending looks.",
+  "badge": "25 looks · 9:16",
   "indexable": true,
   "seo": {
     "title": "AI Photo Trend Maker – 80s, Y2K, Claymation & More",
     "description": "Upload one photo and pick a trending look: 80s flashback, Y2K digicam, claymation, photo booth strip and more. Download it as a 9:16, 2:3, 3:4 or square JPG.",
     "h1": "Photo Trend Maker",
     "intro": [
-      "Upload a photo of yourself, a friend or a pet, pick one of 19 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head or a seasonal portrait for Halloween, Thanksgiving, Christmas and New Year's Eve, and keeps the subject recognizable.",
+      "Upload a photo of yourself, a friend or a pet, pick one of 25 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head, a collectible figure in its box, a pop-up paper card, a scrapbook page or a seasonal portrait for Halloween, Thanksgiving, Christmas and New Year's Eve, and keeps the subject recognizable.",
       "There is no prompt to write. The default size is a full-screen 9:16 vertical image, and you can switch to 2:3 for Pinterest, 3:4 for feed posts or a 1:1 square before you create."
     ]
   },
@@ -128,6 +128,36 @@
           "value": "nye_party",
           "label": "New Year's Eve Party Flash",
           "prompt": "a glamorous New Year's Eve party photo shot with a bright on-camera flash. Dress the subject in tasteful, modest sparkling party clothes in black and gold, with a glittering accessory such as a headband, a hat or a tiara, holding a sparkler or a noisemaker, in a dim room full of falling gold and silver confetti, streamers, sparklers and a mirror ball scattering small points of light. Strong flash highlights on the subject, deep shadows, glossy skin highlights, real colors and fine film grain, with a candid magazine feel and a happy, mid-celebration expression. Keep the subject's identity; a pet stays recognizable with a small party accessory. Do not add any person or pet that is not in the photo, and show no other people or hands. No drinks, glasses or bottles. No text, no numbers, no clocks and no readable signs."
+        },
+        {
+          "value": "collectible_figure_box",
+          "label": "Collectible Figure Box",
+          "prompt": "a photographed collectible action figure of the subject, sealed in retail packaging. Show exactly one figure standing in a clear molded plastic blister on a printed cardboard backer card, as if on a toy-shop shelf. The figure is a glossy molded-plastic version of the subject with simplified, slightly stylized sculpting that keeps their face shape, hairstyle, skin tone and the colors of their outfit, with visible joint seams and a small round base. Two or three accessories that suit what the photo shows sit in their own molded compartments beside the figure, such as a camera, a mug, a book or a backpack; for a pet use a tiny bowl, a ball and a leash. The accessories carry no lettering, no logos and no brand marks. The card is bold and colorful with a simple graphic backdrop and one short invented name of at most two simple words in large block letters, with no tagline, no small print, no logos and no brand, studio or character names. Soft studio product lighting, a clean neutral background and gentle reflections on the plastic. Do not add any person or pet that is not in the photo."
+        },
+        {
+          "value": "pop_up_paper_card",
+          "label": "Pop-up Paper Card",
+          "prompt": "a photographed pop-up greeting card with the subject built from layered paper. Show one card standing half open on a plain table, with a paper-cut version of the subject and a simple scene rising from the fold in three to five stacked layers of colored cardstock: the subject as a simplified figure with clean scissor-cut edges in front, and paper trees, hills, clouds, furniture or flowers behind it. Soft shadows fall between the layers, with visible paper grain, small fold creases and slightly uneven hand-cut edges. Keep the subject recognizable through hair shape, skin tone, clothing colors and expression, simplified into flat paper shapes, and use a restrained palette of four to six colors taken from the photo. Soft side light and shallow depth of field, so it reads as a real handmade craft object and not a digital illustration. Do not add any person or pet that is not in the photo. Add no text, no lettering and no printed greeting."
+        },
+        {
+          "value": "scrapbook_journal",
+          "label": "Scrapbook Journal Page",
+          "prompt": "a handmade scrapbook journal page photographed from above on a desk. The subject's photo is the hero: it is printed as a real photograph with a thin white border, slightly tilted and taped onto a sheet of cream, kraft or lined journal paper with strips of washi tape, with the face and the picture itself unchanged and crisp. Around it add hand-made details: torn paper scraps, a pressed flower or leaf, a few small star and heart stickers, a ticket stub, a paper clip, pencil doodles, arrows and small sketched sparkles, all in a soft faded palette that picks up the colors of the photo. Warm window light, subtle paper grain and small shadows under the tape and paper edges. Show only one copy of the photo and no other photographs. Do not add any person or pet that is not in the photo. The scribbles must be wordless: no readable text, no letters, no numbers, no dates and no brand names."
+        },
+        {
+          "value": "doodle_twin",
+          "label": "Mini Doodle Twin",
+          "prompt": "a real photograph with one tiny hand-drawn twin of the subject added. The photo stays photographic and untouched, with real skin, hair, clothing and surroundings exactly as they are. One small ink-drawn character, about the size of a palm, sits on the subject's shoulder or on the edge of a nearby object and looks at them or at the camera. It is drawn with loose black ink lines and a few flat marker colors, simple and cute, with the same hair shape and outfit colors as the subject so it is clearly the same person in cartoon form. Add a few small doodle accents around it, such as sparkles, a tiny heart or short motion lines, in the same ink. It must read as a drawing placed into a real photo, not a 3D figure. For a pet, the twin is a tiny ink drawing of the same animal. Do not add any other person or pet. No speech bubbles, no captions and no readable text."
+        },
+        {
+          "value": "instant_photo_popout",
+          "label": "Instant Photo Pop-Out",
+          "prompt": "an instant-photo breakout illusion. A real hand holds a single instant-film print with a white border and a wide bottom margin, in front of the real surroundings of the photo. Inside the print the subject appears as in the photo, and one of their arms and hands reaches out past the white border into the real world with strong 3D perspective, so the subject seems to step through the frame. The reaching hand is closest to the camera, slightly larger and sharper than the rest, and casts a small realistic shadow on the border and on the holding hand. Keep the subject's face, hairstyle and clothing colors consistent between the print and the reaching hand. Each hand has exactly five natural fingers. For a pet, a front paw reaches out of the frame instead of a hand. Realistic photographic light, a shallow depth of field and a believable print surface. Show only one print and only these two hands. Do not add any person or pet that is not in the photo. Add no text, no logos and no handwriting on the border."
+        },
+        {
+          "value": "photo_sticker_sheet",
+          "label": "Photo Sticker Sheet",
+          "prompt": "a sheet of nine die-cut stickers of the subject on a plain pale paper background. Show the same subject nine times in a neat three-by-three grid, each sticker in a different pose and expression: laughing, surprised, sleepy, thinking, cheering, winking, blowing a kiss, giving a thumbs up and shrugging. Draw each one as a glossy sticker with a thick white die-cut border and a faint drop shadow, in a clean, polished, semi-realistic illustrated style with bold simple shapes. Keep the face shape, hairstyle, skin tone and clothing colors consistent in every sticker so they are clearly the same person. Space the stickers evenly, with none touching and none cropped. For a pet, show the same animal in nine cute poses. Do not add any person or pet that is not in the photo. Add no text, no captions, no speech bubbles and no logos."
         }
       ]
     },
@@ -251,7 +281,7 @@
     },
     {
       "title": "Pick a look and a size",
-      "description": "Choose from 19 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback), [Claymation World](/create/photo-trend-maker/claymation) or the [Christmas Card Portrait](/create/photo-trend-maker/christmas-card)."
+      "description": "Choose from 25 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback), [Claymation World](/create/photo-trend-maker/claymation) or the [Christmas Card Portrait](/create/photo-trend-maker/christmas-card)."
     },
     {
       "title": "Download the JPG",
@@ -289,7 +319,7 @@
     },
     {
       "q": "Why is the text in some looks wrong?",
-      "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) date stamp, the [arcade fighter](/create/photo-trend-maker/arcade-16bit), [blueprint](/create/photo-trend-maker/blueprint-poster) and [newspaper](/create/photo-trend-maker/fantasy-newspaper) looks can draw short words into the image. AI can misspell them, so read the result and generate again if something is off."
+      "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) date stamp, the [arcade fighter](/create/photo-trend-maker/arcade-16bit), [blueprint](/create/photo-trend-maker/blueprint-poster) and [newspaper](/create/photo-trend-maker/fantasy-newspaper) looks can draw short words into the image. The [collectible figure box](/create/photo-trend-maker/collectible-figure-box) prints a short invented name on its card. AI can misspell words and invent small garbled lettering, so read the result and generate again if something is off."
     },
     {
       "q": "How many credits does a design cost?",

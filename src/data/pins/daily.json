@@ -2143,6 +2143,154 @@
           "1000×1500 px JPG"
         ]
       }
+    },
+    {
+      "id": "collectible-figure-box-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-03",
+      "title": "Action figure photo idea: turn a photo into a collectible figure in a blister pack",
+      "description": "A portrait turned into a collectible plastic figure sealed in a blister pack, with a mug, a camera and a bag as accessories. Upload one photo, pick a size and download a JPG for Pinterest, a story or a gift idea board. The box draws a short invented name, so read the text before you post.",
+      "link": "/create/photo-trend-maker/collectible-figure-box",
+      "beforeafter": {
+        "heading": "Photo to collectible figure box",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_collectible_figure_box_1_1792339400000.webp",
+        "chips": [
+          "Figure, box and accessories",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "pop-up-paper-card-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-04",
+      "title": "Pop-up paper card idea: turn a pet photo into layered cardstock scenery",
+      "description": "A cat photo turned into a pop-up paper card: the pet is built from layered cardstock in front of a paper plant, paper trees and clouds. Upload one photo, pick a size and download a JPG for Pinterest, a greeting card idea or a craft board.",
+      "link": "/create/photo-trend-maker/pop-up-paper-card",
+      "beforeafter": {
+        "heading": "Cat photo to pop-up paper card",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_pop_up_paper_card_0_1792339400000.webp",
+        "chips": [
+          "Layered cardstock scene",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "scrapbook-journal-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-05",
+      "title": "Scrapbook journal page idea: tape one photo onto a page with washi tape and pressed flowers",
+      "description": "A selfie turned into a scrapbook journal page: the photo taped on with washi tape, surrounded by pressed flowers, paper scraps and stickers. Upload one photo, pick a size and download a JPG for a journaling board, a trip memory or a gift idea.",
+      "link": "/create/photo-trend-maker/scrapbook-journal",
+      "beforeafter": {
+        "heading": "Selfie to scrapbook journal page",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_scrapbook_journal_0_1792339400000.webp",
+        "chips": [
+          "Washi tape and pressed flowers",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "craft-photo-looks-from-one-photo",
+      "kind": "collage",
+      "category": "trends",
+      "release": "2026-11-06",
+      "title": "4 craft photo ideas from one photo: pop-up card, scrapbook page, doodle twin, sticker sheet",
+      "description": "Four craft-style looks you can make from a single photo: a pop-up paper card, a scrapbook journal page, a mini doodle twin and a photo sticker sheet. Upload one photo, pick a look and download a JPG sized for Pinterest, stories or a square post.",
+      "link": "/create/photo-trend-maker",
+      "collage": {
+        "heading": "4 craft photo looks from one photo",
+        "items": [
+          {
+            "scene": "photo-trend-maker",
+            "style": "pop_up_paper_card",
+            "label": "Pop-up card"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "scrapbook_journal",
+            "label": "Scrapbook page"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "doodle_twin",
+            "label": "Doodle twin"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "photo_sticker_sheet",
+            "label": "Sticker sheet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "instant-photo-pop-out-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-07",
+      "title": "Instant photo trick: turn a selfie into a hand reaching out of an instant print",
+      "description": "A selfie turned into an instant print held in a real hand, with the subject's arm reaching out of the frame into the room. Upload one photo, pick a size and download a JPG for Pinterest, a story or a profile post. Check the hand and fingers before you share it.",
+      "link": "/create/photo-trend-maker/instant-photo-pop-out",
+      "beforeafter": {
+        "heading": "Selfie to instant photo pop-out",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_instant_photo_popout_1_1792339400000.webp",
+        "chips": [
+          "Hand reaching out of the print",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "mini-doodle-twin-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-08",
+      "title": "Mini doodle twin photo idea: add a tiny ink-drawn twin on your pet's shoulder",
+      "description": "A golden retriever photo with one tiny ink-drawn dog twin sitting on its shoulder. The real photo stays as it is and only the little doodle is added. Upload one photo, pick a size and download a JPG for Pinterest or a profile picture.",
+      "link": "/create/photo-trend-maker/mini-doodle-twin",
+      "beforeafter": {
+        "heading": "Dog photo to mini doodle twin",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_doodle_twin_0_1792339400000.webp",
+        "chips": [
+          "Tiny ink-drawn twin",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "photo-sticker-sheet-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-09",
+      "title": "Photo sticker sheet idea: turn one selfie into 9 die-cut stickers with different faces",
+      "description": "A selfie turned into a sheet of nine die-cut stickers of the same face, each with a different expression and pose. Upload one photo, pick a size and download a JPG for Pinterest, chat reactions or journal pages. It is a flat picture, not a print-ready cut file.",
+      "link": "/create/photo-trend-maker/photo-sticker-sheet",
+      "beforeafter": {
+        "heading": "Selfie to photo sticker sheet",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_photo_sticker_sheet_0_1792339400000.webp",
+        "chips": [
+          "9 stickers on one sheet",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
     }
   ]
 }
