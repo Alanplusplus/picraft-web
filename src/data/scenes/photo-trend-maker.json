@@ -16,9 +16,9 @@
   },
   "cost": 1,
   "engine": {
-    "model": "gpt-image-2.5",
+    "model": "gpt-image-2.5-flare",
     "aspectRatio": "9:16",
-    "resolution": "2K"
+    "resolution": "1K"
   },
   "fields": [
     {
