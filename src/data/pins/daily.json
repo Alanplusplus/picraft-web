@@ -12,7 +12,11 @@
         "heading": "Phone snapshot to Amazon main image",
         "scene": "amazon-product-photo",
         "example": "/examples/amazon-product-photo_after_1791298731842_0.webp",
-        "chips": ["Pure white background", "2000×2000 px JPG", "Lifestyle shots too"]
+        "chips": [
+          "Pure white background",
+          "2000×2000 px JPG",
+          "Lifestyle shots too"
+        ]
       }
     },
     {
@@ -28,13 +32,33 @@
         "scene": "wedding-invitation-maker",
         "example": "/examples/wedding-invitation-maker_1791297237050_0.webp",
         "inputs": [
-          { "label": "Couple's names", "value": "Sophia Chen & Liam Anderson" },
-          { "label": "Date", "value": "Saturday, September 20, 2025" },
-          { "label": "Venue", "value": "The Lakeview Estate" },
-          { "label": "City", "value": "Lake Tahoe, California" },
-          { "label": "RSVP line", "value": "RSVP by August 15" }
+          {
+            "label": "Couple's names",
+            "value": "Sophia Chen & Liam Anderson"
+          },
+          {
+            "label": "Date",
+            "value": "Saturday, September 20, 2025"
+          },
+          {
+            "label": "Venue",
+            "value": "The Lakeview Estate"
+          },
+          {
+            "label": "City",
+            "value": "Lake Tahoe, California"
+          },
+          {
+            "label": "RSVP line",
+            "value": "RSVP by August 15"
+          }
         ],
-        "chips": ["5×7 in print PDF", "0.125 in bleed", "300 DPI JPG", "Phone share image"]
+        "chips": [
+          "5×7 in print PDF",
+          "0.125 in bleed",
+          "300 DPI JPG",
+          "Phone share image"
+        ]
       }
     },
     {
@@ -48,10 +72,26 @@
       "collage": {
         "heading": "4 photo trends to try with one selfie",
         "items": [
-          { "scene": "photo-trend-maker", "style": "claymation", "label": "Claymation" },
-          { "scene": "photo-trend-maker", "style": "80s_flashback", "label": "80s flashback" },
-          { "scene": "photo-trend-maker", "style": "y2k_digicam", "label": "Y2K digicam" },
-          { "scene": "photo-trend-maker", "style": "photo_booth", "label": "Photo booth strip" }
+          {
+            "scene": "photo-trend-maker",
+            "style": "claymation",
+            "label": "Claymation"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "80s_flashback",
+            "label": "80s flashback"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "y2k_digicam",
+            "label": "Y2K digicam"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "photo_booth",
+            "label": "Photo booth strip"
+          }
         ]
       }
     },
@@ -108,7 +148,11 @@
         "heading": "Dog photo to Halloween costume portrait",
         "scene": "photo-trend-maker",
         "example": "/examples/photo-trend-maker_halloween_portrait_1_1792077141174.webp",
-        "chips": ["Pets work too", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+        "chips": [
+          "Pets work too",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
       }
     },
     {
@@ -123,7 +167,11 @@
         "heading": "Photo to Halloween costume portrait",
         "scene": "photo-trend-maker",
         "example": "/examples/photo-trend-maker_halloween_portrait_2_1792077141174.webp",
-        "chips": ["No prompt to write", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
       }
     },
     {
@@ -138,7 +186,11 @@
         "heading": "Couple photo to Thanksgiving harvest portrait",
         "scene": "photo-trend-maker",
         "example": "/examples/photo-trend-maker_thanksgiving_harvest_1_1792077141174.webp",
-        "chips": ["Hand-painted look", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+        "chips": [
+          "Hand-painted look",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
       }
     },
     {
@@ -153,7 +205,11 @@
         "heading": "Couple photo to Christmas card portrait",
         "scene": "photo-trend-maker",
         "example": "/examples/photo-trend-maker_christmas_card_1_1792077141174.webp",
-        "chips": ["Pets work too", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+        "chips": [
+          "Pets work too",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
       }
     },
     {
@@ -167,10 +223,26 @@
       "collage": {
         "heading": "4 holiday photo looks from one photo",
         "items": [
-          { "scene": "photo-trend-maker", "style": "christmas_card", "label": "Christmas card" },
-          { "scene": "photo-trend-maker", "style": "vintage_christmas", "label": "Vintage Christmas" },
-          { "scene": "photo-trend-maker", "style": "snow_globe", "label": "Snow globe" },
-          { "scene": "photo-trend-maker", "style": "nye_party", "label": "New Year's Eve" }
+          {
+            "scene": "photo-trend-maker",
+            "style": "christmas_card",
+            "label": "Christmas card"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "vintage_christmas",
+            "label": "Vintage Christmas"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "snow_globe",
+            "label": "Snow globe"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "nye_party",
+            "label": "New Year's Eve"
+          }
         ]
       }
     },
@@ -186,7 +258,11 @@
         "heading": "Photo to vintage Christmas snapshot",
         "scene": "photo-trend-maker",
         "example": "/examples/photo-trend-maker_vintage_christmas_1_1792077818845.webp",
-        "chips": ["Flash and film grain", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+        "chips": [
+          "Flash and film grain",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
       }
     },
     {
@@ -201,7 +277,1871 @@
         "heading": "Cat photo to snow globe portrait",
         "scene": "photo-trend-maker",
         "example": "/examples/photo-trend-maker_snow_globe_1_1792077818845.webp",
-        "chips": ["Pets work too", "9:16, 2:3, 3:4 or 1:1", "1000×1500 px JPG"]
+        "chips": [
+          "Pets work too",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "listing-living-room-declutter-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-19",
+      "title": "Real estate listing photo fix: brighter living room with toys cleared from the floor",
+      "description": "A darker living room photo with toys on the floor, turned into a brighter listing photo with a clear floor. Pick Enhance, Declutter, Virtual staging or Virtual twilight, then download an MLS 2048x1536 JPG. Keep your unedited original.",
+      "link": "/create/real-estate-listing-photo",
+      "beforeafter": {
+        "heading": "Living room photo to bright listing photo",
+        "scene": "real-estate-listing-photo",
+        "example": "/examples/real-estate-listing-photo_after_1791298842897_0.webp",
+        "chips": [
+          "MLS 2048×1536 JPG",
+          "Web 1600×1200 JPG",
+          "Enhance or declutter"
+        ]
+      }
+    },
+    {
+      "id": "amazon-black-mug-main-image-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-20",
+      "title": "Amazon main image for a ceramic mug: desk photo to pure white background, 2000x2000",
+      "description": "A photo of a black ceramic mug on a cluttered desk turned into an Amazon main image on a pure white background, saved as a 2000x2000 px JPG. Upload your own product photo, choose Main image and download the listing file.",
+      "link": "/create/amazon-product-photo",
+      "beforeafter": {
+        "heading": "Desk photo to Amazon main image",
+        "scene": "amazon-product-photo",
+        "example": "/examples/amazon-product-photo_after_1791298759863_1.webp",
+        "chips": [
+          "Pure white background",
+          "2000×2000 px JPG",
+          "1080×1080 store image"
+        ]
+      }
+    },
+    {
+      "id": "neutral-living-room-staging-ideas",
+      "kind": "image",
+      "category": "photos",
+      "release": "2026-10-21",
+      "title": "Neutral living room staging ideas for listing photos: light sofa, jute rug, plants",
+      "description": "Staging idea for a bright, neutral living room: a light sofa, wood coffee table, jute rug and plants. PiCraft's real estate maker can virtually stage an empty room photo and returns an MLS-size JPG. Label staged photos in your listing.",
+      "link": "/create/real-estate-listing-photo",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "listing-kitchen-declutter-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-22",
+      "title": "Kitchen listing photo declutter: clear the counters before you list",
+      "description": "A cluttered kitchen photo with granite counters turned into a decluttered listing photo with clear countertops. Choose Declutter, upload the property photo and download an MLS 2048x1536 JPG. Mention edits in the listing.",
+      "link": "/create/real-estate-listing-photo",
+      "beforeafter": {
+        "heading": "Kitchen photo, countertops cleared",
+        "scene": "real-estate-listing-photo",
+        "example": "/examples/real-estate-listing-photo_after_1791298847079_1.webp",
+        "chips": [
+          "MLS 2048×1536 JPG",
+          "Web 1600×1200 JPG",
+          "Declutter option"
+        ]
+      }
+    },
+    {
+      "id": "amazon-earbuds-main-image-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-23",
+      "title": "Amazon main image for wireless earbuds: white background, 2000x2000 px JPG",
+      "description": "A snapshot of wireless earbuds in an open charging case turned into an Amazon main image on a pure white background, 2000x2000 px. Upload a product photo, pick Main image and download the file.",
+      "link": "/create/amazon-product-photo",
+      "beforeafter": {
+        "heading": "Earbuds photo to Amazon main image",
+        "scene": "amazon-product-photo",
+        "example": "/examples/amazon-product-photo_after_1791298748566_2.webp",
+        "chips": [
+          "Pure white background",
+          "2000×2000 px JPG",
+          "1080×1080 store image"
+        ]
+      }
+    },
+    {
+      "id": "etsy-ceramic-mug-lifestyle-photo-ideas",
+      "kind": "image",
+      "category": "photos",
+      "release": "2026-10-24",
+      "title": "Handmade mug lifestyle photo ideas for Etsy and Shopify listings",
+      "description": "A lifestyle photo idea for a handmade mug: warm morning light, a book and a linen napkin on an oak table. In PiCraft's product photo maker choose Lifestyle scene to place your own product in a scene like this.",
+      "link": "/create/amazon-product-photo",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "listing-bedroom-virtual-staging-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-25",
+      "title": "Virtual staging a bedroom: empty room photo to a bed, nightstands and rug",
+      "description": "A bedroom photo virtually staged with a bed, nightstands, lamps, a rug and wall art. Choose Virtual staging and download an MLS 2048x1536 JPG. Most MLS rules and many state rules want staged photos labeled in the listing.",
+      "link": "/create/real-estate-listing-photo",
+      "beforeafter": {
+        "heading": "Empty bedroom to virtually staged",
+        "scene": "real-estate-listing-photo",
+        "example": "/examples/real-estate-listing-photo_after_1791298875212_2.webp",
+        "chips": [
+          "MLS 2048×1536 JPG",
+          "Web 1600×1200 JPG",
+          "Label staged photos"
+        ]
+      }
+    },
+    {
+      "id": "amazon-succulent-lifestyle-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-26",
+      "title": "Lifestyle product photo from a phone snapshot: succulent in a ribbed pot on a wooden surface",
+      "description": "A plain phone photo of a succulent turned into a sunlit lifestyle product photo on a wooden surface. Choose Lifestyle scene for a listing image at 2000x2000 px or a 1080x1080 store and social image.",
+      "link": "/create/amazon-product-photo",
+      "beforeafter": {
+        "heading": "Product snapshot to lifestyle photo",
+        "scene": "amazon-product-photo",
+        "example": "/examples/amazon-product-photo_after_1791298803839_3.webp",
+        "chips": [
+          "Lifestyle scene option",
+          "2000×2000 px JPG",
+          "1080×1080 store image"
+        ]
+      }
+    },
+    {
+      "id": "holiday-candle-gift-photo-ideas",
+      "kind": "image",
+      "category": "photos",
+      "release": "2026-10-27",
+      "title": "Holiday candle product photo ideas: pine, ribbon and warm lights on marble",
+      "description": "A holiday product photo idea for a candle: pine sprigs, a velvet ribbon and soft lights on marble. Upload your own product photo to PiCraft and choose Lifestyle scene to get a listing-size 2000x2000 px JPG.",
+      "link": "/create/amazon-product-photo",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "listing-twilight-exterior-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-28",
+      "title": "Virtual twilight: turn a daytime house photo into a twilight listing photo",
+      "description": "A daytime exterior photo of a two-story house converted to a twilight shot with glowing windows and a deep blue sky. Choose Virtual twilight (exterior) and download an MLS 2048x1536 JPG. Disclose the edit in your listing.",
+      "link": "/create/real-estate-listing-photo",
+      "beforeafter": {
+        "heading": "Daytime photo to twilight exterior",
+        "scene": "real-estate-listing-photo",
+        "example": "/examples/real-estate-listing-photo_after_1791298896431_3.webp",
+        "chips": [
+          "MLS 2048×1536 JPG",
+          "Web 1600×1200 JPG",
+          "Virtual twilight option"
+        ]
+      }
+    },
+    {
+      "id": "amazon-wallet-product-photo-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-29",
+      "title": "Leather wallet product photo: phone snapshot to a clean listing image from above",
+      "description": "A phone snapshot of a brown leather bifold wallet turned into a clean overhead product photo on a light background. Upload your own photo and download a 2000x2000 px JPG for a listing or a 1080x1080 image for your store.",
+      "link": "/create/amazon-product-photo",
+      "beforeafter": {
+        "heading": "Wallet snapshot to clean product photo",
+        "scene": "amazon-product-photo",
+        "example": "/examples/amazon-product-photo_after_1791298821615_4.webp",
+        "chips": [
+          "2000×2000 px JPG",
+          "1080×1080 store image",
+          "No prompt needed"
+        ]
+      }
+    },
+    {
+      "id": "bright-bedroom-staging-ideas",
+      "kind": "image",
+      "category": "photos",
+      "release": "2026-10-30",
+      "title": "Bright bedroom staging ideas for real estate photos: white linen, nightstands, rug",
+      "description": "A bedroom staging idea: white linen, two nightstands with lamps, a woven rug and sheer curtains. PiCraft's real estate maker can virtually stage your room photo and return an MLS-size JPG. Label staged photos in your listing.",
+      "link": "/create/real-estate-listing-photo",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "listing-bathroom-declutter-before-after",
+      "kind": "beforeafter",
+      "category": "photos",
+      "release": "2026-10-31",
+      "title": "Bathroom listing photo declutter: clear the vanity and shower before you list",
+      "description": "A bathroom photo with a white vanity and glass shower, decluttered so the countertops are clear. Choose Declutter, upload the property photo and download an MLS 2048x1536 JPG or a 1600x1200 web JPG.",
+      "link": "/create/real-estate-listing-photo",
+      "beforeafter": {
+        "heading": "Bathroom photo, counters cleared",
+        "scene": "real-estate-listing-photo",
+        "example": "/examples/real-estate-listing-photo_after_1791298915589_4.webp",
+        "chips": [
+          "MLS 2048×1536 JPG",
+          "Web 1600×1200 JPG",
+          "Declutter option"
+        ]
+      }
+    },
+    {
+      "id": "skincare-bottle-flat-lay-photo-ideas",
+      "kind": "image",
+      "category": "photos",
+      "release": "2026-11-01",
+      "title": "Skincare product flat lay photo ideas: marble, eucalyptus and soft daylight",
+      "description": "A flat lay idea for skincare products: a frosted dropper bottle and cream jar on marble with eucalyptus and a folded towel. Upload your own product photo to PiCraft and choose Lifestyle scene or Close-up detail.",
+      "link": "/create/amazon-product-photo",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "holiday-gift-box-photo-ideas",
+      "kind": "image",
+      "category": "photos",
+      "release": "2026-11-02",
+      "title": "Holiday gift box product photo ideas: kraft box, wool beanie and pine branches",
+      "description": "A holiday product photo idea for a gift box: a kraft box, a wool beanie and knit gloves with cinnamon sticks and pine branches on wood. PiCraft's product photo maker makes the listing image from your own photo.",
+      "link": "/create/amazon-product-photo",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "dinosaur-birthday-invitation-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-19",
+      "title": "Dinosaur birthday invitation: fill in a short form, get a 5x7 print file with bleed",
+      "description": "A dinosaur-themed birthday invitation made from a short form: name, age, date, place and RSVP. Download a 5x7 in print PDF with 0.125 in bleed, a 300 DPI JPG and a 1080x1500 phone share image.",
+      "link": "/create/birthday-invitation-maker/dinosaur",
+      "demo": {
+        "heading": "Fill in a short form, get a dinosaur birthday invitation",
+        "scene": "birthday-invitation-maker",
+        "example": "/examples/birthday-invitation-maker_1791295363519_4.webp",
+        "inputs": [
+          {
+            "label": "Birthday person",
+            "value": "Leo"
+          },
+          {
+            "label": "Age or milestone",
+            "value": "is turning 6!"
+          },
+          {
+            "label": "Date",
+            "value": "Sunday, March 9"
+          },
+          {
+            "label": "Place",
+            "value": "Dino Discovery Museum"
+          },
+          {
+            "label": "RSVP line",
+            "value": "RSVP by March 1"
+          },
+          {
+            "label": "Theme",
+            "value": "Dinosaur adventure"
+          }
+        ],
+        "chips": [
+          "5×7 in print PDF",
+          "0.125 in bleed",
+          "300 DPI JPG",
+          "Phone share image"
+        ]
+      }
+    },
+    {
+      "id": "thanksgiving-table-invitation-ideas",
+      "kind": "image",
+      "category": "print",
+      "release": "2026-10-20",
+      "title": "Thanksgiving dinner invitation ideas: autumn table with a blank card",
+      "description": "A Thanksgiving table idea with a blank cream card, pumpkins, dried wheat and copper candlesticks. Type your own date, place and details into PiCraft's event flyer maker and download a print PDF or an Instagram-size image.",
+      "link": "/create/event-flyer-maker",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "blanket-drive-flyer-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-21",
+      "title": "Charity event flyer from a short form: print PDF and Instagram image for a blanket drive",
+      "description": "A blanket drive flyer made from a few lines: event name, dates, drop-off place and what to bring. Download an 8.5x11 in print PDF with 0.125 in bleed, a 1080x1350 Instagram image and a 1080x1920 story.",
+      "link": "/create/event-flyer-maker",
+      "demo": {
+        "heading": "Fill in a short form, get a charity event flyer",
+        "scene": "event-flyer-maker",
+        "example": "/examples/event-flyer-maker_1791296318885_16.webp",
+        "inputs": [
+          {
+            "label": "Event name",
+            "value": "Blanket Drive"
+          },
+          {
+            "label": "Tagline",
+            "value": "Warmth for those who need it most"
+          },
+          {
+            "label": "Date & time",
+            "value": "November 1–30"
+          },
+          {
+            "label": "Venue",
+            "value": "Drop off at any City Library"
+          },
+          {
+            "label": "Highlights",
+            "value": "New or gently used\nAll sizes accepted"
+          },
+          {
+            "label": "Call to action",
+            "value": "Hosted by Warm Hearts"
+          }
+        ],
+        "chips": [
+          "8.5×11 in print PDF",
+          "0.125 in bleed",
+          "Instagram 1080×1350",
+          "Story 1080×1920"
+        ]
+      }
+    },
+    {
+      "id": "kids-birthday-invitation-themes",
+      "kind": "collage",
+      "category": "print",
+      "release": "2026-10-22",
+      "title": "4 kids birthday invitation themes: unicorn, space, safari and mermaid",
+      "description": "Four birthday invitation themes from PiCraft: unicorn, space, safari and mermaid. Type the name, date and place, pick a theme and download a 5x7 in print PDF with bleed or a phone share image. Names in examples are made up.",
+      "link": "/create/birthday-invitation-maker",
+      "collage": {
+        "heading": "4 kids birthday invitation themes to try",
+        "items": [
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "unicorn",
+            "label": "Unicorn"
+          },
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "space",
+            "label": "Space"
+          },
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "safari",
+            "label": "Safari"
+          },
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "mermaid",
+            "label": "Mermaid"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boho-wedding-invitation-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-23",
+      "title": "Boho wedding invitation from a short form: 5x7 print PDF with bleed",
+      "description": "A boho wedding invitation with a terracotta arch, dried flowers and pampas grass, made from the couple's names, date and venue. Download a 5x7 in print PDF with 0.125 in bleed, a 300 DPI JPG and a phone share image.",
+      "link": "/create/wedding-invitation-maker/boho",
+      "demo": {
+        "heading": "Fill in a short form, get a boho wedding invitation",
+        "scene": "wedding-invitation-maker",
+        "example": "/examples/wedding-invitation-maker_1791297327188_6.webp",
+        "inputs": [
+          {
+            "label": "Couple's names",
+            "value": "Aria Patel & Marcus Johnson"
+          },
+          {
+            "label": "Date",
+            "value": "Friday, March 21, 2025"
+          },
+          {
+            "label": "Venue",
+            "value": "Willow Creek Vineyard"
+          },
+          {
+            "label": "City",
+            "value": "Napa Valley, California"
+          },
+          {
+            "label": "Style",
+            "value": "Boho arch"
+          }
+        ],
+        "chips": [
+          "5×7 in print PDF",
+          "0.125 in bleed",
+          "300 DPI JPG",
+          "Phone share image"
+        ]
+      }
+    },
+    {
+      "id": "ramen-menu-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-24",
+      "title": "Restaurant menu from a short form: print-ready US Letter PDF with bleed",
+      "description": "A ramen shop menu made from a restaurant name, tagline, menu items and a style. Download a US Letter print PDF with 0.125 in bleed or a web image. Choose A4 for a 3 mm bleed. Check every price before printing.",
+      "link": "/create/restaurant-menu-maker",
+      "demo": {
+        "heading": "Type your menu, get a print-ready restaurant menu",
+        "scene": "restaurant-menu-maker",
+        "example": "/examples/restaurant-menu-maker_1791296526386_2.webp",
+        "inputs": [
+          {
+            "label": "Restaurant name",
+            "value": "Sakura Ramen"
+          },
+          {
+            "label": "Tagline",
+            "value": "Authentic Japanese ramen"
+          },
+          {
+            "label": "Style",
+            "value": "Modern minimal"
+          },
+          {
+            "label": "Paper size",
+            "value": "US Letter (8.5×11 in)"
+          }
+        ],
+        "chips": [
+          "US Letter or A4",
+          "Print PDF with bleed",
+          "1275×1650 px web image"
+        ]
+      }
+    },
+    {
+      "id": "space-birthday-party-ideas",
+      "kind": "image",
+      "category": "print",
+      "release": "2026-10-25",
+      "title": "Space birthday party ideas: planet cake, star garlands and a blank invitation card",
+      "description": "An outer-space birthday party idea: a planet cake, star garlands, rocket cookies and a blank dark blue card. PiCraft's birthday invitation maker has a Space theme: add the name, date and place and download a 5x7 in print PDF.",
+      "link": "/create/birthday-invitation-maker/space",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "winter-gala-flyer-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-26",
+      "title": "Winter charity gala flyer from a short form: print PDF plus Instagram and story sizes",
+      "description": "A black-and-gold gala flyer made from the event name, tagline, date, venue and highlights. Download an 8.5x11 in print PDF with 0.125 in bleed, a 1080x1350 Instagram image and a 1080x1920 story.",
+      "link": "/create/event-flyer-maker",
+      "demo": {
+        "heading": "Fill in a short form, get a gala flyer",
+        "scene": "event-flyer-maker",
+        "example": "/examples/event-flyer-maker_1791296170034_8.webp",
+        "inputs": [
+          {
+            "label": "Event name",
+            "value": "Winter Charity Gala"
+          },
+          {
+            "label": "Tagline",
+            "value": "An evening of elegance"
+          },
+          {
+            "label": "Date & time",
+            "value": "Saturday, December 13 · 6:30 PM"
+          },
+          {
+            "label": "Venue",
+            "value": "Fairmont Hotel, Grand Ballroom"
+          },
+          {
+            "label": "Highlights",
+            "value": "Live orchestra\nSilent auction"
+          },
+          {
+            "label": "Call to action",
+            "value": "Tables from $500"
+          }
+        ],
+        "chips": [
+          "8.5×11 in print PDF",
+          "0.125 in bleed",
+          "Instagram 1080×1350",
+          "Story 1080×1920"
+        ]
+      }
+    },
+    {
+      "id": "wedding-invitation-styles-to-try",
+      "kind": "collage",
+      "category": "print",
+      "release": "2026-10-27",
+      "title": "4 wedding invitation styles: rustic, Art Deco, dark moody and cherry blossom",
+      "description": "Four wedding invitation styles from PiCraft: rustic, Art Deco, dark moody and cherry blossom. Enter the couple's names, date and venue, pick a style and download a 5x7 in print PDF with 0.125 in bleed. Names are made up.",
+      "link": "/create/wedding-invitation-maker",
+      "collage": {
+        "heading": "4 wedding invitation styles to try",
+        "items": [
+          {
+            "scene": "wedding-invitation-maker",
+            "style": "rustic",
+            "label": "Rustic"
+          },
+          {
+            "scene": "wedding-invitation-maker",
+            "style": "art_deco",
+            "label": "Art Deco"
+          },
+          {
+            "scene": "wedding-invitation-maker",
+            "style": "moody",
+            "label": "Dark moody"
+          },
+          {
+            "scene": "wedding-invitation-maker",
+            "style": "cherry_blossom",
+            "label": "Cherry blossom"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unicorn-birthday-invitation-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-28",
+      "title": "Unicorn birthday invitation: type the details, download a 5x7 print file with bleed",
+      "description": "A pastel unicorn and rainbow birthday invitation made from a name, age, date, place and RSVP line. Download a 5x7 in print PDF with 0.125 in bleed, a 300 DPI JPG and a 1080x1500 phone share image.",
+      "link": "/create/birthday-invitation-maker/unicorn",
+      "demo": {
+        "heading": "Fill in a short form, get a unicorn birthday invitation",
+        "scene": "birthday-invitation-maker",
+        "example": "/examples/birthday-invitation-maker_1791295334535_2.webp",
+        "inputs": [
+          {
+            "label": "Birthday person",
+            "value": "Sophie"
+          },
+          {
+            "label": "Age or milestone",
+            "value": "is turning 8!"
+          },
+          {
+            "label": "Date",
+            "value": "Saturday, February 22"
+          },
+          {
+            "label": "Place",
+            "value": "Starlight Skating Rink"
+          },
+          {
+            "label": "RSVP line",
+            "value": "RSVP by Feb 15"
+          },
+          {
+            "label": "Theme",
+            "value": "Unicorn & rainbow"
+          }
+        ],
+        "chips": [
+          "5×7 in print PDF",
+          "0.125 in bleed",
+          "300 DPI JPG",
+          "Phone share image"
+        ]
+      }
+    },
+    {
+      "id": "rustic-wedding-stationery-ideas",
+      "kind": "image",
+      "category": "print",
+      "release": "2026-10-29",
+      "title": "Rustic wedding stationery ideas: blank card, twine-tied envelope and sunflowers on wood",
+      "description": "A rustic wedding stationery idea: a blank card and an envelope tied with twine, with sunflowers and wildflowers on a weathered table. PiCraft's wedding invitation maker has a Rustic style: enter your names, date and venue for a 5x7 in print PDF.",
+      "link": "/create/wedding-invitation-maker/rustic",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "steakhouse-menu-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-30",
+      "title": "Holiday dinner menu from a short form: steakhouse menu as a print PDF with bleed",
+      "description": "A wood-fired steakhouse menu in gold type on dark green, made from a restaurant name, tagline, menu items and a style. Download a US Letter print PDF with 0.125 in bleed or a web image. Check prices before printing.",
+      "link": "/create/restaurant-menu-maker",
+      "demo": {
+        "heading": "Type your menu, get a print-ready dinner menu",
+        "scene": "restaurant-menu-maker",
+        "example": "/examples/restaurant-menu-maker_1791296617151_8.webp",
+        "inputs": [
+          {
+            "label": "Restaurant name",
+            "value": "Ember & Oak"
+          },
+          {
+            "label": "Tagline",
+            "value": "Wood-fired steakhouse"
+          },
+          {
+            "label": "Style",
+            "value": "Fine dining"
+          },
+          {
+            "label": "Paper size",
+            "value": "US Letter (8.5×11 in)"
+          }
+        ],
+        "chips": [
+          "US Letter or A4",
+          "Print PDF with bleed",
+          "1275×1650 px web image"
+        ]
+      }
+    },
+    {
+      "id": "elegant-birthday-invitation-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-10-31",
+      "title": "Elegant 30th birthday invitation: black and gold, 5x7 print PDF with bleed",
+      "description": "A black-and-gold 30th birthday invitation made from a name, milestone, date, place and RSVP line. Download a 5x7 in print PDF with 0.125 in bleed, a 300 DPI JPG and a 1080x1500 phone share image.",
+      "link": "/create/birthday-invitation-maker/elegant",
+      "demo": {
+        "heading": "Fill in a short form, get an elegant birthday invitation",
+        "scene": "birthday-invitation-maker",
+        "example": "/examples/birthday-invitation-maker_1791295441113_9.webp",
+        "inputs": [
+          {
+            "label": "Birthday person",
+            "value": "Grace"
+          },
+          {
+            "label": "Age or milestone",
+            "value": "turns 30!"
+          },
+          {
+            "label": "Date",
+            "value": "Friday, October 31"
+          },
+          {
+            "label": "Place",
+            "value": "Moonlight Lounge, Downtown"
+          },
+          {
+            "label": "RSVP line",
+            "value": "RSVP to Grace"
+          },
+          {
+            "label": "Theme",
+            "value": "Elegant black & gold"
+          }
+        ],
+        "chips": [
+          "5×7 in print PDF",
+          "0.125 in bleed",
+          "300 DPI JPG",
+          "Phone share image"
+        ]
+      }
+    },
+    {
+      "id": "winter-wedding-invitation-form-to-print",
+      "kind": "demo",
+      "category": "print",
+      "release": "2026-11-01",
+      "title": "Winter wedding invitation from a short form: classic gold frame, 5x7 print PDF",
+      "description": "A classic gold-frame wedding invitation for a winter lodge wedding, made from the couple's names, date, venue, city and RSVP line. Download a 5x7 in print PDF with 0.125 in bleed and a 300 DPI JPG.",
+      "link": "/create/wedding-invitation-maker/classic",
+      "demo": {
+        "heading": "Fill in a short form, get a classic wedding invitation",
+        "scene": "wedding-invitation-maker",
+        "example": "/examples/wedding-invitation-maker_1791297303028_5.webp",
+        "inputs": [
+          {
+            "label": "Couple's names",
+            "value": "Zoe Chen & Alexander Wolf"
+          },
+          {
+            "label": "Date",
+            "value": "Saturday, December 20, 2025"
+          },
+          {
+            "label": "Venue",
+            "value": "The Winter Lodge"
+          },
+          {
+            "label": "City",
+            "value": "Aspen, Colorado"
+          },
+          {
+            "label": "RSVP line",
+            "value": "RSVP by November 15"
+          },
+          {
+            "label": "Style",
+            "value": "Classic gold"
+          }
+        ],
+        "chips": [
+          "5×7 in print PDF",
+          "0.125 in bleed",
+          "300 DPI JPG",
+          "Phone share image"
+        ]
+      }
+    },
+    {
+      "id": "birthday-invitation-themes-for-teens-and-adults",
+      "kind": "collage",
+      "category": "print",
+      "release": "2026-11-02",
+      "title": "Birthday invitation ideas for teens and adults: elegant, retro arcade, watercolor, floral",
+      "description": "Four birthday invitation themes for older guests: elegant black and gold, retro arcade, watercolor and floral. Type the name, date and place and download a 5x7 in print PDF with bleed or a phone share image.",
+      "link": "/create/birthday-invitation-maker",
+      "collage": {
+        "heading": "4 birthday invitation themes for teens and adults",
+        "items": [
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "elegant",
+            "label": "Elegant"
+          },
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "retro",
+            "label": "Retro arcade"
+          },
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "watercolor",
+            "label": "Watercolor"
+          },
+          {
+            "scene": "birthday-invitation-maker",
+            "style": "floral",
+            "label": "Floral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "youtube-thumbnail-form-to-image-bold",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-19",
+      "title": "YouTube thumbnail from a title and topic: bold style, 1280x720 JPG under 2 MB",
+      "description": "A bold, high-contrast YouTube thumbnail made from the thumbnail text, the video topic and a style. Download a 1280x720 JPG under 2 MB or a 1920x1080 file. Add your own face or product photo if you like.",
+      "link": "/create/youtube-thumbnail-maker/bold",
+      "demo": {
+        "heading": "Type a title, get a YouTube thumbnail",
+        "scene": "youtube-thumbnail-maker",
+        "example": "/examples/youtube-thumbnail-maker_1791297520829_0.webp",
+        "inputs": [
+          {
+            "label": "Thumbnail text",
+            "value": "I QUIT MY JOB"
+          },
+          {
+            "label": "What is the video about?",
+            "value": "A developer quits tech to travel, sitting at an airport with backpack and laptop"
+          },
+          {
+            "label": "Style",
+            "value": "Bold & high contrast"
+          }
+        ],
+        "chips": [
+          "1280×720 JPG, under 2 MB",
+          "Full HD 1920×1080 JPG",
+          "10 styles"
+        ]
+      }
+    },
+    {
+      "id": "kindle-ebook-cover-size-cheat-sheet",
+      "kind": "sheet",
+      "category": "creators",
+      "release": "2026-10-20",
+      "title": "Kindle ebook cover size cheat sheet: 1600x2560 px, JPEG, RGB and file limits",
+      "description": "Save this Kindle ebook cover size cheat sheet: ideal and minimum dimensions, aspect ratio, JPEG or TIFF format, RGB color, the 50 MB limit and the DPI note. Full guide with KDP paperback bleed on PiCraft.",
+      "link": "/sizes/book-cover-size",
+      "sheet": {
+        "guide": "size:book-cover-size",
+        "section": 0,
+        "heading": "Kindle ebook cover size cheat sheet",
+        "subtitle": "Specs from Amazon KDP"
+      }
+    },
+    {
+      "id": "fantasy-book-cover-form-to-ebook",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-21",
+      "title": "Fantasy book cover from a title and author: Kindle 1600x2560 and paperback front",
+      "description": "A fantasy book cover made from a title, subtitle, author and cover idea. Download a 1600x2560 px eBook JPG and a 6x9 in paperback front panel with bleed at 300 DPI. Only use imagery you have the rights to.",
+      "link": "/create/book-cover-maker/fantasy",
+      "demo": {
+        "heading": "Type a title, get a Kindle-ready book cover",
+        "scene": "book-cover-maker",
+        "example": "/examples/book-cover-maker_1791295556632_0.webp",
+        "inputs": [
+          {
+            "label": "Book title",
+            "value": "The Ember Throne"
+          },
+          {
+            "label": "Subtitle or series",
+            "value": "Book Two of the Ashen Crown"
+          },
+          {
+            "label": "Author name",
+            "value": "Elena Castillo"
+          },
+          {
+            "label": "Genre",
+            "value": "Fantasy"
+          },
+          {
+            "label": "Cover idea",
+            "value": "A crumbling throne engulfed in golden flames atop a mountain peak at dusk"
+          }
+        ],
+        "chips": [
+          "1600×2560 px eBook JPG",
+          "6×9 in paperback front with bleed",
+          "300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "linkedin-banner-form-to-image-gradient",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-22",
+      "title": "LinkedIn banner from your name and headline: 1584x396 px JPG",
+      "description": "A soft gradient LinkedIn banner made from a name, a headline and a look. Download a 1584x396 px JPG or a 3168x792 px high-res file. Text sits in the right half so your profile photo does not cover it.",
+      "link": "/create/linkedin-banner-maker",
+      "demo": {
+        "heading": "Type your name and headline, get a LinkedIn banner",
+        "scene": "linkedin-banner-maker",
+        "example": "/examples/linkedin-banner-maker_1791454424421_0.webp",
+        "inputs": [
+          {
+            "label": "Name or brand",
+            "value": "Sarah Chen"
+          },
+          {
+            "label": "Headline",
+            "value": "Product Designer at Figma"
+          },
+          {
+            "label": "Look",
+            "value": "Soft gradient"
+          }
+        ],
+        "chips": [
+          "1584×396 px JPG",
+          "3168×792 px high-res JPG",
+          "Text kept in the right half"
+        ]
+      }
+    },
+    {
+      "id": "fantasy-book-cover-art-ideas",
+      "kind": "image",
+      "category": "creators",
+      "release": "2026-10-23",
+      "title": "Fantasy book cover art ideas: knight, ruined castle and a glowing sky",
+      "description": "A fantasy cover art idea: a lone knight facing a glowing ruined castle under a purple and gold sky, with room at the top for a title. PiCraft's book cover maker typesets your title and author and returns a Kindle-size JPG.",
+      "link": "/create/book-cover-maker",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "youtube-thumbnail-form-to-image-vlog",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-24",
+      "title": "Vlog YouTube thumbnail from a title and topic: warm style, 1280x720 JPG",
+      "description": "A warm vlog-style YouTube thumbnail made from the text MORNING ROUTINE, a short video topic and a style. Download a 1280x720 JPG under 2 MB or a 1920x1080 file.",
+      "link": "/create/youtube-thumbnail-maker/vlog",
+      "demo": {
+        "heading": "Type a title, get a vlog thumbnail",
+        "scene": "youtube-thumbnail-maker",
+        "example": "/examples/youtube-thumbnail-maker_1791297609512_8.webp",
+        "inputs": [
+          {
+            "label": "Thumbnail text",
+            "value": "MORNING ROUTINE"
+          },
+          {
+            "label": "What is the video about?",
+            "value": "Cozy morning routine, waking at sunrise, journaling with coffee, soft light"
+          },
+          {
+            "label": "Style",
+            "value": "Warm vlog"
+          }
+        ],
+        "chips": [
+          "1280×720 JPG, under 2 MB",
+          "Full HD 1920×1080 JPG",
+          "10 styles"
+        ]
+      }
+    },
+    {
+      "id": "linkedin-banner-size-cheat-sheet",
+      "kind": "sheet",
+      "category": "creators",
+      "release": "2026-10-25",
+      "title": "LinkedIn banner size cheat sheet: 1584x396 px, 4:1, JPG or PNG, under 8 MB",
+      "description": "Save this LinkedIn banner size cheat sheet: the recommended 1584x396 px size, 4:1 aspect ratio, JPG or PNG files, the 8 MB limit and why the banner can look different on screen. Full guide on PiCraft.",
+      "link": "/sizes/linkedin-banner-size",
+      "sheet": {
+        "guide": "size:linkedin-banner-size",
+        "section": 0,
+        "heading": "LinkedIn banner size cheat sheet",
+        "subtitle": "Specs from LinkedIn Help"
+      }
+    },
+    {
+      "id": "thriller-book-cover-form-to-ebook",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-26",
+      "title": "Thriller book cover from a title and author: eBook JPG and paperback front",
+      "description": "A thriller book cover made from a title, author name, genre and a short cover idea. Download a 1600x2560 px eBook JPG and a 6x9 in paperback front panel with bleed at 300 DPI.",
+      "link": "/create/book-cover-maker/thriller",
+      "demo": {
+        "heading": "Type a title, get a thriller book cover",
+        "scene": "book-cover-maker",
+        "example": "/examples/book-cover-maker_1791452755928_2.webp",
+        "inputs": [
+          {
+            "label": "Book title",
+            "value": "Dead Drop"
+          },
+          {
+            "label": "Author name",
+            "value": "Marcus Cole"
+          },
+          {
+            "label": "Genre",
+            "value": "Thriller / crime"
+          },
+          {
+            "label": "Cover idea",
+            "value": "A rain-slicked alley in Berlin at night, a briefcase under a streetlight"
+          }
+        ],
+        "chips": [
+          "1600×2560 px eBook JPG",
+          "6×9 in paperback front with bleed",
+          "300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "youtube-thumbnail-form-to-image-travel",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-27",
+      "title": "Travel YouTube thumbnail from a title and topic: 1280x720 JPG under 2 MB",
+      "description": "A travel-style YouTube thumbnail made from the text JAPAN IN 7 DAYS, a one-line video topic and a style. Download a 1280x720 JPG under 2 MB or a 1920x1080 file.",
+      "link": "/create/youtube-thumbnail-maker/travel",
+      "demo": {
+        "heading": "Type a title, get a travel thumbnail",
+        "scene": "youtube-thumbnail-maker",
+        "example": "/examples/youtube-thumbnail-maker_1791297789802_18.webp",
+        "inputs": [
+          {
+            "label": "Thumbnail text",
+            "value": "JAPAN IN 7 DAYS"
+          },
+          {
+            "label": "What is the video about?",
+            "value": "Epic Japan travel vlog, Tokyo neon, Kyoto temples, cherry blossoms, ramen"
+          },
+          {
+            "label": "Style",
+            "value": "Travel & explore"
+          }
+        ],
+        "chips": [
+          "1280×720 JPG, under 2 MB",
+          "Full HD 1920×1080 JPG",
+          "10 styles"
+        ]
+      }
+    },
+    {
+      "id": "sci-fi-book-cover-art-ideas",
+      "kind": "image",
+      "category": "creators",
+      "release": "2026-10-28",
+      "title": "Sci-fi book cover art ideas: spaceship, ringed planet and a glowing orange star",
+      "description": "A science fiction cover art idea: a small spaceship approaching a ringed planet, with space at the top for lettering. PiCraft's book cover maker typesets your title and author and returns a Kindle-size JPG.",
+      "link": "/create/book-cover-maker",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "linkedin-banner-form-to-image-tech",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-29",
+      "title": "LinkedIn banner for a cloud architect: abstract tech look, 1584x396 px JPG",
+      "description": "An abstract tech LinkedIn banner in dark navy and orange, made from a name, a headline, a look and a color note. Download a 1584x396 px JPG or a 3168x792 px high-res file.",
+      "link": "/create/linkedin-banner-maker",
+      "demo": {
+        "heading": "Type your name and headline, get a tech banner",
+        "scene": "linkedin-banner-maker",
+        "example": "/examples/linkedin-banner-maker_1791454534598_11.webp",
+        "inputs": [
+          {
+            "label": "Name or brand",
+            "value": "Ananya Patel"
+          },
+          {
+            "label": "Headline",
+            "value": "Cloud Architect · AWS · Kubernetes"
+          },
+          {
+            "label": "Look",
+            "value": "Abstract tech"
+          },
+          {
+            "label": "Colors",
+            "value": "dark navy and orange"
+          }
+        ],
+        "chips": [
+          "1584×396 px JPG",
+          "3168×792 px high-res JPG",
+          "Text kept in the right half"
+        ]
+      }
+    },
+    {
+      "id": "scifi-book-cover-form-to-ebook",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-30",
+      "title": "Science fiction book cover from a title and author: Kindle-ready JPG",
+      "description": "A science fiction book cover made from a title, author name, genre and a short cover idea. Download a 1600x2560 px eBook JPG and a 6x9 in paperback front panel with bleed at 300 DPI.",
+      "link": "/create/book-cover-maker",
+      "demo": {
+        "heading": "Type a title, get a sci-fi book cover",
+        "scene": "book-cover-maker",
+        "example": "/examples/book-cover-maker_1791452755930_6.webp",
+        "inputs": [
+          {
+            "label": "Book title",
+            "value": "Void Walker"
+          },
+          {
+            "label": "Author name",
+            "value": "Kai Zhang"
+          },
+          {
+            "label": "Genre",
+            "value": "Science fiction"
+          },
+          {
+            "label": "Cover idea",
+            "value": "An astronaut drifting toward a massive glowing portal in deep space"
+          }
+        ],
+        "chips": [
+          "1600×2560 px eBook JPG",
+          "6×9 in paperback front with bleed",
+          "300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "youtube-thumbnail-form-to-image-horror",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-10-31",
+      "title": "Spooky YouTube thumbnail from a title and topic: dark and eerie style, 1280x720",
+      "description": "A dark, eerie YouTube thumbnail made from the text DON'T WATCH ALONE, a video topic and a style. Download a 1280x720 JPG under 2 MB or a 1920x1080 file. Good for Halloween videos.",
+      "link": "/create/youtube-thumbnail-maker/horror",
+      "demo": {
+        "heading": "Type a title, get a spooky thumbnail",
+        "scene": "youtube-thumbnail-maker",
+        "example": "/examples/youtube-thumbnail-maker_1791297674982_12.webp",
+        "inputs": [
+          {
+            "label": "Thumbnail text",
+            "value": "DON'T WATCH ALONE"
+          },
+          {
+            "label": "What is the video about?",
+            "value": "A creepy abandoned asylum at night, shadow figures, distorted camera angles"
+          },
+          {
+            "label": "Style",
+            "value": "Dark & eerie"
+          }
+        ],
+        "chips": [
+          "1280×720 JPG, under 2 MB",
+          "Full HD 1920×1080 JPG",
+          "10 styles"
+        ]
+      }
+    },
+    {
+      "id": "romance-book-cover-form-to-ebook",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-11-01",
+      "title": "Romance book cover from a title and author: eBook JPG and paperback front",
+      "description": "A romance book cover made from a title, subtitle, author and a cover idea. Download a 1600x2560 px eBook JPG and a 6x9 in paperback front panel with bleed at 300 DPI.",
+      "link": "/create/book-cover-maker/romance",
+      "demo": {
+        "heading": "Type a title, get a romance book cover",
+        "scene": "book-cover-maker",
+        "example": "/examples/book-cover-maker_1791295680098_4.webp",
+        "inputs": [
+          {
+            "label": "Book title",
+            "value": "Summer in Santorini"
+          },
+          {
+            "label": "Subtitle or series",
+            "value": "A love story in the sun"
+          },
+          {
+            "label": "Author name",
+            "value": "Nadia Blake"
+          },
+          {
+            "label": "Genre",
+            "value": "Romance"
+          },
+          {
+            "label": "Cover idea",
+            "value": "A couple silhouetted against a sunset over white-washed buildings"
+          }
+        ],
+        "chips": [
+          "1600×2560 px eBook JPG",
+          "6×9 in paperback front with bleed",
+          "300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "youtube-thumbnail-form-to-image-fitness",
+      "kind": "demo",
+      "category": "creators",
+      "release": "2026-11-02",
+      "title": "Fitness YouTube thumbnail from a title and topic: energetic style, 1280x720 JPG",
+      "description": "A fitness-style YouTube thumbnail made from the text ULTIMATE HOME GYM, a video topic and a style. Download a 1280x720 JPG under 2 MB or a 1920x1080 file.",
+      "link": "/create/youtube-thumbnail-maker/fitness",
+      "demo": {
+        "heading": "Type a title, get a fitness thumbnail",
+        "scene": "youtube-thumbnail-maker",
+        "example": "/examples/youtube-thumbnail-maker_1791297738222_16.webp",
+        "inputs": [
+          {
+            "label": "Thumbnail text",
+            "value": "ULTIMATE HOME GYM"
+          },
+          {
+            "label": "What is the video about?",
+            "value": "Building a home gym for under $500, dumbbells and pull-up bar in a garage"
+          },
+          {
+            "label": "Style",
+            "value": "Fitness & energy"
+          }
+        ],
+        "chips": [
+          "1280×720 JPG, under 2 MB",
+          "Full HD 1920×1080 JPG",
+          "10 styles"
+        ]
+      }
+    },
+    {
+      "id": "halloween-cartoon-sticker-ideas",
+      "kind": "image",
+      "category": "merch",
+      "release": "2026-10-19",
+      "title": "9 Halloween sticker ideas: jack-o'-lantern, ghost, black cat, bat and more",
+      "description": "Nine Halloween sticker ideas in a bold cartoon style: a jack-o'-lantern, ghost, black cat, bat and more. Describe one idea in PiCraft's sticker maker and download a transparent PNG with a white die-cut border.",
+      "link": "/create/sticker-maker/cartoon",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "vintage-t-shirt-design-form-to-print",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-20",
+      "title": "Vintage badge T-shirt design from an idea and a slogan: transparent 4500x5400 PNG",
+      "description": "A vintage badge T-shirt design made from a design idea, a slogan, a style and a shirt color. Download a 4500x5400 px transparent PNG (15x18 in at 300 DPI) for print-on-demand services.",
+      "link": "/create/t-shirt-design-maker",
+      "demo": {
+        "heading": "Type an idea, get a print-ready T-shirt design",
+        "scene": "t-shirt-design-maker",
+        "example": "/examples/t-shirt-design-maker_1791452755917_0.webp",
+        "inputs": [
+          {
+            "label": "Design idea",
+            "value": "A mountain range inside a circle with a camper van driving toward sunset"
+          },
+          {
+            "label": "Slogan",
+            "value": "Adventure Awaits"
+          },
+          {
+            "label": "Style",
+            "value": "Vintage badge"
+          },
+          {
+            "label": "Shirt color",
+            "value": "Dark shirt"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "4500×5400 px print file",
+          "Dark or light shirt"
+        ]
+      }
+    },
+    {
+      "id": "sticker-styles-to-try",
+      "kind": "collage",
+      "category": "merch",
+      "release": "2026-10-21",
+      "title": "4 sticker styles to try: bold cartoon, retro 70s, watercolor and pixel art",
+      "description": "Four sticker styles from PiCraft: bold cartoon, retro 70s, watercolor and pixel art. Describe one idea, pick a style and download a transparent PNG with a white die-cut border, plus a 3x3 in print file at 300 DPI.",
+      "link": "/create/sticker-maker",
+      "collage": {
+        "heading": "4 sticker styles to try",
+        "items": [
+          {
+            "scene": "sticker-maker",
+            "style": "cartoon",
+            "label": "Bold cartoon"
+          },
+          {
+            "scene": "sticker-maker",
+            "style": "retro",
+            "label": "Retro 70s"
+          },
+          {
+            "scene": "sticker-maker",
+            "style": "watercolor",
+            "label": "Watercolor"
+          },
+          {
+            "scene": "sticker-maker",
+            "style": "pixel",
+            "label": "Pixel art"
+          }
+        ]
+      }
+    },
+    {
+      "id": "retro-sticker-form-to-png",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-22",
+      "title": "Retro 70s sticker from one idea: roller-skating bear as a transparent PNG",
+      "description": "A retro 70s sticker made from one idea (a roller-skating bear with a boombox) and the text Groove on. Download a transparent 2048x2048 PNG with a white die-cut border or a 3x3 in print PNG at 300 DPI.",
+      "link": "/create/sticker-maker/retro",
+      "demo": {
+        "heading": "Type one idea, get a die-cut sticker PNG",
+        "scene": "sticker-maker",
+        "example": "/examples/sticker-maker_1791294996269_5.webp",
+        "inputs": [
+          {
+            "label": "What's on the sticker?",
+            "value": "A roller-skating bear with a boombox on its shoulder"
+          },
+          {
+            "label": "Text on the sticker",
+            "value": "Groove on"
+          },
+          {
+            "label": "Style",
+            "value": "Retro 70s"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "2048×2048 px",
+          "Print PNG 3×3 in, 300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "cozy-fall-watercolor-sticker-ideas",
+      "kind": "image",
+      "category": "merch",
+      "release": "2026-10-23",
+      "title": "9 cozy fall watercolor sticker ideas: leaves, acorn, mushrooms, tea and pumpkin",
+      "description": "Nine cozy autumn sticker ideas in watercolor: maple leaves, an acorn, mushrooms, a mug of tea and a pumpkin. Describe one idea in PiCraft's sticker maker and download a transparent PNG with a white die-cut border.",
+      "link": "/create/sticker-maker/watercolor",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "streetwear-t-shirt-design-form-to-print",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-24",
+      "title": "Streetwear T-shirt design from one idea: skull with roses, transparent print PNG",
+      "description": "A streetwear T-shirt design made from one idea (a skull wearing a crown of roses), a style and a dark shirt color. Download a 4500x5400 px transparent PNG (15x18 in at 300 DPI) for print-on-demand.",
+      "link": "/create/t-shirt-design-maker",
+      "demo": {
+        "heading": "Type an idea, get a print-ready T-shirt design",
+        "scene": "t-shirt-design-maker",
+        "example": "/examples/t-shirt-design-maker_1791452755918_2.webp",
+        "inputs": [
+          {
+            "label": "Design idea",
+            "value": "A skull wearing a crown of roses"
+          },
+          {
+            "label": "Style",
+            "value": "Streetwear"
+          },
+          {
+            "label": "Shirt color",
+            "value": "Dark shirt"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "4500×5400 px print file",
+          "Dark or light shirt"
+        ]
+      }
+    },
+    {
+      "id": "chibi-sticker-form-to-png",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-25",
+      "title": "Chibi anime sticker from one idea: strawberry saying hi as a transparent PNG",
+      "description": "A chibi anime sticker made from one idea (a blushing strawberry waving hello) and the text Hi!. Download a transparent 2048x2048 PNG with a white die-cut border or a 3x3 in print PNG at 300 DPI.",
+      "link": "/create/sticker-maker/chibi",
+      "demo": {
+        "heading": "Type one idea, get a die-cut sticker PNG",
+        "scene": "sticker-maker",
+        "example": "/examples/sticker-maker_1791295093013_10.webp",
+        "inputs": [
+          {
+            "label": "What's on the sticker?",
+            "value": "A blushing strawberry with tiny arms waving hello"
+          },
+          {
+            "label": "Text on the sticker",
+            "value": "Hi!"
+          },
+          {
+            "label": "Style",
+            "value": "Chibi anime"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "2048×2048 px",
+          "Print PNG 3×3 in, 300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "more-sticker-styles-to-try",
+      "kind": "collage",
+      "category": "merch",
+      "release": "2026-10-26",
+      "title": "4 more sticker styles: chibi anime, hand-drawn doodle, neon glow and pop art",
+      "description": "Four more sticker styles from PiCraft: chibi anime, hand-drawn doodle, neon glow and pop art. Describe one idea, pick a style and download a transparent PNG with a white die-cut border.",
+      "link": "/create/sticker-maker",
+      "collage": {
+        "heading": "4 more sticker styles to try",
+        "items": [
+          {
+            "scene": "sticker-maker",
+            "style": "chibi",
+            "label": "Chibi anime"
+          },
+          {
+            "scene": "sticker-maker",
+            "style": "doodle",
+            "label": "Hand-drawn doodle"
+          },
+          {
+            "scene": "sticker-maker",
+            "style": "neon",
+            "label": "Neon glow"
+          },
+          {
+            "scene": "sticker-maker",
+            "style": "pop",
+            "label": "Pop art"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pixel-art-sticker-ideas",
+      "kind": "image",
+      "category": "merch",
+      "release": "2026-10-27",
+      "title": "9 pixel art sticker ideas: heart, sword, treasure chest, potion, slime and more",
+      "description": "Nine pixel art sticker ideas: a heart, a sword, a treasure chest, a potion, a slime and more. Describe one idea in PiCraft's sticker maker, pick Pixel art and download a transparent PNG with a white die-cut border.",
+      "link": "/create/sticker-maker/pixel",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "cute-t-shirt-design-form-to-print",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-28",
+      "title": "Cute T-shirt design from one idea: cat in a teacup with donuts, transparent PNG",
+      "description": "A cute illustrated T-shirt design made from one idea (a cat in a teacup surrounded by donuts), a slogan and a dark shirt color. Download a 4500x5400 px transparent PNG (15x18 in at 300 DPI).",
+      "link": "/create/t-shirt-design-maker",
+      "demo": {
+        "heading": "Type an idea, get a print-ready T-shirt design",
+        "scene": "t-shirt-design-maker",
+        "example": "/examples/t-shirt-design-maker_1791296979568_7.webp",
+        "inputs": [
+          {
+            "label": "Design idea",
+            "value": "A cat sitting in a teacup surrounded by donuts"
+          },
+          {
+            "label": "Slogan",
+            "value": "Living my best life"
+          },
+          {
+            "label": "Style",
+            "value": "Cute illustration"
+          },
+          {
+            "label": "Shirt color",
+            "value": "Dark shirt"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "4500×5400 px print file",
+          "Dark or light shirt"
+        ]
+      }
+    },
+    {
+      "id": "pop-art-sticker-form-to-png",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-29",
+      "title": "Pop art sticker from one idea: pizza slice in sunglasses as a transparent PNG",
+      "description": "A pop art sticker made from one idea (a pizza slice with sunglasses giving a thumbs up) and the text Pizza time. Download a transparent 2048x2048 PNG with a white die-cut border or a 3x3 in print PNG.",
+      "link": "/create/sticker-maker/pop",
+      "demo": {
+        "heading": "Type one idea, get a die-cut sticker PNG",
+        "scene": "sticker-maker",
+        "example": "/examples/sticker-maker_1791295170057_16.webp",
+        "inputs": [
+          {
+            "label": "What's on the sticker?",
+            "value": "A slice of pizza with sunglasses giving a thumbs up"
+          },
+          {
+            "label": "Text on the sticker",
+            "value": "Pizza time"
+          },
+          {
+            "label": "Style",
+            "value": "Pop art"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "2048×2048 px",
+          "Print PNG 3×3 in, 300 DPI"
+        ]
+      }
+    },
+    {
+      "id": "chibi-animal-sticker-ideas",
+      "kind": "image",
+      "category": "merch",
+      "release": "2026-10-30",
+      "title": "9 chibi animal sticker ideas: fox, penguin, bunny, panda, dragon and more",
+      "description": "Nine chibi animal sticker ideas: a sleeping fox, a round penguin, a bunny, a panda, a baby dragon and more. Describe one idea in PiCraft's sticker maker, pick Chibi anime and download a transparent PNG.",
+      "link": "/create/sticker-maker/chibi",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "japanese-ink-t-shirt-design-form-to-print",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-10-31",
+      "title": "Japanese ink T-shirt design from one idea: koi fish and swirling water, print PNG",
+      "description": "A Japanese ink T-shirt design made from one idea (a koi fish swimming upstream through swirling water), a style and a dark shirt color. Download a 4500x5400 px transparent PNG (15x18 in at 300 DPI).",
+      "link": "/create/t-shirt-design-maker",
+      "demo": {
+        "heading": "Type an idea, get a print-ready T-shirt design",
+        "scene": "t-shirt-design-maker",
+        "example": "/examples/t-shirt-design-maker_1791297047621_10.webp",
+        "inputs": [
+          {
+            "label": "Design idea",
+            "value": "A koi fish swimming upstream through swirling water"
+          },
+          {
+            "label": "Style",
+            "value": "Japanese ink"
+          },
+          {
+            "label": "Shirt color",
+            "value": "Dark shirt"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "4500×5400 px print file",
+          "Dark or light shirt"
+        ]
+      }
+    },
+    {
+      "id": "retro-christmas-sticker-ideas",
+      "kind": "image",
+      "category": "merch",
+      "release": "2026-11-01",
+      "title": "9 retro Christmas sticker ideas: gingerbread, tree, mittens, candy cane and more",
+      "description": "Nine retro Christmas sticker ideas: a gingerbread man, a tree with ornaments, red mittens, a candy cane and more. Describe one idea in PiCraft's sticker maker, pick Retro 70s and download a transparent PNG.",
+      "link": "/create/sticker-maker/retro",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "retro-sports-t-shirt-design-form-to-print",
+      "kind": "demo",
+      "category": "merch",
+      "release": "2026-11-02",
+      "title": "Retro sports T-shirt design from one idea: crossed bats and home plate, print PNG",
+      "description": "A retro sports T-shirt design made from one idea (crossed baseball bats behind home plate), the slogan Sluggers and a light shirt color. Download a 4500x5400 px transparent PNG (15x18 in at 300 DPI).",
+      "link": "/create/t-shirt-design-maker",
+      "demo": {
+        "heading": "Type an idea, get a print-ready T-shirt design",
+        "scene": "t-shirt-design-maker",
+        "example": "/examples/t-shirt-design-maker_1791297179460_16.webp",
+        "inputs": [
+          {
+            "label": "Design idea",
+            "value": "Crossed baseball bats behind a home plate with stars"
+          },
+          {
+            "label": "Slogan",
+            "value": "Sluggers"
+          },
+          {
+            "label": "Style",
+            "value": "Retro sports"
+          },
+          {
+            "label": "Shirt color",
+            "value": "Light shirt"
+          }
+        ],
+        "chips": [
+          "Transparent PNG",
+          "4500×5400 px print file",
+          "Dark or light shirt"
+        ]
+      }
+    },
+    {
+      "id": "claymation-portrait-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-23",
+      "title": "Claymation portrait idea: turn a selfie into a clay figure with fingerprints",
+      "description": "A selfie turned into a claymation portrait: sculpted clay with fingerprints and chunky hair strands. Upload one photo, pick a size and download a JPG for Pinterest (2:3), stories, a portrait post or a square post.",
+      "link": "/create/photo-trend-maker/claymation",
+      "beforeafter": {
+        "heading": "Selfie to claymation portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_claymation_1_1791953427614.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "retro-camera-photo-looks",
+      "kind": "collage",
+      "category": "trends",
+      "release": "2026-10-24",
+      "title": "4 retro camera photo looks from one photo: 70s slide, night flash, Y2K digicam, 80s",
+      "description": "Four retro camera looks you can make from a single photo: 70s slide, night flash, Y2K digicam and 80s flashback. Upload one photo, pick a look and download a vertical JPG sized for Pinterest and stories.",
+      "link": "/create/photo-trend-maker",
+      "collage": {
+        "heading": "4 retro camera looks from one photo",
+        "items": [
+          {
+            "scene": "photo-trend-maker",
+            "style": "70s_slide",
+            "label": "70s slide"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "night_flash",
+            "label": "Night flash"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "y2k_digicam",
+            "label": "Y2K digicam"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "80s_flashback",
+            "label": "80s flashback"
+          }
+        ]
+      }
+    },
+    {
+      "id": "new-years-eve-party-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-25",
+      "title": "New Year's Eve photo idea: turn a couple photo into a sparkling party portrait",
+      "description": "A couple's photo turned into a New Year's Eve party portrait: black and gold outfits, confetti and a sparkler. Upload a photo, pick a size and download a JPG for a Pin, a story or a square post.",
+      "link": "/create/photo-trend-maker/new-years-eve-party",
+      "beforeafter": {
+        "heading": "Couple photo to New Year's Eve party portrait",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_nye_party_1_1792077818845.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "felt-miniature-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-26",
+      "title": "Felt miniature photo idea: turn a couple photo into needle-felted wool figures",
+      "description": "A couple's photo turned into a felt miniature: soft needle-felted wool figures standing on an autumn sidewalk. Upload one photo, pick a size and download a JPG sized for Pinterest, stories or a square post.",
+      "link": "/create/photo-trend-maker/felt-miniature",
+      "beforeafter": {
+        "heading": "Couple photo to felt miniature",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_felt_miniature_1_1791953427614.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "toy-and-miniature-photo-looks",
+      "kind": "collage",
+      "category": "trends",
+      "release": "2026-10-27",
+      "title": "4 toy and miniature photo looks: claymation, felt miniature, bobblehead, toy avatar",
+      "description": "Four toy-style looks you can make from one photo: claymation, felt miniature, bobblehead and toy avatar. Upload a photo, pick a look and download a vertical JPG sized for Pinterest and stories.",
+      "link": "/create/photo-trend-maker",
+      "collage": {
+        "heading": "4 toy and miniature looks from one photo",
+        "items": [
+          {
+            "scene": "photo-trend-maker",
+            "style": "claymation",
+            "label": "Claymation"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "felt_miniature",
+            "label": "Felt miniature"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "bobblehead",
+            "label": "Bobblehead"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "toy_avatar",
+            "label": "Toy avatar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "y2k-digicam-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-28",
+      "title": "Y2K digital camera photo idea: flash glare and digital noise from one photo",
+      "description": "A portrait turned into a Y2K digital camera snapshot with flash glare and digital noise. Upload one photo, pick a size and download a JPG for Pinterest (2:3), stories or a square post.",
+      "link": "/create/photo-trend-maker/y2k-digicam",
+      "beforeafter": {
+        "heading": "Photo to Y2K digicam snapshot",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_y2k_digicam_1_1791953427614.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "marble-statue-pet-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-29",
+      "title": "Marble statue photo idea: turn your dog into a statue in a museum hall",
+      "description": "A golden retriever photo turned into a marble statue draped in a cloak in a museum hall. Upload a photo of your pet or yourself, pick a size and download a JPG for Pinterest, stories or a square post.",
+      "link": "/create/photo-trend-maker/marble-statue",
+      "beforeafter": {
+        "heading": "Dog photo to marble statue",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_marble_statue_1_1791953427614.webp",
+        "chips": [
+          "Pets work too",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "poster-and-print-photo-looks",
+      "kind": "collage",
+      "category": "trends",
+      "release": "2026-10-30",
+      "title": "4 poster and print photo looks: blueprint poster, fantasy newspaper, 16-bit, photo booth",
+      "description": "Four poster and print looks you can make from one photo: blueprint poster, fantasy newspaper, 16-bit arcade and photo booth strip. Upload a photo, pick a look and download a vertical JPG sized for Pinterest.",
+      "link": "/create/photo-trend-maker",
+      "collage": {
+        "heading": "4 poster and print looks from one photo",
+        "items": [
+          {
+            "scene": "photo-trend-maker",
+            "style": "blueprint_poster",
+            "label": "Blueprint poster"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "fantasy_newspaper",
+            "label": "Fantasy newspaper"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "arcade_16bit",
+            "label": "16-bit arcade"
+          },
+          {
+            "scene": "photo-trend-maker",
+            "style": "photo_booth",
+            "label": "Photo booth strip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bobblehead-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-10-31",
+      "title": "Bobblehead photo idea: turn a portrait into a bobblehead on a small stool",
+      "description": "A portrait turned into a bobblehead: a figure with a big head holding a mug, seated on a small stool with a black base. Upload one photo, pick a size and download a JPG for a Pin, a story or a square post.",
+      "link": "/create/photo-trend-maker/bobblehead",
+      "beforeafter": {
+        "heading": "Portrait to bobblehead",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_bobblehead_1_1791953427614.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "night-flash-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-01",
+      "title": "Night flash photo idea: turn one photo into a party-night snapshot with glossy highlights",
+      "description": "A portrait turned into a night flash photo: a man raising a glass on a city street with glossy flash highlights. Upload one photo, pick a size and download a JPG for Pinterest, stories or a square post.",
+      "link": "/create/photo-trend-maker/night-flash",
+      "beforeafter": {
+        "heading": "Photo to night flash snapshot",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_night_flash_1_1791953427614.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
+      }
+    },
+    {
+      "id": "arcade-16bit-before-after",
+      "kind": "beforeafter",
+      "category": "trends",
+      "release": "2026-11-02",
+      "title": "16-bit arcade fighter photo idea: turn a couple photo into pixel art with a health bar",
+      "description": "A couple's photo turned into 16-bit arcade fighter pixel art, with PLAYER 1 and a health bar on a harbor stage at sunset. Upload one photo, pick a size and download a JPG for Pinterest or a story.",
+      "link": "/create/photo-trend-maker/arcade-16bit",
+      "beforeafter": {
+        "heading": "Couple photo to 16-bit arcade fighters",
+        "scene": "photo-trend-maker",
+        "example": "/examples/photo-trend-maker_arcade_16bit_1_1791953427614.webp",
+        "chips": [
+          "No prompt to write",
+          "9:16, 2:3, 3:4 or 1:1",
+          "1000×1500 px JPG"
+        ]
       }
     }
   ]

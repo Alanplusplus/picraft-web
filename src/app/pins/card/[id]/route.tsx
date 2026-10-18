@@ -108,7 +108,7 @@ function footer(where: string, note?: string) {
   );
 }
 
-function tile(src: string, width: number, height: number, text?: string, key?: string) {
+function tile(src: string, width: number, height: number, text?: string, key?: string, fit: "cover" | "contain" = "cover") {
   return (
     <div
       key={key}
@@ -120,9 +120,10 @@ function tile(src: string, width: number, height: number, text?: string, key?: s
         borderRadius: u(20),
         overflow: "hidden",
         border: BORDER,
+        background: "#ffffff",
       }}
     >
-      <img src={src} width={u(width)} height={u(height)} alt="" style={{ objectFit: "cover" }} />
+      <img src={src} width={u(width)} height={u(height)} alt="" style={{ objectFit: fit }} />
       {text && (
         <div
           style={{
@@ -152,6 +153,8 @@ async function sheetCard(pin: FeedItem) {
   if (!found || !pin.data.sheet) throw new Error(`Pin ${pin.id} has no table`);
   const [logo, wordmark] = await brandAssets();
   const rows = found.table.rows.map((row) => row.map((cell) => stripInline(cell)));
+  // Eight-row tables are tightened so the footer still fits.
+  const compact = rows.length >= 8;
 
   return frame([
     header(logo, wordmark, pin.data.sheet.heading, pin.data.sheet.subtitle),
@@ -165,12 +168,12 @@ async function sheetCard(pin: FeedItem) {
             background: "#ffffff",
             border: BORDER,
             borderRadius: u(20),
-            padding: `${u(16)}px ${u(28)}px`,
-            marginBottom: u(14),
+            padding: `${u(compact ? 10 : 16)}px ${u(28)}px`,
+            marginBottom: u(compact ? 10 : 14),
           }}
         >
-          <div style={{ fontSize: u(24), color: OG_COLORS.ink700 }}>{name}</div>
-          <div style={{ ...INK, fontSize: u(36), lineHeight: 1.2, marginTop: u(4) }}>{value}</div>
+          <div style={{ fontSize: u(compact ? 22 : 24), color: OG_COLORS.ink700 }}>{name}</div>
+          <div style={{ ...INK, fontSize: u(compact ? 31 : 36), lineHeight: 1.2, marginTop: u(4) }}>{value}</div>
         </div>
       ))}
     </div>,
@@ -181,13 +184,12 @@ async function sheetCard(pin: FeedItem) {
 async function collageCard(pin: FeedItem) {
   const items = pin.data.collage?.items ?? [];
   const [logo, wordmark] = await brandAssets();
-  const images = await Promise.all(
-    items.map((item) => {
-      const example = collageExample(item.scene, item.style);
-      if (!example) throw new Error(`Pin ${pin.id}: no example for ${item.scene}/${item.style}`);
-      return publicImageDataUri(example.url, SOURCE_WIDTH);
-    }),
-  );
+  const examples = items.map((item) => {
+    const example = collageExample(item.scene, item.style);
+    if (!example) throw new Error(`Pin ${pin.id}: no example for ${item.scene}/${item.style}`);
+    return example;
+  });
+  const images = await Promise.all(examples.map((example) => publicImageDataUri(example.url, SOURCE_WIDTH)));
   const cellW = (INNER - 20) / 2;
 
   return frame([
@@ -198,7 +200,7 @@ async function collageCard(pin: FeedItem) {
     >
       {items.map((item, index) => (
         <div key={item.style} style={{ display: "flex", marginBottom: u(20) }}>
-          {tile(images[index], cellW, 530, item.label)}
+          {tile(images[index], cellW, 530, item.label, undefined, examples[index].height / examples[index].width < 1.2 ? "contain" : "cover")}
         </div>
       ))}
     </div>,
@@ -212,7 +214,8 @@ async function demoCard(pin: FeedItem) {
   const [logo, wordmark] = await brandAssets();
   const image = await publicImageDataUri(example.url, SOURCE_WIDTH);
   const ratio = example.height / example.width;
-  const portrait = ratio > 1.1;
+  // Portrait and near-square results sit beside the form; wide ones (thumbnails, banners) go under it.
+  const portrait = ratio > 0.8;
   const imageWidth = portrait ? 460 : INNER;
   const imageHeight = portrait ? Math.min(Math.round(460 * ratio), 720) : Math.min(Math.round(INNER * ratio), 520);
 
@@ -222,7 +225,7 @@ async function demoCard(pin: FeedItem) {
       style={{
         display: "flex",
         flexDirection: "column",
-        flex: 1,
+        ...(portrait ? { flex: 1 } : { flexShrink: 0 }),
         background: "#ffffff",
         border: BORDER,
         borderRadius: u(20),
