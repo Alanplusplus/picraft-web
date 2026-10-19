@@ -17,7 +17,7 @@ import { getContent, getExamples, getScene, getScenes, isIndexable, logIndexabil
 import { faqLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 import { absoluteUrl, formatDate, SITE_NAME } from "@/lib/site";
-import { getStyleFile, isStyleIndexable, styleExamples, styleLabel, stylePath } from "@/lib/styles";
+import { getStyleFile, getStyleLinks, isStyleIndexable, styleExamples, styleLabel, stylePath } from "@/lib/styles";
 
 export const dynamicParams = false;
 
@@ -124,7 +124,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
           </section>
 
           <aside id="create" className="scroll-mt-20 lg:sticky lg:top-20 lg:self-start">
-            <SceneGenerator scene={toClientScene(scene)} />
+            <SceneGenerator scene={toClientScene(scene)} styleLinks={getStyleLinks(scene.slug)} />
           </aside>
         </div>
 

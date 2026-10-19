@@ -193,6 +193,7 @@ export function toClientScene(scene: Scene): ClientScene {
   return {
     slug: scene.slug,
     name: scene.name,
+    summary: scene.summary,
     cost: scene.cost,
     fields: scene.fields.map((field) => ({
       ...field,

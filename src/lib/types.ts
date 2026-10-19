@@ -29,6 +29,8 @@ export interface OutputSummary {
 export interface ClientScene {
   slug: string;
   name: string;
+  /** One sentence about what the maker does; it is part of the description of a pin saved from a result. */
+  summary: string;
   cost: number;
   fields: SceneField[];
   outputs: OutputSummary[];

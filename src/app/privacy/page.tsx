@@ -24,7 +24,7 @@ const SECTIONS: ProseSection[] = [
       "A device identifier: an ID generated in your browser from a combination of its technical characteristics (such as browser version, screen size and time zone) and kept in local storage. We use it only to give each device its free credits once, to link your browser to its file history and to prevent abuse. It is not used for advertising.",
       "A session cookie that identifies your anonymous account, with its credit balance and file history.",
       "Technical data: IP address, browser type, request times and error details in our server logs, used for security, abuse prevention and troubleshooting.",
-      "Usage data: the pages you view and the actions you take (for example choosing a maker, creating a design or downloading a file), together with your approximate location, device and browser type. We collect it with Google Analytics, using cookies and a random identifier that does not include your name, email address or uploaded content.",
+      "Usage data: the pages you view and the actions you take (for example choosing a maker, creating a design, downloading a file or clicking Save to Pinterest), together with your approximate location, device and browser type. We collect it with Google Analytics, using cookies and a random identifier that does not include your name, email address or uploaded content.",
       "Messages you send us: if you email us, we receive your email address and what you write.",
     ],
   },
@@ -51,6 +51,7 @@ const SECTIONS: ProseSection[] = [
       "Cloud storage: generated files are stored with Alibaba Cloud Object Storage Service (Singapore region) and served through time-limited download links.",
       "Image processing: for stickers and t-shirt designs, the generated artwork (not your uploaded photos) is sent to Volcengine, a cloud service operated by ByteDance, to remove the background.",
       "Analytics: Google Analytics (Google LLC) receives usage data about your visit, such as the pages you view and the actions you take, and sets the cookies listed below.",
+      "Pinterest, only when you choose it: if you click Save to Pinterest on a design, your browser opens Pinterest in a new tab with a time-limited link to the preview image, a suggested description and a link back to PiCraft. Pinterest receives these when that page opens (it loads the image to show a preview) and, if you save the pin, keeps its own copy of the image under Pinterest's terms and privacy policy. We do not load any Pinterest script or tag on PiCraft, and nothing is sent to Pinterest unless you click the button.",
       "Hosting and security providers that process technical data on our behalf.",
       "Authorities or other parties when the law requires it or to protect our rights, users or the public.",
     ],
@@ -65,6 +66,7 @@ const SECTIONS: ProseSection[] = [
     heading: "How long we keep it",
     items: [
       `Generated files, and the temporary working copies used for background removal, are deleted automatically after ${FILE_RETENTION_DAYS} days. Uploaded photos kept by our image-generation provider are deleted by that provider under its own retention policy.`,
+      "A pin you save to Pinterest is kept by Pinterest, not by us. It stays there after our copy of the file is deleted, and deleting your files or records from PiCraft does not remove it.",
       "Records of your generations (the text you entered and references to the files) are kept until you ask us to delete them. My files shows the ones from the last 90 days.",
       "Credit records (when free credits were granted or used) are kept after a deletion request, so that free credits cannot be claimed again by the same device.",
       "The session cookie expires after 180 days. The device identifier stays in your browser until you clear its site data. The Google Analytics cookies expire after up to 2 years.",
@@ -75,6 +77,7 @@ const SECTIONS: ProseSection[] = [
     heading: "Your choices and rights",
     items: [
       `Delete your data: email ${SUPPORT_EMAIL} with the reference ID shown at the bottom of My files (or links to the files you want removed) and we will delete the related files and records within 30 days.`,
+      "Save to Pinterest is optional. You can edit the description or cancel on Pinterest before you save. Pins on a public board can be seen by anyone, so choose a secret board if you prefer, and to remove a pin delete it in your Pinterest account.",
       "Clear your browser data: this removes the device identifier and session cookie. You will lose access to your file history and any unused free credits.",
       "Opt out of Google Analytics: install the Google Analytics opt-out browser add-on (tools.google.com/dlpage/gaoptout), use a content blocker or your browser's tracking-protection settings, or block cookies for picraft.ai. PiCraft keeps working without them (your credits and files need the pc_session cookie).",
       "Your rights: depending on where you live (for example under the GDPR, the UK GDPR or California law) you may have the right to access, correct, delete, export or restrict the use of your data, to object to its use and to withdraw consent. Contact us to use these rights. You can also complain to your local data protection authority.",

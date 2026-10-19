@@ -132,6 +132,19 @@ export function logStyleIndexability(): void {
   }
 }
 
+/**
+ * The paths of a maker's indexable style pages, by option value. The generator uses them so a pin
+ * saved from a result links to the page of the look that was chosen.
+ */
+export function getStyleLinks(sceneSlug: string): { field: string; paths: Record<string, string> } | undefined {
+  const file = getStyleFile(sceneSlug);
+  if (!file) return undefined;
+  const paths = Object.fromEntries(
+    file.styles.filter((style) => isStyleIndexable(file, style)).map((style) => [style.value, stylePath(file.scene, style)]),
+  );
+  return { field: file.field, paths };
+}
+
 /** All style pages of makers that have a style file. */
 export function getStylePages(): { file: StyleFile; style: StyleEntry }[] {
   return getStyleFiles().flatMap((file) => file.styles.map((style) => ({ file, style })));

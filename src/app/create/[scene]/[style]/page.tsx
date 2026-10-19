@@ -15,6 +15,7 @@ import { breadcrumbLd, faqLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 import {
   getStyle,
+  getStyleLinks,
   getStylePages,
   isStyleIndexable,
   logStyleIndexability,
@@ -98,7 +99,7 @@ export default async function StylePage({ params }: PageProps<"/create/[scene]/[
         </section>
 
         <aside className="lg:sticky lg:top-20 lg:self-start">
-          <SceneGenerator key={style.value} scene={presetScene} />
+          <SceneGenerator key={style.value} scene={presetScene} styleLinks={getStyleLinks(scene.slug)} />
         </aside>
       </div>
 

@@ -32,7 +32,7 @@ export function HistoryNotice() {
   );
 }
 
-export function HistoryList({ sceneNames }: { sceneNames: Record<string, string> }) {
+export function HistoryList({ scenes }: { scenes: Record<string, { name: string; summary: string }> }) {
   const { ready, account } = useSession();
   const [items, setItems] = useState<TaskView[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -65,12 +65,25 @@ export function HistoryList({ sceneNames }: { sceneNames: Record<string, string>
         <li key={item.task_id} className="rounded-2xl border border-ink-200 p-5">
           <div className="mb-4 flex items-center justify-between gap-3">
             <Link href={`/create/${item.scene}`} className="font-semibold text-ink-950 hover:text-brand-700">
-              {sceneNames[item.scene] ?? item.scene}
+              {scenes[item.scene]?.name ?? item.scene}
             </Link>
             <span className="text-xs text-ink-500">{new Date(item.created_at * 1000).toLocaleString()}</span>
           </div>
           {item.status === "done" ? (
-            <ResultFiles task={item} source="history" compact />
+            <ResultFiles
+              task={item}
+              source="history"
+              compact
+              share={
+                scenes[item.scene]
+                  ? {
+                      sceneName: scenes[item.scene].name,
+                      summary: scenes[item.scene].summary,
+                      path: `/create/${item.scene}`,
+                    }
+                  : undefined
+              }
+            />
           ) : item.status === "failed" ? (
             <p className="text-sm text-ink-500">{item.error}</p>
           ) : (

@@ -5,9 +5,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { api } from "@/lib/api-client";
 import { trackEvent } from "@/lib/analytics";
 import { prepareUpload } from "@/lib/image-file";
+import type { PinShare } from "@/lib/pinterest-save";
 import type { ClientScene, SceneField, TaskView } from "@/lib/types";
 
 import { ResultFiles } from "./result-files";
+import { Select } from "./select";
 import { useSession } from "./session-provider";
 
 const POLL_INTERVAL_MS = 3000;
@@ -40,9 +42,17 @@ function matches(when: Record<string, string | string[]> | undefined, values: Re
 const inputClass =
   "w-full rounded-lg border border-ink-300 bg-white px-3 py-2 text-sm text-ink-900 placeholder:text-ink-500 focus:border-ink-900 focus:outline-none focus:ring-1 focus:ring-ink-900";
 
-export function SceneGenerator({ scene }: { scene: ClientScene }) {
+/** Pages of the maker's looks, by option value, so a pin saved from a result can link to the page of its look. */
+export interface StyleLinks {
+  field: string;
+  paths: Record<string, string>;
+}
+
+export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styleLinks?: StyleLinks }) {
   const { account, ready, setAccount, refresh } = useSession();
   const [values, setValues] = useState(() => initialValues(scene));
+  // The look that was chosen when the design was started; the form may change while the result is on screen.
+  const [madeWith, setMadeWith] = useState<string | undefined>();
   const [images, setImages] = useState<Record<string, ImageState>>({});
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState<string | null>(null);
@@ -148,6 +158,7 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
       }
     }
 
+    setMadeWith(styleLinks ? values[styleLinks.field] : undefined);
     setPhase("submitting");
     trackEvent("generate_submit", eventParams({ cost: scene.cost }));
     const startedAt = Date.now();
@@ -166,12 +177,26 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
     await poll(res.data.task_id, startedAt);
   }
 
+  const madeWithOption = madeWith
+    ? scene.fields.find((f) => f.key === styleLinks?.field)?.options?.find((o) => o.value === madeWith)
+    : undefined;
+  const share: PinShare = {
+    sceneName: scene.name,
+    summary: scene.summary,
+    path: (madeWith && styleLinks?.paths[madeWith]) || `/create/${scene.slug}`,
+    styleLabel: madeWithOption?.label,
+  };
+
   return (
     <div className="rounded-2xl border border-ink-200 bg-white p-5 shadow-sm sm:p-6">
       <form onSubmit={onSubmit} className="space-y-4">
         {scene.fields.map((field) => (
           <div key={field.key}>
-            <label htmlFor={`f-${field.key}`} className="mb-1 block text-sm font-medium text-ink-900">
+            <label
+              id={`l-${field.key}`}
+              htmlFor={field.type === "select" ? undefined : `f-${field.key}`}
+              className="mb-1 block text-sm font-medium text-ink-900"
+            >
               {field.label}
               {field.required && field.type !== "select" && <span className="text-brand-700"> *</span>}
             </label>
@@ -204,18 +229,13 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
                 />
               </label>
             ) : field.type === "select" ? (
-              <select
+              <Select
                 id={`f-${field.key}`}
-                className={inputClass}
+                labelledBy={`l-${field.key}`}
+                options={field.options ?? []}
                 value={values[field.key]}
-                onChange={(e) => setValues((v) => ({ ...v, [field.key]: e.target.value }))}
-              >
-                {field.options?.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+                onChange={(value) => setValues((v) => ({ ...v, [field.key]: value }))}
+              />
             ) : field.type === "textarea" ? (
               <textarea
                 id={`f-${field.key}`}
@@ -279,7 +299,7 @@ export function SceneGenerator({ scene }: { scene: ClientScene }) {
 
       {phase === "done" && task && (
         <div className="mt-6 border-t border-ink-200 pt-6">
-          <ResultFiles task={task} source="generator" />
+          <ResultFiles task={task} source="generator" share={share} />
         </div>
       )}
     </div>

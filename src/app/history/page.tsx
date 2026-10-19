@@ -11,13 +11,15 @@ export const metadata: Metadata = {
 };
 
 export default function HistoryPage() {
-  const names = Object.fromEntries(getScenes().map((scene) => [scene.slug, scene.name]));
+  const scenes = Object.fromEntries(
+    getScenes().map((scene) => [scene.slug, { name: scene.name, summary: scene.summary }]),
+  );
   return (
     <div className="mx-auto max-w-4xl px-4 pt-12 sm:px-6">
       <h1 className="text-3xl font-bold tracking-tight text-ink-950">My files</h1>
       <p className="mt-2 text-sm text-ink-500">Everything you&apos;ve made on this device.</p>
       <div className="mt-8">
-        <HistoryList sceneNames={names} />
+        <HistoryList scenes={scenes} />
       </div>
       <HistoryNotice />
     </div>
