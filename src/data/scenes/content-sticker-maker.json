@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-20",
   "overview": {
     "heading": "How the Sticker Maker works",
     "paragraphs": [
@@ -114,7 +114,7 @@
     "The result is a flat image, not layers. To change something, generate again with a new description.",
     "Very pale grey areas that touch the edge of the image can be lost when the background is removed. Regenerate if that happens.",
     "Each generation is one sticker, not a laid-out sheet. Place several PNGs on a page in your print software.",
-    "Cut lines are not included. The transparent edge is the cut path, and you set up cutting in your machine's software.",
+    "Cut lines are not included. The transparent edge is the cut path, and you set up cutting in your machine's software. If a print shop wants a vector cut path or adds its own border, see [which file each printer wants](/blog/kiss-cut-vs-die-cut-stickers).",
     "Text beyond a few words can come out garbled, so always proofread."
   ],
   "sources": [

@@ -1,0 +1,229 @@
+{
+  "title": "Kiss-Cut vs Die-Cut Stickers: What Each Printer Wants",
+  "h1": "Kiss-Cut vs Die-Cut Stickers: Which File Each Printer Wants",
+  "description": "Kiss-cut vs die-cut stickers, plus what Fourthwall, Printify, Redbubble, StickerApp and Jukebox Print each ask for in a file, and where a PNG sticker fits.",
+  "summary": "A die-cut sticker is cut through the vinyl and the backing, so it arrives as one loose piece in the shape of your art. A kiss-cut sticker is cut through the vinyl only, so it stays on a backing sheet. Most print-on-demand shops cut both from the edge of a transparent PNG at 300 DPI, while printers that sell stickers directly often want a vector cut path.",
+  "topic": "Stickers",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "scene": "sticker-maker",
+  "relatedScenes": ["t-shirt-design-maker", "photo-trend-maker"],
+  "relatedGuides": ["blog:sticker-artwork-print-and-cut", "size:sticker-size", "blog:t-shirt-design-file-requirements"],
+  "sections": [
+    {
+      "heading": "Die-cut vs kiss-cut: where the blade stops",
+      "paragraphs": [
+        "Both cuts follow the outline of your design. The difference is how deep the blade goes. StickerApp puts it simply: a die-cut sticker is cut through the sticker and the backing, so each one is a separate piece in the exact shape of the design. A kiss-cut sticker is cut through the sticker only, so the backing stays whole with a margin around it."
+      ],
+      "table": {
+        "caption": "Die-cut and kiss-cut stickers at a glance",
+        "columns": ["Feature", "Die-cut", "Kiss-cut"],
+        "rows": [
+          ["Blade depth", "Through the vinyl and the backing", "Through the vinyl only"],
+          ["What arrives", "One loose sticker in the shape of the art", "A sticker on a backing sheet, alone or with others"],
+          ["Peeling", "Nothing to peel off", "Peel it off the backing, which has an edge to grip"],
+          ["Space around the art", "None, the sticker is the shape", "The backing can carry a logo, a handle or care text"],
+          ["Several designs", "One design per sticker", "A sticker sheet holds many designs on one backing"],
+          ["Fine or delicate edges", "Works best with a bold, simple outline", "The backing supports small and intricate shapes"]
+        ]
+      },
+      "after": [
+        "The [sticker size guide](/sizes/sticker-size) already defines the two terms next to the pixel math. This page covers the part it leaves out: what each printer asks you to upload."
+      ]
+    },
+    {
+      "heading": "Which cut to choose",
+      "items": [
+        "Pick die-cut when the shape is the design and you want each sticker to arrive as its own piece, for packaging inserts or hand-outs.",
+        "Pick kiss-cut when you want an easy peel, extra backing for a logo or social handle, or several stickers on one sheet.",
+        "Pick kiss-cut for fine or intricate outlines. Fourthwall suggests it when a design has a lot of fine detail around the edge, because the backing protects delicate shapes.",
+        "Pick die-cut only for a clean, bold outline. Fourthwall says thin arms, tails and connectors should be at least 0.25 in (0.64 cm) wide to survive the cut."
+      ],
+      "after": [
+        "Sometimes the choice is made for you. Redbubble says all of its stickers are kiss-cut by third-party printers, so there is no die-cut option there."
+      ]
+    },
+    {
+      "heading": "What each printer asks you to upload",
+      "paragraphs": [
+        "The same sticker idea goes through very different file rules depending on where it is printed. Here is what seven printers say on their own help pages."
+      ],
+      "table": {
+        "caption": "Sticker file rules by printer (read on 2026-10-20)",
+        "columns": ["Printer", "Cut", "File it asks for", "Cut line", "Spacing and margins"],
+        "rows": [
+          [
+            "Fourthwall",
+            "Kiss-cut and die-cut singles, kiss-cut sheets",
+            "PNG or JPEG, 300 DPI minimum, sRGB. Its designer accepts files from 1500×1500 px. No vector or PDF files.",
+            "None to draw. For die-cut, the transparent area tells the printer where the cut line begins.",
+            "0.25 in between separate elements. Die-cut: 0.125 in safe zone, thin parts at least 0.25 in wide."
+          ],
+          [
+            "Printify",
+            "Kiss-cut stickers and sticker sheets",
+            "PNG with a transparent background, one file only",
+            "None to draw. Elements far apart are cut out as separate stickers.",
+            "To be cut apart: 65 px on a 2×2 in sticker, 110 px on 3×3 in, 150 px on 4×4 in, 200 px on 6×6 in. About 75 px (0.25 in) on sheets."
+          ],
+          [
+            "Redbubble",
+            "Kiss-cut only",
+            "PNG with a transparent background. 2800×2800 px recommended.",
+            "None to draw. The printer adds about 1/8 in (3.2 mm) of white or transparent border.",
+            "Sticker packs: at least 0.7 cm between items, more on larger stickers."
+          ],
+          [
+            "Printed Mint",
+            "Kiss-cut",
+            "PNG with a transparent background, at least 300 PPI, 600 PPI preferred",
+            "None to draw. A white border of about 0.125 in is added automatically.",
+            "At least 0.5 in between pieces cut separately. Remove the template guide before saving."
+          ],
+          [
+            "StickerApp",
+            "Die-cut and kiss-cut",
+            "PDF or AI preferred. PNG, JPEG, SVG, TIF and PSD accepted. 300 DPI, CMYK.",
+            "Your own closed 1 pt vector path in 100% magenta, or upload the design and ask its team to set the cutline.",
+            "Sticker sheets: 2 mm between cutlines and from the sheet edge, 2 mm bleed past each cutline."
+          ],
+          [
+            "Jukebox Print",
+            "Die-cut and kiss-cut",
+            "PDF, EPS, AI, PSD, JPG or PNG. 300 DPI recommended, CMYK preferred.",
+            "A vector cut path on a separate layer. Its online sticker maker builds a cut line from an upload.",
+            "Sticker sheets: kiss-cut line at least 0.1 in from the art, 1.59 mm (0.0625 in) bleed."
+          ],
+          [
+            "Valenna",
+            "Die-cut, loose pieces",
+            "PNG with a transparent background, or SVG. 300 DPI at the final size. One file per design.",
+            "Do not add one. No cutlines, dashed borders or A4 layout.",
+            "The printer adds a white border of about 2 to 4 mm."
+          ]
+        ]
+      },
+      "after": [
+        "Printers change these pages, so open yours before you send a batch. The links are in the sources below."
+      ]
+    },
+    {
+      "heading": "A transparent PNG is not a clear sticker",
+      "paragraphs": [
+        "Transparent pixels tell the printer where the sticker ends. They do not make the sticker see-through. Fourthwall says its sticker base is white on standard stickers and holographic on holo sheets, so transparent areas print as white or show the holographic pattern, and there is no true clear option.",
+        "Holographic material changes white too. Fourthwall says white areas in a design turn transparent on a holographic sheet, and Redbubble says its holographic stickers have no white underlay, so white parts come out holographic. A white border that reads as a clean margin on standard vinyl can turn into shimmer. If white matters to the design, give it a colored outline."
+      ]
+    },
+    {
+      "heading": "Where a PiCraft sticker file fits",
+      "paragraphs": [
+        "The [Sticker Maker](/create/sticker-maker) exports a transparent PNG with a white border drawn into the art. You get a 2048×2048 px file and a 3×3 in print file at 300 DPI (900×900 px). The colors are RGB, with no CMYK conversion. It does not make a vector file or a cut path, and it does not choose between die-cut and kiss-cut. That choice happens at the printer."
+      ],
+      "items": [
+        "Fourthwall, Printify, Printed Mint and Valenna take a transparent PNG, so the file goes in as it is. For Fourthwall, upload the 2048 px file: its designer accepts files from 1500×1500 px, and the 900 px print file is below that.",
+        "Redbubble recommends 2800×2800 px and says higher-resolution files are offered in larger sizes. The 2048 px file is smaller, so expect fewer sizes than a 2800 px upload would give.",
+        "Redbubble and Printed Mint add their own white border outside the one in the PNG. Expect a wider margin on the finished sticker than the one you see on screen.",
+        "StickerApp and Jukebox Print ask for a vector cut path. A PNG can still go through: StickerApp says you can upload the full design and ask its team to set the cutline, and Jukebox says its sticker maker builds a cut line from an upload.",
+        "At home, a cutting machine follows the PNG edge. The [sticker artwork guide](/blog/sticker-artwork-print-and-cut) covers Cricut Print Then Cut step by step."
+      ],
+      "after": [
+        "The [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet) look is different: it returns one JPG that shows nine stickers on paper, with no transparency and no cut lines. It is a picture of a sheet, not a file to send to a sticker printer."
+      ]
+    },
+    {
+      "heading": "Check the file before you upload",
+      "ordered": true,
+      "items": [
+        "Open the PNG over a dark color and look for stray pixels. Redbubble warns that a stray pixel can be caught by the machine, leaving extra white space, and Printed Mint says even a tiny speck is printed and cut as a separate element.",
+        "Look at the outline. It should be smooth with no thin tails, and text should sit well inside the white border.",
+        "Match pixels to inches. Multiply the printed size by 300 to get pixels per side: 3 in is 900 px, 4 in is 1200 px.",
+        "On a multi-design sheet, leave the spacing your printer lists: 0.25 in at Fourthwall, 0.5 in at Printed Mint, 2 mm at StickerApp.",
+        "Delete any template guide layer. Printed Mint says it appears on the final sticker if you leave it in.",
+        "Look at the proof before you pay for a batch. Jukebox sends a free digital proof that shows the art and the cut line, and Printify's Product Creator has a Preview that shows how the stickers will be cut."
+      ],
+      "after": [
+        "A printed margin around the art is a kind of [bleed](/blog/what-is-bleed-in-printing): it covers small shifts in the cut so you do not see a sliver of the wrong color at the edge."
+      ]
+    },
+    {
+      "heading": "Mistakes that change the cut",
+      "items": [
+        "Sending a pre-arranged sheet to a loose die-cut product. Valenna says to upload each design separately and not to place them on an A4 page.",
+        "Drawing a cut line where the printer adds its own. Valenna warns that a cutline in the file can spoil the result, while StickerApp expects one named \"die cut\". Read which your printer wants.",
+        "Letting two designs sit too close on a kiss-cut file. Printify says elements closer than its minimum are not cut out separately.",
+        "Judging holographic sheets by the screen. Fourthwall says on-screen previews will not match the shimmer, and suggests ordering a sample first."
+      ],
+      "after": [
+        "Whichever printer you pick, the artwork stays the same. Make it once in the [Sticker Maker](/create/sticker-maker), then follow that printer's table row for the cut. The [stickers and merch](/categories/stickers-and-merch) category lists the other print-ready makers."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between kiss-cut and die-cut stickers?",
+      "a": "It is how deep the cut goes. A die-cut sticker is cut through the vinyl and the backing, so it is a loose piece in the shape of the art. A kiss-cut sticker is cut through the vinyl only, so it stays on a backing sheet and is easier to peel."
+    },
+    {
+      "q": "Can I use the same PNG for die-cut and kiss-cut stickers?",
+      "a": "Usually yes. Fourthwall, Printify, Redbubble, Printed Mint and Valenna all cut from the edge of a transparent PNG. Printers that cut from a vector path, such as StickerApp and Jukebox Print, need a path, and both offer a way to build one from your upload."
+    },
+    {
+      "q": "Does a transparent background make the sticker clear?",
+      "a": "No. Fourthwall says transparent areas print as white on standard stickers and show the holographic pattern on holo sheets. Plan for a white or holographic base unless the printer lists a clear material."
+    },
+    {
+      "q": "How far apart should stickers be on a kiss-cut sheet?",
+      "a": "It depends on the printer: 0.25 in at Fourthwall, about 0.25 in (75 px) on Printify sheets, 0.5 in at Printed Mint and 2 mm at StickerApp. Use the number from the printer you are ordering from."
+    },
+    {
+      "q": "Does PiCraft add a cut line to the sticker file?",
+      "a": "No. The PNG has a white border and a transparent edge, and no separate cut path. Printers that trace the PNG edge can cut from it, and others will ask you for a vector path or build one for you."
+    }
+  ],
+  "sources": [
+    {
+      "label": "StickerApp Support: Die-cut vs kiss-cut stickers",
+      "url": "https://stickerapp.com/support/stickers/products/die-cut/die-cut-vs-kiss-cut-stickers"
+    },
+    {
+      "label": "StickerApp Support: Sticker sheet file setup",
+      "url": "https://stickerapp.com/support/stickers/products/sticker-sheet/file-setup-for-sticker-sheets"
+    },
+    {
+      "label": "StickerApp Support: How do I set up my file with a custom cutline?",
+      "url": "https://stickerapp.com/support/artwork-design/file-requirements/how-do-i-set-up-my-file-for-custom-stickers"
+    },
+    {
+      "label": "Fourthwall Help Center: Stickers best practices",
+      "url": "https://help.fourthwall.com/create-and-sell-products/best-practices/stickers-best-practices"
+    },
+    {
+      "label": "Fourthwall Help Center: Design file guidelines and templates for merchandise",
+      "url": "https://help.fourthwall.com/create-and-sell-products/best-practices/design-file-guidelines-and-templates-for-merchandise"
+    },
+    {
+      "label": "Printify Help: Recommended guidelines for stickers",
+      "url": "https://help.printify.com/hc/en-us/articles/4483637274257-What-are-the-recommended-guidelines-for-stickers"
+    },
+    {
+      "label": "Redbubble Help: How do I design for stickers?",
+      "url": "https://help.redbubble.com/hc/en-us/articles/360034868212-How-do-I-design-for-stickers"
+    },
+    {
+      "label": "Printed Mint Help: KISS Cut Sticker Guide",
+      "url": "https://help.printedmint.com/hc/en-us/articles/20613492705172-KISS-Cut-Sticker-Guide"
+    },
+    {
+      "label": "Jukebox Print: Die cut stickers",
+      "url": "https://www.jukeboxprint.com/custom-stickers/die-cut"
+    },
+    {
+      "label": "Jukebox Help Center: Setting up sticker sheets in Adobe Illustrator",
+      "url": "https://support.jukeboxprint.com/en/articles/9770664-advanced-guide-setting-up-sticker-sheets-in-adobe-illustrator"
+    },
+    {
+      "label": "Valenna Help: How to upload die-cut sticker artwork",
+      "url": "https://help.valenna.co.za/portal/en/kb/articles/die-cut-sticker-designs-artwork-and-file-requirements"
+    }
+  ]
+}

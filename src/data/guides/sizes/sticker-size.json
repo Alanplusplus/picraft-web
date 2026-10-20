@@ -4,10 +4,10 @@
   "description": "Sticker file sizes for print and cut: 300 DPI PNGs, common 2–3 in prints, die-cut vs kiss-cut, white borders, pixel math, and Cricut Design Space upload steps.",
   "summary": "Export a square PNG with a transparent background outside your art. For sharp home or shop printing, size the file in pixels as inches × DPI (for example 3×3 in at 300 DPI = 900×900 px). PiCraft also gives a 2048×2048 px transparent PNG and a ready 3×3 in print file with a white die-cut border.",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-20",
   "scene": "sticker-maker",
   "relatedScenes": ["t-shirt-design-maker", "birthday-invitation-maker"],
-  "relatedGuides": ["blog:sticker-artwork-print-and-cut", "t-shirt-design-size"],
+  "relatedGuides": ["blog:sticker-artwork-print-and-cut", "blog:kiss-cut-vs-die-cut-stickers", "t-shirt-design-size"],
   "sections": [
     {
       "heading": "Sticker file specs at a glance",
@@ -53,7 +53,7 @@
       "paragraphs": [
         "Die-cut stickers are cut through the backing sheet to the shape of the art, often with a narrow white margin around the illustration so the blade has a clean path. Kiss-cut stickers are cut through the sticker layer only, leaving them on a larger backing sheet (common for sticker sheets and roll labels).",
         "PiCraft draws a continuous white die-cut border and removes the area outside it, so the PNG is transparent beyond that edge. That matches how many home Print Then Cut workflows expect the cut line to sit just outside the visible art.",
-        "Commercial sticker sheets may use different margin rules; check your printer's template if you are not cutting at home."
+        "Commercial sticker sheets may use different margin rules; check your printer's template if you are not cutting at home. The [kiss-cut vs die-cut stickers](/blog/kiss-cut-vs-die-cut-stickers) guide compares what seven printers ask for in the file."
       ]
     },
     {
