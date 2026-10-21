@@ -11,8 +11,8 @@ export const TAGLINE = "Finished visuals, not prompts.";
 export const COPYRIGHT_YEAR = 2026;
 
 /** Shown on the legal pages and used as `dateModified`. Update it whenever the wording changes. */
-export const LEGAL_UPDATED = "October 19, 2026";
-export const LEGAL_UPDATED_ISO = "2026-10-19";
+export const LEGAL_UPDATED = "October 20, 2026";
+export const LEGAL_UPDATED_ISO = "2026-10-20";
 
 /** Generated files are deleted after this many days (enforced by `backend/scripts/set_oss_lifecycle.py`). */
 export const FILE_RETENTION_DAYS = 90;

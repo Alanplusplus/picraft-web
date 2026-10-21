@@ -4,7 +4,7 @@
   "description": "Birthday invitation size for kids' parties: 5×7 in print with bleed, A7 envelopes, home printing on 8.5×11 in stock, and 1080×1500 px for texts and chats.",
   "summary": "Print birthday invitations at 5×7 in with 0.125 in bleed (5.25×7.25 in at 300 DPI), slip them into A7 envelopes for classroom handouts, or send a 1080×1500 px JPG in the parents' group chat. At home, print at 100% on card stock and trim.",
   "published": "2026-10-09",
-  "updated": "2026-10-14",
+  "updated": "2026-10-21",
   "scene": "birthday-invitation-maker",
   "relatedScenes": ["wedding-invitation-maker", "sticker-maker", "event-flyer-maker"],
   "relatedGuides": ["wedding-invitation-size", "flyer-size"],
@@ -44,7 +44,7 @@
       "heading": "Print shop vs home: what changes",
       "paragraphs": [
         "A print shop trims to exactly 5×7 in, can run heavy card stock and may score folds if you add a back panel later in another tool. Give them the PDF with bleed and tell them the finished size is 5×7 in.",
-        "Home printing saves time for a handful of invites and last-minute pool parties. Proof one copy before you print twenty. Check the honoree's name, age line, date and address against your calendar app.",
+        "Home printing saves time for a handful of invites and last-minute pool parties, where the [under-the-sea theme](/create/birthday-invitation-maker/mermaid) matches the setting. Proof one copy before you print twenty. Check the honoree's name, age line, date and address against your calendar app.",
         "Order A7 envelopes if mailed invites matter; for classroom-only handouts, an unsealed card is enough."
       ]
     },

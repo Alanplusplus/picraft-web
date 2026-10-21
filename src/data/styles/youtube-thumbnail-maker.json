@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "YouTube thumbnail styles",
-  "updated": "2026-10-09",
+  "updated": "2026-10-21",
   "styles": [
     {
       "value": "bold",
@@ -127,7 +127,7 @@
       "faq": [
         {
           "q": "Is minimal too quiet for YouTube?",
-          "a": "It can be, in a feed full of loud thumbnails, but a calm design stands out in its own way. For more punch, try the [bold style](/create/youtube-thumbnail-maker/bold)."
+          "a": "It can be, in a feed full of loud thumbnails, but a calm design stands out in its own way. For more punch, try the [bold style](/create/youtube-thumbnail-maker/bold), or the [playful cartoon style](/create/youtube-thumbnail-maker/playful) for brighter, illustrated energy."
         },
         {
           "q": "Does the style work with a photo of me?",

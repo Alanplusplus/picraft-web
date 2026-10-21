@@ -19,7 +19,7 @@ const SECTIONS: ProseSection[] = [
       `You do not need an account to use ${SITE_NAME}, and we do not ask for your name, email address or payment details. We collect only what is needed to create your designs and run the service.`,
     ],
     items: [
-      "Content you provide: the text you type into a maker and any photos you upload (for example a product photo or a picture of yourself for a thumbnail).",
+      "Content you provide: the text you type into a maker and any photos you upload (for example a product photo or a picture of yourself for a thumbnail). If a photo shows a face, we use it only to create your design. We do not use it to identify anyone or to build face profiles.",
       "Files we generate: the images and print files created from your content, so that you can download them again from My files.",
       "A device identifier: an ID generated in your browser from a combination of its technical characteristics (such as browser version, screen size and time zone) and kept in local storage. We use it only to give each device its free credits once, to link your browser to its file history and to prevent abuse. It is not used for advertising.",
       "A session cookie that identifies your anonymous account, with its credit balance and file history.",
@@ -47,9 +47,9 @@ const SECTIONS: ProseSection[] = [
       "We share data only with service providers that help us run PiCraft, and only as needed for the purpose described.",
     ],
     items: [
-      "AI image generation: your text and uploaded photos are sent to kie.ai, an API platform that runs the AI image models that create your design. It also keeps uploaded photos in temporary storage so the models can read them, and deletes them under its own policy.",
-      "Cloud storage: generated files are stored with Alibaba Cloud Object Storage Service (Singapore region) and served through time-limited download links.",
-      "Image processing: for stickers and t-shirt designs, the generated artwork (not your uploaded photos) is sent to Volcengine, a cloud service operated by ByteDance, to remove the background.",
+      "AI image generation: your text and uploaded photos are sent to third-party AI service providers that run the image models that create your design. They may keep uploaded photos in temporary storage so the models can read them, and delete them under their own policies.",
+      "Cloud storage: generated files are stored with a cloud storage provider and served through time-limited download links.",
+      "Image processing: for stickers and t-shirt designs, the generated artwork (not your uploaded photos) is sent to an image-processing provider to remove the background.",
       "Analytics: Google Analytics (Google LLC) receives usage data about your visit, such as the pages you view and the actions you take, and sets the cookies listed below.",
       "Pinterest, only when you choose it: if you click Save to Pinterest on a design, your browser opens Pinterest in a new tab with a time-limited link to the preview image, a suggested description and a link back to PiCraft. Pinterest receives these when that page opens (it loads the image to show a preview) and, if you save the pin, keeps its own copy of the image under Pinterest's terms and privacy policy. We do not load any Pinterest script or tag on PiCraft, and nothing is sent to Pinterest unless you click the button.",
       "Hosting and security providers that process technical data on our behalf.",

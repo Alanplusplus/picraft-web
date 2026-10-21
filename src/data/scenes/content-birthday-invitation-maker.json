@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-21",
   "overview": {
     "heading": "How the Birthday Invitation Maker works",
     "paragraphs": [
@@ -89,13 +89,13 @@
       { "title": "Balloons & confetti", "description": "A bright all-purpose party look. Works for any age." },
       { "title": "Unicorn & rainbow", "description": "Pastel colors, stars and rainbows. Fits young children." },
       { "title": "Dinosaur adventure", "description": "Friendly dinosaurs and jungle leaves. Fits young children who love animals." },
-      { "title": "Outer space", "description": "Planets, stars and rockets. Fits children and science fans." },
+      { "title": "Outer space", "description": "Planets, stars and rockets. Fits [children and science fans](/create/birthday-invitation-maker/space)." },
       { "title": "Elegant black & gold", "description": "A refined look for adults and milestone birthdays." },
       { "title": "Soft floral", "description": "Gentle flowers and a calm palette. Fits garden parties and afternoon teas." },
-      { "title": "Safari jungle", "description": "Animals and leaves in earthy colors. Fits first birthdays and family parties." },
-      { "title": "Under the sea", "description": "Mermaids, fish and shells. Fits pool parties and beach days." },
-      { "title": "Retro arcade", "description": "Pixels and neon. Fits teens and gaming fans." },
-      { "title": "Watercolor splash", "description": "Bright painted color. Fits art parties and any age." }
+      { "title": "Safari jungle", "description": "Animals and leaves in earthy colors. Fits [first birthdays](/create/birthday-invitation-maker/safari) and family parties." },
+      { "title": "Under the sea", "description": "Mermaids, fish and shells. Fits [pool parties and beach days](/create/birthday-invitation-maker/mermaid)." },
+      { "title": "Retro arcade", "description": "Pixels and neon. Fits [teens and gaming fans](/create/birthday-invitation-maker/retro)." },
+      { "title": "Watercolor splash", "description": "Bright painted color. Fits [art parties](/create/birthday-invitation-maker/watercolor) and any age." }
     ]
   },
   "checklist": {

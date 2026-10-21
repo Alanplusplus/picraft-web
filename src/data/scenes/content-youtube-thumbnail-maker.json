@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-21",
   "overview": {
     "heading": "How the YouTube Thumbnail Maker works",
     "paragraphs": [
@@ -89,7 +89,7 @@
       { "title": "Bold & high contrast", "description": "Saturated colors and strong separation. A safe default for most channels." },
       { "title": "Clean & minimal", "description": "Simple background and calm layout. Good for tutorials, finance and productivity." },
       { "title": "Cinematic", "description": "Film-like lighting and depth. Good for storytelling, documentaries and trailers." },
-      { "title": "Playful cartoon", "description": "Bright, illustrated and fun. Good for kids, games and light entertainment." },
+      { "title": "Playful cartoon", "description": "Bright, illustrated and fun. Good for [kids, games and light entertainment](/create/youtube-thumbnail-maker/playful)." },
       { "title": "Warm vlog", "description": "Soft light and friendly tones. Good for lifestyle, travel diaries and daily vlogs." },
       { "title": "Tech review", "description": "Sleek surfaces and sharp product focus. Good for gadgets and software." },
       { "title": "Dark & eerie", "description": "Deep shadows and tension. Good for mysteries, horror and true crime." },
