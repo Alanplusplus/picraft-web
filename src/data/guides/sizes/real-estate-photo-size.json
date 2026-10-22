@@ -73,7 +73,7 @@
       "heading": "Prepare MLS-ready listing photos",
       "paragraphs": [
         "The [Real Estate Listing Photo Editor](/create/real-estate-listing-photo) accepts a landscape property photo and returns a 2048×1536 px MLS JPG plus a 1600×1200 px web JPG. Choose enhance, declutter, virtual staging or virtual twilight, and add a short style note for staging if needed.",
-        "Each photo is a separate generation. For product-style detail shots or white-background catalog images, see [Product and listing photos](/categories/product-and-listing-photos) and the [Amazon product photo](/create/amazon-product-photo) maker for a different workflow."
+        "Each photo is a separate generation. For product-style detail shots or white-background catalog images, see [Product and listing photos](/categories/product-and-listing-photos) and the [Amazon product photo](/create/amazon-product-photo) maker for a different workflow. To test a photo you already have for size, ratio and file weight, use the free [image size checker](/tools/image-size-checker)."
       ]
     }
   ],

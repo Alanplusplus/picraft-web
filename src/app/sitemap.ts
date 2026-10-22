@@ -5,6 +5,7 @@ import { getGuides, guidePath, isGuideIndexable } from "@/lib/guides";
 import { getContent, getExamples, getScenes, isIndexable } from "@/lib/scenes";
 import { absoluteUrl, CATEGORIES, categoryPath, LEGAL_UPDATED_ISO } from "@/lib/site";
 import { getStylePages, isStyleIndexable, styleExamples, stylePath } from "@/lib/styles";
+import { getTools, isToolIndexable, toolPath } from "@/lib/tools";
 
 type Entry = MetadataRoute.Sitemap[number];
 
@@ -20,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sizeGuides = getGuides("size").filter(isGuideIndexable);
   const posts = getGuides("blog").filter(isGuideIndexable);
   const stylePages = getStylePages().filter(({ file, style }) => isStyleIndexable(file, style));
+  const tools = getTools().filter(isToolIndexable);
 
   const latestScene = newest(scenes.map((scene) => getContent(scene.slug)?.updated));
   const latestGuide = newest([...sizeGuides, ...posts].map((guide) => guide.updated));
@@ -71,7 +73,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    { url: absoluteUrl("/tools"), lastModified: newest(tools.map((tool) => tool.updated)), changeFrequency: "monthly", priority: 0.6 },
+    ...tools.map((tool) => ({
+      url: absoluteUrl(toolPath(tool)),
+      lastModified: tool.updated,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     { url: absoluteUrl("/about"), changeFrequency: "yearly", priority: 0.4 },
+    { url: absoluteUrl("/press"), changeFrequency: "yearly", priority: 0.3 },
     { url: absoluteUrl("/contact"), changeFrequency: "yearly", priority: 0.3 },
     { url: absoluteUrl("/privacy"), lastModified: LEGAL_UPDATED_ISO, changeFrequency: "yearly", priority: 0.2 },
     { url: absoluteUrl("/terms"), lastModified: LEGAL_UPDATED_ISO, changeFrequency: "yearly", priority: 0.2 },

@@ -28,6 +28,7 @@ function Logo() {
 const NAV_LINKS = [
   { href: "/create", label: "All makers" },
   { href: "/sizes", label: "Size guides" },
+  { href: "/tools", label: "Free tools" },
   { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/history", label: "My files" },

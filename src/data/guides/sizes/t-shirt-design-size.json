@@ -70,7 +70,7 @@
       "heading": "Make a shirt graphic at print size",
       "paragraphs": [
         "The [T-Shirt Design Maker](/create/t-shirt-design-maker) builds a centered chest graphic with optional slogan (up to 40 characters), ten print-friendly styles, and automatic background removal. Download the 4500×5400 px PNG for production and the 1200×1440 px preview for mockups.",
-        "The print file is upscaled from the generated art; order one sample shirt before you run ads. PiCraft does not produce back prints, mockups on models or all-over patterns—only flat artwork."
+        "The print file is upscaled from the generated art; order one sample shirt before you run ads. PiCraft does not produce back prints, mockups on models or all-over patterns—only flat artwork. To check that a PNG you already have is transparent and at print size, use the free [image size checker](/tools/image-size-checker)."
       ]
     }
   ],

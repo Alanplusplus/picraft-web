@@ -6,9 +6,10 @@ import { inlineLinks } from "./inline";
 import { getContent, getScenes, isIndexable } from "./scenes";
 import { CATEGORIES, categoryPath } from "./site";
 import { getStylePages, isStyleIndexable, stylePath } from "./styles";
+import { getTools, isToolIndexable, toolPath } from "./tools";
 
 /** Pages that are written by hand as `page.tsx` files and are never held back from the index. */
-const STATIC_PAGES = ["/", "/create", "/gallery", "/sizes", "/blog", "/about", "/contact", "/privacy", "/terms"];
+const STATIC_PAGES = ["/", "/create", "/gallery", "/sizes", "/blog", "/tools", "/about", "/press", "/contact", "/privacy", "/terms"];
 
 /** Every page the site renders, mapped to whether it is indexable. */
 export function knownPages(): Map<string, boolean> {
@@ -19,6 +20,7 @@ export function knownPages(): Map<string, boolean> {
   for (const kind of ["size", "blog"] as const) {
     for (const guide of getGuides(kind)) pages.set(guidePath(guide), isGuideIndexable(guide));
   }
+  for (const tool of getTools()) pages.set(toolPath(tool), isToolIndexable(tool));
   return pages;
 }
 
@@ -88,6 +90,16 @@ export function validateInternalLinks(): void {
         else checkTarget(source, guidePath(target), `relatedGuides "${ref}"`);
       }
     }
+  }
+
+  for (const tool of getTools()) {
+    const source = `src/data/tools/${tool.slug}.json`;
+    checkText(source, [tool.summary, tool.sections, tool.faq]);
+    for (const preset of tool.presets) {
+      checkTarget(source, `/sizes/${preset.guide}`, `preset "${preset.id}" guide`);
+      checkTarget(source, `/create/${preset.maker}`, `preset "${preset.id}" maker`);
+    }
+    for (const slug of tool.featuredMakers) checkTarget(source, `/create/${slug}`, `featuredMakers "${slug}"`);
   }
 
   for (const { file, style } of getStylePages()) {

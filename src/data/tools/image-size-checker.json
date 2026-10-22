@@ -1,0 +1,280 @@
+{
+  "title": "Image Size Checker: Pixels, Ratio, File Size & Bleed",
+  "h1": "Image size checker",
+  "description": "Drop in an image and check its pixels, aspect ratio, file size and type against YouTube, LinkedIn, Amazon, MLS and print specs. It runs in your browser.",
+  "summary": "Drop in an image, pick where it is going, and see in a second whether the pixel size, aspect ratio, file size and file type meet the spec. Nothing is uploaded: the check runs in your browser.",
+  "published": "2026-10-22",
+  "updated": "2026-10-22",
+  "featuredMakers": ["youtube-thumbnail-maker", "business-card-maker", "amazon-product-photo", "sticker-maker"],
+  "sections": [
+    {
+      "heading": "What the checker looks at",
+      "items": [
+        "Pixel size: compares the width and height with the size the platform or printer expects, and flags an image that is below the stated minimum.",
+        "Aspect ratio: shows how far the shape is from the one required and how much to crop to fix it.",
+        "File size and file type: for example the 2 MB thumbnail limit in the YouTube mobile app, or the 8 MB limit for a LinkedIn banner.",
+        "Resolution at print size: for print presets the tool divides the pixels by the inches of the file, bleed included, and reports the DPI.",
+        "Transparency: for sticker and shirt files it looks for transparent pixels and the PNG format.",
+        "Amazon main images: it estimates how white the border is and how much of the frame the product fills. Amazon does not say how it measures either, so treat both numbers as estimates."
+      ]
+    },
+    {
+      "heading": "How the guide overlay works",
+      "paragraphs": [
+        "Pick a print preset and the preview shows three lines. The pink band is the bleed: extend backgrounds and photos into it so a small cutting error never leaves a white edge. The black line is the trim, where the sheet is cut. The blue dashed line is the safe area: keep names, prices and logos inside it. The bleed follows the size guides: 0.125 in for the US sizes and 3 mm for A4 and the European business card.",
+        "The platform presets carry zones instead. YouTube thumbnails show the corner where the video length appears. YouTube does not publish the size of that badge, so the box is a rough marker. LinkedIn banners show the right half as the best place for text, because the profile photo covers the lower left of the banner. That is advice from the size guide, not a LinkedIn rule."
+      ]
+    },
+    {
+      "heading": "Download a guide template",
+      "paragraphs": [
+        "Every preset with a fixed size can export a blank guide at the exact pixel size, with the same lines drawn on it. Put the file on its own layer under your artwork and hide that layer before you export. Any editor that opens PNG or SVG files will do.",
+        "The PNG is offered up to about 16 megapixels. Larger sizes, such as the 4500×5400 px shirt graphic, are offered as SVG only, drawn at the exact pixel size."
+      ]
+    },
+    {
+      "heading": "Where the numbers come from",
+      "paragraphs": [
+        "Every preset uses the figures from one of the PiCraft size guides, and each guide links the official page it was checked against. The table below lists each preset with its target and rules, and the guide to read for the reasons behind them.",
+        "Platforms change their requirements, and printers differ from each other. If a printer gives you its own template, use that one. If a figure here is out of date, write to support@picraft.ai and we will fix it."
+      ]
+    },
+    {
+      "heading": "What the checker cannot tell you",
+      "items": [
+        "It does not read color profiles or tell RGB from CMYK. Printers disagree on which they want, so ask yours.",
+        "It cannot see whether your text sits inside the safe area. Use the overlay and the template for that.",
+        "Browsers cannot open every format. TIFF and HEIC files often fail to load, so convert them to JPG or PNG to check them.",
+        "The white background and product fill checks use a reduced copy of the image and a fixed tolerance, so they can disagree with a marketplace's own check."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is my image uploaded anywhere?",
+      "a": "No. Your browser opens the file and measures it there. Nothing is uploaded, and PiCraft never sees the image or its file name. The page only records which preset you picked and whether the checks passed."
+    },
+    {
+      "q": "Which file types can I check?",
+      "a": "Any image your browser can open, usually JPG, PNG, WebP and GIF. TIFF and HEIC files often do not open, so convert them first."
+    },
+    {
+      "q": "Why does a 1280×720 px thumbnail pass when YouTube recommends 3840×2160 px?",
+      "a": "The [YouTube thumbnail size guide](/sizes/youtube-thumbnail-size) lists 1280×720 px as the common working size and 640 px wide as the minimum, with 3840×2160 px as the recommended resolution. The checker uses 1280×720 px as the target: it passes anything at or above it with the right ratio, and warns between 640 px and 1280 px wide."
+    },
+    {
+      "q": "How is the DPI worked out?",
+      "a": "The tool divides the pixel width by the width of the print file in inches, bleed included, and does the same for the height. The lower number is the DPI. A 1575×2175 px file for a 5×7 in invitation with 0.125 in bleed is exactly 300 DPI."
+    },
+    {
+      "q": "Is the white background check the same as Amazon's?",
+      "a": "No. Amazon does not publish its method. The checker looks at the pixels along the border of a reduced copy of your image and reports how many are pure white, with a small allowance for JPEG noise. Use it to catch a grey shadow or an off-white backdrop before you upload; the listing editor has the final say. The [Amazon product image guide](/sizes/amazon-product-image-requirements) has the full rules."
+    },
+    {
+      "q": "Can I use the templates in any design program?",
+      "a": "Yes, if it opens PNG or SVG files. Place the template on the bottom layer, design on top of it, and hide it before you export, or the lines will print."
+    },
+    {
+      "q": "My printer gives a different bleed. Which one wins?",
+      "a": "The printer's. 0.125 in or 3 mm is the common figure, but templates differ. Pick the closest preset to check your pixels, then follow the printer's template for the lines. [What is bleed in printing](/blog/what-is-bleed-in-printing) explains the terms."
+    }
+  ],
+  "presets": [
+    {
+      "id": "youtube-thumbnail",
+      "group": "Video and social",
+      "label": "YouTube thumbnail",
+      "guide": "youtube-thumbnail-size",
+      "maker": "youtube-thumbnail-maker",
+      "width": 1280,
+      "height": 720,
+      "minWidth": 640,
+      "aspect": [16, 9],
+      "formats": ["jpg", "png"],
+      "warnBytes": 2097152,
+      "maxBytes": 52428800,
+      "bytesNote": "YouTube allows 2 MB from its mobile app and 50 MB from a computer.",
+      "zones": [{ "kind": "avoid", "x": 0.8, "y": 0.84, "width": 0.2, "height": 0.16, "label": "Video length" }],
+      "notes": [
+        "YouTube's recommended resolution is up to 3840×2160 px; 1280×720 px is the common working size.",
+        "The video length badge covers the bottom-right corner in most views. YouTube does not publish its size, so the box only marks roughly where it sits."
+      ]
+    },
+    {
+      "id": "youtube-shorts-thumbnail",
+      "group": "Video and social",
+      "label": "YouTube Shorts thumbnail",
+      "guide": "youtube-thumbnail-size",
+      "maker": "youtube-thumbnail-maker",
+      "width": 2160,
+      "height": 3840,
+      "minHeight": 640,
+      "aspect": [9, 16],
+      "notes": ["Custom Shorts thumbnails are added in YouTube Studio on a computer."]
+    },
+    {
+      "id": "linkedin-banner",
+      "group": "Video and social",
+      "label": "LinkedIn profile banner",
+      "guide": "linkedin-banner-size",
+      "maker": "linkedin-banner-maker",
+      "width": 1584,
+      "height": 396,
+      "aspect": [4, 1],
+      "formats": ["jpg", "png"],
+      "maxBytes": 8388608,
+      "bytesNote": "LinkedIn asks for a file under 8 MB.",
+      "zones": [{ "kind": "suggest", "x": 0.5, "y": 0, "width": 0.5, "height": 1, "label": "Text zone" }],
+      "notes": [
+        "The profile photo covers the lower-left of the banner, so keep names and headlines in the right half. This is advice from the size guide, not a LinkedIn rule, and the banner crops differently on phones."
+      ]
+    },
+    {
+      "id": "social-feed-4x5",
+      "group": "Video and social",
+      "label": "Instagram or Facebook feed post (4:5)",
+      "guide": "flyer-size",
+      "maker": "event-flyer-maker",
+      "width": 1080,
+      "height": 1350,
+      "aspect": [4, 5]
+    },
+    {
+      "id": "social-story-9x16",
+      "group": "Video and social",
+      "label": "Stories and vertical video (9:16)",
+      "guide": "flyer-size",
+      "maker": "event-flyer-maker",
+      "width": 1080,
+      "height": 1920,
+      "aspect": [9, 16]
+    },
+    {
+      "id": "business-card-us",
+      "group": "Print files (300 DPI, with bleed)",
+      "label": "Business card, US (3.5×2 in)",
+      "guide": "business-card-size",
+      "maker": "business-card-maker",
+      "print": { "trimWidth": 3.5, "trimHeight": 2, "bleed": 0.125, "unit": "in", "safe": 0.125 },
+      "notes": [
+        "The safe margin shown is the common 3 mm (about 0.125 in) rule. Printers publish their own templates and some use a thinner bleed, so use the one for the product you order."
+      ]
+    },
+    {
+      "id": "business-card-eu",
+      "group": "Print files (300 DPI, with bleed)",
+      "label": "Business card, Europe (85×55 mm)",
+      "guide": "business-card-size",
+      "maker": "business-card-maker",
+      "print": { "trimWidth": 85, "trimHeight": 55, "bleed": 3, "unit": "mm", "safe": 3 },
+      "notes": ["Some European printers ask for important content 5 mm inside the trim; check your printer's template."]
+    },
+    {
+      "id": "invitation-5x7",
+      "group": "Print files (300 DPI, with bleed)",
+      "label": "Invitation, 5×7 in (wedding or birthday)",
+      "guide": "wedding-invitation-size",
+      "maker": "wedding-invitation-maker",
+      "print": { "trimWidth": 5, "trimHeight": 7, "bleed": 0.125, "unit": "in", "safe": 0.25 },
+      "notes": ["A 5×7 in card fits an A7 envelope (5¼×7¼ in)."]
+    },
+    {
+      "id": "letter-flyer-menu",
+      "group": "Print files (300 DPI, with bleed)",
+      "label": "Flyer or menu, US Letter (8.5×11 in)",
+      "guide": "flyer-size",
+      "maker": "event-flyer-maker",
+      "print": { "trimWidth": 8.5, "trimHeight": 11, "bleed": 0.125, "unit": "in" }
+    },
+    {
+      "id": "a4-menu",
+      "group": "Print files (300 DPI, with bleed)",
+      "label": "Menu, A4 (210×297 mm)",
+      "guide": "menu-size",
+      "maker": "restaurant-menu-maker",
+      "print": { "trimWidth": 210, "trimHeight": 297, "bleed": 3, "unit": "mm" },
+      "notes": ["The A4 size with bleed is about 2551×3579 px at 300 DPI."]
+    },
+    {
+      "id": "kindle-ebook-cover",
+      "group": "Stores and listings",
+      "label": "Kindle eBook cover (Amazon KDP)",
+      "guide": "book-cover-size",
+      "maker": "book-cover-maker",
+      "width": 1600,
+      "height": 2560,
+      "minWidth": 625,
+      "minHeight": 1000,
+      "maxSide": 10000,
+      "minHeightToWidth": 1.6,
+      "formats": ["jpg", "tiff"],
+      "maxBytes": 52428800,
+      "bytesNote": "KDP asks for under 50 MB.",
+      "notes": [
+        "KDP lists 1600×2560 px as the ideal size and 1000×625 px as the minimum, with at least 1.6:1 height to width, in RGB.",
+        "Most browsers cannot open TIFF files, so only a JPG can be checked here."
+      ]
+    },
+    {
+      "id": "amazon-main-image",
+      "group": "Stores and listings",
+      "label": "Amazon main product image",
+      "guide": "amazon-product-image-requirements",
+      "maker": "amazon-product-photo",
+      "minLongSide": 1000,
+      "recLongSide": 1600,
+      "maxSide": 10000,
+      "formats": ["jpg", "png", "tiff", "gif"],
+      "whiteBackground": true,
+      "minFill": 0.85,
+      "notes": [
+        "JPEG is preferred. The main image must show only the product on a pure white background, with no text, logos or borders; the checker cannot see those."
+      ]
+    },
+    {
+      "id": "mls-listing-photo",
+      "group": "Stores and listings",
+      "label": "MLS listing photo",
+      "guide": "real-estate-photo-size",
+      "maker": "real-estate-listing-photo",
+      "width": 2048,
+      "height": 1536,
+      "minWidth": 1024,
+      "minHeight": 768,
+      "aspect": [4, 3],
+      "formats": ["jpg"],
+      "warnBytes": 6291456,
+      "maxBytes": 10485760,
+      "bytesNote": "MLS Now caps files at 6 MB and OneKey MLS at 10 MB; check your own board.",
+      "notes": ["2048×1536 px suits many systems and 1024×768 px is a common minimum. Your MLS may differ."]
+    },
+    {
+      "id": "sticker-3in",
+      "group": "Transparent print files",
+      "label": "Sticker PNG, 3×3 in",
+      "guide": "sticker-size",
+      "maker": "sticker-maker",
+      "width": 900,
+      "height": 900,
+      "aspect": [1, 1],
+      "formats": ["png"],
+      "transparent": true,
+      "notes": ["3×3 in at 300 DPI is 900×900 px. Leave the pixels outside the artwork transparent, with the cut line just outside the white border."]
+    },
+    {
+      "id": "tshirt-front",
+      "group": "Transparent print files",
+      "label": "T-shirt front graphic (15×18 in)",
+      "guide": "t-shirt-design-size",
+      "maker": "t-shirt-design-maker",
+      "width": 4500,
+      "height": 5400,
+      "aspect": [5, 6],
+      "formats": ["png"],
+      "transparent": true,
+      "notes": [
+        "15×18 in at 300 DPI is 4500×5400 px. Printful asks for at least 150 DPI at print size; Printify and Redbubble list their own minimums."
+      ]
+    }
+  ]
+}

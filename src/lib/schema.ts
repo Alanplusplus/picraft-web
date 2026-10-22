@@ -59,6 +59,22 @@ export function articleLd(article: {
   };
 }
 
+/** A free tool that runs in the browser. It deliberately has no `offers` or ratings: PiCraft has no paid plan and no reviews to report. */
+export function webApplicationLd(tool: { name: string; description: string; path: string }): JsonObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: tool.name,
+    description: tool.description,
+    url: absoluteUrl(tool.path),
+    applicationCategory: "DesignApplication",
+    operatingSystem: "Any",
+    browserRequirements: "Requires JavaScript",
+    isAccessibleForFree: true,
+    publisher: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") },
+  };
+}
+
 export function collectionLd(page: {
   name: string;
   description: string;

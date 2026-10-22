@@ -361,7 +361,11 @@ export default function HomePage() {
               ))}
             </div>
             <p className="mt-4 text-sm text-ink-500">
-              More on the{" "}
+              Already have an image? Run it through the free{" "}
+              <Link href="/tools/image-size-checker" className="font-medium text-brand-700 hover:underline">
+                image size checker
+              </Link>
+              . More on the{" "}
               <Link href="/blog" className="font-medium text-brand-700 hover:underline">
                 blog
               </Link>{" "}

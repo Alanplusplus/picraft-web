@@ -32,9 +32,20 @@ export const BING_SITE_VERIFICATION = process.env.NEXT_PUBLIC_BING_SITE_VERIFICA
 /** Content of the Pinterest `p:domain_verify` meta tag, used to claim the website on Pinterest. */
 export const PINTEREST_VERIFICATION = process.env.NEXT_PUBLIC_PINTEREST_VERIFICATION ?? "";
 
-/** Public social profiles. A profile is linked in the footer and listed in the structured data once its URL is set. */
+/**
+ * Public social profiles. A profile is linked in the footer and listed in the structured data once its URL
+ * is set, so the page never points at an account that does not exist. Use the full profile URL, for example
+ * `https://www.linkedin.com/company/picraft-ai`. The variables are NEXT_PUBLIC_SOCIAL_PINTEREST, _X, _LINKEDIN,
+ * _YOUTUBE, _GITHUB, _INSTAGRAM and _TIKTOK.
+ */
 export const SOCIAL_PROFILES: { name: string; url: string }[] = [
   { name: "Pinterest", url: process.env.NEXT_PUBLIC_SOCIAL_PINTEREST ?? "" },
+  { name: "X", url: process.env.NEXT_PUBLIC_SOCIAL_X ?? "" },
+  { name: "LinkedIn", url: process.env.NEXT_PUBLIC_SOCIAL_LINKEDIN ?? "" },
+  { name: "YouTube", url: process.env.NEXT_PUBLIC_SOCIAL_YOUTUBE ?? "" },
+  { name: "GitHub", url: process.env.NEXT_PUBLIC_SOCIAL_GITHUB ?? "" },
+  { name: "Instagram", url: process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM ?? "" },
+  { name: "TikTok", url: process.env.NEXT_PUBLIC_SOCIAL_TIKTOK ?? "" },
 ].filter((profile) => profile.url);
 
 export type CategoryId = "trends" | "photos" | "print" | "creators" | "merch";

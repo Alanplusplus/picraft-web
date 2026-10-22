@@ -46,11 +46,15 @@ export default function SizesPage() {
         </p>
         <p>
           Every guide ends with the PiCraft maker that exports the files at that size, so you can go from the spec to a
-          finished file in a minute. New to print terms? Start with{" "}
+          finished file in a minute.           New to print terms? Start with{" "}
           <Link href="/blog/what-is-bleed-in-printing" className="font-medium text-brand-700 underline underline-offset-2">
             what bleed is and how to use it
           </Link>
-          .
+          . Already have a file? The{" "}
+          <Link href="/tools/image-size-checker" className="font-medium text-brand-700 underline underline-offset-2">
+            image size checker
+          </Link>{" "}
+          tests it against these specs in your browser.
         </p>
       </div>
 

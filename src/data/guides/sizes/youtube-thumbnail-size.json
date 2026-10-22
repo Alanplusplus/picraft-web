@@ -81,7 +81,7 @@
       "heading": "Make a thumbnail at the right size",
       "paragraphs": [
         "The [YouTube Thumbnail Maker](/create/youtube-thumbnail-maker) exports a 1280×720 px JPG that stays under 2 MB, so it uploads from a phone or a computer, plus a 1920×1080 px version for large screens. It keeps text and faces out of the bottom-right corner where YouTube shows the video length.",
-        "For tips on text, contrast and composition, read the guide to [YouTube thumbnail best practices](/blog/youtube-thumbnail-best-practices)."
+        "For tips on text, contrast and composition, read the guide to [YouTube thumbnail best practices](/blog/youtube-thumbnail-best-practices). To test a thumbnail you already have against the size, ratio and file limits above, use the free [image size checker](/tools/image-size-checker)."
       ]
     }
   ],

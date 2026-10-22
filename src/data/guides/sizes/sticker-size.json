@@ -80,7 +80,7 @@
       "heading": "Make sticker art at the right size",
       "paragraphs": [
         "The [Sticker Maker](/create/sticker-maker) exports a 900×900 px (3×3 in at 300 DPI) transparent PNG plus a 2048×2048 px version, both with a white die-cut border and no background cleanup on your side. Optional text is limited to 30 characters; proofread before you print.",
-        "Each generation is one design. Lay out several PNGs on one sheet in Cricut Design Space or your print software for a mixed sticker sheet."
+        "Each generation is one design. Lay out several PNGs on one sheet in Cricut Design Space or your print software for a mixed sticker sheet. To check that a PNG you already have is transparent and at the right size, use the free [image size checker](/tools/image-size-checker)."
       ]
     }
   ],

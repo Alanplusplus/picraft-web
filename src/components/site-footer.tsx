@@ -6,6 +6,8 @@ import { CATEGORIES, categoryPath, COPYRIGHT_YEAR, SITE_NAME, SOCIAL_PROFILES, T
 
 const RESOURCES = [
   { href: "/sizes", label: "Size guides" },
+  { href: "/tools", label: "Free tools" },
+  { href: "/tools/image-size-checker", label: "Image size checker" },
   { href: "/blog", label: "Blog" },
   { href: "/gallery", label: "Design gallery" },
   { href: "/create", label: "All makers" },
@@ -75,6 +77,9 @@ export function SiteFooter() {
           <nav aria-label="Company" className="flex flex-wrap gap-5">
             <Link href="/about" className="hover:text-ink-900">
               About
+            </Link>
+            <Link href="/press" className="hover:text-ink-900">
+              Press kit
             </Link>
             <Link href="/contact" className="hover:text-ink-900">
               Contact
