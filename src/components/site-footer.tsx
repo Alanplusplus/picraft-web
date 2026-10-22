@@ -13,6 +13,25 @@ const RESOURCES = [
   { href: "/create", label: "All makers" },
 ];
 
+function ExternalIcon() {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+      className="shrink-0 opacity-70"
+    >
+      <path d="M4.5 2.5h5v5M9.5 2.5 3 9" />
+    </svg>
+  );
+}
+
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-ink-200 bg-ink-50">
@@ -24,16 +43,18 @@ export function SiteFooter() {
           </div>
           <p className="mt-3 text-sm text-ink-500">{TAGLINE}</p>
           {SOCIAL_PROFILES.length > 0 && (
-            <ul className="mt-4 space-y-2" aria-label="Follow PiCraft">
+            <ul className="mt-4 flex flex-wrap gap-2" aria-label="PiCraft elsewhere on the web">
               {SOCIAL_PROFILES.map((profile) => (
                 <li key={profile.name}>
                   <a
                     href={profile.url}
                     target="_blank"
                     rel="me noopener"
-                    className="text-sm text-ink-500 hover:text-ink-900"
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-ink-300 bg-white px-3 py-1.5 text-sm font-medium text-ink-800 shadow-sm transition hover:border-brand-500 hover:text-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink-900"
                   >
                     {profile.name}
+                    <ExternalIcon />
+                    <span className="sr-only">(opens in a new tab)</span>
                   </a>
                 </li>
               ))}

@@ -46,6 +46,8 @@ export const SOCIAL_PROFILES: { name: string; url: string }[] = [
   { name: "GitHub", url: process.env.NEXT_PUBLIC_SOCIAL_GITHUB ?? "" },
   { name: "Instagram", url: process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM ?? "" },
   { name: "TikTok", url: process.env.NEXT_PUBLIC_SOCIAL_TIKTOK ?? "" },
+  // PiCraft's own public listing; it exists, so it is not behind an environment variable.
+  { name: "TAAFT", url: "https://theresanaiforthat.com/@picraftai/" },
 ].filter((profile) => profile.url);
 
 export type CategoryId = "trends" | "photos" | "print" | "creators" | "merch";
