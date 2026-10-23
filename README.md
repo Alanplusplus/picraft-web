@@ -34,7 +34,7 @@ npm start
 
 The app expects the backend at `BACKEND_URL` (default `http://127.0.0.1:8040`) and a shared `SERVICE_SECRET`. Put local values in `.env.local`, which is not committed.
 
-Optional public settings, all prefixed `NEXT_PUBLIC_`: `SITE_URL`, `GA_MEASUREMENT_ID`, the site verification tags, `LEGAL_ENTITY` / `LEGAL_ADDRESS` / `GOVERNING_LAW`, and `SOCIAL_PINTEREST`, `SOCIAL_X`, `SOCIAL_LINKEDIN`, `SOCIAL_YOUTUBE`, `SOCIAL_GITHUB`, `SOCIAL_INSTAGRAM`, `SOCIAL_TIKTOK` (a profile link appears in the footer once its variable is set).
+Optional public settings, all prefixed `NEXT_PUBLIC_`: `SITE_URL`, `GA_MEASUREMENT_ID`, the site verification tags, `LEGAL_ENTITY` / `LEGAL_ADDRESS` / `GOVERNING_LAW`, and `SOCIAL_PINTEREST`, `SOCIAL_X`, `SOCIAL_LINKEDIN`, `SOCIAL_YOUTUBE`, `SOCIAL_GITHUB`, `SOCIAL_INSTAGRAM` (a profile link appears in the footer once its variable is set).
 
 ## Layout
 

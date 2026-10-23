@@ -4,7 +4,7 @@
   "description": "Standard wedding invitation size is 5×7 in with 0.125 in bleed, 300 DPI and an A7 envelope. Trim, safe area, pixels, card stock and share-image sizes.",
   "summary": "A finished wedding invitation is usually 5×7 in (127×178 mm). Send printers a file with 0.125 in bleed on every side (5.25×7.25 in at 300 DPI, or 1575×2175 px), keep text at least 0.25 in inside the trim line, and mail the card in an A7 envelope (5¼×7¼ in).",
   "published": "2026-10-09",
-  "updated": "2026-10-13",
+  "updated": "2026-10-24",
   "scene": "wedding-invitation-maker",
   "relatedScenes": ["birthday-invitation-maker", "restaurant-menu-maker"],
   "relatedGuides": ["birthday-invitation-size", "blog:how-to-print-wedding-invitations", "blog:what-is-bleed-in-printing"],
@@ -23,7 +23,7 @@
           ["File size with bleed", "5.25×7.25 in"],
           ["Resolution", "300 DPI"],
           ["Pixels with bleed at 300 DPI", "1575×2175 px"],
-          ["Safe area for text", "0.25 in inside the trim line on all sides"],
+          ["Safe area for text", "0.25 in inside the trim line on all sides (some printers list 0.125 in as the minimum)"],
           ["Matching envelope", "A7, 5¼×7¼ in (133×184 mm)"]
         ]
       },
@@ -36,6 +36,7 @@
       "paragraphs": [
         "Bleed is extra artwork beyond the final 5×7 in edge. When the shop trims the stack, the blade can shift by a fraction of an inch. Without bleed, you may see a thin white strip on one side. With 0.125 in bleed, background color and borders still reach the edge after trimming.",
         "The safe area is the opposite idea: keep names, dates and venue lines at least 0.25 in away from the trim line so nothing important is cut off. Decorative borders can sit closer to the edge than text, but critical wording should stay inside the safe zone.",
+        "Printers do not all use the same margin. Cardstock Warehouse puts the safe zone of a 5×7 in card 0.125 in inside the trim, a 4.75×6.75 in box, and says anything outside it may be trimmed off. It also gives industry trimming tolerances of ±0.010 to ±0.020 in, up to ±0.03125 in (about 0.8 mm), and says registration may be slightly looser on digital presses. A 0.25 in margin for text stays safe under either rule. A border meant to touch the edge has to run all the way into the bleed, because a solid border that stops at the trim line comes out uneven.",
         "For a plain-language explanation of bleed and trim, read [what is bleed in printing](/blog/what-is-bleed-in-printing)."
       ]
     },
@@ -49,9 +50,26 @@
     {
       "heading": "Envelopes and other common invitation sizes",
       "paragraphs": [
-        "Order A7 envelopes for a 5×7 in card. The envelope measures 5¼×7¼ in, roughly a quarter inch larger than the card on each side so the card slides in without bending.",
+        "Order A7 envelopes for a 5×7 in card. The envelope measures 5¼×7¼ in, a quarter inch larger than the card in each direction. Business Envelopes advises 1/8 to 1/4 in of extra width and height so the card slides in without bending; a 5×7 in card needs at least a 5⅛×7⅛ in envelope, and A7 fits.",
         "Save-the-dates are often smaller; suppliers commonly use an A6 envelope (about 4.75×6.5 in) with cards near 4.5×6.25 in. Larger suites may use an A9 envelope (about 5.75×8.75 in). Match the envelope to the card you print.",
         "Weigh a sealed sample with all inserts before you buy stamps; postage rules depend on weight and destination."
+      ]
+    },
+    {
+      "heading": "Check the mailing rules before you order envelopes",
+      "paragraphs": [
+        "In the US, the Postal Service treats a letter-size piece as nonmachinable if it breaks one of the rules in its Domestic Mail Manual, and a nonmachinable letter pays a $0.49 surcharge on the price list. Several of those rules reach invitation suites:"
+      ],
+      "items": [
+        "Shape: length divided by height must be between 1.3 and 2.5. A square envelope is 1.0, so it is nonmachinable. Business Envelopes notes the same for square invitation envelopes.",
+        "Rigidity: a piece that does not bend easily is nonmachinable, which can catch heavy board stock with laminate.",
+        "Closures and lumps: clasps, strings, buttons, and items such as a wax seal or a coin that make the thickness uneven can trigger the surcharge.",
+        "Orientation: an address parallel to the shorter side of the piece is nonmachinable.",
+        "Size and weight: a letter is at most 11½ in long, 6⅛ in high and ¼ in thick, and no more than 3.5 oz. Heavier pieces pay flat-size prices."
+      ],
+      "after": [
+        "An A7 envelope is 7.25 in long and 5.25 in high, an aspect ratio of about 1.38, comfortably inside the allowed range.",
+        "Business Envelopes also points out that a full suite with an outer envelope, inner envelope, card, RSVP card and reply envelope often weighs two ounces or more. Take a finished, sealed sample to the post office before you buy stamps for the whole run."
       ]
     },
     {
@@ -105,6 +123,14 @@
       "a": "It is not meant for print. The share JPG is 1080×1500 px at screen resolution. Use the print PDF or 300 DPI JPG for paper."
     },
     {
+      "q": "Do square wedding invitations cost more to mail?",
+      "a": "Yes, in the US. USPS requires a letter's length divided by height to be between 1.3 and 2.5, and a square envelope is 1.0. It is nonmachinable and pays a $0.49 surcharge. A 5×7 in card in an A7 envelope has a ratio of about 1.38 and avoids it."
+    },
+    {
+      "q": "Does a wax seal change the postage?",
+      "a": "It can. Items that make the thickness uneven, such as a wax seal, can make a letter nonmachinable and add the surcharge. Mail a finished sample, seal included, and ask the post office to check it before you buy stamps for the whole run."
+    },
+    {
       "q": "What paper weight should wedding invitations use?",
       "a": "Heavy card stock is typical; many couples choose around 110 lb cover (about 300 gsm) or heavier. Your printer can recommend a weight that fits your envelope and postage."
     }
@@ -113,6 +139,18 @@
     {
       "label": "Business Envelopes: Greeting card envelope sizes (A7 for 5×7 in cards)",
       "url": "https://www.businessenvelopes.com/greeting-card-envelope-sizes"
+    },
+    {
+      "label": "Cardstock Warehouse: Sizing your print file (5×7 in trim, bleed and safe zone)",
+      "url": "https://www.cardstock-warehouse.com/pages/sizing-your-print-file"
+    },
+    {
+      "label": "USPS Domestic Mail Manual 101: Physical standards for letters and nonmachinable criteria",
+      "url": "https://pe.usps.com/text/dmm300/101.htm"
+    },
+    {
+      "label": "USPS Notice 123: Price list (nonmachinable letter surcharge)",
+      "url": "https://pe.usps.com/text/DMM300/Notice123.htm"
     }
   ]
 }

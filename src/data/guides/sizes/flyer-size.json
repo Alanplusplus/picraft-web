@@ -1,10 +1,10 @@
 {
   "title": "Flyer Size: US Letter 8.5×11 in, Bleed & Social 1080×1350",
   "h1": "Event Flyer Size for Print and Social Media",
-  "description": "Event flyer sizes: US Letter 8.5×11 in with bleed for print, 1080×1350 px feed posts, 1080×1920 px Stories, and A4 dimensions in millimeters.",
+  "description": "Event flyer sizes: US Letter 8.5×11 in with 0.125 in bleed and a 0.25 in safe margin, 1080×1350 px feed posts, 1080×1920 px Stories, and A4 in millimeters.",
   "summary": "Print event flyers at US Letter 8.5×11 in with 0.125 in bleed (8.75×11.25 in at 300 DPI). Post a 1080×1350 px (4:5) image on Instagram and Facebook feeds, and use 1080×1920 px (9:16) for Stories. Bold, simple layouts stay readable when enlarged or viewed small.",
   "published": "2026-10-09",
-  "updated": "2026-10-09",
+  "updated": "2026-10-24",
   "scene": "event-flyer-maker",
   "relatedScenes": ["birthday-invitation-maker", "restaurant-menu-maker", "youtube-thumbnail-maker"],
   "relatedGuides": ["menu-size", "birthday-invitation-size", "blog:youtube-thumbnail-best-practices"],
@@ -39,6 +39,22 @@
       ]
     },
     {
+      "heading": "What printers ask for on an 8.5×11 in flyer",
+      "paragraphs": [
+        "Printers' own templates agree on the main numbers. U.S. Press lists an 8.5×11 in trim, an 8.75×11.25 in full bleed file and an 8.25×10.75 in safe area. VistaPrint's flyer guide asks for 0.125 in (3 mm) of bleed on each side and for text, logos and QR codes to stay at least 0.25 in (6 mm) inside the trim line, which is the same 8.25×10.75 in box.",
+        "They are not all identical. VistaPrint's crop-marks page lists a Letter file of 8.625×11.125 in with bleed and a safety line at 8.375×10.875 in, a smaller margin than its own flyer guide. When a shop gives you a template, use its numbers instead of any table, including this one."
+      ],
+      "items": [
+        "Bleed: 0.125 in on every side, so the file is 8.75×11.25 in.",
+        "Safe area: keep text, logos and QR codes 0.25 in inside the trim line. The 0.125 in some printers accept is a minimum, not a target.",
+        "Resolution: 300 DPI at the printed size. Social images pulled from a feed are often too compressed to hold up.",
+        "Format: a print-ready PDF is the usual request, with fonts embedded or outlined and no visible guide lines in the file."
+      ],
+      "after": [
+        "Color is the one place PiCraft differs. VistaPrint asks for CMYK files, while PiCraft's print PDF and JPG are RGB and are not converted. Ask the shop whether it converts RGB files, expect saturated blues and greens to print slightly duller, and order a proof if a brand color matters."
+      ]
+    },
+    {
       "heading": "How large should you print a flyer?",
       "paragraphs": [
         "8.5×11 in is the default handout in the US: cheap to copy, fits clipboards and shop windows, and matches what many venues expect on a cork board.",
@@ -49,8 +65,8 @@
     {
       "heading": "Instagram, Facebook and Stories sizes",
       "paragraphs": [
-        "Feed posts: 1080×1350 px at a 4:5 aspect ratio. Meta's ad specifications list 4:5 portrait among supported feed ratios, with at least 600 px on the short side for many placements. A 4:5 image uses more vertical space in the feed than a square post.",
-        "Stories and similar full-screen vertical slots: 1080×1920 px at 9:16. PiCraft centers the flyer on a blurred background in the story export so the event name stays readable without redesigning the art.",
+        "Feed posts: 1080×1350 px at a 4:5 aspect ratio. Instagram's Help Center says it keeps a photo at its original resolution, up to a width of 1080 px, when the aspect ratio is between 1.91:1 and 3:4 (a height of 566 to 1440 px at 1080 px wide). 1080×1350 px sits inside that range, and it uses more vertical space in the feed than a square post. A ratio outside the range is cropped, and a wider file is sized down to 1080 px.",
+        "Stories and similar full-screen vertical slots: PiCraft exports 1080×1920 px at 9:16. It centers the flyer on a blurred background in the story export so the event name stays readable without redesigning the art.",
         "Keep the event name and date high in the frame. Profile grids may crop the sides of 4:5 posts when shown as thumbnails, so avoid putting critical text in the far left or right corners."
       ]
     },
@@ -89,11 +105,19 @@
     },
     {
       "q": "What size should a flyer be for Instagram?",
-      "a": "1080×1350 px (4:5 portrait) for the main feed. Meta supports 4:5 among feed aspect ratios; taller uploads may be cropped in some views."
+      "a": "1080×1350 px (4:5 portrait) for the main feed. Instagram keeps photos at original resolution up to 1080 px wide when the aspect ratio is between 1.91:1 and 3:4, and 4:5 is inside that range. Ratios outside it are cropped."
     },
     {
       "q": "What size are Instagram or Facebook Stories?",
       "a": "1080×1920 px at a 9:16 aspect ratio for full-screen vertical placements."
+    },
+    {
+      "q": "How far from the edge should text be on a flyer?",
+      "a": "At least 0.25 in (6 mm) inside the trim line, according to VistaPrint's flyer guide. U.S. Press's 8.5×11 in template uses the same margin, an 8.25×10.75 in safe area. Backgrounds should run all the way to the 0.125 in bleed edge."
+    },
+    {
+      "q": "Are PiCraft flyer files CMYK?",
+      "a": "No. The print PDF and JPG are RGB. Printers such as VistaPrint ask for CMYK, so ask whether your shop converts RGB files and order a proof if exact colors matter."
     },
     {
       "q": "How do I convert Letter to A4?",
@@ -110,8 +134,20 @@
   ],
   "sources": [
     {
-      "label": "Meta for Developers: Instagram media requirements (4:5 aspect ratio)",
-      "url": "https://developers.facebook.com/docs/instagram/ads-api/reference/media-requirements/"
+      "label": "Instagram Help Center: Image resolution of photos you share on Instagram",
+      "url": "https://help.instagram.com/1631821640426723/"
+    },
+    {
+      "label": "VistaPrint: How to design a flyer that works (bleed, safe margin, CMYK, 300 DPI)",
+      "url": "https://www.vistaprint.com/hub/how-to-design-a-flyer"
+    },
+    {
+      "label": "VistaPrint: Crop marks and bleed explained (standard US print measurements)",
+      "url": "https://www.vistaprint.com/hub/crop-marks-explained"
+    },
+    {
+      "label": "U.S. Press: 8.5×11 in flyer template (trim, bleed and safe area)",
+      "url": "https://www.uspress.com/page/-eight-five-x-eleven-flyer"
     }
   ]
 }
