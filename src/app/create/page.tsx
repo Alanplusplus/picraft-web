@@ -1,16 +1,23 @@
 import Link from "next/link";
 
+import { Breadcrumb } from "@/components/breadcrumb";
+import { JsonLd } from "@/components/json-ld";
 import { SceneCard } from "@/components/scene-card";
-import { getScenesByCategory } from "@/lib/scenes";
+import { getScenes, getScenesByCategory, isIndexable } from "@/lib/scenes";
+import { breadcrumbLd, collectionLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 import { CATEGORIES, categoryPath, type CategoryId } from "@/lib/site";
 
-export const metadata = pageMetadata({
-  absoluteTitle: "All PiCraft Makers – Invitations, Cards, Thumbnails & More",
-  description:
-    "All PiCraft makers: photo trends, product photos, invitations, menus, flyers, business cards, thumbnails, banners, book covers, stickers and t-shirt designs.",
-  path: "/create",
-});
+const TITLE = "All PiCraft Makers – Invitations, Cards, Thumbnails & More";
+const DESCRIPTION =
+  "All PiCraft makers: photo trends, product photos, invitations, menus, flyers, business cards, thumbnails, banners, book covers, stickers and t-shirt designs.";
+
+export const metadata = pageMetadata({ absoluteTitle: TITLE, description: DESCRIPTION, path: "/create" });
+
+const CRUMBS = [
+  { name: "Home", path: "/" },
+  { name: "All makers", path: "/create" },
+];
 
 const INTROS: Record<CategoryId, string> = {
   trends:
@@ -42,9 +49,23 @@ const GUIDE = [
 ];
 
 export default function CreatePage() {
+  const makers = getScenes().filter(isIndexable);
+
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
-      <h1 className="text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">What do you need to make?</h1>
+    <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+      <JsonLd
+        data={[
+          breadcrumbLd(CRUMBS),
+          collectionLd({
+            name: "PiCraft makers",
+            description: DESCRIPTION,
+            path: "/create",
+            items: makers.map((scene) => ({ name: scene.name, path: `/create/${scene.slug}` })),
+          }),
+        ]}
+      />
+      <Breadcrumb crumbs={CRUMBS} />
+      <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">What do you need to make?</h1>
       <p className="mt-3 max-w-3xl text-ink-700">
         Pick the thing you need. Each maker asks only for the details that matter, designs it with AI and gives you
         files at the exact size and format you&apos;ll use them in. You never write a prompt, and every maker page

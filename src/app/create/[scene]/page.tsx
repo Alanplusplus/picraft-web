@@ -16,7 +16,7 @@ import { validateInternalLinks } from "@/lib/links";
 import { getContent, getExamples, getScene, getScenes, isIndexable, logIndexability, toClientScene } from "@/lib/scenes";
 import { faqLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
-import { absoluteUrl, formatDate, SITE_NAME } from "@/lib/site";
+import { absoluteUrl, CATEGORIES, categoryPath, formatDate, SITE_NAME } from "@/lib/site";
 import { getStyleFile, getStyleLinks, isStyleIndexable, styleExamples, styleLabel, stylePath } from "@/lib/styles";
 
 export const dynamicParams = false;
@@ -53,6 +53,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
   const styleFile = getStyleFile(scene.slug);
   const styleEntries = styleFile?.styles.filter((entry) => isStyleIndexable(styleFile, entry)) ?? [];
   const guides = getGuidesForScene(scene.slug);
+  const category = CATEGORIES.find((entry) => entry.id === scene.category);
   // Photo makers show a before / after slider. When the maker has styles, one example per style is enough here;
   // the other examples of a style are on its own page.
   const showcase = examples.some((example) => example.before)
@@ -100,7 +101,17 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
 
         <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_440px]">
           <section>
-            <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">{scene.badge}</span>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+              <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">{scene.badge}</span>
+              {category && (
+                <span className="text-sm text-ink-500">
+                  Part of{" "}
+                  <Link href={categoryPath(category.id)} className="font-medium text-brand-700 hover:underline">
+                    {category.name}
+                  </Link>
+                </span>
+              )}
+            </div>
             <h1 className="mt-3 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">{scene.seo.h1}</h1>
             <div className="mt-4 space-y-3 text-base leading-relaxed text-ink-700">
               {scene.seo.intro.map((paragraph) => (

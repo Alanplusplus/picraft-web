@@ -27,6 +27,8 @@ interface PageMeta {
    * list would take priority over that file, so the default image is left out.
    */
   ownShareImage?: boolean;
+  /** Path of an RSS feed to advertise with `<link rel="alternate" type="application/rss+xml">`. */
+  feed?: string;
 }
 
 /**
@@ -35,7 +37,7 @@ interface PageMeta {
  * so every page goes through this helper to keep `siteName`, `type` and `locale`.
  * The share image comes from the `opengraph-image` file of the nearest route segment.
  */
-export function pageMetadata({ title, absoluteTitle, description, path, noindex, ownShareImage }: PageMeta): Metadata {
+export function pageMetadata({ title, absoluteTitle, description, path, noindex, ownShareImage, feed }: PageMeta): Metadata {
   const socialTitle = absoluteTitle ?? (title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE);
   // Next.js checks whether the `images` key exists, so with `ownShareImage` the key must be left out
   // entirely. `images: undefined` would still count as set and hide the segment's `opengraph-image` file.
@@ -43,7 +45,7 @@ export function pageMetadata({ title, absoluteTitle, description, path, noindex,
   return {
     title: absoluteTitle ? { absolute: absoluteTitle } : title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: path, ...(feed ? { types: { "application/rss+xml": feed } } : {}) },
     robots: noindex ? { index: false, follow: true } : undefined,
     openGraph: {
       type: "website",

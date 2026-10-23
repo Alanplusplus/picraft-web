@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/blog/[slug]">): P
     description: guide.description,
     path: guidePath(guide),
     noindex: !isGuideIndexable(guide),
+    feed: "/blog/feed.xml",
   });
 }
 

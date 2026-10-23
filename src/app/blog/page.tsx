@@ -9,7 +9,7 @@ const TITLE = "PiCraft Blog: Print, Platform and Design File Guides";
 const DESCRIPTION =
   "Practical guides on bleed and print files, YouTube thumbnails, product photos, stickers, t-shirt files and invitations, from the team behind PiCraft.";
 
-export const metadata = pageMetadata({ absoluteTitle: TITLE, description: DESCRIPTION, path: "/blog" });
+export const metadata = pageMetadata({ absoluteTitle: TITLE, description: DESCRIPTION, path: "/blog", feed: "/blog/feed.xml" });
 
 const CRUMBS = [
   { name: "Home", path: "/" },

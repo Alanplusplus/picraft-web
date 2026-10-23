@@ -232,7 +232,7 @@ export function feedFileName(category: Category): string {
   return `${category.slug}.xml`;
 }
 
-function escapeXml(text: string): string {
+export function escapeXml(text: string): string {
   return text
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
