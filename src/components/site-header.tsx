@@ -8,10 +8,11 @@ import { useState } from "react";
 import { SITE_NAME } from "@/lib/site";
 
 import { AccountMenu } from "./account-menu";
+import { Dropdown } from "./dropdown";
 
 function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-1.5">
+    <Link href="/" className="flex shrink-0 items-center gap-1.5">
       <Image src="/images/logo-64.png" alt="" width={28} height={28} className="h-7 w-7" priority />
       <Image
         src="/images/wordmark.png"
@@ -25,27 +26,76 @@ function Logo() {
   );
 }
 
-const NAV_LINKS = [
+interface NavItem {
+  href: string;
+  label: string;
+  /** One line under the label in the Resources menu. */
+  hint?: string;
+}
+
+/** The things people come to do. They stay in the bar. */
+const PRIMARY_LINKS: NavItem[] = [
+  { href: "/text-to-image", label: "Text to image" },
+  { href: "/image-to-image", label: "Image to image" },
   { href: "/create", label: "All makers" },
-  { href: "/sizes", label: "Size guides" },
-  { href: "/tools", label: "Free tools" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/blog", label: "Blog" },
-  { href: "/history", label: "My files" },
+  { href: "/pricing", label: "Pricing" },
 ];
 
-function NavLink({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
-  const pathname = usePathname();
-  const active = pathname === href || pathname.startsWith(`${href}/`);
+/** Reading and reference pages. They share one menu so the bar stays short; the footer lists them too. */
+const RESOURCE_LINKS: NavItem[] = [
+  { href: "/sizes", label: "Size guides", hint: "Exact pixel sizes, bleed and platform rules" },
+  { href: "/tools", label: "Free tools", hint: "Check an image against a platform's limits" },
+  { href: "/gallery", label: "Gallery", hint: "Designs made with PiCraft, with the words used" },
+  { href: "/blog", label: "Blog", hint: "How-tos for print, listings and social" },
+];
+
+function isActive(pathname: string, href: string): boolean {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+const BAR_ITEM = "whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium transition";
+
+function NavLink({ href, label }: NavItem) {
+  const active = isActive(usePathname(), href);
   return (
     <Link
       href={href}
-      onClick={onClick}
       aria-current={active ? "page" : undefined}
-      className={`text-sm transition hover:text-ink-950 ${active ? "font-medium text-ink-950" : "text-ink-700"}`}
+      className={`${BAR_ITEM} ${active ? "bg-ink-100 text-ink-950" : "text-ink-700 hover:bg-ink-100 hover:text-ink-950"}`}
     >
       {label}
     </Link>
+  );
+}
+
+function ResourcesMenu() {
+  const pathname = usePathname();
+  const active = RESOURCE_LINKS.some((link) => isActive(pathname, link.href));
+  return (
+    <Dropdown
+      button="Resources"
+      buttonClassName={(open) =>
+        `${BAR_ITEM} flex items-center gap-1 ${
+          active || open ? "bg-ink-100 text-ink-950" : "text-ink-700 hover:bg-ink-100 hover:text-ink-950"
+        }`
+      }
+      width="w-72"
+    >
+      <ul>
+        {RESOURCE_LINKS.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              aria-current={isActive(pathname, link.href) ? "page" : undefined}
+              className="block rounded-xl px-3 py-2.5 transition hover:bg-ink-50 aria-[current=page]:bg-brand-50"
+            >
+              <span className="block text-sm font-semibold text-ink-950">{link.label}</span>
+              <span className="mt-0.5 block text-xs leading-snug text-ink-500">{link.hint}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Dropdown>
   );
 }
 
@@ -77,30 +127,50 @@ function MenuIcon({ open }: { open: boolean }) {
   );
 }
 
+function MobileGroup({ title, links, onNavigate }: { title: string; links: NavItem[]; onNavigate: () => void }) {
+  return (
+    <div>
+      <p className="px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-[0.12em] text-ink-500">{title}</p>
+      {links.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          onClick={onNavigate}
+          className="block rounded-lg px-3 py-2.5 text-sm font-medium text-ink-800 hover:bg-ink-100"
+        >
+          {link.label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 export function SiteHeader() {
   // The menu is open only for the page it was opened on, so navigating closes it without an effect.
   const pathname = usePathname();
   const [openedOn, setOpenedOn] = useState<string | null>(null);
   const menuOpen = openedOn === pathname;
   const setMenuOpen = (open: boolean) => setOpenedOn(open ? pathname : null);
+  const close = () => setMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-ink-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+    <header className="sticky top-0 z-30 border-b border-ink-200/80 bg-paper/85 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-6">
         <Logo />
 
-        <nav className="hidden items-center gap-5 md:flex">
-          {NAV_LINKS.map((link) => (
+        <nav aria-label="Main" className="ml-4 hidden flex-1 items-center gap-0.5 lg:flex">
+          {PRIMARY_LINKS.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
+          <ResourcesMenu />
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-2">
           <AccountMenu />
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg hover:bg-ink-100 md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-xl border border-ink-200 bg-white hover:bg-ink-50 lg:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -111,18 +181,15 @@ export function SiteHeader() {
       </div>
 
       {menuOpen && (
-        <div id="mobile-menu" className="border-t border-ink-200 bg-white md:hidden">
-          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink-800 hover:bg-ink-50"
-              >
-                {link.label}
-              </Link>
-            ))}
+        <div id="mobile-menu" className="border-t border-ink-200 bg-paper lg:hidden">
+          <nav aria-label="Main" className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+            <MobileGroup title="Create" links={PRIMARY_LINKS.slice(0, 3)} onNavigate={close} />
+            <MobileGroup
+              title="Account"
+              links={[PRIMARY_LINKS[3], { href: "/history", label: "My files" }]}
+              onNavigate={close}
+            />
+            <MobileGroup title="Resources" links={RESOURCE_LINKS} onNavigate={close} />
           </nav>
         </div>
       )}

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 
 import { Analytics } from "@/components/analytics";
+import { PurchaseReturn } from "@/components/purchase-return";
 import { SessionProvider } from "@/components/session-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="min-h-screen font-sans">
         <SessionProvider>
           <SiteHeader />
+          <PurchaseReturn />
           <main>{children}</main>
           <SiteFooter />
         </SessionProvider>

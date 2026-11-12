@@ -13,7 +13,7 @@ import { RichText } from "./rich-text";
 import { SceneCard } from "./scene-card";
 import { TrackedLink } from "./tracked-link";
 
-const H2 = "text-2xl font-bold tracking-tight text-ink-950";
+const H2 = "text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl";
 
 function MakerCta({ sceneSlug, lead, position }: { sceneSlug: string; lead: string; position: "guide_top" | "guide_bottom" }) {
   const scene = getScene(sceneSlug);

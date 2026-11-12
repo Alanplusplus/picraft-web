@@ -20,13 +20,13 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
         <button
           type="button"
           onClick={reset}
-          className="rounded-xl bg-ink-950 px-5 py-3 text-sm font-semibold text-white hover:bg-ink-800"
+          className="btn-primary"
         >
           Try again
         </button>
         <Link
           href="/create"
-          className="rounded-xl border border-ink-300 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-ink-500"
+          className="btn-secondary"
         >
           See all makers
         </Link>

@@ -2,7 +2,7 @@ import type { ContentItem, SceneContent } from "@/lib/scenes";
 
 import { RichText } from "./rich-text";
 
-const H2 = "text-2xl font-bold tracking-tight text-ink-950";
+const H2 = "text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl";
 
 function Cards({ items }: { items: ContentItem[] }) {
   return (

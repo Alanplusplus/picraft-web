@@ -8,9 +8,12 @@ import { prepareUpload } from "@/lib/image-file";
 import type { PinShare } from "@/lib/pinterest-save";
 import type { ClientScene, SceneField, TaskView } from "@/lib/types";
 
+import { CreditsDialog, type PendingTask } from "./credits-dialog";
 import { ResultFiles } from "./result-files";
 import { Select } from "./select";
 import { useSession } from "./session-provider";
+import { UploadNotice } from "./upload-notice";
+import { type Phase, StageEmpty, StageFailed, StageWorking, Workbench } from "./workbench";
 
 const POLL_INTERVAL_MS = 3000;
 const POLL_TIMEOUT_MS = 6 * 60 * 1000;
@@ -20,8 +23,6 @@ interface ImageState {
   url: string | null;
   uploading: boolean;
 }
-
-type Phase = "idle" | "submitting" | "processing" | "done" | "failed";
 
 function initialValues(scene: ClientScene): Record<string, string> {
   const values: Record<string, string> = {};
@@ -39,8 +40,7 @@ function matches(when: Record<string, string | string[]> | undefined, values: Re
   );
 }
 
-const inputClass =
-  "w-full rounded-lg border border-ink-300 bg-white px-3 py-2 text-sm text-ink-900 placeholder:text-ink-500 focus:border-ink-900 focus:outline-none focus:ring-1 focus:ring-ink-900";
+const inputClass = "field";
 
 /** Pages of the maker's looks, by option value, so a pin saved from a result can link to the page of its look. */
 export interface StyleLinks {
@@ -55,8 +55,14 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
   const [madeWith, setMadeWith] = useState<string | undefined>();
   const [images, setImages] = useState<Record<string, ImageState>>({});
   const [phase, setPhase] = useState<Phase>("idle");
+  // How many designs were started; the workbench uses it to know when a new one begins.
+  const [run, setRun] = useState(0);
+  // The window that sells credits when Create is pressed without enough of them.
+  const [payOpen, setPayOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [task, setTask] = useState<TaskView | null>(null);
+  // The last attempt failed and its credits came back, so trying again is safe.
+  const [refunded, setRefunded] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const cancelled = useRef(false);
 
@@ -85,7 +91,7 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
   }, [outOfCredits, scene.slug]);
 
   /** Parameters shared by the events of one generation. `style` is only set for makers that have a style field. */
-  function eventParams(extra: Record<string, string | number> = {}) {
+  function eventParams(extra: Record<string, string | number | boolean> = {}) {
     return { scene: scene.slug, style: values.style || undefined, ...extra };
   }
 
@@ -129,8 +135,9 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
       }
       if (res.data.status === "failed") {
         setError(res.data.error);
+        setRefunded(true);
         setPhase("failed");
-        trackEvent("generate_fail", eventParams({ reason: "task_failed" }));
+        trackEvent("generate_fail", eventParams({ reason: res.data.error_code ?? "task_failed" }));
         await refresh();
         return;
       }
@@ -142,10 +149,13 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
     }
   }
 
-  async function onSubmit(event: React.FormEvent) {
+  function onSubmit(event: React.FormEvent) {
     event.preventDefault();
+    void start();
+  }
+
+  async function start() {
     setError(null);
-    setTask(null);
 
     const imageUrls: Record<string, string> = {};
     for (const field of scene.fields) {
@@ -158,15 +168,33 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
       }
     }
 
+    // Not enough credits: the form stays exactly as it is and the credits window opens on top of it.
+    if (outOfCredits) {
+      setPayOpen(true);
+      return;
+    }
+
+    setTask(null);
+    setRefunded(false);
     setMadeWith(styleLinks ? values[styleLinks.field] : undefined);
+    setRun((n) => n + 1);
     setPhase("submitting");
-    trackEvent("generate_submit", eventParams({ cost: scene.cost }));
+    trackEvent("generate_submit", eventParams({ cost: scene.cost, retry: refunded }));
     const startedAt = Date.now();
     const res = await api.generate(scene.slug, values, imageUrls);
     if (res.code !== 200 || !res.data) {
       setError(res.message);
       setPhase("idle");
-      const reason = res.code === 402 ? "no_credits" : res.code === 0 ? "network" : "rejected";
+      const reason =
+        res.code === 402
+          ? "no_credits"
+          : res.code === 0
+            ? "network"
+            : res.code === 422
+              ? "moderation"
+              : res.code === 429
+                ? "rate_limited"
+                : "rejected";
       trackEvent("generate_fail", eventParams({ reason }));
       if (res.code === 402) await refresh();
       return;
@@ -187,121 +215,163 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
     styleLabel: madeWithOption?.label,
   };
 
+  const downloads = outputs.map((o) => o.label);
+
+  const pending: PendingTask = {
+    title: scene.name,
+    image: Object.values(images).find((img) => img.preview)?.preview,
+    details: scene.fields
+      .filter((field) => field.type !== "image" && values[field.key])
+      .map((field) => {
+        // A choice reads as its name, what the visitor typed as a quote.
+        const chosen = field.options?.find((option) => option.value === values[field.key])?.label;
+        return chosen ?? `“${values[field.key].replace(/\s+/g, " ").slice(0, 70)}”`;
+      })
+      .slice(0, 3),
+    downloads,
+    cost: scene.cost,
+  };
+
   return (
-    <div className="rounded-2xl border border-ink-200 bg-white p-5 shadow-sm sm:p-6">
-      <form onSubmit={onSubmit} className="space-y-4">
-        {scene.fields.map((field) => (
-          <div key={field.key}>
-            <label
-              id={`l-${field.key}`}
-              htmlFor={field.type === "select" ? undefined : `f-${field.key}`}
-              className="mb-1 block text-sm font-medium text-ink-900"
-            >
-              {field.label}
-              {field.required && field.type !== "select" && <span className="text-brand-700"> *</span>}
-            </label>
-            {field.type === "image" ? (
-              <label
-                htmlFor={`f-${field.key}`}
-                className="flex cursor-pointer items-center gap-3 rounded-lg border border-dashed border-ink-300 bg-ink-50 p-3 hover:border-ink-500"
+    <>
+      <Workbench
+        phase={phase}
+        run={run}
+        input={
+          <div className="panel p-5 sm:p-6">
+            <form onSubmit={onSubmit} className="space-y-4">
+              {scene.fields.map((field) => (
+                <div key={field.key}>
+                  <label
+                    id={`l-${field.key}`}
+                    htmlFor={field.type === "select" ? undefined : `f-${field.key}`}
+                    className="mb-1 block text-sm font-medium text-ink-900"
+                  >
+                    {field.label}
+                    {field.required && field.type !== "select" && <span className="text-brand-700"> *</span>}
+                  </label>
+                  {field.type === "image" ? (
+                    <>
+                      <label
+                        htmlFor={`f-${field.key}`}
+                        className="flex cursor-pointer items-center gap-3 rounded-lg border border-dashed border-ink-300 bg-ink-50 p-3 hover:border-ink-500"
+                      >
+                        {images[field.key] ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={images[field.key].preview} alt="" className="h-16 w-16 rounded-md object-cover" />
+                        ) : (
+                          <span className="flex h-16 w-16 items-center justify-center rounded-md bg-white text-2xl text-ink-500">
+                            +
+                          </span>
+                        )}
+                        <span className="text-sm text-ink-700">
+                          {images[field.key]?.uploading
+                            ? "Uploading…"
+                            : images[field.key]
+                              ? "Tap to replace"
+                              : "Upload a JPG, PNG or WebP photo"}
+                        </span>
+                        <input
+                          id={`f-${field.key}`}
+                          type="file"
+                          accept="image/jpeg,image/png,image/webp"
+                          className="sr-only"
+                          onChange={(e) => onPickImage(field, e.target.files?.[0])}
+                        />
+                      </label>
+                      <UploadNotice />
+                    </>
+                  ) : field.type === "select" ? (
+                    <Select
+                      id={`f-${field.key}`}
+                      labelledBy={`l-${field.key}`}
+                      options={field.options ?? []}
+                      value={values[field.key]}
+                      onChange={(value) => setValues((v) => ({ ...v, [field.key]: value }))}
+                    />
+                  ) : field.type === "textarea" ? (
+                    <textarea
+                      id={`f-${field.key}`}
+                      className={inputClass}
+                      rows={field.rows ?? 3}
+                      maxLength={field.maxLength}
+                      placeholder={field.placeholder}
+                      required={field.required}
+                      value={values[field.key]}
+                      onChange={(e) => setValues((v) => ({ ...v, [field.key]: e.target.value }))}
+                    />
+                  ) : (
+                    <input
+                      id={`f-${field.key}`}
+                      className={inputClass}
+                      maxLength={field.maxLength}
+                      placeholder={field.placeholder}
+                      required={field.required}
+                      value={values[field.key]}
+                      onChange={(e) => setValues((v) => ({ ...v, [field.key]: e.target.value }))}
+                    />
+                  )}
+                  {field.help && <p className="mt-1 text-xs text-ink-500">{field.help}</p>}
+                </div>
+              ))}
+
+              {error && <p className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-700">{error}</p>}
+
+              <button
+                type="submit"
+                disabled={!ready || busy || uploading}
+                className={`${phase === "done" ? "btn-secondary" : "btn-primary"} w-full`}
               >
-                {images[field.key] ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={images[field.key].preview} alt="" className="h-16 w-16 rounded-md object-cover" />
-                ) : (
-                  <span className="flex h-16 w-16 items-center justify-center rounded-md bg-white text-2xl text-ink-500">
-                    +
-                  </span>
-                )}
-                <span className="text-sm text-ink-700">
-                  {images[field.key]?.uploading
-                    ? "Uploading…"
-                    : images[field.key]
-                      ? "Tap to replace"
-                      : "Upload a JPG, PNG or WebP photo"}
-                </span>
-                <input
-                  id={`f-${field.key}`}
-                  type="file"
-                  accept="image/jpeg,image/png,image/webp"
-                  className="sr-only"
-                  onChange={(e) => onPickImage(field, e.target.files?.[0])}
-                />
-              </label>
-            ) : field.type === "select" ? (
-              <Select
-                id={`f-${field.key}`}
-                labelledBy={`l-${field.key}`}
-                options={field.options ?? []}
-                value={values[field.key]}
-                onChange={(value) => setValues((v) => ({ ...v, [field.key]: value }))}
-              />
-            ) : field.type === "textarea" ? (
-              <textarea
-                id={`f-${field.key}`}
-                className={inputClass}
-                rows={field.rows ?? 3}
-                maxLength={field.maxLength}
-                placeholder={field.placeholder}
-                required={field.required}
-                value={values[field.key]}
-                onChange={(e) => setValues((v) => ({ ...v, [field.key]: e.target.value }))}
-              />
-            ) : (
-              <input
-                id={`f-${field.key}`}
-                className={inputClass}
-                maxLength={field.maxLength}
-                placeholder={field.placeholder}
-                required={field.required}
-                value={values[field.key]}
-                onChange={(e) => setValues((v) => ({ ...v, [field.key]: e.target.value }))}
-              />
-            )}
-            {field.help && <p className="mt-1 text-xs text-ink-500">{field.help}</p>}
+                {phase === "submitting"
+                  ? "Starting…"
+                  : phase === "processing"
+                    ? `Designing… ${elapsed}s`
+                    : `${refunded && phase === "failed" ? "Try again" : phase === "done" ? "Create another" : "Create"} · ${scene.cost} ${scene.cost === 1 ? "credit" : "credits"}`}
+              </button>
+              {outOfCredits && !busy && (
+                <p className="text-center text-xs text-ink-500">
+                  You have {account?.credits ?? 0} {account?.credits === 1 ? "credit" : "credits"} and this needs{" "}
+                  {scene.cost}. Press Create to add credits; what you entered stays here.
+                </p>
+              )}
+              {/* On a phone the result area is hidden until something is made, so the files are named here. */}
+              {!busy && outputs.length > 0 && (
+                <p className="text-xs leading-relaxed text-ink-500 lg:hidden">
+                  You&apos;ll download: {outputs.map((o) => o.label).join(" · ")}
+                </p>
+              )}
+            </form>
           </div>
-        ))}
-
-        <div className="rounded-lg bg-ink-50 p-3">
-          <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">You&apos;ll download</p>
-          <ul className="mt-1 space-y-0.5 text-sm text-ink-800">
-            {outputs.map((o) => (
-              <li key={o.id}>{o.label}</li>
-            ))}
-          </ul>
-        </div>
-
-        {error && <p className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-700">{error}</p>}
-
-        {outOfCredits && !busy ? (
-          <div className="space-y-2 rounded-lg border border-ink-200 p-3">
-            <p className="text-sm text-ink-800">
-              You&apos;ve used your free credits. Please check back later.
-            </p>
-          </div>
-        ) : (
-          <button
-            type="submit"
-            disabled={!ready || busy || uploading}
-            className="w-full rounded-xl bg-ink-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-ink-800 disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            {phase === "submitting"
-              ? "Starting…"
-              : phase === "processing"
-                ? `Designing… ${elapsed}s`
-                : `Create · ${scene.cost} ${scene.cost === 1 ? "credit" : "credits"}`}
-          </button>
-        )}
-        {phase === "processing" && (
-          <p className="text-center text-xs text-ink-500">Most designs take 30–90 seconds. You can keep this tab open.</p>
-        )}
-      </form>
-
-      {phase === "done" && task && (
-        <div className="mt-6 border-t border-ink-200 pt-6">
-          <ResultFiles task={task} source="generator" share={share} />
-        </div>
-      )}
-    </div>
+        }
+        output={
+          phase === "done" && task ? (
+            <ResultFiles key={task.task_id} task={task} source="generator" share={share} />
+          ) : phase === "submitting" || phase === "processing" ? (
+            <StageWorking
+              ratio="4 / 3"
+              elapsed={elapsed}
+              label="Designing…"
+              hint="Most designs take 30–90 seconds. You can keep this tab open."
+              backdrop={Object.values(images)[0]?.preview}
+            />
+          ) : phase === "failed" ? (
+            <StageFailed refunded={refunded} />
+          ) : (
+            <StageEmpty ratio="4 / 3" downloads={downloads} />
+          )
+        }
+      />
+      <CreditsDialog
+        open={payOpen}
+        onClose={() => setPayOpen(false)}
+        source="scene"
+        task={pending}
+        enough={!outOfCredits}
+        onCreate={() => {
+          setPayOpen(false);
+          void start();
+        }}
+      />
+    </>
   );
 }

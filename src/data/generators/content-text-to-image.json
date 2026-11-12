@@ -1,0 +1,129 @@
+{
+  "updated": "2026-11-10",
+  "overview": {
+    "heading": "How the Text to Image Generator works",
+    "paragraphs": [
+      "You write a description, choose Nano Banana or GPT Image, and pick a shape and a resolution. PiCraft sends your words to the model you chose, exactly as you typed them, and gives you back the file the model made. There is no style menu, no template and no crop, so what you write is what the model sees, and what the model returns is what you download.",
+      "That makes the description the whole job. If you want a watercolor, say watercolor. If you want a photo taken at golden hour, say that. The two models read the same sentence a little differently, which is why the model switch is there: run an idea on both, keep the better image, and use that result to work out what to change next.",
+      "Every image is a new roll of the dice, so a second or third try of the same idea is normal. Each image uses credits (1 for 1K, 2 for 2K, 3 for 4K), and the credits come back automatically when an image can't be made. A good habit is to explore at 1K and spend the larger resolutions on the version you are going to use."
+    ]
+  },
+  "whatYouGet": [
+    {
+      "title": "The original file",
+      "description": "You download the image as the model returned it, at the pixel size that belongs to the shape and resolution you chose. Nothing is cropped, recolored or compressed on our side."
+    },
+    {
+      "title": "A smaller JPG copy",
+      "description": "Next to the original comes a JPG copy that is lighter to send, post or attach. Use the original when you need every pixel and the JPG when you need a small file."
+    },
+    {
+      "title": "Your choice of model",
+      "description": "Nano Banana and GPT Image are listed side by side on the form. Switch between them for the same description and compare the results yourself."
+    },
+    {
+      "title": "Shapes from square to panorama",
+      "description": "Pick a shape that fits where the image is going, from 1:1 to 21:9, and with Nano Banana even tall strips like 1:4 and wide strips like 4:1."
+    },
+    {
+      "title": "Up to 4K",
+      "description": "Choose 1K, 2K or 4K. PiCraft shows only the resolutions each model supports for the shape you picked, with the price next to each one."
+    },
+    {
+      "title": "A record of your images",
+      "description": "Finished images are listed under My files in the same browser for 90 days, so you can come back and download them again."
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Blog headers and slides",
+      "description": "Describe the scene your post is about and pick 16:9. You get a header that fits the post instead of a stock photo that almost does."
+    },
+    {
+      "title": "Pinterest and social posts",
+      "description": "Make an original vertical image for a board or a post. 2:3 is the Pinterest shape, and 9:16 fills a phone screen for Stories and short video covers."
+    },
+    {
+      "title": "Wallpapers and prints",
+      "description": "Imagine a place, a pattern or a creature and use it as a phone wallpaper, a desktop background or a poster. 4K gives you room to print or crop."
+    },
+    {
+      "title": "Concept art and storyboards",
+      "description": "Try a character, a room or a mood before you commit to it. Panoramic shapes such as 21:9 are good for establishing shots."
+    },
+    {
+      "title": "Product and packaging ideas",
+      "description": "Mock up how a product might look on a counter, on a shelf or in a scene, then take the idea to a photographer or to the specific makers for a spec-ready file."
+    }
+  ],
+  "tips": [
+    {
+      "title": "Start with the subject, then the place",
+      "description": "\"A red fox reading a book in an armchair by a rainy window\" says who, what and where in one line. Everything else you add should change the picture in a way you can name."
+    },
+    {
+      "title": "Say the look in plain words",
+      "description": "Write the medium and the finish you want: watercolor, oil painting, flat vector illustration, 3D render, photograph with a shallow depth of field. There is no style menu to do it for you."
+    },
+    {
+      "title": "Name the light",
+      "description": "Soft window light, golden hour, neon at night, overcast noon. Light changes the mood more than any other single word."
+    },
+    {
+      "title": "Put exact words in quotes",
+      "description": "If the image needs text, such as a poster title, write it in quotes and keep it short. Read every letter of the result before you use it."
+    },
+    {
+      "title": "Pick the shape before you write",
+      "description": "A tall subject such as a lighthouse suits 9:16, and a desert suits 21:9. Choosing the shape first helps you describe a picture that fits it."
+    },
+    {
+      "title": "Change one thing at a time",
+      "description": "If the result misses, adjust one detail and create it again. That shows you what each word does and saves credits."
+    },
+    {
+      "title": "Explore small, finish large",
+      "description": "Try ideas at 1K, then create the final version at 2K or 4K. Remember that a larger file is a new image, not an enlargement of the first."
+    }
+  ],
+  "styleGuide": {
+    "heading": "Nano Banana or GPT Image?",
+    "intro": "Both models turn a description into an image, and neither is better at everything. These are the practical differences on PiCraft. For anything else, try your own description on both.",
+    "items": [
+      {
+        "title": "Nano Banana 2.1, by Google",
+        "description": "Makes 14 shapes plus Auto, including 4:5, 5:4 and the strips 1:4, 4:1, 1:8 and 8:1, and offers 4K for every shape. It also takes up to 10 reference images in the Image to Image Generator."
+      },
+      {
+        "title": "GPT Image 2.5, by OpenAI",
+        "description": "Makes 8 shapes plus Auto at 1K only. It takes up to 16 reference images in the Image to Image Generator."
+      },
+      {
+        "title": "The price",
+        "description": "The same for both at the same resolution: 1 credit at 1K, 2 at 2K and 3 at 4K. GPT Image makes 1K only, so it always costs 1 credit."
+      },
+      {
+        "title": "When the result matters",
+        "description": "Create the same description with each model and keep the better one. Results vary from image to image, so one try is not a verdict on a model."
+      }
+    ]
+  },
+  "checklist": {
+    "heading": "Before you download",
+    "items": [
+      "Check the subject: is everything you named in the picture, and nothing odd that you did not ask for?",
+      "Look closely at hands, faces and small objects, which is where AI mistakes show first.",
+      "Read every letter of any text that was drawn into the image.",
+      "Confirm that the shape and the pixel size shown next to the download match the place the image will go.",
+      "If the image looks realistic, check the platform's rules on labeling AI-generated content before you post it.",
+      "Download the files now. Generated files are deleted after 90 days."
+    ]
+  },
+  "limits": [
+    "The result is never exactly the same twice. If you need the same character or scene again, use the Image to Image Generator with the earlier result as a reference.",
+    "Text in images is the most common thing to go wrong. Short, quoted words work best, and every letter needs a check.",
+    "Both models apply their own safety checks and can refuse a request. When that happens no image is made and the credits are returned.",
+    "The pixel size is set by the model. If a place needs an exact size, such as a 1280×720 thumbnail, use the matching maker, which crops and exports to that spec.",
+    "Realistic images of real, identifiable people, other people's characters and brand logos can infringe rights or mislead viewers. You are responsible for what you describe and publish."
+  ]
+}

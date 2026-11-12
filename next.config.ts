@@ -19,6 +19,14 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [{ protocol: "https", hostname: assetHost }],
   },
+  async redirects() {
+    return [
+      // The two free-form generators used to be makers; they have their own pages now.
+      { source: "/create/text-to-image", destination: "/text-to-image", permanent: true },
+      { source: "/create/image-to-image", destination: "/image-to-image", permanent: true },
+      { source: "/categories/ai-image-generator", destination: "/create", permanent: true },
+    ];
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

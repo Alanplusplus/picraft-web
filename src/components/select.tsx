@@ -203,8 +203,8 @@ export function Select({
         onKeyUp={(event) => {
           if (event.key === " ") event.preventDefault();
         }}
-        className={`flex w-full items-center justify-between gap-3 rounded-lg border bg-white py-2 pl-3.5 pr-3.5 text-left text-sm text-ink-900 transition focus:outline-none focus-visible:border-ink-900 focus-visible:ring-1 focus-visible:ring-ink-900 disabled:cursor-not-allowed disabled:opacity-50 ${
-          open ? "border-ink-900 ring-1 ring-ink-900" : "border-ink-300 hover:border-ink-500"
+        className={`flex w-full items-center justify-between gap-3 rounded-xl border bg-white py-2.5 pl-3.5 pr-3.5 text-left text-sm text-ink-900 transition focus:outline-none focus-visible:border-brand-500 focus-visible:ring-2 focus-visible:ring-brand-200 disabled:cursor-not-allowed disabled:opacity-50 ${
+          open ? "border-brand-500 ring-2 ring-brand-200" : "border-ink-300 hover:border-ink-400"
         }`}
       >
         <span className="truncate">{selected?.label}</span>
@@ -220,7 +220,7 @@ export function Select({
           // Keeps the focus on the button while the pointer is used inside the list.
           onMouseDown={(event) => event.preventDefault()}
           style={{ maxHeight: placement.maxHeight }}
-          className={`absolute inset-x-0 z-40 overflow-y-auto overscroll-contain rounded-xl border border-ink-200 bg-white p-1.5 shadow-xl ${
+          className={`absolute inset-x-0 z-40 overflow-y-auto overscroll-contain rounded-xl border border-ink-200 bg-white p-1.5 shadow-menu ${
             placement.up ? "bottom-full mb-1.5" : "top-full mt-1.5"
           }`}
         >

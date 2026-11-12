@@ -12,7 +12,7 @@ export function SceneCard({ scene }: { scene: Scene }) {
       href={`/create/${scene.slug}`}
       event="maker_select"
       eventParams={{ scene: scene.slug }}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-200 bg-white transition hover:-translate-y-0.5 hover:border-ink-400 hover:shadow-md"
+      className="group card-link flex h-full flex-col overflow-hidden"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-ink-100">
         <Image

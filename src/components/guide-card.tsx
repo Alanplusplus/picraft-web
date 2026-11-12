@@ -8,7 +8,7 @@ export function GuideCard({ guide, showDate = false }: { guide: Guide; showDate?
   return (
     <Link
       href={guidePath(guide)}
-      className="group flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-ink-400 hover:shadow-md"
+      className="group card-link flex h-full flex-col p-5"
     >
       <span className="w-fit rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">
         {guide.kind === "size" ? "Size guide" : (guide.topic ?? "Guide")}

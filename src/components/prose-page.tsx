@@ -1,6 +1,8 @@
 import { LEGAL_UPDATED } from "@/lib/site";
 
 export interface ProseSection {
+  /** Makes the section a link target (`/terms#purchases`). */
+  id?: string;
   heading: string;
   paragraphs?: string[];
   items?: string[];
@@ -32,7 +34,7 @@ export function ProsePage({
         ))}
       </div>
       {sections.map((section, index) => (
-        <section key={section.heading} className="mt-8">
+        <section key={section.heading} id={section.id} className="mt-8 scroll-mt-24">
           <h2 className="text-lg font-semibold text-ink-950">
             {numbered ? `${index + 1}. ` : ""}
             {section.heading}

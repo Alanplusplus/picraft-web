@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className="mt-3 text-ink-700">The page you&apos;re looking for doesn&apos;t exist.</p>
       <Link
         href="/create"
-        className="mt-6 inline-block rounded-xl bg-ink-950 px-5 py-3 text-sm font-semibold text-white hover:bg-ink-800"
+        className="btn-primary mt-6"
       >
         See all makers
       </Link>

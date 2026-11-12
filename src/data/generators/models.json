@@ -1,0 +1,54 @@
+{
+  "maxPromptLength": 4000,
+  "defaultModel": "nano-banana",
+  "models": [
+    {
+      "id": "nano-banana",
+      "name": "Nano Banana",
+      "version": "2.1",
+      "maker": "Google",
+      "engine": "nano-banana-2-1",
+      "blurb": "Google's image model. 14 shapes from 1:8 to 8:1, and 1K to 4K at every shape.",
+      "maxImages": 10,
+      "credits": { "1K": 1, "2K": 2, "4K": 3 },
+      "aspectRatios": [
+        { "value": "auto", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "1:1", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "4:5", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "5:4", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "3:4", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "4:3", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "2:3", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "3:2", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "9:16", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "16:9", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "21:9", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "1:4", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "4:1", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "1:8", "resolutions": ["1K", "2K", "4K"] },
+        { "value": "8:1", "resolutions": ["1K", "2K", "4K"] }
+      ]
+    },
+    {
+      "id": "gpt-image",
+      "name": "GPT Image",
+      "version": "2.5",
+      "maker": "OpenAI",
+      "engine": "gpt-image-2.5",
+      "blurb": "OpenAI's image model. 8 shapes, about 1.5K pixels on the long edge, and up to 16 reference images.",
+      "maxImages": 16,
+      "credits": { "1K": 1 },
+      "aspectRatios": [
+        { "value": "auto", "resolutions": ["1K"] },
+        { "value": "1:1", "resolutions": ["1K"] },
+        { "value": "3:4", "resolutions": ["1K"] },
+        { "value": "4:3", "resolutions": ["1K"] },
+        { "value": "2:3", "resolutions": ["1K"] },
+        { "value": "3:2", "resolutions": ["1K"] },
+        { "value": "9:16", "resolutions": ["1K"] },
+        { "value": "16:9", "resolutions": ["1K"] },
+        { "value": "21:9", "resolutions": ["1K"] }
+      ]
+    }
+  ]
+}

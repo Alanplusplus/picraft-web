@@ -25,6 +25,18 @@ const SECTIONS: ProseSection[] = [
     ],
   },
   {
+    heading: "Report abuse",
+    paragraphs: [
+      `To report a design, or a photo of you that someone used without your permission, use the report form at /report or write to ${SUPPORT_EMAIL} with the subject "Report abuse". A design that is reported for involving a child, sexual content, a fake of a real person or a photo used without permission is taken down at once. The Acceptable Use Policy at /aup explains the rules, our response times and how to appeal.`,
+    ],
+  },
+  {
+    heading: "Billing and refunds",
+    paragraphs: [
+      `Credit packs and subscriptions are handled by Waffo, our merchant of record. You can cancel a subscription yourself with Manage subscription on the pricing page, or ask us by email. For a refund, a receipt or a problem with a payment, email ${SUPPORT_EMAIL} from the address you used at checkout and include the order number from your receipt. Refunds follow Waffo's refund policy; the Terms of Service explain how to ask for one.`,
+    ],
+  },
+  {
     heading: "Delete my data",
     paragraphs: [
       `Email us with your Reference ID (or links to the files you want removed) and we will delete the related files and records within 30 days. The Privacy Policy explains what we keep and for how long.`,
@@ -63,7 +75,7 @@ export default function ContactPage() {
     >
       <a
         href={`mailto:${SUPPORT_EMAIL}`}
-        className="mt-10 inline-block rounded-xl bg-ink-950 px-5 py-3 text-sm font-semibold text-white hover:bg-ink-800"
+        className="btn-primary mt-10"
       >
         Email {SUPPORT_EMAIL}
       </a>

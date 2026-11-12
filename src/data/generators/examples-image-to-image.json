@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "url": "/examples/image-to-image_1793155819575_dogroom.webp",
+      "alt": "Golden retriever lying on a gray sofa in a living room with a wooden coffee table, combined from a photo of the dog and a photo of the room",
+      "width": 1000,
+      "height": 747,
+      "approved": true,
+      "prompt": "Put the golden retriever from the first image on the gray sofa in the living room from the second image, natural window light",
+      "model": "nano-banana",
+      "aspectRatio": "4:3",
+      "resolution": "1K",
+      "references": [
+        {
+          "url": "/examples/image-to-image_before_1792902745247_dog.webp",
+          "alt": "Original photo of a golden retriever sitting on a lawn in a park"
+        },
+        {
+          "url": "/examples/image-to-image_before_1792902745247_livingroom.webp",
+          "alt": "Original photo of a living room with a gray sofa and a wooden coffee table in flat midday light"
+        }
+      ]
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_dog.webp",
+      "alt": "Watercolor painting of a golden retriever sitting on a sunny lawn, made from a photo of the same dog",
+      "width": 1000,
+      "height": 747,
+      "approved": true,
+      "prompt": "Turn this into a watercolor painting and keep the composition",
+      "model": "nano-banana",
+      "aspectRatio": "4:3",
+      "resolution": "1K",
+      "before": "/examples/image-to-image_before_1792902745247_dog.webp",
+      "beforeAlt": "Original photo of a golden retriever sitting on a lawn in a park"
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_street.webp",
+      "alt": "Bakery street corner on a snowy winter evening with lit windows, made from a summer photo of the same street",
+      "width": 1000,
+      "height": 1331,
+      "approved": true,
+      "prompt": "Change the season to a snowy winter evening with lit windows and falling snow",
+      "model": "gpt-image",
+      "aspectRatio": "3:4",
+      "resolution": "1K",
+      "before": "/examples/image-to-image_before_1792902745247_street.webp",
+      "beforeAlt": "Original summer photo of a street corner with a bakery, a few pedestrians and parked cars"
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_shoemug.webp",
+      "alt": "White sneakers and a white coffee mug together on a white marble counter in soft morning light",
+      "width": 1000,
+      "height": 1000,
+      "approved": true,
+      "prompt": "Arrange the white sneakers from the first image and the white mug from the second image together on a white marble counter, soft morning light, product photo",
+      "model": "gpt-image",
+      "aspectRatio": "1:1",
+      "resolution": "1K",
+      "references": [
+        {
+          "url": "/examples/image-to-image_before_1792902745247_sneakers.webp",
+          "alt": "Original photo of a pair of white sneakers on a gray concrete floor"
+        },
+        {
+          "url": "/examples/image-to-image_before_1792902745247_mug.webp",
+          "alt": "Original photo of a white coffee mug and a closed laptop on a wooden desk"
+        }
+      ]
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_livingroom.webp",
+      "alt": "Gray sofa and wooden coffee table in warm golden hour light, made from a flat midday photo of the same room",
+      "width": 1000,
+      "height": 747,
+      "approved": true,
+      "prompt": "Change the light to warm golden hour and keep everything else the same",
+      "model": "nano-banana",
+      "aspectRatio": "4:3",
+      "resolution": "1K",
+      "before": "/examples/image-to-image_before_1792902745247_livingroom.webp",
+      "beforeAlt": "Original photo of a living room with a gray sofa and a wooden coffee table in flat midday light"
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_sneakers.webp",
+      "alt": "Flat vector illustration of a pair of white sneakers on a bold blue background",
+      "width": 1000,
+      "height": 1000,
+      "approved": true,
+      "prompt": "Redraw this as a flat vector illustration on a bold blue background",
+      "model": "nano-banana",
+      "aspectRatio": "1:1",
+      "resolution": "1K",
+      "before": "/examples/image-to-image_before_1792902745247_sneakers.webp",
+      "beforeAlt": "Original photo of a pair of white sneakers on a gray concrete floor"
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_mug.webp",
+      "alt": "White coffee mug and a closed laptop on a marble counter in soft morning sunlight",
+      "width": 1000,
+      "height": 1000,
+      "approved": true,
+      "prompt": "Move the mug and the laptop onto a white marble counter in soft morning sunlight",
+      "model": "gpt-image",
+      "aspectRatio": "1:1",
+      "resolution": "1K",
+      "before": "/examples/image-to-image_before_1792902745247_mug.webp",
+      "beforeAlt": "Original photo of a white coffee mug and a closed laptop on a wooden desk"
+    },
+    {
+      "url": "/examples/image-to-image_1793155819575_lake.webp",
+      "alt": "Japanese woodblock print style image of a lake and a pine forest, made from a photo of the same view",
+      "width": 1000,
+      "height": 751,
+      "approved": true,
+      "prompt": "Make this a Japanese woodblock print",
+      "model": "gpt-image",
+      "aspectRatio": "4:3",
+      "resolution": "1K",
+      "before": "/examples/image-to-image_before_1792902745247_lake.webp",
+      "beforeAlt": "Original photo of a lake surrounded by pine forest under a clear blue sky"
+    }
+  ]
+}

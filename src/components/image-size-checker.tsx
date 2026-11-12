@@ -248,7 +248,7 @@ function Legend({ preset }: { preset: SizePreset }) {
 }
 
 const BUTTON =
-  "rounded-lg border border-ink-300 bg-white px-3 py-1.5 text-sm font-medium text-ink-900 transition hover:border-ink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink-900 disabled:opacity-50";
+  "rounded-lg border border-ink-300 bg-white px-3 py-1.5 text-sm font-medium text-ink-900 transition hover:border-ink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:opacity-50";
 
 export function ImageSizeChecker({
   presets,

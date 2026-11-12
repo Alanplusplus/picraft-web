@@ -1,6 +1,7 @@
 import "server-only";
 
 import { getCategoryPage } from "./categories";
+import { generatorPath, getGeneratorContent, getGenerators, isGeneratorIndexable } from "./generators";
 import { getGuides, guidePath, isGuideIndexable, type Guide, type GuideKind } from "./guides";
 import { inlineLinks } from "./inline";
 import { getContent, getScenes, isIndexable } from "./scenes";
@@ -15,6 +16,7 @@ const STATIC_PAGES = ["/", "/create", "/gallery", "/sizes", "/blog", "/tools", "
 export function knownPages(): Map<string, boolean> {
   const pages = new Map<string, boolean>(STATIC_PAGES.map((page) => [page, true]));
   for (const category of CATEGORIES) pages.set(categoryPath(category.id), true);
+  for (const generator of getGenerators()) pages.set(generatorPath(generator), isGeneratorIndexable(generator));
   for (const scene of getScenes()) pages.set(`/create/${scene.slug}`, isIndexable(scene));
   for (const { file, style } of getStylePages()) pages.set(stylePath(file.scene, style), isStyleIndexable(file, style));
   for (const kind of ["size", "blog"] as const) {
@@ -109,6 +111,13 @@ export function validateInternalLinks(): void {
   for (const category of CATEGORIES) {
     const page = getCategoryPage(category.id);
     checkText(`src/data/categories.json (${category.id})`, [page.intro, page.sections, page.faq]);
+  }
+
+  for (const generator of getGenerators()) {
+    const source = `src/data/generators/${generator.slug}.json`;
+    checkText(source, [generator.seo.intro, generator.steps, generator.specNotes, generator.faq]);
+    for (const slug of generator.related) checkTarget(source, `/create/${slug}`, `related "${slug}"`);
+    checkText(`src/data/generators/content-${generator.slug}.json`, getGeneratorContent(generator.slug));
   }
 
   for (const scene of getScenes()) {

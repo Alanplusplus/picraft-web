@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps<"/categories/[slug]
   });
 }
 
-const H2 = "text-2xl font-bold tracking-tight text-ink-950";
+const H2 = "text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl";
 
 export default async function CategoryPage({ params }: PageProps<"/categories/[slug]">) {
   const category = findCategory((await params).slug);

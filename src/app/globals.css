@@ -3,24 +3,33 @@
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 
-  --color-ink-950: #0f1115;
-  --color-ink-900: #1b1e24;
-  --color-ink-800: #2a2e36;
-  --color-ink-700: #3d424c;
-  --color-ink-500: #6b717d;
-  --color-ink-400: #9aa0aa;
-  --color-ink-300: #cdd1d8;
-  --color-ink-200: #e4e6ea;
-  --color-ink-100: #f0f1f3;
-  --color-ink-50: #f7f7f8;
+  /* Warm neutrals: a touch of red in every grey, so they sit well next to the orange brand colour. */
+  --color-ink-950: #15120f;
+  --color-ink-900: #211e1b;
+  --color-ink-800: #302c28;
+  --color-ink-700: #46413c;
+  --color-ink-500: #6f6962;
+  --color-ink-400: #a39d95;
+  --color-ink-300: #d6d1c9;
+  --color-ink-200: #e8e4de;
+  --color-ink-100: #f2efea;
+  --color-ink-50: #f9f7f4;
 
-  --color-brand-50: #fff4f0;
-  --color-brand-100: #ffe3d9;
-  --color-brand-200: #ffc4b0;
+  --color-paper: #fcfbf9;
+
+  /* The logo's orange-red. 600 is the button colour: white text on it is 4.6:1. */
+  --color-brand-50: #fff4ef;
+  --color-brand-100: #ffe6dc;
+  --color-brand-200: #ffc9b3;
   --color-brand-500: #ff5a36;
-  --color-brand-600: #e9441f;
-  --color-brand-700: #c23314;
-  --color-brand-800: #9e2810;
+  --color-brand-600: #d93a14;
+  --color-brand-700: #b82e10;
+  --color-brand-800: #92230c;
+
+  --shadow-soft: 0 1px 2px rgb(21 18 15 / 0.04), 0 6px 18px -6px rgb(21 18 15 / 0.1);
+  --shadow-lift: 0 2px 4px rgb(21 18 15 / 0.05), 0 18px 36px -14px rgb(21 18 15 / 0.22);
+  --shadow-brand: 0 1px 2px rgb(146 35 12 / 0.25), 0 10px 22px -10px rgb(217 58 20 / 0.7);
+  --shadow-menu: 0 2px 6px rgb(21 18 15 / 0.06), 0 22px 44px -12px rgb(21 18 15 / 0.28);
 }
 
 html {
@@ -28,8 +37,60 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: var(--color-paper);
   color: var(--color-ink-900);
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-ink-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
+
+/* Buttons. Primary is the one action of a page or a form; secondary is everything next to it. */
+@utility btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-brand transition hover:bg-brand-700 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none;
+}
+
+@utility btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-ink-300 bg-white px-5 py-3 text-sm font-semibold text-ink-900 shadow-sm transition hover:border-ink-400 hover:bg-ink-50 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+/* Text fields, text areas and the closed state of the custom select. */
+@utility field {
+  @apply w-full rounded-xl border border-ink-300 bg-white px-3.5 py-2.5 text-sm text-ink-900 placeholder:text-ink-500 transition hover:border-ink-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200;
+}
+
+/* A white panel on the warm page: forms, plan boxes, notes. */
+@utility panel {
+  @apply rounded-2xl border border-ink-200 bg-white shadow-soft;
+}
+
+/* A card that is a link. */
+@utility card-link {
+  @apply rounded-2xl border border-ink-200 bg-white shadow-soft transition duration-200 hover:-translate-y-0.5 hover:border-ink-300 hover:shadow-lift;
+}
+
+/* The small label above a heading. */
+@utility eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.12em] text-brand-700;
+}
+
+/* The glow behind the top of a page. Decorative only. */
+@utility hero-glow {
+  background:
+    radial-gradient(52% 70% at 88% 0%, rgb(255 90 54 / 0.13), transparent 70%),
+    radial-gradient(46% 60% at 4% 0%, rgb(255 201 179 / 0.5), transparent 72%);
 }
 
 .checkerboard {

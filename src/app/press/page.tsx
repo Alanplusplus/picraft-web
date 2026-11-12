@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { ProsePage, type ProseSection } from "@/components/prose-page";
+import { getGenerators } from "@/lib/generators";
 import { getGuides, isGuideIndexable } from "@/lib/guides";
 import { getScenes, isIndexable } from "@/lib/scenes";
 import { pageMetadata } from "@/lib/seo";
@@ -18,13 +19,14 @@ const BOX = "mt-3 select-all rounded-xl border border-ink-200 bg-ink-50 p-4 text
 
 export default function PressPage() {
   const makers = getScenes().filter(isIndexable).length;
+  const generators = getGenerators().length;
   const sizeGuides = getGuides("size").filter(isGuideIndexable).length;
   const tools = getTools().filter(isToolIndexable).length;
 
-  const oneLine = `${SITE_NAME} (picraft.ai) is a set of single-purpose makers that turn a short form into finished, correctly sized files: invitations, menus, business cards, YouTube thumbnails, stickers and marketplace product photos.`;
-  const short = `${SITE_NAME} (picraft.ai) turns a short form into finished, correctly sized design files. Instead of a blank prompt box, each maker asks for the details that matter and returns print PDFs with bleed, transparent PNGs, pure white product images or thumbnails under the upload limit. New visitors get free credits and need no account.`;
+  const oneLine = `${SITE_NAME} (picraft.ai) is a set of AI image tools: a text to image generator, an image to image generator and makers for photo trends, invitations, menus, business cards, YouTube thumbnails, stickers and marketplace product photos, each returning finished, correctly sized files.`;
+  const short = `${SITE_NAME} (picraft.ai) is an AI image site with two general tools, text to image and image to image, and a set of makers for specific jobs. The makers replace the blank prompt box with a short form for the details that matter and return print PDFs with bleed, transparent PNGs, pure white product images or thumbnails under the upload limit. New visitors get free credits and need no account.`;
   const long = [
-    `${SITE_NAME} (picraft.ai) is a set of ${makers} single-purpose makers for design jobs that come with a spec. Each maker is a short form instead of a prompt box: you enter the names, dates, prices or product details that matter, and ${SITE_NAME} returns finished files in the sizes and formats you will use them in. Examples are print-ready PDFs with bleed for invitations, menus, flyers and business cards, YouTube thumbnails and LinkedIn banners at the exact upload size, book covers, transparent PNGs for stickers and print-on-demand shirts, and pure white marketplace product photos.`,
+    `${SITE_NAME} (picraft.ai) is an AI image site with ${makers + generators} tools. Two are general: a text to image generator and an image to image generator, where you choose Nano Banana or GPT Image, the shape and the resolution, and image to image takes several reference photos. The rest are makers for design jobs that come with a spec. Each maker is a short form instead of a prompt box: you enter the names, dates, prices or product details that matter, and ${SITE_NAME} returns finished files in the sizes and formats you will use them in. Examples are print-ready PDFs with bleed for invitations, menus, flyers and business cards, YouTube thumbnails and LinkedIn banners at the exact upload size, book covers, transparent PNGs for stickers and print-on-demand shirts, and pure white marketplace product photos.`,
     `${SITE_NAME} uses third-party AI image models for the artwork and handles the rest: background removal, bleed, resizing and PDF export. The site also publishes size guides that link the official requirement behind every number, and a free image size checker that runs in the browser. New visitors get free credits and do not need an account.`,
   ];
 
@@ -34,8 +36,8 @@ export default function PressPage() {
       items: [
         `Name: ${SITE_NAME}. Website: https://www.picraft.ai`,
         "Launched: 2026",
-        `What it is: ${makers} makers, ${sizeGuides} size guides and ${tools} free ${tools === 1 ? "tool" : "tools"}`,
-        "How it works: a short form instead of a prompt; the artwork comes from third-party AI image models",
+        `What it is: ${makers + generators} AI image tools, ${sizeGuides} size guides and ${tools} free ${tools === 1 ? "tool" : "tools"}`,
+        "How it works: a description or a photo for the two generators, a short form for each maker; the artwork comes from third-party AI image models",
         "Pricing: new visitors get a few free credits, each design uses one credit. There is no paid plan at the moment",
         "Account: none needed. Credits and file history are tied to the browser",
         `Files: kept for ${FILE_RETENTION_DAYS} days, then deleted automatically`,

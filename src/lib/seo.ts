@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 import { SITE_NAME, TAGLINE } from "./site";
 
-export const DEFAULT_TITLE = `${SITE_NAME} – Print-Ready Invitations, Cards & Thumbnails`;
+export const DEFAULT_TITLE = `${SITE_NAME} – AI Image Generator for Photos, Invites & Stickers`;
 export const DEFAULT_DESCRIPTION =
-  "Fill in a short form and download finished, correctly sized visuals: invitations, menus, business cards, YouTube thumbnails, stickers and more.";
+  "Text to image, image to image and ready-made AI makers for photo trends, invitations, YouTube thumbnails, stickers and more. Free to try, no account needed.";
 
 /**
  * Fallback share image for pages without an `opengraph-image` file of their own.

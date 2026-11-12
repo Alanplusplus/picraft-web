@@ -1,0 +1,98 @@
+{
+  "slug": "text-to-image",
+  "mode": "text",
+  "name": "Text to Image Generator",
+  "summary": "Describe any image in your own words, choose Nano Banana or GPT Image, and download the original file.",
+  "badge": "2 models · up to 4K",
+  "indexable": true,
+  "placeholder": "A red fox reading a book in an armchair by a rainy window, warm lamp light, watercolor",
+  "help": "One or two sentences: the subject, the place and the look. Add the light or the mood if you care about them.",
+  "seo": {
+    "title": "Text to Image AI – Nano Banana & GPT Image, Free to Try",
+    "description": "Describe an image and choose Nano Banana or GPT Image. Pick the shape and resolution, 1K to 4K, and download the original file. Free to try, no account.",
+    "h1": "Text to Image Generator",
+    "intro": [
+      "Type what you want to see, choose the AI model that draws it and download the file exactly as the model made it. You can pick between Nano Banana, Google's image model, and GPT Image, OpenAI's, and run the same description on both to see which one you like better. You also choose the shape, from a square to a 21:9 panorama, and the resolution, from 1K to 4K.",
+      "There are no style menus and no fixed output sizes here: your own words set the look, and the shape and resolution you choose set the size. New visitors get free credits and do not need an account. If you have a photo to start from, use the [Image to Image Generator](/image-to-image), which takes up to 16 reference images. If the image has a fixed job, such as a [sticker](/create/sticker-maker) or a [YouTube thumbnail](/create/youtube-thumbnail-maker), the specific makers handle the size and format for you."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Choose a model",
+      "description": "Pick Nano Banana or GPT Image. Not sure? Create the same description with each one and keep the better result."
+    },
+    {
+      "title": "Describe it, pick a shape",
+      "description": "Write what you want to see in your own words, then choose the shape and the resolution. Higher resolutions cost more credits."
+    },
+    {
+      "title": "Create and download",
+      "description": "An image takes 30–90 seconds, a little longer at 4K. You download the original file and a smaller JPG copy."
+    }
+  ],
+  "specNotes": [
+    "Auto lets the model choose the shape from your description. GPT Image makes every image at 1K only, so choose Nano Banana if you want 2K or 4K.",
+    "The price depends on the resolution, not on the model: 1K costs 1 credit, 2K costs 2 credits and 4K costs 3 credits (GPT Image makes 1K only). If an image can't be made, the credits are returned automatically.",
+    "PiCraft only offers the combinations a model supports, so you never pay for a resolution you do not get. The exact pixel size of your file is shown next to the download link.",
+    "You get the original file exactly as the model made it, plus a smaller JPG copy for sharing. Nothing is cropped or resized."
+  ],
+  "faq": [
+    {
+      "q": "Is the Text to Image Generator free?",
+      "a": "You can try it free. Every new visitor gets a few free credits that work on any PiCraft tool. A 1K image costs 1 credit, a 2K image 2 credits and a 4K image 3 credits, and you do not need an account. When your free credits are used up you can buy a credit pack or subscribe to keep creating."
+    },
+    {
+      "q": "Which model should I choose, Nano Banana or GPT Image?",
+      "a": "Both turn a description into an image, and the best way to choose is to try your own idea on each. Nano Banana offers more shapes, including very tall and very wide strips, and 4K for every shape. GPT Image offers fewer shapes and makes 1K images only. Create the same description with both and keep the one you prefer."
+    },
+    {
+      "q": "Do I need to write a long prompt?",
+      "a": "No. One or two plain sentences are enough: say what the subject is, what it is doing and where it is. Add the medium (a photo, a watercolor, a 3D render) and the light if you care about them. Longer descriptions work too, up to 4,000 characters."
+    },
+    {
+      "q": "Can I choose a style?",
+      "a": "There is no style menu. You describe the look in your sentence, for example \"as an oil painting\" or \"as a photo taken at golden hour\", and the model follows it. That keeps your words in charge and works the same way on both models."
+    },
+    {
+      "q": "Which shapes and resolutions can I use?",
+      "a": "Nano Banana makes 14 shapes plus Auto, from 1:8 to 8:1, at 1K, 2K and 4K. GPT Image makes 8 shapes plus Auto: 1:1, 3:4, 4:3, 2:3, 3:2, 9:16, 16:9 and 21:9, at 1K only. The form shows only what the chosen model supports."
+    },
+    {
+      "q": "Which shape should I pick for Pinterest or video?",
+      "a": "Pick the shape of the place the image will go. Use 2:3 for Pinterest Pins, 9:16 for full-screen vertical posts and phone wallpapers, 16:9 for video thumbnails and slides, 1:1 for avatars and squares, and 21:9 for banners and cinematic panoramas."
+    },
+    {
+      "q": "Will text in the image be spelled correctly?",
+      "a": "Not always. Both models can draw text, but they can still misspell words. Put the exact words in quotes, keep them short and read the result letter by letter before you post or print it. If a letter is wrong, create the image again."
+    },
+    {
+      "q": "Can I use the images commercially?",
+      "a": "You are responsible for what you describe and what you publish. Don't use other people's names, faces, characters or brands in a way that infringes their rights or could mislead people, and check the rules of any marketplace where you plan to sell what you make."
+    },
+    {
+      "q": "What happens if the model refuses my description?",
+      "a": "Both models apply their own safety checks and can refuse some requests or return an error. When that happens, no image is made and your credits are returned automatically. Reword the description and try again."
+    },
+    {
+      "q": "How long does an image take?",
+      "a": "Usually 30–90 seconds. 4K images take a little longer. You can keep the tab open, and finished images are also listed under My files."
+    },
+    {
+      "q": "How long are my images kept?",
+      "a": "Generated files are deleted automatically after 90 days, so download the ones you want to keep. Your recent images are listed under My files in the same browser."
+    },
+    {
+      "q": "Should I label the images as AI-generated?",
+      "a": "Often, yes. Many platforms ask you to label realistic AI images. YouTube, for example, asks creators to disclose realistic AI-generated content. Check the rules of the platform where you post."
+    },
+    {
+      "q": "Can I start from my own photo instead?",
+      "a": "Yes. The [Image to Image Generator](/image-to-image) takes one or more reference photos and an instruction, such as turning a photo into a watercolor painting or putting a product from one photo into the scene of another."
+    }
+  ],
+  "related": [
+    "sticker-maker",
+    "photo-trend-maker",
+    "youtube-thumbnail-maker"
+  ]
+}

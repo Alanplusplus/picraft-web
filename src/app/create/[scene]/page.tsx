@@ -7,6 +7,7 @@ import { CompareSlider } from "@/components/compare-slider";
 import { FaqList } from "@/components/faq-list";
 import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
+import { MakerLayout } from "@/components/maker-layout";
 import { RichText } from "@/components/rich-text";
 import { SceneCard } from "@/components/scene-card";
 import { SceneGenerator } from "@/components/scene-generator";
@@ -86,7 +87,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
   return (
     <>
       <JsonLd data={jsonLd} />
-      <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 pt-5 sm:px-6 sm:pt-8">
         <nav aria-label="Breadcrumb" className="text-sm text-ink-500">
           <Link href="/" className="hover:text-ink-900">
             Home
@@ -99,9 +100,9 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
           <span className="text-ink-900">{scene.name}</span>
         </nav>
 
-        <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_440px]">
-          <section>
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+        <MakerLayout
+          badges={
+            <>
               <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">{scene.badge}</span>
               {category && (
                 <span className="text-sm text-ink-500">
@@ -111,37 +112,18 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
                   </Link>
                 </span>
               )}
-            </div>
-            <h1 className="mt-3 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">{scene.seo.h1}</h1>
-            <div className="mt-4 space-y-3 text-base leading-relaxed text-ink-700">
-              {scene.seo.intro.map((paragraph) => (
-                <p key={paragraph}>
-                  <RichText text={paragraph} />
-                </p>
-              ))}
-            </div>
-
-            <ol className="mt-8 grid gap-4 sm:grid-cols-3">
-              {scene.steps.map((step, index) => (
-                <li key={step.title} className="rounded-xl bg-ink-50 p-4">
-                  <span className="text-sm font-semibold text-brand-700">Step {index + 1}</span>
-                  <p className="mt-1 font-semibold text-ink-900">{step.title}</p>
-                  <p className="mt-1 text-sm text-ink-500">
-                    <RichText text={step.description} />
-                  </p>
-                </li>
-              ))}
-            </ol>
-          </section>
-
-          <aside id="create" className="scroll-mt-20 lg:sticky lg:top-20 lg:self-start">
-            <SceneGenerator scene={toClientScene(scene)} styleLinks={getStyleLinks(scene.slug)} />
-          </aside>
-        </div>
+            </>
+          }
+          title={scene.seo.h1}
+          summary={scene.summary}
+          form={<SceneGenerator scene={toClientScene(scene)} styleLinks={getStyleLinks(scene.slug)} />}
+          steps={scene.steps}
+          intro={scene.seo.intro}
+        />
 
         {examples.length > 0 && (
           <section className="mt-16">
-            <h2 className="text-2xl font-bold tracking-tight text-ink-950">Made with the {scene.name}</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Made with the {scene.name}</h2>
             {showcase.length > 0 ? (
               <>
                 <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
@@ -201,7 +183,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
         {content && <SceneOverview name={scene.name} content={content} />}
 
         <section className="mt-16">
-          <h2 className="text-2xl font-bold tracking-tight text-ink-950">{scene.specs.heading}</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">{scene.specs.heading}</h2>
           <div className="mt-6 overflow-x-auto rounded-xl border border-ink-200">
             <table className="w-full min-w-[520px] text-left text-sm">
               <thead className="bg-ink-50 text-ink-700">
@@ -240,13 +222,13 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
         {content && <SceneGuide name={scene.name} content={content} />}
 
         <section className="mt-16 max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-ink-950">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Frequently asked questions</h2>
           <FaqList items={scene.faq} />
         </section>
 
         {styleFile && styleEntries.length > 0 && (
           <section className="mt-16">
-            <h2 className="text-2xl font-bold tracking-tight text-ink-950">{styleFile.collection}</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">{styleFile.collection}</h2>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
               Each {styleFile.noun} has its own page with examples, ideas for what to write and answers to common
               questions. Open one to start with that {styleFile.noun} already selected.
@@ -280,7 +262,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
 
         {guides.length > 0 && (
           <section className="mt-16">
-            <h2 className="text-2xl font-bold tracking-tight text-ink-950">Guides for the {scene.name}</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Guides for the {scene.name}</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-3">
               {guides.slice(0, 3).map((guide) => (
                 <GuideCard key={`${guide.kind}-${guide.slug}`} guide={guide} />
@@ -297,7 +279,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
 
         {related.length > 0 && (
           <section className="mt-16">
-            <h2 className="text-2xl font-bold tracking-tight text-ink-950">More makers</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">More makers</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-3">
               {related.map((item) => (
                 <SceneCard key={item.slug} scene={item} />

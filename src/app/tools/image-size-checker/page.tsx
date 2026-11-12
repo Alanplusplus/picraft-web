@@ -17,7 +17,7 @@ import { presetRules, presetTargetLabel } from "@/lib/size-presets";
 import { getTool, isToolIndexable, logToolIndexability, toolPath, toolSources } from "@/lib/tools";
 
 const SLUG = "image-size-checker";
-const H2 = "text-2xl font-bold tracking-tight text-ink-950";
+const H2 = "text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl";
 
 export function generateMetadata() {
   const tool = getTool(SLUG);

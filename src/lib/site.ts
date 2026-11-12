@@ -6,16 +6,36 @@ export const SITE_NAME = "PiCraft";
  */
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.picraft.ai").replace(/\/$/, "");
 export const SUPPORT_EMAIL = "support@picraft.ai";
-export const TAGLINE = "Finished visuals, not prompts.";
+export const TAGLINE = "AI image tools for real jobs.";
 /** Year the site launched, shown in the footer. A fixed year avoids a value frozen at build time. */
 export const COPYRIGHT_YEAR = 2026;
 
 /** Shown on the legal pages and used as `dateModified`. Update it whenever the wording changes. */
-export const LEGAL_UPDATED = "October 20, 2026";
-export const LEGAL_UPDATED_ISO = "2026-10-20";
+export const LEGAL_UPDATED = "November 11, 2026";
+export const LEGAL_UPDATED_ISO = "2026-11-11";
 
 /** Generated files are deleted after this many days (enforced by `backend/scripts/set_oss_lifecycle.py`). */
 export const FILE_RETENTION_DAYS = 90;
+
+/** Photos a visitor uploads as references are deleted after this many days (`set_oss_lifecycle.py --upload-days`). */
+export const UPLOAD_RETENTION_DAYS = 7;
+
+/** The youngest age allowed to use PiCraft. Payment providers do not allow services aimed at minors. */
+export const MIN_AGE = 18;
+
+/**
+ * The models that make the images, named as the Acceptable Use Policy, the Terms and the About page must name them.
+ * Keep in step with backend/generators/models.json and backend/app/services/engines.py.
+ */
+export const MODEL_DISCLOSURE = "Nano Banana 2.1 (Google) and GPT Image 2.5 (OpenAI)";
+
+/** How long records of Prompt Sift verdicts are kept (the backend's MODERATION_LOG_RETENTION_DAYS). */
+export const SAFETY_LOG_RETENTION_DAYS = 90;
+
+/** What the Acceptable Use Policy promises about reports and appeals. The people running PiCraft must keep to it. */
+export const REPORT_URGENT_HOURS = 24;
+export const REPORT_REPLY_BUSINESS_DAYS = 3;
+export const APPEAL_REPLY_BUSINESS_DAYS = 5;
 
 /** Optional operator details. Set them in the environment and they appear in the legal pages. */
 export const LEGAL_ENTITY = process.env.NEXT_PUBLIC_LEGAL_ENTITY ?? "";

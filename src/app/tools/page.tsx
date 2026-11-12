@@ -67,7 +67,7 @@ export default function ToolsPage() {
           <Link
             key={tool.slug}
             href={toolPath(tool)}
-            className="group flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-ink-400 hover:shadow-md"
+            className="group card-link flex h-full flex-col p-5"
           >
             <span className="w-fit rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">Free tool</span>
             <h2 className="mt-3 font-semibold text-ink-950 group-hover:text-brand-700">{tool.h1}</h2>

@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "url": "/examples/text-to-image_1793155819575_lighthouse.webp",
+      "alt": "Photorealistic lighthouse on a rocky cliff at sunrise with waves crashing against the rocks below",
+      "width": 1000,
+      "height": 558,
+      "approved": true,
+      "prompt": "A lighthouse on a rocky cliff at sunrise, waves crashing against the rocks below, photorealistic, golden light",
+      "model": "nano-banana",
+      "aspectRatio": "16:9",
+      "resolution": "2K"
+    },
+    {
+      "url": "/examples/text-to-image_1793155819575_nook.webp",
+      "alt": "Watercolor of a cozy reading nook by a rainy window with a sleeping cat, a steaming mug and a stack of books",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "prompt": "A cozy reading nook by a rainy window with a sleeping cat, a steaming mug and a stack of books, soft watercolor painting",
+      "model": "gpt-image",
+      "aspectRatio": "2:3",
+      "resolution": "1K"
+    },
+    {
+      "url": "/examples/text-to-image_1794325690102_robot.webp",
+      "alt": "Stylized 3D render of a small friendly robot watering a vegetable garden of lettuce, carrots and tomatoes on the moon",
+      "width": 1000,
+      "height": 1000,
+      "approved": true,
+      "prompt": "A small friendly robot with a watering can tending a vegetable garden of lettuce, carrots and tomatoes on the moon, stylized 3D render",
+      "model": "gpt-image",
+      "aspectRatio": "1:1",
+      "resolution": "1K"
+    },
+    {
+      "url": "/examples/text-to-image_1793155819575_ramen.webp",
+      "alt": "Cinematic night view of a neon-lit ramen shop on a rainy street with steam drifting out of the doorway",
+      "width": 768,
+      "height": 1376,
+      "approved": true,
+      "prompt": "A neon-lit ramen shop on a rainy street at night, steam drifting out of the doorway, cinematic",
+      "model": "nano-banana",
+      "aspectRatio": "9:16",
+      "resolution": "1K"
+    },
+    {
+      "url": "/examples/text-to-image_1793155819575_poster.webp",
+      "alt": "Vintage travel poster of a seaside town with pastel houses and a lighthouse and the title SUMMER IN LISBON",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "prompt": "A vintage travel poster of a seaside town with pastel houses and a lighthouse, with the words SUMMER IN LISBON in bold letters at the top",
+      "model": "gpt-image",
+      "aspectRatio": "3:4",
+      "resolution": "1K"
+    },
+    {
+      "url": "/examples/text-to-image_1793155819575_hummingbird.webp",
+      "alt": "Oil painting of a hummingbird hovering beside a red hibiscus flower",
+      "width": 928,
+      "height": 1152,
+      "approved": true,
+      "prompt": "A hummingbird hovering beside a red hibiscus flower, oil painting with thick brushstrokes",
+      "model": "nano-banana",
+      "aspectRatio": "4:5",
+      "resolution": "1K"
+    },
+    {
+      "url": "/examples/text-to-image_1793155819575_village.webp",
+      "alt": "Pixel art mountain village in autumn with a winding road, a lake and smoke rising from the chimneys",
+      "width": 1000,
+      "height": 750,
+      "approved": true,
+      "prompt": "A mountain village in autumn with a winding road, a lake and smoke rising from the chimneys, pixel art",
+      "model": "gpt-image",
+      "aspectRatio": "4:3",
+      "resolution": "1K"
+    },
+    {
+      "url": "/examples/text-to-image_1793155819575_desert.webp",
+      "alt": "Wide panorama of a desert at dusk with a camel caravan on a dune under a starry purple sky",
+      "width": 1000,
+      "height": 424,
+      "approved": true,
+      "prompt": "A wide panorama of a desert at dusk with a lone camel caravan walking along a dune and a purple sky full of stars",
+      "model": "nano-banana",
+      "aspectRatio": "21:9",
+      "resolution": "1K"
+    }
+  ]
+}

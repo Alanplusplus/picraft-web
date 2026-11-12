@@ -1,0 +1,98 @@
+{
+  "slug": "image-to-image",
+  "mode": "image",
+  "name": "Image to Image Generator",
+  "summary": "Add one or more reference images, say what to change, choose Nano Banana or GPT Image, and download the original file.",
+  "badge": "Up to 16 references · 2 models",
+  "indexable": true,
+  "placeholder": "Turn this into a watercolor painting and keep the composition",
+  "help": "Say what should change. With several images, refer to them by number: the first image, the second image.",
+  "seo": {
+    "title": "Image to Image AI – Edit Photos with Multiple References",
+    "description": "Add reference images, say what to change and choose Nano Banana or GPT Image. Pick a shape and resolution and download the original file. Free to try.",
+    "h1": "Image to Image Generator",
+    "intro": [
+      "Add a photo, write what should change, and the AI redraws it. Turn a snapshot into a watercolor painting, move a product onto a marble counter, change the season outside a window, or combine things from several photos: the dog from one picture on the sofa from another. You choose the model, Nano Banana or GPT Image, and you can add up to 10 reference images with Nano Banana and up to 16 with GPT Image.",
+      "There is no style menu and no fixed output size. Your instruction sets the look, and the shape and resolution you choose set the size. You download the original file exactly as the model made it. New visitors get free credits and need no account. To start from a description instead of a photo, use the [Text to Image Generator](/text-to-image). For a ready-made look on a photo of yourself or a pet, the [Photo Trend Maker](/create/photo-trend-maker) has 25 of them."
+    ]
+  },
+  "steps": [
+    {
+      "title": "Add reference images",
+      "description": "Upload one or more JPG, PNG or WebP photos that you own or have permission to use. Sharp photos with the subject in plain view work best."
+    },
+    {
+      "title": "Say what to change",
+      "description": "Write the instruction, then pick a model, a shape and a resolution. With several images, refer to them by number."
+    },
+    {
+      "title": "Create and download",
+      "description": "An image takes 30–90 seconds, a little longer at 4K. You download the original file and a smaller JPG copy."
+    }
+  ],
+  "specNotes": [
+    "Reference images: Nano Banana takes up to 10 and GPT Image up to 16. Each photo is resized to fit within 2048 pixels before it is sent, which is more than the models need.",
+    "Auto lets the model choose the shape. GPT Image makes every image at 1K only, so choose Nano Banana if you want 2K or 4K.",
+    "The price depends on the resolution, not on the model or how many images you add: 1K costs 1 credit, 2K costs 2 credits and 4K costs 3 credits (GPT Image makes 1K only). If an image can't be made, the credits are returned automatically.",
+    "You get the original file exactly as the model made it, plus a smaller JPG copy for sharing. Nothing is cropped or resized."
+  ],
+  "faq": [
+    {
+      "q": "Is the Image to Image Generator free?",
+      "a": "You can try it free. Every new visitor gets a few free credits that work on any PiCraft tool. A 1K image costs 1 credit, a 2K image 2 credits and a 4K image 3 credits, however many reference images you add. You do not need an account."
+    },
+    {
+      "q": "How many reference images can I add?",
+      "a": "Nano Banana takes up to 10 reference images and GPT Image up to 16. If you switch to a model that takes fewer than you have added, the form asks you to remove the extra ones before you create the image."
+    },
+    {
+      "q": "How do I use several images in one instruction?",
+      "a": "Refer to them by number, in the order they appear in the form. For example: \"Put the dog from the first image on the sofa in the second image, in soft window light.\" Say what to take from each image, and what should stay the same."
+    },
+    {
+      "q": "Which model should I choose, Nano Banana or GPT Image?",
+      "a": "Both edit photos and combine references, and the best way to choose is to try your own photos on each. Nano Banana offers more shapes and 4K for every shape. GPT Image takes more reference images but makes 1K images only. Create the same instruction with both and keep the one you prefer."
+    },
+    {
+      "q": "Can I choose a style?",
+      "a": "There is no style menu. You write the look into your instruction, for example \"redraw this as a flat vector illustration\" or \"make this a Japanese woodblock print\", and the model follows it."
+    },
+    {
+      "q": "Will the result keep my subject and layout?",
+      "a": "Usually, when you say so. Phrases such as \"keep the composition\" or \"keep everything else the same\" help, and so do sharp, well-lit reference photos. Because each result is a new image, details can still change, so create it again if something important is off."
+    },
+    {
+      "q": "Which photos can I upload?",
+      "a": "Only photos you own or have permission to use. Do not upload photos of other people without their permission, and do not use the tool to impersonate anyone or to mislead people. JPG, PNG and WebP files are accepted, and large photos are resized in your browser before they are uploaded."
+    },
+    {
+      "q": "Which shape and resolution should I pick?",
+      "a": "Pick the shape of the place the image will go: 2:3 for Pinterest Pins, 9:16 for full-screen vertical posts, 16:9 for video thumbnails, 1:1 for squares. If you edit one photo and want to keep its framing, choose the photo's own shape, such as 4:3 or 3:2."
+    },
+    {
+      "q": "What happens if the model refuses my request?",
+      "a": "Both models apply their own safety checks and can refuse some requests or return an error. When that happens, no image is made and your credits are returned automatically. Reword the instruction or try another photo."
+    },
+    {
+      "q": "Are my uploaded photos kept?",
+      "a": "Your reference photos are sent to the third-party AI providers that run the models, and they may keep them temporarily under their own policies. The images you create are deleted from PiCraft after 90 days. See the [privacy policy](/privacy) for the details."
+    },
+    {
+      "q": "How long does an image take?",
+      "a": "Usually 30–90 seconds. 4K images take a little longer. You can keep the tab open, and finished images are also listed under My files."
+    },
+    {
+      "q": "Should I label the images as AI-generated?",
+      "a": "Often, yes. Many platforms ask you to label realistic AI images, and an edited photo can mislead people if it is shown as untouched. Real estate listing services and marketplaces have their own rules on edited photos, so check them before you post."
+    },
+    {
+      "q": "Can I start from a description instead?",
+      "a": "Yes. The [Text to Image Generator](/text-to-image) draws an image from words alone, with the same two models and the same choice of shape and resolution."
+    }
+  ],
+  "related": [
+    "photo-trend-maker",
+    "amazon-product-photo",
+    "real-estate-listing-photo"
+  ]
+}

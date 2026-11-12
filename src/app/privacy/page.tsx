@@ -1,6 +1,15 @@
 import { ProsePage, type ProseSection } from "@/components/prose-page";
 import { pageMetadata } from "@/lib/seo";
-import { FILE_RETENTION_DAYS, LEGAL_ADDRESS, LEGAL_ENTITY, SITE_NAME, SUPPORT_EMAIL } from "@/lib/site";
+import {
+  FILE_RETENTION_DAYS,
+  LEGAL_ADDRESS,
+  LEGAL_ENTITY,
+  MIN_AGE,
+  SAFETY_LOG_RETENTION_DAYS,
+  SITE_NAME,
+  SUPPORT_EMAIL,
+  UPLOAD_RETENTION_DAYS,
+} from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Privacy Policy",
@@ -16,7 +25,7 @@ const SECTIONS: ProseSection[] = [
   {
     heading: "Information we collect",
     paragraphs: [
-      `You do not need an account to use ${SITE_NAME}, and we do not ask for your name, email address or payment details. We collect only what is needed to create your designs and run the service.`,
+      `You do not need an account to use ${SITE_NAME}, and we do not ask for your name. We collect only what is needed to create your designs, keep the service safe and, if you buy credits, record your purchase.`,
     ],
     items: [
       "Content you provide: the text you type into a maker and any photos you upload (for example a product photo or a picture of yourself for a thumbnail). If a photo shows a face, we use it only to create your design. We do not use it to identify anyone or to build face profiles.",
@@ -26,6 +35,9 @@ const SECTIONS: ProseSection[] = [
       "Technical data: IP address, browser type, request times and error details in our server logs, used for security, abuse prevention and troubleshooting.",
       "Usage data: the pages you view and the actions you take (for example choosing a maker, creating a design, downloading a file or clicking Save to Pinterest), together with your approximate location, device and browser type. We collect it with Google Analytics, using cookies and a random identifier that does not include your name, email address or uploaded content.",
       "Messages you send us: if you email us, we receive your email address and what you write.",
+      "Purchases: if you buy credits, you enter your payment details and email address on the payment page of Waffo, our merchant of record. Waffo tells us the result: the order and payment ID, the pack or plan, the amount, your email address and which anonymous account bought it. For a subscription we also keep its state (active, cancelled, payment failed) and when the current period ends. We never see or store your card number.",
+      `Safety records: when Waffo Prompt Sift blocks a request or holds it for review, we record the time, your account reference, the category and the check's request ID, but not your text. We keep these records for ${SAFETY_LOG_RETENTION_DAYS} days.`,
+      "Reports: if you report a design or a photo, we keep your report, the design it names, the email address you give (it is optional) and a short one-way code made from your IP address, so we can deal with it and spot abuse of the form.",
     ],
   },
   {
@@ -33,8 +45,10 @@ const SECTIONS: ProseSection[] = [
     items: [
       "To generate your designs and deliver the files to you.",
       "To show your file history, keep your credit balance and prevent abuse of free credits.",
+      "To check the text, photos and images that pass through the service against our Acceptable Use Policy, to review reports and to act on abuse, including ending access and informing the authorities where the law requires it or a child is at risk.",
       "To keep the service secure, fix errors and understand, in aggregate, which pages and makers people use and where they run into problems. Usage statistics come from Google Analytics and are not combined with your uploads, your text or your reference ID.",
       "To answer your messages and requests.",
+      "To add the credits you bought, show when a subscription renews or ends, handle refunds and, if you ask, email you a link that restores your credits on another device (we use the email address from your purchase for nothing else).",
       "We do not sell your personal information, we do not share it for advertising, and we do not use your uploads or designs to train AI models.",
     ],
     paragraphs: [
@@ -47,11 +61,13 @@ const SECTIONS: ProseSection[] = [
       "We share data only with service providers that help us run PiCraft, and only as needed for the purpose described.",
     ],
     items: [
-      "AI image generation: your text and uploaded photos are sent to third-party AI service providers that run the image models that create your design. They may keep uploaded photos in temporary storage so the models can read them, and delete them under their own policies.",
-      "Cloud storage: generated files are stored with a cloud storage provider and served through time-limited download links.",
-      "Image processing: for stickers and t-shirt designs, the generated artwork (not your uploaded photos) is sent to an image-processing provider to remove the background.",
+      "AI image generation: your text and uploaded photos are sent to third-party AI service providers that run the image models that create your design: Google (Nano Banana) and OpenAI, reached through OpenRouter (GPT Image). They handle what they receive under their own retention policies.",
+      "Content safety: the text of every request is sent to Waffo Prompt Sift, our payment provider's content-safety service, which returns a verdict and does not keep the text.",
+      "Cloud storage: generated files and the photos you upload are stored with a cloud storage provider. Generated files are served through time-limited download links.",
+      "Image processing: for stickers and t-shirt designs the generated artwork, and for the larger sizes of GPT Image the generated image (never your uploaded photos), is sent to an image-processing provider to remove the background or to enlarge it.",
       "Analytics: Google Analytics (Google LLC) receives usage data about your visit, such as the pages you view and the actions you take, and sets the cookies listed below.",
       "Pinterest, only when you choose it: if you click Save to Pinterest on a design, your browser opens Pinterest in a new tab with a time-limited link to the preview image, a suggested description and a link back to PiCraft. Pinterest receives these when that page opens (it loads the image to show a preview) and, if you save the pin, keeps its own copy of the image under Pinterest's terms and privacy policy. We do not load any Pinterest script or tag on PiCraft, and nothing is sent to Pinterest unless you click the button.",
+      "Payments: Waffo (our merchant of record) collects and processes the payment, handles taxes and sends your receipt, under its own privacy policy. If you ask for a restore link, or when a report needs our attention, the email is sent through our email provider.",
       "Hosting and security providers that process technical data on our behalf.",
       "Authorities or other parties when the law requires it or to protect our rights, users or the public.",
     ],
@@ -65,10 +81,12 @@ const SECTIONS: ProseSection[] = [
   {
     heading: "How long we keep it",
     items: [
-      `Generated files, and the temporary working copies used for background removal, are deleted automatically after ${FILE_RETENTION_DAYS} days. Uploaded photos kept by our image-generation provider are deleted by that provider under its own retention policy.`,
+      `Generated files, and the temporary working copies used for background removal, are deleted automatically after ${FILE_RETENTION_DAYS} days. Photos you upload are kept in our cloud storage only so the model can read them, and are deleted automatically after ${UPLOAD_RETENTION_DAYS} days. Our image-generation providers handle the copies they receive under their own retention policies.`,
       "A pin you save to Pinterest is kept by Pinterest, not by us. It stays there after our copy of the file is deleted, and deleting your files or records from PiCraft does not remove it.",
       "Records of your generations (the text you entered and references to the files) are kept until you ask us to delete them. My files shows the ones from the last 90 days.",
       "Credit records (when free credits were granted or used) are kept after a deletion request, so that free credits cannot be claimed again by the same device.",
+      "Purchase records (the payment, pack or plan, amount and email address) are kept as long as accounting, tax, fraud-prevention and refund rules require, also after a deletion request.",
+      `Safety records are deleted after ${SAFETY_LOG_RETENTION_DAYS} days. Reports are kept as long as needed to deal with them and to meet our legal duties. If we end an account for breaking the Acceptable Use Policy, we keep its device identifier and the evidence for the case after a deletion request, to stop the same person coming back and to answer the authorities.`,
       "The session cookie expires after 180 days. The device identifier stays in your browser until you clear its site data. The Google Analytics cookies expire after up to 2 years.",
       "Server logs are kept only as long as needed for security and troubleshooting.",
     ],
@@ -78,7 +96,8 @@ const SECTIONS: ProseSection[] = [
     items: [
       `Delete your data: email ${SUPPORT_EMAIL} with the reference ID shown at the bottom of My files (or links to the files you want removed) and we will delete the related files and records within 30 days.`,
       "Save to Pinterest is optional. You can edit the description or cancel on Pinterest before you save. Pins on a public board can be seen by anyone, so choose a secret board if you prefer, and to remove a pin delete it in your Pinterest account.",
-      "Clear your browser data: this removes the device identifier and session cookie. You will lose access to your file history and any unused free credits.",
+      "Clear your browser data: this removes the device identifier and session cookie. You will lose access to your file history and any unused free credits. Credits you bought can be restored with the email address used at checkout.",
+      "Report a photo of you: if someone used a photo of you without your permission, report it on the report page. The design is taken down at once and we remove the photo.",
       "Opt out of Google Analytics: install the Google Analytics opt-out browser add-on (tools.google.com/dlpage/gaoptout), use a content blocker or your browser's tracking-protection settings, or block cookies for picraft.ai. PiCraft keeps working without them (your credits and files need the pc_session cookie).",
       "Your rights: depending on where you live (for example under the GDPR, the UK GDPR or California law) you may have the right to access, correct, delete, export or restrict the use of your data, to object to its use and to withdraw consent. Contact us to use these rights. You can also complain to your local data protection authority.",
       "California residents: we do not sell or share personal information as those terms are defined in California law.",
@@ -104,7 +123,7 @@ const SECTIONS: ProseSection[] = [
   {
     heading: "Children",
     paragraphs: [
-      `${SITE_NAME} is not directed to children under 13 and we do not knowingly collect their personal information. If you believe a child has provided us with data, contact us and we will delete it.`,
+      `${SITE_NAME} is for people aged ${MIN_AGE} and over. It is not directed to children and we do not knowingly collect their personal information. We do not accept photos of children. If you believe a child has provided us with data or appears in a design, contact us and we will delete it.`,
     ],
   },
   {

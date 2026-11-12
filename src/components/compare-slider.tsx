@@ -14,10 +14,12 @@ interface CompareSliderProps {
   width: number;
   height: number;
   sizes: string;
+  /** For pictures that are not on the site's image host (a visitor's own photo, a signed result link). */
+  unoptimized?: boolean;
 }
 
 /** Before / after viewer: drag the handle (or use the arrow keys) to reveal the original photo over the result. */
-export function CompareSlider({ before, beforeAlt, after, afterAlt, width, height, sizes }: CompareSliderProps) {
+export function CompareSlider({ before, beforeAlt, after, afterAlt, width, height, sizes, unoptimized }: CompareSliderProps) {
   const [position, setPosition] = useState(50);
   const frame = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
@@ -83,9 +85,9 @@ export function CompareSlider({ before, beforeAlt, after, afterAlt, width, heigh
       className="relative w-full cursor-ew-resize select-none overflow-hidden bg-ink-100 outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
       style={{ aspectRatio: `${width} / ${height}`, touchAction: "pan-y" }}
     >
-      <Image src={after} alt={afterAlt} fill sizes={sizes} draggable={false} className="object-cover" />
+      <Image src={after} alt={afterAlt} fill sizes={sizes} draggable={false} unoptimized={unoptimized} className="object-cover" />
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
-        <Image src={before} alt={beforeAlt} fill sizes={sizes} draggable={false} className="object-cover" />
+        <Image src={before} alt={beforeAlt} fill sizes={sizes} draggable={false} unoptimized={unoptimized} className="object-cover" />
       </div>
 
       <span className="pointer-events-none absolute left-2 top-2 rounded bg-ink-900/80 px-1.5 py-0.5 text-[10px] font-medium text-white">

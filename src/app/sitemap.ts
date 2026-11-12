@@ -1,6 +1,13 @@
 import type { MetadataRoute } from "next";
 
 import { getCategoryPage } from "@/lib/categories";
+import {
+  generatorPath,
+  getGeneratorContent,
+  getGeneratorExamples,
+  getGenerators,
+  isGeneratorIndexable,
+} from "@/lib/generators";
 import { getGuides, guidePath, isGuideIndexable } from "@/lib/guides";
 import { getContent, getExamples, getScenes, isIndexable } from "@/lib/scenes";
 import { absoluteUrl, CATEGORIES, categoryPath, LEGAL_UPDATED_ISO } from "@/lib/site";
@@ -18,12 +25,16 @@ const newest = (dates: (string | undefined)[]) => dates.filter((date) => date !=
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const scenes = getScenes().filter(isIndexable);
+  const generators = getGenerators().filter(isGeneratorIndexable);
   const sizeGuides = getGuides("size").filter(isGuideIndexable);
   const posts = getGuides("blog").filter(isGuideIndexable);
   const stylePages = getStylePages().filter(({ file, style }) => isStyleIndexable(file, style));
   const tools = getTools().filter(isToolIndexable);
 
-  const latestScene = newest(scenes.map((scene) => getContent(scene.slug)?.updated));
+  const latestScene = newest([
+    ...scenes.map((scene) => getContent(scene.slug)?.updated),
+    ...generators.map((generator) => getGeneratorContent(generator.slug)?.updated),
+  ]);
   const latestGuide = newest([...sizeGuides, ...posts].map((guide) => guide.updated));
   const latest = newest([latestScene, latestGuide]);
 
@@ -37,6 +48,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: getCategoryPage(category.id).updated,
       changeFrequency: "weekly" as const,
       priority: 0.8,
+    })),
+    ...generators.map((generator) => ({
+      url: absoluteUrl(generatorPath(generator)),
+      lastModified: getGeneratorContent(generator.slug)?.updated,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+      images: getGeneratorExamples(generator.slug).map((example) => absoluteUrl(example.url)),
     })),
     ...scenes.map((scene) => ({
       url: absoluteUrl(`/create/${scene.slug}`),
@@ -80,11 +98,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+    { url: absoluteUrl("/pricing"), changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/about"), changeFrequency: "yearly", priority: 0.4 },
     { url: absoluteUrl("/press"), changeFrequency: "yearly", priority: 0.3 },
     { url: absoluteUrl("/contact"), changeFrequency: "yearly", priority: 0.3 },
     { url: absoluteUrl("/privacy"), lastModified: LEGAL_UPDATED_ISO, changeFrequency: "yearly", priority: 0.2 },
     { url: absoluteUrl("/terms"), lastModified: LEGAL_UPDATED_ISO, changeFrequency: "yearly", priority: 0.2 },
+    { url: absoluteUrl("/aup"), lastModified: LEGAL_UPDATED_ISO, changeFrequency: "yearly", priority: 0.2 },
+    { url: absoluteUrl("/report"), changeFrequency: "yearly", priority: 0.2 },
   ];
 
   return entries;

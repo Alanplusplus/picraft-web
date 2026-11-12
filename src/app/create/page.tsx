@@ -2,15 +2,17 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/breadcrumb";
 import { JsonLd } from "@/components/json-ld";
+import { GeneratorCard } from "@/components/generator-card";
 import { SceneCard } from "@/components/scene-card";
+import { generatorPath, getGenerators } from "@/lib/generators";
 import { getScenes, getScenesByCategory, isIndexable } from "@/lib/scenes";
 import { breadcrumbLd, collectionLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 import { CATEGORIES, categoryPath, type CategoryId } from "@/lib/site";
 
-const TITLE = "All PiCraft Makers – Invitations, Cards, Thumbnails & More";
+const TITLE = "All PiCraft AI Image Tools – Photos, Invitations & More";
 const DESCRIPTION =
-  "All PiCraft makers: photo trends, product photos, invitations, menus, flyers, business cards, thumbnails, banners, book covers, stickers and t-shirt designs.";
+  "All PiCraft AI image tools: text to image, image to image, photo trends, product photos, invitations, menus, thumbnails, book covers, stickers and t-shirt designs.";
 
 export const metadata = pageMetadata({ absoluteTitle: TITLE, description: DESCRIPTION, path: "/create" });
 
@@ -50,6 +52,7 @@ const GUIDE = [
 
 export default function CreatePage() {
   const makers = getScenes().filter(isIndexable);
+  const generators = getGenerators();
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
@@ -60,16 +63,20 @@ export default function CreatePage() {
             name: "PiCraft makers",
             description: DESCRIPTION,
             path: "/create",
-            items: makers.map((scene) => ({ name: scene.name, path: `/create/${scene.slug}` })),
+            items: [
+              ...generators.map((generator) => ({ name: generator.name, path: generatorPath(generator) })),
+              ...makers.map((scene) => ({ name: scene.name, path: `/create/${scene.slug}` })),
+            ],
           }),
         ]}
       />
       <Breadcrumb crumbs={CRUMBS} />
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">What do you need to make?</h1>
       <p className="mt-3 max-w-3xl text-ink-700">
-        Pick the thing you need. Each maker asks only for the details that matter, designs it with AI and gives you
-        files at the exact size and format you&apos;ll use them in. You never write a prompt, and every maker page
-        explains the specs and the rules it follows.
+        Start from the job you have. Most makers ask only for the details that matter, design it with AI and give you
+        files at the exact size and format you&apos;ll use them in, with no prompt to write. If your idea doesn&apos;t
+        fit a maker, the two AI image generators take your own description or photos, let you pick Nano Banana or
+        GPT Image, and give the original file back at the shape and resolution you choose.
       </p>
       <p className="mt-3 max-w-3xl text-ink-700">
         New visitors get a few free credits, and each design uses one credit. If a design isn&apos;t right, generate
@@ -77,6 +84,12 @@ export default function CreatePage() {
       </p>
 
       <nav aria-label="Categories" className="mt-6 flex flex-wrap gap-2">
+        <a
+          href="#generators"
+          className="rounded-full border border-ink-300 px-4 py-1.5 text-sm font-medium text-ink-800 hover:border-ink-500"
+        >
+          AI image generators
+        </a>
         {CATEGORIES.map((category) => (
           <a
             key={category.id}
@@ -89,6 +102,20 @@ export default function CreatePage() {
       </nav>
 
       <div className="mt-12 space-y-14">
+        <section id="generators" className="scroll-mt-20">
+          <h2 className="text-xl font-bold text-ink-950">AI image generators</h2>
+          <p className="mt-1 max-w-3xl text-sm leading-relaxed text-ink-700">
+            Two general tools for when there is no specific maker for the image you have in mind. Describe it in your
+            own words, or add reference photos and say what should change. You choose Nano Banana or GPT Image, the
+            shape and the resolution, and download the original file.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {generators.map((generator) => (
+              <GeneratorCard key={generator.slug} generator={generator} />
+            ))}
+          </div>
+        </section>
+
         {CATEGORIES.map((category) => (
           <section key={category.id} id={category.id} className="scroll-mt-20">
             <h2 className="text-xl font-bold text-ink-950">

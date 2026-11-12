@@ -7,6 +7,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { FaqList } from "@/components/faq-list";
 import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
+import { MakerLayout } from "@/components/maker-layout";
 import { RichText } from "@/components/rich-text";
 import { SceneGenerator } from "@/components/scene-generator";
 import { getGuidesForScene } from "@/lib/guides";
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: PageProps<"/create/[scene]/[s
   });
 }
 
-const H2 = "text-2xl font-bold tracking-tight text-ink-950";
+const H2 = "text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl";
 
 export default async function StylePage({ params }: PageProps<"/create/[scene]/[style]">) {
   const { scene: sceneSlug, style: styleSlug } = await params;
@@ -74,34 +75,26 @@ export default async function StylePage({ params }: PageProps<"/create/[scene]/[
   ];
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <div className="mx-auto max-w-6xl px-4 pt-5 sm:px-6 sm:pt-8">
       <JsonLd data={[breadcrumbLd(crumbs), faqLd(style.faq)]} />
       <Breadcrumb crumbs={crumbs} />
 
-      <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_440px]">
-        <section>
-          <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">{label}</span>
-          <h1 className="mt-3 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">{style.seo.h1}</h1>
-          <div className="mt-4 space-y-3 text-base leading-relaxed text-ink-700">
-            {style.intro.map((paragraph) => (
-              <p key={paragraph}>
-                <RichText text={paragraph} />
-              </p>
-            ))}
-          </div>
-          <p className="mt-5 text-sm text-ink-500">
+      <MakerLayout
+        badges={<span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700">{label}</span>}
+        title={style.seo.h1}
+        summary={scene.summary}
+        form={<SceneGenerator key={style.value} scene={presetScene} styleLinks={getStyleLinks(scene.slug)} />}
+        intro={style.intro}
+        note={
+          <>
             This is the {label} {file.noun} of the{" "}
             <Link href={`/create/${scene.slug}`} className="font-medium text-brand-700 hover:underline">
               {scene.name}
             </Link>
             . The form on this page opens with it already selected.
-          </p>
-        </section>
-
-        <aside className="lg:sticky lg:top-20 lg:self-start">
-          <SceneGenerator key={style.value} scene={presetScene} styleLinks={getStyleLinks(scene.slug)} />
-        </aside>
-      </div>
+          </>
+        }
+      />
 
       {examples.length > 0 && (
         <section className="mt-16">

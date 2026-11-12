@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { generatorPath, getGenerators } from "@/lib/generators";
 import { getScenesByCategory } from "@/lib/scenes";
 import { CATEGORIES, categoryPath, COPYRIGHT_YEAR, SITE_NAME, SOCIAL_PROFILES, TAGLINE } from "@/lib/site";
 
@@ -34,8 +35,8 @@ function ExternalIcon() {
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-ink-200 bg-ink-50">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 md:grid-cols-3 lg:grid-cols-7">
+    <footer className="mt-24 border-t border-ink-200 bg-white">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 md:grid-cols-3 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-1.5">
             <Image src="/images/logo-64.png" alt="" width={24} height={24} className="h-6 w-6" />
@@ -50,7 +51,7 @@ export function SiteFooter() {
                     href={profile.url}
                     target="_blank"
                     rel="me noopener"
-                    className="inline-flex items-center gap-1.5 rounded-xl border border-ink-300 bg-white px-3 py-1.5 text-sm font-medium text-ink-800 shadow-sm transition hover:border-brand-500 hover:text-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink-900"
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-ink-300 bg-white px-3 py-1.5 text-sm font-medium text-ink-800 shadow-sm transition hover:border-brand-500 hover:text-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                   >
                     {profile.name}
                     <ExternalIcon />
@@ -60,6 +61,18 @@ export function SiteFooter() {
               ))}
             </ul>
           )}
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-ink-900">AI image generators</p>
+          <ul className="mt-3 space-y-2">
+            {getGenerators().map((generator) => (
+              <li key={generator.slug}>
+                <Link href={generatorPath(generator)} className="text-sm text-ink-500 transition hover:text-brand-700">
+                  {generator.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
         {CATEGORIES.map((category) => (
           <div key={category.id}>
@@ -71,7 +84,7 @@ export function SiteFooter() {
             <ul className="mt-3 space-y-2">
               {getScenesByCategory(category.id).map((scene) => (
                 <li key={scene.slug}>
-                  <Link href={`/create/${scene.slug}`} className="text-sm text-ink-500 hover:text-ink-900">
+                  <Link href={`/create/${scene.slug}`} className="text-sm text-ink-500 transition hover:text-brand-700">
                     {scene.name}
                   </Link>
                 </li>
@@ -84,7 +97,7 @@ export function SiteFooter() {
           <ul className="mt-3 space-y-2">
             {RESOURCES.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-sm text-ink-500 hover:text-ink-900">
+                <Link href={item.href} className="text-sm text-ink-500 transition hover:text-brand-700">
                   {item.label}
                 </Link>
               </li>
@@ -92,24 +105,33 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-ink-200">
+      <div className="border-t border-ink-200 bg-ink-50">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 text-sm text-ink-500 sm:px-6">
           <p>© {COPYRIGHT_YEAR} {SITE_NAME}</p>
           <nav aria-label="Company" className="flex flex-wrap gap-5">
-            <Link href="/about" className="hover:text-ink-900">
+            <Link href="/pricing" className="transition hover:text-brand-700">
+              Pricing
+            </Link>
+            <Link href="/about" className="transition hover:text-brand-700">
               About
             </Link>
-            <Link href="/press" className="hover:text-ink-900">
+            <Link href="/press" className="transition hover:text-brand-700">
               Press kit
             </Link>
-            <Link href="/contact" className="hover:text-ink-900">
+            <Link href="/contact" className="transition hover:text-brand-700">
               Contact
             </Link>
-            <Link href="/privacy" className="hover:text-ink-900">
+            <Link href="/privacy" className="transition hover:text-brand-700">
               Privacy
             </Link>
-            <Link href="/terms" className="hover:text-ink-900">
+            <Link href="/terms" className="transition hover:text-brand-700">
               Terms
+            </Link>
+            <Link href="/aup" className="transition hover:text-brand-700">
+              Acceptable use
+            </Link>
+            <Link href="/report" className="transition hover:text-brand-700">
+              Report abuse
             </Link>
           </nav>
         </div>

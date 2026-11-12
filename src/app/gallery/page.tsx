@@ -67,6 +67,11 @@ export default function GalleryPage() {
           are AI-generated, not real. Use the examples for ideas and always proofread your own text before you print
           or publish.
         </p>
+        <p>
+          Looking for open-ended images? The <Link href="/text-to-image" className="font-medium text-brand-700 hover:underline">text to image</Link> and{" "}
+          <Link href="/image-to-image" className="font-medium text-brand-700 hover:underline">image to image</Link> pages
+          show their examples next to the exact words that made them.
+        </p>
       </div>
 
       <div className="mt-12 space-y-16">
@@ -81,7 +86,7 @@ export default function GalleryPage() {
             <section key={scene.slug} aria-labelledby={`g-${scene.slug}`}>
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
-                  <h2 id={`g-${scene.slug}`} className="text-2xl font-bold tracking-tight text-ink-950">
+                  <h2 id={`g-${scene.slug}`} className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">
                     {scene.name}
                   </h2>
                   <p className="mt-1 max-w-2xl text-sm text-ink-500">{scene.summary}</p>
