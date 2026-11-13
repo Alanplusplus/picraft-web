@@ -1,0 +1,187 @@
+{
+  "title": "Best Source Photos for AI Photo Trends: What Each Look Needs",
+  "h1": "The Best Photo to Upload for AI Photo Trends, Look by Look",
+  "description": "Which photo to upload for an AI photo trend: sharp, evenly lit, face or pet large. See what 13 looks need, how to handle pets and couples, and what to skip.",
+  "summary": "Use one sharp photo in even light, with the face or the pet filling a good part of the frame and nothing covering it. After that, match the photo to the look: a casual snapshot for film looks, a close portrait for clay and toy looks, a waist-up photo for the figure box and the pop-out, and a pet with a clear coat color for felt, paper and sticker looks.",
+  "topic": "Photo trends",
+  "published": "2026-11-12",
+  "updated": "2026-11-12",
+  "scene": "photo-trend-maker",
+  "relatedGuides": [
+    "blog:ai-photo-trends-right-now",
+    "blog:how-to-do-the-ai-80s-photo-trend"
+  ],
+  "sections": [
+    {
+      "heading": "Five rules that apply to every look",
+      "items": [
+        "Start with a sharp, evenly lit photo. Window light and daylight work best. A blurry, very dark or heavily filtered photo gives the AI little to hold on to, and the result drifts further from the original.",
+        "Make the face or the pet large. A close crop or a waist-up shot keeps the likeness better than a wide scene where the subject is small. Crop the photo first if you need to.",
+        "Use one subject unless the look is built for two. A single face or a pair keeps the likeness best, and large groups drift more.",
+        "Keep the face clear. PromptLike lists sunglasses, a cap over the forehead and a heavy filter as things to avoid, and says dark and blurry photos are the number one reason a face changes. Quantslant adds that a hat in a figure photo can end up on the figure for good.",
+        "Dress and pose the way you want to look. Quantslant notes that the model carries clothing over in an action figure. Some PiCraft looks replace clothes on purpose, which the table below points out."
+      ],
+      "ordered": true,
+      "after": [
+        "Choose the size before you create. The shape changes how the picture is composed, so a 9:16 image is built for a tall frame instead of being cropped from a square. The [Photo Trend Maker](/create/photo-trend-maker) shows all four sizes."
+      ]
+    },
+    {
+      "heading": "Which photo each look needs",
+      "paragraphs": [
+        "The advice below is the same advice printed on each look page, collected in one place. Open a look page to see its examples and its prompt."
+      ],
+      "table": {
+        "caption": "Best source photo for 13 PiCraft looks",
+        "columns": [
+          "Look",
+          "Best photo to upload",
+          "Photo to avoid"
+        ],
+        "rows": [
+          [
+            "[80s Flashback](/create/photo-trend-maker/80s-flashback)",
+            "A casual shot in ordinary clothes, such as a selfie by a window",
+            "A posed studio portrait, which feels less like a snapshot"
+          ],
+          [
+            "[70s Slide Portrait](/create/photo-trend-maker/70s-slide)",
+            "A relaxed daylight or window-light photo",
+            "Evening and flash photos, which have hard shadows to work around"
+          ],
+          [
+            "[Y2K Digital Camera](/create/photo-trend-maker/y2k-digicam)",
+            "A sharp photo with the face large in the frame",
+            "A small face in a wide scene, which can lose its likeness under the flash"
+          ],
+          [
+            "[Photo Booth Strip](/create/photo-trend-maker/photo-booth)",
+            "A front-facing photo on a simple background, alone or as a pair",
+            "A busy background, which only adds noise to the grain"
+          ],
+          [
+            "[Claymation World](/create/photo-trend-maker/claymation)",
+            "A subject with a clear outline and some room around it",
+            "A crowded scene with no clear subject"
+          ],
+          [
+            "[Felt Miniature](/create/photo-trend-maker/felt-miniature)",
+            "Distinct fur, hair or clothing colors on a simple scene",
+            "A cluttered room, which turns into a pile of fibers"
+          ],
+          [
+            "[Collectible Figure Box](/create/photo-trend-maker/collectible-figure-box)",
+            "A waist-up or full-body photo that shows the outfit",
+            "A tight selfie, which leaves the clothes and accessories to be guessed"
+          ],
+          [
+            "[Pop-up Paper Card](/create/photo-trend-maker/pop-up-paper-card)",
+            "One clear subject on a plain background, such as a pet with a distinct coat",
+            "A crowded room, which becomes a busy stack of layers"
+          ],
+          [
+            "[Scrapbook Journal Page](/create/photo-trend-maker/scrapbook-journal)",
+            "A sharp photo with a clear focus, such as a day out or a couple",
+            "A tiny subject in a wide scene, which becomes a tiny figure on a small print"
+          ],
+          [
+            "[Mini Doodle Twin](/create/photo-trend-maker/mini-doodle-twin)",
+            "A close photo where a shoulder, hat or table edge is visible",
+            "A very tight face crop, which leaves the twin nowhere to sit"
+          ],
+          [
+            "[Instant Photo Pop-Out](/create/photo-trend-maker/instant-photo-pop-out)",
+            "A waist-up photo where the shoulders and one arm show",
+            "A tight face crop, which forces the AI to invent the arm"
+          ],
+          [
+            "[Photo Sticker Sheet](/create/photo-trend-maker/photo-sticker-sheet)",
+            "A sharp, front-facing photo with eyes, ears and hair visible",
+            "A blurry or angled photo, because nine copies repeat its flaws"
+          ],
+          [
+            "[Night Out Flash](/create/photo-trend-maker/night-flash)",
+            "A clear face, large in the frame",
+            "A photo whose setting you want to keep, since the background goes dark and moody"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Photos of pets",
+      "paragraphs": [
+        "Several looks suit pets better than people, and the photo rules are similar. The animal should be large, sharp and lit from the front, with the face visible."
+      ],
+      "items": [
+        "Clear markings carry over best. A patch, a stripe or a distinct coat color survives the move into felt, paper or ink.",
+        "A pet that looks at the camera works best for the pop-out, where a front paw reaches out of the frame in place of a hand.",
+        "A single animal on a simple background gives the paper card and the felt miniature clean shapes to work with.",
+        "The sticker sheet adapts the nine poses for a pet, so a sharp front-facing photo matters even more, because the face is repeated nine times."
+      ]
+    },
+    {
+      "heading": "Couples and groups",
+      "paragraphs": [
+        "Two people can work very well: the photo booth strip is built around a pair swapping places between frames. For a pair, use one photo in which both faces are clear and close together. PromptLike points out that couple edits are the hardest for any AI model, because it has to protect two faces at the same time.",
+        "Groups drift more than single faces. If three or more people are in the picture, crop it to the people who matter before you upload it. Get permission from everyone who can be recognized in the photo before you post the result."
+      ]
+    },
+    {
+      "heading": "Photos to skip",
+      "items": [
+        "Photos of children. The Terms say not to upload them, and the looks are not built for them.",
+        "Someone else's photo without their agreement. Every recognizable person must have agreed to the photo being used.",
+        "Photos with sunglasses, a hat over the forehead, or a hand across the face.",
+        "Side-on, distant or low-light photos. Quantslant lists a side view, a long distance and a group as the usual reasons a face looks different in the result.",
+        "Photos with personal details in the background, such as house numbers, license plates or documents. The result can keep them."
+      ]
+    },
+    {
+      "heading": "When the result does not look like you",
+      "paragraphs": [
+        "Every generation is new, so the first result is a sample, not a verdict. PromptLike advises generating again with the same prompt before rewriting it, because the second or third try is often the cleanest. On PiCraft the same applies: run the same photo again, or run it through a different look.",
+        "If the face keeps drifting, change the photo before you change anything else. A sharper, closer, better-lit photo does more than extra words. Looks that turn you into an object, such as a bobblehead or a clay figure, are meant to look like a toy, so judge them by whether friends would recognize you, not by whether every detail matches. Our [photo trends guide to what people are posting right now](/blog/ai-photo-trends-right-now) lists which looks are going around."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What kind of photo works best for AI photo trends?",
+      "a": "One sharp photo in even light, with the face or the pet large in the frame and nothing covering it. Window light and daylight are the safest. Then pick a look that suits the photo, since a casual snapshot suits the film looks and a close portrait suits the clay and toy looks."
+    },
+    {
+      "q": "Should I use a full-body photo or a close-up?",
+      "a": "It depends on the look. A waist-up or full-body photo helps the collectible figure box and the pop-out, which need an outfit or an arm to copy. For most other looks, a close or waist-up photo keeps the likeness better than a wide scene where the subject is small."
+    },
+    {
+      "q": "Can I use a group photo?",
+      "a": "You can, but a single face or two people keep the likeness best. Large groups drift, so crop the photo to the people who matter. Make sure everyone in it has agreed to its use."
+    },
+    {
+      "q": "Can I use a photo of my dog or cat?",
+      "a": "Yes. Several looks suit pets, including the felt miniature, the pop-up paper card, the marble statue and the sticker sheet. Use a sharp photo with the animal large in the frame and its markings visible."
+    },
+    {
+      "q": "Can I upload a photo of my child?",
+      "a": "No. The Terms say not to upload photos of children. Use a photo of yourself, an adult who has agreed, or a pet."
+    },
+    {
+      "q": "Why does the result not look like me?",
+      "a": "The usual causes are a weak source photo, a small face in a wide scene, or a photo with sunglasses or a hat. Generate again, try a closer and better-lit photo, or switch to a look that suits your photo better. Every run gives a new result."
+    }
+  ],
+  "sources": [
+    {
+      "label": "PromptLike: Viral Nano Banana Gemini prompts (Nov 5, 2026)",
+      "url": "https://promptlike.com/viral-nano-banana-gemini-prompts/"
+    },
+    {
+      "label": "Quantslant: AI Photo Trend Prompt Generator (Oct 4, 2026)",
+      "url": "https://quantslant.com/ai-photo-trend-prompt-generator/"
+    },
+    {
+      "label": "Quantslant: AI Action Figure from Photo (Oct 4, 2026)",
+      "url": "https://quantslant.com/ai-action-figure-from-photo/"
+    }
+  ]
+}

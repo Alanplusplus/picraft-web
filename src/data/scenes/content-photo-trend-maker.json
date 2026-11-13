@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-11-12",
   "overview": {
     "heading": "How the Photo Trend Maker works",
     "paragraphs": [
       "You upload one photo, choose one of 25 looks and pick a size. PiCraft sends the photo and a written description of the look to an AI image model, which redraws the whole picture in that style while keeping the subject recognizable. The result comes back as a JPG at the exact pixel size of the shape you chose.",
       "Each look is a different kind of change. The film and camera looks, such as the [80s flashback](/create/photo-trend-maker/80s-flashback) and the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam), change the clothes, the surroundings and the flaws of the picture. The handmade looks, such as the [claymation world](/create/photo-trend-maker/claymation) and the [felt miniature](/create/photo-trend-maker/felt-miniature), rebuild the scene from physical materials. The seasonal looks, such as the [Halloween costume portrait](/create/photo-trend-maker/halloween-portrait), the [Thanksgiving harvest portrait](/create/photo-trend-maker/thanksgiving-harvest), the [Christmas card portrait](/create/photo-trend-maker/christmas-card), the [snow globe](/create/photo-trend-maker/snow-globe) and the [New Year's Eve party flash](/create/photo-trend-maker/new-years-eve-party), dress the subject for a holiday and rebuild the room around them. The craft and illusion looks, such as the [collectible figure box](/create/photo-trend-maker/collectible-figure-box), the [pop-up paper card](/create/photo-trend-maker/pop-up-paper-card), the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal), the [mini doodle twin](/create/photo-trend-maker/mini-doodle-twin), the [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out) and the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet), turn the photo into a made object or a picture trick. The rest turn the photo into a toy head, a game screen, a blueprint, a newspaper page or a statue.",
-      "The size is chosen before the image is made, not after. A 9:16 image is composed for a tall frame, so the subject is not cut off the way it would be if you cropped a square. Each generation costs one credit and gives a new result, so you can run the same photo through several looks and keep the best one."
+      "The size is chosen before the image is made, not after. A 9:16 image is composed for a tall frame, so the subject is not cut off the way it would be if you cropped a square. Each generation costs one credit and gives a new result, so you can run the same photo through several looks and keep the best one. For the looks that are going around right now and where each one was reported, see [AI photo trends right now](/blog/ai-photo-trends-right-now)."
     ]
   },
   "whatYouGet": [
@@ -63,8 +63,8 @@
   "tips": [
     {
       "title": "Start with a sharp, evenly lit photo",
-      "description": "Window light and daylight work best. Blurry, very dark or heavily filtered photos give the AI little to hold on to, and the result drifts further from the original."
-    },
+      "description": "Window light and daylight work best. Blurry, very dark or heavily filtered photos give the AI little to hold on to, and the result drifts further from the original. The guide to the [best source photos, look by look](/blog/best-source-photos-for-ai-photo-trends) has the details."
+  },
     {
       "title": "Make the face or the pet large",
       "description": "Close crops and waist-up shots keep the likeness better than a wide scene where the subject is small. Crop the photo first if you need to."

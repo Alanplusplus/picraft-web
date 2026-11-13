@@ -1,0 +1,121 @@
+{
+  "title": "AI Photo Trends Right Now: What People Are Posting in 2026",
+  "h1": "AI Photo Trends Right Now: What People Are Posting and How to Try Each",
+  "description": "A dated list of the AI photo trends named in roundups this month, who reported each one, which you can try on one photo, and how to tell a trend from a meme.",
+  "summary": "No single AI photo trend is on top this month, and we found no source that ranks them with real numbers. Roundups dated September to November 2026 keep naming the same families: boxed action figures, 80s and 2000s camera snapshots, dusk flash portraits and Polaroid-style pictures. This page lists what named sources report, with dates, and which of them you can try on your own photo.",
+  "topic": "Photo trends",
+  "published": "2026-11-12",
+  "updated": "2026-11-12",
+  "scene": "photo-trend-maker",
+  "relatedGuides": ["blog:how-to-do-the-ai-80s-photo-trend", "blog:best-source-photos-for-ai-photo-trends"],
+  "sections": [
+    {
+      "heading": "What people are posting right now",
+      "paragraphs": [
+        "This page was checked on November 12, 2026. Every row below comes from a named page and the date shown on it. None of those pages gives counts of how many people posted a trend, so read \u201cpopular\u201d here as \u201ccovered in roundups\u201d, not as a ranking."
+      ],
+      "table": {
+        "caption": "AI photo trends named in roundups from September to November 2026",
+        "columns": ["Trend", "What it is", "Reported by", "PiCraft look"],
+        "rows": [
+          ["Boxed action figure", "You as a toy in a blister pack, or a figure on a desk", "Quantslant, Oct 4, 2026 (says it came back in September 2026); ImgCruncher, updated Nov 12, 2026", "[Collectible Figure Box](/create/photo-trend-maker/collectible-figure-box)"],
+          ["80s portrait or snapshot", "A modern photo redone as a 1980s family-album picture, sometimes with a date stamp", "SocialThink, Sep 14, 2026; Quantslant, Oct 4, 2026", "[80s Flashback](/create/photo-trend-maker/80s-flashback)"],
+          ["Lofi Dusk", "A selfie re-lit as a dusk shot with harsh flash, neon glow and film grain", "PromptUp, Nov 4, 2026 (it cites Analytics Insight)", "Closest is [Night Out Flash](/create/photo-trend-maker/night-flash), which is not the same look"],
+          ["2000s digital camera snapshot", "Harsh flash, soft focus and a low-resolution feel", "Kenerate AI, updated Nov 12, 2026; Quantslant, Oct 4, 2026", "[Y2K Digital Camera](/create/photo-trend-maker/y2k-digicam)"],
+          ["Photo booth strip", "Four expressions of one person in a photo strip", "Quantslant, Oct 4, 2026", "[Photo Booth Strip](/create/photo-trend-maker/photo-booth)"],
+          ["Film grain and faded color", "A photo made to look less like AI, with grain and imperfect color", "ImgCruncher, updated Nov 12, 2026, which calls it the counter-trend of the summer", "[70s Slide Portrait](/create/photo-trend-maker/70s-slide) and the 80s Flashback"],
+          ["Polaroid-style photo", "A white-framed instant print, often of a couple", "PromptLike, Nov 5, 2026; Kenerate AI, updated Nov 12, 2026", "No Polaroid look yet"],
+          ["Black-and-white water drop portrait", "A close-up in black and white with water drops on the face", "AI Sisters, Nov 6, 2026, describing TikTok videos", "No matching look"],
+          ["Pet as a person, your face across decades, pixel stretch", "Three separate effects from one list", "ImgCruncher, updated Nov 12, 2026", "No matching look"]
+        ]
+      },
+      "after": [
+        "A table like this goes out of date quickly. Check the date on any roundup, including this one: the last update is shown at the top of the page."
+      ]
+    },
+    {
+      "heading": "Which ones last and which are one-week memes",
+      "paragraphs": [
+        "The sources disagree on how fast trends move. SocialThink wrote on September 14, 2026 that some trends last for weeks and others disappear almost as quickly as they arrive. Kenerate AI, in a guide updated on November 12, 2026, says it found no reliable source showing which single look is peaking this month.",
+        "The boxed action figure is the one case with a longer record. Quantslant describes two waves, the first in April 2025 and the second in September 2025, and says that in 2026 the format became a template people repeat with each new image model. It calls this a steady, seasonally refreshed trend, which is its own assessment and not a measurement. Our reading of all the sources is that toy-style figures and old-camera looks keep coming back in new forms, while a style tied to one specific tool or one week's prompt tends to fade."
+      ]
+    },
+    {
+      "heading": "How to judge a trend claim",
+      "items": [
+        "Look for a date. A roundup from the spring cannot tell you what people are posting in November.",
+        "Look for a named source. \u201cGoing viral\u201d with no link or name behind it is a guess.",
+        "Look for numbers. Without counts of posts or views, \u201cmost popular\u201d only means the author saw it a lot.",
+        "Check whether the trend is a style or a character. A style such as grain, flash, clay or felt can be recreated by anyone. A look that depends on a film character or a studio's art style is a different matter, and PiCraft does not make those."
+      ]
+    },
+    {
+      "heading": "What nearly every trend has in common",
+      "paragraphs": [
+        "The how-to pages from PromptUp, Kenerate AI, PromptLike and Quantslant describe nearly the same recipe, whatever the trend is called. PromptLike and Quantslant both trace most failed results to the photo or to asking for too much at once: a dark, blurry or side-facing photo, or a prompt that changes the outfit, the background and the hairstyle together."
+      ],
+      "items": [
+        "Upload one sharp photo with the face or the pet clearly visible, in even light.",
+        "Say what must stay the same, usually the face, hairstyle and skin tone.",
+        "Name the light, the camera or the material that makes the look, such as direct flash, film grain or modelling clay.",
+        "Give the shape you need, such as vertical 9:16 for Stories or 4:5 for a feed post.",
+        "Make two or three versions and keep the one that still looks like you."
+      ],
+      "ordered": true,
+      "after": [
+        "Our guide to [the best source photos for AI photo trends](/blog/best-source-photos-for-ai-photo-trends) goes through the first step look by look."
+      ]
+    },
+    {
+      "heading": "Three ways to try a trend on your own photo",
+      "paragraphs": [
+        "In ChatGPT or Gemini, with a prompt. Upload your photo, paste the text and make a few versions. Many look pages on PiCraft carry a prompt you can copy, for example the one on the [80s Flashback page](/create/photo-trend-maker/80s-flashback) and the one on the [Y2K Digital Camera page](/create/photo-trend-maker/y2k-digicam). A prompt can give a different result in each chat tool, so treat it as a starting point.",
+        "On PiCraft, in one click. The [Photo Trend Maker](/create/photo-trend-maker) has 25 looks. You upload one photo, choose a look and a size, and download a finished JPG at the exact pixel size. There is no prompt to write. New visitors get free credits and do not need an account, and one credit makes one picture.",
+        "With your own wording, in Image to Image. [Image to Image](/image-to-image) lets you write the changes yourself and add reference photos. Use it for a trend that has no ready-made look, such as a Lofi Dusk portrait or a Polaroid-style print."
+      ]
+    },
+    {
+      "heading": "Trends PiCraft does not make",
+      "paragraphs": [
+        "Some trends depend on a named film character, a brand's packaging, a studio's art style or a real public figure. PiCraft has no looks for these, and the table above leaves them out on purpose. The looks on the [photo trends page](/categories/photo-trends) copy cameras, materials and objects instead, which anyone can describe without borrowing someone else's work.",
+        "The Terms say to upload only photos you took or have the right to use, that every recognizable person must have agreed, and not to upload photos of children. Read the text a result draws into the picture, such as a date stamp or a headline, before you post it, because AI can misspell words."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the AI photo trend right now?",
+      "a": "There is no single one. Roundups dated September to November 2026 name boxed action figures, 80s and 2000s camera snapshots, dusk flash portraits, Polaroid-style pictures and a black-and-white water drop portrait. The table on this page shows who reported each one and when."
+    },
+    {
+      "q": "How long do AI photo trends last?",
+      "a": "It varies. SocialThink wrote in September 2026 that some last for weeks and others fade almost at once. Quantslant describes the boxed action figure as returning in waves since April 2025, with a new one in September 2026."
+    },
+    {
+      "q": "Which AI photo trend is the most popular?",
+      "a": "We found no source that ranks them with real numbers, so we do not name one. A roundup that calls a trend the most popular without counts of posts or views is giving an impression, not a measurement."
+    },
+    {
+      "q": "Can I do an AI photo trend for free?",
+      "a": "Often, yes. Quantslant reports that Gemini and ChatGPT both allow a limited number of free images, and that the limits have changed before. On PiCraft, new visitors get free credits and no account is needed."
+    },
+    {
+      "q": "Do I need to write a prompt?",
+      "a": "In a chat image tool, yes, and the prompt matters. On PiCraft you pick a look and a size from a form, and the wording is already written. The look pages also show a prompt you can paste into another tool."
+    },
+    {
+      "q": "Is it safe to upload my photo?",
+      "a": "Upload only photos you took or have the right to use, and only if everyone recognizable in them has agreed. Do not upload photos of children. Your photo on PiCraft is sent to our AI provider to make the image and is not shown to other visitors. The [Privacy Policy](/privacy) explains how long data is kept."
+    }
+  ],
+  "sources": [
+    { "label": "Kenerate AI: How to Do the AI Photo Trend (updated Nov 12, 2026)", "url": "https://kenerateai.com/blogs/how-to-do-the-ai-photo-trend" },
+    { "label": "ImgCruncher: Viral AI Photo Trends Right Now (updated Nov 12, 2026)", "url": "https://imgcruncher.com/blog/viral-ai-photo-trends-2026" },
+    { "label": "PromptUp: The Lofi Dusk AI photo trend (Nov 4, 2026)", "url": "https://usepromptup.com/blog/lofi-dusk-ai-photo-prompts/" },
+    { "label": "PromptLike: Viral Nano Banana Gemini prompts (Nov 5, 2026)", "url": "https://promptlike.com/viral-nano-banana-gemini-prompts/" },
+    { "label": "Quantslant: AI Photo Trend Prompt Generator (Oct 4, 2026)", "url": "https://quantslant.com/ai-photo-trend-prompt-generator/" },
+    { "label": "Quantslant: AI Action Figure from Photo (Oct 4, 2026)", "url": "https://quantslant.com/ai-action-figure-from-photo/" },
+    { "label": "SocialThink: Best AI Photo Trends Taking Over Instagram in 2026 (Sep 14, 2026)", "url": "https://socialthink.io/blog/best-ai-photo-trends-instagram/" },
+    { "label": "AI Sisters: black and white AI photo with a water drop effect (Nov 6, 2026)", "url": "https://aisisters.ai/en/post/generer-photo-ia-noir-blanc-effet-goutte-eau-chatgpt" }
+  ]
+}

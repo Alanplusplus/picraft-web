@@ -147,7 +147,7 @@ export function GuideArticle({ guide, crumbs }: { guide: Guide; crumbs: Crumb[] 
                       <tr key={row.join("|")}>
                         {row.map((cell, index) => (
                           <td key={index} className={`px-4 py-3 ${index === 0 ? "font-medium text-ink-900" : "text-ink-700"}`}>
-                            {cell}
+                            <RichText text={cell} />
                           </td>
                         ))}
                       </tr>

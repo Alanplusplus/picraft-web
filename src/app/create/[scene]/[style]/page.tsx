@@ -14,6 +14,7 @@ import { getGuidesForScene } from "@/lib/guides";
 import { getScene, toClientScene } from "@/lib/scenes";
 import { breadcrumbLd, faqLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
+import { absoluteUrl, formatDate, SITE_NAME } from "@/lib/site";
 import {
   getStyle,
   getStyleLinks,
@@ -41,6 +42,8 @@ export async function generateMetadata({ params }: PageProps<"/create/[scene]/[s
     description: found.style.seo.description,
     path: stylePath(scene, found.style),
     noindex: !isStyleIndexable(found.file, found.style),
+    // The segment has its own `opengraph-image` file: the card shows this look's best example.
+    ownShareImage: true,
   });
 }
 
@@ -74,9 +77,22 @@ export default async function StylePage({ params }: PageProps<"/create/[scene]/[
     { name: label, path },
   ];
 
+  // Like the maker page: no offers or ratings, because PiCraft has neither to report.
+  const applicationLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: `${style.seo.h1} by ${SITE_NAME}`,
+    url: absoluteUrl(path),
+    description: style.seo.description,
+    applicationCategory: "DesignApplication",
+    operatingSystem: "Web",
+    image: examples[0] ? absoluteUrl(examples[0].url) : undefined,
+    isPartOf: { "@type": "WebApplication", name: `${scene.name} by ${SITE_NAME}`, url: absoluteUrl(`/create/${scene.slug}`) },
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 pt-5 sm:px-6 sm:pt-8">
-      <JsonLd data={[breadcrumbLd(crumbs), faqLd(style.faq)]} />
+      <JsonLd data={[breadcrumbLd(crumbs), applicationLd, faqLd(style.faq)]} />
       <Breadcrumb crumbs={crumbs} />
 
       <MakerLayout
@@ -163,6 +179,35 @@ export default async function StylePage({ params }: PageProps<"/create/[scene]/[
         </ul>
       </section>
 
+      {style.promptTry && (
+        <section className="mt-16 max-w-3xl">
+          <h2 className={H2}>{label} prompt for ChatGPT and Gemini</h2>
+          <p className="mt-4 text-base leading-relaxed text-ink-700">
+            You can try this look in a chat image tool too: upload your photo, then paste the text below. It is adapted
+            from the description PiCraft sends to the image model for this look, so a chat tool may give a different
+            result. Every run is different, so try it twice, and add the shape you want at the end, such as
+            &ldquo;vertical 2:3&rdquo;.
+          </p>
+          <pre className="mt-4 select-all whitespace-pre-wrap rounded-xl border border-ink-200 bg-ink-50 p-4 font-sans text-sm leading-relaxed text-ink-800">
+            {style.promptTry.prompt}
+          </pre>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-ink-700">
+            {style.promptTry.notes.map((note) => (
+              <li key={note}>
+                <RichText text={note} />
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-base leading-relaxed text-ink-700">
+            To change the wording or add reference photos, use{" "}
+            <Link href="/image-to-image" className="font-medium text-brand-700 hover:underline">
+              Image to Image
+            </Link>
+            . To skip the prompt, use the form at the top of this page and download a finished JPG at the size you pick.
+          </p>
+        </section>
+      )}
+
       <section className="mt-16 max-w-3xl">
         <h2 className={H2}>What you download</h2>
         <p className="mt-4 text-base leading-relaxed text-ink-700">
@@ -179,6 +224,10 @@ export default async function StylePage({ params }: PageProps<"/create/[scene]/[
         <h2 className={H2}>Questions about the {label} {file.noun}</h2>
         <FaqList items={style.faq} />
       </section>
+
+      <p className="mt-10 text-sm text-ink-500">
+        Last updated: <time dateTime={file.updated}>{formatDate(file.updated)}</time>
+      </p>
 
       {otherStyles.length > 0 && (
         <section className="mt-16">
