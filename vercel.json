@@ -1,6 +1,5 @@
 {
   "crons": [
-    { "path": "/api/cron/waffo-reconcile", "schedule": "17 1 * * *" },
-    { "path": "/api/cron/indexnow", "schedule": "43 1 * * *" }
+    { "path": "/api/cron/waffo-reconcile", "schedule": "17 1 * * *" }
   ]
 }

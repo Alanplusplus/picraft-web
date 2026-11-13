@@ -5,7 +5,7 @@ import { notifyFeishu, type FeishuNotice, type NoticeTone } from "@/lib/feishu";
 import { readGaIds } from "@/lib/ga-ids";
 import { grantPayment, refundPayment, syncSubscription, toCents, type SubscriptionStatus } from "@/lib/payments";
 import { findPack, findPlan, formatPrice } from "@/lib/pricing";
-import { parseOrderExternalId, verifyWaffoWebhook } from "@/lib/waffo";
+import { parseOrderExternalId, verifyWaffoWebhook, waffoEnvironment } from "@/lib/waffo";
 import { logReconcile, reconcilePayments } from "@/lib/waffo-reconcile";
 
 export const dynamic = "force-dynamic";
@@ -55,8 +55,11 @@ export async function POST(request: NextRequest) {
     event = verifyWaffoWebhook(rawBody, request.headers.get("x-waffo-signature"));
   } catch (e) {
     // Right after going live this usually means WAFFO_ENVIRONMENT does not match the API key's, or a wrong store id.
-    console.error("[waffo] webhook rejected:", e instanceof Error ? e.message : e);
-    return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
+    const reason = e instanceof Error ? e.message : String(e);
+    const hint = rejectionHint(rawBody, reason);
+    console.error("[waffo] webhook rejected:", reason, hint ?? "");
+    // The caller is Waffo (its delivery log shows this answer), so say why: it is the only place a wrong setting shows.
+    return NextResponse.json({ error: "Invalid signature", reason, hint }, { status: 400 });
   }
 
   const outcome: Outcome = {};
@@ -71,6 +74,35 @@ export async function POST(request: NextRequest) {
   }
   notifyFeishu(feishuNotice(event, outcome));
   return response;
+}
+
+/**
+ * Which setting to look at when a webhook is refused. The body is read before it is trusted, only to explain the
+ * refusal (it decides nothing): the event says which environment and store it comes from.
+ */
+function rejectionHint(rawBody: string, reason: string): string | undefined {
+  let peek: { mode?: unknown; storeId?: unknown } = {};
+  try {
+    peek = JSON.parse(rawBody) ?? {};
+  } catch {
+    return "The body is not JSON.";
+  }
+  const configured = waffoEnvironment();
+  if (reason.includes("unexpected store")) {
+    return `The event is for store ${String(peek.storeId)}, which is not the store this site is set up for (WAFFO_STORE_ID).`;
+  }
+  if (reason.includes("signature (")) {
+    if ((peek.mode === "test" || peek.mode === "prod") && peek.mode !== configured) {
+      return (
+        `The event comes from the ${peek.mode} environment but this site verifies ${configured} webhooks ` +
+        `(WAFFO_ENVIRONMENT=${configured}). Use WAFFO_ENVIRONMENT=${peek.mode} together with that environment's API key, ` +
+        "store and products, or send the event to a deployment set up for it."
+      );
+    }
+    return "The signature does not match the body: it was changed on the way, or the event did not come from Waffo.";
+  }
+  if (reason.includes("timestamp")) return "The signature is too old or too new: check the server clock.";
+  return undefined;
 }
 
 /** What was done about an event, for the Feishu card. `tone` overrides the event's own colour when something needs a look. */
@@ -123,6 +155,12 @@ async function onPayment(data: WebhookEventData, outcome: Outcome, paidAtIso?: s
 
   switch (result.status) {
     case "unmatched":
+      // Nothing was charged (for example the test event of Waffo's dashboard): there is no money to chase.
+      if (toCents(data.chargedAmount) === 0) {
+        outcome.result = "金额为 0 且不是本站订单（可能是 Waffo 后台的测试推送），已忽略";
+        outcome.tone = "grey";
+        return NextResponse.json({ received: true });
+      }
       // Money was taken but there is nobody to give credits to (an order we did not create, or a deleted account).
       console.error(
         `[waffo] PAYMENT WITHOUT AN ACCOUNT (${result.reason}): ${paymentId}, order ${data.orderId}, ` +
