@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 import { api } from "@/lib/api-client";
 import { trackEvent } from "@/lib/analytics";
+import { useCheckoutDraft } from "@/lib/checkout-draft";
 import { prepareUpload } from "@/lib/image-file";
 import type { PinShare } from "@/lib/pinterest-save";
 import type { ClientScene, SceneField, TaskView } from "@/lib/types";
@@ -22,6 +23,16 @@ interface ImageState {
   preview: string;
   url: string | null;
   uploading: boolean;
+}
+
+/** What the form keeps while the visitor is on the payment page (see checkout-draft.ts). */
+interface SceneDraft {
+  values: Record<string, string>;
+  madeWith?: string;
+  /** The links of the photos that were already uploaded, by field. The server holds the photos. */
+  images: Record<string, string>;
+  /** The finished design that was on screen. */
+  taskId?: string;
 }
 
 function initialValues(scene: ClientScene): Record<string, string> {
@@ -79,6 +90,45 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
     const timer = setInterval(() => setElapsed(Math.round((Date.now() - started) / 1000)), 1000);
     return () => clearInterval(timer);
   }, [phase]);
+
+  // Paying happens on Waffo's page in this tab. The settings, the uploaded photos and the finished design go with the
+  // visitor and come back if the page is loaded again; when the browser keeps the page, nothing is needed.
+  useCheckoutDraft<SceneDraft>(
+    "scene",
+    () => {
+      const kept: Record<string, string> = {};
+      for (const [key, image] of Object.entries(images)) if (image.url) kept[key] = image.url;
+      return { values, madeWith, images: kept, taskId: phase === "done" && task ? task.task_id : undefined };
+    },
+    (draft) => {
+      setValues((current) => {
+        const next = { ...current };
+        for (const field of scene.fields) {
+          const saved = draft.values?.[field.key];
+          if (typeof saved !== "string" || field.type === "image") continue;
+          // A saved choice that is no longer on offer is dropped.
+          if (field.type === "select" && !field.options?.some((option) => option.value === saved)) continue;
+          next[field.key] = saved;
+        }
+        return next;
+      });
+      const restored: Record<string, ImageState> = {};
+      for (const field of scene.fields) {
+        const url = draft.images?.[field.key];
+        if (field.type === "image" && typeof url === "string") restored[field.key] = { preview: url, url, uploading: false };
+      }
+      setImages(restored);
+      if (draft.madeWith) setMadeWith(draft.madeWith);
+      if (draft.taskId) {
+        void api.task(draft.taskId).then((res) => {
+          if (cancelled.current || res.code !== 200 || res.data?.status !== "done") return;
+          setTask(res.data);
+          setRun((n) => n + 1);
+          setPhase("done");
+        });
+      }
+    },
+  );
 
   const outputs = useMemo(() => scene.outputs.filter((o) => matches(o.when, values)), [scene.outputs, values]);
   const uploading = Object.values(images).some((img) => img.uploading);

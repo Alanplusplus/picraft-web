@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { api } from "@/lib/api-client";
 import { trackEvent } from "@/lib/analytics";
+import { consumeCheckoutContext, type CheckoutContext } from "@/lib/checkout";
 
 import { useSession } from "./session-provider";
 
@@ -11,7 +12,7 @@ const CHECK_EVERY_MS = 5000;
 const MAX_CHECKS = 24;
 
 type Notice = { tone: "ok" | "wait" | "bad"; text: string };
-type Arrival = { kind: "purchase" } | { kind: "restore"; outcome: string };
+type Arrival = { kind: "purchase"; context: CheckoutContext | null } | { kind: "restore"; outcome: string };
 
 const RESTORE_NOTICES: Record<string, Notice> = {
   ok: { tone: "ok", text: "Your credits and files are back on this device." },
@@ -24,12 +25,18 @@ function takeArrival(): Arrival | null {
   const params = new URLSearchParams(window.location.search);
   const purchase = params.get("purchase") === "success";
   const restore = params.get("restore");
-  if (!purchase && !restore) return null;
+  if (!purchase && !restore) {
+    // A checkout that was left without paying: the page was loaded again (not kept by the browser) and nothing came back
+    // with it. This is how an abandoned payment page is counted when the browser did not keep the page.
+    const left = consumeCheckoutContext();
+    if (left) trackEvent("checkout_returned", { pack: left.pack, kind: left.kind, source: left.source });
+    return null;
+  }
   params.delete("purchase");
   params.delete("restore");
   const rest = params.toString();
   window.history.replaceState(null, "", `${window.location.pathname}${rest ? `?${rest}` : ""}${window.location.hash}`);
-  if (purchase) return { kind: "purchase" };
+  if (purchase) return { kind: "purchase", context: consumeCheckoutContext() };
   return { kind: "restore", outcome: restore && restore in RESTORE_NOTICES ? restore : "expired" };
 }
 
@@ -67,8 +74,13 @@ export function PurchaseReturn() {
         if (status === "granted" || status === "settled") {
           await refresh();
           if (stop) return;
-          setNotice({ tone: "ok", text: "Payment confirmed. Your credits have been added." });
-          trackEvent("purchase_return", { result: status });
+          setNotice({
+            tone: "ok",
+            text: current.context
+              ? `Payment confirmed. ${current.context.credits} credits have been added.`
+              : "Payment confirmed. Your credits have been added.",
+          });
+          trackEvent("purchase_return", { result: status, pack: current.context?.pack, kind: current.context?.kind });
           return;
         }
         if (status === "disabled") return;

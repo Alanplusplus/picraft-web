@@ -5,6 +5,7 @@ import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 
 import { api } from "@/lib/api-client";
 import { trackEvent } from "@/lib/analytics";
+import { useCheckoutDraft } from "@/lib/checkout-draft";
 import { prepareUpload } from "@/lib/image-file";
 import type { PinShare } from "@/lib/pinterest-save";
 import type { ClientGenerator, ImageModel, TaskView } from "@/lib/types";
@@ -51,6 +52,18 @@ interface RefImage {
   preview: string;
   url: string | null;
   uploading: boolean;
+}
+
+/** What the generator keeps while the visitor is on the payment page (see checkout-draft.ts). */
+interface GeneratorDraft {
+  modelId: string;
+  prompt: string;
+  ratio: string;
+  resolution: string;
+  /** The links of the reference photos that were already uploaded. The server holds the photos. */
+  refs: string[];
+  /** The finished design that was on screen. */
+  taskId?: string;
 }
 
 const fieldClass = "field";
@@ -168,6 +181,38 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
     const timer = setInterval(() => setElapsed(Math.round((Date.now() - started) / 1000)), 1000);
     return () => clearInterval(timer);
   }, [phase]);
+
+  // Paying happens on Waffo's page in this tab. The choices, the prompt, the reference images and the finished design go
+  // with the visitor and come back if the page is loaded again; when the browser keeps the page, nothing is needed.
+  useCheckoutDraft<GeneratorDraft>(
+    "generator",
+    () => ({
+      modelId,
+      prompt,
+      ratio,
+      resolution,
+      refs: refs.flatMap((ref) => (ref.url ? [ref.url] : [])),
+      taskId: phase === "done" && task ? task.task_id : undefined,
+    }),
+    (draft) => {
+      if (generator.models.some((item) => item.id === draft.modelId)) setModelId(draft.modelId);
+      if (typeof draft.prompt === "string") setPrompt(draft.prompt.slice(0, generator.maxPromptLength));
+      if (typeof draft.ratio === "string") setRatio(draft.ratio);
+      if (typeof draft.resolution === "string") setResolution(draft.resolution);
+      const links = imageMode && Array.isArray(draft.refs) ? draft.refs.filter((url) => typeof url === "string") : [];
+      const restored = links.map((url) => ({ id: nextId.current++, preview: url, url, uploading: false }));
+      setRefs(restored);
+      if (draft.taskId) {
+        void api.task(draft.taskId).then((res) => {
+          if (cancelled.current || res.code !== 200 || res.data?.status !== "done") return;
+          setTask(res.data);
+          setBefore(imageMode ? (restored[0]?.preview ?? null) : null);
+          setRun((n) => n + 1);
+          setPhase("done");
+        });
+      }
+    },
+  );
 
   const model = generator.models.find((item) => item.id === modelId) ?? generator.models[0];
   // The shape and the resolution the visitor picked may not exist for another model; fall back to what does.

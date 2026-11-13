@@ -30,11 +30,9 @@ function creditsLabel(count: number): string {
 
 /**
  * The window that opens when someone presses Create without enough credits. It names the design they were about to
- * make, lets them buy, and as soon as the credits arrive turns into a single "Create now" button, so the settings,
- * photos and prompt on the page behind are never lost and the next click starts the design.
- *
- * The window stays in the page once it has been opened. Closing it while a payment is still being waited for must not
- * stop the waiting, because the credits are picked up by the purchase panel inside.
+ * make and lets them buy. Paying takes the visitor to Waffo in this tab; the form behind keeps its settings and photos
+ * for the trip (see checkout-draft.ts), and once the credits are there the window turns into a single "Create now"
+ * button, so the next click starts the design.
  */
 export function CreditsDialog({
   open,
@@ -159,8 +157,8 @@ export function CreditsDialog({
           {/* Kept in the page while the credits are there, so it can still notice a payment that is being waited for. */}
           <div className={enough ? "hidden" : "mt-5"}>
             <p className="text-sm text-ink-700">
-              You have {creditsLabel(credits)} and this needs {task.cost}. Everything you entered stays here, so you can
-              start the moment your credits arrive.
+              You have {creditsLabel(credits)} and this needs {task.cost}. What you entered is kept while you pay, so you
+              can start the moment you are back.
             </p>
             <div className="mt-3">
               <PurchasePanel source={source} compact />

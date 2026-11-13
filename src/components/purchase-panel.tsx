@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { api } from "@/lib/api-client";
 import { trackEvent } from "@/lib/analytics";
@@ -22,13 +22,10 @@ import type { Account } from "@/lib/types";
 
 import { useSession } from "./session-provider";
 
-const WAIT_LIMIT_MS = 10 * 60 * 1000;
+/** How long the buttons stay busy after the visitor was sent to the payment page, if the browser never left. */
+const REDIRECT_PATIENCE_MS = 20_000;
 
 type Offer = ClientPack | ClientPlan;
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
 
 /** "Nov 19, 2026" from a Unix time. */
 function formatDay(seconds: number): string {
@@ -211,59 +208,43 @@ function RestoreForm() {
 }
 
 /**
- * The credit packs and the subscription plans with their buy buttons. Paying happens on Waffo's page, in a new tab so
- * the form or result the visitor was working on stays as it is; this tab then waits for the credits and picks them up
- * by itself. In `compact` mode (inside a form that ran out of credits) the two kinds sit behind a small switch.
+ * The credit packs and the subscription plans with their buy buttons. Paying happens on Waffo's page, which this tab
+ * is sent to (see startCheckout). The forms on the page keep their settings for the trip (see checkout-draft.ts), the
+ * Back button brings the page back with its buttons free, and after "Return to merchant" PurchaseReturn waits for the
+ * credits. In `compact` mode (inside a form that ran out of credits) the two kinds sit behind a small switch.
  */
 export function PurchasePanel({ returnPath, source, compact = false }: { returnPath?: string; source: string; compact?: boolean }) {
-  const { account, refresh } = useSession();
+  const { account } = useSession();
   const catalog = usePacks();
   const [buying, setBuying] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [waiting, setWaiting] = useState<{ baseline: number; offer: Offer } | null>(null);
-  const [checks, setChecks] = useState(0);
-  const [arrived, setArrived] = useState<{ offer: Offer; balance: number; until: number | null } | null>(null);
   const [kind, setKind] = useState<"packs" | "plans">("packs");
+  const patience = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    if (!waiting) return;
-    let stop = false;
-    const started = Date.now();
-    void (async () => {
-      let delay = 0;
-      while (!stop && Date.now() - started < WAIT_LIMIT_MS) {
-        if (delay) await sleep(delay);
-        if (stop) return;
-        // The credits normally come from Waffo's webhook; this also asks Waffo directly in case that did not arrive.
-        await api.confirmPayment();
-        const current = await refresh();
-        if (stop) return;
-        if (current && current.credits > waiting.baseline) {
-          setArrived({ offer: waiting.offer, balance: current.credits, until: current.sub_expires_at });
-          setWaiting(null);
-          trackEvent("purchase_confirmed", { pack: waiting.offer.id, kind: isPlan(waiting.offer) ? "plan" : "pack", source });
-          return;
-        }
-        delay = Date.now() - started < 120_000 ? 5000 : 15000;
-      }
-    })();
-    return () => {
-      stop = true;
-    };
-  }, [waiting, checks, refresh, source]);
+  useEffect(
+    () => () => {
+      if (patience.current) clearTimeout(patience.current);
+    },
+    [],
+  );
 
   async function onBuy(offer: Offer) {
     setError(null);
-    setArrived(null);
     setBuying(offer.id);
-    const baseline = account?.credits ?? 0;
     try {
       // Without a given path the buyer comes back to the page they are on.
-      const how = await startCheckout(offer, returnPath ?? window.location.pathname, source, { newTab: true });
-      if (how === "new-tab") setWaiting({ baseline, offer });
+      await startCheckout(offer, returnPath ?? window.location.pathname, source, {
+        // The browser brought this page back from the payment page: the buttons are free again.
+        onRestore: () => {
+          if (patience.current) clearTimeout(patience.current);
+          setBuying(null);
+        },
+      });
+      // The page is on its way to Waffo, so the button stays busy. A navigation the browser refuses must not leave the
+      // buttons stuck for good.
+      patience.current = setTimeout(() => setBuying(null), REDIRECT_PATIENCE_MS);
     } catch (e) {
       setError((e as Error).message);
-    } finally {
       setBuying(null);
     }
   }
@@ -284,7 +265,7 @@ export function PurchasePanel({ returnPath, source, compact = false }: { returnP
           offer={offer}
           compact={compact}
           busy={buying === offer.id}
-          disabled={!open || buying !== null || waiting !== null || (isPlan(offer) && running !== null)}
+          disabled={!open || buying !== null || (isPlan(offer) && running !== null)}
           closed={closed}
           current={isPlan(offer) && running?.plan === offer.id}
           onBuy={() => void onBuy(offer)}
@@ -363,32 +344,6 @@ export function PurchasePanel({ returnPath, source, compact = false }: { returnP
       )}
 
       {error && <p className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-700">{error}</p>}
-
-      {waiting && (
-        <div className="space-y-1 rounded-lg border border-ink-200 bg-ink-50 p-3 text-sm text-ink-800" role="status">
-          <p className="font-medium">Waiting for your payment…</p>
-          <p className="text-xs text-ink-700">
-            The checkout opened in a new tab. Your {waiting.offer.credits} credits appear here as soon as the payment
-            goes through; you don&apos;t need to do anything.
-          </p>
-          <p className="flex gap-4 text-xs">
-            <button type="button" onClick={() => setChecks((n) => n + 1)} className="font-medium underline">
-              I&apos;ve paid, check now
-            </button>
-            <button type="button" onClick={() => setWaiting(null)} className="text-ink-700 underline">
-              Cancel
-            </button>
-          </p>
-        </div>
-      )}
-
-      {arrived && (
-        <p className="rounded-lg bg-ink-100 px-3 py-2 text-sm font-medium text-ink-900" role="status">
-          Thank you! {arrived.offer.credits} credits were added
-          {isPlan(arrived.offer) && arrived.until ? `, valid until ${formatDay(arrived.until)}` : ""}. You now have{" "}
-          {arrived.balance}.
-        </p>
-      )}
 
       <p className="text-xs text-ink-500">
         Prices are in USD. A subscription renews on its own every week or month until you cancel it in{" "}

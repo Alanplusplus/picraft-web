@@ -22,6 +22,9 @@ import { getStyleFile, getStyleLinks, isStyleIndexable, styleExamples, styleLabe
 
 export const dynamicParams = false;
 
+/** A maker with more showcase pictures than this shows them as a gallery instead of a slider each. */
+const GALLERY_FROM = 6;
+
 export function generateStaticParams() {
   logIndexability();
   // Fails the production build when any content file links to a page that does not exist.
@@ -61,6 +64,8 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
     ? examples.filter((example, index) => !example.style || examples.findIndex((other) => other.style === example.style) === index)
     : [];
   const showcasePortrait = showcase.length > 0 && showcase.every((example) => example.height > example.width);
+  // With this many looks a slider on each one makes the grid restless, so only the first stays a slider.
+  const gallery = showcase.length > GALLERY_FROM;
 
   const jsonLd = [
     {
@@ -127,35 +132,78 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
             {showcase.length > 0 ? (
               <>
                 <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
-                  Drag the handle on any photo to compare the original with the result.
+                  {gallery
+                    ? "Drag the handle on the first picture to compare the original with the result. On the others, the small photo in the corner is the original."
+                    : "Drag the handle on any photo to compare the original with the result."}
                   {styleFile ? ` Pick a ${styleFile.noun} to open it with that ${styleFile.noun} already selected.` : " Use the form above to try it with your own photo."}
                 </p>
                 <ul className={`mt-6 grid gap-4 ${showcasePortrait ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
-                  {showcase.map((example) => {
+                  {showcase.map((example, index) => {
                     const entry = styleFile?.styles.find((item) => item.value === example.style);
                     const label = entry && styleFile ? styleLabel(scene, styleFile, entry) : undefined;
                     const href = entry && styleFile && isStyleIndexable(styleFile, entry) ? stylePath(scene.slug, entry) : "#create";
+                    const beforeSrc = example.before ?? example.url;
+                    const beforeAlt = example.beforeAlt ?? "Original photo before editing";
+                    const caption = (
+                      <>
+                        <span className="text-sm font-semibold leading-snug text-ink-950 group-hover:text-brand-700">
+                          {label ?? "Try it with your own photo"}
+                        </span>
+                        <span className="shrink-0 rounded-lg bg-brand-700 px-2.5 py-1 text-xs font-medium text-white group-hover:bg-brand-800">
+                          {label ? "Try it" : "Start"} →
+                        </span>
+                      </>
+                    );
+                    const captionClass = "group flex flex-1 flex-wrap items-center justify-between gap-x-2 gap-y-1.5 border-t border-ink-200 px-3 py-2.5 hover:bg-brand-50";
+
+                    // Many looks side by side: a slider on every one is noise. All but the first are plain pictures that link
+                    // to their look page, with the original photo as a small inset in the corner.
+                    if (gallery && index > 0) {
+                      return (
+                        <li key={example.url} className="overflow-hidden rounded-xl border border-ink-200 bg-white">
+                          <Link href={href} className="group flex h-full flex-col">
+                            <div className="relative w-full overflow-hidden bg-ink-100" style={{ aspectRatio: `${example.width} / ${example.height}` }}>
+                              <Image
+                                src={example.url}
+                                alt={example.alt}
+                                fill
+                                sizes={showcasePortrait ? "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
+                                className="object-cover"
+                              />
+                              <span
+                                className="absolute bottom-2 left-2 block w-[28%] overflow-hidden rounded-md border-2 border-white bg-ink-100 shadow-md"
+                                style={{ aspectRatio: `${example.width} / ${example.height}` }}
+                              >
+                                <Image src={beforeSrc} alt={beforeAlt} fill sizes="10vw" className="object-cover" />
+                              </span>
+                            </div>
+                            <span className={captionClass}>{caption}</span>
+                          </Link>
+                        </li>
+                      );
+                    }
                     return (
-                      <li key={example.url} className="flex flex-col overflow-hidden rounded-xl border border-ink-200 bg-white">
+                      <li
+                        key={example.url}
+                        className={`flex flex-col overflow-hidden rounded-xl border border-ink-200 bg-white ${gallery ? "md:col-span-2 md:row-span-2" : ""}`}
+                      >
                         <CompareSlider
-                          before={example.before ?? example.url}
-                          beforeAlt={example.beforeAlt ?? "Original photo before editing"}
+                          before={beforeSrc}
+                          beforeAlt={beforeAlt}
                           after={example.url}
                           afterAlt={example.alt}
                           width={example.width}
                           height={example.height}
-                          sizes={showcasePortrait ? "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
+                          sizes={
+                            gallery
+                              ? "(min-width: 1024px) 50vw, (min-width: 768px) 66vw, 50vw"
+                              : showcasePortrait
+                                ? "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+                                : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          }
                         />
-                        <Link
-                          href={href}
-                          className="group flex flex-1 flex-wrap items-center justify-between gap-x-2 gap-y-1.5 border-t border-ink-200 px-3 py-2.5 hover:bg-brand-50"
-                        >
-                          <span className="text-sm font-semibold leading-snug text-ink-950 group-hover:text-brand-700">
-                            {label ?? "Try it with your own photo"}
-                          </span>
-                          <span className="shrink-0 rounded-lg bg-brand-700 px-2.5 py-1 text-xs font-medium text-white group-hover:bg-brand-800">
-                            {label ? "Try it" : "Start"} →
-                          </span>
+                        <Link href={href} className={captionClass}>
+                          {caption}
                         </Link>
                       </li>
                     );
