@@ -32,6 +32,13 @@ export interface StyleEntry {
   designNotes: ContentItem[];
   /** Sample entries for the form fields, so a visitor can start without thinking. */
   tryThese: string[];
+  /**
+   * Optional. A prompt a visitor can paste into a chat image tool together with their photo to try the look
+   * without PiCraft, plus short notes on what to change and what usually goes wrong. It answers the
+   * "<look> prompt for ChatGPT / Gemini" searches and hands the visitor back to the form above.
+   * `prompt` is plain text, so it is shown as is; `notes` support `[label](/path)` links.
+   */
+  promptTry?: { prompt: string; notes: string[] };
   faq: { q: string; a: string }[];
 }
 
@@ -97,6 +104,7 @@ export function styleWordCount(style: StyleEntry): number {
     style.bestFor.flatMap((item) => [item.title, item.description]),
     style.designNotes.flatMap((item) => [item.title, item.description]),
     style.tryThese,
+    style.promptTry ? [style.promptTry.prompt, style.promptTry.notes] : [],
     style.faq.flatMap((item) => [item.q, item.a]),
   ]
     .flat(2)

@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "Photo trend looks",
-  "updated": "2026-10-18",
+  "updated": "2026-11-12",
   "styles": [
     {
       "value": "80s_flashback",
@@ -55,6 +55,14 @@
         "Photo: a person standing in a hallway, full length, size 9:16",
         "Photo: a couple on a sofa, size 3:4"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me recognizable: same face shape, features, skin tone, age and hair color.\nRestyle it as an authentic snapshot from the mid-1980s. Change my hair, clothes, accessories and surroundings to unmistakable 1980s fashion and interiors: bold shapes, bright accessories, layered textures. Shoot it like consumer film with direct on-camera flash, faded warm colors, visible grain and slight softness. Add a small orange-red date stamp in a lower corner, set to a date in 1985. No readable posters and no modern objects.",
+        "notes": [
+          "Ask for the date stamp and the year yourself. It is the detail people recognize first, and a short request like \"80s style\" leaves it to the model.",
+          "Say what should change and what should not. To keep your own clothes, delete the sentence about hair and clothes; the look then rests on flash, fade and grain.",
+          "Add the shape at the end: \"vertical 9:16\" for Stories and Reels, \"2:3\" for Pinterest, \"3:4\" for a feed post."
+        ]
+      },
       "faq": [
         {
           "q": "Will it add a date stamp every time?",
@@ -71,6 +79,14 @@
         {
           "q": "Can I make it vertical for stories?",
           "a": "Yes. Choose 9:16 before you create and the picture is composed for a tall frame, so nobody is cut off. For a more print-like shape, choose 3:4. All sizes are on the [Photo Trend Maker](/create/photo-trend-maker) page."
+        },
+        {
+          "q": "Is there a free AI 80s photo generator?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. The date stamp and the faded flash look are part of every run, so one picture shows whether the 1985 snapshot suits your photo."
+        },
+        {
+          "q": "Can I make the 80s photo trend in ChatGPT or Gemini instead?",
+          "a": "Yes. Any chat image tool that accepts a photo can attempt it: upload your picture and paste the prompt above. The parts to spell out are the 1985 date stamp, the flash and the film fade, because a short request like \"make it 80s\" leaves those choices to the model. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size. The [step-by-step 80s photo trend guide](/blog/how-to-do-the-ai-80s-photo-trend) covers both ways."
         }
       ]
     },
@@ -124,6 +140,14 @@
         "Photo: a close portrait by a window, size 1:1",
         "Photo: a friend leaning on a car in daylight, size 9:16"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me recognizable: same face shape, features, skin tone, age and hair color.\nTurn it into a sun-faded candid portrait from early-1970s slide film. Dress me in period clothing with an early-1970s hairstyle and adjust the surroundings to match. Warm red-yellow color cast, slightly lifted blacks, fine film grain and a soft vignette, with a faint color shift in the shadows, as if projected from an old family slide.",
+        "notes": [
+          "The color does most of the work, so name it: red-yellow cast, lifted blacks, soft vignette. \"Retro\" on its own can pull the picture toward the 80s.",
+          "Leave out the date stamp. A stamp pushes the result toward the [80s Flashback](/create/photo-trend-maker/80s-flashback) look, which adds one.",
+          "Start from a daylight photo. A slide look on a dark indoor shot gets muddy because there is little color to warm."
+        ]
+      },
       "faq": [
         {
           "q": "How is it different from the 80s flashback?",
@@ -148,6 +172,14 @@
         {
           "q": "Can I try the same photo in other looks?",
           "a": "Yes. Each generation is a separate design that costs one credit, so you can compare the 70s slide with the [Y2K digital camera](/create/photo-trend-maker/y2k-digicam) and the [80s flashback](/create/photo-trend-maker/80s-flashback) using one photo."
+        },
+        {
+          "q": "Can I make a 70s portrait with AI for free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. A photo taken near a window gives the warm slide color the most to work with, so use one for the first picture."
+        },
+        {
+          "q": "Can I get the 70s slide look in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo to any chat image tool and paste the prompt above. Spell out the red-yellow color cast, the lifted blacks and the vignette, and say \"no date stamp\", because a plain \"70s style\" can drift toward the 80s snapshot. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -155,9 +187,9 @@
       "value": "y2k_digicam",
       "slug": "y2k-digicam",
       "seo": {
-        "title": "Y2K Digital Camera Photo Maker – 2000s Flash Look",
-        "description": "Make your photo look like an early-2000s compact digital camera snapshot: harsh flash, soft focus, light noise and period outfits. Download a finished JPG.",
-        "h1": "Y2K Digital Camera Photo Maker"
+        "title": "Y2K Digicam AI Filter – 2000s Flash Photo Maker",
+        "description": "Make your photo look like a 2000s digital camera snapshot: harsh flash, soft focus, light noise and period outfits. Free to try, no account. Download a JPG.",
+        "h1": "Y2K Digicam AI Filter"
       },
       "intro": [
         "Early-2000s compact cameras had a recognizable set of flaws: harsh on-camera flash, blown highlights on skin, soft focus, a little digital noise and casual, off-center framing. This look recreates that rough charm and dresses the subject in period-correct clothes and accessories, so the picture feels like it came off an old memory card.",
@@ -201,6 +233,14 @@
         "Photo: three friends at a restaurant table, size 2:3",
         "Photo: a person holding a drink at a party, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me recognizable: same face shape, features, skin tone, age and hair color.\nMake it a casual snapshot from an early-2000s compact digital camera with on-camera flash. Dress me in period-correct clothing and accessories with a typical early-2000s hairstyle, and adapt the surroundings. Harsh direct flash, uneven exposure with slightly blown skin highlights, soft focus, faint digital noise in the shadows and light JPEG compression artifacts. Casual, slightly awkward framing. No date stamp.",
+        "notes": [
+          "The flaws are the look. Ask for blown highlights, soft focus and JPEG artifacts by name, or the result can come back as a clean, flattering portrait.",
+          "No date stamp on purpose: that belongs to the film look. Keeping it off makes the picture read as a digicam, not a family album.",
+          "Start from a casual photo. A posed studio portrait fights the awkward framing the look is built on."
+        ]
+      },
       "faq": [
         {
           "q": "What does Y2K mean?",
@@ -225,6 +265,14 @@
         {
           "q": "Can I use a group photo?",
           "a": "Yes, and small groups suit the style well, since casual snapshots of two to four friends were the whole point of those cameras. Faces drift more as the group grows, so crop out anyone who does not need to be in the picture."
+        },
+        {
+          "q": "Is this Y2K digicam filter free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A casual, slightly off-center selfie gives the look the most to work with."
+        },
+        {
+          "q": "Can I do the Y2K digicam trend in ChatGPT or Gemini?",
+          "a": "Yes. Upload a photo and paste the prompt above. Spell out the flash, the blown highlights, the soft focus and the JPEG artifacts, and say \"no date stamp\" if you want to keep it apart from the film look. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -278,6 +326,14 @@
         "Photo: a dressed-up portrait at a restaurant, size 2:3",
         "Photo: a close selfie with a bright smile, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me recognizable: same face shape, features, skin tone, age and hair color.\nRestyle it as a stylish night-out photo shot with a bright on-camera flash. Strong flash highlights on me, deep shadows and slight overexposure against a dim, moody city-night background. Keep real colors and textures, glossy skin highlights and fine film grain. Candid magazine feel with imperfect framing, a touch of motion and a natural expression.",
+        "notes": [
+          "Name the setting. The flash and the dark city background are two separate instructions, and the night-out feel needs both.",
+          "For a couple, write \"two people, both lit by the same flash\" so nobody is left in the shadow.",
+          "If the flash comes out too harsh, add \"softer flash, less glare on skin\" and run it again."
+        ]
+      },
       "faq": [
         {
           "q": "Will my daytime photo turn into a night scene?",
@@ -302,6 +358,14 @@
         {
           "q": "What if the flash looks too harsh?",
           "a": "Generate again. Every attempt gives different glare, shadows and framing, and one of them is usually closer to what you imagined. A photo that already has soft, even light tends to give a gentler result than one that is dark to begin with."
+        },
+        {
+          "q": "Is the night flash photo effect free to try?",
+          "a": "Yes. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. Photos with a clear face and some background work best, because the flash needs something to throw into shadow."
+        },
+        {
+          "q": "Can I get the night flash look in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The flash, the deep shadows and the city-night setting are three separate instructions, so write all three rather than just \"night photo\". PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -309,9 +373,9 @@
       "value": "photo_booth",
       "slug": "photo-booth",
       "seo": {
-        "title": "AI Photo Booth Strip Maker – Black & White Photos",
-        "description": "Turn one photo into vintage black-and-white photo booth strips with playful poses, harsh flash, heavy grain and thick borders. Download a finished JPG.",
-        "h1": "Photo Booth Strip Maker"
+        "title": "AI Photo Booth Generator – Strip From One Photo",
+        "description": "Turn one photo into vintage black-and-white photo booth strips with playful poses, harsh flash and heavy grain. Free to try, no account. Download a JPG.",
+        "h1": "AI Photo Booth Generator"
       },
       "intro": [
         "A photo booth print is a small story told in a few frames: a straight face, a surprised face, a laugh, a lean toward the camera. This look turns one photo into a collage of vertical black-and-white strips with exactly that rhythm, finished with harsh flash, very high contrast, heavy grain, thick black borders and light wear.",
@@ -355,6 +419,14 @@
         "Photo: a single portrait with a playful grin, size 3:4",
         "Photo: two friends side by side, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep the person, or both people, recognizable and consistent in every frame: same face, clothes and hairstyle.\nMake a vintage photo booth print: a collage of three vertical black-and-white photo strips of four frames each, slightly overlapping and tilted at small angles. Playful, surprised and laughing poses. A few frames partly cropped, or leaning toward the lens; with two people, they swap places between frames. Harsh direct flash, very high contrast with crushed blacks and blown whites, heavy grain, thick black borders and light wear.",
+        "notes": [
+          "Give the frame count in the prompt: three strips of four. Without a number, the layout is left to the model.",
+          "If one frame drifts, add \"same face in every frame\" and run it again.",
+          "Two people work especially well, because they swap places between frames and give the strip its back-and-forth."
+        ]
+      },
       "faq": [
         {
           "q": "Is the image always black and white?",
@@ -375,6 +447,14 @@
         {
           "q": "How many strips will I get?",
           "a": "The look builds a collage of three vertical strips with four frames each, slightly overlapping and tilted. The exact layout varies from picture to picture."
+        },
+        {
+          "q": "Is this AI photo booth generator free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. Start with a photo of a pair if you have one, since two people give the strips the most to play with."
+        },
+        {
+          "q": "Can I make AI photo booth strips in ChatGPT or Gemini?",
+          "a": "Yes. Upload one photo to any chat image tool and paste the prompt above. Name the layout (three strips of four frames), the black-and-white flash look and \"same face in every frame\", because the frame count and the consistency are the parts most likely to wander. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -428,6 +508,14 @@
         "Photo: a couple on a park bench, size 3:4",
         "Photo: a cat on a windowsill, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep me recognizable in clay: same face shape, hair color, clothing colors and pose.\nRebuild me as a stylized character sculpted from matte modelling clay: chunky simplified forms, slightly exaggerated proportions, a big expressive face with simple sculpted eyes and brows, and hair made of thick clay strands. The surface must look handmade, with fingerprints, tool marks, uneven edges and small imperfections. Rebuild the surroundings as a tiny hand-built miniature set with simple clay props, lit like a small studio set with shallow depth of field. It must look like a photographed physical clay model, not a photo with a texture filter and not smooth CGI.",
+        "notes": [
+          "The last sentence matters most. Without \"not a texture filter, not smooth CGI\", the result can look like your photo with a clay texture laid over it.",
+          "Name the flaws: fingerprints, tool marks, uneven edges. They are what make clay read as clay.",
+          "A pet works as well as a person. Say \"my dog\" or \"my cat\" and name the markings in the prompt."
+        ]
+      },
       "faq": [
         {
           "q": "Is the result real stop-motion animation?",
@@ -448,6 +536,14 @@
         {
           "q": "Does it work on a group photo?",
           "a": "It works best on one to three subjects. In bigger groups the clay figures lose their individual faces, so crop to the people or pets who matter."
+        },
+        {
+          "q": "Can I turn a photo into claymation for free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. Every run builds a different set from the same photo, so a second credit is the quickest way to find a version you like."
+        },
+        {
+          "q": "Can I make the claymation photo trend in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Keep the sentence that stops it from becoming a texture filter: handmade clay with fingerprints and tool marks, built as a miniature set, not smooth CGI. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -501,6 +597,14 @@
         "Photo: a dog with a toy in a garden, size 1:1",
         "Photo: a person holding a mug in a cozy room, size 9:16"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep me, or my pet, recognizable in felt: same hair or fur color, markings and clothing colors.\nRebuild the subject and the whole scene as handmade needle-felted wool miniatures: simple rounded shapes, minimal facial detail with tiny bead-like eyes, and soft fuzzy fibers with clearly visible wool texture on every surface, including the background and props. A warm, slightly imperfect handmade feel: plush felt figures in a tiny diorama with warm soft lighting. It must look like a photographed physical felt craft, not a photo with a texture filter.",
+        "notes": [
+          "Ask for wool texture on every surface, background included. If only the figure is fuzzy, the picture reads as a filter.",
+          "Keep the face simple on purpose: tiny bead eyes and no detail. More facial detail means less felt.",
+          "Pets keep their markings best when you name them, for example \"white paws and a black patch over one eye\"."
+        ]
+      },
       "faq": [
         {
           "q": "Can I make a real felted figure from the image?",
@@ -521,6 +625,14 @@
         {
           "q": "Does the image keep my pet's markings?",
           "a": "It tries to. Fur color and obvious markings usually survive the change, while fine details such as whiskers and small spots can be simplified into a few wool shapes."
+        },
+        {
+          "q": "Is the felt miniature generator free?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. A pet is a good first photo, because felt turns markings into clean patches of color."
+        },
+        {
+          "q": "Can I get the felt miniature look in ChatGPT or Gemini?",
+          "a": "Yes. Upload a photo and paste the prompt above. Ask for visible wool fibers on every surface and bead-like eyes, and finish with \"a photographed felt craft, not a texture filter\". PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -528,9 +640,9 @@
       "value": "bobblehead",
       "slug": "bobblehead",
       "seo": {
-        "title": "AI Bobblehead Maker – Turn a Photo into a Figure",
-        "description": "Turn a selfie into a studio photo of a plastic bobblehead with an oversized head, molded hair and a black base. Download a finished JPG in four sizes.",
-        "h1": "AI Bobblehead Maker"
+        "title": "AI Bobblehead Generator – Photo to Bobblehead",
+        "description": "Turn a selfie into a studio photo of a plastic bobblehead with an oversized head, molded hair and a black base. Free to try, no account. Download a JPG.",
+        "h1": "AI Bobblehead Generator"
       },
       "intro": [
         "A bobblehead is funny because of its proportions: a huge head on a tiny body, standing on a small base. This look turns the person in your photo into a studio product photo of a cheap, mass-produced plastic bobblehead, with chunky molded hair, painted eyes, visible paint edges, faint mold seams and tiny scuffs, so it looks like a physical object photographed on a table.",
@@ -574,6 +686,14 @@
         "Photo: a person waving at the camera, size 9:16",
         "Photo: a close portrait with short hair, size 2:3"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep me recognizable as a bobblehead: same face shape, hairstyle, skin tone and clothing colors, with a friendly bright smile.\nMake a studio product photo of a cheap, mass-produced plastic bobblehead of me. The head is comically oversized, about ten times the volume of a tiny body, standing on a small black base. Simplified molded vinyl face with painted eyes and brows, chunky molded plastic hair, visible paint edges, slight paint misalignment, faint mold seam lines and tiny scuffs, with soft specular highlights. It must look like a photographed physical object, not CGI.",
+        "notes": [
+          "Cheap is the point. Ask for paint edges, a mold seam and tiny scuffs, or the figure tends to come out too polished to look like a toy.",
+          "Name the black base so the figure does not float; it is part of the silhouette.",
+          "Use a photo with the head and shoulders clearly visible. The oversized head is copied from the face, so a small face in a wide shot loses the likeness."
+        ]
+      },
       "faq": [
         {
           "q": "Can I order a real bobblehead from the image?",
@@ -594,6 +714,14 @@
         {
           "q": "Can I make one of a couple?",
           "a": "The look is written around one person, so a single portrait gives the most reliable result. For two people, try the [photo booth strip](/create/photo-trend-maker/photo-booth) instead."
+        },
+        {
+          "q": "Is the AI bobblehead generator free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. A close, evenly lit photo of the face gives the best likeness, so use your best selfie for the first picture."
+        },
+        {
+          "q": "Can I make a bobblehead from a photo in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Say \"cheap mass-produced plastic\" and list the flaws (paint edges, seam lines, scuffs) along with the black base; without them the result tends to look like polished 3D art rather than a toy. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -647,6 +775,14 @@
         "Photo: a front-facing headshot in daylight, size 3:4",
         "Photo: a close selfie with a beard, size 9:16"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep me recognizable as a toy: same face shape, hair color and skin tone.\nMake a premium glossy 3D designer-toy render of me. Show a single floating head, never duplicated, cleanly cut under the jaw so the neck shows, fully inside the frame with comfortable margins. Soft vinyl collectible look: ultra-smooth simplified rounded volumes, strong glossy highlights, sculpted shiny stylized hair with a playful accessory, and oversized retro wrap-around sunglasses in bold coordinated colors. Strong studio lighting. Background: blue sky with soft clouds.",
+        "notes": [
+          "Say \"a single head, never duplicated\" and \"cut cleanly under the jaw\". Those two phrases keep the model from drawing a full body.",
+          "Choose the accessory yourself. The look uses oversized wrap-around sunglasses; swap in headphones or a hat for a different toy.",
+          "The result is a flat picture, not a 3D file. A model you can print needs a 3D tool; the render is a picture of one."
+        ]
+      },
       "faq": [
         {
           "q": "Will it keep my glasses?",
@@ -667,6 +803,14 @@
         {
           "q": "Does it work with a pet?",
           "a": "The look is written for people, so pet photos are less predictable. For pets, the [claymation](/create/photo-trend-maker/claymation) and [felt miniature](/create/photo-trend-maker/felt-miniature) looks are a safer choice."
+        },
+        {
+          "q": "Can I make a 3D toy avatar for free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A close selfie with the face large in the frame works best for the single glossy head."
+        },
+        {
+          "q": "Can I get the 3D toy avatar look in ChatGPT or Gemini?",
+          "a": "Yes. Upload a selfie and paste the prompt above. Name the glossy vinyl finish, the single floating head cut under the jaw, the sunglasses and the blue sky background, since each one is a separate instruction. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -720,6 +864,14 @@
         "Photo: a friend with colorful hair, size 3:4",
         "Photo: a person in sportswear, size 2:3"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep my hair, skin tone and outfit colors recognizable in pixel art.\nMake a retro 16-bit arcade fighting game screen. Redraw me as a full-body pixel-art fighter in an expressive pose, with my outfit redesigned as a bold, readable arcade character. Show the name PLAYER 1 above a health bar. Turn the surroundings into a detailed side-view fighting stage with layered pixel scenery and dramatic lighting, with period-appropriate arcade interface elements. Authentic limited-palette pixel art with hard edges and no smooth vector polish.",
+        "notes": [
+          "Ask for a limited palette and hard edges. Without them the result can drift toward smooth vector art that only looks pixelated from far away.",
+          "Keep any name to a few capital letters. Swap PLAYER 1 for your own short name if you like, but longer text is where letters go wrong.",
+          "Do not name a real game or character. A generic stage and fighter keep the picture yours."
+        ]
+      },
       "faq": [
         {
           "q": "Does it always say PLAYER 1?",
@@ -740,6 +892,14 @@
         {
           "q": "Why did my outfit change?",
           "a": "The look redesigns the outfit as a readable arcade costume while keeping its colors. If you want to keep your real clothes, the [night out flash](/create/photo-trend-maker/night-flash) look keeps them."
+        },
+        {
+          "q": "Is the 16-bit pixel art fighter free to make?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. The health bar and the stage come with the picture, so there is nothing to draw yourself."
+        },
+        {
+          "q": "Can I make a pixel art arcade fighter in ChatGPT or Gemini?",
+          "a": "Yes. Upload a full-body or waist-up photo and paste the prompt above. Ask for a side-view stage, a health bar with the name above it and \"limited palette, hard edges\", so the result reads as arcade pixel art and not smooth vector art. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -793,6 +953,14 @@
         "Photo: a person standing in a doorway, size 9:16",
         "Photo: a cat sitting upright, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Draw the main subject, a person, a pet or an object, so that it is clearly recognizable.\nMake a single-subject blueprint poster: a clean white technical line drawing on a deep cobalt-blue blueprint background with a subtle grid. Flat 2D schematic lines, orthographic outline views, construction guides, dimension ticks, arrows and a few minimal technical labels. Add two or three smaller detail views of the subject from other angles. Keep the layout balanced and uncluttered, with no shadows, no 3D shading and no extra objects.",
+        "notes": [
+          "One clear subject works best. A crowded photo gives the drawing too many things to outline.",
+          "Expect labels you cannot read. Tiny technical text is where AI tools slip, so treat the labels as texture and proofread before you share.",
+          "Say \"no shading, no 3D\" so the drawing stays flat white lines and does not turn into a rendered model."
+        ]
+      },
       "faq": [
         {
           "q": "Is it a real technical blueprint?",
@@ -813,6 +981,14 @@
         {
           "q": "Why is the background always blue?",
           "a": "The look is built around the classic cobalt-blue blueprint with white lines and a grid. If you want another color scheme, another look will fit better."
+        },
+        {
+          "q": "Can I make a blueprint poster from a photo for free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. Try a pet or an object as well as a person: a single subject standing alone gives the cleanest drawing."
+        },
+        {
+          "q": "Can I make a blueprint poster in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Specify white lines on cobalt blue with a grid, orthographic views, dimension ticks, two or three detail views and \"no shading\", otherwise the drawing may come back shaded. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -866,6 +1042,14 @@
         "Photo: an older relative in a cardigan at a table, size 3:4",
         "Photo: a friend with a bold hat, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep my face recognizable as the central portrait.\nMake a whimsical black-and-white vintage newspaper front page with me in the center, styled like an old engraved halftone photo. Surround it with large dramatic headlines, narrow columns and playful sub-headlines about a fantasy adventure starring me. High-contrast black ink on off-white paper with fine paper texture and classic serif type. Keep the layout tight and editorial. Use short, simple words in the headlines so the spelling stays correct.",
+        "notes": [
+          "Short headline words are the safest. Long words and small columns are where letters go wrong, so write the headline you want in three or four short words.",
+          "Treat the small columns as texture, not text. Read the big headline twice before you post.",
+          "The story is invented. Use the page as a joke or a gift, not as something that could pass for real news."
+        ]
+      },
       "faq": [
         {
           "q": "Can I write my own headlines?",
@@ -886,6 +1070,14 @@
         {
           "q": "Will the picture look like me?",
           "a": "The portrait is styled as an engraved halftone photo, and the maker keeps your face recognizable. Fine details soften, so judge it by the overall likeness. For a toy version of your face, try the [bobblehead](/create/photo-trend-maker/bobblehead)."
+        },
+        {
+          "q": "Is the newspaper front page generator free to use?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. The headlines are generated, so plan on a second run if a letter comes out wrong."
+        },
+        {
+          "q": "Can I make a fantasy newspaper front page in ChatGPT or Gemini?",
+          "a": "Yes. Upload a portrait and paste the prompt above. In a chat tool you can also write the headline yourself, which the form here does not offer; keep the words short and ask for an engraved halftone portrait, off-white paper and serif type. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -939,6 +1131,14 @@
         "Photo: a person in daylight with a calm expression, size 3:4",
         "Photo: a cat sitting on a windowsill, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. If it shows a person, keep their face structure recognizable. If it does not show a person, do not add one.\nTurn the subject into a refined neoclassical Greek-style statue carved in white Carrara marble. A person becomes a heroic allegorical figure in a dynamic pose with flowing drapery, a confident stance and a serious expression. Echo elements from the photo in the sculpture. Museum hall setting, photorealistic, medium depth of field, natural perspective, warm gallery lighting with dramatic, realistic shadows.",
+        "notes": [
+          "Ask for white Carrara marble and a museum hall. The setting is what makes it read as a photo of a statue, not a drawing of one.",
+          "Expect the pose to change. Statues stand in heroic poses, so a seated or casual pose is rebuilt rather than copied.",
+          "Do not name a famous statue. You want your own face on the figure, not a copy of an existing sculpture."
+        ]
+      },
       "faq": [
         {
           "q": "Does it copy a real museum statue?",
@@ -959,6 +1159,14 @@
         {
           "q": "Is the color always white?",
           "a": "The statue is white Carrara-style marble, with warm light and shadows from the museum setting. For a color-rich handmade look, try the [claymation](/create/photo-trend-maker/claymation) look."
+        },
+        {
+          "q": "Can I turn a photo into a marble statue for free?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. A clear face in even light gives the most readable carved features."
+        },
+        {
+          "q": "Can I make the marble statue look in ChatGPT or Gemini?",
+          "a": "Yes. Upload a portrait and paste the prompt above. Name white Carrara marble, flowing drapery, a heroic pose and a museum hall with warm gallery light, and ask it to keep your face structure. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -1012,6 +1220,14 @@
         "Photo: a grey tabby cat on a windowsill, size 3:4",
         "Photo: two friends standing close together, size 2:3"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me, or my pet, recognizable: same face, hair or fur color and expression.\nMake a spooky-fun Halloween costume portrait. Dress the subject in a polished, original costume such as a witch, a vampire, a skeleton or a scarecrow; for a pet, use a small, simple costume such as a pumpkin outfit, a tiny witch hat or a cape. Set the scene on a candlelit porch or in a misty autumn yard with glowing carved pumpkins, fallen leaves, soft fog and a deep purple dusk sky with warm orange light. Cinematic lighting and a little film grain. Fun and atmospheric, not gory: no blood, no wounds, no recognizable movie, game or cartoon characters, and no text.",
+        "notes": [
+          "Choose one costume. A list of four makes the model blend them, so name the witch or the skeleton and leave the rest out.",
+          "Keep the costume generic on purpose. Naming a film character brings someone else's design into your picture and may leave you with a result you cannot use.",
+          "Add no extra people or pets to the prompt unless they are in your photo. The look is built for the subjects you upload."
+        ]
+      },
       "faq": [
         {
           "q": "Can I use a photo of my pet?",
@@ -1032,6 +1248,14 @@
         {
           "q": "Does it write anything on the image?",
           "a": "It asks for no text, but AI can still add stray lettering on a sign or a pumpkin. Check the picture before you post it, and generate again if something odd appears."
+        },
+        {
+          "q": "Is the Halloween costume photo maker free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. A pet in a simple costume is a quick first test of the porch and pumpkin scene."
+        },
+        {
+          "q": "Can I make a Halloween costume portrait in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Name one costume, the porch or misty yard, the dusk colors and \"fun, not gory\", and leave out film and game characters. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -1085,6 +1309,14 @@
         "Photo: a dog sitting on a rug, size 9:16",
         "Photo: a selfie by a window, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me, or my pet, recognizable: same hair color and the character of the expression.\nPaint a cozy Thanksgiving harvest portrait as a warm storybook illustration in gouache and soft colored pencil. Show the subject at a long candlelit autumn dinner table or in a golden-hour harvest scene with pumpkins, squash, wheat, apples and fallen maple leaves, in rust, mustard, burnt orange and deep green. Dress the subject in cozy autumn clothes such as a knit sweater or a plaid scarf. Visible brush strokes and paper grain, soft warm light and a generous, welcoming mood. It must read as a hand-painted illustration, not a photo with a filter. No text, signs or banners, and no costumes or stereotypes of any historical or cultural group.",
+        "notes": [
+          "Say \"gouache and colored pencil\". That medium is what separates this look from a photo with an autumn filter.",
+          "Skip historical costumes. Plain autumn clothes keep the picture friendly and avoid stereotypes.",
+          "For a card, add your message afterwards in any editor, because AI tools misspell words on the image."
+        ]
+      },
       "faq": [
         {
           "q": "Is it a photo or an illustration?",
@@ -1101,6 +1333,14 @@
         {
           "q": "Can I use it for a card?",
           "a": "Yes. Download the JPG and use it in a message, a digital card or a small print. The look asks for no text, so you add your own greeting in another app. Always read the picture first, because AI can still draw stray lettering."
+        },
+        {
+          "q": "Is the Thanksgiving portrait maker free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. At 3:4 or square it makes a picture for a family group chat or a card."
+        },
+        {
+          "q": "Can I make a Thanksgiving portrait in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Name the gouache and colored pencil medium, the candlelit table and the autumn palette, and say \"illustration, not a photo\". The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -1154,6 +1394,14 @@
         "Photo: a selfie in window light, size 3:4",
         "Photo: two friends side by side, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me, or my pet, recognizable: same face, hair or fur color and a natural, genuine expression.\nMake a classic Christmas card portrait shot in a cozy living room. Dress me in a chunky knit sweater or soft winter clothes in festive reds, creams and forest greens, in front of a decorated Christmas tree with warm string lights softly out of focus, a few wrapped gifts, pine garland and a glowing fireplace. Warm, flattering window and firelight, shallow depth of field and a clean, balanced composition with some calm empty space near the top, as if left for a greeting. If the photo shows a pet, give it a small ribbon or a tiny knitted scarf. No text or lettering.",
+        "notes": [
+          "Ask for calm empty space near the top. It is where a greeting goes, and without it the tree can fill the frame.",
+          "Write your greeting afterwards in any editor, because AI tools misspell words on the image.",
+          "Add the shape at the end: \"vertical 2:3\" for a Pinterest pin or a printed card, \"3:4\" or \"square\" for a feed post."
+        ]
+      },
       "faq": [
         {
           "q": "Can I use it as a Christmas card?",
@@ -1170,6 +1418,14 @@
         {
           "q": "How is it different from the 80s flashback?",
           "a": "The [80s flashback](/create/photo-trend-maker/80s-flashback) is a faded, grainy snapshot with period clothes. The Christmas card is a clean, warm and polished portrait in a decorated room."
+        },
+        {
+          "q": "Can I make a Christmas card photo with AI for free?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. The 2:3 size matches a 4×6 inch print, so it works as a card photo."
+        },
+        {
+          "q": "Can I get the Christmas card portrait in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for the knit sweater, the tree with soft lights, the fireplace and empty space at the top, and add \"no text\" so the picture is clean for your own greeting. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -1223,6 +1479,14 @@
         "Photo: a couple close together, size 3:4",
         "Photo: a dog lying on a rug, size 9:16"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me, or my pet, recognizable: same face, hair or fur color and expression.\nMake a family snapshot from Christmas morning in the late 1970s or early 1980s, shot on consumer film with direct on-camera flash. Restyle my hair, clothes and the room with period details: a wool sweater or a flannel robe, a real tree with thick tinsel and large colored bulbs, wood-paneled walls, wrapping paper strewn across a shag carpet and a few opened gifts. Warm, slightly faded color with a red-orange cast, visible film grain, soft focus toward the edges and flash glare on skin and glass ornaments. Casual, candid framing. No date stamp, no text and no brand names.",
+        "notes": [
+          "Name the tinsel and the large colored bulbs. They place the picture in the late 70s better than the word \"vintage\" does.",
+          "No date stamp here, which keeps it apart from the [80s Flashback](/create/photo-trend-maker/80s-flashback) look.",
+          "A pet in the wrapping paper is the easy win; say \"sitting among the wrapping paper\"."
+        ]
+      },
       "faq": [
         {
           "q": "How is it different from the 80s flashback?",
@@ -1239,6 +1503,14 @@
         {
           "q": "Can I use a pet photo?",
           "a": "Yes. A pet sits among the wrapping paper in the same flash-and-grain style. The look does not add a person or an animal that is not in your photo."
+        },
+        {
+          "q": "Is the vintage Christmas photo effect free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. One picture is enough to see your own photo as a family album snapshot."
+        },
+        {
+          "q": "Can I make a vintage Christmas snapshot in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Give the period details (tinsel, wood paneling, shag carpet), the flash glare and the faded red-orange color, because \"retro Christmas\" alone leaves the decade open. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -1292,6 +1564,14 @@
         "Photo: a smiling person in a scarf, size 3:4",
         "Photo: a small dog on a sofa, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep the subject's identity, colors and expression recognizable in miniature.\nMake a photographed physical snow globe holding a tiny sculpted figure of the subject. Show a single round glass snow globe on a wooden mantel, with the subject rebuilt as a small, simplified miniature inside it: a cozy winter outfit for a person, or a little scarf for a pet, standing in a tiny snowy village with pine trees and a small cottage on a sculpted base. Soft white flakes drift inside the glass, with realistic reflections and refraction, small curved highlights and a faint dust of glitter. Behind it, warm out-of-focus Christmas lights and a garland. It must look like a real photographed object, not a digital filter. Show only one snow globe and no text.",
+        "notes": [
+          "Say \"only one snow globe\". Without it a chat tool may fill the mantel with a row of them.",
+          "Ask for reflections and refraction in the glass. They separate a real object from flakes laid over a photo.",
+          "A small figure means small details. If the face looks generic, use a photo where it fills most of the frame."
+        ]
+      },
       "faq": [
         {
           "q": "Will it look like me or my pet?",
@@ -1308,6 +1588,14 @@
         {
           "q": "How is it different from the claymation look?",
           "a": "The [claymation world](/create/photo-trend-maker/claymation) rebuilds the whole scene from modelling clay. The snow globe puts a small figure inside glass, with drifting snow, reflections and Christmas lights around it. If you would rather have a frame trick than a miniature, try the [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out)."
+        },
+        {
+          "q": "Can I make a snow globe photo for free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A close, clear photo of a person or a pet keeps the likeness once it is shrunk into the globe."
+        },
+        {
+          "q": "Can I turn a photo into a snow globe in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for one round glass globe on a mantel, a tiny village base, drifting flakes with glass reflections and warm blurred lights behind it. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -1361,6 +1649,14 @@
         "Photo: a friend laughing indoors, size 3:4",
         "Photo: a dog looking at the camera, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep me, or my pet, recognizable: same face, hair or fur color and expression.\nMake a glamorous New Year's Eve party photo shot with a bright on-camera flash. Dress me in tasteful, modest sparkling party clothes in black and gold, with a glittering headband, hat or tiara, holding a sparkler or a noisemaker, in a dim room full of falling gold and silver confetti, streamers and a mirror ball scattering small points of light. Strong flash highlights, deep shadows, glossy skin highlights, real colors and fine film grain, with a candid magazine feel and a happy, mid-celebration expression. A pet stays recognizable with a small party accessory. No other people, no drinks or glasses, and no text, numbers or clocks.",
+        "notes": [
+          "Leave out numbers and clocks. AI tools can get a year wrong, so add \"2027\" yourself afterwards if you want it.",
+          "Say \"no other people\". A party scene invites a crowd, and the point of the look is that it is still your picture.",
+          "Drop \"holding a sparkler\" if the hands look wrong. Hands are the part to zoom in on before you post."
+        ]
+      },
       "faq": [
         {
           "q": "Can it write the new year on the picture?",
@@ -1377,6 +1673,14 @@
         {
           "q": "Will it add other people to the party?",
           "a": "It is told not to. The scene is filled with confetti, streamers, sparklers and lights, and the people are the ones in your photo. If an extra person or hand appears, generate again."
+        },
+        {
+          "q": "Is the New Year's Eve photo maker free?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. Read the details closely before you share it, since small items like hands and accessories are where AI images slip."
+        },
+        {
+          "q": "Can I make a New Year's Eve party photo in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for the black-and-gold outfit, confetti and mirror-ball light, strong flash with deep shadows, and say \"no other people\" and \"no text or numbers\". PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -1384,9 +1688,9 @@
       "value": "collectible_figure_box",
       "slug": "collectible-figure-box",
       "seo": {
-        "title": "Action Figure Photo Maker – Boxed Collectible Toy",
-        "description": "Turn a photo into a collectible action figure sealed in a blister pack with accessories and a printed backer card. Download a JPG in four sizes, no prompt.",
-        "h1": "Collectible Figure Box Photo Maker"
+        "title": "AI Action Figure Generator – Photo to Boxed Toy",
+        "description": "Turn a photo of you or a pet into a boxed action figure with blister pack, backer card and accessories. Free to try, no account. Download a JPG in four sizes.",
+        "h1": "AI Action Figure Generator"
       },
       "intro": [
         "The collectible figure box look turns a person or a pet into a plastic action figure sealed in retail packaging. One glossy figure stands in a clear molded blister on a printed cardboard backer card, with a small round base, visible joint seams and two or three accessories in their own molded compartments beside it, the way a toy-shop shelf shows a boxed figure.",
@@ -1430,6 +1734,14 @@
         "Photo: a golden retriever sitting on a living room rug, size 3:4",
         "Photo: a person with a backpack on a city street, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep the subject recognizable as a figure: same face shape, hairstyle, skin tone and outfit colors.\nMake a photographed collectible action figure sealed in retail packaging. Show exactly one glossy molded-plastic figure standing in a clear blister on a printed cardboard backer card, with a small round base and visible joint seams. Two or three accessories that suit the photo sit in their own molded compartments beside it, such as a camera, a mug, a book or a backpack; for a pet use a tiny bowl, a ball and a leash. The card is bold and colorful with a simple graphic backdrop and one short invented name in large block letters, with no tagline, no small print, no logos and no brand or character names. Soft studio product lighting and a clean background.",
+        "notes": [
+          "Pick the box name yourself and keep it to one or two short words. Long text on the card is where letters go wrong.",
+          "Choose accessories that fit the photo. Three real props, such as a camera, a mug and a backpack, read better than a generic toy kit.",
+          "Leave out brand and character names. Copying a toy line's logo or a known character is the one thing to avoid on a box you plan to post."
+        ]
+      },
       "faq": [
         {
           "q": "Is this a real toy I can order?",
@@ -1450,6 +1762,14 @@
         {
           "q": "Which size works best?",
           "a": "The image is composed for the size you choose, and a tall card fits tall shapes naturally, so start with 2:3 (1000×1500 px), the shape Pinterest recommends for Pins, or with 9:16. Try the square size for a different layout."
+        },
+        {
+          "q": "Is the AI action figure generator free?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. The first run shows how your face reads as a molded figure, which is quicker than reading about it."
+        },
+        {
+          "q": "Can I make an action figure from my photo in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for exactly one figure in a blister on a backer card, name two or three accessories and give the box a short invented name; ask for no logos so nothing on the card copies a real brand. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -1503,6 +1823,14 @@
         "Photo: a woman with wavy auburn hair smiling by a window, size 3:4",
         "Photo: a couple smiling together on a city sidewalk, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep the subject recognizable through hair shape, skin tone, clothing colors and expression, simplified into flat paper shapes.\nMake a photographed pop-up greeting card built from layered paper. Show one card standing half open on a plain table, with a paper-cut version of the subject and a simple scene rising from the fold in three to five stacked layers of colored cardstock: the subject as a simplified figure with clean scissor-cut edges in front, and paper trees, hills, clouds or flowers behind. Soft shadows between the layers, visible paper grain, small fold creases and slightly uneven hand-cut edges. A restrained palette of four to six colors taken from the photo. It must look like a real handmade craft object, not a digital illustration. No text and no printed greeting.",
+        "notes": [
+          "Give the number of layers and the palette. Three to five layers and four to six colors keep the card readable.",
+          "Ask for soft shadows between the layers. They are what gives a flat picture its depth.",
+          "Keep the card blank. Write the message on a real card or in an editor."
+        ]
+      },
       "faq": [
         {
           "q": "Can I cut this out of real paper?",
@@ -1523,6 +1851,14 @@
         {
           "q": "Can I use it for a group photo?",
           "a": "A couple or a pair can work, but every extra person is another paper figure to keep recognizable, so the likeness drifts more than with one subject. Check each face before you post."
+        },
+        {
+          "q": "Is the pop-up card photo maker free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A single person or pet against a plain background makes the cleanest paper cutout."
+        },
+        {
+          "q": "Can I make a pop-up paper card from a photo in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Specify a half-open card on a table, three to five cardstock layers, fold creases and soft shadows, and say \"a handmade craft object, not a digital illustration\". The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -1576,6 +1912,14 @@
         "Photo: a bearded man laughing in a sunny park, size 3:4",
         "Photo: a golden retriever sitting on a living room rug, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep the photo itself unchanged and crisp: print it as a real photograph.\nMake a handmade scrapbook journal page photographed from above on a desk. My photo is the hero: printed with a thin white border, slightly tilted and taped onto a sheet of cream, kraft or lined journal paper with strips of washi tape. Around it add torn paper scraps, a pressed flower or leaf, a few small star and heart stickers, a ticket stub, a paper clip, pencil doodles, arrows and small sparkles, in a soft faded palette that picks up the colors of the photo. Warm window light, subtle paper grain and small shadows under the tape. Show only one copy of the photo. The scribbles must be wordless: no letters, numbers or dates.",
+        "notes": [
+          "Ask for wordless scribbles. Handwriting is where AI tools slip, and the page looks better with doodles than with misspelled captions.",
+          "Say \"only one copy of the photo\". Journal pages invite extra pictures.",
+          "Add the caption and the date afterwards in any editor."
+        ]
+      },
       "faq": [
         {
           "q": "Does the page include a date or a caption?",
@@ -1596,6 +1940,14 @@
         {
           "q": "Which photos suit it best?",
           "a": "Clear, well-lit photos of one person, a couple or a pet with a calm background. The print is smaller than the full frame, so a photo where the subject is tiny gives a weak result."
+        },
+        {
+          "q": "Can I make a scrapbook page from a photo for free?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. Your photo stays the hero, so the look works with almost any picture you already like."
+        },
+        {
+          "q": "Can I make a scrapbook journal page in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for the photo taped at a tilt with washi tape on cream or kraft paper, the paper and sticker details and wordless doodles, and say the photo itself must stay unchanged. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     },
@@ -1649,6 +2001,14 @@
         "Photo: a grey tabby cat on a windowsill, size 3:4",
         "Photo: a golden retriever sitting on a living room rug, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and leave the photo itself untouched: real skin, hair, clothing and surroundings exactly as they are.\nAdd one tiny hand-drawn twin of me. A small ink-drawn character, about the size of a palm, sits on my shoulder or on the edge of a nearby object and looks at me or at the camera. Draw it with loose black ink lines and a few flat marker colors, simple and cute, with the same hair shape and outfit colors as me so it is clearly the same person in cartoon form. Add a few small doodle accents around it, such as sparkles, a tiny heart or short motion lines, in the same ink. It must look like a drawing placed into a real photo, not a 3D figure. For a pet, the twin is a tiny ink drawing of the same animal. No other people, no speech bubbles and no text.",
+        "notes": [
+          "Say where it sits. \"On my left shoulder\" gives you a fixed spot; leave it out and the model picks one.",
+          "Insist that the photo stays untouched. Otherwise the model may restyle the whole picture, and the real photo is the point.",
+          "Keep the twin palm-sized. A bigger one competes with the real subject."
+        ]
+      },
       "faq": [
         {
           "q": "Will my photo be changed?",
@@ -1669,6 +2029,14 @@
         {
           "q": "Does it work for pets?",
           "a": "Yes. The twin becomes a tiny ink drawing of the same animal. A pet with clear markings and a calm background keeps the best likeness in the drawing."
+        },
+        {
+          "q": "Is the mini doodle twin photo free to make?",
+          "a": "Yes, to try. You can try it with the free credits every new visitor gets, without creating an account. A picture costs one credit at any size, and the credit comes back if a run fails. Because the photo stays real, almost any portrait works; leave some space near the shoulder for the twin."
+        },
+        {
+          "q": "Can I add a doodle twin to my photo in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. A chat tool lets you choose the spot for the twin, which the form here does not; keep \"leave the photo untouched\" and \"loose black ink lines\" in the prompt so it stays a drawing in a real photo. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
         }
       ]
     },
@@ -1722,6 +2090,14 @@
         "Photo: a bearded man in a grey hoodie outdoors, size 3:4",
         "Photo: a golden retriever looking at the camera on a rug, size 1:1"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep my face, hairstyle and clothing colors consistent between the print and the reaching hand.\nMake an instant-photo breakout illusion. A real hand holds a single instant-film print with a white border and a wide bottom margin, in front of the real surroundings of the photo. Inside the print I appear as in the photo, and one of my arms and hands reaches out past the white border into the real world with strong 3D perspective, so I seem to step through the frame. The reaching hand is closest to the camera, slightly larger and sharper than the rest, and casts a small realistic shadow on the border and on the holding hand. Each hand has exactly five natural fingers. Realistic photographic light and a shallow depth of field. Show only one print and only these two hands. No text and no handwriting on the border.",
+        "notes": [
+          "Count the fingers in the prompt, then in the result. Hands are the likeliest place for an extra finger, so zoom in before you post.",
+          "Ask for a shadow from the reaching hand. It is the detail that sells the illusion.",
+          "The result is a still image. The hand does not move; a video effect needs an animation tool."
+        ]
+      },
       "faq": [
         {
           "q": "Is it a video or a real 3D image?",
@@ -1742,6 +2118,14 @@
         {
           "q": "Which size should I choose?",
           "a": "The print is a tall shape, so 2:3 (1000×1500 px) or 3:4 suit it well. The image is composed for the size you choose, so try 9:16 for a longer view of the room."
+        },
+        {
+          "q": "Is the instant photo pop-out effect free?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. Check the fingers on the result; if a hand is wrong, a second credit gives a new one."
+        },
+        {
+          "q": "Can I make the instant photo pop-out trick in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. State \"exactly five fingers\", \"only one print and two hands\" and the shadow on the border; those are the parts the look depends on. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     },
@@ -1795,6 +2179,14 @@
         "Photo: a golden retriever sitting on a living room rug, size 1:1",
         "Photo: a bearded man laughing in a sunny park, size 2:3"
       ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference. Keep the face shape, hairstyle, skin tone and clothing colors consistent in every sticker so they are clearly the same person.\nMake a sheet of nine die-cut stickers of me on a plain pale paper background, in a neat three-by-three grid. Each sticker has a different pose and expression: laughing, surprised, sleepy, thinking, cheering, winking, blowing a kiss, giving a thumbs up and shrugging. Draw each one as a glossy sticker with a thick white die-cut border and a faint drop shadow, in a clean, polished, semi-realistic illustrated style with bold simple shapes. Space the stickers evenly, with none touching and none cropped. For a pet, show the same animal in nine cute poses. No text, captions, speech bubbles or logos.",
+        "notes": [
+          "List the nine poses. Without a list the expressions tend to repeat.",
+          "Ask for a thick white border and space between the stickers. That is what you need to cut them out cleanly.",
+          "For a transparent sticker file, use the [Sticker Maker](/create/sticker-maker); this look gives you the whole sheet as one JPG."
+        ]
+      },
       "faq": [
         {
           "q": "Can I use the stickers in a chat app?",
@@ -1815,6 +2207,14 @@
         {
           "q": "Which size suits a sticker sheet?",
           "a": "A sheet is a tall rectangle, so 2:3 (1000×1500 px) and 3:4 give the nine stickers room. The image is composed for the size you choose, and the square size gives a squarer layout."
+        },
+        {
+          "q": "Can I turn my selfie into a sticker sheet for free?",
+          "a": "Yes, to try. New visitors get free credits and no account is needed. One credit makes one picture, whichever look and size you choose, and a failed run returns the credit. One credit makes the whole sheet of nine."
+        },
+        {
+          "q": "Can I make a photo sticker sheet in ChatGPT or Gemini?",
+          "a": "Yes. Upload a selfie or a pet photo and paste the prompt above. List the nine poses and ask for a three-by-three grid with a thick white border on every sticker and none touching. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
         }
       ]
     }

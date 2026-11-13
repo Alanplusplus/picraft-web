@@ -105,7 +105,7 @@ export function validateInternalLinks(): void {
   }
 
   for (const { file, style } of getStylePages()) {
-    checkText(`src/data/styles/${file.scene}.json (${style.slug})`, [style.intro, style.bestFor, style.designNotes, style.tryThese, style.faq]);
+    checkText(`src/data/styles/${file.scene}.json (${style.slug})`, [style.intro, style.bestFor, style.designNotes, style.tryThese, style.promptTry?.notes, style.faq]);
   }
 
   for (const category of CATEGORIES) {
