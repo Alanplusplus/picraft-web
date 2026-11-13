@@ -7,7 +7,7 @@ import Link from "next/link";
 export function UploadNotice() {
   return (
     <p className="mt-2 text-xs leading-relaxed text-ink-500">
-      Only add photos you own or may use, of people who agree. No children, no fakes of real people.{" "}
+      Only add photos you own or may use, of people who agree. No photos of children, no fakes of real people.{" "}
       <Link href="/aup" className="font-medium text-ink-700 underline underline-offset-2">
         Acceptable Use Policy
       </Link>

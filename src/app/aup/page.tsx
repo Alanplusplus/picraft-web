@@ -58,7 +58,7 @@ const SECTIONS: ProseSection[] = [
     ],
     items: [
       "Upload only photos you took yourself or have permission to use, and only when every person who can be recognised in them has agreed to it. By adding a photo you confirm this; the notice under every photo field says so.",
-      "Do not upload photos of children. Photos in which a child is the subject are not accepted.",
+      "Do not upload photos of children. This includes photos of your own child and group photos in which a child appears.",
       "Do not use another person's photo to make something that person has not agreed to: a face swap, a nude or sexual version, an intimate or romantic scene with someone else, a fabricated statement, or a fake endorsement.",
       "Do not ask for the likeness of a real public figure, living or dead.",
       `${SITE_NAME} is not a face-swap tool and has no “undress” or voice-cloning feature. We do not offer these and will not add them. Trying to use the service this way is not allowed, and the people who do lose access (see Enforcement).`,

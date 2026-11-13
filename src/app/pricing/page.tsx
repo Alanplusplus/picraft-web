@@ -68,7 +68,7 @@ const FAQ = [
   },
   {
     q: "What am I not allowed to make?",
-    a: "Nothing sexual or nude, nothing violent or hateful, nothing involving children, no face swaps or fakes of real people, and nothing that infringes someone else's rights. Requests are checked before anything is made, and a blocked or declined request costs nothing. The Acceptable Use Policy lists the rules.",
+    a: "Nothing sexual or nude, nothing violent or hateful, nothing that sexualises or endangers a child, no photos of children, no face swaps or fakes of real people, and nothing that infringes someone else's rights. Requests are checked before anything is made, and a blocked or declined request costs nothing. The Acceptable Use Policy lists the rules.",
   },
   {
     q: "Can I use the images commercially?",
