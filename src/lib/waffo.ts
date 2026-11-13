@@ -187,4 +187,4 @@ export function verifyWaffoWebhook(rawBody: string, signature: string | null): W
   return event;
 }
 
-export { storeId as waffoStoreId };
+export { storeId as waffoStoreId, environment as waffoEnvironment };

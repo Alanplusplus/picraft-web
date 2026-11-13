@@ -2,7 +2,8 @@ import { NextRequest } from "next/server";
 
 import { callBackend, getSessionToken } from "@/lib/backend";
 import { sanitizeGaIds } from "@/lib/ga-ids";
-import { findPack, findPlan } from "@/lib/pricing";
+import { notifyFeishu, type FeishuNotice } from "@/lib/feishu";
+import { findPack, findPlan, formatPrice, planPriceLabel } from "@/lib/pricing";
 import { clientIp, reply, safeReturnPath, siteOrigin } from "@/lib/route-helpers";
 import { rateLimited } from "@/lib/server-rate-limit";
 import { emailEnabled } from "@/lib/account-token";
@@ -15,6 +16,7 @@ import {
   paymentsEnabled,
   productIdFor,
   productIdForPlan,
+  waffoEnvironment,
 } from "@/lib/waffo";
 
 export const dynamic = "force-dynamic";
@@ -64,14 +66,28 @@ export async function POST(request: NextRequest) {
     ga: sanitizeGaIds(body.ga),
   };
   const bought = plan ?? pack;
+  // What the operator's Feishu group is told about this visitor and what they chose.
+  const rows: FeishuNotice["rows"] = [
+    ["类型", plan ? "订阅" : "积分包"],
+    ["商品", bought ? `${bought.name}（${bought.credits} 积分）` : undefined],
+    ["价格", plan ? planPriceLabel(plan) : pack ? formatPrice(pack.priceCents) : undefined],
+    ["用户ID", me.data.user_id],
+    ["当前积分", me.data.credits],
+    ["来源页面", returnPath],
+    ["国家/地区", request.headers.get("x-vercel-ip-country")],
+  ];
+  const notice = { test: waffoEnvironment() === "test", rows };
   try {
     const checkout = plan
       ? await createSubscriptionCheckout({ plan, ...common })
       : await createCheckout({ pack: pack!, ...common });
+    notifyFeishu({ ...notice, title: "用户打开了收银台", tone: "blue" });
     return reply(200, "success", { url: checkout.url });
   } catch (e) {
     // Usually a product id that does not belong to WAFFO_ENVIRONMENT, or a product that is not published.
-    console.error("[checkout] could not create a Waffo session for", bought?.id, e instanceof Error ? e.message : e);
+    const reason = e instanceof Error ? e.message : String(e);
+    console.error("[checkout] could not create a Waffo session for", bought?.id, reason);
+    notifyFeishu({ ...notice, title: "收银台打开失败", tone: "red", rows: [...notice.rows, ["原因", reason]] });
     return reply(502, "Couldn't start checkout. Please try again.");
   }
 }
