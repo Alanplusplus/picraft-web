@@ -35,7 +35,6 @@ function MakerCta({ sceneSlug, lead, position }: { sceneSlug: string; lead: stri
       <div>
         <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">{lead}</p>
         <p className="mt-1 font-semibold text-ink-950 group-hover:text-brand-700">{scene.name}</p>
-        <p className="mt-1 text-sm text-ink-700">{scene.summary}</p>
       </div>
     </TrackedLink>
   );

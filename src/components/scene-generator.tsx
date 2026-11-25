@@ -7,9 +7,12 @@ import { trackEvent } from "@/lib/analytics";
 import { useCheckoutDraft } from "@/lib/checkout-draft";
 import { prepareUpload } from "@/lib/image-file";
 import type { PinShare } from "@/lib/pinterest-save";
+import { describeRefusal } from "@/lib/refusal";
 import type { ClientScene, SceneField, TaskView } from "@/lib/types";
 
 import { CreditsDialog, type PendingTask } from "./credits-dialog";
+import { CreditsNudge } from "./credits-nudge";
+import { RefusalHelp } from "./refusal-help";
 import { ResultFiles } from "./result-files";
 import { Select } from "./select";
 import { useSession } from "./session-provider";
@@ -70,7 +73,11 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
   const [run, setRun] = useState(0);
   // The window that sells credits when Create is pressed without enough of them.
   const [payOpen, setPayOpen] = useState(false);
+  // Where the credits window was opened from, for analytics: pressing Create or one of the nudges.
+  const [paySource, setPaySource] = useState("scene");
   const [error, setError] = useState<string | null>(null);
+  // The last request was stopped by the safety check: show how to ask for a second look.
+  const [appeal, setAppeal] = useState<{ requestId?: string } | null>(null);
   const [task, setTask] = useState<TaskView | null>(null);
   // The last attempt failed and its credits came back, so trying again is safe.
   const [refunded, setRefunded] = useState(false);
@@ -204,8 +211,14 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
     void start();
   }
 
+  function openCredits(source: string) {
+    setPaySource(source);
+    setPayOpen(true);
+  }
+
   async function start() {
     setError(null);
+    setAppeal(null);
 
     const imageUrls: Record<string, string> = {};
     for (const field of scene.fields) {
@@ -220,7 +233,7 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
 
     // Not enough credits: the form stays exactly as it is and the credits window opens on top of it.
     if (outOfCredits) {
-      setPayOpen(true);
+      openCredits("scene");
       return;
     }
 
@@ -235,17 +248,10 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
     if (res.code !== 200 || !res.data) {
       setError(res.message);
       setPhase("idle");
-      const reason =
-        res.code === 402
-          ? "no_credits"
-          : res.code === 0
-            ? "network"
-            : res.code === 422
-              ? "moderation"
-              : res.code === 429
-                ? "rate_limited"
-                : "rejected";
-      trackEvent("generate_fail", eventParams({ reason }));
+      // A request the safety check or the pause stopped is `generate_blocked`, not a failure (see lib/refusal.ts).
+      const refusal = describeRefusal(res.code, res.data);
+      if (refusal.appealable) setAppeal({ requestId: refusal.requestId });
+      trackEvent(refusal.event, eventParams({ reason: refusal.reason }));
       if (res.code === 402) await refresh();
       return;
     }
@@ -290,6 +296,14 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
         input={
           <div className="panel p-5 sm:p-6">
             <form onSubmit={onSubmit} className="space-y-4">
+              {outOfCredits && !busy && phase !== "done" && (
+                <CreditsNudge
+                  placement="form"
+                  source="scene"
+                  credits={account?.credits ?? 0}
+                  onOpen={() => openCredits("scene_nudge")}
+                />
+              )}
               {scene.fields.map((field) => (
                 <div key={field.key}>
                   <label
@@ -366,6 +380,7 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
               ))}
 
               {error && <p className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-700">{error}</p>}
+              {appeal && <RefusalHelp requestId={appeal.requestId} />}
 
               <button
                 type="submit"
@@ -378,12 +393,6 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
                     ? `Designing… ${elapsed}s`
                     : `${refunded && phase === "failed" ? "Try again" : phase === "done" ? "Create another" : "Create"} · ${scene.cost} ${scene.cost === 1 ? "credit" : "credits"}`}
               </button>
-              {outOfCredits && !busy && (
-                <p className="text-center text-xs text-ink-500">
-                  You have {account?.credits ?? 0} {account?.credits === 1 ? "credit" : "credits"} and this needs{" "}
-                  {scene.cost}. Press Create to add credits; what you entered stays here.
-                </p>
-              )}
               {/* On a phone the result area is hidden until something is made, so the files are named here. */}
               {!busy && outputs.length > 0 && (
                 <p className="text-xs leading-relaxed text-ink-500 lg:hidden">
@@ -395,13 +404,26 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
         }
         output={
           phase === "done" && task ? (
-            <ResultFiles key={task.task_id} task={task} source="generator" share={share} />
+            <>
+              <ResultFiles key={task.task_id} task={task} source="generator" share={share} />
+              {outOfCredits && (
+                <div className="mt-4">
+                  <CreditsNudge
+                    placement="result"
+                    source="scene"
+                    credits={account?.credits ?? 0}
+                    onOpen={() => openCredits("scene_result")}
+                  />
+                </div>
+              )}
+            </>
           ) : phase === "submitting" || phase === "processing" ? (
             <StageWorking
               ratio="4 / 3"
               elapsed={elapsed}
               label="Designing…"
-              hint="Most designs take 30–90 seconds. You can keep this tab open."
+              expectedSeconds={40}
+              hint="Most designs take 10–40 seconds. You can keep this tab open."
               backdrop={Object.values(images)[0]?.preview}
             />
           ) : phase === "failed" ? (
@@ -414,7 +436,7 @@ export function SceneGenerator({ scene, styleLinks }: { scene: ClientScene; styl
       <CreditsDialog
         open={payOpen}
         onClose={() => setPayOpen(false)}
-        source="scene"
+        source={paySource}
         task={pending}
         enough={!outOfCredits}
         onCreate={() => {

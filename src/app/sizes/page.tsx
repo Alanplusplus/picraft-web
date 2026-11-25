@@ -38,25 +38,18 @@ export default function SizesPage() {
       />
       <Breadcrumb crumbs={CRUMBS} />
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">Size guides for every design</h1>
-      <div className="mt-4 max-w-3xl space-y-3 text-base leading-relaxed text-ink-700">
-        <p>
-          Most design problems are size problems: a thumbnail that YouTube rejects, a business card trimmed too close, a
-          product image that is not white enough. Each guide below gives the dimensions, the file format and the
-          rules for one kind of file, in plain tables, with links to the official page where one exists.
-        </p>
-        <p>
-          Every guide ends with the PiCraft maker that exports the files at that size, so you can go from the spec to a
-          finished file in a minute.           New to print terms? Start with{" "}
-          <Link href="/blog/what-is-bleed-in-printing" className="font-medium text-brand-700 underline underline-offset-2">
-            what bleed is and how to use it
-          </Link>
-          . Already have a file? The{" "}
-          <Link href="/tools/image-size-checker" className="font-medium text-brand-700 underline underline-offset-2">
-            image size checker
-          </Link>{" "}
-          tests it against these specs in your browser.
-        </p>
-      </div>
+      <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-700">
+        Dimensions, file formats and rules for one kind of file per guide, with a link to the official source where
+        there is one. New to print terms? Read{" "}
+        <Link href="/blog/what-is-bleed-in-printing" className="font-medium text-brand-700 underline underline-offset-2">
+          what bleed is
+        </Link>
+        . Already have a file? Test it with the{" "}
+        <Link href="/tools/image-size-checker" className="font-medium text-brand-700 underline underline-offset-2">
+          image size checker
+        </Link>
+        .
+      </p>
 
       <div className="mt-12 space-y-12">
         {CATEGORIES.map((category) => {
@@ -65,10 +58,9 @@ export default function SizesPage() {
           return (
             <section key={category.id}>
               <h2 className="text-xl font-bold text-ink-950">{category.name}</h2>
-              <p className="mt-1 text-sm text-ink-500">{category.description}</p>
               <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {inCategory.map((guide) => (
-                  <GuideCard key={guide.slug} guide={guide} />
+                  <GuideCard key={guide.slug} guide={guide} showSummary />
                 ))}
               </div>
             </section>

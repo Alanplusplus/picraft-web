@@ -2,15 +2,15 @@
   "slug": "photo-trend-maker",
   "name": "Photo Trend Maker",
   "category": "trends",
-  "summary": "Turn one photo into an 80s snapshot, a claymation world, a photo booth strip and 22 more trending looks.",
-  "badge": "25 looks · 9:16",
+  "summary": "Turn one photo into an 80s snapshot, a claymation world, a photo booth strip and 32 more trending looks.",
+  "badge": "35 looks · 9:16",
   "indexable": true,
   "seo": {
     "title": "AI Photo Trend Maker – 80s, Y2K, Claymation & More",
     "description": "Upload one photo and pick a trending look: 80s flashback, Y2K digicam, claymation, photo booth strip and more. Download it as a 9:16, 2:3, 3:4 or square JPG.",
     "h1": "Photo Trend Maker",
     "intro": [
-      "Upload a photo of yourself, a friend or a pet, pick one of 25 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head, a collectible figure in its box, a pop-up paper card, a scrapbook page or a seasonal portrait for Halloween, Thanksgiving, Christmas and New Year's Eve, and keeps the subject recognizable.",
+      "Upload a photo of yourself, a friend or a pet, pick one of 35 looks and choose a size. PiCraft redraws the photo as a faded 80s snapshot, a handmade clay figure, a black-and-white photo booth strip, a glossy toy head, a chibi character, a caricature, a tarot card, a black-and-white sweater portrait, a travel postcard collage, a collectible figure in its box, a pop-up paper card, a scrapbook page or a seasonal portrait for Halloween, Thanksgiving, Christmas and New Year's Eve, and keeps the subject recognizable.",
       "There is no prompt to write. The default size is a full-screen 9:16 vertical image, and you can switch to 2:3 for Pinterest, 3:4 for feed posts or a 1:1 square before you create."
     ]
   },
@@ -158,6 +158,56 @@
           "value": "photo_sticker_sheet",
           "label": "Photo Sticker Sheet",
           "prompt": "a sheet of nine die-cut stickers of the subject on a plain pale paper background. Show the same subject nine times in a neat three-by-three grid, each sticker in a different pose and expression: laughing, surprised, sleepy, thinking, cheering, winking, blowing a kiss, giving a thumbs up and shrugging. Draw each one as a glossy sticker with a thick white die-cut border and a faint drop shadow, in a clean, polished, semi-realistic illustrated style with bold simple shapes. Keep the face shape, hairstyle, skin tone and clothing colors consistent in every sticker so they are clearly the same person. Space the stickers evenly, with none touching and none cropped. For a pet, show the same animal in nine cute poses. Do not add any person or pet that is not in the photo. Add no text, no captions, no speech bubbles and no logos."
+        },
+        {
+          "value": "chibi_character",
+          "label": "Chibi Character",
+          "prompt": "a chibi character illustration of the subject. Redraw them as a cute two-heads-tall figure: a big rounded head, a tiny soft body, large glossy eyes with bright highlights, a very small nose and mouth and rosy cheeks. Keep what makes them recognizable: hairstyle and hair color, eye color, skin tone, glasses or facial hair if they have them, and a simplified version of their outfit in its real colors. Smooth clean outlines, soft cel shading and a light glossy finish. Show the full body, standing in a friendly pose with one hand raised in a small wave, inside the frame with comfortable margins, on a seamless pastel studio background with a faint floor shadow and a few small sparkles. If the photo has two people, draw both as chibis side by side. For a pet, draw the same animal as a round, big-eyed chibi with the same coat colors and markings. It must look like an illustrated character, not a photo and not a 3D toy. Do not add any person or pet that is not in the photo. No text, no logos and no speech bubbles."
+        },
+        {
+          "value": "color_pop_sweater",
+          "label": "Color-Pop Sweater Portrait",
+          "prompt": "a dramatic black-and-white studio portrait with exactly one color in it. Everything is monochrome, including the skin, hair, lips, eyes and the backdrop, in rich greys with deep blacks and soft highlights. The single exception is one oversized chunky cable-knit sweater in one saturated color, such as deep red, emerald, violet or cobalt, with extra-long sleeves pulled up over the hands and held against the lower face so the knit covers the mouth and chin while the eyes look straight into the lens. Chest-up framing, soft studio key light with a gentle falloff, sharp focus on the eyes, visible knit texture and natural skin texture. Keep the eyes, brows, eye shape and head shape exactly as in the photo. For a pet, the animal wears the sweater like a thick cowl around its neck and chin. If the photo shows a group, use only the main person. Do not add any person or pet that is not in the photo. No text, no logos and no frame."
+        },
+        {
+          "value": "snow_triptych",
+          "label": "Snow Triptych",
+          "prompt": "a vertical snow triptych: one tall image split into three stacked frames of the same subject in falling snow, divided by thin white borders and filling the whole picture. Top frame: an extreme close-up of the eyes and cheek with snowflakes caught on the lashes and in the hair. Middle frame: a medium shot from the side, looking up into the snowfall while holding a clear umbrella. Bottom frame: a chest-up portrait facing the camera with a calm, soft expression. Keep the same face, hairstyle, skin tone and outfit in all three frames, in a long dark wool coat and a cream knit scarf. Quiet overcast winter daylight, cool white and blue tones, real snow in the air, natural skin texture and fine film grain, like a still from a slow winter drama. Show only the subject from the photo in every frame: no other people and no animals that are not in the photo. For a pet, show the same animal in all three frames with snow settling on its fur. No text and no logos."
+        },
+        {
+          "value": "neon_city_poster",
+          "label": "Neon City Game Poster",
+          "prompt": "a painted loading-screen poster for an imaginary open-world city game, with the subject as the lead character. Bold hand-painted digital illustration with simplified shapes, visible brush texture, slightly exaggerated features and rich warm saturation. The subject stands in the foreground in a relaxed, friendly pose, wearing the clothes from the photo restyled in vivid colors, fully dressed and never in swimwear. Behind them: a sun-soaked coastal city street at neon sunset, palm trees, a huge orange sun in a pink and violet sky, tall glowing buildings, light haze and a glossy sports car at the curb with no badge and no plate text. Keep the face, hairstyle and skin tone recognizable. If the photo shows two people, paint both together. For a pet, paint the same animal as the hero in the foreground. Do not add any person or pet that is not in the photo. No weapons, no text, no title, no logos and no game interface."
+        },
+        {
+          "value": "wanderlust_postcard",
+          "label": "Wanderlust Postcard Collage",
+          "prompt": "a travel keepsake collage seen from above on a wooden table in warm natural light. The main piece is an instant-photo print of the subject, tilted slightly, standing in a sunny hillside harbor town in the late afternoon; the print has a white border and soft film colors. Beside it lies a vintage postcard of a quiet mountain lake, with two or three short handwritten lines in blue ink that encourage the reader to go somewhere new, a stamp and a round postmark. Around them place a few souvenirs: a folded paper map, a small seashell, a brass key and a pressed flower. Tidy but lived-in layout, soft natural shadows. Keep the subject's face, hair and clothes exactly as in the photo, and keep the instant-photo look inside the print only. For a pet, the pet is the traveler in the print. Do not add any person or pet that is not in the photo. No logos."
+        },
+        {
+          "value": "street_caricature",
+          "label": "Caricature Portrait",
+          "prompt": "a street-artist caricature of the subject. Draw a realistic, characterful face with confident ink lines and watercolor-marker shading, then exaggerate what is most distinctive about them, such as the smile, the eyes, the eyebrows, the hair or the chin, with a head about one and a half times the size of the small, energetic body. Push the exaggeration far enough that it reads as a caricature and not as a portrait. Keep the skin tone, hairstyle and outfit colors true to the photo and add one or two small props that match what the photo shows. Warm, funny and flattering, never mocking, and not cute or kawaii. Pale cream paper background with a few loose color splashes. For two people, draw both as a pair; for a pet, exaggerate its face and markings in the same way. It must look hand-drawn, not like a photo. Do not add any person or pet that is not in the photo. No text and no logos."
+        },
+        {
+          "value": "inked_tarot_card",
+          "label": "Tarot Card Portrait",
+          "prompt": "a hand-inked tarot card with the subject as the figure on the card. A tall card with a thin ornate border on aged cream paper. The figure is drawn with bold black ink lines that wobble slightly, flat color fills in a limited palette of muted red, ochre, teal and cream, and no shading. Face, hairstyle and clothing stay recognizable but are simplified into a woodcut style, with the clothes turned into a flowing robe or coat in the same palette. Around the figure place symbolic details: a sun, a crescent moon, stars, a few flowers and a winding path. At the bottom, a banner with a short title in capital letters, such as THE DREAMER. For two people, show both on one card; for a pet, draw the animal as the central figure. Do not add any person or pet that is not in the photo. No other text and no logos."
+        },
+        {
+          "value": "cinematic_stills",
+          "label": "Cinematic Film Stills",
+          "prompt": "a cinematic story told in three stacked movie stills of the subject in their real surroundings, full-bleed and divided by thin dark gaps. Top: a wide establishing shot with the subject small in the scene. Middle: a medium shot from a different angle with a hint of motion blur as they turn or walk. Bottom: a tight close-up on the face and eyes with a quiet, honest emotion. The same person, outfit and place in all three frames, so it reads as one short scene. Show only the subject from the photo in every frame, alone in the scene, with no other people and no animals that are not in the photo, not even in the background. Cool teal-and-amber color grade, deep blacks, shallow depth of field, fine film grain and a soft lens flare. For a pet, show the same animal in all three frames. Do not add any person or pet that is not in the photo. No text, no subtitles and no logos."
+        },
+        {
+          "value": "mouse_drawn_scribble",
+          "label": "Mouse-Drawn Scribble",
+          "prompt": "a deliberately crude scribble redraw of the subject, as if someone drew it in a hurry with a mouse in an old computer paint program. Plain white canvas, hard-edged thick brush strokes with no anti-aliasing and no soft blending, flat solid fills in basic default colors only (red, blue, green, yellow, brown, pink, black and grey), no gradients, no hatching and no texture, a thick outline of one even width that wobbles and does not quite close, a spray-paint blob for the cheeks and jagged stair-step edges. Build the face from a few simple shapes. It should look a bit like the subject and a bit wrong: the proportions slightly off, the eyes uneven and the smile a crooked line, yet the hair color, outfit colors and main features are still recognizable. Silly, childlike and low-resolution, never polished or detailed. For two people, draw both in the same clumsy way; for a pet, the same animal with the same markings. Do not add any person or pet that is not in the photo. No program windows, no toolbars, no text and no logos."
+        },
+        {
+          "value": "underwater_portrait",
+          "label": "Underwater Portrait",
+          "prompt": "a close underwater portrait of the subject just after diving into a clear blue pool. Calm and weightless: hair and clothes floating slowly, a thin stream of tiny bubbles rising, shafts of sunlight rippling across the face and shoulders in bright caustic patterns, the glowing surface above. Eyes open or gently closed with a peaceful expression, natural skin texture, cool aqua tones, shallow depth of field and a crisp, realistic photographic finish. Keep the face and hairstyle exactly as in the photo and dress the subject in everyday clothes. For a pet, show the same animal swimming happily in clear water, relaxed and playful, never in distress. Do not add any person or pet that is not in the photo. No text and no logos."
         }
       ]
     },
@@ -281,7 +331,7 @@
     },
     {
       "title": "Pick a look and a size",
-      "description": "Choose from 25 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback), [Claymation World](/create/photo-trend-maker/claymation) or the [Christmas Card Portrait](/create/photo-trend-maker/christmas-card)."
+      "description": "Choose from 35 looks, such as [80s Flashback](/create/photo-trend-maker/80s-flashback), [Claymation World](/create/photo-trend-maker/claymation) or the [Christmas Card Portrait](/create/photo-trend-maker/christmas-card)."
     },
     {
       "title": "Download the JPG",

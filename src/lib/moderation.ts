@@ -17,26 +17,36 @@ import { getClient, siftConfigured } from "./waffo";
  * generators) is sent to Prompt Sift before the request goes to the backend. Only `allow` lets it through:
  *
  * - `block`   nothing is generated, no credit is used, the visitor is asked to change the wording;
- * - `review`  Waffo wants a closer look (usually settled within the hour); treated like a block for this request;
+ * - `review`  Waffo could not clear it; treated like a block for this request (and, since 2026-11-23, counted like a
+ *   block towards the 24 hour pause of an account, because it stops the request just the same);
  * - `service_degraded`, a timeout, a 4xx/5xx or a rate limit: the check could not decide. Waffo's rule is that
  *   nothing is generated without a verdict, so after two retries the request is refused with "try again in a
  *   minute". Set PROMPT_SIFT_FAIL_OPEN=true to let such requests through instead (not recommended).
  *
  * Without WAFFO_MERCHANT_ID and WAFFO_PRIVATE_KEY the check is skipped; the image models' own safety systems still
- * apply. Prompt Sift is the only check PiCraft runs itself. Only the verdict is reported to the backend
- * (moderation_events), never the text. Prompt Sift itself keeps no copy of the text. The check allows 100 requests a
- * minute for the whole merchant, so each session and each address gets a smaller share.
+ * apply. Prompt Sift is the only check PiCraft runs itself. A verdict that stopped (or could not decide on) a request is
+ * reported to the backend (moderation_events) together with the text of that request, so that a refusal can be checked
+ * later for a mistake; the privacy policy says so. The text of an allowed request is not reported (it is kept with its
+ * image task). Prompt Sift itself keeps no copy of the text. The check allows 100 requests a minute for the whole
+ * merchant, so each session and each address gets a smaller share.
  */
 
 export const BLOCKED_MESSAGE =
   "This request doesn't meet our Acceptable Use Policy, so nothing was generated and no credit was used. Please change your text and try again.";
 const REVIEW_MESSAGE =
-  "This request needs a closer look before it can be made, so nothing was generated and no credit was used. Please reword it or try again later.";
+  "Our safety check couldn't clear this request, so nothing was generated and no credit was used. Please reword it and try again.";
 const UNAVAILABLE_MESSAGE =
   "Our safety check isn't available right now, so nothing was generated and no credit was used. Please try again in a minute.";
 const RATE_MESSAGE = "Too many requests. Please wait a moment and try again.";
 
-export type ScreenResult = { ok: true } | { ok: false; code: 422 | 429 | 503; message: string };
+/**
+ * `data` is what the browser receives next to the message: `reason` says which kind of refusal it was (the same words
+ * as in lib/refusal.ts), and `request_id` is Prompt Sift's id of the verdict, so a visitor who thinks it was a mistake
+ * can quote it.
+ */
+export type ScreenResult =
+  | { ok: true }
+  | { ok: false; code: 422 | 429 | 503; message: string; data: { reason: string; request_id?: string } };
 
 /** The text a visitor typed into a maker: only text and textarea fields count, a menu choice is not free text. */
 export function collectSceneText(scene: Scene | undefined, fields: Record<string, string> | undefined): string {
@@ -74,18 +84,27 @@ async function scanOnce(text: string) {
   ]);
 }
 
-/** Tells the backend what Prompt Sift decided, after the response has gone out. Verdict and ids only. */
+/** The most of a refused request that is stored; the generators' own limit is 4000 characters. */
+const MAX_STORED_TEXT = 4000;
+
+/** Tells the backend what Prompt Sift decided, after the response has gone out: verdict, ids and the refused text. */
 function report(
   token: string | undefined,
   verdict: "block" | "review" | "error",
-  details: { categories?: string[]; requestId?: string; scene?: string },
+  details: { categories?: string[]; requestId?: string; scene?: string; text?: string },
 ) {
   try {
     after(async () => {
       await callBackend("/v1/internal/moderation/events", {
         method: "POST",
         token,
-        body: { verdict, categories: details.categories ?? [], request_id: details.requestId, scene: details.scene },
+        body: {
+          verdict,
+          categories: details.categories ?? [],
+          request_id: details.requestId,
+          scene: details.scene,
+          prompt: details.text?.slice(0, MAX_STORED_TEXT),
+        },
       });
     });
   } catch {
@@ -112,14 +131,16 @@ export async function screenPrompt(
   if (seen && Date.now() - seen < ALLOW_TTL_MS) return { ok: true };
 
   if (rateLimited(`sift:session:${session}`, 12, 60_000) || rateLimited(`sift:ip:${ctx.ip}`, 40, 60_000)) {
-    return { ok: false, code: 429, message: RATE_MESSAGE };
+    return { ok: false, code: 429, message: RATE_MESSAGE, data: { reason: "rate_limited" } };
   }
 
   const failOpen = process.env.PROMPT_SIFT_FAIL_OPEN === "true";
   const unavailable = (why: string, requestId?: string): ScreenResult => {
     console.error("[moderation] Prompt Sift could not decide:", why);
-    report(ctx.token, "error", { requestId, scene: ctx.scene });
-    return failOpen ? { ok: true } : { ok: false, code: 503, message: UNAVAILABLE_MESSAGE };
+    report(ctx.token, "error", { requestId, scene: ctx.scene, text });
+    return failOpen
+      ? { ok: true }
+      : { ok: false, code: 503, message: UNAVAILABLE_MESSAGE, data: { reason: "check_unavailable", request_id: requestId } };
   };
 
   try {
@@ -146,8 +167,14 @@ export async function screenPrompt(
       categories: (verdict.matchedCategories ?? []).map(String),
       requestId: verdict.requestId,
       scene: ctx.scene,
+      text,
     });
-    return { ok: false, code: 422, message: kind === "review" ? REVIEW_MESSAGE : BLOCKED_MESSAGE };
+    return {
+      ok: false,
+      code: 422,
+      message: kind === "review" ? REVIEW_MESSAGE : BLOCKED_MESSAGE,
+      data: { reason: kind, request_id: verdict.requestId },
+    };
   } catch (e) {
     const status = (e as { status?: number })?.status;
     if (status === 400 || status === 401 || status === 403) {

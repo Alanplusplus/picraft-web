@@ -1,3 +1,4 @@
+import { readGaIds } from "./analytics";
 import type { EditOp } from "./edits";
 import type { Account, ClientPackCatalog, ConfirmResult, Envelope, ImageRequest, TaskView } from "./types";
 
@@ -19,13 +20,17 @@ export const api = {
   session: (fingerprint: string) => request<{ account: Account }>("/api/session", { fingerprint }),
   upload: (imageBase64: string) => request<{ url: string }>("/api/upload", { image_base64: imageBase64 }),
   generate: (scene: string, fields: Record<string, string>, images: Record<string, string>) =>
-    request<{ task_id: string; account: Account }>("/api/generate", { scene, fields, images }),
+    request<{ task_id: string; account: Account }>("/api/generate", { scene, fields, images, ga: readGaIds() }),
   generateImage: (body: ImageRequest) =>
-    request<{ task_id: string; account: Account }>("/api/generate-image", body),
+    request<{ task_id: string; account: Account }>("/api/generate-image", { ...body, ga: readGaIds() }),
   task: (taskId: string) => request<TaskView>(`/api/task/${encodeURIComponent(taskId)}`),
   /** An edit of a finished design that costs credits (see lib/edits.ts); the answer is a new task to poll. */
   processTask: (taskId: string, op: EditOp, file?: string) =>
-    request<{ task_id: string; account: Account }>(`/api/task/${encodeURIComponent(taskId)}/process`, { op, file }),
+    request<{ task_id: string; account: Account }>(`/api/task/${encodeURIComponent(taskId)}/process`, {
+      op,
+      file,
+      ga: readGaIds(),
+    }),
   history: () => request<{ items: TaskView[] }>("/api/history"),
   packs: () => request<ClientPackCatalog>("/api/checkout"),
   checkout: (item: { pack: string } | { plan: string }, returnPath: string, ga: { clientId?: string; sessionId?: string }) =>

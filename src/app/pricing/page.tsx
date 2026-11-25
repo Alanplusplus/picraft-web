@@ -15,7 +15,7 @@ export const metadata = pageMetadata({
 /** What every credit includes. The same list for all packs and plans: they only differ in how many credits they hold and how long they last. */
 const INCLUDED = [
   "Every maker (photo trends, invitations, thumbnails, stickers, product photos and more) and both AI image generators, text to image and image to image",
-  "Nano Banana 2.1 by Google and GPT Image 2.5 by OpenAI, up to 4K with Nano Banana",
+  "Nano Banana 2.1 by Google and GPT Image 2.5 and 2.6 by OpenAI, up to 4K with Nano Banana, plus transparent PNGs and animated GIFs with GPT Image",
   "Finished files at the right size: JPG, transparent PNG and print PDF, ready to download",
   "Edit tools under every finished picture: AI edit, enlarge 2× or 4×, remove the background, and a free editor for crop, resize, adjust and convert",
   "Files kept for 90 days in My files, with a link back to every design",
@@ -27,6 +27,9 @@ const COSTS = [
   ["An image at 1K (text to image or image to image)", "1 credit"],
   ["An image at 2K", "2 credits"],
   ["An image at 4K", "3 credits"],
+  ["A transparent-background PNG (GPT Image), at the price of an image of the same resolution", "1 or 2 credits"],
+  ["An animated GIF with 6 frames (GPT Image 2.6)", "2 credits"],
+  ["An animated GIF with 9 or 12 frames (GPT Image 2.6)", "3 credits"],
   ["Enlarge a picture 2× with AI", "1 credit"],
   ["Enlarge a picture 4× with AI", "2 credits"],
   ["Remove the background of a picture", "1 credit"],
@@ -36,7 +39,7 @@ const COSTS = [
 const FAQ = [
   {
     q: "What does a credit buy?",
-    a: "One credit makes one design with any of the makers (a sticker, a thumbnail, an invitation, a product photo), or one 1K image in the text to image and image to image generators. A 2K image uses 2 credits and a 4K image 3. Enlarging a picture 2× or removing its background costs 1 credit and enlarging it 4× costs 2, while the free editor (crop, rotate, resize, adjust, convert) never costs anything. The cost is always shown on the button before you create anything.",
+    a: "One credit makes one design with any of the makers (a sticker, a thumbnail, an invitation, a product photo), or one 1K image in the text to image and image to image generators. A 2K image uses 2 credits and a 4K image 3, and an animated GIF uses 2 (6 frames) or 3 (9 or 12 frames). Enlarging a picture 2× or removing its background costs 1 credit and enlarging it 4× costs 2, while the free editor (crop, rotate, resize, adjust, convert) never costs anything. The cost is always shown on the button before you create anything.",
   },
   {
     q: "Packs or a subscription: which should I pick?",
@@ -81,10 +84,8 @@ export default function PricingPage() {
     <div className="mx-auto max-w-4xl px-4 pt-12 sm:px-6">
       <h1 className="text-3xl font-bold tracking-tight text-ink-950">Pricing</h1>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-700">
-        Everyone starts with free credits and needs no account. When they run out, buy a credit pack (a one-time
-        payment, credits that never expire) or subscribe weekly or monthly and have credits added for you (renews until you
-        cancel, credits valid for the period you paid for). Prices are in US dollars, and a generation that fails is
-        refunded automatically.
+        Everyone starts with free credits and needs no account. After that, buy a credit pack or subscribe weekly or
+        monthly. Prices are in US dollars, and a generation that fails is refunded automatically.
       </p>
 
       <div className="mt-8">

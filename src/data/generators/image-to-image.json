@@ -2,44 +2,45 @@
   "slug": "image-to-image",
   "mode": "image",
   "name": "Image to Image Generator",
-  "summary": "Add one or more reference images, say what to change, choose Nano Banana or GPT Image, and download the original file.",
-  "badge": "Up to 16 references · 2 models",
+  "summary": "Add reference images, say what to change and download the original file: PNG, transparent PNG or animated GIF.",
+  "badge": "Up to 16 references · 3 models",
   "indexable": true,
   "placeholder": "Turn this into a watercolor painting and keep the composition",
-  "help": "Say what should change. With several images, refer to them by number: the first image, the second image.",
+  "help": "Say what should change. Refer to the images by number if you add several.",
   "seo": {
-    "title": "Image to Image AI – Edit Photos with Multiple References",
-    "description": "Add reference images, say what to change and choose Nano Banana or GPT Image. Pick a shape and resolution and download the original file. Free to try.",
+    "title": "Image to Image AI – Edit Photos, Transparent PNG & GIF",
+    "description": "Add reference images, say what to change and choose Nano Banana or GPT Image 2.6. Download a PNG, a transparent PNG or an animated GIF. Free to try.",
     "h1": "Image to Image Generator",
     "intro": [
-      "Add a photo, write what should change, and the AI redraws it. Turn a snapshot into a watercolor painting, move a product onto a marble counter, change the season outside a window, or combine things from several photos: the dog from one picture on the sofa from another. You choose the model, Nano Banana or GPT Image, and you can add up to 10 reference images with Nano Banana and up to 16 with GPT Image.",
+      "Add a photo, write what should change, and the AI redraws it. Turn a snapshot into a watercolor painting, move a product onto a marble counter, change the season outside a window, or combine things from several photos: the dog from one picture on the sofa from another. You choose the model, Nano Banana or GPT Image (2.5 or 2.6), and you can add up to 10 reference images with Nano Banana and up to 16 with GPT Image. GPT Image can also cut the result out on a transparent background, and GPT Image 2.6 can turn a photo into a short animated GIF.",
       "There is no style menu and no fixed output size. Your instruction sets the look, and the shape and resolution you choose set the size. You download the original file exactly as the model made it. New visitors get free credits and need no account. To start from a description instead of a photo, use the [Text to Image Generator](/text-to-image). For a ready-made look on a photo of yourself or a pet, the [Photo Trend Maker](/create/photo-trend-maker) has 25 of them."
     ]
   },
   "steps": [
     {
       "title": "Add reference images",
-      "description": "Upload one or more JPG, PNG or WebP photos that you own or have permission to use. Sharp photos with the subject in plain view work best."
+      "description": "JPG, PNG or WebP photos that you own or have permission to use."
     },
     {
       "title": "Say what to change",
-      "description": "Write the instruction, then pick a model, a shape and a resolution. With several images, refer to them by number."
+      "description": "Write the instruction, then pick a model, a shape and a resolution."
     },
     {
       "title": "Create and download",
-      "description": "An image takes 30–90 seconds, a little longer at 4K. You download the original file and a smaller JPG copy."
+      "description": "Most images take 10–35 seconds. You get the original file and a smaller JPG copy."
     }
   ],
   "specNotes": [
     "Reference images: Nano Banana takes up to 10 and GPT Image up to 16. Each photo is resized to fit within 2048 pixels before it is sent, which is more than the models need.",
-    "Auto lets the model choose the shape. GPT Image makes every image at 1K only, so choose Nano Banana if you want 2K or 4K.",
-    "The price depends on the resolution, not on the model or how many images you add: 1K costs 1 credit, 2K costs 2 credits and 4K costs 3 credits (GPT Image makes 1K only). If an image can't be made, the credits are returned automatically.",
-    "You get the original file exactly as the model made it, plus a smaller JPG copy for sharing. Nothing is cropped or resized."
+    "Auto lets the model choose the shape. GPT Image makes Auto images at 1K only; pick a shape to get 2K with GPT Image, or 2K and 4K with Nano Banana.",
+    "The price depends on the resolution, not on the model or how many images you add: 1K costs 1 credit, 2K costs 2 credits and 4K costs 3 credits (GPT Image goes up to 2K). A transparent background costs the same as an image. An animated GIF costs 2 credits for 6 frames and 3 credits for 9 or 12 frames. If an image can't be made, the credits are returned automatically.",
+    "A GIF is made at its own size, which shrinks as you add frames: a square GIF is about 960 px with 6 frames, 930 px with 9 and 820 px with 12 (measured in November 2026). A GIF cannot be edited again here; keep the picture you started from if you want to make another version.",
+    "You get the original file exactly as the model made it, plus a smaller JPG copy for sharing. A transparent PNG keeps its transparency, and its JPG copy is on white. A GIF comes as the GIF only. Nothing is cropped or resized."
   ],
   "faq": [
     {
       "q": "Is the Image to Image Generator free?",
-      "a": "You can try it free. Every new visitor gets a few free credits that work on any PiCraft tool. A 1K image costs 1 credit, a 2K image 2 credits and a 4K image 3 credits, however many reference images you add. You do not need an account."
+      "a": "You can try it free. Every new visitor gets a few free credits that work on any PiCraft tool. A 1K image costs 1 credit, a 2K image 2 credits and a 4K image 3 credits, and an animated GIF 2 or 3 credits, however many reference images you add. You do not need an account."
     },
     {
       "q": "How many reference images can I add?",
@@ -51,11 +52,23 @@
     },
     {
       "q": "Which model should I choose, Nano Banana or GPT Image?",
-      "a": "Both edit photos and combine references, and the best way to choose is to try your own photos on each. Nano Banana offers more shapes and 4K for every shape. GPT Image takes more reference images but makes 1K images only. Create the same instruction with both and keep the one you prefer."
+      "a": "Both edit photos and combine references, and the best way to choose is to try your own photos on each. Nano Banana offers more shapes and 4K for every shape. GPT Image (2.5 and 2.6) takes more reference images, makes 14 shapes at 1K and 2K and can leave the background transparent, and GPT Image 2.6 can make animated GIFs. Create the same instruction with each and keep the one you prefer."
     },
     {
       "q": "Can I choose a style?",
       "a": "There is no style menu. You write the look into your instruction, for example \"redraw this as a flat vector illustration\" or \"make this a Japanese woodblock print\", and the model follows it."
+    },
+    {
+      "q": "Can I cut out a subject on a transparent background?",
+      "a": "Yes, with GPT Image. Add your photo, say which subject to keep, such as \"keep only the mug, remove everything else\", and under Result choose Transparent. You download a PNG with a see-through background, and a JPG copy on white. It costs the same credits as a normal image. If you only want the background removed from a finished picture, the Remove background button under a result does that."
+    },
+    {
+      "q": "Can I turn a photo into an animated GIF?",
+      "a": "Yes, with GPT Image 2.6. Add the photo, under Result choose Animated GIF, pick 6, 9 or 12 frames and a speed, and describe the motion: \"the dog tilts its head, then wags its tail\". The GIF loops. It costs 2 credits for 6 frames and 3 for 9 or 12. The frames are drawn on one sheet, so more frames means a smaller picture, and the subject can change slightly from frame to frame."
+    },
+    {
+      "q": "What is the difference between GPT Image 2.5 and 2.6?",
+      "a": "On PiCraft they offer the same options (14 shapes, 1K and 2K, a transparent background and up to 16 reference images), and GPT Image 2.6 can also make animated GIFs. Which one draws your idea better depends on the idea, so create the same description with both and keep the one you prefer."
     },
     {
       "q": "Will the result keep my subject and layout?",
@@ -67,11 +80,11 @@
     },
     {
       "q": "Which shape and resolution should I pick?",
-      "a": "Pick the shape of the place the image will go: 2:3 for Pinterest Pins, 9:16 for full-screen vertical posts, 16:9 for video thumbnails, 1:1 for squares. If you edit one photo and want to keep its framing, choose the photo's own shape, such as 4:3 or 3:2."
+      "a": "Pick the shape of the place the image will go: 2:3 for Pinterest Pins, 4:5 for portrait posts, 9:16 for full-screen vertical posts, 16:9 for video thumbnails, 1:1 for squares. If you edit one photo and want to keep its framing, choose the photo's own shape, such as 4:3 or 3:2. GPT Image goes up to 2K and Nano Banana up to 4K."
     },
     {
       "q": "What happens if the model refuses my request?",
-      "a": "Both models apply their own safety checks and can refuse some requests or return an error. When that happens, no image is made and your credits are returned automatically. Reword the instruction or try another photo."
+      "a": "Every model applies its own safety checks and can refuse some requests or return an error. When that happens, no image is made and your credits are returned automatically. Reword the instruction or try another photo."
     },
     {
       "q": "Are my uploaded photos kept?",
@@ -79,15 +92,27 @@
     },
     {
       "q": "How long does an image take?",
-      "a": "Usually 30–90 seconds. 4K images take a little longer. You can keep the tab open, and finished images are also listed under My files."
+      "a": "Most images take 10–35 seconds at 1K, with any model. In our own tests in November 2026, GPT Image 2.6 took about 20 to 40 seconds at 1K and 2K, with a transparent background and for GIFs. 4K images take a little longer. You can keep the tab open, and finished images are also listed under My files."
     },
     {
       "q": "Should I label the images as AI-generated?",
       "a": "Often, yes. Many platforms ask you to label realistic AI images, and an edited photo can mislead people if it is shown as untouched. Real estate listing services and marketplaces have their own rules on edited photos, so check them before you post."
     },
     {
+      "q": "How do I create an image from another image with AI?",
+      "a": "Upload the picture you want to start from, write what the new image should look like, and press Create. For example: \"Turn this photo into a watercolor painting and keep the composition.\" The model reads your photo and your words together and draws a new image, so the result is a fresh picture, not a filter over the old one."
+    },
+    {
+      "q": "Is image to image the same as photo to photo or picture to picture?",
+      "a": "Yes, they are different names for the same thing: you give the AI a picture and an instruction, and it makes a new picture from them. PiCraft calls it image to image. The photo you start from is called a reference image, and you can add more than one."
+    },
+    {
+      "q": "Can I combine two photos into one picture?",
+      "a": "Yes. Add both photos and say what to take from each, by number: \"Put the dog from the first image on the sofa in the second image.\" You can add up to 10 reference images with Nano Banana and up to 16 with GPT Image. Only combine photos you own or have permission to use."
+    },
+    {
       "q": "Can I start from a description instead?",
-      "a": "Yes. The [Text to Image Generator](/text-to-image) draws an image from words alone, with the same two models and the same choice of shape and resolution."
+      "a": "Yes. The [Text to Image Generator](/text-to-image) draws an image from words alone, with the same three models and the same choice of shape and resolution."
     }
   ],
   "related": [

@@ -2,48 +2,49 @@
   "slug": "text-to-image",
   "mode": "text",
   "name": "Text to Image Generator",
-  "summary": "Describe any image in your own words, choose Nano Banana or GPT Image, and download the original file.",
-  "badge": "2 models · up to 4K",
+  "summary": "Describe any image, choose a model and download the original file: PNG, transparent PNG or animated GIF.",
+  "badge": "3 models · up to 4K",
   "indexable": true,
   "placeholder": "A red fox reading a book in an armchair by a rainy window, warm lamp light, watercolor",
-  "help": "One or two sentences: the subject, the place and the look. Add the light or the mood if you care about them.",
+  "help": "The subject, the place and the look.",
   "seo": {
-    "title": "Text to Image AI – Nano Banana & GPT Image, Free to Try",
-    "description": "Describe an image and choose Nano Banana or GPT Image. Pick the shape and resolution, 1K to 4K, and download the original file. Free to try, no account.",
+    "title": "Text to Image AI – Nano Banana & GPT Image 2.6, Free",
+    "description": "Type a description, pick Nano Banana or GPT Image 2.6 and download a PNG, a transparent PNG or an animated GIF. 14 shapes, up to 4K. Free to try.",
     "h1": "Text to Image Generator",
     "intro": [
-      "Type what you want to see, choose the AI model that draws it and download the file exactly as the model made it. You can pick between Nano Banana, Google's image model, and GPT Image, OpenAI's, and run the same description on both to see which one you like better. You also choose the shape, from a square to a 21:9 panorama, and the resolution, from 1K to 4K.",
+      "Type what you want to see, choose the AI model that draws it and download the file exactly as the model made it. You can pick between Nano Banana, Google's image model, and GPT Image, OpenAI's, in versions 2.5 and 2.6, and run the same description on each to see which one you like better. You also choose the shape, from a square to a 21:9 panorama or a tall strip, and the resolution, from 1K to 4K. GPT Image can leave the background transparent, and GPT Image 2.6 can turn your description into a short animated GIF.",
       "There are no style menus and no fixed output sizes here: your own words set the look, and the shape and resolution you choose set the size. New visitors get free credits and do not need an account. If you have a photo to start from, use the [Image to Image Generator](/image-to-image), which takes up to 16 reference images. If the image has a fixed job, such as a [sticker](/create/sticker-maker) or a [YouTube thumbnail](/create/youtube-thumbnail-maker), the specific makers handle the size and format for you."
     ]
   },
   "steps": [
     {
       "title": "Choose a model",
-      "description": "Pick Nano Banana or GPT Image. Not sure? Create the same description with each one and keep the better result."
+      "description": "Nano Banana, GPT Image 2.6 or GPT Image 2.5. Try the same description on each."
     },
     {
       "title": "Describe it, pick a shape",
-      "description": "Write what you want to see in your own words, then choose the shape and the resolution. Higher resolutions cost more credits."
+      "description": "Write what you want, then choose the shape and the resolution."
     },
     {
       "title": "Create and download",
-      "description": "An image takes 30–90 seconds, a little longer at 4K. You download the original file and a smaller JPG copy."
+      "description": "Most images take 10–35 seconds. You get the original file and a smaller JPG copy."
     }
   ],
   "specNotes": [
-    "Auto lets the model choose the shape from your description. GPT Image makes every image at 1K only, so choose Nano Banana if you want 2K or 4K.",
-    "The price depends on the resolution, not on the model: 1K costs 1 credit, 2K costs 2 credits and 4K costs 3 credits (GPT Image makes 1K only). If an image can't be made, the credits are returned automatically.",
-    "PiCraft only offers the combinations a model supports, so you never pay for a resolution you do not get. The exact pixel size of your file is shown next to the download link.",
-    "You get the original file exactly as the model made it, plus a smaller JPG copy for sharing. Nothing is cropped or resized."
+    "Auto lets the model choose the shape from your description. GPT Image makes Auto images at 1K only; pick a shape to get 2K with GPT Image, or 2K and 4K with Nano Banana.",
+    "The price depends on the resolution, not on the model: 1K costs 1 credit, 2K costs 2 credits and 4K costs 3 credits (GPT Image goes up to 2K). A transparent background costs the same as an image. An animated GIF costs 2 credits for 6 frames and 3 credits for 9 or 12 frames. If an image can't be made, the credits are returned automatically.",
+    "GPT Image makes 1K images up to about 1.5K pixels on the long edge and 2K images at 2048 pixels on the long edge. A GIF is made at its own size, which shrinks as you add frames: a square GIF is about 960 px with 6 frames, 930 px with 9 and 820 px with 12 (measured in November 2026).",
+    "PiCraft only offers the combinations a model supports, so you never pay for something you do not get. The exact pixel size of your file is shown next to the download link.",
+    "You get the original file exactly as the model made it, plus a smaller JPG copy for sharing. A transparent PNG keeps its transparency, and its JPG copy is on white. A GIF comes as the GIF only. Nothing is cropped or resized."
   ],
   "faq": [
     {
       "q": "Is the Text to Image Generator free?",
-      "a": "You can try it free. Every new visitor gets a few free credits that work on any PiCraft tool. A 1K image costs 1 credit, a 2K image 2 credits and a 4K image 3 credits, and you do not need an account. When your free credits are used up you can buy a credit pack or subscribe to keep creating."
+      "a": "You can try it free. Every new visitor gets a few free credits that work on any PiCraft tool. A 1K image costs 1 credit, a 2K image 2 credits and a 4K image 3 credits, and an animated GIF 2 or 3 credits, and you do not need an account. When your free credits are used up you can buy a credit pack or subscribe to keep creating."
     },
     {
       "q": "Which model should I choose, Nano Banana or GPT Image?",
-      "a": "Both turn a description into an image, and the best way to choose is to try your own idea on each. Nano Banana offers more shapes, including very tall and very wide strips, and 4K for every shape. GPT Image offers fewer shapes and makes 1K images only. Create the same description with both and keep the one you prefer."
+      "a": "Both turn a description into an image, and the best way to choose is to try your own idea on each. Nano Banana offers more shapes, including very tall and very wide strips, and 4K for every shape. GPT Image (2.5 and 2.6) makes 14 shapes at 1K and 2K, can leave the background transparent, and GPT Image 2.6 can make animated GIFs. Create the same description with each and keep the one you prefer."
     },
     {
       "q": "Do I need to write a long prompt?",
@@ -51,19 +52,35 @@
     },
     {
       "q": "Can I choose a style?",
-      "a": "There is no style menu. You describe the look in your sentence, for example \"as an oil painting\" or \"as a photo taken at golden hour\", and the model follows it. That keeps your words in charge and works the same way on both models."
+      "a": "There is no style menu. You describe the look in your sentence, for example \"as an oil painting\" or \"as a photo taken at golden hour\", and the model follows it. That keeps your words in charge and works the same way on every model."
     },
     {
       "q": "Which shapes and resolutions can I use?",
-      "a": "Nano Banana makes 14 shapes plus Auto, from 1:8 to 8:1, at 1K, 2K and 4K. GPT Image makes 8 shapes plus Auto: 1:1, 3:4, 4:3, 2:3, 3:2, 9:16, 16:9 and 21:9, at 1K only. The form shows only what the chosen model supports."
+      "a": "Nano Banana makes 14 shapes plus Auto, from 1:8 to 8:1, at 1K, 2K and 4K. GPT Image makes 14 shapes plus Auto: 1:1, 4:5, 5:4, 3:4, 4:3, 2:3, 3:2, 9:16, 16:9, 21:9, 2:1, 1:2, 3:1 and 1:3. All of them come at 1K, which is up to about 1.5K pixels on the long edge, and at 2K, which is 2048 pixels on the long edge. Auto is available at 1K only. The form shows only what the chosen model supports."
     },
     {
       "q": "Which shape should I pick for Pinterest or video?",
       "a": "Pick the shape of the place the image will go. Use 2:3 for Pinterest Pins, 9:16 for full-screen vertical posts and phone wallpapers, 16:9 for video thumbnails and slides, 1:1 for avatars and squares, and 21:9 for banners and cinematic panoramas."
     },
     {
+      "q": "Which shape should I pick for a portrait post or a wide banner?",
+      "a": "GPT Image and Nano Banana both make 4:5 for portrait posts and 5:4 for landscape ones. For wide headers and banners GPT Image makes 2:1 and 3:1, and Nano Banana makes 4:1 and 8:1. For tall strips use 1:2 or 1:3 with GPT Image, and 1:4 or 1:8 with Nano Banana."
+    },
+    {
+      "q": "Can I make an image with a transparent background?",
+      "a": "Yes, with GPT Image. Under Result choose Transparent and describe one subject, such as a sticker, an icon or a product on its own. You download a PNG whose background is see-through, so it can sit on any page, shirt mockup or sticker sheet. It costs the same credits as a normal image, and the JPG copy that comes with it is on a white background. Nano Banana does not offer a transparent background."
+    },
+    {
+      "q": "Can I make an animated GIF with AI?",
+      "a": "Yes, with GPT Image 2.6. Under Result choose Animated GIF, pick 6, 9 or 12 frames and a speed, and describe what moves, in the order it happens: \"a fox waves, then blinks\". The GIF loops forever. It costs 2 credits for 6 frames and 3 credits for 9 or 12 frames. All the frames are drawn on one sheet, so more frames means a smaller picture: about 960 px square for 6 frames, 930 for 9 and 820 for 12. It is a short animation of your idea, not a video, and the subject can change slightly from frame to frame."
+    },
+    {
+      "q": "What is the difference between GPT Image 2.5 and 2.6?",
+      "a": "On PiCraft they offer the same options (14 shapes, 1K and 2K, a transparent background and up to 16 reference images), and GPT Image 2.6 can also make animated GIFs. Which one draws your idea better depends on the idea, so create the same description with both and keep the one you prefer."
+    },
+    {
       "q": "Will text in the image be spelled correctly?",
-      "a": "Not always. Both models can draw text, but they can still misspell words. Put the exact words in quotes, keep them short and read the result letter by letter before you post or print it. If a letter is wrong, create the image again."
+      "a": "Not always. All the models can draw text, but they can still misspell words. Put the exact words in quotes, keep them short and read the result letter by letter before you post or print it. If a letter is wrong, create the image again."
     },
     {
       "q": "Can I use the images commercially?",
@@ -71,11 +88,11 @@
     },
     {
       "q": "What happens if the model refuses my description?",
-      "a": "Both models apply their own safety checks and can refuse some requests or return an error. When that happens, no image is made and your credits are returned automatically. Reword the description and try again."
+      "a": "Every model applies its own safety checks and can refuse some requests or return an error. When that happens, no image is made and your credits are returned automatically. Reword the description and try again."
     },
     {
       "q": "How long does an image take?",
-      "a": "Usually 30–90 seconds. 4K images take a little longer. You can keep the tab open, and finished images are also listed under My files."
+      "a": "Most images take 10–35 seconds at 1K, with any model. In our own tests in November 2026, GPT Image 2.6 took about 20 to 40 seconds at 1K and 2K, with a transparent background and for GIFs. 4K images take a little longer. You can keep the tab open, and finished images are also listed under My files."
     },
     {
       "q": "How long are my images kept?",

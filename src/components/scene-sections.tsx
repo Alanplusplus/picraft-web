@@ -128,8 +128,7 @@ export function SceneGuide({ name, content }: { name: string; content: SceneCont
         <section className="mt-16 max-w-3xl">
           <h2 className={H2}>Official guidelines</h2>
           <p className="mt-4 text-sm leading-relaxed text-ink-700">
-            The sizes and rules above follow these official pages. Platforms change their requirements, so check the
-            source before you submit your file.
+            Platforms change their rules, so check the source before you submit.
           </p>
           <ul className="mt-4 space-y-2 text-sm">
             {content.sources.map((source) => (

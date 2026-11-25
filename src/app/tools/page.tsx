@@ -47,20 +47,14 @@ export default function ToolsPage() {
       />
       <Breadcrumb crumbs={CRUMBS} />
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">Free tools for design files</h1>
-      <div className="mt-4 max-w-3xl space-y-3 text-base leading-relaxed text-ink-700">
-        <p>
-          A file that looks fine on screen can still be rejected: a thumbnail over the size limit, a product photo that
-          is not white enough, a print file at too low a resolution. These tools check the part that has numbers in it.
-          They run in your browser, they do not ask you to sign in, and the files you check are never uploaded.
-        </p>
-        <p>
-          Every number comes from the{" "}
-          <Link href="/sizes" className="font-medium text-brand-700 underline underline-offset-2">
-            PiCraft size guides
-          </Link>
-          , which link the official page each figure was checked against.
-        </p>
-      </div>
+      <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-700">
+        A file that looks fine on screen can still be rejected for its size or format. These tools check the numbers in
+        your browser, with no sign-in, and your files are never uploaded. Every figure comes from the{" "}
+        <Link href="/sizes" className="font-medium text-brand-700 underline underline-offset-2">
+          PiCraft size guides
+        </Link>
+        , which link the official page it was checked against.
+      </p>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (
@@ -79,7 +73,6 @@ export default function ToolsPage() {
       {guides.length > 0 && (
         <section className="mt-16">
           <h2 className="text-xl font-bold text-ink-950">Size guides behind the checker</h2>
-          <p className="mt-1 text-sm text-ink-500">Read these when you want the reasons behind a number.</p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {guides.map((guide) => (
               <GuideCard key={guide.slug} guide={guide} />

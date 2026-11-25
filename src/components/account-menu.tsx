@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 import { usePacks } from "@/lib/checkout";
-import { FILE_RETENTION_DAYS } from "@/lib/site";
 
 import { Dropdown } from "./dropdown";
 import { useSession } from "./session-provider";
@@ -38,7 +37,7 @@ export function AccountMenu() {
   return (
     <Dropdown
       align="right"
-      width="w-72"
+      width="w-56"
       button={
         <>
           <SparkIcon />
@@ -58,21 +57,11 @@ export function AccountMenu() {
             <span className="block text-sm font-semibold text-ink-950">
               {account.subscription ? "Your plan and credits" : enabled ? "Buy credits" : "Pricing and credits"}
             </span>
-            <span className="mt-0.5 block text-xs leading-snug text-ink-500">
-              {account.subscription
-                ? "Manage your subscription, or get more credits"
-                : enabled
-                  ? "Credit packs, or a weekly or monthly plan"
-                  : "What a credit buys, and the prices"}
-            </span>
           </Link>
         </li>
         <li>
           <Link href="/history" className={ITEM}>
             <span className="block text-sm font-semibold text-ink-950">My files</span>
-            <span className="mt-0.5 block text-xs leading-snug text-ink-500">
-              Your designs from the last {FILE_RETENTION_DAYS} days
-            </span>
           </Link>
         </li>
       </ul>

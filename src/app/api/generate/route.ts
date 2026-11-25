@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { getSessionToken, proxy } from "@/lib/backend";
+import { sanitizeGaIds } from "@/lib/ga-ids";
 import { collectSceneText, screenPrompt } from "@/lib/moderation";
 import { clientIp } from "@/lib/route-helpers";
 import { getScene } from "@/lib/scenes";
@@ -10,6 +11,7 @@ export async function POST(request: Request) {
     scene?: string;
     fields?: Record<string, string>;
     images?: Record<string, string>;
+    ga?: unknown;
   } | null;
   if (!body?.scene) return NextResponse.json({ code: 400, message: "Missing scene.", data: null });
 
@@ -21,10 +23,10 @@ export async function POST(request: Request) {
       ip: clientIp(request),
       scene: body.scene,
     });
-    if (!screened.ok) return NextResponse.json({ code: screened.code, message: screened.message, data: null });
+    if (!screened.ok) return NextResponse.json({ code: screened.code, message: screened.message, data: screened.data });
   }
   return proxy("/v1/generations", {
     method: "POST",
-    body: { scene: body.scene, fields: body.fields ?? {}, images: body.images ?? {} },
+    body: { scene: body.scene, fields: body.fields ?? {}, images: body.images ?? {}, ga: sanitizeGaIds(body.ga) },
   });
 }

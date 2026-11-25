@@ -67,16 +67,20 @@ const SLUGS: Generator["slug"][] = ["text-to-image", "image-to-image"];
 let modelsCache: ModelsFile | null = null;
 let cache: Generator[] | null = null;
 
+/** Production reads each file once. In development they are read again on every call, so editing a JSON file (a new
+ * model, a new FAQ) shows up without restarting `next dev`. */
+const CACHE_FILES = process.env.NODE_ENV === "production";
+
 export function getModels(): ModelsFile {
-  if (!modelsCache) modelsCache = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "models.json"), "utf8")) as ModelsFile;
+  if (CACHE_FILES && modelsCache) return modelsCache;
+  modelsCache = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "models.json"), "utf8")) as ModelsFile;
   return modelsCache;
 }
 
 /** Text to image first, then image to image. */
 export function getGenerators(): Generator[] {
-  if (!cache) {
-    cache = SLUGS.map((slug) => JSON.parse(fs.readFileSync(path.join(DATA_DIR, `${slug}.json`), "utf8")) as Generator);
-  }
+  if (CACHE_FILES && cache) return cache;
+  cache = SLUGS.map((slug) => JSON.parse(fs.readFileSync(path.join(DATA_DIR, `${slug}.json`), "utf8")) as Generator);
   return cache;
 }
 
@@ -118,7 +122,7 @@ function collectText(value: unknown, out: string[] = []): string[] {
 export function generatorWordCount(generator: Generator, content: SceneContent | undefined): number {
   const models = getModels().models.map((model) => [modelName(model), model.maker, model.blurb]);
   const text = stripInline(
-    collectText([generator.seo.intro, generator.steps, generator.specNotes, generator.faq, models, content]).join(" "),
+    collectText([generator.steps, generator.specNotes, generator.faq, models, content]).join(" "),
   );
   return text.split(/\s+/).filter(Boolean).length;
 }

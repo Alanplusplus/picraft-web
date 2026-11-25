@@ -23,7 +23,8 @@ export function MakerLayout({
   /** The workbench: the form and the result area. */
   form: ReactNode;
   steps?: { title: string; description: string }[];
-  intro: string[];
+  /** Longer text next to the steps. Style pages use it; the makers and generators say it further down the page. */
+  intro?: string[];
   /** A line under the intro, for pages that need to say where they sit in a family of pages. */
   note?: ReactNode;
 }) {
@@ -62,14 +63,16 @@ export function MakerLayout({
             </ol>
           </section>
         )}
-        <div className="space-y-3 text-sm leading-relaxed text-ink-700 lg:order-1">
-          {intro.map((paragraph) => (
-            <p key={paragraph}>
-              <RichText text={paragraph} />
-            </p>
-          ))}
-          {note && <p className="text-ink-500">{note}</p>}
-        </div>
+        {((intro && intro.length > 0) || note) && (
+          <div className="space-y-3 text-sm leading-relaxed text-ink-700 lg:order-1">
+            {intro?.map((paragraph) => (
+              <p key={paragraph}>
+                <RichText text={paragraph} />
+              </p>
+            ))}
+            {note && <p className="text-ink-500">{note}</p>}
+          </div>
+        )}
       </div>
     </div>
   );

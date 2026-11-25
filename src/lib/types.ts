@@ -51,6 +51,10 @@ export interface ImageModel {
   maxImages: number;
   /** Credits one image costs, by resolution. */
   credits: Record<string, number>;
+  /** The model can make a PNG with a see-through background. */
+  transparent?: boolean;
+  /** The model makes animated GIFs: the credits by number of frames, and the speeds as milliseconds per frame. */
+  animation?: { credits: Record<string, number>; speeds: Record<string, number> };
   /** The shapes the model makes and the resolutions each is available in. */
   aspectRatios: { value: string; resolutions: string[] }[];
 }
@@ -75,6 +79,10 @@ export interface ImageRequest {
   aspect_ratio: string;
   resolution: string;
   images: string[];
+  /** A PNG with a see-through background (models with `transparent`). */
+  transparent?: boolean;
+  /** An animated GIF (models with `animation`); `speed` is one of the model's speeds. */
+  animation?: { frames: number; speed: string };
 }
 
 /** A customer's subscription, as far as the site shows it. `period_end` is a Unix time. */
@@ -98,7 +106,7 @@ export interface TaskFile {
   id: string;
   label: string;
   url: string;
-  format: "jpg" | "png" | "webp" | "pdf";
+  format: "jpg" | "png" | "webp" | "gif" | "pdf";
   width: number;
   height: number;
   bytes: number;

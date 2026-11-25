@@ -58,19 +58,14 @@ export default function GalleryPage() {
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">Design gallery</h1>
       <div className="mt-4 max-w-3xl space-y-3 text-base leading-relaxed text-ink-700">
         <p>
-          These are real designs made with PiCraft makers. Every one was created from a short form: names and dates for
-          an invitation, a headline for a thumbnail, a single idea for a sticker, one photo for a photo trend. Pick a look
-          you like, open its maker and make your own with your details.
+          Real designs made with PiCraft makers, each from a short form. Names, venues and brands are made up, and the
+          people and pets in the photo trend examples are AI-generated. Proofread your own text before you print or
+          publish.
         </p>
         <p>
-          Names, venues and brands in the examples are made up, and the people and pets in the photo trend examples
-          are AI-generated, not real. Use the examples for ideas and always proofread your own text before you print
-          or publish.
-        </p>
-        <p>
-          Looking for open-ended images? The <Link href="/text-to-image" className="font-medium text-brand-700 hover:underline">text to image</Link> and{" "}
-          <Link href="/image-to-image" className="font-medium text-brand-700 hover:underline">image to image</Link> pages
-          show their examples next to the exact words that made them.
+          For open-ended images, see the <Link href="/text-to-image" className="font-medium text-brand-700 hover:underline">text to image</Link> and{" "}
+          <Link href="/image-to-image" className="font-medium text-brand-700 hover:underline">image to image</Link> examples,
+          shown with the exact words that made them.
         </p>
       </div>
 
@@ -89,7 +84,6 @@ export default function GalleryPage() {
                   <h2 id={`g-${scene.slug}`} className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">
                     {scene.name}
                   </h2>
-                  <p className="mt-1 max-w-2xl text-sm text-ink-500">{scene.summary}</p>
                 </div>
                 <Link href={`/create/${scene.slug}`} className="text-sm font-medium text-brand-700 hover:underline">
                   Open the {scene.name} →

@@ -72,7 +72,7 @@ const SECTIONS: ProseSection[] = [
       "Your text. Before a request starts, the text you typed is checked by Waffo Prompt Sift, an automated content-safety service. If a request is blocked or held for review, nothing is generated and no credit is used.",
       `The models. The image models we use, ${MODEL_DISCLOSURE}, apply their own safety systems to the text and the photos they receive and to the images they make, and decline harmful requests. When a model declines, nothing is shown and your credits are returned.`,
       "Repeat attempts. When requests from one account are blocked several times in a day, we pause generating for that account for 24 hours, and we may review it.",
-      `Records. We keep a log of requests that Prompt Sift blocked or held for review (the time, the account reference, the category and the check's request ID, but not your text) for ${SAFETY_LOG_RETENTION_DAYS} days, so we can spot abuse and show how we apply this policy.`,
+      `Records. We keep a log of requests that Prompt Sift blocked or held for review (the time, the account reference, the category, the check's request ID and the text of the request) for ${SAFETY_LOG_RETENTION_DAYS} days, so we can spot abuse, check whether a refusal was a mistake and show how we apply this policy.`,
     ],
   },
   {

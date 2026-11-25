@@ -1,11 +1,11 @@
 {
   "title": "Best Source Photos for AI Photo Trends: What Each Look Needs",
   "h1": "The Best Photo to Upload for AI Photo Trends, Look by Look",
-  "description": "Which photo to upload for an AI photo trend: sharp, evenly lit, face or pet large. See what 13 looks need, how to handle pets and couples, and what to skip.",
+  "description": "Which photo to upload for an AI photo trend: sharp, evenly lit, face or pet large. See what 23 looks need, how to handle pets and couples, and what to skip.",
   "summary": "Use one sharp photo in even light, with the face or the pet filling a good part of the frame and nothing covering it. After that, match the photo to the look: a casual snapshot for film looks, a close portrait for clay and toy looks, a waist-up photo for the figure box and the pop-out, and a pet with a clear coat color for felt, paper and sticker looks.",
   "topic": "Photo trends",
   "published": "2026-11-12",
-  "updated": "2026-11-12",
+  "updated": "2026-11-25",
   "scene": "photo-trend-maker",
   "relatedGuides": [
     "blog:ai-photo-trends-right-now",
@@ -32,7 +32,7 @@
         "The advice below is the same advice printed on each look page, collected in one place. Open a look page to see its examples and its prompt."
       ],
       "table": {
-        "caption": "Best source photo for 13 PiCraft looks",
+        "caption": "Best source photo for 23 PiCraft looks",
         "columns": [
           "Look",
           "Best photo to upload",
@@ -103,6 +103,56 @@
             "[Night Out Flash](/create/photo-trend-maker/night-flash)",
             "A clear face, large in the frame",
             "A photo whose setting you want to keep, since the background goes dark and moody"
+          ],
+          [
+            "[Chibi Character](/create/photo-trend-maker/chibi-character)",
+            "A photo that shows the hairstyle, glasses and outfit, of one person, a couple or a pet looking at the camera",
+            "A group of three or more, because each face shrinks and the likenesses drift"
+          ],
+          [
+            "[Color-Pop Sweater Portrait](/create/photo-trend-maker/color-pop-sweater)",
+            "A sharp chest-up photo facing the camera, with open eyes and the shoulders in frame",
+            "Sunglasses or a hand across the face, because the eyes are the whole likeness once the sleeves cover the mouth"
+          ],
+          [
+            "[Snow Triptych](/create/photo-trend-maker/snow-triptych)",
+            "A bright photo with the face large and the eyes open, of one person or one pet",
+            "A small face in a wide scene, because the top frame is an extreme close-up of the eyes"
+          ],
+          [
+            "[Neon City Game Poster](/create/photo-trend-maker/neon-city-game-poster)",
+            "A sharp chest-up or full-length photo in daylight with the face clear, of one person, a couple or a pet",
+            "A tiny face in a wide scene, because the painting simplifies small details"
+          ],
+          [
+            "[Wanderlust Postcard Collage](/create/photo-trend-maker/wanderlust-postcard)",
+            "A selfie or half-length photo with a large, smiling face, since it sits inside a small print",
+            "A distant full-body shot, where the face becomes too small to keep"
+          ],
+          [
+            "[Caricature Portrait](/create/photo-trend-maker/caricature-portrait)",
+            "A photo with a strong expression and a clear hairstyle, of one person or a couple",
+            "A blank, neutral expression, which gives the AI little to exaggerate"
+          ],
+          [
+            "[Tarot Card Portrait](/create/photo-trend-maker/tarot-card-portrait)",
+            "A sharp, front-facing photo from the chest up, or a pet looking at the camera",
+            "Sunglasses or a hat that hides the eyes, because the ink style simplifies the face"
+          ],
+          [
+            "[Cinematic Film Stills](/create/photo-trend-maker/cinematic-film-stills)",
+            "A photo of one person or pet with a recognizable setting behind, such as a park or a kitchen",
+            "A plain wall or a very tight crop, which leaves nothing for the wide shot"
+          ],
+          [
+            "[Mouse-Drawn Scribble](/create/photo-trend-maker/mouse-drawn-scribble)",
+            "A photo with clear hair color, glasses or a bright jacket, since the colors carry the joke",
+            "A busy background or a large group, because the doodle drops the background"
+          ],
+          [
+            "[Underwater Portrait](/create/photo-trend-maker/underwater-portrait)",
+            "A sharp, front-facing photo from the chest up in even light, or a dog looking at the camera",
+            "Sunglasses, a hat or a turned-away face, because the water ripples already hide detail"
           ]
         ]
       }

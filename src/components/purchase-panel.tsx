@@ -38,7 +38,6 @@ function planName(id: string): string {
 
 function OfferCard({
   offer,
-  compact,
   busy,
   disabled,
   closed,
@@ -46,7 +45,6 @@ function OfferCard({
   onBuy,
 }: {
   offer: Offer;
-  compact: boolean;
   busy: boolean;
   disabled: boolean;
   /** Buying is not open yet: the offer is still shown with its price, and its button says so. */
@@ -80,7 +78,6 @@ function OfferCard({
           ? `Renews every ${offer.interval} until cancelled · credits expire after ${offer.interval === "week" ? "7 days" : "a month"}`
           : "One-time payment · credits never expire"}
       </p>
-      {!compact && <p className="mt-2 flex-1 text-xs text-ink-700">{offer.blurb}</p>}
       <button
         type="button"
         onClick={onBuy}
@@ -263,7 +260,6 @@ export function PurchasePanel({ returnPath, source, compact = false }: { returnP
         <OfferCard
           key={offer.id}
           offer={offer}
-          compact={compact}
           busy={buying === offer.id}
           disabled={!open || buying !== null || (isPlan(offer) && running !== null)}
           closed={closed}

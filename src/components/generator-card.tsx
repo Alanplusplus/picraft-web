@@ -35,7 +35,6 @@ export function GeneratorCard({ generator, wide = false }: { generator: Generato
         <h3 className={`mt-2 font-semibold text-ink-950 group-hover:text-brand-700 ${wide ? "sm:text-lg" : ""}`}>
           {generator.name}
         </h3>
-        <p className="mt-1 text-sm leading-relaxed text-ink-500">{generator.summary}</p>
         {wide && (
           <span aria-hidden className="mt-4 hidden text-sm font-semibold text-brand-700 sm:block">
             Open it →

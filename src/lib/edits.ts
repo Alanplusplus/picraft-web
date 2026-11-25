@@ -27,9 +27,12 @@ export const EDITS: Record<EditOp, EditInfo> = {
 const MIN_ENLARGE_SIDE = 256;
 const MAX_ENLARGED_PIXELS = 36_000_000;
 
-/** The picture an edit works on: the first file that is an image (never a PDF). */
+/** The formats an edit can start from. A PDF is not a picture and an animated GIF cannot be edited as one. */
+const EDITABLE_FORMATS = ["png", "jpg", "webp"];
+
+/** The picture an edit works on: the first file that is a still image (never a PDF or a GIF). */
 export function primaryImage(task: TaskView): TaskFile | null {
-  return task.files.find((file) => file.format !== "pdf") ?? null;
+  return task.files.find((file) => EDITABLE_FORMATS.includes(file.format)) ?? null;
 }
 
 /** Why an edit cannot be done on this picture, or null when it can. */

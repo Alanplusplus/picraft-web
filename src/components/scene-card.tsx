@@ -29,7 +29,6 @@ export function SceneCard({ scene }: { scene: Scene }) {
           {scene.badge}
         </span>
         <h3 className="mt-2 font-semibold text-ink-950 group-hover:text-brand-700">{scene.name}</h3>
-        <p className="mt-1 text-sm leading-relaxed text-ink-500">{scene.summary}</p>
       </div>
     </TrackedLink>
   );

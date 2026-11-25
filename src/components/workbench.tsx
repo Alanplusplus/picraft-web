@@ -96,7 +96,6 @@ export function StageEmpty({ ratio, downloads }: { ratio: string; downloads: str
       >
         <ImageIcon />
         <p className="mt-3 text-sm font-medium text-ink-700">Your design will appear here</p>
-        <p className="mt-0.5 text-xs text-ink-500">Fill in the form and press Create.</p>
       </div>
       {downloads.length > 0 && (
         <div className="mx-auto mt-4 max-w-md">

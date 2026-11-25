@@ -3,7 +3,7 @@
   "field": "style",
   "noun": "style",
   "collection": "Photo trend looks",
-  "updated": "2026-11-12",
+  "updated": "2026-11-25",
   "styles": [
     {
       "value": "80s_flashback",
@@ -179,7 +179,7 @@
         },
         {
           "q": "Can I get the 70s slide look in ChatGPT or Gemini?",
-          "a": "Yes. Upload your photo to any chat image tool and paste the prompt above. Spell out the red-yellow color cast, the lifted blacks and the vignette, and say \"no date stamp\", because a plain \"70s style\" can drift toward the 80s snapshot. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
+          "a": "Yes. Upload your photo to any chat image tool and paste the prompt above. Spell out the red-yellow color cast, the lifted blacks and the vignette, and say \"no date stamp\", because a plain \"70s style\" can drift toward the 80s snapshot. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size. For a calm blue pool portrait instead of a faded slide, try the [underwater portrait](/create/photo-trend-maker/underwater-portrait)."
         }
       ]
     },
@@ -268,7 +268,7 @@
         },
         {
           "q": "Is this Y2K digicam filter free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A casual, slightly off-center selfie gives the look the most to work with."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. A casual, slightly off-center selfie gives the look the most to work with."
         },
         {
           "q": "Can I do the Y2K digicam trend in ChatGPT or Gemini?",
@@ -365,7 +365,7 @@
         },
         {
           "q": "Can I get the night flash look in ChatGPT or Gemini?",
-          "a": "Yes. Upload your photo and paste the prompt above. The flash, the deep shadows and the city-night setting are three separate instructions, so write all three rather than just \"night photo\". PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
+          "a": "Yes. Upload your photo and paste the prompt above. The flash, the deep shadows and the city-night setting are three separate instructions, so write all three rather than just \"night photo\". PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size. To see which other looks are going around, read [AI photo trends right now](/blog/ai-photo-trends-right-now). For a painted night picture with a neon sunset instead of a flash photo, try the [neon city game poster](/create/photo-trend-maker/neon-city-game-poster)."
         }
       ]
     },
@@ -430,7 +430,7 @@
       "faq": [
         {
           "q": "Is the image always black and white?",
-          "a": "Yes. The look asks for black-and-white photos with high contrast, heavy grain and a harsh flash, like a classic booth print. If you want color with a vintage feel, try the [80s flashback](/create/photo-trend-maker/80s-flashback)."
+          "a": "Yes. The look asks for black-and-white photos with high contrast, heavy grain and a harsh flash, like a classic booth print. If you want color with a vintage feel, try the [80s flashback](/create/photo-trend-maker/80s-flashback). For a black-and-white portrait with a single color in it, try the [color-pop sweater portrait](/create/photo-trend-maker/color-pop-sweater)."
         },
         {
           "q": "Will every frame show the same person?",
@@ -539,7 +539,7 @@
         },
         {
           "q": "Can I turn a photo into claymation for free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. Every run builds a different set from the same photo, so a second credit is the quickest way to find a version you like."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Every run builds a different set from the same photo, so a second credit is the quickest way to find a version you like."
         },
         {
           "q": "Can I make the claymation photo trend in ChatGPT or Gemini?",
@@ -713,7 +713,7 @@
         },
         {
           "q": "Can I make one of a couple?",
-          "a": "The look is written around one person, so a single portrait gives the most reliable result. For two people, try the [photo booth strip](/create/photo-trend-maker/photo-booth) instead."
+          "a": "The look is written around one person, so a single portrait gives the most reliable result. For two people, try the [photo booth strip](/create/photo-trend-maker/photo-booth) or the [chibi character](/create/photo-trend-maker/chibi-character), which draws both people side by side."
         },
         {
           "q": "Is the AI bobblehead generator free?",
@@ -802,11 +802,11 @@
         },
         {
           "q": "Does it work with a pet?",
-          "a": "The look is written for people, so pet photos are less predictable. For pets, the [claymation](/create/photo-trend-maker/claymation) and [felt miniature](/create/photo-trend-maker/felt-miniature) looks are a safer choice."
+          "a": "The look is written for people, so pet photos are less predictable. For pets, the [claymation](/create/photo-trend-maker/claymation) and [felt miniature](/create/photo-trend-maker/felt-miniature) looks are a safer choice. For a flat cartoon of a pet, or of two people side by side, the [chibi character](/create/photo-trend-maker/chibi-character) is written for it."
         },
         {
           "q": "Can I make a 3D toy avatar for free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A close selfie with the face large in the frame works best for the single glossy head."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. A close selfie with the face large in the frame works best for the single glossy head."
         },
         {
           "q": "Can I get the 3D toy avatar look in ChatGPT or Gemini?",
@@ -1073,7 +1073,7 @@
         },
         {
           "q": "Is the newspaper front page generator free to use?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. The headlines are generated, so plan on a second run if a letter comes out wrong."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. The headlines are generated, so plan on a second run if a letter comes out wrong."
         },
         {
           "q": "Can I make a fantasy newspaper front page in ChatGPT or Gemini?",
@@ -1166,7 +1166,7 @@
         },
         {
           "q": "Can I make the marble statue look in ChatGPT or Gemini?",
-          "a": "Yes. Upload a portrait and paste the prompt above. Name white Carrara marble, flowing drapery, a heroic pose and a museum hall with warm gallery light, and ask it to keep your face structure. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
+          "a": "Yes. Upload a portrait and paste the prompt above. Name white Carrara marble, flowing drapery, a heroic pose and a museum hall with warm gallery light, and ask it to keep your face structure. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size. For another symbolic portrait, try the [tarot card portrait](/create/photo-trend-maker/tarot-card-portrait)."
         }
       ]
     },
@@ -1336,7 +1336,7 @@
         },
         {
           "q": "Is the Thanksgiving portrait maker free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. At 3:4 or square it makes a picture for a family group chat or a card."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. At 3:4 or square it makes a picture for a family group chat or a card."
         },
         {
           "q": "Can I make a Thanksgiving portrait in ChatGPT or Gemini?",
@@ -1405,7 +1405,7 @@
       "faq": [
         {
           "q": "Can I use it as a Christmas card?",
-          "a": "Yes. Download the JPG and use it in a message, a digital card or a small print. The look asks for no text, so you add your own greeting in another app. For print, remember that a 2:3 file is 1000×1500 px."
+          "a": "Yes. Download the JPG and use it in a message, a digital card or a small print. The look asks for no text, so you add your own greeting in another app. For print, remember that a 2:3 file is 1000×1500 px. For a simpler card picture, the [color-pop sweater portrait](/create/photo-trend-maker/color-pop-sweater) puts one red or green sweater into a black-and-white portrait."
         },
         {
           "q": "Will it add my pet?",
@@ -1579,7 +1579,7 @@
         },
         {
           "q": "Can I make a snow globe of my pet?",
-          "a": "Yes, and pets are one of the best uses. A pet gets a little scarf and sits in the snowy village. The look is told not to add a person or an animal that is not in your photo."
+          "a": "Yes, and pets are one of the best uses. A pet gets a little scarf and sits in the snowy village. The look is told not to add a person or an animal that is not in your photo. For a winter picture in three frames, try the [snow triptych](/create/photo-trend-maker/snow-triptych)."
         },
         {
           "q": "Does the picture contain any text?",
@@ -1591,7 +1591,7 @@
         },
         {
           "q": "Can I make a snow globe photo for free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A close, clear photo of a person or a pet keeps the likeness once it is shrunk into the globe."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. A close, clear photo of a person or a pet keeps the likeness once it is shrunk into the globe."
         },
         {
           "q": "Can I turn a photo into a snow globe in ChatGPT or Gemini?",
@@ -1769,7 +1769,7 @@
         },
         {
           "q": "Can I make an action figure from my photo in ChatGPT or Gemini?",
-          "a": "Yes. Upload your photo and paste the prompt above. Ask for exactly one figure in a blister on a backer card, name two or three accessories and give the box a short invented name; ask for no logos so nothing on the card copies a real brand. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size."
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for exactly one figure in a blister on a backer card, name two or three accessories and give the box a short invented name; ask for no logos so nothing on the card copies a real brand. Here the description is already written and the face-keeping instruction is included every time; you choose 9:16, 2:3, 3:4 or square and download a JPG at that exact size. For the other looks people are making right now, see [AI photo trends right now](/blog/ai-photo-trends-right-now)."
         }
       ]
     },
@@ -1854,7 +1854,7 @@
         },
         {
           "q": "Is the pop-up card photo maker free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. A single person or pet against a plain background makes the cleanest paper cutout."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. A single person or pet against a plain background makes the cleanest paper cutout."
         },
         {
           "q": "Can I make a pop-up paper card from a photo in ChatGPT or Gemini?",
@@ -1947,7 +1947,7 @@
         },
         {
           "q": "Can I make a scrapbook journal page in ChatGPT or Gemini?",
-          "a": "Yes. Upload your photo and paste the prompt above. Ask for the photo taped at a tilt with washi tape on cream or kraft paper, the paper and sticker details and wordless doodles, and say the photo itself must stay unchanged. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
+          "a": "Yes. Upload your photo and paste the prompt above. Ask for the photo taped at a tilt with washi tape on cream or kraft paper, the paper and sticker details and wordless doodles, and say the photo itself must stay unchanged. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size. For a travel keepsake with a postcard and a map instead of a journal page, try the [wanderlust postcard collage](/create/photo-trend-maker/wanderlust-postcard)."
         }
       ]
     },
@@ -2024,7 +2024,7 @@
         },
         {
           "q": "Can I use a photo of two people?",
-          "a": "It is harder, because the look draws a twin of one subject. Use a photo of one person or one pet for a clear result, or try the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet) if you want several poses of the same face."
+          "a": "It is harder, because the look draws a twin of one subject. Use a photo of one person or one pet for a clear result, or try the [photo sticker sheet](/create/photo-trend-maker/photo-sticker-sheet) if you want several poses of the same face. For two cartoon figures side by side, try the [chibi character](/create/photo-trend-maker/chibi-character)."
         },
         {
           "q": "Does it work for pets?",
@@ -2121,11 +2121,11 @@
         },
         {
           "q": "Is the instant photo pop-out effect free?",
-          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 25 looks and all four sizes, and a failed run is refunded. Check the fingers on the result; if a hand is wrong, a second credit gives a new one."
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Check the fingers on the result; if a hand is wrong, a second credit gives a new one."
         },
         {
           "q": "Can I make the instant photo pop-out trick in ChatGPT or Gemini?",
-          "a": "Yes. Upload your photo and paste the prompt above. State \"exactly five fingers\", \"only one print and two hands\" and the shadow on the border; those are the parts the look depends on. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+          "a": "Yes. Upload your photo and paste the prompt above. State \"exactly five fingers\", \"only one print and two hands\" and the shadow on the border; those are the parts the look depends on. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080. For an instant print on a travel table with a postcard and souvenirs, try the [wanderlust postcard collage](/create/photo-trend-maker/wanderlust-postcard)."
         }
       ]
     },
@@ -2214,7 +2214,937 @@
         },
         {
           "q": "Can I make a photo sticker sheet in ChatGPT or Gemini?",
-          "a": "Yes. Upload a selfie or a pet photo and paste the prompt above. List the nine poses and ask for a three-by-three grid with a thick white border on every sticker and none touching. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size."
+          "a": "Yes. Upload a selfie or a pet photo and paste the prompt above. List the nine poses and ask for a three-by-three grid with a thick white border on every sticker and none touching. PiCraft has that description built in, so you pick the look and a size from menus and download a finished JPG at the exact pixel size. For one deliberately crude drawing instead of nine stickers, try the [mouse-drawn scribble](/create/photo-trend-maker/mouse-drawn-scribble)."
+        }
+      ]
+    },
+    {
+      "value": "chibi_character",
+      "slug": "chibi-character",
+      "seo": {
+        "title": "Chibi Photo Maker – Turn a Photo Into a Chibi Character",
+        "description": "Turn a photo of you, a couple or a pet into a chibi character with a big head, a tiny body, glossy eyes and clean outlines. Download a JPG in four sizes.",
+        "h1": "Chibi Photo Maker"
+      },
+      "intro": [
+        "The chibi look redraws a photo as a small cartoon character with a big rounded head, a tiny soft body and large glossy eyes. Hair color, hairstyle, skin tone, glasses and the colors of your outfit carry over, so friends still know who it is, while the face is simplified into a very small nose and mouth and pink cheeks.",
+        "Upload a photo of yourself, a couple or a pet, pick a size and create. The whole picture becomes a clean illustration of a full-body character waving on a pastel studio background, and you download a finished JPG at the exact pixel size. It is a flat illustrated character, not a toy: for a glossy vinyl head choose the [3D toy avatar](/create/photo-trend-maker/toy-avatar), and for a plastic figure on a base choose the [bobblehead](/create/photo-trend-maker/bobblehead)."
+      ],
+      "bestFor": [
+        {
+          "title": "Couples and friends",
+          "description": "Two people standing close together become two chibis side by side, which suits an anniversary post, a phone wallpaper or a message to a friend."
+        },
+        {
+          "title": "Profile pictures and chat avatars",
+          "description": "A full-body character in a 1:1 crop makes a profile picture that is clearly you without being a selfie. The pastel background keeps it easy to read at a small size."
+        },
+        {
+          "title": "Pets",
+          "description": "A dog or a cat becomes a round, big-eyed cartoon with the same coat colors and markings, sitting with one paw raised."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Show the hair and the outfit",
+          "description": "The chibi redraws the face, so the details around it carry the likeness: hair color, glasses, a hat, the color of a jacket. A photo that shows the upper body and a clear hairstyle gives the AI the most to keep."
+        },
+        {
+          "title": "One person or two, not a crowd",
+          "description": "Two people fit side by side with room to spare. With three or more, each character gets a smaller face and the likenesses drift, so crop the photo down to the people who matter."
+        },
+        {
+          "title": "Choose 2:3 or 3:4 for a full body",
+          "description": "A standing character needs height. The 2:3 and 3:4 sizes show the whole figure with the floor under its feet, 9:16 leaves more empty background, and 1:1 is the one to pick for a profile picture."
+        },
+        {
+          "title": "Pick the look for the result you want",
+          "description": "This look gives a flat illustration. If you want a glossy 3D toy head, use the [3D toy avatar](/create/photo-trend-maker/toy-avatar). If you want a tiny drawn twin added to your real photo, use the [mini doodle twin](/create/photo-trend-maker/mini-doodle-twin)."
+        },
+        {
+          "title": "Check the waving hand",
+          "description": "The character raises one hand, and small hands are where AI most often slips. If the fingers look wrong, a second credit gives a new pose."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie with the hairstyle and glasses clearly visible, size 3:4",
+        "Photo: a couple standing close together on a sidewalk, size 2:3",
+        "Photo: a golden retriever sitting and looking at the camera, size 1:1",
+        "Photo: a person in a bright jacket with the upper body in frame, size 9:16"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nRedraw me as a chibi character: a two-heads-tall figure with a big rounded head, a tiny soft body, large glossy eyes, a very small nose and mouth and rosy cheeks. Keep my hairstyle, hair color, eye color, skin tone and glasses, and a simplified version of my outfit in its real colors. Use smooth clean outlines and soft cel shading. Show my full body, standing and waving with one hand, on a plain pastel background with a faint floor shadow. It must look like an illustrated character, not a photo and not a 3D toy. No text and no speech bubbles.",
+        "notes": [
+          "List the features to keep: hair, glasses, eye color, outfit. A chibi redraws the face, so these details are what make it read as you.",
+          "Say \"two heads tall\" or \"big head, tiny body\". Without it, some tools return an ordinary cartoon with a slightly larger head.",
+          "Name the background and the pose. A plain pastel backdrop and one raised hand keep the character clear at thumbnail size."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Will the chibi still look like me?",
+          "a": "It keeps your hair color and hairstyle, skin tone, glasses and the colors of your clothes, and it simplifies the face. A good test is to put it next to your photo and ask whether a friend would know who it is from the hair and clothes alone. If not, generate again or use a photo where the hair and outfit are easier to see."
+        },
+        {
+          "q": "Can I make a chibi of a couple?",
+          "a": "Yes. Upload a photo of two people standing close together and both are drawn as chibis side by side. Photos with three or more people give weaker likenesses, so crop to the two you want."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. A dog or a cat is redrawn as a round, big-eyed chibi with the same coat colors and markings. A pet that looks straight at the camera in a sharp photo gives the best match."
+        },
+        {
+          "q": "How is it different from the chibi sticker maker?",
+          "a": "The [chibi sticker maker](/create/sticker-maker/chibi) draws a new sticker from a written idea and exports a transparent PNG with a white border. This look starts from your own photo and returns a JPG of a full-body character on a pastel background."
+        },
+        {
+          "q": "What is the chibi photo trend?",
+          "a": "Chibi is a Japanese-inspired cartoon style with an oversized head and a miniature body. [Moneycontrol](https://www.moneycontrol.com/technology/instagram-chibi-image-ai-trend-steps-to-convert-your-photos-into-viral-cartoon-style-with-prompts-article-13916373.html) reported on May 12, 2026 that AI chibi pictures were spreading across Instagram, WhatsApp and short-video apps, and a how-to guide from Dappi Stickers was published on November 22, 2026. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for how it fits with the other looks going around."
+        },
+        {
+          "q": "Is there a free AI chibi generator?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. The same photo gives a different pose and expression each time, so a second credit is the quickest way to find a version you like."
+        },
+        {
+          "q": "Can I make a chibi from a photo in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the proportions, the features to keep and the background, because a short request such as \"make me chibi\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080. For a realistic face with exaggerated features instead of a cute cartoon, try the [caricature portrait](/create/photo-trend-maker/caricature-portrait)."
+        }
+      ]
+    },
+    {
+      "value": "color_pop_sweater",
+      "slug": "color-pop-sweater",
+      "seo": {
+        "title": "AI Sweater Portrait – Black & White, One Color Pop",
+        "description": "Turn a photo into a black-and-white portrait where only a chunky knit sweater has color and its sleeves cover your mouth. Download a finished JPG in four sizes.",
+        "h1": "Color-Pop Sweater Portrait Maker"
+      },
+      "intro": [
+        "The color-pop sweater portrait is a black-and-white studio picture with exactly one color in it: an oversized chunky knit sweater whose long sleeves are pulled up over the hands and the lower face. Skin, hair, lips and background stay in rich greys, so the eyes looking over the knit and one block of color are all the picture needs.",
+        "Upload one chest-up photo, pick a size and create. The look copies the format that people pasted into ChatGPT in November 2026, without any prompt to write. PiCraft picks one saturated color for the sweater on each run, such as deep red, emerald, violet or cobalt. If you need a specific color, write it in [Image to Image](/image-to-image)."
+      ],
+      "bestFor": [
+        {
+          "title": "Profile pictures and holiday cards",
+          "description": "A red or green sweater reads as Christmas without a tree or a caption, and the square size gives a strong profile picture."
+        },
+        {
+          "title": "Portraits where the eyes do the work",
+          "description": "With the mouth covered, the eyes carry the picture. A sharp photo with open eyes, with or without glasses, works best."
+        },
+        {
+          "title": "Pets",
+          "description": "A dog or a cat wears the sweater like a thick cowl around its neck and chin, while the fur and the eyes stay black and white."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a sharp chest-up photo, facing the camera",
+          "description": "The sleeves hide the lower face, so the eyes and brows are the likeness. Use a photo with open eyes and no sunglasses, and keep the shoulders in frame so the sweater has room."
+        },
+        {
+          "title": "Expect a new color each time",
+          "description": "The sweater color is chosen on every run. Create twice to see two colors, and keep the one that suits the skin and the eyes best."
+        },
+        {
+          "title": "Choose a tall size for a portrait",
+          "description": "At 9:16, 2:3 or 3:4 the face sits in the upper half and the knit fills the lower half. Choose 1:1 when the picture is for a profile photo."
+        },
+        {
+          "title": "One person per picture",
+          "description": "If the photo shows a group, the look uses only the main person. Crop the photo to the person you want before you upload it."
+        },
+        {
+          "title": "Check the hands and the sleeves",
+          "description": "Hands near the face and long knitted sleeves are easy to get wrong. If a finger or a cuff looks odd, generate again."
+        }
+      ],
+      "tryThese": [
+        "Photo: a front-facing selfie with open eyes and the shoulders in frame, size 9:16",
+        "Photo: a person with glasses at a table, chest up, size 3:4",
+        "Photo: a dog looking straight at the camera, size 2:3",
+        "Photo: a close head-and-shoulders portrait in even light, size 1:1"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nMake a black-and-white studio portrait of me with exactly one color in it. Everything is monochrome, including my skin, hair, lips and the background, in rich greys with deep blacks. The only color is one oversized chunky cable-knit sweater in deep red, with the sleeves pulled up over my hands and held against my lower face so the knit covers my mouth and chin and my eyes look straight into the lens. Frame it from the chest up, with soft studio light and sharp focus on the eyes. Keep my eyes, brows and head shape exactly as in the photo. No text, no logos and no frame.",
+        "notes": [
+          "Name the color yourself. It is the one choice the form on this page makes for you, and it is the whole point of the picture.",
+          "Say \"exactly one color\". Without it, some tools leave a little color in the lips or the eyes.",
+          "Tell the tool what the sleeves do. \"Covering my mouth and chin\" keeps the eyes at the center of the frame."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Can I choose the sweater color?",
+          "a": "Not in the form. PiCraft picks one saturated color for each run, so generating again usually gives another color. To choose it yourself, open [Image to Image](/image-to-image), add your photo and write the color you want in your own words."
+        },
+        {
+          "q": "Will it look like me if my mouth is covered?",
+          "a": "The look asks the AI to keep your eyes, brows, eye shape and head shape exactly as in the photo, and those carry most of a likeness. Compare the result with your photo, and generate again if the eyes look different."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. A dog or a cat wears the sweater as a thick cowl around the neck and chin, and everything else stays in black and white. A pet that looks straight at the camera gives the best result."
+        },
+        {
+          "q": "Why is the skin black and white too?",
+          "a": "That is the look: the sweater is the only color in the picture. If the lips, the eyes or the background keep a tint, generate again."
+        },
+        {
+          "q": "What is the ChatGPT sweater trend?",
+          "a": "It is a November 2026 trend in which people paste a prompt into ChatGPT to get a black-and-white portrait with one chunky sweater in color. [ClipVersus](https://clipversus.com/guides/chatgpt-sweater-trend/), in a guide last updated on November 20, 2026, says template sites trace the earliest post with the full prompt to November 9, 2026 on TikTok, and that it is a shared prompt rather than a ChatGPT feature. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for the other looks going around."
+        },
+        {
+          "q": "Is the sweater portrait free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Because the sweater color changes on every run, a second credit shows you another color."
+        },
+        {
+          "q": "Can I make the sweater portrait in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. State \"exactly one color\" and what the sleeves cover, because those are the parts the look depends on. The form on this page does the writing for you and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "snow_triptych",
+      "slug": "snow-triptych",
+      "seo": {
+        "title": "Snow Triptych Photo Maker – AI Snow Photo in 3 Frames",
+        "description": "Turn one photo into three stacked frames in falling snow: an eye close-up, an umbrella shot and a portrait. Download a finished 9:16, 2:3, 3:4 or square JPG.",
+        "h1": "Snow Triptych Photo Maker"
+      },
+      "intro": [
+        "The snow triptych turns one photo into a single tall picture made of three stacked frames with thin white borders. The top frame is an extreme close-up of the eyes with snowflakes on the lashes, the middle one is a medium shot looking up into the snowfall under a clear umbrella, and the bottom one is a calm chest-up portrait. The light is overcast, the colors are cool white and blue, and the mood is a slow winter drama.",
+        "Upload a photo of yourself or a pet, pick a size and create. The face, the hair and the outfit stay the same in all three frames, in a dark wool coat and a cream knit scarf, and you download a finished JPG at the exact pixel size. The format is the same three-frame snow picture that roundups since early November 2026 call the AI snow trend."
+      ],
+      "bestFor": [
+        {
+          "title": "Winter posts and Stories",
+          "description": "A 9:16 triptych fills a phone screen, so it works as a Story or a full-screen post when the first snow arrives."
+        },
+        {
+          "title": "Pinterest winter boards",
+          "description": "Choose 2:3 for the shape Pinterest recommends for Pins. Three frames in one picture give a board more to look at than a single portrait."
+        },
+        {
+          "title": "Pets in the snow",
+          "description": "A cat or a dog gets the same three frames, with snow settling on its fur, a close-up of the eyes and a portrait."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Choose a tall size",
+          "description": "Three frames need height. At 9:16 and 2:3 each frame is wide enough to read, 3:4 works too, and at 1:1 the frames become thin strips."
+        },
+        {
+          "title": "Use a photo with a large, sharp face",
+          "description": "The top frame is an extreme close-up of the eyes, so the AI needs a clear view of them. Skip sunglasses, hats pulled low and photos where the face is small."
+        },
+        {
+          "title": "One person or one pet",
+          "description": "The look asks for only the subject in every frame. With two people the close-up and the umbrella shot tend to drift, so crop to one before you upload."
+        },
+        {
+          "title": "The outfit is replaced",
+          "description": "The dark coat and the cream scarf are part of the look, because the same clothes in all three frames hold the picture together. To keep your own clothes, choose another look."
+        },
+        {
+          "title": "Compare the three faces",
+          "description": "Look at the close-up and the portrait side by side. If they read as different people, a second credit gives a new set."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie in daylight with the face large in the frame, size 9:16",
+        "Photo: a person looking at the camera, head and shoulders, size 2:3",
+        "Photo: a grey tabby cat on a windowsill, size 3:4",
+        "Photo: a golden retriever looking at the camera, size 2:3"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference and keep my face, hairstyle and skin tone the same in every frame.\nMake one tall image of three stacked frames with thin white borders, all showing me in falling snow. Top frame: an extreme close-up of my eyes and cheek with snowflakes on my lashes. Middle frame: a medium shot from the side, looking up into the snow and holding a clear umbrella. Bottom frame: a chest-up portrait facing the camera with a calm expression. I wear a long dark wool coat and a cream knit scarf in all three. Overcast winter daylight, cool white and blue tones, natural skin texture, fine film grain. Only me in every frame, no other people and no animals. No text and no logos.",
+        "notes": [
+          "Say \"three stacked frames\" and \"thin white borders\". Without it, some tools return three separate pictures.",
+          "Describe each frame in one line and repeat the outfit. The same coat and scarf are what make the three frames look like one set.",
+          "Add \"only me in every frame\". Image tools sometimes invent an extra person or an animal in a snowy scene."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Will all three frames show the same person?",
+          "a": "The look asks the AI to keep the face, hairstyle, skin tone and outfit the same in every frame, and it usually does. The close-up is the frame most likely to drift, so compare it with the portrait at the bottom and generate again if they look like two people."
+        },
+        {
+          "q": "Which size is best for a snow triptych?",
+          "a": "Use 9:16 (1080×1920) for Stories and full-screen posts or 2:3 (1000×1500) for Pinterest. The 3:4 size works too. The 1:1 square makes each frame a thin strip, so save it for a different look."
+        },
+        {
+          "q": "Can I use a photo of two people?",
+          "a": "A single person or pet gives the most reliable result. With two people, the close-up and the umbrella shot tend to mix the faces, so crop the photo to one person first."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. A cat or a dog appears in all three frames with snow on its fur: a close-up of the eyes, a side view looking up and a portrait. A sharp photo where the pet looks at the camera works best."
+        },
+        {
+          "q": "What is the AI snow trend?",
+          "a": "It is a three-frame snow picture of one person, made with an image tool and a pasted prompt. [PNZ Medya](https://pnzmedya.com/en/blog/ai-snow-trend-gemini-prompts) tested the three-panel prompt in Gemini on November 4, 2026, and [Nano Potato](https://www.nanopotato.ai/blog/ai-photo-trends-2026) listed it among the late-November trends in a roundup updated on November 24, 2026. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for the other looks going around."
+        },
+        {
+          "q": "Is the snow triptych free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run gives a new set of three frames, so a second credit is the quickest way to find a close-up you like."
+        },
+        {
+          "q": "Can I make a snow triptych in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the three stacked frames, what each one shows and the outfit, because a short request such as \"make a snow photo\" leaves the layout to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080. For a different winter picture, try the [snow globe](/create/photo-trend-maker/snow-globe). For a three-frame picture in your own setting instead of snow, try the [cinematic film stills](/create/photo-trend-maker/cinematic-film-stills)."
+        }
+      ]
+    },
+    {
+      "value": "neon_city_poster",
+      "slug": "neon-city-game-poster",
+      "seo": {
+        "title": "Neon City Game Poster Maker – AI Sunset Portrait",
+        "description": "Turn a photo into a painted loading-screen poster: you as the lead of a city game, with a neon sunset, palm trees and a sports car. JPG in four sizes.",
+        "h1": "Neon City Game Poster Maker"
+      },
+      "intro": [
+        "The neon city game poster look paints you as the lead character of an imaginary open-world city game. The picture is a bold hand-painted illustration with a huge orange sun, palm trees, glowing towers and a glossy sports car at the curb, while your face, hairstyle and skin tone stay recognizable in the foreground.",
+        "Upload one photo of yourself, a couple or a pet, pick a size and create. In the last week of November 2026 [Storyboard18](https://www.storyboard18.com/trending/gta-vi-ai-photo-trend-how-to-create-video-game-style-portraits-using-chatgpt-and-gemini-115254.htm), [Moneycontrol](https://www.moneycontrol.com/technology/gta-6-photo-trend-on-instagram-5-chatgpt-prompts-to-turn-your-selfies-into-vice-city-style-art-article-14087021.html) and [India Today](https://www.indiatoday.in/trending-news/story/gta-inspired-ai-photo-trend-gemini-chatgpt-prompts-lucia-makeup-3045672-2026-11-24) reported this kind of picture as the \"GTA 6 photo trend\". PiCraft is not connected to any game company, and the look describes a generic painted city poster: it uses no game artwork, characters, logos or title text. For other night-and-neon pictures see [Night Out Flash](/create/photo-trend-maker/night-flash) and [80s Flashback](/create/photo-trend-maker/80s-flashback)."
+      ],
+      "bestFor": [
+        {
+          "title": "Profile pictures and Stories",
+          "description": "A 9:16 poster fills a Story, and a face in the foreground stays readable at avatar size. The warm sunset also makes a strong cover picture."
+        },
+        {
+          "title": "Friends and couples",
+          "description": "Two people standing close together are painted side by side in the foreground, which suits a trip recap, a birthday post or a group chat picture."
+        },
+        {
+          "title": "Pets",
+          "description": "A dog or a cat becomes the hero of the poster, sitting in front of the street with the same coat colors and markings."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Show your face and your top",
+          "description": "The AI repaints the whole picture, so it keeps what it can see: the face, the hair and the color of your top. A sharp photo from the chest up in daylight gives the closest likeness."
+        },
+        {
+          "title": "Expect repainted clothes",
+          "description": "The outfit is restyled in vivid colors and the people are always fully dressed, so a plain tee can come back as a bold jacket. The colors stay close to your photo."
+        },
+        {
+          "title": "Pick 9:16 or 2:3 for the full poster",
+          "description": "The tall sizes show the figure, the street and the car. The 1:1 square crops the scene tighter and suits a profile picture."
+        },
+        {
+          "title": "Do not expect a game screenshot",
+          "description": "The result is a painted poster of you, with no title, interface or characters from any game. If you want a different art direction, describe it in [Image to Image](/image-to-image)."
+        },
+        {
+          "title": "Check the hands and the car",
+          "description": "Hands and small car details are where AI most often slips. If a hand looks wrong or the car shows odd letters, a second credit gives a new version."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie from the chest up in daylight, size 9:16",
+        "Photo: two friends standing close together outdoors, size 2:3",
+        "Photo: a golden retriever looking at the camera, size 3:4",
+        "Photo: a full-length picture of a person in a bright jacket, size 1:1"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nPaint me as the lead character on a loading-screen poster for an imaginary open-world city game: a bold hand-painted digital illustration with simplified shapes, visible brush texture and warm, saturated colors. I stand in the foreground in a relaxed pose, in the clothes from my photo restyled in vivid colors. Behind me is a coastal city street at neon sunset with palm trees, a huge orange sun in a pink and violet sky, glowing towers and a glossy sports car with no badge. Keep my face, hairstyle and skin tone recognizable. No weapons, no text, no title and no logos.",
+        "notes": [
+          "Describe the scene, not a game. A list of ingredients (sunset, palms, towers, a sports car) gives the mood without pulling in a specific game's logos or characters.",
+          "Say \"keep my face recognizable\" and name the hairstyle and skin tone. A painted style pulls faces toward a generic look.",
+          "Ask for no text. Poster prompts invite a fake title or logo unless you rule them out."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Will the poster look like me?",
+          "a": "The face shape, hairstyle, hair color and skin tone carry over, and the painting style simplifies the details. A good test is to put it next to your photo and ask whether a friend would know who it is. If not, generate again or use a sharper photo from the chest up."
+        },
+        {
+          "q": "Is this the GTA 6 photo trend?",
+          "a": "It is the same kind of picture. [Storyboard18](https://www.storyboard18.com/trending/gta-vi-ai-photo-trend-how-to-create-video-game-style-portraits-using-chatgpt-and-gemini-115254.htm) wrote about the trend on November 22, 2026, [Moneycontrol](https://www.moneycontrol.com/technology/gta-6-photo-trend-on-instagram-5-chatgpt-prompts-to-turn-your-selfies-into-vice-city-style-art-article-14087021.html) on November 23 and [India Today](https://www.indiatoday.in/trending-news/story/gta-inspired-ai-photo-trend-gemini-chatgpt-prompts-lucia-makeup-3045672-2026-11-24) on November 24, and [Nano Potato](https://www.nanopotato.ai/blog/ai-photo-trends-2026) listed it in a roundup updated on November 24. PiCraft's look is not affiliated with the game or its publisher. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for how it compares with the other looks going around."
+        },
+        {
+          "q": "Does the look copy a game's artwork?",
+          "a": "No. It asks for a generic painted city poster: a sunset, palm trees, towers and a sports car, with you in the foreground. It uses no characters, logos, title or interface from any game, and PiCraft does not use any game's artwork. Do not present the result as official art or imply a connection with a game."
+        },
+        {
+          "q": "Can I use a photo of two people or a pet?",
+          "a": "Yes. Two people are painted together in the foreground, and a pet becomes the hero of the poster. A single person gives the most reliable likeness, and photos with three or more people give weaker faces."
+        },
+        {
+          "q": "Which size is best for a neon city poster?",
+          "a": "Use 9:16 (1080×1920) for Stories and full-screen posts or 2:3 (1000×1500) for Pinterest. The 3:4 size suits a feed post, and the 1:1 square works for a profile picture."
+        },
+        {
+          "q": "Is the neon city game poster free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run paints a different street, sky and car, so a second credit is the quickest way to find a version you like."
+        },
+        {
+          "q": "Can I make this picture in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the painted style, the scene, the face to keep and the ban on text, because a short request such as \"make me a game poster\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "wanderlust_postcard",
+      "slug": "wanderlust-postcard",
+      "seo": {
+        "title": "Wanderlust Postcard Collage – AI Travel Photo Maker",
+        "description": "Turn a photo into a travel keepsake: an instant photo of you in a harbor town, a handwritten postcard, a map and small souvenirs. Download a JPG in four sizes.",
+        "h1": "Wanderlust Postcard Collage Maker"
+      },
+      "intro": [
+        "The wanderlust postcard collage turns your photo into a travel keepsake laid out on a wooden table. The main piece is an instant-photo print of you standing in a sunny hillside harbor town. Beside it lie a vintage postcard with a few handwritten lines in blue ink telling you to go somewhere new, a stamp and a postmark, and small souvenirs such as a folded map, a seashell, a brass key and a pressed flower.",
+        "Upload one clear photo of yourself, a friend or a pet, pick a size and create. The soft film colors stay inside the instant photo, so the table and the postcard keep warm natural light. The look is about a place you could go, so it differs from the [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out), where your picture steps out of a print, and from the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal), which is a page of notes and stickers."
+      ],
+      "bestFor": [
+        {
+          "title": "Trip announcements and travel Stories",
+          "description": "A collage with a map, a postcard and a photo of you reads as \"I am going somewhere\" without a caption, and the 9:16 size fits a Story."
+        },
+        {
+          "title": "Cards and keepsakes",
+          "description": "A 2:3 print works as a postcard-style gift for a friend who is leaving or coming back, or as a Pinterest pin for a travel board."
+        },
+        {
+          "title": "Pets as travelers",
+          "description": "A dog or a cat becomes the traveler in the instant print, which makes a cheerful picture for a pet account or a pet sitter's thank-you."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a photo with a large face",
+          "description": "The face sits inside a small print, so it needs to be clear. A selfie or a half-length photo works better than a distant shot."
+        },
+        {
+          "title": "The destination is chosen for you",
+          "description": "Each run picks its own harbor town and postcard view. If you need a particular city or landmark, describe it in [Image to Image](/image-to-image)."
+        },
+        {
+          "title": "Read the postcard before you post",
+          "description": "The handwriting is generated, so a letter can come out wrong. If a line is misspelled, a second credit gives a new postcard."
+        },
+        {
+          "title": "Pick 3:4 or 2:3",
+          "description": "The collage is laid out from above, and the portrait sizes leave room for the print, the postcard and the objects. The 1:1 square crops the table closer."
+        },
+        {
+          "title": "One person or a pet",
+          "description": "With two people the print shows both, but each face gets smaller and the likeness drifts, so crop to one person for the closest match."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie from the chest up, size 3:4",
+        "Photo: a friend holding a coffee outdoors, size 2:3",
+        "Photo: a dog sitting and looking at the camera, size 1:1",
+        "Photo: a full-length picture in a casual outfit, size 9:16"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nMake a travel keepsake collage seen from above on a wooden table in warm natural light. The main piece is an instant-photo print of me, tilted slightly, standing in a sunny hillside harbor town; only the print has a white border and soft film colors. Next to it lies a vintage postcard of a mountain lake with two or three short handwritten lines in blue ink encouraging me to go somewhere new, plus a stamp and a postmark. Add a folded paper map, a seashell, a brass key and a pressed flower. Keep my face, hair and clothes exactly as in the photo. No logos.",
+        "notes": [
+          "Say that the instant-photo look belongs to the print only. Otherwise the whole picture turns faded and the table loses its warm light.",
+          "Ask for short handwriting. Long lines are where the letters break.",
+          "List the souvenirs you want. Without a list, tools fill the table with random clutter."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Can I choose the destination?",
+          "a": "Not on this form: each run picks a harbor town and a postcard view by itself, and the look is built around a feeling of going somewhere new rather than a specific place. For a named city, write the scene yourself in [Image to Image](/image-to-image)."
+        },
+        {
+          "q": "Is the postcard text real?",
+          "a": "No. The words are written by the AI and are not a real message or a real postmark. They are short on purpose, but read them before you post: a misspelled word is a reason to generate again."
+        },
+        {
+          "q": "How is it different from the instant photo pop-out and the scrapbook page?",
+          "a": "The [instant photo pop-out](/create/photo-trend-maker/instant-photo-pop-out) lets your picture step out of a print, and the [scrapbook journal page](/create/photo-trend-maker/scrapbook-journal) is a page of notes, tape and stickers. The wanderlust collage puts you inside a travel place, with a postcard and souvenirs around it."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. The pet is the traveler in the instant print, with the same coat colors and markings. A sharp photo where the animal looks at the camera gives the best match."
+        },
+        {
+          "q": "What is the wanderlust photo trend?",
+          "a": "It is a travel collage with an instant photo, a postcard and souvenirs. [Hindustan Times](https://www.hindustantimes.com/trending/obsessed-with-1980s-ai-photo-trend-5-more-viral-chatgpt-styles-to-try-and-prompts-to-use-101789005660331.html) listed it among five trending ChatGPT styles on September 10, 2026, and [Mint](https://www.livemint.com/technology/tech-news/sam-altman-says-india-created-over-1-billion-images-with-chatgpt-images-2-0-here-are-top-top-trends-and-prompts-11779077229353.html) reported on May 18, 2026 that OpenAI shared a travel collage among the most popular prompts of the previous 14 days. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for the looks going around now."
+        },
+        {
+          "q": "Is the wanderlust postcard collage free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. The same photo gives a different town, postcard and set of souvenirs each time, so a second credit is the quickest way to find a collage you like."
+        },
+        {
+          "q": "Can I make a travel collage in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are what the instant print shows, what the postcard says and which souvenirs to add, because a short request such as \"make a travel collage\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "street_caricature",
+      "slug": "caricature-portrait",
+      "seo": {
+        "title": "AI Caricature Maker – Turn a Photo Into a Caricature",
+        "description": "Turn a photo into a street-artist caricature with exaggerated features, ink lines and watercolor shading, for one person, a couple or a pet. JPG in four sizes.",
+        "h1": "AI Caricature Maker"
+      },
+      "intro": [
+        "The caricature look draws you the way a street artist would: a realistic, characterful face in confident ink lines and watercolor-marker shading, with the features that define you pushed further, such as the smile, the eyes, the eyebrows, the hair or the chin. The head is bigger than the small, energetic body, and one or two props match what the photo shows.",
+        "Upload one photo of yourself, a couple or a pet, pick a size and create. The caricature trend of February 2026 asked ChatGPT to draw you and your job from everything it remembered about you. PiCraft needs no chat history and asks for no personal details: it works from the photo alone. For a cute rounded cartoon use the [chibi character](/create/photo-trend-maker/chibi-character) instead, and for a joke drawing that is deliberately bad try the [mouse-drawn scribble](/create/photo-trend-maker/mouse-drawn-scribble)."
+      ],
+      "bestFor": [
+        {
+          "title": "Gifts and birthday cards",
+          "description": "A caricature of the person you are celebrating is a personal gift, and the 3:4 size prints well on a card or a mug template."
+        },
+        {
+          "title": "Farewell and team posts",
+          "description": "A friendly exaggeration of a smile or a hairstyle suits a leaving card or a team post. Only make caricatures of people who agree to it."
+        },
+        {
+          "title": "Pets",
+          "description": "A dog or a cat gets an exaggerated face and the same coat colors and markings, which makes a funny picture for a pet account."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick a photo with a strong expression",
+          "description": "A caricature pushes what is already there. A broad smile, raised eyebrows or a distinctive hairstyle gives the AI something to exaggerate, while a neutral face gives a mild result."
+        },
+        {
+          "title": "The props come from the photo",
+          "description": "A mug, a bag or a park bench in your photo can return as a prop. Nothing is invented about your job or hobbies, so for a specific prop describe it in [Image to Image](/image-to-image)."
+        },
+        {
+          "title": "It is exaggerated on purpose",
+          "description": "The look aims to be funny and flattering, never mocking. If a feature looks like too much, a second credit gives a gentler version."
+        },
+        {
+          "title": "Choose 3:4 or 2:3",
+          "description": "The portrait sizes show the big head and the small body together. The 1:1 square crops tighter and suits a profile picture."
+        },
+        {
+          "title": "Couples work best close together",
+          "description": "Two people standing close are drawn as a pair. Photos with three or more people give smaller faces and a weaker likeness, so crop to the two you want."
+        }
+      ],
+      "tryThese": [
+        "Photo: a laughing selfie with the hair clearly visible, size 3:4",
+        "Photo: a couple standing close together on a sidewalk, size 2:3",
+        "Photo: a dog with its tongue out, looking at the camera, size 1:1",
+        "Photo: a person with glasses and a mug, seated and smiling, size 9:16"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nDraw a street-artist caricature of me: a realistic, characterful face in confident ink lines with watercolor-marker shading. Exaggerate what is most distinctive about me, such as my smile, eyes, eyebrows, hair or chin, and make the head about one and a half times the size of my small, energetic body. Keep my skin tone, hairstyle and outfit colors from the photo and add one or two small props that match what the photo shows. Make it warm, funny and flattering, never mocking, and not cute or kawaii. Pale cream paper background with a few loose color splashes. It must look hand-drawn, not like a photo. No text and no logos.",
+        "notes": [
+          "Name the features to exaggerate. Without them, tools give everyone the same oversized smile.",
+          "Say \"flattering, never mocking\". It keeps the exaggeration friendly.",
+          "Add \"not cute or kawaii\". Otherwise some tools return a chibi instead of a caricature."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Does it need to know my job?",
+          "a": "No. The look works from the photo alone. If your photo shows a laptop, a camera or a guitar, a prop like that can appear, but PiCraft does not ask for or guess your job. To add a specific prop, write the scene in [Image to Image](/image-to-image)."
+        },
+        {
+          "q": "What is the AI caricature trend?",
+          "a": "In early February 2026 people uploaded a photo to ChatGPT and asked for a caricature of themselves and their job. [USA Today](https://www.usatoday.com/story/tech/2026/02/05/ai-caricature-chatgpt-trend-2026/88527597007/) explained how on February 5, [Forbes](https://www.forbes.com/sites/lesliekatz/2026/02/06/chatgpt-trend-turns-people-into-caricatures---and-shows-how-well-ai-knows-us/) wrote about it on February 6 and [Creative Bloq](https://www.creativebloq.com/ai/ai-art/this-viral-ai-caricature-trend-is-everywhere-heres-how-to-make-one-in-chatgpt) published a how-to on February 9. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for how it compares with the looks going around now."
+        },
+        {
+          "q": "Is it safe to share personal details for a caricature?",
+          "a": "The February trend relied on chat history, and [Forbes](https://www.forbes.com/sites/kateoflahertyuk/2026/02/09/the-new-chatgpt-caricature-trend-comes-with-a-privacy-warning/) published a privacy warning about it on February 9, 2026. The PiCraft look asks for no job, name or other details, only the photo. See the [Privacy Policy](/privacy) for how photos are handled, and upload only photos you own or may use."
+        },
+        {
+          "q": "Can I make a caricature of a couple or a pet?",
+          "a": "Yes. Two people standing close together are drawn as a pair, and a dog or a cat gets an exaggerated face with the same coat colors and markings. A sharp photo where everyone looks at the camera works best."
+        },
+        {
+          "q": "How is it different from the chibi character and the 3D toy avatar?",
+          "a": "The [chibi character](/create/photo-trend-maker/chibi-character) is a cute rounded cartoon with big glossy eyes, and the [3D toy avatar](/create/photo-trend-maker/toy-avatar) is a glossy vinyl head. The caricature keeps a realistic, characterful face and exaggerates it with ink and watercolor."
+        },
+        {
+          "q": "Is the caricature maker free to try?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run exaggerates different features, so a second credit is the quickest way to find a version you like."
+        },
+        {
+          "q": "Can I make a caricature in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the features to exaggerate, the drawing style and the tone, because a short request such as \"make a caricature of me\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "inked_tarot_card",
+      "slug": "tarot-card-portrait",
+      "seo": {
+        "title": "AI Tarot Card Portrait – Turn Your Photo Into a Card",
+        "description": "Turn a photo into a hand-inked tarot card with you as the figure, symbols, a border and a short title. For one person, a couple or a pet. JPG in four sizes.",
+        "h1": "AI Tarot Card Portrait Maker"
+      },
+      "intro": [
+        "The tarot card portrait puts you on a hand-inked card as the central figure. The tall card has a thin ornate border on aged cream paper, bold black ink lines that wobble a little, flat fills in muted red, ochre, teal and cream, a sun, a crescent moon, stars, flowers and a winding path, and a banner at the bottom with a short title such as THE DREAMER.",
+        "Upload one photo, pick a size and create. It is a portrait in the shape of a card, not a reading: nothing on it predicts anything, and PiCraft offers no readings. The drawing is an original design and does not copy any published deck. For other symbolic portraits try the [marble statue](/create/photo-trend-maker/marble-statue) or the [fantasy newspaper](/create/photo-trend-maker/fantasy-newspaper)."
+      ],
+      "bestFor": [
+        {
+          "title": "Profile pictures and avatars",
+          "description": "A framed figure with a banner stands out in a small circle, and the card border makes a clear shape on a profile."
+        },
+        {
+          "title": "Birthday and gift posts",
+          "description": "A card made for a friend, with their face on it, is a personal gift, and the 2:3 size matches the proportions of a real card."
+        },
+        {
+          "title": "Pets as the card figure",
+          "description": "A cat or a dog becomes the central figure in a cloak, with the sun, moon and path around it. It is a favorite for pet accounts."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "A front-facing photo keeps the face",
+          "description": "The ink style simplifies the face, so a sharp, front-facing photo from the chest up carries the most likeness. Hair and glasses in the photo carry over."
+        },
+        {
+          "title": "Check the title on the banner",
+          "description": "Text in AI pictures can be misspelled. The title is short on purpose, but read it before you post. [PromptUp](https://usepromptup.com/prompts/photo-tarot-card-portrait/) warns about misspelled card names in tarot prompts too."
+        },
+        {
+          "title": "Your outfit becomes a robe",
+          "description": "The clothes are turned into a flowing robe or coat in the card's palette, so the colors of your top carry over less than in the other looks."
+        },
+        {
+          "title": "Choose 2:3 for a true card shape",
+          "description": "The 2:3 size matches a real tarot card. The 9:16 and 3:4 sizes add empty paper at the sides or the bottom, and the 1:1 square crops the border."
+        },
+        {
+          "title": "It is a portrait, not a reading",
+          "description": "The sun, moon and stars are decoration. The card title is not a prediction, and the look makes no claim about your future."
+        }
+      ],
+      "tryThese": [
+        "Photo: a front-facing selfie from the chest up in soft daylight, size 2:3",
+        "Photo: a cat sitting and looking at the camera, size 2:3",
+        "Photo: a person with long hair and a scarf, size 3:4",
+        "Photo: a smiling portrait with glasses, size 1:1"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nDraw me as the figure on a hand-inked tarot card: a tall card with a thin ornate border on aged cream paper. Use bold black ink lines that wobble slightly and flat fills in muted red, ochre, teal and cream, with no shading. Keep my face, hairstyle and glasses recognizable but simplified into a woodcut style, and turn my clothes into a flowing robe in the same palette. Add a sun, a crescent moon, stars, a few flowers and a winding path, and a banner at the bottom with a short title in capital letters. No other text and no logos.",
+        "notes": [
+          "Give the title yourself, in capitals and short. A named card such as THE STAR is less likely to be misspelled than a long phrase.",
+          "Name the palette. Without it, tools default to dark blue and gold, and every card looks the same.",
+          "Ask for a limited, flat look. \"Flat fills, no shading\" is what makes a card read as hand-inked rather than as a painting."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Does the card predict anything?",
+          "a": "No. It is a portrait in the shape of a tarot card. The title and the symbols are decoration, PiCraft offers no readings, and nothing on the card says anything about your future."
+        },
+        {
+          "q": "Can I choose the card name?",
+          "a": "Not on this form: the look puts a short title in capitals on the banner, and the AI picks it, for example THE DREAMER. To name a card yourself, write the scene in [Image to Image](/image-to-image) and give the exact words."
+        },
+        {
+          "q": "Is it copied from an existing tarot deck?",
+          "a": "No. The look describes an original hand-inked card with a limited palette and generic symbols, and it does not use the artwork of any published deck. The figure on the card is you, drawn from your photo."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. A cat or a dog becomes the central figure on the card, in a cloak, with the same coat colors and markings. A sharp photo where the pet looks at the camera works best."
+        },
+        {
+          "q": "What is the AI tarot card trend?",
+          "a": "It is a portrait of you as the figure on a tarot card. [PromptUp](https://usepromptup.com/prompts/photo-tarot-card-portrait/) published a prompt page for it on November 4, 2026, and [AI Academy](https://academy.techpresso.co/prompts/chatgpt-prompts-tarot-card-art) listed \"You as a Card\" prompts in a guide last updated on October 27, 2026. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for how it compares with the looks going around now."
+        },
+        {
+          "q": "Is the tarot card portrait free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run draws a different pose, robe and title, so a second credit is the quickest way to find a card you like."
+        },
+        {
+          "q": "Can I make a tarot card portrait in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the ink style, the palette, the symbols and the title, because a short request such as \"make me a tarot card\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "cinematic_stills",
+      "slug": "cinematic-film-stills",
+      "seo": {
+        "title": "Cinematic Film Stills Maker – Photo to Movie Frames",
+        "description": "Turn one photo into three stacked movie stills of you in your own setting: a wide shot, a medium shot and a close-up with film grain. JPG in four sizes.",
+        "h1": "Cinematic Film Stills Maker"
+      },
+      "intro": [
+        "The cinematic film stills look turns one photo into a short story told in three stacked movie frames. The top frame is a wide establishing shot with you small in the scene, the middle frame is a medium shot from another angle with a hint of motion, and the bottom frame is a tight close-up with a quiet emotion, all in a cool teal-and-amber grade with deep blacks, shallow depth of field and fine film grain.",
+        "Upload one photo of yourself or a pet in a place you like, pick a size and create. The frames use your own surroundings, such as a park, a kitchen or a street, so it differs from the [snow triptych](/create/photo-trend-maker/snow-triptych), which puts you in falling snow, and from the [photo booth strip](/create/photo-trend-maker/photo-booth), which is a black-and-white strip of poses."
+      ],
+      "bestFor": [
+        {
+          "title": "Story and reel covers",
+          "description": "A tall three-frame picture reads like a movie poster for your day and fits a 9:16 Story cover."
+        },
+        {
+          "title": "Portfolio and profile banners",
+          "description": "A set of wide, medium and close frames shows a face from three distances, which suits an actor, a creator or a photographer's profile."
+        },
+        {
+          "title": "Pets",
+          "description": "A dog or a cat appears in all three frames, from a wide shot to a close-up of the eyes, with the same coat colors and markings."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Pick a photo with a setting",
+          "description": "The wide frame needs something to show: trees, a window or a street. A plain wall gives a thin first frame."
+        },
+        {
+          "title": "One person works best",
+          "description": "The look asks the AI to show only the subject in every frame. With two people, the close-up tends to mix faces, so crop to one person first."
+        },
+        {
+          "title": "Choose 9:16 or 2:3",
+          "description": "The tall sizes give each frame enough height. The 1:1 square makes each frame a thin strip, so save it for a different look."
+        },
+        {
+          "title": "Check the three faces",
+          "description": "The close-up is the frame most likely to drift. Compare it with the wide shot and generate again if they look like two people."
+        },
+        {
+          "title": "Want a different mood?",
+          "description": "The grade is cool teal and warm amber. For a different story, such as a snowy walk or a night street, describe it in [Image to Image](/image-to-image)."
+        }
+      ],
+      "tryThese": [
+        "Photo: a selfie outdoors with trees or buildings behind, size 9:16",
+        "Photo: a person seated at a window or a kitchen table, size 2:3",
+        "Photo: a dog standing in a park, size 2:3",
+        "Photo: a person walking on a street, size 3:4"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nTurn it into three stacked movie stills of me in my real surroundings, full-bleed and divided by thin dark gaps. Top frame: a wide establishing shot with me small in the scene. Middle frame: a medium shot from a different angle with a hint of motion blur as I turn or walk. Bottom frame: a tight close-up of my face and eyes with a quiet, honest emotion. Keep the same person, outfit and place in all three frames and show only me, with no other people or animals. Use a cool teal-and-amber color grade, deep blacks, shallow depth of field and fine film grain. No text, no subtitles and no logos.",
+        "notes": [
+          "Describe each frame by distance: wide, medium, close-up. \"Three movie stills\" alone gives three similar crops.",
+          "Say \"show only me\". Without it, tools often add a companion or an animal to make the story feel full.",
+          "Name the grade and the grain. A cool teal-and-amber grade with fine grain is what makes the frames feel filmed rather than shot on a phone."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Will all three frames show the same person?",
+          "a": "The look asks the AI to keep the same person, outfit and place in every frame, and it usually does. The close-up is the frame most likely to drift, so compare it with the wide shot and generate again if they look like two people."
+        },
+        {
+          "q": "How is it different from the snow triptych?",
+          "a": "The [snow triptych](/create/photo-trend-maker/snow-triptych) is a winter picture: an eye close-up, an umbrella shot and a portrait in falling snow, in a long coat. The cinematic stills use your own setting and tell a small story from a wide shot to a close-up."
+        },
+        {
+          "q": "Which size is best for film stills?",
+          "a": "Use 9:16 (1080×1920) for Stories and full-screen posts or 2:3 (1000×1500) for Pinterest. The 3:4 size works too. The 1:1 square makes each frame a thin strip."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. A dog or a cat appears in all three frames, from a wide shot to a close-up of the eyes. A sharp photo where the pet looks at the camera works best."
+        },
+        {
+          "q": "What is the film strip look?",
+          "a": "It is a vertical picture of three cinematic frames of one subject. ChatGPT's own image styles include a film-strip style with three cinematic stills in one tall frame, and three-frame layouts also appeared in November 2026 roundups, such as the snow version listed by [Nano Potato](https://www.nanopotato.ai/blog/ai-photo-trends-2026) on November 24 and tested by [PNZ Medya](https://pnzmedya.com/en/blog/ai-snow-trend-gemini-prompts) on November 4. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for the looks going around now."
+        },
+        {
+          "q": "Are the film stills free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run tells a slightly different story, so a second credit is the quickest way to find a close-up you like."
+        },
+        {
+          "q": "Can I make film stills in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the three distances, the grade and the ban on other people, because a short request such as \"make film stills\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "mouse_drawn_scribble",
+      "slug": "mouse-drawn-scribble",
+      "seo": {
+        "title": "Clumsy Scribble Maker – Turn a Photo Into a Bad Drawing",
+        "description": "Turn a photo into a deliberately crude mouse-drawn scribble on a white canvas, with wobbly outlines, flat colors and pink cheeks. Works for people and pets.",
+        "h1": "Clumsy Scribble Maker"
+      },
+      "intro": [
+        "The mouse-drawn scribble look redraws your photo as a deliberately crude doodle on a white canvas: thick hard-edged strokes, flat basic colors, wobbly outlines that do not quite close, pink spray-paint cheeks and a face built from a few simple shapes. It looks a bit like you and a bit wrong, and that is the joke.",
+        "Upload a photo of yourself, a couple or a pet, pick a size and create. [Forbes](https://www.forbes.com/sites/lesliekatz/2026/05/06/chatgpt-trend-has-users-requesting-clumsy-scribbly-and-pathetic-ai-images/) reported on May 6, 2026 that people were asking AI for \"ridiculously bad\" drawings, and the results look like doodles from a 1990s paint program. PiCraft's version keeps your hair color, outfit colors and main features, so people still guess who it is. For a polished drawing, try the [caricature portrait](/create/photo-trend-maker/caricature-portrait) or the [chibi character](/create/photo-trend-maker/chibi-character)."
+      ],
+      "bestFor": [
+        {
+          "title": "Group chat replies and memes",
+          "description": "A silly doodle of yourself is a quick reply in a chat, and the 1:1 square is the size most chat apps show without cropping."
+        },
+        {
+          "title": "Birthday jokes",
+          "description": "A crude drawing of the birthday person, with their real hair color and jacket, is a joke gift that costs one credit."
+        },
+        {
+          "title": "Pets",
+          "description": "A cat or a dog becomes a wonky doodle with the same coat markings, which makes a funny picture for a pet account."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "A plain background helps",
+          "description": "The doodle sits on a white canvas, so a photo with a clear subject gives the AI less to simplify. A busy background is dropped."
+        },
+        {
+          "title": "Colors carry the likeness",
+          "description": "The drawing is deliberately off, so the hair color, glasses and the color of the jacket are what make people guess who it is. A photo that shows them clearly gives a better joke."
+        },
+        {
+          "title": "Use 1:1 for chats",
+          "description": "The square size fits chat apps and profile pictures. The tall sizes add empty white space around the figure."
+        },
+        {
+          "title": "It will not be neat",
+          "description": "If a result looks too tidy, a second credit gives a new doodle. Each run is clumsy in a different way."
+        },
+        {
+          "title": "Two people share the canvas",
+          "description": "A couple is drawn side by side in the same crude style. Photos with three or more people give smaller, messier faces."
+        }
+      ],
+      "tryThese": [
+        "Photo: a selfie with clear hair and a bright jacket, size 1:1",
+        "Photo: a couple standing close together, size 1:1",
+        "Photo: a cat sitting and looking at the camera, size 1:1",
+        "Photo: a person with glasses and a hat, size 3:4"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nRedraw me as a deliberately crude scribble, as if someone drew it in a hurry with a mouse in an old computer paint program. Plain white canvas, hard-edged thick strokes with no soft blending, flat fills in basic colors only (red, blue, green, yellow, brown, pink, black and grey), a thick outline of one even width that wobbles and does not quite close, pink spray-paint cheeks and jagged stair-step edges. Build the face from a few simple shapes. It should look a bit like me and a bit wrong, with the proportions off and the smile a crooked line, but my hair color and outfit colors stay recognizable. No program windows, no toolbars and no text.",
+        "notes": [
+          "Give the model permission to fail. \"A bit like me and a bit wrong\" works better than asking for a bad drawing, which tools tend to polish anyway.",
+          "List the colors. A short list of basic colors stops the doodle from drifting into a soft, shaded drawing.",
+          "Ban toolbars and windows. Otherwise some tools draw the whole program around the picture."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Why does the result look so bad?",
+          "a": "That is the look. The prompt asks for thick hard-edged strokes, flat basic colors, wobbly outlines and off proportions, on purpose. If a result is too neat for your taste, generate again: each run is clumsy in a different way."
+        },
+        {
+          "q": "What is the scribble trend?",
+          "a": "[Forbes](https://www.forbes.com/sites/lesliekatz/2026/05/06/chatgpt-trend-has-users-requesting-clumsy-scribbly-and-pathetic-ai-images/) reported on May 6, 2026 that users were asking ChatGPT for clumsy, scribbly pictures as a reaction to polished AI images, and that the idea started with a prompt that Korean designer Wonjae Gi shared on Threads. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for how it compares with the looks going around now."
+        },
+        {
+          "q": "Does it use Microsoft Paint?",
+          "a": "No. Forbes compared the results to doodles from Microsoft Paint in the 1990s, but PiCraft does not use that program or any of its tools. The look is made by the AI model from a description of a crude mouse drawing, and the picture has no program window."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes. A cat or a dog becomes a wonky doodle with the same coat colors and markings. Clear markings, such as stripes or a white chest, make the joke work better."
+        },
+        {
+          "q": "Which size is best for a scribble?",
+          "a": "Use 1:1 (1080×1080) for chats and profile pictures. The 3:4 and 2:3 sizes also work and add white space, and 9:16 suits a Story."
+        },
+        {
+          "q": "Is the scribble maker free to try?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run draws a different doodle, so a second credit is the quickest way to find the funniest one."
+        },
+        {
+          "q": "Can I make a scribble in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the crude style, the color list and the permission to look wrong, because a short request such as \"draw me badly\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
+        }
+      ]
+    },
+    {
+      "value": "underwater_portrait",
+      "slug": "underwater-portrait",
+      "seo": {
+        "title": "AI Underwater Portrait – Pool Photo Maker From a Selfie",
+        "description": "Turn a photo into a calm underwater portrait: floating hair, rising bubbles and sunlight rippling across your face in a clear blue pool. JPG in four sizes.",
+        "h1": "AI Underwater Portrait Maker"
+      },
+      "intro": [
+        "The underwater portrait look shows you just after diving into a clear blue pool. Your hair and clothes float slowly, a thin stream of tiny bubbles rises, shafts of sunlight ripple across your face and shoulders in bright caustic patterns, and the glowing surface sits above. The mood is calm and weightless, with natural skin texture, cool aqua tones and a crisp photographic finish.",
+        "Upload one photo of yourself, a friend or a dog, pick a size and create. [Hindustan Times](https://www.hindustantimes.com/trending/obsessed-with-1980s-ai-photo-trend-5-more-viral-chatgpt-styles-to-try-and-prompts-to-use-101789005660331.html) listed the underwater portrait among five trending ChatGPT styles on September 10, 2026, and [Mint](https://www.livemint.com/technology/tech-news/sam-altman-says-india-created-over-1-billion-images-with-chatgpt-images-2-0-here-are-top-top-trends-and-prompts-11779077229353.html) reported on May 18, 2026 that it was among the prompts OpenAI shared as popular over the previous 14 days. The look dresses everyone in everyday clothes and keeps the expression peaceful. For a dark, grainy portrait try [Night Out Flash](/create/photo-trend-maker/night-flash) instead."
+      ],
+      "bestFor": [
+        {
+          "title": "Profile pictures and Stories",
+          "description": "A close portrait with blue light and bubbles stands out in a small circle, and the 9:16 size fills a Story."
+        },
+        {
+          "title": "Summer posts in any season",
+          "description": "A pool picture works in December as well as July, which makes it a good choice for a winter feed that wants some summer."
+        },
+        {
+          "title": "Dogs that love water",
+          "description": "A dog swims toward the camera with its fur floating and bubbles around its nose, a popular picture for pet accounts."
+        }
+      ],
+      "designNotes": [
+        {
+          "title": "Use a clear, front-facing face",
+          "description": "The water adds ripples and reflections, so a sharp face from the chest up in even light gives the AI the most to keep. Hair color and glasses carry over."
+        },
+        {
+          "title": "Everyday clothes only",
+          "description": "The look dresses people in everyday clothes, such as a tee or a shirt, and keeps the picture calm. It does not produce swimwear pictures."
+        },
+        {
+          "title": "Dogs fit best",
+          "description": "Dogs swim happily and look natural in water. A cat is possible, but cats rarely look at home underwater, so expect to try more than once."
+        },
+        {
+          "title": "Choose 3:4 or 2:3",
+          "description": "The portrait sizes show the face, the floating hair and the glowing surface. The 1:1 square crops tighter and suits a profile picture."
+        },
+        {
+          "title": "Check the hands near the camera",
+          "description": "If a hand reaches toward the lens, fingers are where AI most often slips. A second credit gives a new pose."
+        }
+      ],
+      "tryThese": [
+        "Photo: a smiling selfie from the chest up in daylight, size 3:4",
+        "Photo: a person with long or curly hair, size 2:3",
+        "Photo: a golden retriever looking at the camera, size 1:1",
+        "Photo: a friend in a plain tee, size 9:16"
+      ],
+      "promptTry": {
+        "prompt": "Use the photo I upload as the reference.\nMake a close underwater portrait of me just after diving into a clear blue pool. Keep it calm and weightless: my hair and clothes float slowly, a thin stream of tiny bubbles rises, and shafts of sunlight ripple across my face and shoulders in bright caustic patterns, with the glowing surface above. My eyes are open or gently closed, with a peaceful expression, natural skin texture, cool aqua tones and a crisp, realistic photographic finish. Keep my face and hairstyle exactly as in the photo and dress me in everyday clothes. No text and no logos.",
+        "notes": [
+          "Say \"calm and weightless\". Without it, some tools show splashing or struggle, which spoils the mood.",
+          "Name the light: sunlight rippling in caustic patterns is what makes a pool picture read as underwater.",
+          "Ask for the face to stay as in the photo. Water effects can pull the face toward a generic look."
+        ]
+      },
+      "faq": [
+        {
+          "q": "Will my face stay recognizable underwater?",
+          "a": "The face shape, hairstyle, hair color and skin tone carry over, and the ripples and reflections soften the details. A sharp, front-facing photo from the chest up gives the closest match. If it looks like someone else, generate again."
+        },
+        {
+          "q": "Does it work for pets?",
+          "a": "Yes, especially for dogs. A dog swims happily toward the camera with bubbles around its nose. The look keeps the animal relaxed and never in distress, and a cat can work too, but expect to try more than once."
+        },
+        {
+          "q": "Is the pool or the water real?",
+          "a": "No. The water, the bubbles and the light are generated, and nothing is photographed underwater. You do not need to be near a pool: any clear photo of a face works."
+        },
+        {
+          "q": "What is the underwater portrait trend?",
+          "a": "It is a calm, close portrait of someone just after diving into a pool. [Hindustan Times](https://www.hindustantimes.com/trending/obsessed-with-1980s-ai-photo-trend-5-more-viral-chatgpt-styles-to-try-and-prompts-to-use-101789005660331.html) listed it among five trending ChatGPT styles on September 10, 2026, [Mint](https://www.livemint.com/technology/tech-news/sam-altman-says-india-created-over-1-billion-images-with-chatgpt-images-2-0-here-are-top-top-trends-and-prompts-11779077229353.html) listed it among popular prompts on May 18, and [The Indian Express](https://indianexpress.com/article/technology/artificial-intelligence/chatgpt-images-2-0-one-billion-ai-visuals-india-openai-10695796/) included it in a list of 10 prompts on May 19. See [AI photo trends right now](/blog/ai-photo-trends-right-now) for the looks going around now."
+        },
+        {
+          "q": "Which size is best for an underwater portrait?",
+          "a": "Use 3:4 (1080×1440) for a feed post, 2:3 (1000×1500) for Pinterest or 9:16 (1080×1920) for Stories. The 1:1 square suits a profile picture."
+        },
+        {
+          "q": "Is the underwater portrait free to make?",
+          "a": "Yes, to try. No account is needed, and new visitors start with free credits. Every picture costs one credit, the same for all 35 looks and all four sizes, and a failed run is refunded. Each run gives a different pose, bubble pattern and light, so a second credit is the quickest way to find a portrait you like."
+        },
+        {
+          "q": "Can I make an underwater portrait in ChatGPT or Gemini?",
+          "a": "Yes. Upload your photo and paste the prompt above. The parts to spell out are the calm mood, the light, the face to keep and the clothes, because a short request such as \"put me underwater\" leaves them to the model. The form on this page has that wording built in and returns a JPG at exactly 1080×1920, 1000×1500, 1080×1440 or 1080×1080."
         }
       ]
     }

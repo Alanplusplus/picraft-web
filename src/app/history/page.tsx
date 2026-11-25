@@ -28,7 +28,7 @@ export default function HistoryPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
       <h1 className="text-3xl font-bold tracking-tight text-ink-950">My files</h1>
-      <p className="mt-2 text-sm text-ink-500">Everything you&apos;ve made on this device. Click a picture to see it full size.</p>
+      <p className="mt-2 text-sm text-ink-500">Everything you&apos;ve made on this device.</p>
       <div className="mt-8">
         <HistoryList scenes={scenes} />
       </div>

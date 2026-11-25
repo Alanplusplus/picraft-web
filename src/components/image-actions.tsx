@@ -194,7 +194,7 @@ export function ImageActions({
         <ImageEditor
           src={`/api/task/${encodeURIComponent(task.task_id)}/file?file=${encodeURIComponent(file.id)}`}
           scene={task.scene}
-          startFormat={file.format === "pdf" ? "png" : file.format}
+          startFormat={file.format === "jpg" || file.format === "webp" ? file.format : "png"}
           onClose={() => setEditing(false)}
         />
       )}

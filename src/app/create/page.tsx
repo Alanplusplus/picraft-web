@@ -8,7 +8,7 @@ import { generatorPath, getGenerators } from "@/lib/generators";
 import { getScenes, getScenesByCategory, isIndexable } from "@/lib/scenes";
 import { breadcrumbLd, collectionLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
-import { CATEGORIES, categoryPath, type CategoryId } from "@/lib/site";
+import { CATEGORIES, categoryPath } from "@/lib/site";
 
 const TITLE = "All PiCraft AI Image Tools – Photos, Invitations & More";
 const DESCRIPTION =
@@ -20,19 +20,6 @@ const CRUMBS = [
   { name: "Home", path: "/" },
   { name: "All makers", path: "/create" },
 ];
-
-const INTROS: Record<CategoryId, string> = {
-  trends:
-    "One photo, redone in a look that is going around: an 80s snapshot, a claymation figure, a photo booth strip. Pick a look and a size, from full-screen 9:16 to a Pinterest Pin, and download a finished JPG.",
-  photos:
-    "Photos that have to follow someone else's rules. Marketplace main images need a pure white background, and property listings need bright, straight photos with honest labels on any edits. These makers start from your own photo.",
-  print:
-    "Things that go to a printer. Your names, dates, prices and contact details are typeset into the design, and you download PDFs with bleed and safe margins so nothing is trimmed away.",
-  creators:
-    "Images for a platform with a fixed size, such as a YouTube thumbnail, a LinkedIn banner or a book cover. Each one exports the pixel size and file weight the platform asks for.",
-  merch:
-    "Artwork with a transparent edge. Stickers and t-shirt graphics come as PNG files with the background removed, ready for a cutting machine or a print-on-demand store.",
-};
 
 const GUIDE = [
   { need: "Restyle a photo of yourself or a pet", slug: "photo-trend-maker", name: "Photo Trend Maker" },
@@ -73,14 +60,8 @@ export default function CreatePage() {
       <Breadcrumb crumbs={CRUMBS} />
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">What do you need to make?</h1>
       <p className="mt-3 max-w-3xl text-ink-700">
-        Start from the job you have. Most makers ask only for the details that matter, design it with AI and give you
-        files at the exact size and format you&apos;ll use them in, with no prompt to write. If your idea doesn&apos;t
-        fit a maker, the two AI image generators take your own description or photos, let you pick Nano Banana or
-        GPT Image, and give the original file back at the shape and resolution you choose.
-      </p>
-      <p className="mt-3 max-w-3xl text-ink-700">
-        New visitors get a few free credits, and each design uses one credit. If a design isn&apos;t right, generate
-        it again.
+        Pick the job you have, and the maker gives you files at the size and format you need, with no prompt to write.
+        If no maker fits, the two generators take your own description or photos.
       </p>
 
       <nav aria-label="Categories" className="mt-6 flex flex-wrap gap-2">
@@ -104,11 +85,6 @@ export default function CreatePage() {
       <div className="mt-12 space-y-14">
         <section id="generators" className="scroll-mt-20">
           <h2 className="text-xl font-bold text-ink-950">AI image generators</h2>
-          <p className="mt-1 max-w-3xl text-sm leading-relaxed text-ink-700">
-            Two general tools for when there is no specific maker for the image you have in mind. Describe it in your
-            own words, or add reference photos and say what should change. You choose Nano Banana or GPT Image, the
-            shape and the resolution, and download the original file.
-          </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {generators.map((generator) => (
               <GeneratorCard key={generator.slug} generator={generator} />
@@ -123,7 +99,6 @@ export default function CreatePage() {
                 {category.name}
               </Link>
             </h2>
-            <p className="mt-1 max-w-3xl text-sm leading-relaxed text-ink-700">{INTROS[category.id]}</p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {getScenesByCategory(category.id).map((scene) => (
                 <SceneCard key={scene.slug} scene={scene} />
@@ -135,7 +110,6 @@ export default function CreatePage() {
 
       <section className="mt-16 max-w-3xl">
         <h2 className="text-xl font-bold text-ink-950">Not sure where to start?</h2>
-        <p className="mt-1 text-sm leading-relaxed text-ink-700">Start from what you want to do.</p>
         <ul className="mt-4 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
           {GUIDE.map((item) => (
             <li key={item.slug} className="text-ink-700">

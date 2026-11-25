@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Breadcrumb } from "@/components/breadcrumb";
 import { GuideCard } from "@/components/guide-card";
 import { JsonLd } from "@/components/json-ld";
@@ -35,14 +37,17 @@ export default function BlogPage() {
       <Breadcrumb crumbs={CRUMBS} />
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">The PiCraft blog</h1>
       <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink-700">
-        Short, practical guides on the parts of design work that are not the picture: print files, platform rules and
-        the checks that save you a reprint. Where a platform publishes its rules, we link to them. Looking for exact
-        dimensions? See the size guides.
+        Practical guides on print files, platform rules and the checks that save a reprint. For exact dimensions, see
+        the{" "}
+        <Link href="/sizes" className="font-medium text-brand-700 underline underline-offset-2">
+          size guides
+        </Link>
+        .
       </p>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
-          <GuideCard key={post.slug} guide={post} showDate />
+          <GuideCard key={post.slug} guide={post} showDate showSummary />
         ))}
       </div>
     </div>

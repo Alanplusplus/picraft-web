@@ -26,78 +26,34 @@ import { getStyleFile, isStyleIndexable, styleExamples, styleLabel, stylePath } 
 export const metadata = pageMetadata({ absoluteTitle: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION, path: "/" });
 
 const STEPS = [
-  {
-    title: "Choose what you need",
-    body: "Pick a maker built for one job, such as a birthday invitation, a business card, a YouTube thumbnail or a sticker. When the idea is open-ended, use the text to image or image to image generator.",
-  },
-  {
-    title: "Answer a few plain questions",
-    body: "Type the names, dates, prices or the idea for the sticker, and upload a photo if the tool uses one. The makers write the design instructions for you. The generators take your own description.",
-  },
-  {
-    title: "Download files that are ready to use",
-    body: "In about a minute you get every file for that design: the print PDF with bleed, the web image, the transparent PNG, whichever the job needs.",
-  },
+  { title: "Choose what you need", body: "A maker for one job, or a generator for any idea." },
+  { title: "Answer a few plain questions", body: "Names, dates, prices or the idea. Add a photo if the tool uses one." },
+  { title: "Download files that are ready to use", body: "A print PDF, a web image or a transparent PNG, whichever the job needs." },
 ];
 
 const PROMISES = [
-  {
-    icon: "📐",
-    title: "The exact size, every time",
-    body: "1280×720 thumbnails, 5×7 in invitations with bleed, 3.5×2 in business cards. You never have to look up a spec.",
-  },
-  {
-    icon: "📁",
-    title: "Files you can use right away",
-    body: "Print PDFs with bleed, transparent PNGs and pure-white product shots, not just a picture to fix up later.",
-  },
-  {
-    icon: "✨",
-    title: "Prompts are optional",
-    body: "Makers ask plain questions, like names, dates or what's on the sticker, and write the design instructions for you. For full control, describe the image yourself in the text to image generator.",
-  },
-  {
-    icon: "🔎",
-    title: "Specs with sources",
-    body: "Maker pages explain the rules they follow and link to the official guidelines where they exist, such as YouTube, LinkedIn and Amazon KDP.",
-  },
-];
-
-const FORMATS = [
-  {
-    title: "Print PDF with bleed",
-    body: "Invitations, flyers, menus and business cards at 300 DPI, with bleed for your print shop and text kept inside the safe area.",
-  },
-  {
-    title: "Transparent PNG",
-    body: "Stickers and t-shirt graphics with the background removed, ready for Cricut, print-on-demand stores and cutting machines.",
-  },
-  {
-    title: "Platform-sized JPG",
-    body: "Thumbnails, banners, covers and share images at the pixel size and file weight each platform asks for.",
-  },
-  {
-    title: "Pure white product images",
-    body: "Main images with a background set to exact RGB 255, plus lifestyle and detail shots for the rest of the listing.",
-  },
+  { icon: "📐", title: "The exact size, every time", body: "1280×720 thumbnails, 5×7 in invitations with bleed, 3.5×2 in business cards." },
+  { icon: "📁", title: "Files you can use right away", body: "Print PDFs with bleed, transparent PNGs, pure-white product shots." },
+  { icon: "✨", title: "Prompts are optional", body: "Makers ask plain questions and write the design instructions for you." },
+  { icon: "🔎", title: "Specs with sources", body: "Maker pages link to the official rules, such as YouTube, LinkedIn and Amazon KDP." },
 ];
 
 const FAQ = [
   {
     q: "Is PiCraft free?",
-    a: "You can try it free. Every new visitor gets a few free credits to use on any maker, and each design uses one credit. When they are used up you can buy a credit pack (a one-time payment, and the credits never expire) or subscribe weekly or monthly, which you can cancel at any time.",
+    a: "You can try it free: new visitors get a few free credits, and each design uses one. After that you can buy a credit pack (a one-time payment, and the credits never expire) or subscribe weekly or monthly and cancel at any time.",
   },
   {
     q: "Do I need to create an account?",
-    a: "No. You start with free credits on the browser you are using, and we don't ask for your name. Your credits and your file history are linked to that browser, so use the same one to see them again. If you buy credits, our payment provider asks for your email address for the receipt, and you can use it later to restore your credits on another device.",
+    a: "No. Your credits and your file history are tied to the browser you use, and we don't ask for your name. If you buy credits, our payment provider asks for an email address for the receipt, which you can use later to restore your credits on another device.",
   },
   {
     q: "Does PiCraft have a general AI image generator?",
-    a: "PiCraft has general generators too: the text to image and image to image generators let you pick Nano Banana or GPT Image, describe the image in your own words, add up to 16 reference photos for image to image, and choose the shape and resolution. You get the original file back, uncropped. The makers go further for jobs that come with a spec. They ask plain questions, write the design instructions for you and export what the job needs, such as print PDFs with bleed, transparent PNGs or pure-white product images.",
+    a: "Yes. The text to image and image to image generators let you pick Nano Banana or GPT Image, describe the image in your own words, add up to 16 reference photos and choose the shape and resolution. GPT Image can leave the background transparent, and GPT Image 2.6 can make a short animated GIF. The makers cover jobs that come with a spec, such as print PDFs with bleed or pure-white product images.",
   },
   {
     q: "Can I use the files commercially?",
-    a: "Yes. You can use what you create for personal and commercial projects, as long as your input doesn't infringe anyone else's rights. Check trademarks and other rights before you sell or publish a design.",
+    a: "Yes, for personal and commercial projects, as long as your input doesn't infringe anyone else's rights. Check trademarks before you sell or publish a design.",
   },
   {
     q: "Can I use photos of other people?",
@@ -105,7 +61,7 @@ const FAQ = [
   },
   {
     q: "Will the text on my design be spelled correctly?",
-    a: "PiCraft puts your text into the design and tells the AI to spell it exactly, but AI can still make mistakes. Read every name, date, price and phone number before you print or publish, and generate again if something is off.",
+    a: "PiCraft tells the AI to spell your text exactly, but AI can still make mistakes. Read every name, date, price and phone number before you print or publish, and generate again if something is off.",
   },
   {
     q: "How long does a design take?",
@@ -165,7 +121,6 @@ function CategorySection({ category }: { category: (typeof CATEGORIES)[number] }
               {category.name}
             </Link>
           </h2>
-          <p className="mt-1 text-sm text-ink-500">{category.description}</p>
         </div>
         <Link
           href={categoryPath(category.id)}
@@ -231,8 +186,8 @@ export default function HomePage() {
                 AI image tools for the jobs <span className="text-brand-600">you actually have.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-700">
-                Start from a specific job, such as an invitation, a thumbnail, a sticker or a photo trend, and get a
-                finished file at the right size. Or describe any image, or upload a photo, and let the AI draw it.
+                Make invitations, thumbnails, stickers and photo trends at the right size, or describe any image and
+                let the AI draw it.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <TrackedLink
@@ -305,9 +260,6 @@ export default function HomePage() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <section className="mt-16">
           <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Generate any image</h2>
-          <p className="mt-1 text-sm text-ink-500">
-            Pick Nano Banana or GPT Image, choose the shape and resolution, and get the original file back.
-          </p>
           <div className="mt-6 grid gap-4 lg:grid-cols-2">
             {getGenerators().map((generator) => (
               <GeneratorCard key={generator.slug} generator={generator} wide />
@@ -324,7 +276,6 @@ export default function HomePage() {
                     Trending photo looks
                   </Link>
                 </h2>
-                <p className="mt-1 text-sm text-ink-500">{trendCategory.description}</p>
               </div>
               <Link
                 href="/create/photo-trend-maker"
@@ -380,10 +331,6 @@ export default function HomePage() {
 
         <section className="mt-20">
           <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Why use PiCraft</h2>
-          <p className="mt-3 max-w-3xl text-ink-700">
-            Most of the work in a design is not the picture. It is the size, the bleed, the spelling and the file
-            format. PiCraft takes care of those, so the first file you download is usually the one you use.
-          </p>
           <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {PROMISES.map((item) => (
               <div key={item.title} className="rounded-2xl border border-ink-200 bg-ink-50 p-6">
@@ -397,26 +344,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mt-20">
-          <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">The files you get</h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
-            {FORMATS.map((item) => (
-              <div key={item.title} className="border-l-2 border-brand-200 pl-5">
-                <h3 className="font-semibold text-ink-950">{item.title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-ink-700">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {resourceGuides.length > 0 && (
           <section className="mt-20">
             <div className="flex items-end justify-between gap-4">
               <div>
                 <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Size guides and how-tos</h2>
-                <p className="mt-1 text-sm text-ink-500">
-                  Exact dimensions, bleed and platform rules, so the file you make is the file you need.
-                </p>
               </div>
               <Link href="/sizes" className="hidden shrink-0 text-sm font-medium text-brand-700 hover:underline sm:block">
                 All size guides →
@@ -428,15 +360,15 @@ export default function HomePage() {
               ))}
             </div>
             <p className="mt-4 text-sm text-ink-500">
-              Already have an image? Run it through the free{" "}
+              Also:{" "}
               <Link href="/tools/image-size-checker" className="font-medium text-brand-700 hover:underline">
                 image size checker
               </Link>
-              . More on the{" "}
+              ,{" "}
               <Link href="/blog" className="font-medium text-brand-700 hover:underline">
                 blog
-              </Link>{" "}
-              and in the{" "}
+              </Link>
+              ,{" "}
               <Link href="/gallery" className="font-medium text-brand-700 hover:underline">
                 design gallery
               </Link>
@@ -447,29 +379,19 @@ export default function HomePage() {
 
         <section className="mt-20 max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">Made with AI, used responsibly</h2>
-          <div className="mt-4 space-y-3 text-base leading-relaxed text-ink-700">
-            <p>
-              PiCraft uses AI image models to create the artwork. AI can slip on a letter in a name, a digit in a
-              price or a detail on a product, so proofread everything before it goes to a printer or a customer.
-            </p>
-            <p>
-              Some uses have rules of their own. Marketplaces expect product images to show what the buyer gets, and
-              many real estate listing services require edited or virtually staged photos to be labeled. Platforms such as
-              YouTube ask you to label realistic AI-generated content when you post it. Each maker page
-              explains the rules that apply to it.
-            </p>
-            <p>
-              Read more about how PiCraft works on the{" "}
-              <Link href="/about" className="font-medium text-brand-700 underline underline-offset-2">
-                About page
-              </Link>
-              , and about your data in the{" "}
-              <Link href="/privacy" className="font-medium text-brand-700 underline underline-offset-2">
-                Privacy Policy
-              </Link>
-              .
-            </p>
-          </div>
+          <p className="mt-4 text-base leading-relaxed text-ink-700">
+            AI can slip on a letter in a name or a digit in a price, so proofread before you print or publish.
+            Marketplaces, listing services and platforms such as YouTube have their own rules for edited or
+            AI-generated images, and each maker page lists the ones that apply. More on the{" "}
+            <Link href="/about" className="font-medium text-brand-700 underline underline-offset-2">
+              About page
+            </Link>{" "}
+            and in the{" "}
+            <Link href="/privacy" className="font-medium text-brand-700 underline underline-offset-2">
+              Privacy Policy
+            </Link>
+            .
+          </p>
         </section>
 
         <section className="mt-20 max-w-3xl">
@@ -494,9 +416,6 @@ export default function HomePage() {
           />
           <div className="relative">
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Ready to make your first design?</h2>
-            <p className="mx-auto mt-3 max-w-xl text-base text-ink-300">
-              New visitors get free credits and do not need an account. Pick a maker, or just describe the image you want.
-            </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <TrackedLink
                 href="/text-to-image"

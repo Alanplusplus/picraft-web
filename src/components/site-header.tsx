@@ -29,8 +29,6 @@ function Logo() {
 interface NavItem {
   href: string;
   label: string;
-  /** One line under the label in the Resources menu. */
-  hint?: string;
 }
 
 /** The things people come to do. They stay in the bar. */
@@ -43,10 +41,10 @@ const PRIMARY_LINKS: NavItem[] = [
 
 /** Reading and reference pages. They share one menu so the bar stays short; the footer lists them too. */
 const RESOURCE_LINKS: NavItem[] = [
-  { href: "/sizes", label: "Size guides", hint: "Exact pixel sizes, bleed and platform rules" },
-  { href: "/tools", label: "Free tools", hint: "Check an image against a platform's limits" },
-  { href: "/gallery", label: "Gallery", hint: "Designs made with PiCraft, with the words used" },
-  { href: "/blog", label: "Blog", hint: "How-tos for print, listings and social" },
+  { href: "/sizes", label: "Size guides" },
+  { href: "/tools", label: "Free tools" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/blog", label: "Blog" },
 ];
 
 function isActive(pathname: string, href: string): boolean {
@@ -79,7 +77,7 @@ function ResourcesMenu() {
           active || open ? "bg-ink-100 text-ink-950" : "text-ink-700 hover:bg-ink-100 hover:text-ink-950"
         }`
       }
-      width="w-72"
+      width="w-44"
     >
       <ul>
         {RESOURCE_LINKS.map((link) => (
@@ -87,10 +85,9 @@ function ResourcesMenu() {
             <Link
               href={link.href}
               aria-current={isActive(pathname, link.href) ? "page" : undefined}
-              className="block rounded-xl px-3 py-2.5 transition hover:bg-ink-50 aria-[current=page]:bg-brand-50"
+              className="block rounded-lg px-3 py-2 text-sm font-medium text-ink-950 transition hover:bg-ink-50 aria-[current=page]:bg-brand-50"
             >
-              <span className="block text-sm font-semibold text-ink-950">{link.label}</span>
-              <span className="mt-0.5 block text-xs leading-snug text-ink-500">{link.hint}</span>
+              {link.label}
             </Link>
           </li>
         ))}

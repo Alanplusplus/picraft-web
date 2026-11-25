@@ -509,6 +509,206 @@
       "approved": true,
       "style": "photo_sticker_sheet",
       "beforeAlt": "Original photo: a grey tabby cat on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_chibi_character_0_1795573483000.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Chibi character: a couple redrawn as two-heads-tall cartoon figures, one waving, on a soft peach background",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "chibi_character",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_chibi_character_1_1795573483000.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Chibi character: a golden retriever redrawn as a round, big-eyed cartoon sitting with one paw raised",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "chibi_character",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_color_pop_sweater_0_1795573483000.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Color-pop sweater portrait: a silver-haired woman in glasses in black and white behind a chunky red sweater",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "color_pop_sweater",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_color_pop_sweater_1_1795573483000.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Color-pop sweater portrait: a black-and-white golden retriever with its chin tucked into a chunky red sweater",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "color_pop_sweater",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_snow_triptych_0_1795573483000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Snow triptych: three stacked frames of a woman with wavy auburn hair in falling snow, a close-up, an umbrella and a portrait",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "snow_triptych",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_snow_triptych_1_1795573483000.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Snow triptych: three stacked frames of a bearded man laughing under a clear umbrella in falling snow",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "snow_triptych",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_neon_city_poster_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Neon city game poster: a woman with wavy auburn hair in a green tee on a palm-lined street at neon sunset",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "neon_city_poster",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_neon_city_poster_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Neon city game poster: a couple painted in the foreground with palm trees, a sports car and a pink sunset behind",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "neon_city_poster",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_wanderlust_postcard_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Wanderlust postcard collage: an instant photo of a man in a harbor town beside a lake postcard, a key and a shell",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "wanderlust_postcard",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_wanderlust_postcard_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Wanderlust postcard collage: an instant photo of a golden retriever on a harbor wall with a postcard and a map",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "wanderlust_postcard",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
+    },
+    {
+      "url": "/examples/photo-trend-maker_street_caricature_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Caricature portrait: a laughing bearded man in a grey hoodie with an oversized head, sitting cross-legged on grass",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "street_caricature",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_street_caricature_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Caricature portrait: a woman with wavy auburn hair and a big smile, resting her chin on her hand with a coffee mug",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "street_caricature",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_inked_tarot_card_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Tarot card portrait: a woman with wavy auburn hair as the figure on a hand-inked card titled THE DREAMER",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "inked_tarot_card",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_inked_tarot_card_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Tarot card portrait: a tabby cat in a red cloak on a hand-inked card with a sun, a moon and a winding path",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "inked_tarot_card",
+      "beforeAlt": "Original photo: a tabby cat with green eyes sitting on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_cinematic_stills_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_B_1791953427614.webp",
+      "alt": "Cinematic film stills: three stacked frames of a man in a park at golden hour, from a wide shot to a close-up",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "cinematic_stills",
+      "beforeAlt": "Original photo: a bearded man in a grey hoodie laughing in a sunny park"
+    },
+    {
+      "url": "/examples/photo-trend-maker_cinematic_stills_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_E_1791953427614.webp",
+      "alt": "Cinematic film stills: three stacked frames of a silver-haired woman in a sunlit kitchen, ending on a close-up",
+      "width": 1000,
+      "height": 1500,
+      "approved": true,
+      "style": "cinematic_stills",
+      "beforeAlt": "Original photo: a silver-haired woman in round glasses smiling at a kitchen table"
+    },
+    {
+      "url": "/examples/photo-trend-maker_mouse_drawn_scribble_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_C_1791953427614.webp",
+      "alt": "Mouse-drawn scribble: a couple in thick wobbly outlines with flat colors and pink cheeks on a white canvas",
+      "width": 1000,
+      "height": 1000,
+      "approved": true,
+      "style": "mouse_drawn_scribble",
+      "beforeAlt": "Original photo: a couple smiling together on a city sidewalk"
+    },
+    {
+      "url": "/examples/photo-trend-maker_mouse_drawn_scribble_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_F_1791953427614.webp",
+      "alt": "Mouse-drawn scribble: a tabby cat with green eyes drawn in a crude pixel-edged style on a white canvas",
+      "width": 1000,
+      "height": 1000,
+      "approved": true,
+      "style": "mouse_drawn_scribble",
+      "beforeAlt": "Original photo: a tabby cat with green eyes sitting on a windowsill"
+    },
+    {
+      "url": "/examples/photo-trend-maker_underwater_portrait_0_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_A_1791953427614.webp",
+      "alt": "Underwater portrait: a woman with wavy auburn hair floating in a sunlit blue pool with caustic light on her face",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "underwater_portrait",
+      "beforeAlt": "Original photo: a woman with wavy auburn hair taking a smiling selfie by a window"
+    },
+    {
+      "url": "/examples/photo-trend-maker_underwater_portrait_1_1795577300000.webp",
+      "before": "/examples/photo-trend-maker_before_D_1791953427614.webp",
+      "alt": "Underwater portrait: a golden retriever swimming toward the camera in clear blue water with bubbles",
+      "width": 1000,
+      "height": 1333,
+      "approved": true,
+      "style": "underwater_portrait",
+      "beforeAlt": "Original photo: a golden retriever sitting on a living room rug"
     }
   ]
 }

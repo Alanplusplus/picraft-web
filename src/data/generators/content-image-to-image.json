@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-23",
   "overview": {
     "heading": "How the Image to Image Generator works",
     "paragraphs": [
-      "You add one or more reference images, write what should change, and choose Nano Banana or GPT Image, a shape and a resolution. PiCraft sends your images and your words to the model you chose, exactly as they are, and gives you back the file the model made. There is no style menu and no crop, so the instruction you write is what steers the result.",
+      "You add one or more reference images, write what should change, and choose Nano Banana or GPT Image, a shape, a resolution and, with GPT Image, a transparent background or an animated GIF. PiCraft sends your images and your words to the model you chose, exactly as they are, and gives you back the file the model made. There is no style menu and no crop, so the instruction you write is what steers the result.",
       "With one image, the model starts from your photo: it can restyle it, change the light or the season, or move the subject into another setting. With several images, it can take things from each one. Refer to the images by number, in the order they appear in the form, and say what to take from each: \"the dog from the first image, the sofa from the second image\".",
-      "Every image is a new attempt, so the result can differ from what you pictured, and a second try is normal. Each image uses credits (1 for 1K, 2 for 2K, 3 for 4K) however many references you add, and the credits come back automatically when an image can't be made."
+      "Every image is a new attempt, so the result can differ from what you pictured, and a second try is normal. Each image uses credits (1 for 1K, 2 for 2K, 3 for 4K, and 2 or 3 for an animated GIF) however many references you add, and the credits come back automatically when an image can't be made."
     ]
   },
   "whatYouGet": [
@@ -23,11 +23,19 @@
     },
     {
       "title": "Your choice of model",
-      "description": "Switch between Nano Banana and GPT Image for the same photos and the same instruction, and compare the results yourself."
+      "description": "Switch between Nano Banana, GPT Image 2.6 and GPT Image 2.5 for the same photos and the same instruction, and compare the results yourself."
+    },
+    {
+      "title": "A transparent background",
+      "description": "Choose Transparent with GPT Image to get the subject as a PNG with no background, plus a JPG copy on white."
+    },
+    {
+      "title": "An animated GIF",
+      "description": "Choose Animated GIF with GPT Image 2.6 to turn a photo into a short looping GIF, with 6, 9 or 12 frames."
     },
     {
       "title": "Shapes and resolutions you choose",
-      "description": "Keep the framing of your photo by picking its shape, or pick a new one. Resolutions go from 1K to 4K, with the price shown next to each."
+      "description": "Keep the framing of your photo by picking its shape, or pick a new one. Nano Banana goes from 1K to 4K and GPT Image from 1K to 2K, with the price shown next to each."
     },
     {
       "title": "A record of your images",
@@ -49,11 +57,23 @@
     },
     {
       "title": "Combine things from several photos",
-      "description": "Use two or more references to put a pet in a room, a product next to another, or a person's outfit in a new place, as long as you have the right to use every photo."
+      "description": "Use two or more references to put a pet in a room, a product next to another, or a sofa from one photo into the room of another, as long as you have the right to use every photo."
+    },
+    {
+      "title": "Make a new picture from another picture",
+      "description": "Upload one photo and describe the picture you want made from it: the same scene as a painting, the same product in a different setting, the same room in another season. Your photo sets the subject and the layout, and your words set the rest."
     },
     {
       "title": "Redraw a sketch",
       "description": "Photograph a rough drawing, upload it and describe the finished version, such as a clean illustration or a 3D render."
+    },
+    {
+      "title": "Cut a subject out as a transparent PNG",
+      "description": "Add a photo of a product, a pet or an object, say which subject to keep and choose Transparent. The PNG has no background, so it can go onto a page, a mockup or a sticker sheet."
+    },
+    {
+      "title": "Bring a photo to life as a GIF",
+      "description": "Turn a picture of a pet, a mascot or a drawing into a short loop: it waves, blinks or tilts its head. Use a photo you own or have permission to use."
     }
   ],
   "tips": [
@@ -70,6 +90,10 @@
       "description": "With several references, write \"the first image\" and \"the second image\", in the order shown in the form. Say what to take from each one."
     },
     {
+      "title": "Say where each thing goes when you merge photos",
+      "description": "To combine references, name what to take from each one and where it should end up: \"the lamp from the second image on the desk in the first image\". A short, specific sentence gives the model less to guess."
+    },
+    {
       "title": "Pick the shape of your photo to keep its framing",
       "description": "If you edit one photo and want the same framing, choose its shape, such as 4:3 or 3:2. Choose a different shape when you want the scene recomposed."
     },
@@ -80,23 +104,35 @@
     {
       "title": "Explore small, finish large",
       "description": "Try ideas at 1K, then create the final version at 2K or 4K. A larger file is a new image, not an enlargement of the first."
+    },
+    {
+      "title": "For a transparent PNG, name the subject to keep",
+      "description": "Write \"keep only the mug and remove everything else\" and choose Transparent. A subject with a clear outline cuts out more cleanly than one that blends into its background; check the edge on a light and a dark background."
+    },
+    {
+      "title": "For a GIF, describe the motion in order",
+      "description": "Say what moves and in what order: \"the dog tilts its head, then wags its tail\". Keep the motion simple, and keep the subject large in the photo, because the frames are drawn small."
     }
   ],
   "styleGuide": {
     "heading": "Nano Banana or GPT Image?",
-    "intro": "Both models edit photos and combine references, and neither is better at everything. These are the practical differences on PiCraft. For anything else, try your own photos on both.",
+    "intro": "These models all edit photos and combine references, and none of them is better at everything. These are the practical differences on PiCraft. For anything else, try your own photos on each.",
     "items": [
       {
         "title": "Nano Banana 2.1, by Google",
         "description": "Takes up to 10 reference images, makes 14 shapes plus Auto, including 4:5, 5:4 and the strips 1:4, 4:1, 1:8 and 8:1, and offers 4K for every shape."
       },
       {
-        "title": "GPT Image 2.5, by OpenAI",
-        "description": "Takes up to 16 reference images and makes 8 shapes plus Auto at 1K only."
+        "title": "GPT Image 2.6 and 2.5, by OpenAI",
+        "description": "Both take up to 16 reference images and make 14 shapes plus Auto, including 4:5, 5:4 and the wide 2:1 and 3:1, at 1K and 2K (Auto at 1K only). Both can leave the background transparent. Only GPT Image 2.6 makes animated GIFs."
       },
       {
         "title": "The price",
-        "description": "The same for both at the same resolution, and the same however many references you add: 1 credit at 1K, 2 at 2K and 3 at 4K. GPT Image makes 1K only, so it always costs 1 credit."
+        "description": "The same for every model at the same resolution, and the same however many references you add: 1 credit at 1K, 2 at 2K and 3 at 4K (GPT Image goes up to 2K). A transparent background costs the same as an image, and an animated GIF costs 2 credits for 6 frames and 3 for 9 or 12."
+      },
+      {
+        "title": "How long each takes",
+        "description": "Measured on PiCraft in November 2026, at 1K: Nano Banana 2.1 took 10 to 34 seconds over 27 images, about 18 on average. GPT Image 2.5 took 13 to 56 seconds over 11 images, and 10 of them finished in under 30 seconds. In our own tests GPT Image 2.6 took about 20 to 40 seconds at 1K and 2K, with a transparent background and for GIFs. We do not have enough 4K runs to give a figure, so expect those to take longer. Times change with load. The earlier timings come from edits with reference images, which is what this page does."
       },
       {
         "title": "When the result matters",
@@ -118,8 +154,11 @@
   "limits": [
     "The model redraws the image, so small details can change even when you ask it not to. Check what matters, and create it again if something important is off.",
     "A result is never exactly the same twice. For a series, keep using the earlier result as a reference.",
-    "Both models apply their own safety checks and can refuse a request. When that happens no image is made and the credits are returned.",
+    "Every model applies its own safety checks and can refuse a request. When that happens no image is made and the credits are returned.",
     "The pixel size is set by the model. If a place needs an exact size or a pure white background, use the matching maker, which crops and exports to that spec.",
-    "Only use photos you own or have permission to use. Impersonating real people or making images that mislead people is not allowed under the [terms](/terms), and you are responsible for what you create and publish."
+    "Only use photos you own or have permission to use. Impersonating real people or making images that mislead people is not allowed under the [terms](/terms), and you are responsible for what you create and publish.",
+    "A GIF is a short loop drawn on one sheet, not a video. The frames are small (about 960 px square for 6 frames, 820 px for 12), the motion is simple, and the subject can change slightly from frame to frame.",
+    "A transparent background comes from GPT Image only, and GIFs from GPT Image 2.6 only. Nano Banana and GPT Image 2.5 do not make GIFs.",
+    "PiCraft makes PNG, JPG and GIF files. It does not make SVG or other vector files."
   ]
 }

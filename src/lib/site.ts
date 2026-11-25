@@ -27,7 +27,7 @@ export const MIN_AGE = 18;
  * The models that make the images, named as the Acceptable Use Policy, the Terms and the About page must name them.
  * Keep in step with backend/generators/models.json and backend/app/services/engines.py.
  */
-export const MODEL_DISCLOSURE = "Nano Banana 2.1 (Google) and GPT Image 2.5 (OpenAI)";
+export const MODEL_DISCLOSURE = "Nano Banana 2.1 (Google) and GPT Image 2.5 and 2.6 (OpenAI)";
 
 /** How long records of Prompt Sift verdicts are kept (the backend's MODERATION_LOG_RETENTION_DAYS). */
 export const SAFETY_LOG_RETENTION_DAYS = 90;

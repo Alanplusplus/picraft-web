@@ -139,7 +139,7 @@ function collectText(value: unknown, out: string[] = []): string[] {
 
 /** Words a visitor can read on the scene page, outside the generator form. */
 export function pageWordCount(scene: Scene, content: SceneContent | undefined): number {
-  const text = stripInline(collectText([scene.seo.intro, scene.steps, scene.specs, scene.faq, content]).join(" "));
+  const text = stripInline(collectText([scene.steps, scene.specs, scene.faq, content]).join(" "));
   return text.split(/\s+/).filter(Boolean).length;
 }
 

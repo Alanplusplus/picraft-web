@@ -154,7 +154,6 @@ export function GeneratorPage({ generator }: { generator: Generator }) {
           summary={generator.summary}
           form={<ImageGenerator generator={toClientGenerator(generator)} />}
           steps={generator.steps}
-          intro={generator.seo.intro}
         />
 
         {examples.length > 0 && (
@@ -162,9 +161,8 @@ export function GeneratorPage({ generator }: { generator: Generator }) {
             <h2 className={H2}>Made with the {generator.name}</h2>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
               {imageMode
-                ? "Every image below shows the model, the shape, the resolution and the exact words that were typed. Drag the handle on a single-photo example to compare the original with the result."
-                : "Every image below shows the model, the shape, the resolution and the exact words that were typed. Nothing was retouched; the files are only resized for this page."}{" "}
-              Copy a prompt into the form above to start from it.
+                ? "Each image shows its model, shape, resolution and the exact words typed. Drag the handle on a single-photo example to compare."
+                : "Each image shows its model, shape, resolution and the exact words typed. Nothing was retouched; the files are only resized."}
             </p>
             <div className="mt-6 columns-1 gap-4 sm:columns-2 lg:columns-3">
               {examples.map((example) => (
@@ -179,13 +177,14 @@ export function GeneratorPage({ generator }: { generator: Generator }) {
         <section className="mt-16">
           <h2 className={H2}>Models, shapes and resolutions</h2>
           <div className="mt-6 overflow-x-auto rounded-xl border border-ink-200">
-            <table className="w-full min-w-[640px] text-left text-sm">
+            <table className="w-full min-w-[760px] text-left text-sm">
               <thead className="bg-ink-50 text-ink-700">
                 <tr>
                   <th className="px-4 py-3 font-semibold">Model</th>
                   <th className="px-4 py-3 font-semibold">Made by</th>
                   {imageMode && <th className="px-4 py-3 font-semibold">Reference images</th>}
                   <th className="px-4 py-3 font-semibold">Resolution, cost and shapes</th>
+                  <th className="px-4 py-3 font-semibold">Also makes</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-100">
@@ -206,6 +205,23 @@ export function GeneratorPage({ generator }: { generator: Generator }) {
                             </li>
                           ))}
                       </ul>
+                    </td>
+                    <td className="px-4 py-3 text-ink-700">
+                      {model.transparent || model.animation ? (
+                        <ul className="space-y-1">
+                          {model.transparent && <li>Transparent background · same credits as an image</li>}
+                          {model.animation && (
+                            <li>
+                              Animated GIF ·{" "}
+                              {Object.entries(model.animation.credits)
+                                .map(([frames, credits]) => `${frames} frames ${credits} ${credits === 1 ? "credit" : "credits"}`)
+                                .join(", ")}
+                            </li>
+                          )}
+                        </ul>
+                      ) : (
+                        <span className="text-ink-500">–</span>
+                      )}
                     </td>
                   </tr>
                 ))}

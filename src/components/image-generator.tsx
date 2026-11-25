@@ -8,9 +8,12 @@ import { trackEvent } from "@/lib/analytics";
 import { useCheckoutDraft } from "@/lib/checkout-draft";
 import { prepareUpload } from "@/lib/image-file";
 import type { PinShare } from "@/lib/pinterest-save";
+import { describeRefusal } from "@/lib/refusal";
 import type { ClientGenerator, ImageModel, TaskView } from "@/lib/types";
 
 import { CreditsDialog, type PendingTask } from "./credits-dialog";
+import { CreditsNudge } from "./credits-nudge";
+import { RefusalHelp } from "./refusal-help";
 import { ResultFiles } from "./result-files";
 import { Select } from "./select";
 import { useSession } from "./session-provider";
@@ -21,6 +24,16 @@ const POLL_INTERVAL_MS = 3000;
 // 4K images take longer than the 1K ones the makers produce.
 const POLL_TIMEOUT_MS = 8 * 60 * 1000;
 const RESOLUTION_ORDER = ["1K", "2K", "4K"];
+
+/** What the visitor wants back: a picture, a picture with a see-through background, or an animated GIF. */
+type OutputKind = "image" | "transparent" | "gif";
+
+const SPEED_LABELS: Record<string, string> = { slow: "Slow", normal: "Normal", fast: "Fast" };
+
+/** "GPT Image 2.6": the name alone would not tell two versions of a model apart. */
+function modelLabel(model: Pick<ImageModel, "name" | "version">): string {
+  return `${model.name} ${model.version}`;
+}
 
 const SHAPE_NAMES: Record<string, string> = {
   "1:1": "Square",
@@ -33,6 +46,10 @@ const SHAPE_NAMES: Record<string, string> = {
   "9:16": "Vertical, full screen",
   "16:9": "Widescreen",
   "21:9": "Cinematic",
+  "2:1": "Wide banner",
+  "1:2": "Tall banner",
+  "3:1": "Panoramic banner",
+  "1:3": "Tall panorama",
   "1:4": "Tall strip",
   "4:1": "Wide strip",
   "1:8": "Very tall strip",
@@ -60,6 +77,9 @@ interface GeneratorDraft {
   prompt: string;
   ratio: string;
   resolution: string;
+  output?: string;
+  frames?: number;
+  speed?: string;
   /** The links of the reference photos that were already uploaded. The server holds the photos. */
   refs: string[];
   /** The finished design that was on screen. */
@@ -83,6 +103,33 @@ function ModelCard({ model, selected, onSelect }: { model: ImageModel; selected:
       <span className="block text-xs text-ink-500">
         {model.version} · {model.maker}
       </span>
+    </button>
+  );
+}
+
+function ChoiceCard({
+  title,
+  detail,
+  selected,
+  onSelect,
+}: {
+  title: string;
+  detail: string;
+  selected: boolean;
+  onSelect: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      role="radio"
+      aria-checked={selected}
+      onClick={onSelect}
+      className={`rounded-xl border px-3 py-2 text-left transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+        selected ? "border-brand-500 bg-brand-50 ring-1 ring-brand-500" : "border-ink-300 bg-white hover:border-ink-400"
+      }`}
+    >
+      <span className="block text-sm font-semibold text-ink-950">{title}</span>
+      <span className="block text-xs text-ink-500">{detail}</span>
     </button>
   );
 }
@@ -122,6 +169,9 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
   const [prompt, setPrompt] = useState("");
   const [ratio, setRatio] = useState("auto");
   const [resolution, setResolution] = useState("1K");
+  const [output, setOutput] = useState<OutputKind>("image");
+  const [frames, setFrames] = useState(6);
+  const [speed, setSpeed] = useState("normal");
   const [refs, setRefs] = useState<RefImage[]>([]);
   // Finished designs being copied into reference images (see addFromTask), and why one could not be.
   const [fetching, setFetching] = useState(0);
@@ -131,7 +181,11 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
   const [run, setRun] = useState(0);
   // The window that sells credits when Create is pressed without enough of them.
   const [payOpen, setPayOpen] = useState(false);
+  // Where the credits window was opened from, for analytics: pressing Create or one of the nudges.
+  const [paySource, setPaySource] = useState("generator");
   const [error, setError] = useState<string | null>(null);
+  // The last request was stopped by the safety check: show how to ask for a second look.
+  const [appeal, setAppeal] = useState<{ requestId?: string } | null>(null);
   const [task, setTask] = useState<TaskView | null>(null);
   // The last attempt failed and its credits came back, so trying again is safe.
   const [refunded, setRefunded] = useState(false);
@@ -164,7 +218,7 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
         setRefError(res.code === 404 ? "Design not found." : res.message);
         return;
       }
-      const pictures = design.files.filter((item) => item.format !== "pdf");
+      const pictures = design.files.filter((item) => item.format !== "pdf" && item.format !== "gif");
       const file = fileId ? pictures.find((item) => item.id === fileId) : pictures[0];
       if (design.status !== "done" || !file) {
         setRefError("This design has no picture that can be used as a reference.");
@@ -191,6 +245,9 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
       prompt,
       ratio,
       resolution,
+      output,
+      frames,
+      speed,
       refs: refs.flatMap((ref) => (ref.url ? [ref.url] : [])),
       taskId: phase === "done" && task ? task.task_id : undefined,
     }),
@@ -199,6 +256,9 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
       if (typeof draft.prompt === "string") setPrompt(draft.prompt.slice(0, generator.maxPromptLength));
       if (typeof draft.ratio === "string") setRatio(draft.ratio);
       if (typeof draft.resolution === "string") setResolution(draft.resolution);
+      if (draft.output === "image" || draft.output === "transparent" || draft.output === "gif") setOutput(draft.output);
+      if (typeof draft.frames === "number") setFrames(draft.frames);
+      if (typeof draft.speed === "string") setSpeed(draft.speed);
       const links = imageMode && Array.isArray(draft.refs) ? draft.refs.filter((url) => typeof url === "string") : [];
       const restored = links.map((url) => ({ id: nextId.current++, preview: url, url, uploading: false }));
       setRefs(restored);
@@ -217,13 +277,26 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
   const model = generator.models.find((item) => item.id === modelId) ?? generator.models[0];
   // The shape and the resolution the visitor picked may not exist for another model; fall back to what does.
   const shape = model.aspectRatios.find((item) => item.value === ratio) ?? model.aspectRatios[0];
+  // What the model can return besides a picture; a choice made for another model falls back to a picture.
+  const gifSpec = model.animation;
+  const outputKind: OutputKind = output === "gif" && gifSpec ? "gif" : output === "transparent" && model.transparent ? "transparent" : "image";
+  const frameChoices = gifSpec ? Object.keys(gifSpec.credits).map(Number).sort((a, b) => a - b) : [];
+  const effectiveFrames = frameChoices.includes(frames) ? frames : (frameChoices[0] ?? 6);
+  const speedChoices = gifSpec ? Object.keys(gifSpec.speeds) : [];
+  const effectiveSpeed = speedChoices.includes(speed) ? speed : speedChoices.includes("normal") ? "normal" : (speedChoices[0] ?? "normal");
+  const gifModel = generator.models.find((item) => item.animation);
   const wanted = RESOLUTION_ORDER.indexOf(resolution);
-  const effectiveResolution = shape.resolutions.includes(resolution)
-    ? resolution
-    : ([...shape.resolutions].reverse().find((item) => RESOLUTION_ORDER.indexOf(item) <= wanted) ??
-      shape.resolutions[0]);
-  const cost = model.credits[effectiveResolution] ?? 1;
-  const minCost = Math.min(...Object.values(model.credits));
+  // A GIF is made at the size the model gives it, which is a 1K image.
+  const effectiveResolution =
+    outputKind === "gif"
+      ? "1K"
+      : shape.resolutions.includes(resolution)
+        ? resolution
+        : ([...shape.resolutions].reverse().find((item) => RESOLUTION_ORDER.indexOf(item) <= wanted) ??
+          shape.resolutions[0]);
+  const cost =
+    outputKind === "gif" && gifSpec ? (gifSpec.credits[String(effectiveFrames)] ?? 1) : (model.credits[effectiveResolution] ?? 1);
+  const minCost = Math.min(...Object.values(model.credits), ...(gifSpec ? Object.values(gifSpec.credits) : []));
 
   const uploading = fetching > 0 || refs.some((ref) => ref.uploading);
   const tooMany = imageMode && refs.length > model.maxImages;
@@ -242,6 +315,8 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
       model: model.id,
       shape: shape.value,
       resolution: effectiveResolution,
+      output: outputKind,
+      frames: outputKind === "gif" ? effectiveFrames : undefined,
       refs: imageMode ? refs.length : undefined,
       ...extra,
     };
@@ -253,12 +328,12 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
     setRefError(null);
     const room = model.maxImages - refs.length;
     if (room <= 0) {
-      setError(`${model.name} takes up to ${model.maxImages} reference images.`);
+      setError(`${modelLabel(model)} takes up to ${model.maxImages} reference images.`);
       return;
     }
     const picked = Array.from(files).slice(0, room);
     if (files.length > room)
-      setError(`${model.name} takes up to ${model.maxImages} reference images; the rest were skipped.`);
+      setError(`${modelLabel(model)} takes up to ${model.maxImages} reference images; the rest were skipped.`);
 
     // The session starts when the browser is idle; make sure it exists before the first upload.
     if (!ready) await refresh();
@@ -321,8 +396,14 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
     void start();
   }
 
+  function openCredits(source: string) {
+    setPaySource(source);
+    setPayOpen(true);
+  }
+
   async function start() {
     setError(null);
+    setAppeal(null);
 
     if (imageMode && refs.length === 0) {
       setError("Add at least one reference image.");
@@ -330,14 +411,14 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
     }
     if (tooMany) {
       setError(
-        `${model.name} takes up to ${model.maxImages} reference images. Remove ${refs.length - model.maxImages}.`,
+        `${modelLabel(model)} takes up to ${model.maxImages} reference images. Remove ${refs.length - model.maxImages}.`,
       );
       return;
     }
 
     // Not enough credits: the form stays exactly as it is and the credits window opens on top of it.
     if (short) {
-      setPayOpen(true);
+      openCredits("generator");
       return;
     }
 
@@ -357,21 +438,16 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
       aspect_ratio: shape.value,
       resolution: effectiveResolution,
       images: imageMode ? refs.flatMap((ref) => (ref.url ? [ref.url] : [])) : [],
+      transparent: outputKind === "transparent" ? true : undefined,
+      animation: outputKind === "gif" ? { frames: effectiveFrames, speed: effectiveSpeed } : undefined,
     });
     if (res.code !== 200 || !res.data) {
       setError(res.message);
       setPhase("idle");
-      const reason =
-        res.code === 402
-          ? "no_credits"
-          : res.code === 0
-            ? "network"
-            : res.code === 422
-              ? "moderation"
-              : res.code === 429
-                ? "rate_limited"
-                : "rejected";
-      trackEvent("generate_fail", eventParams({ reason }));
+      // A request the safety check or the pause stopped is `generate_blocked`, not a failure (see lib/refusal.ts).
+      const refusal = describeRefusal(res.code, res.data);
+      if (refusal.appealable) setAppeal({ requestId: refusal.requestId });
+      trackEvent(refusal.event, eventParams({ reason: refusal.reason }));
       if (res.code === 402) await refresh();
       return;
     }
@@ -387,7 +463,18 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
     path: `/${generator.slug}`,
   };
 
-  const downloads = [`The original file, exactly as ${model.name} makes it`, "A smaller JPG copy for sharing"];
+  const downloads =
+    outputKind === "gif"
+      ? [`The animated GIF, exactly as ${modelLabel(model)} makes it`]
+      : outputKind === "transparent"
+        ? [`The transparent PNG, exactly as ${modelLabel(model)} makes it`, "A JPG copy on a white background"]
+        : [`The original file, exactly as ${modelLabel(model)} makes it`, "A smaller JPG copy for sharing"];
+  const outputDetail =
+    outputKind === "gif"
+      ? `Animated GIF · ${effectiveFrames} frames · ${(SPEED_LABELS[effectiveSpeed] ?? effectiveSpeed).toLowerCase()}`
+      : outputKind === "transparent"
+        ? "Transparent background"
+        : "";
   // The stage is drawn in the shape that was asked for; Auto is shown square because the model decides.
   const stageRatio = /^\d+:\d+$/.test(shape.value) ? shape.value.replace(":", " / ") : "1 / 1";
 
@@ -395,7 +482,8 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
     title: generator.name,
     image: imageMode ? refs[0]?.preview : null,
     details: [
-      `${model.name} · ${shape.value === "auto" ? "Auto shape" : shape.value} · ${effectiveResolution}`,
+      `${modelLabel(model)} · ${shape.value === "auto" ? "Auto shape" : shape.value} · ${effectiveResolution}`,
+      outputDetail,
       prompt.trim() ? `“${prompt.trim().replace(/\s+/g, " ").slice(0, 80)}”` : "",
       imageMode && refs.length > 1 ? `${refs.length} reference images` : "",
     ].filter(Boolean),
@@ -416,11 +504,23 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
         input={
           <div className="panel p-5 sm:p-6">
             <form onSubmit={onSubmit} className="space-y-4">
+              {outOfCredits && !busy && phase !== "done" && (
+                <CreditsNudge
+                  placement="form"
+                  source="generator"
+                  credits={account?.credits ?? 0}
+                  onOpen={() => openCredits("generator_nudge")}
+                />
+              )}
               <div>
                 <p id="l-model" className="mb-1 block text-sm font-medium text-ink-900">
                   Model
                 </p>
-                <div role="radiogroup" aria-labelledby="l-model" className="grid grid-cols-2 gap-2">
+                <div
+                  role="radiogroup"
+                  aria-labelledby="l-model"
+                  className={`grid gap-2 ${generator.models.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}
+                >
                   {generator.models.map((item) => (
                     <ModelCard
                       key={item.id}
@@ -509,7 +609,7 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
                     </p>
                   )}
                   <p className="mt-1.5 text-xs text-ink-500">
-                    JPG, PNG or WebP, up to {model.maxImages} images for {model.name}.
+                    JPG, PNG or WebP, up to {model.maxImages} images.
                   </p>
                   <UploadNotice />
                 </div>
@@ -537,8 +637,101 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
                 </p>
               </div>
 
+              {(model.transparent || gifSpec) && (
+                <div>
+                  <p id="l-output" className="mb-1 block text-sm font-medium text-ink-900">
+                    Result
+                  </p>
+                  <div
+                    role="radiogroup"
+                    aria-labelledby="l-output"
+                    className={`grid gap-2 ${model.transparent && gifSpec ? "grid-cols-3" : "grid-cols-2"}`}
+                  >
+                    <ChoiceCard
+                      title="Image"
+                      detail="PNG and JPG"
+                      selected={outputKind === "image"}
+                      onSelect={() => setOutput("image")}
+                    />
+                    {model.transparent && (
+                      <ChoiceCard
+                        title="Transparent"
+                        detail="PNG, no background"
+                        selected={outputKind === "transparent"}
+                        onSelect={() => setOutput("transparent")}
+                      />
+                    )}
+                    {gifSpec && (
+                      <ChoiceCard
+                        title="Animated GIF"
+                        detail="A short loop"
+                        selected={outputKind === "gif"}
+                        onSelect={() => setOutput("gif")}
+                      />
+                    )}
+                  </div>
+                  {outputKind === "transparent" && (
+                    <p className="mt-1.5 text-xs text-ink-500">
+                      Same credits as an image. The JPG copy is on white.
+                    </p>
+                  )}
+                </div>
+              )}
+              {!model.transparent && !gifSpec && gifModel && (
+                <p className="text-xs text-ink-500">
+                  Need a transparent background or an animated GIF?{" "}
+                  <button
+                    type="button"
+                    onClick={() => setModelId(gifModel.id)}
+                    className="font-medium text-brand-700 underline hover:text-brand-800"
+                  >
+                    Switch to {modelLabel(gifModel)}
+                  </button>
+                  .
+                </p>
+              )}
+              {outputKind === "gif" && gifSpec && (
+                <div>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <label id="l-frames" className="mb-1 block text-sm font-medium text-ink-900">
+                        Frames
+                      </label>
+                      <Select
+                        id="f-frames"
+                        labelledBy="l-frames"
+                        options={frameChoices.map((count) => ({
+                          value: String(count),
+                          label: `${count} frames · ${creditsLabel(gifSpec.credits[String(count)] ?? 1)}`,
+                        }))}
+                        value={String(effectiveFrames)}
+                        onChange={(value) => setFrames(Number(value))}
+                      />
+                    </div>
+                    <div>
+                      <label id="l-speed" className="mb-1 block text-sm font-medium text-ink-900">
+                        Speed
+                      </label>
+                      <Select
+                        id="f-speed"
+                        labelledBy="l-speed"
+                        options={speedChoices.map((value) => ({
+                          value,
+                          label: `${SPEED_LABELS[value] ?? value} · ${gifSpec.speeds[value]} ms`,
+                        }))}
+                        value={effectiveSpeed}
+                        onChange={setSpeed}
+                      />
+                    </div>
+                  </div>
+                  <p className="mt-1.5 text-xs text-ink-500">
+                    More frames means a smaller picture. Describe the motion: &ldquo;waves, then blinks&rdquo;.
+                  </p>
+                </div>
+              )}
+
               {/* A model with one resolution has nothing to choose, so it gets a line of text instead of a menu. */}
-              <div className={`grid gap-4 ${shape.resolutions.length > 1 ? "sm:grid-cols-2" : ""}`}>
+              <div className={`grid gap-4 ${outputKind !== "gif" && shape.resolutions.length > 1 ? "sm:grid-cols-2" : ""}`}>
                 <div>
                   <label id="l-shape" className="mb-1 block text-sm font-medium text-ink-900">
                     Shape
@@ -550,13 +743,18 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
                     value={shape.value}
                     onChange={setRatio}
                   />
-                  {shape.resolutions.length === 1 && (
+                  {outputKind !== "gif" && shape.resolutions.length === 1 && (
                     <p className="mt-1.5 text-xs text-ink-500">
-                      {model.name} makes this at {effectiveResolution} · {creditsLabel(cost)} per image.
+                      {effectiveResolution} · {creditsLabel(cost)} per image.
+                    </p>
+                  )}
+                  {outputKind === "gif" && (
+                    <p className="mt-1.5 text-xs text-ink-500">
+                      {creditsLabel(cost)} per GIF, at about 1K size.
                     </p>
                   )}
                 </div>
-                {shape.resolutions.length > 1 && (
+                {outputKind !== "gif" && shape.resolutions.length > 1 && (
                   <div>
                     <label id="l-resolution" className="mb-1 block text-sm font-medium text-ink-900">
                       Resolution
@@ -574,30 +772,31 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
                   </div>
                 )}
               </div>
-              {shape.value === "auto" && (
+              {shape.value === "auto" && outputKind !== "gif" && (
                 <p className="-mt-2 text-xs text-ink-500">
-                  Auto lets {model.name} choose the shape.
+                  Auto lets the model choose the shape.
                   {shape.resolutions.length === 1 &&
                     (model.aspectRatios.some((item) => item.resolutions.length > 1)
-                      ? ` It makes Auto images at ${shape.resolutions[0]} only, so pick a shape to unlock more resolutions.`
-                      : ` ${model.name} makes every shape at ${shape.resolutions[0]}.`)}
+                      ? ` ${shape.resolutions[0]} only; pick a shape for more resolutions.`
+                      : ` Every shape is made at ${shape.resolutions[0]}.`)}
                 </p>
               )}
 
               {tooMany && (
                 <p className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-700">
-                  {model.name} takes up to {model.maxImages} reference images. Remove {refs.length - model.maxImages} to
+                  {modelLabel(model)} takes up to {model.maxImages} reference images. Remove {refs.length - model.maxImages} to
                   continue.
                 </p>
               )}
               {error && <p className="rounded-lg bg-brand-50 px-3 py-2 text-sm text-brand-700">{error}</p>}
+              {appeal && <RefusalHelp requestId={appeal.requestId} />}
 
-              {short && !busy && (
+              {short && !busy && !outOfCredits && (
                 <p className="text-center text-xs text-ink-500">
                   You have {creditsLabel(account?.credits ?? 0)} and this needs {cost}.{" "}
                   {cost > minCost
-                    ? "Pick a lower resolution, or press Create to add credits; what you entered stays here."
-                    : "Press Create to add credits; what you entered stays here."}
+                    ? "Pick a lower resolution, or press Create to add credits."
+                    : "Press Create to add credits; what you entered stays."}
                 </p>
               )}
               <button
@@ -622,15 +821,31 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
         }
         output={
           phase === "done" && task ? (
-            <ResultFiles key={task.task_id} task={task} source="generator" share={share} before={before} />
+            <>
+              <ResultFiles key={task.task_id} task={task} source="generator" share={share} before={before} />
+              {outOfCredits && (
+                <div className="mt-4">
+                  <CreditsNudge
+                    placement="result"
+                    source="generator"
+                    credits={account?.credits ?? 0}
+                    onOpen={() => openCredits("generator_result")}
+                  />
+                </div>
+              )}
+            </>
           ) : phase === "submitting" || phase === "processing" ? (
             <StageWorking
               ratio={stageRatio}
               elapsed={elapsed}
               label="Creating…"
-              hint="Most images take 30–90 seconds, 4K a little longer. You can keep this tab open."
+              hint={
+                outputKind === "gif"
+                  ? "A GIF takes about 25–40 seconds. You can keep this tab open."
+                  : "Most images take 10–35 seconds, 4K longer. You can keep this tab open."
+              }
               backdrop={before}
-              expectedSeconds={effectiveResolution === "4K" ? 120 : 75}
+              expectedSeconds={outputKind === "gif" ? 45 : effectiveResolution === "4K" ? 90 : 40}
             />
           ) : phase === "failed" ? (
             <StageFailed refunded={refunded} />
@@ -642,7 +857,7 @@ export function ImageGenerator({ generator }: { generator: ClientGenerator }) {
       <CreditsDialog
         open={payOpen}
         onClose={() => setPayOpen(false)}
-        source="generator"
+        source={paySource}
         task={pending}
         enough={!short}
         onCreate={() => {

@@ -34,7 +34,9 @@
  * credit the packs and the plans still earn something (the Studio pack and the Monthly plan reach break even at
  * about $0.05), and they lose money only above that when every credit is used: the Monthly plan is sound at the
  * usual cost, and better still because some of its credits expire unused at the end of the month. 2K and 4K cost 2 and 3
- * credits (backend/generators/models.json), and an edit costs 1 or 2 (backend/app/services/edits.py). Re-do this
+ * credits and an animated GIF 2 or 3 (backend/generators/models.json). Measured through OpenRouter in November 2026: a square 6-frame GIF at
+ * low quality cost $0.04 to $0.05 and a 12-frame one about $0.06 (a 16:9 one was only measured at medium quality, $0.12);
+ * a GPT Image 2K image at medium quality cost $0.03 to $0.10. An edit costs 1 or 2 (backend/app/services/edits.py). Re-do this
  * table when the model prices or the Waffo fees change, and when the Waffo products' descriptions are updated, keep
  * the credit counts there in step with this file.
  */
@@ -49,7 +51,6 @@ export interface CreditPack {
   priceCents: number;
   /** A short label on the card, such as "Most popular". */
   tag?: string;
-  blurb: string;
 }
 
 export interface SubscriptionPlan {
@@ -66,7 +67,6 @@ export interface SubscriptionPlan {
    */
   validHours: number;
   tag?: string;
-  blurb: string;
 }
 
 export const CREDIT_PACKS: readonly CreditPack[] = [
@@ -75,7 +75,6 @@ export const CREDIT_PACKS: readonly CreditPack[] = [
     name: "Starter",
     credits: 30,
     priceCents: 299,
-    blurb: "Try a few designs, such as a banner, a sticker sheet and a product mockup.",
   },
   {
     id: "creator",
@@ -83,14 +82,12 @@ export const CREDIT_PACKS: readonly CreditPack[] = [
     credits: 100,
     priceCents: 899,
     tag: "Most popular",
-    blurb: "For a shop or channel that needs new artwork every now and then.",
   },
   {
     id: "studio",
     name: "Studio",
     credits: 400,
     priceCents: 2499,
-    blurb: "The lowest price per credit of the packs, for batches and client work.",
   },
 ];
 
@@ -102,7 +99,6 @@ export const SUBSCRIPTION_PLANS: readonly SubscriptionPlan[] = [
     priceCents: 499,
     interval: "week",
     validHours: 7 * 24 + 12,
-    blurb: "For a busy week: a launch, a campaign or a batch of listings. Cancel any time.",
   },
   {
     id: "monthly",
@@ -113,7 +109,6 @@ export const SUBSCRIPTION_PLANS: readonly SubscriptionPlan[] = [
     // A month is 28 to 31 days; the next renewal replaces what is left, so this only matters after a cancellation.
     validHours: 31 * 24 + 12,
     tag: "Best value",
-    blurb: "150 credits every month at a lower price per credit than the weekly plan. Cancel any time.",
   },
 ];
 
@@ -140,13 +135,13 @@ export function planPriceLabel(plan: Pick<SubscriptionPlan, "priceCents" | "inte
 }
 
 /** What the browser needs to draw a pack or a plan. */
-export type ClientPack = Pick<CreditPack, "id" | "name" | "credits" | "priceCents" | "tag" | "blurb">;
-export type ClientPlan = Pick<SubscriptionPlan, "id" | "name" | "credits" | "priceCents" | "interval" | "tag" | "blurb">;
+export type ClientPack = Pick<CreditPack, "id" | "name" | "credits" | "priceCents" | "tag">;
+export type ClientPlan = Pick<SubscriptionPlan, "id" | "name" | "credits" | "priceCents" | "interval" | "tag">;
 
-export function toClientPack({ id, name, credits, priceCents, tag, blurb }: CreditPack): ClientPack {
-  return { id, name, credits, priceCents, tag, blurb };
+export function toClientPack({ id, name, credits, priceCents, tag }: CreditPack): ClientPack {
+  return { id, name, credits, priceCents, tag };
 }
 
-export function toClientPlan({ id, name, credits, priceCents, interval, tag, blurb }: SubscriptionPlan): ClientPlan {
-  return { id, name, credits, priceCents, interval, tag, blurb };
+export function toClientPlan({ id, name, credits, priceCents, interval, tag }: SubscriptionPlan): ClientPlan {
+  return { id, name, credits, priceCents, interval, tag };
 }

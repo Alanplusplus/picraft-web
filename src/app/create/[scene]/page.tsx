@@ -123,7 +123,6 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
           summary={scene.summary}
           form={<SceneGenerator scene={toClientScene(scene)} styleLinks={getStyleLinks(scene.slug)} />}
           steps={scene.steps}
-          intro={scene.seo.intro}
         />
 
         {examples.length > 0 && (
@@ -133,9 +132,8 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
               <>
                 <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
                   {gallery
-                    ? "Drag the handle on the first picture to compare the original with the result. On the others, the small photo in the corner is the original."
-                    : "Drag the handle on any photo to compare the original with the result."}
-                  {styleFile ? ` Pick a ${styleFile.noun} to open it with that ${styleFile.noun} already selected.` : " Use the form above to try it with your own photo."}
+                    ? "Drag the handle on the first picture to compare. On the others, the small photo in the corner is the original."
+                    : "Drag the handle on a photo to compare it with the original."}
                 </p>
                 <ul className={`mt-6 grid gap-4 ${showcasePortrait ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
                   {showcase.map((example, index) => {
@@ -277,10 +275,6 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
         {styleFile && styleEntries.length > 0 && (
           <section className="mt-16">
             <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">{styleFile.collection}</h2>
-            <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink-700">
-              Each {styleFile.noun} has its own page with examples, ideas for what to write and answers to common
-              questions. Open one to start with that {styleFile.noun} already selected.
-            </p>
             <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
               {styleEntries.map((entry) => {
                 const cover = styleExamples(scene.slug, entry)[0];
