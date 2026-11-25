@@ -135,14 +135,30 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
                     ? "Drag the handle on the first picture to compare. On the others, the small photo in the corner is the original."
                     : "Drag the handle on a photo to compare it with the original."}
                 </p>
-                <ul className={`mt-6 grid gap-4 ${showcasePortrait ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
+                {/* Many looks: a masonry of small tiles, so pictures of any shape sit at their own ratio. */}
+                <ul
+                  className={
+                    gallery
+                      ? "mt-6 columns-2 gap-3 sm:columns-3 md:columns-4 lg:columns-5"
+                      : `mt-6 grid gap-4 ${showcasePortrait ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`
+                  }
+                >
                   {showcase.map((example, index) => {
                     const entry = styleFile?.styles.find((item) => item.value === example.style);
                     const label = entry && styleFile ? styleLabel(scene, styleFile, entry) : undefined;
                     const href = entry && styleFile && isStyleIndexable(styleFile, entry) ? stylePath(scene.slug, entry) : "#create";
                     const beforeSrc = example.before ?? example.url;
                     const beforeAlt = example.beforeAlt ?? "Original photo before editing";
-                    const caption = (
+                    const caption = gallery ? (
+                      <>
+                        <span className="text-[13px] font-semibold leading-snug text-ink-950 group-hover:text-brand-700">
+                          {label ?? "Try it with your own photo"}
+                        </span>
+                        <span aria-hidden="true" className="shrink-0 text-sm font-semibold text-brand-700">
+                          →
+                        </span>
+                      </>
+                    ) : (
                       <>
                         <span className="text-sm font-semibold leading-snug text-ink-950 group-hover:text-brand-700">
                           {label ?? "Try it with your own photo"}
@@ -152,24 +168,27 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
                         </span>
                       </>
                     );
-                    const captionClass = "group flex flex-1 flex-wrap items-center justify-between gap-x-2 gap-y-1.5 border-t border-ink-200 px-3 py-2.5 hover:bg-brand-50";
+                    const captionClass = gallery
+                      ? "group flex flex-1 items-center justify-between gap-2 border-t border-ink-200 px-2.5 py-2 hover:bg-brand-50"
+                      : "group flex flex-1 flex-wrap items-center justify-between gap-x-2 gap-y-1.5 border-t border-ink-200 px-3 py-2.5 hover:bg-brand-50";
+                    const tileClass = gallery ? "mb-3 break-inside-avoid overflow-hidden rounded-xl border border-ink-200 bg-white" : "overflow-hidden rounded-xl border border-ink-200 bg-white";
 
                     // Many looks side by side: a slider on every one is noise. All but the first are plain pictures that link
                     // to their look page, with the original photo as a small inset in the corner.
                     if (gallery && index > 0) {
                       return (
-                        <li key={example.url} className="overflow-hidden rounded-xl border border-ink-200 bg-white">
+                        <li key={example.url} className={tileClass}>
                           <Link href={href} className="group flex h-full flex-col">
                             <div className="relative w-full overflow-hidden bg-ink-100" style={{ aspectRatio: `${example.width} / ${example.height}` }}>
                               <Image
                                 src={example.url}
                                 alt={example.alt}
                                 fill
-                                sizes={showcasePortrait ? "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
+                                sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw"
                                 className="object-cover"
                               />
                               <span
-                                className="absolute bottom-2 left-2 block w-[28%] overflow-hidden rounded-md border-2 border-white bg-ink-100 shadow-md"
+                                className="absolute bottom-1.5 left-1.5 block w-[30%] overflow-hidden rounded-md border-2 border-white bg-ink-100 shadow-md"
                                 style={{ aspectRatio: `${example.width} / ${example.height}` }}
                               >
                                 <Image src={beforeSrc} alt={beforeAlt} fill sizes="10vw" className="object-cover" />
@@ -181,10 +200,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
                       );
                     }
                     return (
-                      <li
-                        key={example.url}
-                        className={`flex flex-col overflow-hidden rounded-xl border border-ink-200 bg-white ${gallery ? "md:col-span-2 md:row-span-2" : ""}`}
-                      >
+                      <li key={example.url} className={`flex flex-col ${tileClass}`}>
                         <CompareSlider
                           before={beforeSrc}
                           beforeAlt={beforeAlt}
@@ -194,7 +210,7 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
                           height={example.height}
                           sizes={
                             gallery
-                              ? "(min-width: 1024px) 50vw, (min-width: 768px) 66vw, 50vw"
+                              ? "(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw"
                               : showcasePortrait
                                 ? "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
                                 : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -275,30 +291,46 @@ export default async function ScenePage({ params }: PageProps<"/create/[scene]">
         {styleFile && styleEntries.length > 0 && (
           <section className="mt-16">
             <h2 className="text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl">{styleFile.collection}</h2>
-            <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-              {styleEntries.map((entry) => {
-                const cover = styleExamples(scene.slug, entry)[0];
-                return (
+            {gallery ? (
+              // The gallery above already shows every look as a picture, so here they are plain tags.
+              <ul className="mt-6 flex flex-wrap gap-2">
+                {styleEntries.map((entry) => (
                   <li key={entry.slug}>
-                    <Link href={stylePath(scene.slug, entry)} className="group block">
-                      {cover && (
-                        <Image
-                          src={cover.url}
-                          alt={cover.alt}
-                          width={cover.width}
-                          height={cover.height}
-                          sizes="(min-width: 1024px) 20vw, 50vw"
-                          className="w-full rounded-xl border border-ink-200 transition group-hover:border-ink-400"
-                        />
-                      )}
-                      <p className="mt-2 text-sm font-medium text-ink-900 group-hover:text-brand-700">
-                        {styleLabel(scene, styleFile, entry)}
-                      </p>
+                    <Link
+                      href={stylePath(scene.slug, entry)}
+                      className="inline-block rounded-full border border-ink-200 bg-white px-3.5 py-1.5 text-sm font-medium text-ink-900 shadow-sm transition hover:-translate-y-px hover:border-brand-500 hover:text-brand-700"
+                    >
+                      {styleLabel(scene, styleFile, entry)}
                     </Link>
                   </li>
-                );
-              })}
-            </ul>
+                ))}
+              </ul>
+            ) : (
+              <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                {styleEntries.map((entry) => {
+                  const cover = styleExamples(scene.slug, entry)[0];
+                  return (
+                    <li key={entry.slug}>
+                      <Link href={stylePath(scene.slug, entry)} className="group block">
+                        {cover && (
+                          <Image
+                            src={cover.url}
+                            alt={cover.alt}
+                            width={cover.width}
+                            height={cover.height}
+                            sizes="(min-width: 1024px) 20vw, 50vw"
+                            className="w-full rounded-xl border border-ink-200 transition group-hover:border-ink-400"
+                          />
+                        )}
+                        <p className="mt-2 text-sm font-medium text-ink-900 group-hover:text-brand-700">
+                          {styleLabel(scene, styleFile, entry)}
+                        </p>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </section>
         )}
 

@@ -89,13 +89,14 @@ const HERO_JOBS = [
   { label: "Book cover", href: "/create/book-cover-maker" },
 ];
 
+/** Six real results shown beside the hero text: portraits first, since they read well at a small size. */
 const HERO_COVERS = [
-  { src: "/images/generators/text-to-image.webp", name: "Text to Image" },
-  { src: "/images/generators/image-to-image.webp", name: "Image to Image" },
-  { src: "/images/scenes/sticker-maker.webp", name: "Sticker Maker" },
-  { src: "/images/scenes/youtube-thumbnail-maker.webp", name: "YouTube Thumbnail" },
-  { src: "/images/scenes/birthday-invitation-maker.webp", name: "Birthday Invitation" },
-  { src: "/images/scenes/book-cover-maker.webp", name: "Book Cover" },
+  { src: "/examples/photo-trend-maker_collectible_figure_box_0_1792339400000.webp", name: "Collectible Figure Box" },
+  { src: "/examples/photo-trend-maker_snow_globe_0_1792077818845.webp", name: "Snow Globe" },
+  { src: "/examples/photo-trend-maker_chibi_character_0_1795573483000.webp", name: "Chibi Character" },
+  { src: "/examples/book-cover-maker_1791295680098_4.webp", name: "Book Cover" },
+  { src: "/examples/photo-trend-maker_arcade_16bit_0_1791953427614.webp", name: "16-bit Arcade Fighter" },
+  { src: "/examples/sticker-maker_1791294964364_3.webp", name: "Sticker Maker", contain: true },
 ];
 
 /** Cards for the "Trending photo looks" strip: one per look whose page is live, so the strip never links to a hidden page. */
@@ -239,16 +240,17 @@ export default function HomePage() {
                 <div
                   key={item.src}
                   className={`overflow-hidden rounded-2xl bg-white p-1 shadow-lift ring-1 ring-ink-200 ${
-                    ["-rotate-2", "translate-y-5 rotate-1", "rotate-2", "translate-y-3 rotate-1", "-translate-y-1 -rotate-1", "translate-y-4 rotate-2"][i]
+                    // Both cards of a column share one offset, so the columns step without the rows overlapping.
+                    ["-rotate-2", "translate-y-5 rotate-1", "translate-y-2 rotate-2", "rotate-1", "translate-y-5 -rotate-1", "translate-y-2 rotate-2"][i]
                   }`}
                 >
                   <Image
                     src={item.src}
                     alt={item.name}
-                    width={280}
-                    height={210}
-                    sizes="150px"
-                    className="h-auto w-[124px] rounded-xl object-cover xl:w-[150px]"
+                    width={300}
+                    height={450}
+                    sizes="130px"
+                    className={`aspect-[2/3] w-[108px] rounded-xl xl:w-[128px] ${item.contain ? "bg-white object-contain" : "object-cover"}`}
                   />
                 </div>
               ))}
